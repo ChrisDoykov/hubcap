@@ -1,0 +1,139 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  @include respond(big-desktop) {
+    max-width: $grid-width-big;
+  }
+
+  @include respond(tab-port) {
+    max-width: $grid-width-small;
+    padding: 0 4.8rem;
+  }
+
+  @include respond(phone) {
+    max-width: 100%;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  &--gutter-vertical-big {
+    &:not(:last-child) {
+      margin-bottom: $gutter-vertical-big;
+
+      @include respond(tab-port) {
+        margin-bottom: $gutter-vertical;
+      }
+    }
+  }
+
+  &--gutter-vertical-huge {
+    &:not(:last-child) {
+      margin-bottom: $gutter-vertical-huge;
+
+      @include respond(tab-port) {
+        margin-bottom: $gutter-vertical-big;
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    min-height: 35rem;
+    width: 100%;
+
+    @include respond(tab-port) {
+      position: unset;
+      min-height: fit-content;
+    }
+  }
+
+  &--90-percent {
+    width: 90%;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+
+  &--left {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @include respond(tab-port) {
+      position: unset;
+    }
+  }
+
+  &--right {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include respond(tab-port) {
+      position: unset;
+    }
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    // Select all elements which BEGIN with col
+    // class* selects all tha INCLUDE col in the classList
+    // class$ selects all that END with col
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - #{$gutter-horizontal} * 2) / 3);
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - #{$gutter-horizontal} * 3) / 4);
+  }
+
+  .col-2-of-3 {
+    width: calc(
+      2 * ((100% - #{$gutter-horizontal} * 2) / 3) + #{$gutter-horizontal}
+    );
+  }
+
+  .col-2-of-4 {
+    width: calc(
+      2 * ((100% - #{$gutter-horizontal} * 3) / 4) + #{$gutter-horizontal}
+    );
+  }
+
+  .col-3-of-4 {
+    width: calc(
+      3 * ((100% - #{$gutter-horizontal} * 3) / 4) + 2 * #{$gutter-horizontal}
+    );
+  }
+}

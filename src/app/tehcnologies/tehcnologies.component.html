@@ -1,0 +1,111 @@
+<section
+  class="section-technologies"
+  (window:resize)="onResize()"
+  (window:scroll)="checkPosition()"
+>
+  <div class="u-center-text u-margin-bottom-medium">
+    <h1 class="heading-primary">Technological Assets List</h1>
+  </div>
+  <ul class="alphabet">
+    <li><a href="technologies#a">a</a></li>
+    <li><a href="technologies#b">b</a></li>
+    <li><a href="technologies#c">c</a></li>
+    <li><a href="technologies#d">d</a></li>
+    <li><a href="technologies#e">e</a></li>
+    <li><a href="technologies#f">f</a></li>
+    <li><a href="technologies#g">g</a></li>
+    <li><a href="technologies#h">h</a></li>
+    <li><a href="technologies#i">i</a></li>
+    <li><a href="technologies#j">j</a></li>
+    <li><a href="technologies#k">k</a></li>
+    <li><a href="technologies#l">l</a></li>
+    <li><a href="technologies#m">m</a></li>
+    <li><a href="technologies#n">n</a></li>
+    <li><a href="technologies#o">o</a></li>
+    <li><a href="technologies#p">p</a></li>
+    <li><a href="technologies#q">q</a></li>
+    <li><a href="technologies#r">r</a></li>
+    <li><a href="technologies#s">s</a></li>
+    <li><a href="technologies#t">t</a></li>
+    <li><a href="technologies#u">u</a></li>
+    <li><a href="technologies#v">v</a></li>
+    <li><a href="technologies#w">w</a></li>
+    <li><a href="technologies#x">x</a></li>
+    <li><a href="technologies#y">y</a></li>
+    <li><a href="technologies#z">z</a></li>
+  </ul>
+
+  <div *ngFor="let letter of letters">
+    <div class="wrapper" *ngIf="alphabet[letter].length > 0">
+      <h2 class="heading-secondary" id="{{ letter }}">{{ letter }}</h2>
+      <div class="tech hidden-fade-in" *ngFor="let tech of alphabet[letter]">
+        <div class="tech__top">
+          <div class="tech__image">
+            <img
+              src="{{ tech.logo }}"
+              alt="{{ tech.asset_name }}"
+              class="tech__image__content"
+            />
+          </div>
+
+          <div class="tech__basic-info">
+            <h3 class="heading-tertiary tech__basic-info__heading">
+              {{ tech.asset_name }}
+            </h3>
+            <p class="tech__basic-info__line">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Website:
+              </span>
+              <a
+                href="http://{{ tech.url }}"
+                target="_blank"
+                class="tech__basic-info__link"
+                rel="noopener noreferrer"
+                >{{ tech.url }}</a
+              >
+            </p>
+            <p class="tech__basic-info__line">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Applicable domains:
+              </span>
+              <span *ngFor="let domain of tech.domains"
+                >{{ domain }}&nbsp;</span
+              >
+            </p>
+            <p class="tech__basic-info__line">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >License information:
+              </span>
+              <a
+                href="http://{{ tech.license_info_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{
+                  tech.license_info_name
+                    ? tech.license_info_name
+                    : tech.license_info_url
+                }}</a
+              >
+            </p>
+            <p class="tech__basic-info__line">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Download:
+              </span>
+              <a
+                href="http://{{ tech.download_link }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ tech.download_link }}</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="tech__bottom">
+          <p class="paragraph paragraph--big tech__description">
+            {{ tech.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,245 @@
+<div class="container">
+  <div class="u-center-text">
+    <h3
+      class="heading-secondary downloads__heading--main u-is-black-color has-text-centered"
+    >
+      Documents
+    </h3>
+  </div>
+  <div class="downloads u-margin-bottom-big">
+    <div class="downloads__box">
+      <h3 class="downloads__heading has-text-centered u-margin-bottom-small">
+        Call #1 PULL
+      </h3>
+      <ul class="downloads__list">
+        <li class="downloads__list__item">
+          Call #1.1 flyer -
+
+          <a
+            target="_blank"
+            href="../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_CALL1-1_PULL.pdf"
+            >View</a
+          >
+          |
+          <a
+            class="download"
+            id="flyer1.1"
+            href="../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_CALL1-1_PULL.pdf"
+            download
+            >Download</a
+          >
+        </li>
+        <li class="downloads__list__item">
+          Call #1.1 press release -
+
+          <a target="_blank" href="/press-releases/call1-1">View</a>
+          |
+          <a
+            class="download"
+            id="pr#1.1"
+            href="../../assets/res/files/HUBCAP_OC1-1PULL/Press Release_ HUBCAP_Call1-1Pull.docx"
+            download
+            >Download</a
+          >
+        </li>
+        <li class="downloads__list__item">
+          Call #1.1 Documentation Kit -
+          <a
+            target="_blank"
+            href="../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP Call 1-1 PULL Documentation KIT.pdf"
+            >View</a
+          >
+          |
+          <a
+            class="download"
+            id="Dkit"
+            href="../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP Call 1-1 PULL Documentation KIT.pdf"
+            download
+            >Download</a
+          >
+        </li>
+        <hr class="downloads__list__hr" />
+        <li class="downloads__list__item">
+          Call #1.2 flyer -
+
+          <a
+            target="_blank"
+            href="../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_CALL1-2_PULL_web.pdf"
+            >View</a
+          >
+          |
+          <a
+            class="download"
+            id="flyer1.2"
+            href="../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_CALL1-2_PULL_web.pdf"
+            download
+            >Download</a
+          >
+        </li>
+        <li class="downloads__list__item">
+          Call #1.2 press release -
+
+          <a target="_blank" href="/press-releases/call1-2">View</a>
+          |
+          <a
+            class="download"
+            id="pr#1.2"
+            href="../../assets/res/files/HUBCAP_OC1-2PULL/Press Release_ HUBCAP_Call1-2Pull.docx"
+            download
+            >Download</a
+          >
+        </li>
+        <!-- <hr class="downloads__list__hr" /> -->
+      </ul>
+    </div>
+    <div class="downloads__box">
+      <h3 class="downloads__heading has-text-centered u-margin-bottom-small">
+        Open Calls
+      </h3>
+      <ul class="downloads__list">
+        <li class="downloads__list__item">
+          Open Calls flyer -
+          <a target="_blank" href="../../assets/res/files/HUBCAP_OPENCALLS.pdf"
+            >View</a
+          >
+          |
+          <a
+            class="download"
+            href="../../assets/res/files/HUBCAP_OPENCALLS.pdf"
+            id="OCflyer"
+            download
+            >Download</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="downloads__box">
+      <h3 class="downloads__heading has-text-centered u-margin-bottom-small">
+        Declarations
+      </h3>
+      <ul class="downloads__list">
+        <li class="downloads__list__item">
+          HUBCAP SME Declaration -
+          <a
+            class="download"
+            id="SMEdec"
+            href="../../assets/res/files/Annex 5_HUBCAP_SME Declaration.docx"
+            download
+            >Download</a
+          >
+        </li>
+        <li class="downloads__list__item">
+          HUBCAP Declaration of Honour -
+          <a
+            class="download"
+            id="Hdec"
+            href="../../assets/res/files/Annex 4_HUBCAP_Applicant Declaration of Honour.docx"
+            download
+            >Download</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="media-kit">
+    <div class="u-center-text u-margin-bottom-small">
+      <h3
+        class="heading-secondary media-kit__heading u-is-black-color has-text-centered"
+      >
+        Media Kit
+      </h3>
+    </div>
+    <div class="media-kit__section">
+      <h3 class="media-kit__subheading u-center-text">Open Calls</h3>
+
+      <div class="media-kit__items-box u-center-text columns is-multiline">
+        <div
+          class="media-kit__item column is-one-third is-full-touch"
+          *ngFor="let item of items.slice(0, 2)"
+        >
+          <img
+            class="modal-button"
+            (click)="openModal(item)"
+            attr.data-target="{{ item.modalTarget }}"
+            aria-haspopup="true"
+            src="{{ item.imageUrl }}"
+          />
+
+          <a
+            class="button button--small button--download"
+            href="{{ item.imageUrl }}"
+            download=""
+            >Download
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-kit__section">
+      <h3 class="media-kit__subheading u-center-text">Call #1.1</h3>
+      <div class="media-kit__items-box columns is-multiline">
+        <div
+          class="media-kit__item column is-one-third is-full-touch u-center-text"
+          *ngFor="let item of items.slice(2, 6)"
+        >
+          <img
+            class="modal-button"
+            (click)="openModal(item)"
+            attr.data-target="{{ item.modalTarget }}"
+            aria-haspopup="true"
+            src="{{ item.imageUrl }}"
+          />
+          <a
+            class="button button--small button--download"
+            href="{{ item.imageUrl }}"
+            download=""
+            >Download
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-kit__section">
+      <h3 class="media-kit__subheading u-center-text">Call #1.2</h3>
+      <div class="media-kit__items-box columns is-multiline">
+        <div
+          class="media-kit__item column is-one-third is-full-touch u-center-text"
+          *ngFor="let item of items.slice(6, items.length)"
+        >
+          <img
+            class="modal-button"
+            (click)="openModal(item)"
+            attr.data-target="{{ item.modalTarget }}"
+            aria-haspopup="true"
+            src="{{ item.imageUrl }}"
+          />
+          <a
+            class="button button--small button--download"
+            href="{{ item.imageUrl }}"
+            download=""
+            >Download
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="media-kit__section">
+      <h3 class="media-kit__subheading u-center-text">Call #2.1</h3>
+      <span class="heading-tertiary u-is-black-color u-center-text"
+        >Coming soon!</span
+      >
+    </div>
+  </div>
+</div>
+
+<div *ngFor="let item of items" class="modal" id="{{ item.modalTarget }}">
+  <div class="modal-background" (click)="closeModal(item)"></div>
+  <div class="modal-content">
+    <img src="{{ item.imageUrl }}" />
+  </div>
+  <button
+    class="modal-close is-large"
+    (click)="closeModal(item)"
+    aria-label="close"
+  ></button>
+</div>

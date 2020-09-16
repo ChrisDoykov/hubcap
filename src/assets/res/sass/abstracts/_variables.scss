@@ -1,0 +1,48 @@
+// Colors
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-primary: #fba200;
+$color-teal: #07a398;
+$color-red: #e62601;
+$color-blue: #067fc4;
+$color-blue-dark: #222749;
+$color-green: #91c222;
+
+$color-facebook: #4267b2;
+$color-linkedin: #2867b2;
+$color-twitter: #1da1f2;
+$gradient-instagram: linear-gradient(
+  45deg,
+  #f09433 0%,
+  #e6683c 25%,
+  #dc2743 50%,
+  #cc2366 75%,
+  #bc1888 100%
+);
+
+// GRID
+
+$grid-width: 130rem;
+$grid-width-small: 50rem;
+$grid-width-big: 160rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-vertical-big: 10rem;
+$gutter-vertical-huge: 20rem;
+$gutter-horizontal: 6rem;
+
+// Font sizes
+
+$font-size-default: 1.6rem;
+
+// Border radius
+
+$border-radius-default: 3px;

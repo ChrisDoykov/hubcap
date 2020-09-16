@@ -1,0 +1,214 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "./animations";
+
+// TEXT
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-center-text-tab-port {
+  @include respond(tab-port) {
+    text-align: center !important;
+  }
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-justify-text {
+  text-align: justify !important;
+}
+
+.u-justify-text-tab-port {
+  @include respond(tab-port) {
+    text-align: justify !important;
+  }
+}
+
+// POSITIONING
+
+.u-center-content-absolute {
+  @include center_with_transform;
+}
+
+.u-position-relative {
+  position: relative !important;
+}
+
+// MARGINS
+
+.u-margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-small-phone {
+  @include respond(phone) {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 4.8rem !important;
+  }
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 10rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 8rem !important;
+  }
+}
+
+.u-margin-bottom-xl {
+  margin-bottom: 20rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 10rem !important;
+  }
+}
+
+.u-margin-bottom-none-tab-port {
+  @include respond(tab-port) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.u-margin-bottom-none-phone {
+  @include respond(phone) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.u-margin-bottom-small-tab-port {
+  @include respond(tab-port) {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+.u-margin-bottom-medium-tab-port {
+  @include respond(tab-port) {
+    margin-bottom: 4.8rem !important;
+  }
+}
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+  @include respond(tab-port) {
+    margin-top: 4.8rem !important;
+  }
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+.u-margin-side-medium {
+  margin-left: 5rem !important;
+  margin-right: 5rem !important;
+}
+
+.u-margin-side-big {
+  margin-left: 10rem !important;
+  margin-right: 10rem !important;
+}
+
+// PADDING
+
+.u-padding-side-small {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+// ANIMATIONS
+
+.hidden-fade-in,
+.hidden-slide-in-left,
+.hidden-slide-in-right,
+.hidden-slide-in-bottom {
+  opacity: 0;
+}
+
+.u-slide-in-left {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.u-slide-in-right {
+  animation: moveInRight 1s ease-out;
+}
+
+.u-slide-in-bottom {
+  animation: moveInBottom 0.8s ease-out;
+}
+
+.u-fade-in {
+  animation: fadeIn 1.2s ease-out;
+}
+
+.u-slide-in-top {
+  animation: moveInTop 1.2s ease-out;
+}
+
+// COLOURS
+
+.u-is-white-color {
+  color: $color-white;
+}
+
+.u-is-black-color {
+  color: $color-black;
+}
+
+.u-is-primary-color {
+  color: $color-primary;
+}
+.u-is-blue-color {
+  color: $color-blue;
+}
+.u-is-green-color {
+  color: $color-green;
+}
+
+// .u-bg-animated-gradient {
+//   background: linear-gradient(
+//     -45deg,
+//     $color-secondary-light,
+//     $color-primary,
+//     $color-tertiary-light,
+//     $color-green-dark
+//   );
+//   background-size: 400% 400%;
+//   animation: gradient 13s ease infinite;
+// }

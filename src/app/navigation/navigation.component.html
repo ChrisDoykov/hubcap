@@ -1,0 +1,134 @@
+<div class="wrapper-nav">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item logo" href="/">
+        <img
+          *ngIf="logoIsVisible"
+          src="../../assets/res/images/logo_hubcap.webp"
+          alt="Hubcap Logo"
+          class="navbar-item__logo"
+          onerror="this.onerror=null;
+          this.src='../../assets/res/images/logo_hubcap.png'"
+        />
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarDropdown"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <!-- Add is-active to show on mobile -->
+    <div id="navbarDropdown" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" routerLink="/" routerLinkActive="active">Home</a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Apply Now</a>
+          <div class="navbar-dropdown">
+            <a
+              class="navbar-item"
+              routerLink="open-calls"
+              routerLinkActive="active"
+            >
+              Open Calls
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="calls/pull"
+              routerLinkActive="active"
+            >
+              PULL Calls
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="calls/experiment"
+              routerLinkActive="active"
+            >
+              EXPERIMENT Calls
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="calls/innovate"
+              routerLinkActive="active"
+            >
+              INNOVATE Call
+            </a>
+          </div>
+        </div>
+
+        <a
+          class="navbar-item"
+          routerLink="digital-innovation-hubs"
+          routerLinkActive="active"
+          >Digital Innovation Hubs</a
+        >
+        <a class="navbar-item" routerLink="services" routerLinkActive="active"
+          >Services</a
+        >
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">News</a>
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item" routerLink="news" routerLinkActive="active"
+              >Latest News</a
+            >
+            <a
+              class="navbar-item"
+              routerLink="press-releases"
+              routerLinkActive="active"
+              >Press Releases</a
+            >
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a
+            class="navbar-link"
+            routerLink="project-details"
+            routerLinkActive="active"
+            >About</a
+          >
+          <div class="navbar-dropdown is-right">
+            <a
+              class="navbar-item"
+              routerLink="project-details"
+              routerLinkActive="active"
+              >Project Details</a
+            >
+            <a
+              class="navbar-item"
+              routerLink="platform"
+              routerLinkActive="active"
+              >Platform</a
+            >
+            <a
+              class="navbar-item"
+              routerLink="partners"
+              routerLinkActive="active"
+            >
+              Project partners
+            </a>
+            <a class="navbar-item" routerLink="faq" routerLinkActive="active">
+              FAQ
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="resources"
+              routerLinkActive="active"
+            >
+              Resources
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

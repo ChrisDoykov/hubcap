@@ -1,0 +1,100 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.heading-primary {
+  color: $color-black;
+  font-size: 5.2rem !important;
+  font-weight: 600;
+  margin: 0;
+
+  @include respond(tab-port) {
+    font-size: 4.8rem !important;
+  }
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 4.5rem !important;
+  font-weight: 700;
+
+  @include respond(tab-port) {
+    font-size: 4rem !important;
+  }
+
+  &--small {
+    font-size: 4rem !important;
+    @include respond(tab-port) {
+      font-size: 3rem !important;
+    }
+  }
+
+  // @include respond(phone) {
+  //   font-size: 3rem !important;
+  // }
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  display: inline;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+
+  &--black {
+    color: $color-black;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--small {
+    font-size: 2rem;
+  }
+}
+
+.paragraph {
+  font-size: $font-size-default;
+
+  &--big {
+    font-size: 1.9rem;
+
+    @include respond(phone) {
+      font-size: 2.1rem;
+    }
+  }
+
+  &--huge {
+    font-size: 2.5rem;
+  }
+
+  &--black {
+    color: $color-black;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
+}
+
+.inline-link {
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}

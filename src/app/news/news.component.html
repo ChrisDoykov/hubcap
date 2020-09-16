@@ -1,0 +1,82 @@
+<div
+  class="wrapper"
+  (window:resize)="onResize()"
+  (window:scroll)="checkPosition()"
+>
+  <h1 class="heading-primary u-center-text u-margin-bottom-medium">
+    Latest News
+  </h1>
+
+  <div class="columns is-multiline">
+    <div
+      *ngFor="let article of articles"
+      class="column is-full u-margin-bottom-big"
+    >
+      <div class="news-item hidden-fade-in">
+        <h2 class="subtitle news-item__heading">
+          <a href="{{ article.url }}" target="_blank"> {{ article.title }}</a>
+        </h2>
+        <h3 class="subtitle subtitle--small news-item__subheading">
+          {{ article.date }} | {{ article.type }}
+        </h3>
+        <p
+          class="paragraph paragraph--big u-margin-bottom-none news-item__content"
+        >
+          {{ article.summary }}
+        </p>
+        <figure class="figure">
+          <img
+            class="modal-button"
+            (click)="openModal(article)"
+            attr.data-target="{{ article.modalTarget }}"
+            aria-haspopup="true"
+            src="{{ article.thumbnail }}"
+            alt="{{ article.thumbnailAlt }}"
+          />
+          <figcaption class="figure__caption">{{ article.caption }}</figcaption>
+        </figure>
+        <span *ngIf="article.url" class="news-item__link">
+          <a
+            href="{{ article.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-text btn-text--primary"
+            >{{ article.urlname }}</a
+          >
+        </span>
+        <div class="news-item__bottom">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill: #067fc4"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  *ngFor="let article of articles"
+  class="modal"
+  id="{{ article.modalTarget }}"
+>
+  <div class="modal-background" (click)="closeModal(article)"></div>
+  <div class="modal-content">
+    <figure class="figure">
+      <img src="{{ article.thumbnail }}" alt="{{ article.thumbnailAlt }}" />
+      <figcaption class="figure__caption">
+        {{ article.caption }}
+      </figcaption>
+    </figure>
+  </div>
+  <button
+    class="modal-close is-large"
+    (click)="closeModal(article)"
+    aria-label="close"
+  ></button>
+</div>

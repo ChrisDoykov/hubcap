@@ -1,0 +1,99 @@
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins";
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  padding: 2rem;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .intro {
+      max-width: 80%;
+      align-self: center;
+      text-align: justify;
+
+      p {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .dates__list {
+    font-size: 2.2rem;
+    margin: 2rem auto;
+    &__item {
+    }
+  }
+}
+
+.italic {
+  font-size: 1.2em;
+}
+
+.icon {
+  height: 30rem;
+  width: auto;
+  margin-bottom: 2rem;
+  margin: 2rem auto;
+}
+
+.info {
+  max-width: 80%;
+  align-self: center;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .info-section {
+    margin-bottom: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__list {
+      font-size: 2rem;
+      &__item {
+      }
+    }
+
+    &:first-of-type {
+      margin-top: 5rem;
+    }
+  }
+  .orange {
+    color: $color-primary;
+  }
+}
+
+.is-bold {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: disc;
+  font-size: 1.5rem;
+  margin-left: 25px;
+  align-self: center;
+}
+
+ol {
+  margin-left: 25px;
+  align-self: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}

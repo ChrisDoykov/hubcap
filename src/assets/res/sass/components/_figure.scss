@@ -1,0 +1,12 @@
+.figure {
+  text-align: center;
+  margin: 3rem auto;
+
+  &__image {
+  }
+
+  &__caption {
+    font-size: 2rem;
+    display: inline-block;
+  }
+}

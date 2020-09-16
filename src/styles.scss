@@ -1,0 +1,90 @@
+@import "./assets/res/sass/abstracts/functions";
+@import "./assets/res/sass/abstracts/mixins";
+@import "./assets/res/sass/abstracts/variables";
+
+@import "./assets/res/sass/base/base";
+@import "./assets/res/sass/base/utilities";
+@import "./assets/res/sass/base/animations";
+@import "./assets/res/sass/base/typography";
+
+@import "./assets/res/sass/components/feature-box";
+@import "./assets/res/sass/components/hero";
+@import "./assets/res/sass/components/button";
+@import "./assets/res/sass/components/bg-video";
+@import "./assets/res/sass/components/bg-image";
+@import "./assets/res/sass/components/hub";
+@import "./assets/res/sass/components/figure";
+@import "./assets/res/sass/components/press-release-box";
+@import "./assets/res/sass/components/news-item";
+@import "./assets/res/sass/components/tech";
+
+@import "./assets/res/sass/layout/grid";
+@import "./assets/res/sass/layout/call-page";
+
+@import "./assets/res/sass/pages/home";
+
+.navbar-item {
+  &.is-hoverable:hover {
+    .navbar-dropdown {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+.navbar-item.has-dropdown.is-active > .navbar-dropdown {
+  display: block;
+}
+
+$navbar-dropdown-border-top: 0px; // for IE11, we need no top border on navbar dropdown or the hover gets lost
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css";
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  // max-height: fit-content;
+  // overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.modal-button {
+  max-height: 300px;
+  margin: 1rem auto;
+  cursor: grab;
+  display: block;
+}
+
+.modal-content figcaption {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+.modal-content figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content img {
+  margin: 0 auto;
+}
+
+a {
+  color: $color-blue;
+}
+
+ul {
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");

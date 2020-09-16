@@ -1,0 +1,28 @@
+@import "../../assets/res/sass/abstracts/variables.scss";
+
+.top-left-triangles div {
+  max-width: 350px;
+  height: 80px;
+}
+
+.top-left-triangles {
+  height: 120px;
+  background-color: $color-primary;
+}
+
+#red {
+  transform: translate(-63px, -2px);
+  height: 200px;
+}
+
+#turqouise {
+  height: 150px;
+  transform: translate(-13px, -230px);
+}
+
+// Target IPhone 5/SE
+@media only screen and (max-width: 320px) {
+  .top-left-triangles div {
+    max-width: 320px;
+  }
+}

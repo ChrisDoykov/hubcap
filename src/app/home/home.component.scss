@@ -1,0 +1,412 @@
+@import "../../assets/res/sass/abstracts/variables.scss";
+@import "../../assets/res/sass/abstracts/mixins";
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.welcome {
+  padding: 3.2rem;
+  padding-top: 0;
+  margin: 4.8rem auto;
+  color: $color-black;
+
+  &__content {
+    max-width: 90rem;
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
+
+.jumbotron {
+  padding: 3.2rem;
+  padding-top: 0;
+  margin: 4.8rem auto;
+  max-width: 70rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading {
+    font-style: normal;
+    font-weight: 900;
+
+    @include respond(phone) {
+      font-weight: 700;
+    }
+
+    .blue {
+      display: inline-block;
+      color: lighten($color: $color-blue, $amount: 10);
+      text-shadow: 0 1px $color-blue, 0 2px $color-blue, 0 3px $color-blue;
+      transition: all 0.3s;
+
+      &:hover,
+      &.hovered {
+        // text-shadow: 1px 1px 1px $color-blue, 1px 2px 1px $color-blue,
+        //   1px 3px 1px $color-blue, 1px 4px 1px $color-blue,
+        //   1px 5px 1px $color-blue, 1px 6px 1px $color-blue,
+        //   1px 7px 1px $color-blue, 1px 18px 6px rgba(16, 16, 16, 0.4),
+        //   1px 22px 10px rgba(16, 16, 16, 0.2),
+        //   1px 25px 35px rgba(16, 16, 16, 0.2),
+        //   1px 30px 60px rgba(16, 16, 16, 0.4);
+
+        transform: translateY(-1rem) scale(1.3);
+      }
+    }
+
+    .green {
+      display: inline-block;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      color: lighten($color: $color-green, $amount: 10);
+      text-shadow: 0 1px $color-green, 0 2px $color-green, 0 3px $color-green;
+      transition: all 0.3s;
+
+      &:hover,
+      &.hovered {
+        // text-shadow: 1px 1px 1px $color-green, 1px 2px 1px $color-green,
+        //   1px 3px 1px $color-green, 1px 4px 1px $color-green,
+        //   1px 5px 1px $color-green, 1px 6px 1px $color-green,
+        //   1px 7px 1px $color-green, 1px 18px 6px rgba(16, 16, 16, 0.4),
+        //   1px 22px 10px rgba(16, 16, 16, 0.2),
+        //   1px 25px 35px rgba(16, 16, 16, 0.2),
+        //   1px 30px 60px rgba(16, 16, 16, 0.4);
+
+        transform: translateY(-1rem) scale(1.3);
+      }
+    }
+    .red {
+      display: inline-block;
+      color: lighten($color: $color-red, $amount: 10);
+      text-shadow: 0 1px $color-red, 0 2px $color-red, 0 3px $color-red;
+      transition: all 0.3s;
+
+      &:hover,
+      &.hovered {
+        // text-shadow: 1px 1px 1px $color-red, 1px 2px 1px $color-red,
+        //   1px 3px 1px $color-red, 1px 4px 1px $color-red, 1px 5px 1px $color-red,
+        //   1px 6px 1px $color-red, 1px 7px 1px $color-red,
+        //   1px 18px 6px rgba(16, 16, 16, 0.4),
+        //   1px 22px 10px rgba(16, 16, 16, 0.2),
+        //   1px 25px 35px rgba(16, 16, 16, 0.2),
+        //   1px 30px 60px rgba(16, 16, 16, 0.4);
+        transform: translateY(-1rem) scale(1.3);
+      }
+    }
+  }
+}
+
+.divider {
+  height: 6rem;
+  margin-bottom: 4.8rem;
+
+  &#first {
+    background-color: $color-teal;
+  }
+
+  &#second {
+    margin-bottom: 0;
+    background-color: $color-green;
+  }
+
+  &#third {
+    margin-top: 0;
+    background-color: $color-red;
+  }
+
+  &#fourth {
+    margin-bottom: 0;
+    background-color: $color-blue;
+  }
+}
+
+.services {
+  padding: 10rem 2rem;
+  padding-top: 3rem;
+  text-align: center;
+
+  @include respond(tab-port) {
+    padding: 3rem 0;
+    padding-bottom: 10rem;
+  }
+
+  &__heading {
+    margin-bottom: 6rem;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__icon {
+      display: inline-block;
+      align-self: center;
+      font-size: 10rem;
+      color: $color-teal;
+      transition: all 0.2s;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+        transform: translateY(-1rem);
+      }
+    }
+
+    &__content {
+      align-self: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        font-size: 2.6rem;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+      }
+
+      a {
+        font-size: 1.9rem;
+
+        @include respond(phone) {
+          font-size: 2.1rem;
+        }
+      }
+      .paragraph {
+        text-align: justify;
+      }
+      a {
+        display: inline-block;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.open-calls {
+  h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  swiper {
+    ::ng-deep .swiper-pagination-bullet {
+      background-color: $color-blue;
+    }
+
+    .slide {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+      height: 100vh;
+
+      @include respond(big-desktop) {
+        height: 60vh;
+      }
+
+      @include respond(tab-land) {
+        height: 50vh;
+      }
+      @include respond(tab-port) {
+        height: 50vh;
+      }
+
+      @include respond(phone) {
+        height: 80vh;
+      }
+
+      @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+        height: 100vh;
+      }
+
+      &__bg {
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+      }
+
+      &__content {
+        width: 100%;
+        display: flex;
+        z-index: 10;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        color: $color-white;
+        @include center_with_transform;
+        margin: 0 auto;
+
+        .box {
+          color: $color-white;
+          background-color: transparent;
+          font-size: 2.72rem;
+          text-align: justify;
+          align-self: center;
+          display: flex;
+          flex-direction: column;
+
+          @include respond(phone) {
+            padding-top: 2rem;
+            margin-bottom: 0;
+            padding: 2rem 4rem;
+          }
+
+          @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+            font-size-adjust: 2rem;
+          }
+
+          p {
+            margin: 0;
+            align-self: center;
+            text-align: center;
+            font-size: 2.72rem;
+
+            &:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+
+            @media screen and (max-width: 400px) {
+              font-size: 2.2rem;
+            }
+
+            @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+              font-size: 2rem;
+            }
+          }
+        }
+
+        h3 {
+          align-self: center;
+          text-align: center;
+          color: $color-white;
+
+          @media screen and (max-width: 400px) {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+          }
+
+          @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+            font-size: 2.5rem;
+          }
+
+          &.small {
+            font-size: 2.7rem;
+            @include respond(phone) {
+              padding: 0 2rem;
+              font-size: 2.3rem;
+            }
+
+            @media screen and (max-width: 400px) {
+              font-size: 1.9rem;
+            }
+
+            @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+              font-size: 1.6rem;
+            }
+          }
+        }
+
+        button {
+          align-self: center;
+          outline: none;
+
+          @include respond(phone) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+
+  @include respond(phone) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .paragraphs {
+    text-align: justify;
+    align-self: center;
+    margin-bottom: 8rem;
+    color: $color-black;
+    padding: 0;
+
+    .col-1-of-3 {
+      background-color: rgba($color: $color-grey-light-2, $alpha: 0.9);
+      box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: 0.5);
+      border-radius: 3px;
+      min-height: 36rem;
+      padding: 3rem 2rem;
+      transition: all 0.3s;
+
+      .paragraph--big {
+        font-size: 1.7rem;
+
+        @include respond(phone) {
+          font-size: 2.1rem;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 3rem 4rem rgba($color: $color-black, $alpha: 0.5);
+        transform: translateY(-1rem);
+      }
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+}
+
+.counters {
+  background-color: $color-blue;
+  justify-content: center;
+  margin: 0;
+  padding: 5rem 2rem;
+  max-width: 100%;
+  .box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1.heading-primary {
+      margin: 0;
+      font-size: 6.4rem !important;
+    }
+
+    h2.subtitle {
+      margin: 1.2rem auto;
+      font-size: 2.4rem;
+    }
+  }
+
+  .is-centered {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  mat-icon {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    transform: translateY(0.2rem);
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../assets/res/sass/abstracts/variables";
+@import "../../assets/res/sass/abstracts/mixins";
+
+.faq {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 10rem 3rem;
+  padding-top: 5rem;
+
+  &__icon {
+    font-size: 10rem;
+    color: $color-blue;
+    display: inline-block;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+      transform: translateY(-1rem);
+    }
+  }
+
+  &__hr {
+    max-width: 20rem;
+    height: 1rem;
+    display: block;
+    margin: 3rem auto;
+
+    &:nth-of-type(odd) {
+      background-color: $color-teal;
+    }
+    &:nth-of-type(even) {
+      background-color: $color-blue;
+    }
+  }
+
+  &__content {
+    &__question {
+      background-color: lighten($color: $color-blue, $amount: 10);
+      color: $color-white;
+      border-radius: 3px;
+      box-shadow: 0 0.5rem 1rem rgba($color: $color-black, $alpha: 0.3);
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &__header,
+      .mat-expanded:focus,
+      .mat-expanded:hover {
+        background-color: $color-primary;
+      }
+
+      &__title {
+        font-size: 2.6rem;
+        display: inline-block;
+        margin: 1rem;
+      }
+
+      &__body {
+        color: $color-black;
+        background-color: lighten($color: $color-blue, $amount: 10);
+        padding: 2rem 1rem;
+
+        .paragraph {
+          &:not(:last-child) {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

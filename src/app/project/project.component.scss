@@ -1,0 +1,57 @@
+@import "../../assets/res/sass/abstracts/variables";
+@import "../../assets/res/sass/abstracts/mixins";
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 2rem;
+  padding-top: 5rem;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  .heading-primary {
+    text-align: left;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  .heading-tertiary {
+    text-align: left;
+    display: block !important;
+
+    @include respond(tab-port) {
+      text-align: center !important;
+      margin: 2rem auto !important;
+    }
+  }
+
+  .list {
+    list-style-type: none;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 3rem;
+
+    @include respond(tab-port) {
+      align-self: center;
+      display: inline !important;
+      text-align: center;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      &::before {
+        content: "\2022";
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+}

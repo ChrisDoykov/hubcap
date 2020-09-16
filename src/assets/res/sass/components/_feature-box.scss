@@ -1,0 +1,51 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+
+.feature-box {
+  background-color: rgba($color: $color-white, $alpha: 0.8);
+  font-size: 1.8rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: $border-radius-default;
+  box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: 0.15);
+  transition: transform 0.3s;
+  backface-visibility: hidden;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  &--medium {
+    min-height: 45rem;
+
+    @include respond(tab-port) {
+      min-height: unset;
+    }
+  }
+
+  // &__icon {
+  //   display: block;
+  //   font-size: 6rem;
+  //   margin-bottom: 0.5rem;
+  //   background-image: linear-gradient(
+  //     to right,
+  //     $color-primary-light,
+  //     $color-primary
+  //   );
+  //   background-clip: text;
+  //   -webkit-background-clip: text;
+  //   color: transparent;
+
+  //   @include respond(tab-port) {
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

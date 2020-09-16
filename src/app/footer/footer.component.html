@@ -1,0 +1,91 @@
+<section class="footer">
+  <div class="columns">
+    <div class="eu column is-one-third">
+      <img src="../../assets/res/images/eu-flag.jpg" alt="" />
+      <p>
+        The <span class="bold">HUBCAP</span> project is jointly funded by the
+        European Union's Horizon 2020 research and innovation programme
+        (contract No 872698) and by the Commissioned Research of National
+        Institute of Information.
+      </p>
+    </div>
+
+    <div class="socials column is-one-third has-text-centered">
+      <h2 class="subtitle subtitle--small subtitle--bold subtitle--black">
+        Follow us:
+      </h2>
+      <div class="icon-bar">
+        <a href="https://twitter.com/hubcap_eu" id="twitter" target="_blank"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/64962030/"
+          id="linkedIn"
+          target="_blank"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ></a>
+        <a href="" target="_blank" id="f6s"
+          ><img
+            src="https://diatomic.eu/wp-content/uploads/f6s-logo.png"
+            alt="Hubcap F6S"
+        /></a>
+      </div>
+    </div>
+
+    <div class="column is-one-third has-text-centered">
+      <h2 class="subtitle subtitle--small subtitle--bold subtitle--black">
+        We'll keep you posted:
+      </h2>
+      <form
+        method="POST"
+        class="newsLetter-form"
+        (submit)="handleNewsletter($event)"
+      >
+        <div class="control has-icons-left">
+          <input
+            class="input is-flat"
+            placeholder="Email"
+            required
+            type="email"
+            value
+            name="email"
+            id="userMail"
+          />
+          <span class="icon is-small is-left">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+          <button
+            *ngIf="desktop || tablet"
+            class="button is-primary"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <label class="checkbox">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="consent"
+            id="consentCb"
+            required
+          />
+          I would like to sign up to receive email contacts about HUBCAP
+        </label>
+        <button *ngIf="mobile" class="button is-primary" type="submit">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="copyright has-text-centered">
+    <p>Copyright © 2020 The HUBCAP Consortium.<br />All Rights Reserved.</p>
+  </div>
+
+  <div class="bottom-right-corner">
+    <img id="blue" src="../../assets/res/svg/triangle_blue.svg" alt="" />
+    <img id="green" src="../../assets/res/svg/triangle_green.svg" alt="" />
+  </div>
+</section>

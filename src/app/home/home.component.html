@@ -1,0 +1,281 @@
+<div class="content">
+  <section class="welcome">
+    <div class="welcome__content">
+      <h1
+        *ngIf="desktop"
+        class="u-slide-in-bottom heading-primary has-text-centered"
+      >
+        Welcome to HUBCAP!
+      </h1>
+      <h1
+        *ngIf="!desktop"
+        class="u-slide-in-bottom heading-primary has-text-centered"
+      >
+        Join us in the Cyber-Physical Systems revolution!
+      </h1>
+      <p class="u-slide-in-left paragraph paragraph--big">
+        <span *ngIf="desktop"
+          >Join us in the Cyber-Physical Systems revolution!</span
+        >
+        HUBCAP has a € 3 Million equity-free fund for SMEs to experiment and
+        innovate with MBD CPS solutions and technologies.
+      </p>
+      <p class="u-slide-in-right paragraph paragraph--big">
+        HUBCAP is your one-stop-shop for embracing digital innovation using
+        model-based design technology for Cyber-Physical Systems. Get the tools
+        and resources you need to scale ideas and grow your business. Source
+        potential partners for your application experiment, with an array of
+        competences - both technological and business related.
+      </p>
+    </div>
+  </section>
+
+  <section class="jumbotron u-justify-text">
+    <h2 class="heading-secondary jumbotron__heading has-text-centered">
+      <span class="blue" #blue>JOIN.</span><br />
+      <span class="green" #green> CO-CREATE.</span><br /><span class="red" #red>
+        GO TO MARKET.</span
+      >
+    </h2>
+    <p class="paragraph paragraph--big">
+      HUBCAP is an exclusive network of Digital Innovation Hubs with a goal to
+      bring new microelectronics-enabled products, processes, and business
+      models to life. We provide access to funding opportunities, cutting-edge
+      tech and business support services.
+    </p>
+  </section>
+
+  <section class="divider" id="first"></section>
+
+  <section
+    class="services"
+    (window:resize)="onResize()"
+    (window:scroll)="checkPosition()"
+  >
+    <h2 class="services__heading heading-secondary">Our Services</h2>
+    <div class="row">
+      <div class="col-1-of-3 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-basic-spread-text-bookmark"></i>
+        </div>
+
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">Knowledge</h3>
+          <p class="paragraph paragraph--big">
+            From awareness-raising to training and skills development for
+            model-based CPS engineering. We will be offering information events,
+            seminars, and training courses on the HUBCAP technologies and tools.
+          </p>
+          <a routerLink="/services">Learn More</a>
+        </div>
+      </div>
+      <div class="col-1-of-3 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-basic-laptop"></i>
+        </div>
+
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">Technology</h3>
+          <p class="paragraph paragraph--big">
+            These enable hands-on experience on HUBCAP technologies, provided
+            through support for SMEs engaged in Open Call (OC) experiments and
+            by organising practical labs such as hackathons for the rapid
+            prototyping of use cases. We can help match your SME with the right
+            expertise and tools for model-based design, verification,
+            validation, and safety analysis.
+          </p>
+          <a routerLink="/services">Learn More</a>
+        </div>
+      </div>
+      <div class="col-1-of-3 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-elaboration-mail-check"></i>
+        </div>
+
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">
+            Fast Prototyping and Validation
+          </h3>
+          <p class="paragraph paragraph--big">
+            Sandboxed services will be implemented in our HUBCAP collaboration
+            platform and will provide functionalities such as CPS
+            multi-modelling, co-simulation, monitoring and analytics,
+            composition and orchestration, enhanced with protection mechanisms
+            to ensure the security and privacy of the data exchanged within the
+            collaboration platform.
+          </p>
+          <a routerLink="/services">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-2 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-basic-share"></i>
+        </div>
+
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">
+            Ecosystem Building
+          </h3>
+          <p class="paragraph paragraph--big">
+            These services will help you reach out to stakeholders, businesses,
+            government and expertise in the regions round our Digital Hubs, to
+            help needs and demands with offers and opportunities.
+          </p>
+          <a routerLink="/services">Learn More</a>
+        </div>
+      </div>
+      <div class="col-1-of-2 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-ecommerce-euro"></i>
+        </div>
+
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">
+            Access to Market and Funding
+          </h3>
+          <p class="paragraph paragraph--big">
+            Your SME get help to access funding opportunities for your
+            development projects. We will share information about different
+            funding opportunities involving companies, funding agencies and
+            investors, or potential research and innovation projects. Events are
+            organised to share information about possible public or private
+            funding opportunities, available from both within the DIH region and
+            nationally/internationally, e.g. in the HUBCAP DIH network.
+          </p>
+          <a routerLink="/services">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="divider" id="second"></section>
+
+  <section class="open-calls">
+    <!-- <h2 class="title is-2">Open Calls</h2> -->
+    <swiper [config]="config">
+      <div class="slide h-100" *ngFor="let slide of slides; let i = index">
+        <img src="{{ slide.imageURL }}" class="slide__bg" alt="" />
+        <div class="slide__content">
+          <div class="box">
+            <h3 class="heading-tertiary">{{ slide.heading }}</h3>
+            <p class="paragraph" *ngFor="let line of slide.lines">
+              {{ line }}
+            </p>
+          </div>
+          <button
+            class="button button--mini button--download"
+            (click)="applyToCall(i)"
+          >
+            {{ slide.buttonText }}
+          </button>
+
+          <h3
+            *ngIf="slide.heading.includes('#1')"
+            class="small has-text-centered"
+          >
+            Applications opening 1 October 2020 | Closing 30 November 2020 at
+            17h00 (Brussels Time) CEST
+          </h3>
+          <h3
+            *ngIf="slide.heading.includes('#2')"
+            class="small has-text-centered"
+          >
+            Applications opening 1 December 2020 | Closing 28 February 2021
+          </h3>
+        </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </swiper>
+  </section>
+
+  <section class="divider" id="third"></section>
+
+  <section class="info">
+    <!--JOIN here-->
+
+    <div class="paragraphs row">
+      <div class="col-1-of-3">
+        <h2 class="subtitle">How We Help</h2>
+        <p class="paragraph paragraph--big">
+          <span class="bold">HUBCAP</span> is a one-stop-shop to help your
+          European SME – whatever your sector and wherever you are situated – to
+          undertake digital innovation using new model-based design technology
+          for Cyber- Physical Systems.
+        </p>
+
+        <p class="paragraph paragraph--big">
+          To learn more about what we offer see our
+          <a routerLink="services" routerLinkActive="active">Services</a> page.
+        </p>
+      </div>
+
+      <div class="col-1-of-3">
+        <h2 class="subtitle">What are CPS?</h2>
+        <p class="paragraph paragraph--big">
+          Cyber-Physical Systems are systems that link the physical world (e.g.,
+          through sensors or actuators) with the digital world of software
+          systems and communications technology. A CPS will often include
+          components from many different providers, so your business may already
+          be contributing towards CPSs. <br />
+          <a routerLink="/faq">Learn More</a>
+        </p>
+      </div>
+      <div class="col-1-of-3">
+        <h2 class="subtitle">Model-Based Design</h2>
+        <p class="paragraph paragraph--big">
+          <span class="bold">HUBCAP</span> helps you to adopt digital tools that
+          allow you to model, simulate, analyse and visualise products before
+          you build them.<br />
+          <a routerLink="/faq">Learn More</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="counters">
+    <div class="row" #counters>
+      <div class="col-1-of-4 box u-slide-in-bottom">
+        <h2 class="subtitle has-text-centered">Targeting</h2>
+        <h1 class="heading-primary" id="smeCounter"></h1>
+        <h2 class="subtitle has-text-centered">SMEs</h2>
+      </div>
+      <div class="col-1-of-4 box u-slide-in-bottom">
+        <h2 class="subtitle has-text-centered">Targeting</h2>
+        <h1 class="heading-primary" id="expCounter"></h1>
+        <h2 class="subtitle has-text-centered">Experiments</h2>
+      </div>
+      <div class="col-1-of-4 box u-slide-in-bottom">
+        <h2 class="subtitle has-text-centered">Targeting</h2>
+
+        <h1 class="heading-primary" id="innCounter"></h1>
+        <h2 class="subtitle has-text-centered">Innovations</h2>
+      </div>
+      <div class="col-1-of-4 box u-slide-in-bottom">
+        <h2 class="subtitle has-text-centered">Awarding</h2>
+        <h1 class="heading-primary" id="millCounter"></h1>
+        <h2 class="subtitle has-text-centered">
+          Million <mat-icon>euro_sign</mat-icon>
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="imageOne">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <figure class="figure">
+        <img src="../../assets/res/images/2018-01-26 10.31.03.jpg" alt="" />
+        <figcaption class="figure__caption">
+          Industry 4.0 embraces Cyber-Physical System technologies in
+          manufacturing
+        </figcaption>
+      </figure>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+</div>

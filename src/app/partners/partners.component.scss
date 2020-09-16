@@ -1,0 +1,121 @@
+@import "../../assets/res/sass/abstracts/variables.scss";
+
+.container {
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
+  font-size: 1.92rem;
+  margin-top: 4.8rem;
+}
+
+// -------------------- Table ------------------------- //
+
+.logo {
+  max-height: 9rem;
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.main-title {
+  text-align: center;
+  padding-top: 3.2rem;
+  font-size: 4rem;
+}
+
+table {
+  width: fit-content;
+  border-collapse: collapse;
+  margin: 4.8rem auto;
+  border: none;
+}
+
+td {
+  padding: 3.2rem;
+  border: 1px solid #ccc;
+  width: fit-content;
+  min-width: 30rem;
+  height: 25rem;
+  text-align: center !important;
+
+  a {
+    display: inline-block;
+    text-align: center !important;
+    padding-top: 3.2rem;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+  }
+
+  b {
+    display: flex;
+    justify-content: center;
+  }
+
+  &:nth-of-type(odd):hover {
+    background-color: $color-primary;
+  }
+  &:nth-of-type(even):hover {
+    background-color: $color-green;
+  }
+  &#heading {
+    background-color: white;
+  }
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+table tr td:first-child {
+  border-left: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:last-child {
+  border-right: 0;
+}
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+
+  table {
+    width: 70%;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  td {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center !important;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    margin: 0 auto;
+    padding: 3.2rem 0;
+  }
+
+  table tr:first-child td {
+    border-top: 0;
+  }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+}

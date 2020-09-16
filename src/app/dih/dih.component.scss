@@ -1,0 +1,13 @@
+@import "../../assets/res/sass/abstracts/variables";
+@import "../../assets/res/sass/abstracts/mixins";
+
+.wrapper {
+  padding: 10rem 0;
+  padding-top: 5rem;
+
+  .opening {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}

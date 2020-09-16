@@ -1,0 +1,61 @@
+@import "../../assets/res/sass/abstracts/variables";
+@import "../../assets/res/sass/abstracts/mixins";
+
+.section-technologies {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .alphabet {
+    width: 80%;
+    align-self: center;
+    margin-top: 2rem;
+    margin-left: 0;
+
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      min-width: 3rem;
+      width: 3.84%;
+      padding: 0 1rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+
+      &:not(:last-child) {
+        border-right: 2px solid $color-grey-dark;
+      }
+
+      a {
+        &:link,
+        &:visited {
+          color: $color-blue;
+          font-size: 1.7rem;
+          font-weight: bold;
+        }
+
+        &:hover,
+        &:focus {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .heading-secondary {
+      text-transform: uppercase;
+      display: inline-block;
+      color: $color-black;
+      width: 10rem;
+      align-self: center;
+      text-align: center;
+      margin: 5rem 0;
+      border-bottom: 5px solid $color-teal;
+    }
+  }
+}

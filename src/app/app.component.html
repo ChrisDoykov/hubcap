@@ -1,0 +1,110 @@
+<div class="wrapper">
+  <app-header></app-header>
+  <section class="banner-line">
+    <img
+      class="banner-line__logo"
+      *ngIf="desktop || tablet"
+      src="../assets/res/images/logo_hubcap.webp"
+      alt="Hubcap Logo"
+      onerror="this.onerror=null;
+          this.src='../assets/res/images/logo_hubcap.png'"
+    />
+
+    <div class="banner-line__heading">
+      <p>
+        Digital Innovation HUBS and Collaborative Platform for Cyber-Physical
+        Systems
+      </p>
+    </div>
+
+    <img
+      class="banner-line__logo"
+      *ngIf="mobile"
+      id="vertical"
+      src="../assets/res/images/logo_vertical.webp"
+      alt="Hubcap Logo"
+      onerror="this.onerror=null;
+          this.src='../assets/res/images/logo_vertical.png'"
+    />
+  </section>
+  <app-navigation></app-navigation>
+  <section class="hero is-large" id="hero">
+    <swiper
+      [config]="config"
+      *ngIf="webp && (desktop || tablet)"
+      class="hero__carousel"
+    >
+      <img
+        *ngFor="let image of images"
+        src="{{ image }}"
+        alt=""
+        class="hero__carousel__content"
+      />
+    </swiper>
+    <swiper [config]="config" *ngIf="webp && mobile" class="hero__carousel">
+      <img
+        *ngFor="let image of imagesMobile"
+        src="{{ image }}"
+        alt=""
+        class="hero__carousel__content"
+      />
+    </swiper>
+    <swiper
+      [config]="config"
+      *ngIf="!webp && (desktop || tablet)"
+      class="hero__carousel"
+    >
+      <img
+        *ngFor="let image of fallbackImages"
+        src="{{ image }}"
+        alt=""
+        class="hero__carousel__content"
+      />
+    </swiper>
+    <swiper [config]="config" *ngIf="!webp && mobile" class="hero__carousel">
+      <img
+        *ngFor="let image of fallbacksMobile"
+        src="{{ image }}"
+        alt=""
+        class="hero__carousel__content"
+      />
+    </swiper>
+
+    <div class="hero__body">
+      <div class="hero__body__container u-center-text">
+        <h1 class="hero__body__title" id="hero-title">
+          Join us in the Cyber-Physical Systems revolution!
+        </h1>
+      </div>
+    </div>
+  </section>
+  <!-- <section
+    *ngIf="!webp"
+    style="
+      background: url('../../assets/res/images/grey_bg.jpg') no-repeat center
+        center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    "
+    class="hero is-large"
+    id="hero"
+  >
+    <div class="hero__body">
+      <div class="hero__body__container u-center-text">
+        <h1 class="hero__body__title" id="hero-title">
+          Join us in the Cyber-Physical Systems revolution!
+        </h1>
+      </div>
+    </div>
+  </section> -->
+
+  <div class="main">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+  <app-footer></app-footer>
+  <button id="backToTop" title="Go to top" (click)="topFunction()">
+    <mat-icon>arrow_upward</mat-icon>
+  </button>
+</div>

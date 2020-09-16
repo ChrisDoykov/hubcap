@@ -1,0 +1,177 @@
+<div class="container">
+  <!-- <h1 class="heading-primary main-title has-text-centered">Open Calls</h1> -->
+
+  <div class="intro u-justify-text u-margin-bottom-big">
+    <!-- <h2 class="title  has-text-centered">
+      “We are looking for innovative & disruptive SMEs”
+    </h2> -->
+    <h2
+      class="heading-secondary u-is-black-color u-center-text u-margin-bottom-small"
+    >
+      Join us in the Cyber-Physical Systems revolution!
+    </h2>
+    <h3 class="subtitle subtitle--bold u-center-text u-margin-bottom-medium">
+      HUBCAP has a €3.2 million equity-free fund for SMEs to experiment and
+      innovate with digital technologies.
+    </h3>
+    <p class="paragraph paragraph--big">
+      The HUBCAP open calls aim to upgrade the capacity of SMEs to leverage
+      Model-Based Design (MBD) technology in Cyber Physical Systems (CPS) and
+      ultimately deliver new products and services in multiple application
+      domains. The programme provides services and technical expertise by seven
+      Digital Innovation Hubs, and offers financial support for European SMEs to
+      experiment in highly innovative, cross-border experiments.
+    </p>
+    <br />
+    <p class="paragraph paragraph--big">
+      HUBCAP will organize three types of Open Calls throughout 2020-2022 to
+      attract, select and fund the most motivated SMEs to generate CPS MBD
+      products, services, tools and business models with strong market potential
+      in the multiple HUBCAP sectors/domains.
+    </p>
+  </div>
+
+  <div class="row boxes u-center-text">
+    <div class="col-1-of-3 u-center-text" id="first">
+      <h2 class="subtitle">WHO?</h2>
+      <div class="content">
+        <p class="paragraph paragraph--big">
+          European SMEs ready to be part of HUBCAP Ecosystem:
+        </p>
+
+        <hr class="boxes__hr" />
+
+        <ul>
+          <li class="u-margin-bottom-small">
+            1) &nbsp; Providers - Innovative SMEs offering MBD CPS technologies
+          </li>
+          <li>
+            2) &nbsp; Users - SMEs from multiple domains looking to experiment
+            and co-create with new MBD CPS technologies
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-1-of-3 u-center-text" id="second">
+      <h2 class="subtitle">WHAT?</h2>
+      <div class="content">
+        <p class="paragraph paragraph--big">€ 3 Million equity-free funding</p>
+        <hr class="boxes__hr" />
+        <p class="paragraph paragraph--big">Free access to DIHs network</p>
+        <hr class="boxes__hr" />
+        <p class="paragraph paragraph--big">
+          Free tailor-made technical support and specialist expertise in CPS
+          engineering
+        </p>
+        <hr class="boxes__hr" />
+        <p class="paragraph paragraph--big">
+          Open collaboration platform for co-creation of products and services
+        </p>
+      </div>
+    </div>
+    <div class="col-1-of-3 u-center-text" id="third">
+      <h2 class="subtitle">HOW?</h2>
+      <div class="content">
+        <p class="paragraph paragraph--big">
+          Applying to HUBCAP open calls is done via the
+          <a
+            href="https://www.f6s.com/hubcap"
+            target="_blank"
+            rel="noopener noreferrer"
+            >F6S platform</a
+          >.
+        </p>
+        <hr class="boxes__hr" />
+      </div>
+    </div>
+  </div>
+
+  <div class="row icons">
+    <div class="col-1-of-3 u-justify-text">
+      <img class="icon" src="../../assets/res/images/pull.png" />
+      <h2 class="subtitle" id="pullHeading">CALL #1 - PULL</h2>
+      <p class="paragraph paragraph--big u-margin-bottom-medium">
+        Does your SME/midcap provide existing and marketable CPS & MBD tools and
+        services? Integrate your asset in the HUBCAP platform and find potential
+        new customers and collaborators in the subsequent open calls.
+      </p>
+      <h3 class="is-bold has-text-centered">1000€</h3>
+      <span class="paragraph paragraph--big u-margin-bottom-none u-center-text"
+        >per SME</span
+      >
+      <a class="button button--primary" (click)="applyToCall(0)"> APPLY NOW </a>
+    </div>
+
+    <div class="col-1-of-3 u-justify-text">
+      <img class="icon" src="../../assets/res/images/experiment.png" />
+      <h2 class="subtitle" id="experimentHeading">CALL #2 - Experiment</h2>
+      <p class="paragraph paragraph--big u-margin-bottom-medium">
+        Is your SME/midcap looking to embrace digital innovation? Connect with a
+        supplier from the HUBCAP platform and receive tailormade support and
+        services to co-create and experiment with CPS & MBD tools.
+      </p>
+      <h3 class="has-text-centered">
+        <span class="is-bold">30,000€</span> to
+        <span class="is-bold">75,000€</span>
+      </h3>
+      <span class="paragraph paragraph--big u-margin-bottom-none u-center-text"
+        >per consortium of 2 SMEs</span
+      >
+      <a
+        *ngIf="desktop || tablet"
+        class="button button--experiment"
+        (click)="applyToCall(1)"
+      >
+        APPLY NOW
+      </a>
+      <a
+        *ngIf="mobile"
+        class="button button--experiment"
+        (click)="applyToCall(1)"
+      >
+        APPLY NOW
+      </a>
+    </div>
+    <div class="col-1-of-3 u-justify-text">
+      <img class="icon" src="../../assets/res/images/innovate.png" />
+      <h2 class="subtitle" id="innovateHeading">CALL #3 - Innovate</h2>
+      <p class="paragraph paragraph--big u-margin-bottom-medium">
+        Develop and implement highly innovative and challenging CPS & MBD
+        experiments. Create new products and services and benefit from business
+        and tecnical support from the HUBCAP experts for highest impact.
+      </p>
+      <h3 class="has-text-centered">
+        Up to <span class="is-bold">200,000€</span>
+      </h3>
+      <span class="paragraph paragraph--big u-margin-bottom-none u-center-text"
+        >per consortium of 2-3 SMEs</span
+      >
+      <a
+        *ngIf="desktop || tablet"
+        class="button button--innovate"
+        (click)="applyToCall(2)"
+      >
+        APPLY NOW
+      </a>
+      <a
+        *ngIf="mobile"
+        class="button button--innovate"
+        (click)="applyToCall(2)"
+      >
+        APPLY NOW
+      </a>
+    </div>
+  </div>
+
+  <div class="downloads u-center-text">
+    <div class="row u-center-text">
+      <a
+        class="button button--download"
+        href="../../assets/res/files/HUBCAP_OPENCALLS.pdf"
+        download
+        >Download our Open Calls flyer</a
+      >
+    </div>
+  </div>
+</div>

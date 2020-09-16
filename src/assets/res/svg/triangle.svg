@@ -1,0 +1,6 @@
+<svg  height="160px" preserveAspectRatio="none">
+  <!-- A triangle -->
+  <text y="20">SVG Test</text>
+  <path d="M 10,20 L 200,20 L 13,150 z" fill="rgb(7,163,152)" />
+  <path d="M 20,20 L 400,20 L 13,100 z" fill="red" />
+</svg>

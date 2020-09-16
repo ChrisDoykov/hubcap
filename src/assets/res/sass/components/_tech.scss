@@ -1,0 +1,103 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  max-width: 120rem;
+  align-self: center;
+
+  &:not(:last-child) {
+    margin-bottom: 10rem;
+    border-bottom: 3px solid $color-grey-light-2;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 3rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__bottom {
+  }
+
+  &__image {
+    width: 33.333333%;
+    height: 27rem;
+
+    &__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      @include respond(tab-port) {
+        object-fit: contain;
+      }
+    }
+
+    @include respond(tab-port) {
+      align-self: center;
+      width: 100%;
+    }
+  }
+
+  &__basic-info {
+    max-width: 66.666666%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+
+    @include respond(tab-port) {
+      margin-left: 0;
+      margin-bottom: 0rem;
+      max-width: 100%;
+    }
+
+    &__heading {
+      color: $color-black;
+      margin-bottom: 1rem;
+
+      @include respond(tab-port) {
+        margin-top: 2rem;
+      }
+    }
+
+    &__line {
+      color: $color-black;
+      font-size: 1.6rem;
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      .subtitle {
+        font-size: 1.8rem;
+        margin-right: 1rem;
+        @include respond(tab-port) {
+          font-size: 2.3rem;
+        }
+      }
+    }
+
+    &__link {
+    }
+  }
+
+  &__description {
+    @include respond(tab-port) {
+      font-size: 2.1rem;
+      text-align: justify;
+    }
+  }
+}

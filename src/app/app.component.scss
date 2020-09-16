@@ -1,0 +1,110 @@
+@import "../assets/res/sass/abstracts/variables";
+@import "../assets/res/sass/abstracts/mixins";
+
+app-header {
+  background-color: $color-primary;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 6rem;
+}
+
+.main {
+  max-width: 100%;
+  min-height: 50rem;
+}
+
+.banner-line {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 2rem 7rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $color-white;
+  color: $color-black;
+
+  &__logo {
+    height: 12rem;
+    width: auto;
+  }
+
+  &__heading p {
+    color: $color-black;
+    text-align: left;
+    font-weight: bold;
+    font-size: 3.5rem;
+    width: auto;
+    padding-left: 5rem;
+
+    @include respond(tab-land) {
+      padding-left: 0;
+    }
+  }
+
+  #vertical {
+    min-height: 35rem;
+
+    @include respond(phone) {
+      min-height: 30rem;
+      // max-height: 30rem;
+      min-width: 30rem;
+      // max-width: 30rem;
+      // width: 30rem;
+    }
+  }
+
+  @include respond(tab-land) {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    div {
+      margin: 4rem;
+    }
+    img {
+      min-width: 50rem;
+    }
+    p,
+    h2 {
+      text-align: center;
+    }
+  }
+  @include respond(phone) {
+    padding: 2rem 0;
+
+    img {
+      min-width: 300px;
+      max-height: 100px;
+    }
+    p,
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+#backToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 2rem; /* Place the button at the bottom of the page */
+  right: 4.8rem; /* Place the button 30px from the right */
+  z-index: 9999; /* Make sure it does not overlap */
+  outline: none; /* Remove outline */
+  background-color: $color-white;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1.5rem;
+  color: $color-black;
+  border: 3px solid $color-black; /* Add an outline to the button */
+  border-radius: 50%; /* Make it a circle */
+}
+
+#backToTop:hover {
+  background-color: $color-white; /* Add a dark-grey background on hover */
+  border-color: $color-blue;
+}

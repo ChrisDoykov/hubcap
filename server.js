@@ -27,18 +27,26 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + "/dist/hubcap"));
 
 app.post("/subscribe", (req, res) => {
-  // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   const msg = {
-    to: req.body.email,
-    // from: "", // To be filled in with Hubcap official email
-    subject: "Thanks for your interest in HUBCAP!",
-    text: "", // Add content to be sent to users
+    to: "newsletter@hubcap.eu",
+    from: "	hubcapnewsletterfwd@gmail.com",
+    subject: "New newsletter subscription!",
+    text: `User' email is: ${req.body.email}`,
   };
-  sgMail.send(msg);
+  sgMail
+    .send(msg)
+    .then((response) => {
+      return res.send({ message: "Success" });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
 
-  return res.send({ message: "Success" });
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname + "/dist/hubcap/index.html"));
 });
 
 // Start the app by listening on the default Heroku port

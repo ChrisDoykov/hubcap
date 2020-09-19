@@ -138,18 +138,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     this.webp = this.browserList.includes(this.browser) ? false : true;
 
-    let services = document.querySelectorAll(".service.column");
-
-    if (window.innerWidth > 2200) {
-      services.forEach((service) => {
-        service.classList.add("is-one-fifth-fullhd");
-      });
-    } else {
-      services.forEach((service) => {
-        service.classList.remove("is-one-fifth-fullhd");
-      });
-    }
-
     const $modalButtons = Array.prototype.slice.call(
       document.querySelectorAll(".modal-button"),
       0
@@ -213,6 +201,8 @@ export class HomeComponent implements OnInit, OnDestroy {
       .top;
 
     if (positionFromTop - this.windowHeight <= 0 && !this.animationHasRan) {
+      this.animationHasRan = true;
+
       this.blueText.nativeElement.classList.add("hovered");
       setTimeout(() => {
         this.blueText.nativeElement.classList.remove("hovered");
@@ -222,7 +212,6 @@ export class HomeComponent implements OnInit, OnDestroy {
           this.redText.nativeElement.classList.add("hovered");
           setTimeout(() => {
             this.redText.nativeElement.classList.remove("hovered");
-            this.animationHasRan = true;
           }, 1000);
         }, 1000);
       }, 1000);

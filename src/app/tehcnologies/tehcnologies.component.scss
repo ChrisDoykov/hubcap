@@ -27,12 +27,9 @@
       }
 
       a {
-        &:link,
-        &:visited {
-          color: $color-blue;
-          font-size: 1.7rem;
-          font-weight: bold;
-        }
+        color: $color-blue;
+        font-size: 1.7rem;
+        font-weight: bold;
 
         &:hover,
         &:focus {

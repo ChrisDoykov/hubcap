@@ -7,32 +7,32 @@
     <h1 class="heading-primary">Technological Assets List</h1>
   </div>
   <ul class="alphabet">
-    <li><a href="technologies#a">a</a></li>
-    <li><a href="technologies#b">b</a></li>
-    <li><a href="technologies#c">c</a></li>
-    <li><a href="technologies#d">d</a></li>
-    <li><a href="technologies#e">e</a></li>
-    <li><a href="technologies#f">f</a></li>
-    <li><a href="technologies#g">g</a></li>
-    <li><a href="technologies#h">h</a></li>
-    <li><a href="technologies#i">i</a></li>
-    <li><a href="technologies#j">j</a></li>
-    <li><a href="technologies#k">k</a></li>
-    <li><a href="technologies#l">l</a></li>
-    <li><a href="technologies#m">m</a></li>
-    <li><a href="technologies#n">n</a></li>
-    <li><a href="technologies#o">o</a></li>
-    <li><a href="technologies#p">p</a></li>
-    <li><a href="technologies#q">q</a></li>
-    <li><a href="technologies#r">r</a></li>
-    <li><a href="technologies#s">s</a></li>
-    <li><a href="technologies#t">t</a></li>
-    <li><a href="technologies#u">u</a></li>
-    <li><a href="technologies#v">v</a></li>
-    <li><a href="technologies#w">w</a></li>
-    <li><a href="technologies#x">x</a></li>
-    <li><a href="technologies#y">y</a></li>
-    <li><a href="technologies#z">z</a></li>
+    <li><a (click)="scrollIntoView('a')">a</a></li>
+    <li><a (click)="scrollIntoView('b')">b</a></li>
+    <li><a (click)="scrollIntoView('c')">c</a></li>
+    <li><a (click)="scrollIntoView('d')">d</a></li>
+    <li><a (click)="scrollIntoView('e')">e</a></li>
+    <li><a (click)="scrollIntoView('f')">f</a></li>
+    <li><a (click)="scrollIntoView('g')">g</a></li>
+    <li><a (click)="scrollIntoView('h')">h</a></li>
+    <li><a (click)="scrollIntoView('i')">i</a></li>
+    <li><a (click)="scrollIntoView('j')">j</a></li>
+    <li><a (click)="scrollIntoView('k')">k</a></li>
+    <li><a (click)="scrollIntoView('l')">l</a></li>
+    <li><a (click)="scrollIntoView('m')">m</a></li>
+    <li><a (click)="scrollIntoView('n')">n</a></li>
+    <li><a (click)="scrollIntoView('o')">o</a></li>
+    <li><a (click)="scrollIntoView('p')">p</a></li>
+    <li><a (click)="scrollIntoView('q')">q</a></li>
+    <li><a (click)="scrollIntoView('r')">r</a></li>
+    <li><a (click)="scrollIntoView('s')">s</a></li>
+    <li><a (click)="scrollIntoView('t')">t</a></li>
+    <li><a (click)="scrollIntoView('u')">u</a></li>
+    <li><a (click)="scrollIntoView('v')">v</a></li>
+    <li><a (click)="scrollIntoView('w')">w</a></li>
+    <li><a (click)="scrollIntoView('x')">x</a></li>
+    <li><a (click)="scrollIntoView('y')">y</a></li>
+    <li><a (click)="scrollIntoView('z')">z</a></li>
   </ul>
 
   <div *ngFor="let letter of letters">
@@ -54,17 +54,47 @@
             </h3>
             <p class="tech__basic-info__line">
               <span class="subtitle subtitle--bold subtitle--small"
-                >Website:
+                >Company:
               </span>
               <a
                 href="http://{{ tech.url }}"
                 target="_blank"
                 class="tech__basic-info__link"
                 rel="noopener noreferrer"
-                >{{ tech.url }}</a
+                >{{ tech.company_name }}</a
               >
             </p>
-            <p class="tech__basic-info__line">
+
+            <p class="tech__basic-info__line" *ngIf="tech.supported_platforms">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Supported platforms:
+              </span>
+              <span *ngFor="let platform of tech.supported_platforms"
+                >{{ platform }}&nbsp;</span
+              >
+            </p>
+            <p class="tech__basic-info__line" *ngIf="tech.modelling_notations">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Modelling notation(s):
+              </span>
+              <span *ngFor="let notation of tech.modelling_notations"
+                >{{ notation }}&nbsp;</span
+              >
+            </p>
+            <p class="tech__basic-info__line" *ngIf="tech.related_tools">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Related tools:
+              </span>
+              <span *ngFor="let tool of tech.related_tools"
+                ><a
+                  href="{{ tool.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ tool.name }}</a
+                >&nbsp;</span
+              >
+            </p>
+            <p class="tech__basic-info__line" *ngIf="tech.domains">
               <span class="subtitle subtitle--bold subtitle--small"
                 >Applicable domains:
               </span>
@@ -72,9 +102,21 @@
                 >{{ domain }}&nbsp;</span
               >
             </p>
+            <p class="tech__basic-info__line" *ngIf="tech.modelling_lang_tool">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Modelling language/tool:
+              </span>
+              <span>{{ tech.modelling_lang_tool }}</span>
+            </p>
+            <p class="tech__basic-info__line" *ngIf="tech.domain">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Domain:
+              </span>
+              <span>{{ tech.domain }}</span>
+            </p>
             <p class="tech__basic-info__line">
               <span class="subtitle subtitle--bold subtitle--small"
-                >License information:
+                >License type:
               </span>
               <a
                 href="http://{{ tech.license_info_url }}"

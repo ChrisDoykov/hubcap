@@ -8,7 +8,11 @@
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 10rem;
-  padding: 2rem;
+  padding: 2rem 0;
+
+  h2.subtitle.u-center-text {
+    padding: 0 2rem;
+  }
 
   &__intro {
     display: flex;

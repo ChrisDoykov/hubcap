@@ -17,7 +17,7 @@
     flex-direction: column;
   }
   @include respond(phone) {
-    padding: 5rem 3rem;
+    padding: 5rem 0;
     padding-bottom: 0;
   }
 

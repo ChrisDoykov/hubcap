@@ -85,6 +85,7 @@ export class TehcnologiesComponent implements OnInit {
       modelling_lang_tool: "Modelling language/tool",
       license_info_url: "license-info.com",
       download_link: "https://thepirate-bay.org/1/",
+      contact_url: "example.com/contact",
     },
     {
       type: "tool",
@@ -115,6 +116,7 @@ export class TehcnologiesComponent implements OnInit {
       license_info_url:
         "https://github.com/INTO-CPS-Association/maestro/blob/development/LICENSE",
       download_link: "https://into-cps-association.github.io/download/",
+      email: "into-cps@mail.com",
     },
   ];
 

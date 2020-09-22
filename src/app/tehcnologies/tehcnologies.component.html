@@ -140,6 +140,25 @@
                 >{{ tech.download_link }}</a
               >
             </p>
+            <p class="tech__basic-info__line" *ngIf="tech.contact_url">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Contact:
+              </span>
+              <a
+                href="http://{{ tech.contact_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ tech.contact_url }}</a
+              >
+            </p>
+            <p class="tech__basic-info__line" *ngIf="tech.email">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Contact:
+              </span>
+              <a href="mailto:{{ tech.email }}" rel="noopener noreferrer">{{
+                tech.email
+              }}</a>
+            </p>
           </div>
         </div>
         <div class="tech__bottom">

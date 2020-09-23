@@ -38,10 +38,11 @@ app.post("/subscribe", (req, res) => {
   sgMail
     .send(msg)
     .then((response) => {
-      return res.send({ message: "Success" });
+      return res.send({ status: 200, message: "Success" });
     })
     .catch((err) => {
       console.log(err);
+      return res.send({ status: 500, message: "Failure" });
     });
 });
 

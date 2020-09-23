@@ -36,30 +36,29 @@
       <h2 class="subtitle subtitle--small subtitle--bold subtitle--black">
         We'll keep you posted:
       </h2>
-      <form
-        method="POST"
-        class="newsLetter-form"
-        (submit)="handleNewsletter($event)"
-      >
+      <form class="newsLetter-form" (submit)="submitEmail()">
         <div class="control has-icons-left">
           <input
-            class="input is-flat"
+            type="email"
             placeholder="Email"
             required
-            type="email"
-            value
+            id="emailFooter"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             name="email"
-            id="userMail"
+            [(ngModel)]="email"
+            class="input is-flat"
           />
           <span class="icon is-small is-left">
             <i class="fa fa-envelope" aria-hidden="true"></i>
           </span>
           <button
-            *ngIf="desktop || tablet"
-            class="button is-primary"
+            id="btn-send"
             type="submit"
+            *ngIf="desktop || tablet"
+            class="button is-blue"
           >
-            Subscribe
+            <span id="send" *ngIf="!emailSent">Subscribe</span>
+            <i id="check" *ngIf="emailSent" class="fas fa-check"></i>
           </button>
         </div>
 
@@ -69,12 +68,37 @@
             type="checkbox"
             name="consent"
             id="consentCb"
+            [(ngModel)]="consent"
             required
           />
           I would like to sign up to receive email contacts about HUBCAP
         </label>
-        <button *ngIf="mobile" class="button is-primary" type="submit">
-          Subscribe
+        <div class="notification is-danger" *ngIf="notificationConsent">
+          <button class="delete" (click)="notificationConsent = false">
+            <i class="fas fa-times"></i>
+          </button>
+          Please tick the box in order to consent to receiving our newsletter!
+        </div>
+        <div class="notification is-danger" *ngIf="notificationEmail">
+          <button class="delete" (click)="notificationEmail = false">
+            <i class="fas fa-times"></i>
+          </button>
+          Please fill in your email!
+        </div>
+        <div class="notification is-danger" *ngIf="emailFailed">
+          <button class="delete" (click)="emailFailed = false">
+            <i class="fas fa-times"></i>
+          </button>
+          Something went wrong! Please try again later.
+        </div>
+        <button
+          id="btn-send"
+          type="submit"
+          *ngIf="mobile"
+          class="button is-blue"
+        >
+          <span id="send" *ngIf="!emailSent">Subscribe</span>
+          <i id="check" *ngIf="emailSent" class="fas fa-check"></i>
         </button>
       </form>
     </div>

@@ -26,9 +26,6 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {}
 
   submitEmail() {
-    console.log(
-      (document.getElementById("emailFooter") as HTMLInputElement).validity
-    );
     if (
       this.email === "" ||
       this.email.trim() === "" ||

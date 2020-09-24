@@ -26,13 +26,25 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {}
 
   submitEmail() {
-    if (this.email === "" || this.email.trim() === "") {
+    console.log(
+      (document.getElementById("emailFooter") as HTMLInputElement).validity
+    );
+    if (
+      this.email === "" ||
+      this.email.trim() === "" ||
+      !(document.getElementById("emailFooter") as HTMLInputElement).validity
+        .valid
+    ) {
       this.notificationEmail = true;
       return;
+    } else {
+      this.notificationEmail = false;
     }
     if (!this.consent) {
       this.notificationConsent = true;
       return;
+    } else {
+      this.notificationConsent = false;
     }
 
     const data = {

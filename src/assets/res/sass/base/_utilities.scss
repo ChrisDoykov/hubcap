@@ -161,12 +161,12 @@
 
 .u-slide-in-left {
   animation-name: moveInLeft;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-out;
 }
 
 .u-slide-in-right {
-  animation: moveInRight 1s ease-out;
+  animation: moveInRight 0.5s ease-out;
 }
 
 .u-slide-in-bottom {
@@ -174,7 +174,7 @@
 }
 
 .u-fade-in {
-  animation: fadeIn 1.2s ease-out;
+  animation: fadeIn 0.7s ease-out;
 }
 
 .u-slide-in-top {

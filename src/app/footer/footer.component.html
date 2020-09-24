@@ -58,7 +58,7 @@
             class="button is-blue"
           >
             <span id="send" *ngIf="!emailSent">Subscribe</span>
-            <i id="check" *ngIf="emailSent" class="fas fa-check"></i>
+            <i id="check" *ngIf="emailSent" class="fas fa-check u-fade-in"></i>
           </button>
         </div>
 
@@ -73,19 +73,25 @@
           />
           I would like to sign up to receive email contacts about HUBCAP
         </label>
-        <div class="notification is-danger" *ngIf="notificationConsent">
+        <div
+          class="notification is-danger u-slide-in-left"
+          *ngIf="notificationConsent"
+        >
           <button class="delete" (click)="notificationConsent = false">
             <i class="fas fa-times"></i>
           </button>
           Please tick the box in order to consent to receiving our newsletter!
         </div>
-        <div class="notification is-danger" *ngIf="notificationEmail">
+        <div
+          class="notification is-danger u-slide-in-left"
+          *ngIf="notificationEmail"
+        >
           <button class="delete" (click)="notificationEmail = false">
             <i class="fas fa-times"></i>
           </button>
           Please fill in your email!
         </div>
-        <div class="notification is-danger" *ngIf="emailFailed">
+        <div class="notification is-danger u-slide-in-left" *ngIf="emailFailed">
           <button class="delete" (click)="emailFailed = false">
             <i class="fas fa-times"></i>
           </button>
@@ -98,7 +104,7 @@
           class="button is-blue"
         >
           <span id="send" *ngIf="!emailSent">Subscribe</span>
-          <i id="check" *ngIf="emailSent" class="fas fa-check"></i>
+          <i id="check" *ngIf="emailSent" class="fas fa-check u-fade-in"></i>
         </button>
       </form>
     </div>

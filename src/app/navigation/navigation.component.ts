@@ -27,13 +27,21 @@ export class NavigationComponent implements OnInit {
   navbar;
   nav;
   header;
-  stickyMobile;
   logoIsVisible;
   banner;
-  stickyDesktop;
+  sticky;
   navDrop;
 
+  width: number;
+
   ngOnInit(): void {
+    this.navbar = document.getElementsByTagName("app-navigation")[0];
+    this.nav = document.getElementsByClassName("navbar")[0];
+    this.navDrop = document.getElementById("navbarDropdown");
+    this.banner = document.getElementsByClassName("banner-line")[0];
+    this.header = document.getElementsByTagName("app-header")[0];
+    this.sticky = this.nav.parentNode.offsetTop;
+    this.onResize();
     const $navbarBurgers = Array.prototype.slice.call(
       document.querySelectorAll(".navbar-burger"),
       0
@@ -55,30 +63,17 @@ export class NavigationComponent implements OnInit {
       });
     }
 
-    const $links = Array.prototype.slice.call(
-      document.querySelectorAll(".navbar-link"),
-      0
-    );
-
     const $dropdowns = Array.prototype.slice.call(
       document.querySelectorAll(".has-dropdown"),
       0
     );
 
-    $links.forEach((link, index) => {
-      if (!this.desktop) {
-        $dropdowns.forEach((dropdown) => {
-          dropdown.classList.remove("is-hoverable");
-        });
-        link.addEventListener("click", () => {
-          $dropdowns[index].classList.toggle("is-active");
-        });
-      }
-    });
-
     this.router.events.subscribe((val) => {
       // see also
-      if (val instanceof NavigationEnd && (this.mobile || this.tablet)) {
+      if (
+        val instanceof NavigationEnd &&
+        (this.mobile || this.tablet || (this.desktop && this.width < 1025))
+      ) {
         $navbarBurgers.forEach((el) => {
           // Get the target from the "data-target" attribute
           const target = el.dataset.target;
@@ -100,65 +95,52 @@ export class NavigationComponent implements OnInit {
         window.scrollTo(0, 220);
       }
     });
+  }
 
-    this.navbar = document.getElementsByTagName("app-navigation")[0];
-    this.nav = document.getElementsByClassName("navbar")[0];
-    this.navDrop = document.getElementById("navbarDropdown");
-    this.banner = document.getElementsByClassName("banner-line")[0];
-    this.header = document.getElementsByTagName("app-header")[0];
-    this.stickyMobile = this.nav.offsetTop;
-    if (this.chrome) {
-      if (this.desktop) {
-        this.stickyDesktop = this.stickyMobile * 1.05;
-      } else {
-        this.stickyDesktop = this.stickyMobile * 1.05;
+  onScroll() {
+    if (window.pageYOffset >= this.sticky) {
+      this.nav.classList.add("is-fixed-top");
+      document
+        .getElementsByTagName("html")[0]
+        .classList.add("has-navbar-fixed-top");
+      this.logoIsVisible = true;
+    } else {
+      this.nav.classList.remove("is-fixed-top");
+      document
+        .getElementsByTagName("html")[0]
+        .classList.remove("has-navbar-fixed-top");
+      this.logoIsVisible = false;
+      this.nav.style.backgroundColor = "#FBA200";
+      this.navDrop.style.backgroundColor = "#FBA200";
+      this.nav.style.borderBottom = "none";
+    }
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
+    this.sticky = this.nav.parentNode.offsetTop;
+
+    this.onScroll();
+
+    const $links = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-link"),
+      0
+    );
+
+    const $dropdowns = Array.prototype.slice.call(
+      document.querySelectorAll(".has-dropdown"),
+      0
+    );
+
+    $links.forEach((link, index) => {
+      if (!this.desktop || (this.desktop && this.width <= 1025)) {
+        $dropdowns.forEach((dropdown) => {
+          dropdown.classList.remove("is-hoverable");
+        });
+        link.addEventListener("click", () => {
+          $dropdowns[index].classList.toggle("is-active");
+        });
       }
-    } else if (this.firefox) {
-      this.stickyDesktop = this.stickyMobile * 1.32;
-    } else {
-      this.stickyDesktop = this.stickyMobile * 1.35;
-    }
-
-    if (this.desktop || this.tablet) {
-      window.onscroll = () => {
-        if (window.pageYOffset >= this.stickyDesktop) {
-          this.nav.classList.add("is-fixed-top");
-          document
-            .getElementsByTagName("html")[0]
-            .classList.add("has-navbar-fixed-top");
-          this.logoIsVisible = true;
-          // this.nav.style.backgroundColor = "white";
-          // this.nav.style.borderBottom = "2px solid #0680C3";
-        } else {
-          this.nav.classList.remove("is-fixed-top");
-          document
-            .getElementsByTagName("html")[0]
-            .classList.remove("has-navbar-fixed-top");
-          this.logoIsVisible = false;
-          this.nav.style.backgroundColor = "#FBA200";
-          this.navDrop.style.backgroundColor = "#FBA200";
-          this.nav.style.borderBottom = "none";
-        }
-      };
-    } else {
-      window.onscroll = () => {
-        if (window.pageYOffset >= this.stickyMobile) {
-          this.nav.classList.add("is-fixed-top");
-          document
-            .getElementsByTagName("html")[0]
-            .classList.add("has-navbar-fixed-top");
-          this.logoIsVisible = true;
-          // this.nav.style.borderBottom = "2px solid #0680C3";
-        } else {
-          this.nav.classList.remove("is-fixed-top");
-          document
-            .getElementsByTagName("html")[0]
-            .classList.remove("has-navbar-fixed-top");
-          this.logoIsVisible = false;
-          this.navDrop.style.backgroundColor = "#FBA200";
-          this.nav.style.borderBottom = "none";
-        }
-      };
-    }
+    });
   }
 }

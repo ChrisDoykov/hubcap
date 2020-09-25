@@ -22,8 +22,11 @@ export class FooterComponent implements OnInit {
   notificationEmail = false;
   emailSent = false;
   emailFailed = false;
+  width: number;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.onResize();
+  }
 
   submitEmail() {
     if (
@@ -70,5 +73,9 @@ export class FooterComponent implements OnInit {
       );
 
     this.email = "";
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
   }
 }

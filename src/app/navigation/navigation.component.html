@@ -1,4 +1,8 @@
-<div class="wrapper-nav">
+<div
+  class="wrapper-nav"
+  (window:resize)="onResize()"
+  (window:scroll)="onScroll()"
+>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item logo" href="/">

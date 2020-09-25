@@ -1,4 +1,4 @@
-<section class="footer">
+<section class="footer" (window:resize)="onResize()">
   <div class="columns">
     <div class="eu column is-one-third">
       <img src="../../assets/res/images/eu-flag.jpg" alt="" />
@@ -54,7 +54,7 @@
           <button
             id="btn-send"
             type="submit"
-            *ngIf="desktop || tablet"
+            *ngIf="width >= 620"
             class="button is-blue"
           >
             <span id="send" *ngIf="!emailSent">Subscribe</span>
@@ -71,7 +71,8 @@
             [(ngModel)]="consent"
             required
           />
-          I would like to sign up to receive email contacts about HUBCAP
+          I would like to sign up to receive news and updates about HUBCAP via
+          email.
         </label>
         <div
           class="notification is-danger u-slide-in-left"
@@ -100,7 +101,7 @@
         <button
           id="btn-send"
           type="submit"
-          *ngIf="mobile"
+          *ngIf="width < 620"
           class="button is-blue"
         >
           <span id="send" *ngIf="!emailSent">Subscribe</span>

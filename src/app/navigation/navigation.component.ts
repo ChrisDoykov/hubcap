@@ -48,20 +48,20 @@ export class NavigationComponent implements OnInit {
     );
 
     // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-      // Add a click event on each of them
-      $navbarBurgers.forEach((el) => {
-        el.addEventListener("click", () => {
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
+    // if ($navbarBurgers.length > 0) {
+    //   // Add a click event on each of them
+    //   $navbarBurgers.forEach((el) => {
+    //     el.addEventListener("click", () => {
+    //       // Get the target from the "data-target" attribute
+    //       const target = el.dataset.target;
+    //       const $target = document.getElementById(target);
 
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle("is-active");
-          $target.classList.toggle("is-active");
-        });
-      });
-    }
+    //       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    //       el.classList.toggle("is-active");
+    //       $target.classList.toggle("is-active");
+    //     });
+    //   });
+    // }
 
     const $dropdowns = Array.prototype.slice.call(
       document.querySelectorAll(".has-dropdown"),
@@ -142,5 +142,25 @@ export class NavigationComponent implements OnInit {
         });
       }
     });
+
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
+    );
+
+    if ($navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+    }
   }
 }

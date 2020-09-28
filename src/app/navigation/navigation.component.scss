@@ -12,7 +12,7 @@ nav {
     &:not(.navbar-link) {
       padding: 0 2rem;
 
-      @include respond(tab-port) {
+      @media screen and (max-width: 1025px) {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
       }
@@ -21,7 +21,7 @@ nav {
     &.navbar-link {
       padding-left: 2rem;
 
-      @include respond(tab-port) {
+      @media screen and (max-width: 1025px) {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
       }

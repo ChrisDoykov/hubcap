@@ -32,6 +32,9 @@ export class NavigationComponent implements OnInit {
   sticky;
   navDrop;
 
+  burgerELadded = false;
+  dropDownsELadded = false;
+
   width: number;
 
   ngOnInit(): void {
@@ -47,22 +50,6 @@ export class NavigationComponent implements OnInit {
       0
     );
 
-    // Check if there are any navbar burgers
-    // if ($navbarBurgers.length > 0) {
-    //   // Add a click event on each of them
-    //   $navbarBurgers.forEach((el) => {
-    //     el.addEventListener("click", () => {
-    //       // Get the target from the "data-target" attribute
-    //       const target = el.dataset.target;
-    //       const $target = document.getElementById(target);
-
-    //       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-    //       el.classList.toggle("is-active");
-    //       $target.classList.toggle("is-active");
-    //     });
-    //   });
-    // }
-
     const $dropdowns = Array.prototype.slice.call(
       document.querySelectorAll(".has-dropdown"),
       0
@@ -70,10 +57,7 @@ export class NavigationComponent implements OnInit {
 
     this.router.events.subscribe((val) => {
       // see also
-      if (
-        val instanceof NavigationEnd &&
-        (this.mobile || this.tablet || (this.desktop && this.width < 1025))
-      ) {
+      if (val instanceof NavigationEnd && this.width < 1025) {
         $navbarBurgers.forEach((el) => {
           // Get the target from the "data-target" attribute
           const target = el.dataset.target;
@@ -131,36 +115,65 @@ export class NavigationComponent implements OnInit {
       document.querySelectorAll(".has-dropdown"),
       0
     );
-
-    $links.forEach((link, index) => {
-      if (!this.desktop || (this.desktop && this.width <= 1025)) {
+    if (this.width <= 1025) {
+      $links.forEach((link, index) => {
         $dropdowns.forEach((dropdown) => {
-          dropdown.classList.remove("is-hoverable");
+          if (dropdown.classList.contains("is-hoverable"))
+            dropdown.classList.remove("is-hoverable");
         });
-        link.addEventListener("click", () => {
-          $dropdowns[index].classList.toggle("is-active");
+        if (!this.dropDownsELadded) {
+          link.addEventListener("click", () => {
+            if (!$dropdowns[index].classList.contains("is-active")) {
+              $dropdowns[index].classList.add("is-active");
+            } else {
+              $dropdowns[index].classList.remove("is-active");
+            }
+          });
+        }
+      });
+      this.dropDownsELadded = true;
+
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0 && !this.burgerELadded) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            this.burgerELadded = true;
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            if (el.classList.contains("is-active")) {
+              el.classList.remove("is-active");
+            } else {
+              el.classList.add("is-active");
+            }
+            if ($target.classList.contains("is-active")) {
+              $target.classList.remove("is-active");
+            } else {
+              $target.classList.add("is-active");
+            }
+          });
         });
       }
-    });
-
-    const $navbarBurgers = Array.prototype.slice.call(
-      document.querySelectorAll(".navbar-burger"),
-      0
-    );
-
-    if ($navbarBurgers.length > 0) {
-      // Add a click event on each of them
-      $navbarBurgers.forEach((el) => {
-        el.addEventListener("click", () => {
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle("is-active");
-          $target.classList.toggle("is-active");
+    } else {
+      $links.forEach((link, index) => {
+        $dropdowns.forEach((dropdown) => {
+          if (!dropdown.classList.contains("is-hoverable"))
+            dropdown.classList.add("is-hoverable");
         });
+
+        const linkClone = link.cloneNode(true);
+
+        link.parentNode.replaceChild(linkClone, link);
       });
+      this.dropDownsELadded = false;
     }
   }
 }

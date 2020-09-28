@@ -30,12 +30,13 @@
 
   &__image {
     width: 33.333333%;
-    height: 27rem;
+    height: 30rem;
 
     &__content {
       height: 100%;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      background-position: center;
 
       @include respond(tab-port) {
         object-fit: contain;

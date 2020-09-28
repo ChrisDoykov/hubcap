@@ -57,10 +57,9 @@
                 >Company:
               </span>
               <a
-                href="http://{{ tech.url }}"
+                href="{{ tech.url }}"
                 target="_blank"
                 class="tech__basic-info__link"
-                rel="noopener noreferrer"
                 >{{ tech.company_name }}</a
               >
             </p>
@@ -69,37 +68,48 @@
               <span class="subtitle subtitle--bold subtitle--small"
                 >Supported platforms:
               </span>
-              <span *ngFor="let platform of tech.supported_platforms"
-                >{{ platform }}&nbsp;</span
+              <span
+                *ngFor="let platform of tech.supported_platforms; let i = index"
+                >{{ platform
+                }}{{
+                  i === tech.supported_platforms.length - 1 ? "" : ","
+                }}&nbsp;</span
               >
             </p>
             <p class="tech__basic-info__line" *ngIf="tech.modelling_notations">
               <span class="subtitle subtitle--bold subtitle--small"
                 >Modelling notation(s):
               </span>
-              <span *ngFor="let notation of tech.modelling_notations"
-                >{{ notation }}&nbsp;</span
+              <span
+                *ngFor="let notation of tech.modelling_notations; let i = index"
+                >{{ notation
+                }}{{
+                  i === tech.modelling_notations.length - 1 ? "" : ","
+                }}&nbsp;</span
               >
             </p>
             <p class="tech__basic-info__line" *ngIf="tech.related_tools">
               <span class="subtitle subtitle--bold subtitle--small"
                 >Related tools:
               </span>
-              <span *ngFor="let tool of tech.related_tools"
+              <span *ngFor="let tool of tech.related_tools; let i = index"
                 ><a
                   href="{{ tool.url }}"
                   target="_blank"
                   rel="noopener noreferrer"
                   >{{ tool.name }}</a
-                >&nbsp;</span
+                >{{
+                  i === tech.related_tools.length - 1 ? "" : ","
+                }}&nbsp;</span
               >
             </p>
             <p class="tech__basic-info__line" *ngIf="tech.domains">
               <span class="subtitle subtitle--bold subtitle--small"
                 >Applicable domains:
               </span>
-              <span *ngFor="let domain of tech.domains"
-                >{{ domain }}&nbsp;</span
+              <span *ngFor="let domain of tech.domains; let i = index"
+                >{{ domain
+                }}{{ i === tech.domains.length - 1 ? "" : "," }}&nbsp;</span
               >
             </p>
             <p class="tech__basic-info__line" *ngIf="tech.modelling_lang_tool">
@@ -119,22 +129,26 @@
                 >License type:
               </span>
               <a
-                href="http://{{ tech.license_info_url }}"
+                href="{{ tech.license_info_url }}"
                 target="_blank"
                 rel="noopener noreferrer"
+                *ngIf="tech.license_info_url"
                 >{{
                   tech.license_info_name
                     ? tech.license_info_name
                     : tech.license_info_url
                 }}</a
               >
+              <span *ngIf="!tech.license_info_url">{{
+                tech.license_info_name
+              }}</span>
             </p>
-            <p class="tech__basic-info__line">
+            <p class="tech__basic-info__line" *ngIf="tech.download_link">
               <span class="subtitle subtitle--bold subtitle--small"
                 >Download:
               </span>
               <a
-                href="http://{{ tech.download_link }}"
+                href="{{ tech.download_link }}"
                 target="_blank"
                 rel="noopener noreferrer"
                 >{{ tech.download_link }}</a
@@ -145,7 +159,7 @@
                 >Contact:
               </span>
               <a
-                href="http://{{ tech.contact_url }}"
+                href="{{ tech.contact_url }}"
                 target="_blank"
                 rel="noopener noreferrer"
                 >{{ tech.contact_url }}</a
@@ -162,8 +176,29 @@
           </div>
         </div>
         <div class="tech__bottom">
-          <p class="paragraph paragraph--big tech__description">
-            {{ tech.description }}
+          <p
+            class="paragraph paragraph--big tech__description"
+            *ngIf="tech.description"
+          >
+            {{
+              tech.showMore
+                ? tech.description
+                : (tech.description | slice: 0:300)
+            }}<span *ngIf="!tech.showMore && tech.description.length > 300"
+              >...</span
+            >&nbsp;
+            <a
+              href="javascript:;"
+              *ngIf="!tech.showMore && tech.description.length > 300"
+              (click)="tech.showMore = true"
+              >Show More</a
+            >
+            <a
+              href="javascript:;"
+              *ngIf="tech.showMore"
+              (click)="tech.showMore = false"
+              >Show Less</a
+            >
           </p>
         </div>
       </div>

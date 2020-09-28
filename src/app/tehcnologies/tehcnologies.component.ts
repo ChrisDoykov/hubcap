@@ -75,17 +75,40 @@ export class TehcnologiesComponent implements OnInit {
   technologies = [
     {
       type: "model",
-      logo: "../../assets/res/images/au/csm_Edison_JR_0939_6bb3281da6.jpg",
-      asset_name: "Asset Name",
-      company_name: "Company Name",
-      url: "https://www.example.com",
+      logo:
+        "https://cyberarch.eu/wp-content/uploads/2020/06/Logo_cyberarch.png",
+      asset_name: "RCADE",
+      company_name: "Cyberarch Consulting",
+      url: "https://cyberarch.eu",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus ex deserunt, est numquam, aliquam a qui nesciunt quaerat magnam molestias asperiores accusamus quas sequi inventore! Quod temporibus iure rem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eos perspiciatis amet, est, nemo illum mollitia minima omnis dolorum unde sunt dolores error dolore placeat iusto aut! Qui, excepturi illo!",
-      domain: "Model domain",
-      modelling_lang_tool: "Modelling language/tool",
-      license_info_url: "license-info.com",
-      download_link: "https://thepirate-bay.org/1/",
-      contact_url: "example.com/contact",
+        'In Information Security there are a lot of tools for various operations and the end-user needs to select two or more tools based on his/her requirements. Having this in mind Cyberarch Consulting came up with an idea of creating a single product that can serve as an all-purpose tool.\n\n RCADE stands for Re-engineered Cyber Arch Defence Expert developed which is developed as an "All in one AI Security Solution". It integrates Vulnerability Assessment, Log Analysis, Malware Analysis, Security Monitoring, OSINT Gathering, Hybrid Pentest Request. etc as one product. Moreover based on the requirement lot more security-related modules will be added in future updates. Few modules even though they seem like a single module, they have two or more different toolset built within. for example, the Vulnerability Management module will have a Network/Infrastructure Scanner and Web Application Scanner builtin. Same way, Hybrid Pentest Request Contains Web App Pentest Request, Mobile App Pentest Request, Source Code Audit Request, etc. \n\nThis tool is available as a Virtual Machine to be used internally within the User\'s environment. Moreover, the tool is available in the cloud such as AWS, Azure, Alibaba, etc. The tool is built in such a way that even a novice user can easily use it efficiently without prior training/knowledge.',
+      showMore: false, // Always leave at false
+      domains: [
+        "Energy",
+        "Retail",
+        "Banking/Financial",
+        "Government",
+        "Education",
+        "Health",
+        "Continuous Integration Testing",
+      ],
+      modelling_lang_tool: "Python",
+      license_info_name: "Pay-as-you-go",
+      email: "info@cyberarch.eu",
+    },
+    {
+      type: "model",
+      logo: "../../assets/res/images/prosim-sample.png",
+      asset_name: "PROSIM T+",
+      company_name: "Asti Automation",
+      url: "https://www.astiautomation.ro",
+      description:
+        "PROSIM T+ is an industrial process simulator for digital manufacturing, which enables simulations of discrete and continuous industrial processes for PLC programming training with realistic signal interfaces.",
+      showMore: false, // Always leave at false
+      domains: ["Education and training"],
+      modelling_lang_tool: "C#",
+      license_info_name: "Pay-as-you-go",
+      email: "office@astiautomation.ro",
     },
     {
       type: "tool",
@@ -95,28 +118,134 @@ export class TehcnologiesComponent implements OnInit {
       url: "https://into-cps.org/",
       description:
         'An integrated "tool chain" for comprehensive Model-Based Design (MBD) of Cyber-Physical Systems (CPSs). The tool chain supports the multidisciplinary, collaborative modelling of CPSs from requirements, through design, down to realisation in hardware and software. This enables traceability at all stages of the development. The IP from this project has been transferred to the INTO-CPS Association after the completion of the project.',
-      supported_platforms: ["Plat 1,", "Plat 2,", "Plat 3,"],
-      modelling_notations: ["Notation 1,", "Notation 2,", "Notation 3,"],
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "MacOS"],
+      modelling_notations: ["Functional Mock-up Interface (FMI)"],
       related_tools: [
         {
-          name: "Tool 1",
-          url: "tool1.com",
+          name: "20-sim",
+          url: "https://www.20sim.com/",
         },
         {
-          name: "Tool 2",
-          url: "tool2.com",
+          name: "Overture",
+          url: "http://overturetool.org/",
+        },
+        {
+          name: "Open Modelica",
+          url: "https://www.openmodelica.org/",
         },
       ],
-      domains: [
-        "Applicable domain 1,",
-        "Applicable domain 2,",
-        "Applicable domain 3",
-      ],
+      domains: ["Automotive", "Agriculture", "Smart Buildings", "Transport"],
       license_info_name: "INTO-CPS Association Public License",
       license_info_url:
         "https://github.com/INTO-CPS-Association/maestro/blob/development/LICENSE",
       download_link: "https://into-cps-association.github.io/download/",
       email: "into-cps@mail.com",
+    },
+    {
+      type: "tool",
+      logo: "../../assets/res/logos/developair_logo.jpg",
+      asset_name: "Developair",
+      company_name: "Developair Technologies",
+      url: "https://www.developair.tech/",
+      description:
+        "Developair offers tools for verification of requirements and automatic test generation, enabling the optimization of the software development life cycle. This tools are provided in a SaaS (Software as a Service) format and oriented primarily towards companies developing intelligent systems in the transport, energy, aerospace, health or manufacturing sectors. There are 3 main functionalities available for the user: 1 - A smart editor that integrates user assistance functions and facilitates the definition of software architecture and software requirements. It is based on diagramming and restricted natural language (patterns). 2 - \nA requirements checker that identifies inconsistencies, redundancies, etc on a set of requirements. The early validation of software specification reduces the design issues and decreases the development costs, so this feature represents a significant improvement in development projects. Software robustness and quality is guaranteed through automated verification tasks. 3 -  A test generator for automatic test generation. The generator uses the specification of requirements and architecture as input, and generates black-box tests with requirements coverage. Additionally, these tests can be exported to some common testing/simulation frameworks with a single click.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Cloud based"],
+      modelling_notations: ["Domain specific language", "ReqIf", "ATML"],
+      domains: ["Transport", "Energy", "Aerospace", "Health", "Manufactoring"],
+      license_info_name: "Subscription",
+      email: "info@developair.es",
+    },
+    {
+      type: "tool",
+      logo:
+        "https://www.logic2day.com/getattachment/24f9150a-3a63-4b28-b7a8-1debf37d9cfd/Productlogo-Dezyne.png.aspx",
+      asset_name: "Dezyne",
+      company_name: "Verum Software Tools B.V.",
+      url: "https://verum.com/",
+      description:
+        "Dezyne is a software engineering toolset that enables engineers to specify, design, validate and formally verify software components for cyberphysical systems.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux"],
+      modelling_notations: [
+        "System view",
+        "State chart",
+        "Sequence view",
+        "State diagram",
+      ],
+      domains: [
+        "Medical devices",
+        "Semiconductors",
+        "Infrastructure (tunnels)",
+        "Train / Railway",
+        "Automotive",
+        "Robotics",
+        "Defense",
+        "Aerospace",
+      ],
+      license_info_name: "Commercial",
+      download_link: "https://verum.com/free-trial/",
+      email: "info@verum.com",
+    },
+    {
+      type: "tool",
+      logo:
+        "https://pbs.twimg.com/profile_images/1146383333133299717/wxM-sz9k.png",
+      asset_name: "Simulstore",
+      company_name: "Simularge",
+      url: "https://www.simularge.com",
+      description:
+        "SimulStore is an Industrial AppStore platform developed by SIMULARGE. In Simulstore, you can buy and/or develop Digital Twins for your business leveraging Simularge's experience both in the Industry and Academia.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "MacOS"],
+      modelling_notations: ["Python", "Fortran"],
+      license_info_name: "Proprietary",
+      license_info_url: "https://simulstore.com/#/termsandconditions",
+      download_link: "https://www.simulstore.com",
+      email: "info@simularge.com",
+    },
+    {
+      type: "tool",
+      logo:
+        "http://www.waveform.hr/wp-content/uploads/2020/09/Logo_IOT-Wallet2.png",
+      asset_name: "IoT Wallet",
+      company_name: "Waveform",
+      url: "https://www.waveform.hr",
+      description:
+        'IoT wallet is the web/mobile app product which allows forming portfolio of different sensing devices for its customers, i.e. it\'s wallet. It allows users to remotely register, monitor and configure commercially available or custom low-power sensing devices integrating low-power state-of-the-art radios. Once configured, IoT wallet notifies its users about status of sensors via "push notifications". IoT wallet dashboard provides current/past information retrieved from the database which collects sensed data from various sensors, while the configuration of sensors such as how frequently sensors are sending its data or other communication properties are set upon the configuration. Specific advantage of IoT wallet is the possibility to integrate Machine Learning that can be used for different general based purposes such as future estimations or predictions. Typical scenario of IoT wallet usage is the smart environment. For example, it could be smart home that currently possess soil humidity sensor to sense if the garden needs to be irrigated and actuators to turn automatic irrigation; parking lots sensors for occupancy; or several LoRa water meters that measure specific points of water consumption. In the user dashboard, all of these devices are displayed with current status and given data analytics. The system is able to notify users if the garden has to be irrigated, turn on remote irrigation, or receive the notifications if the water consumption is not in accordance with the regular pattern.',
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "MacOS"],
+      modelling_notations: ["Machine Learning", "Tensorflow"],
+      domains: ["IoT", "Machine Learning", "Sensors", "Modelling", "CPS"],
+      license_info_name: "Time-based: monthly/yearly based fees apply",
+      email: "petar@waveform.hr",
+    },
+    {
+      type: "tool",
+      logo: "https://libpf.com/img/logo.png",
+      asset_name: "LIBPF",
+      company_name: "simevo",
+      url: "https://simevo.com",
+      description:
+        "LIBrary for Process Flowsheeting -  a C++ library providing the building blocks to simulate continuous industrial processes at steady state with first-principle, concentrated-parameter models.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "MacOS"],
+      modelling_notations: ["C++", "OOP", "DAG", "Flowsheeting"],
+      domains: [
+        "Polymers",
+        "Chemical specialties",
+        "Metallurgy",
+        "Pulp & Paper",
+        "Food processing",
+        "Pharmaceuticals",
+        "Biofuels",
+        "Power & Energy",
+      ],
+      license_info_name:
+        "Various (per user / per-machine / per-site,  one-off / recurring)",
+      license_info_url: "https://simevo.com/process/pricing/",
+      email: "info@simevo.com",
     },
   ];
 

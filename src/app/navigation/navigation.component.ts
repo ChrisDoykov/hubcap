@@ -32,12 +32,12 @@ export class NavigationComponent implements OnInit {
   sticky;
   navDrop;
 
-  burgerELadded = false;
-  dropDownsELadded = false;
+  mobileMenu = false;
 
   width: number;
 
   ngOnInit(): void {
+    this.width = window.innerWidth;
     this.navbar = document.getElementsByTagName("app-navigation")[0];
     this.nav = document.getElementsByClassName("navbar")[0];
     this.navDrop = document.getElementById("navbarDropdown");
@@ -49,6 +49,22 @@ export class NavigationComponent implements OnInit {
       document.querySelectorAll(".navbar-burger"),
       0
     );
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+    }
 
     const $dropdowns = Array.prototype.slice.call(
       document.querySelectorAll(".has-dropdown"),
@@ -116,64 +132,30 @@ export class NavigationComponent implements OnInit {
       0
     );
     if (this.width <= 1025) {
-      $links.forEach((link, index) => {
-        $dropdowns.forEach((dropdown) => {
-          if (dropdown.classList.contains("is-hoverable"))
-            dropdown.classList.remove("is-hoverable");
-        });
-        if (!this.dropDownsELadded) {
-          link.addEventListener("click", () => {
-            if (!$dropdowns[index].classList.contains("is-active")) {
-              $dropdowns[index].classList.add("is-active");
-            } else {
-              $dropdowns[index].classList.remove("is-active");
-            }
-          });
-        }
+      $dropdowns.forEach((dropdown) => {
+        dropdown.classList.remove("is-hoverable");
       });
-      this.dropDownsELadded = true;
-
-      const $navbarBurgers = Array.prototype.slice.call(
-        document.querySelectorAll(".navbar-burger"),
-        0
-      );
-
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0 && !this.burgerELadded) {
-        // Add a click event on each of them
-        $navbarBurgers.forEach((el) => {
-          el.addEventListener("click", () => {
-            this.burgerELadded = true;
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            if (el.classList.contains("is-active")) {
-              el.classList.remove("is-active");
-            } else {
-              el.classList.add("is-active");
-            }
-            if ($target.classList.contains("is-active")) {
-              $target.classList.remove("is-active");
-            } else {
-              $target.classList.add("is-active");
-            }
+      if (!this.mobileMenu) {
+        $links.forEach((link, index) => {
+          link.addEventListener("click", () => {
+            $dropdowns[index].classList.toggle("is-active");
           });
         });
       }
+      this.mobileMenu = true;
     } else {
       $links.forEach((link, index) => {
+        // Make menu items hoverable
         $dropdowns.forEach((dropdown) => {
-          if (!dropdown.classList.contains("is-hoverable"))
-            dropdown.classList.add("is-hoverable");
+          dropdown.classList.add("is-hoverable");
         });
 
-        const linkClone = link.cloneNode(true);
+        // Remove all event listeners from the menu items
+        let elClone = link.cloneNode(true);
 
-        link.parentNode.replaceChild(linkClone, link);
+        link.parentNode.replaceChild(elClone, link);
       });
-      this.dropDownsELadded = false;
+      this.mobileMenu = false;
     }
   }
 }

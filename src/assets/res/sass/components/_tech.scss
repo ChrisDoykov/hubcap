@@ -74,6 +74,10 @@
       color: $color-black;
       font-size: 1.6rem;
 
+      span {
+        display: inline-block;
+      }
+
       @include respond(tab-port) {
         font-size: 2rem;
       }

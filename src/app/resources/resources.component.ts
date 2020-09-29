@@ -85,8 +85,10 @@ export class ResourcesComponent implements OnInit {
       document.getElementById("SMEdec").click();
     } else if (url.includes("DeclarationHonour")) {
       document.getElementById("Hdec").click();
-    } else if (url.includes("DocumentationKit")) {
+    } else if (url.includes("DocumentationKit-1-1")) {
       document.getElementById("Dkit").click();
+    } else if (url.includes("DocumentationKit-1-2")) {
+      document.getElementById("Dkit1-2").click();
     } else if (url.includes("press-release#1.1")) {
       document.getElementById("pr#1.1").click();
     } else if (url.includes("press-release#1.2")) {

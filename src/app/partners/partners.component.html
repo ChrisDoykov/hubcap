@@ -1,5 +1,5 @@
-<div (window:resize)="onResize($event)" class="container">
-  <table *ngIf="!bigTable" id="myTable">
+<div (window:resize)="onResize($event)" class="logo-grid">
+  <table *ngIf="!bigTable">
     <tr class="individual">
       <td id="heading">
         <h1 class="title main-title">
@@ -116,7 +116,7 @@
     </tr>
   </table>
 
-  <table *ngIf="bigTable" id="myTable">
+  <table *ngIf="bigTable">
     <tr class="individual">
       <td id="heading">
         <h1 class="title main-title">

@@ -82,7 +82,7 @@ const PARTNERS: Partner[] = [
   {
     id: 11,
     name: "Politecnico di Milano",
-    logo: "../../assets/res/logos/logoPolimi.jpg",
+    logo: "../../assets/res/logos/logoPolimi.png",
     title: "",
     website: "https://www.polimi.it/",
   },

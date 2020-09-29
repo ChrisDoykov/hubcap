@@ -37,7 +37,9 @@ const routes: Routes = [
   { path: "faq", component: FaqComponent },
   { path: "technologies", component: TehcnologiesComponent },
   { path: "HUBCAP_OC1-1PULL", component: ResourcesComponent },
+  { path: "HUBCAP_OC1-2PULL", component: ResourcesComponent },
   { path: "HUBCAP_OC1-1PULL/:file", component: ResourcesComponent },
+  { path: "HUBCAP_OC1-2PULL/:file", component: ResourcesComponent },
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "/404" },
 ];

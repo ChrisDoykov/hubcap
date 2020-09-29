@@ -18,6 +18,7 @@ import { PressReleasesComponent } from "./press-releases/press-releases.componen
 import { FaqComponent } from "./faq/faq.component";
 import { PressReleaseListComponent } from "./press-release-list/press-release-list.component";
 import { TehcnologiesComponent } from "./tehcnologies/tehcnologies.component";
+import { WinnersComponent } from "./winners/winners.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", component: HomeComponent },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: "press-releases", component: PressReleaseListComponent },
   { path: "resources", component: ResourcesComponent },
   { path: "faq", component: FaqComponent },
+  { path: "call-winners", component: WinnersComponent },
   { path: "technologies", component: TehcnologiesComponent },
   { path: "HUBCAP_OC1-1PULL", component: ResourcesComponent },
   { path: "HUBCAP_OC1-2PULL", component: ResourcesComponent },

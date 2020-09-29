@@ -1,0 +1,214 @@
+<div (window:resize)="onResize($event)" class="logo-grid">
+  <table *ngIf="!bigTable">
+    <tr class="individual">
+      <td id="heading">
+        <h1 class="title main-title">
+          Call<br />
+          Winners
+        </h1>
+      </td>
+      <td *ngFor="let partner of partners.slice(0, 3)">
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let partner of partners.slice(3, 7)">
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+    <tr>
+      <td
+        id="{{ partner.name === 'Politecnico di Milano' ? 'pdm' : '' }}"
+        *ngFor="let partner of partners.slice(7, 11)"
+      >
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let partner of partners.slice(11, 15)">
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let partner of partners.slice(15, 20)">
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+  </table>
+
+  <table *ngIf="bigTable">
+    <tr class="individual">
+      <td id="heading">
+        <h1 class="title main-title">
+          Project<br />
+          Partners
+        </h1>
+      </td>
+      <td *ngFor="let partner of partners.slice(0, 4)">
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let partner of partners.slice(4, 9)">
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+    <tr>
+      <td
+        id="{{ partner.name === 'Politecnico di Milano' ? 'pdm' : '' }}"
+        *ngFor="let partner of partners.slice(9, 14)"
+      >
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let partner of partners.slice(14, 20)">
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+  </table>
+</div>

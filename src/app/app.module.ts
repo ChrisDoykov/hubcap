@@ -39,6 +39,7 @@ import { PressReleasesComponent } from "./press-releases/press-releases.componen
 import { FaqComponent } from "./faq/faq.component";
 import { PressReleaseListComponent } from "./press-release-list/press-release-list.component";
 import { TehcnologiesComponent } from "./tehcnologies/tehcnologies.component";
+import { WinnersComponent } from './winners/winners.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -68,6 +69,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FaqComponent,
     PressReleaseListComponent,
     TehcnologiesComponent,
+    WinnersComponent,
   ],
   imports: [
     BrowserModule,

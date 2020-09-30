@@ -75,19 +75,46 @@ const PARTNERS: SME[] = [
 export class WinnersComponent implements OnInit {
   constructor() {}
 
-  bigTable = false;
+  width: number;
+  elements_fade_in: any;
+  windowHeight: any;
 
   ngOnInit(): void {
     document.title = "Call Winners | HUBCAP";
     document.getElementById("hero-title").textContent = "Call Winners";
+    this.onResize();
+    this.checkPosition();
   }
-  partners = PARTNERS;
 
-  onResize(event) {
-    if (event.target.innerWidth > 2200) {
-      this.bigTable = true;
-    } else {
-      this.bigTable = false;
+  onResize() {
+    this.width = window.innerWidth;
+
+    this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
+    this.windowHeight = window.innerHeight;
+
+    if (this.width > 1200) {
+      this.scrollIntoView("heading");
     }
   }
+
+  checkPosition() {
+    if (this.elements_fade_in.length <= 0) {
+      this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
+    }
+    for (let i = 0; i < this.elements_fade_in.length; i++) {
+      let element = this.elements_fade_in[i];
+      let positionFromTop = this.elements_fade_in[i].getBoundingClientRect()
+        .top;
+
+      if (positionFromTop - this.windowHeight <= 0) {
+        element.classList.add("u-fade-in");
+        element.classList.remove("hidden-fade-in");
+      }
+    }
+  }
+
+  scrollIntoView(id) {
+    document.getElementById(id).scrollIntoView();
+  }
+  partners = PARTNERS;
 }

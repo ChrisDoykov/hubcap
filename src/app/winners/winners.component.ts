@@ -55,7 +55,15 @@ const PARTNERS: SME[] = [
     name: "Waveform",
     logo: "http://www.waveform.hr/wp-content/uploads/2020/01/wf_logo-1.png",
 
-    website: "http://www.waveform.hr",
+    website: "https://www.waveform.hr",
+  },
+  {
+    id: 7,
+    name: "Xcelgo",
+    logo:
+      "https://xcelgo.com/wp-content/uploads/2018/02/logo_payoff_rgb-e1519296550313.png",
+
+    website: "https://xcelgo.com/",
   },
 ];
 

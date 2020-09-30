@@ -11,7 +11,7 @@ export class PullComponent implements OnInit {
   constructor(private deviceService: DeviceDetectorService) {}
 
   openApplyPage() {
-    window.open("https://www.f6s.com/hubcap1-2pull/apply", "_blank");
+    window.open("https://www.f6s.com/hubcapcall1-2pull/apply", "_blank");
   }
 
   mobile = this.deviceService.isMobile();

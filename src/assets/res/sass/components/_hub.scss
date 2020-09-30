@@ -31,6 +31,30 @@
   &__text {
   }
 
+  &__info-line {
+    display: inline-block;
+    padding-right: 1rem;
+
+    &:not(:last-child) {
+      margin-right: 0.2rem;
+      // border-right: 2px solid $color-black;
+    }
+
+    @include respond(tab-port) {
+      display: block;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+    i {
+      display: inline-block;
+      margin: 0 0.8rem;
+    }
+  }
+
   &__name {
     font-size: 4rem;
     font-weight: 600;
@@ -101,13 +125,7 @@
 
     &--romania {
       // background-image: url();
-      // background-image: url("../../images/coming-soon.png");
-      box-shadow: none;
-      &:hover,
-      &:focus {
-        box-shadow: none;
-        transform: translateY(0);
-      }
+      background-image: url("../../images/lucian/inginerie.jpg");
     }
 
     &--uk {

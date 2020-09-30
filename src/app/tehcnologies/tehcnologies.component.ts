@@ -144,6 +144,28 @@ export class TehcnologiesComponent implements OnInit {
     },
     {
       type: "tool",
+      logo:
+        "https://xcelgo.com/wp-content/uploads/2018/02/experior6logo-e1519976751203.png",
+      asset_name: "Experior",
+      company_name: "Xcelgo",
+      url: "https://xcelgo.com/",
+      description:
+        "Experior is a market proven software platform for 3D emulation, modeling and digital twins for material handling systems. An Experior 3D model imitates (Emulates) the exact behavior of a physical system, making it possible to test control software (PLC and/or IT/MES) against the model. When the physical system is up and running the 3D model evolves into a Digital Twin. Experior enables fast and secure design, delivery and operations of any size material handling system.",
+      showMore: false, // Always leave at false
+      supported_platforms: [
+        "Windows",
+        "Azure",
+        "VR/AR remote viewer available on web",
+      ],
+      modelling_notations: ["C#", " FMU/FMI (under development)"],
+      domains: ["Any discrete material handling system"],
+      license_info_name:
+        "Perpetual license, split into 4 sub-types (Test, Build, Commission, Develop)",
+      license_info_url: "https://xcelgo.com/experior/",
+      email: "info@xcelgo.com",
+    },
+    {
+      type: "tool",
       logo: "../../assets/res/logos/developair_logo.jpg",
       asset_name: "Developair",
       company_name: "Developair Technologies",

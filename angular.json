@@ -31,6 +31,7 @@
               "src/assets/res/fonts/linea/ecom/style.css",
               "src/assets/res/fonts/linea/arrows/styles.css",
               "./node_modules/bulma/css/bulma.min.css",
+              "./node_modules/bulma-extensions/bulma-checkradio/dist/css/bulma-checkradio.min.css",
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],

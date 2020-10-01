@@ -9,32 +9,39 @@
   <div class="u-center-text settings">
     <h3 class="heading-tertiary settings__title">Show me:</h3>
     <div class="settings__container">
-      <input
-        type="radio"
-        name="technologiesRadio"
-        id="modelsR"
-        value="models"
-        [disabled]="showingAll"
-        (change)="filterAndInsert($event)"
-      />
-      <label for="models">Models</label>
-      <input
-        type="radio"
-        name="technologiesRadio"
-        id="toolsR"
-        value="tools"
-        [disabled]="showingAll"
-        (change)="filterAndInsert($event)"
-      />
-      <label for="models">Tools</label>
-      <input
-        type="checkbox"
-        name="all"
-        id="all"
-        [(ngModel)]="showingAll"
-        (change)="filterAndInsert($event)"
-      />
-      <label for="all">All Assets</label>
+      <div class="field">
+        <input
+          type="radio"
+          name="technologiesRadio"
+          id="modelsR"
+          class="is-checkradio"
+          value="models"
+          [disabled]="showingAll"
+          (change)="filterAndInsert($event)"
+        />
+        <label for="modelsR"><span>Models</span></label>
+        <input
+          type="radio"
+          name="technologiesRadio"
+          id="toolsR"
+          class="is-checkradio"
+          value="tools"
+          [disabled]="showingAll"
+          (change)="filterAndInsert($event)"
+        />
+        <label for="toolsR"><span>Tools</span></label>
+      </div>
+      <div class="field">
+        <input
+          type="checkbox"
+          name="all"
+          id="all"
+          class="is-checkradio"
+          [(ngModel)]="showingAll"
+          (change)="filterAndInsert($event)"
+        />
+        <label for="all"><span>All Assets</span></label>
+      </div>
     </div>
   </div>
   <ul class="alphabet">

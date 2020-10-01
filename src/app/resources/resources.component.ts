@@ -77,20 +77,28 @@ export class ResourcesComponent implements OnInit {
     document.title = "Useful Resources | HUBCAP";
     document.getElementById("hero-title").textContent = "Useful Resources";
     const url = window.location.href.toString();
-    if (url.includes("HUBCAP_CALL1-1_PULL")) {
-      document.getElementById("flyer1.1").click();
-    } else if (url.includes("HUBCAP_OPENCALLS")) {
+
+    // General
+    if (url.includes("HUBCAP_OPENCALLS")) {
       document.getElementById("OCflyer").click();
     } else if (url.includes("SMEDeclaration")) {
       document.getElementById("SMEdec").click();
     } else if (url.includes("DeclarationHonour")) {
       document.getElementById("Hdec").click();
+    }
+
+    // Call #1.1
+    else if (url.includes("HUBCAP_CALL1-1_PULL")) {
+      document.getElementById("flyer1.1").click();
     } else if (url.includes("DocumentationKit-1-1")) {
       document.getElementById("Dkit").click();
-    } else if (url.includes("DocumentationKit-1-2")) {
-      document.getElementById("Dkit1-2").click();
     } else if (url.includes("press-release#1.1")) {
       document.getElementById("pr#1.1").click();
+    }
+
+    // Call #1.2
+    else if (url.includes("DocumentationKit-1-2")) {
+      document.getElementById("Dkit1-2").click();
     } else if (url.includes("press-release#1.2")) {
       document.getElementById("pr#1.2").click();
     } else if (url.includes("HUBCAP_CALL1-2_PULL")) {

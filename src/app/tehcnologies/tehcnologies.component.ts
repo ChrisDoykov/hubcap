@@ -271,16 +271,69 @@ export class TehcnologiesComponent implements OnInit {
     },
   ];
 
+  showingAll = true;
+  rearranged = false;
+
   ngOnInit(): void {
     document.title = "Technologies | HUBCAP";
     document.getElementById("hero-title").textContent = "Technologies";
 
-    for (let tech of this.technologies) {
-      this.alphabet[tech.asset_name.toLowerCase().charAt(0)].push(tech);
-    }
+    // for (let tech of this.technologies) {
+    //   this.alphabet[tech.asset_name.toLowerCase().charAt(0)].push(tech);
+    // }
+
+    this.rearrangeTechnologies(this.technologies);
 
     this.onResize();
     this.checkPosition();
+  }
+
+  rearrangeTechnologies(technologies) {
+    this.letters.forEach((letter) => {
+      this.alphabet[letter] = [];
+    });
+    for (let tech of technologies) {
+      this.alphabet[tech.asset_name.toLowerCase().charAt(0)].push(tech);
+    }
+
+    this.rearranged = true;
+  }
+
+  filterAndInsert(event) {
+    let technologies = [];
+
+    if (event.target.name === "technologiesRadio") {
+      if (event.target.id === "modelsR") {
+        technologies = this.technologies.filter(
+          (tech) => tech.type === "model"
+        );
+
+        this.rearrangeTechnologies(technologies);
+      } else if (event.target.id === "toolsR") {
+        technologies = this.technologies.filter((tech) => tech.type === "tool");
+
+        this.rearrangeTechnologies(technologies);
+      }
+    } else if (event.target.name === "all") {
+      if (event.target.checked === true) {
+        this.rearrangeTechnologies(this.technologies);
+      } else {
+        const toolsRadio = document.getElementById(
+          "toolsR"
+        ) as HTMLInputElement;
+
+        toolsRadio.checked = true;
+
+        const event = {
+          target: {
+            name: "technologiesRadio",
+            id: "toolsR",
+          },
+        };
+
+        this.filterAndInsert(event);
+      }
+    }
   }
 
   onResize() {

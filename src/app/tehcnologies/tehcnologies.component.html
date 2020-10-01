@@ -6,6 +6,37 @@
   <div class="u-center-text u-margin-bottom-medium">
     <h1 class="heading-primary">Technological Assets List</h1>
   </div>
+  <div class="u-center-text settings">
+    <h3 class="heading-tertiary settings__title">Show me:</h3>
+    <div class="settings__container">
+      <input
+        type="radio"
+        name="technologiesRadio"
+        id="modelsR"
+        value="models"
+        [disabled]="showingAll"
+        (change)="filterAndInsert($event)"
+      />
+      <label for="models">Models</label>
+      <input
+        type="radio"
+        name="technologiesRadio"
+        id="toolsR"
+        value="tools"
+        [disabled]="showingAll"
+        (change)="filterAndInsert($event)"
+      />
+      <label for="models">Tools</label>
+      <input
+        type="checkbox"
+        name="all"
+        id="all"
+        [(ngModel)]="showingAll"
+        (change)="filterAndInsert($event)"
+      />
+      <label for="all">All Assets</label>
+    </div>
+  </div>
   <ul class="alphabet">
     <li><a (click)="scrollIntoView('a')">a</a></li>
     <li><a (click)="scrollIntoView('b')">b</a></li>
@@ -38,7 +69,12 @@
   <div *ngFor="let letter of letters">
     <div class="wrapper" *ngIf="alphabet[letter].length > 0">
       <h2 class="heading-secondary" id="{{ letter }}">{{ letter }}</h2>
-      <div class="tech hidden-fade-in" *ngFor="let tech of alphabet[letter]">
+      <div
+        class="tech hidden-fade-in"
+        [class.hidden-fade-in]="!rearranged"
+        [class.u-fade-in]="rearranged"
+        *ngFor="let tech of alphabet[letter]"
+      >
         <div class="tech__top">
           <div class="tech__image">
             <img

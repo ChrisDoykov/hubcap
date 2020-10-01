@@ -65,6 +65,28 @@ const PARTNERS: SME[] = [
 
     website: "https://xcelgo.com/",
   },
+  {
+    id: 8,
+    name: "Schlegel Simulation",
+    logo:
+      "http://www.schlegel-simulation.de/logos/Logo_Schlegel-Simulation.png",
+
+    website: "http://www.schlegel-simulation.de",
+  },
+  {
+    id: 9,
+    name: "SMM INVEST",
+    logo: "../../assets/res/logos/smm_inv_logo.png",
+
+    website: "https://imobiliarproiect.ro/",
+  },
+  {
+    id: 10,
+    name: "QARTECH Innovations",
+    logo: "https://qartech.io/wp-content/uploads/qartech.png",
+
+    website: "https://qartech.io/",
+  },
 ];
 
 @Component({

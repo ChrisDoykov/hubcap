@@ -269,6 +269,65 @@ export class TehcnologiesComponent implements OnInit {
       license_info_url: "https://simevo.com/process/pricing/",
       email: "info@simevo.com",
     },
+    {
+      type: "tool",
+      logo:
+        "http://www.schlegel-simulation.de/logos/Logo_Schlegel-Simulation.png",
+      asset_name: "WebModelica",
+      company_name: "Schlegel Simulation",
+      url: "http://www.schlegel-simulation.de",
+      description:
+        "WebModelica is a lightweight client - server tool for modelling and simulation of the dynamics of mechatronic systems.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "MacOS"],
+      modelling_notations: ["Modelica"],
+      domains: ["Mechatronic systems"],
+      license_info_name: "SaaS, On-Premise",
+      email: "info@schlegel-simulation.de",
+    },
+    {
+      type: "tool",
+      logo: "../../assets/res/logos/LogoAirChain.png",
+      asset_name: "AirChain",
+      company_name: "QARTECH Innovations",
+      url: "https://www.qartech.io",
+      description:
+        "With AirChain you can generate a permissioned blockchain network in the cloud to securely store all the measurements of your air-quality sensors. Just with one mouse click. Select the organizations that will manage data, privacy policies, among other parameters, and the system will automatically generate the API endpoints that you need to start storing/getting data in/from the blockchain. ",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "MacOS"],
+      modelling_notations: ["Bash", "Python", "YAML", "JSON", "Javascript"],
+      related_tools: [
+        {
+          name: "Hyperledger Fabric",
+          url: "https://www.hyperledger.org/use/fabric",
+        },
+        {
+          name: "AWS",
+          url: "https://aws.amazon.com/",
+        },
+        {
+          name: "Docker",
+          url: "https://www.docker.com/",
+        },
+      ],
+      domains: ["Air quality sensors", "Wireless sensors"],
+      license_info_name: "Permissive, Apache style",
+      email: "info@qartech.io",
+    },
+    {
+      type: "model",
+      logo: "../../assets/res/logos/smm_inv_logo.png",
+      asset_name: "Water and air systems models",
+      company_name: "SMM INVEST",
+      url: "https://imobiliarproiect.ro/",
+      description:
+        "Our customized models serve to identify the optimum performance of the system and can be used in order to plan the optimal solution for projects.",
+      showMore: false, // Always leave at false
+      modelling_lang_tool: ["Custom for each model"],
+      domain: ["Fluid flow"],
+      license_info_name: "Specific for each project",
+      email: "iostoica@gmail.com",
+    },
   ];
 
   showingAll = true;

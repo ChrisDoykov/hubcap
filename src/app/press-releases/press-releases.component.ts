@@ -23,4 +23,15 @@ export class PressReleasesComponent implements OnInit {
       this.router.navigate(["/not-found"]);
     }
   }
+
+  openModal(item) {
+    const $target = document.getElementById(item);
+
+    $target.classList.toggle("is-active");
+  }
+  closeModal(item) {
+    const $target = document.getElementById(item);
+
+    $target.classList.remove("is-active");
+  }
 }

@@ -87,6 +87,13 @@ const PARTNERS: SME[] = [
 
     website: "https://qartech.io/",
   },
+  {
+    id: 11,
+    name: "NAMS",
+    logo: "https://eu-nams.com/wp-content/uploads/2019/01/nams-logo-250x63.svg",
+
+    website: "https://www.nams-3d.com/index.php/en/home_en/",
+  },
 ];
 
 @Component({

@@ -68,8 +68,7 @@ const PARTNERS: SME[] = [
   {
     id: 8,
     name: "Schlegel Simulation",
-    logo:
-      "http://www.schlegel-simulation.de/logos/Logo_Schlegel-Simulation.png",
+    logo: "../../assets/res/logos/Logo_Schlegel-Simulation.png",
 
     website: "http://www.schlegel-simulation.de",
   },

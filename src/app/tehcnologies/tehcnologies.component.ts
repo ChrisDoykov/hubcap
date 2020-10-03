@@ -315,6 +315,25 @@ export class TehcnologiesComponent implements OnInit {
       email: "info@qartech.io",
     },
     {
+      type: "tool",
+      logo:
+        "https://eu-nams.com/wp-content/uploads/2019/01/nams-logo-250x63.svg",
+      asset_name: "NAMS AM Platform",
+      company_name: "NAMS",
+      url: "https://www.nams-3d.com/index.php/en/home_en/",
+      description: "Online Platform Tool.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux"],
+      modelling_notations: ["Java", "ZK Framework", "MySQL"],
+      domains: [
+        "Additive Manufacturing",
+        "Advanced Manufacturing",
+        "Conventional Manufacturing",
+      ],
+      license_info_name: "Proprietary",
+      email: "d.cortolezzis@eu-nams.com",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/smm_inv_logo.png",
       asset_name: "Water and air systems models",

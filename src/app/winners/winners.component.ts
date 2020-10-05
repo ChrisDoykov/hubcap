@@ -58,7 +58,7 @@ const PARTNERS: SME[] = [
     website: "https://www.waveform.hr",
   },
   {
-    id: 7,
+    id: 8,
     name: "Xcelgo",
     logo:
       "https://xcelgo.com/wp-content/uploads/2018/02/logo_payoff_rgb-e1519296550313.png",
@@ -66,28 +66,28 @@ const PARTNERS: SME[] = [
     website: "https://xcelgo.com/",
   },
   {
-    id: 8,
+    id: 9,
     name: "Schlegel Simulation",
     logo: "../../assets/res/logos/Logo_Schlegel-Simulation.png",
 
     website: "http://www.schlegel-simulation.de",
   },
   {
-    id: 9,
+    id: 10,
     name: "SMM INVEST",
     logo: "../../assets/res/logos/smm_inv_logo.png",
 
     website: "https://imobiliarproiect.ro/",
   },
   {
-    id: 10,
+    id: 11,
     name: "QARTECH Innovations",
     logo: "https://qartech.io/wp-content/uploads/qartech.png",
 
     website: "https://qartech.io/",
   },
   {
-    id: 11,
+    id: 12,
     name: "NAMS",
     logo: "https://eu-nams.com/wp-content/uploads/2019/01/nams-logo-250x63.svg",
 

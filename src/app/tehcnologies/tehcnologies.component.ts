@@ -271,8 +271,7 @@ export class TehcnologiesComponent implements OnInit {
     },
     {
       type: "tool",
-      logo:
-        "http://www.schlegel-simulation.de/logos/Logo_Schlegel-Simulation.png",
+      logo: "../../assets/res/logos/Logo_Schlegel-Simulation.png",
       asset_name: "WebModelica",
       company_name: "Schlegel Simulation",
       url: "http://www.schlegel-simulation.de",

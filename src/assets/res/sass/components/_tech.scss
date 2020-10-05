@@ -70,6 +70,25 @@
       }
     }
 
+    .custom-tag {
+      display: inline-block;
+      background-color: $color-yellow;
+      border-radius: 5px;
+      font-size: 1.7rem;
+      max-height: fit-content;
+      padding: 0.5rem 1rem;
+      padding-top: 0.8rem;
+      border: 2px solid $color-black;
+      transform: translate(0.5rem, -0.4rem);
+      transition: all 0.2s;
+
+      &:hover,
+      &:focus {
+        cursor: default;
+        background-color: darken($color: $color-yellow, $amount: 5);
+      }
+    }
+
     &__line {
       color: $color-black;
       font-size: 1.6rem;

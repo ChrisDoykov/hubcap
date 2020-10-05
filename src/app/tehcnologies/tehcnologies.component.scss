@@ -52,6 +52,14 @@
     &__container {
       display: flex;
       align-self: center;
+
+      @include respond(phone) {
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 300px) {
+        max-width: 60%;
+      }
     }
     input {
       &.is-checkradio[type="checkbox"] {

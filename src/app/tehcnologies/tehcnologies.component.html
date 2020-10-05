@@ -30,6 +30,16 @@
           (change)="filterAndInsert($event)"
         />
         <label for="toolsR"><span>Tools</span></label>
+        <input
+          type="radio"
+          name="technologiesRadio"
+          id="smeR"
+          class="is-checkradio"
+          value="sme"
+          [disabled]="showingAll"
+          (change)="filterAndInsert($event)"
+        />
+        <label for="smeR"><span>SME Assets</span></label>
       </div>
       <div class="field">
         <input
@@ -94,7 +104,9 @@
           <div class="tech__basic-info">
             <h3 class="heading-tertiary tech__basic-info__heading">
               {{ tech.asset_name }}
+              <span class="custom-tag" *ngIf="!tech.dihAsset">SME Asset</span>
             </h3>
+
             <p class="tech__basic-info__line">
               <span class="subtitle subtitle--bold subtitle--small"
                 >Company:

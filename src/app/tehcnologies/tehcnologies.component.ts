@@ -112,6 +112,7 @@ export class TehcnologiesComponent implements OnInit {
     },
     {
       type: "tool",
+      dihAsset: true,
       logo: "../../assets/res/logos/into_cps_example_logo.png",
       asset_name: "INTO-CPS",
       company_name: "INTO-CPS",
@@ -413,6 +414,10 @@ export class TehcnologiesComponent implements OnInit {
         this.rearrangeTechnologies(technologies);
       } else if (event.target.id === "toolsR") {
         technologies = this.technologies.filter((tech) => tech.type === "tool");
+
+        this.rearrangeTechnologies(technologies);
+      } else if (event.target.id === "smeR") {
+        technologies = this.technologies.filter((tech) => !tech.dihAsset);
 
         this.rearrangeTechnologies(technologies);
       }

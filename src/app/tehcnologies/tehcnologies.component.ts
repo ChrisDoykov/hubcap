@@ -286,6 +286,31 @@ export class TehcnologiesComponent implements OnInit {
     },
     {
       type: "tool",
+      logo: "../../assets/res/logos/logo-clearsy-2020-small.png",
+      asset_name: "CLEARSY Safety Platform",
+      company_name: "CLEARSY",
+      url: "https://www.clearsy.com/en/",
+      description:
+        "The CLEARSY Safety Platform is aimed at easing the development and the deployment of safety critical applications, up to SIL4. It relies on the smart integration of formal methods (including mathematical proof), redundant code generation and compilation, and a hardware platform that ensures a safe execution of the software. The CSSP is made of an integrated software development environment (IDE) and a hardware platform that natively integrates safety principles.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows"],
+      modelling_notations: ["B method"],
+      domains: [
+        "Education",
+        "Railways",
+        "Energy",
+        "Automotive",
+        "Robotics",
+        "Industry",
+      ],
+      license_info_name:
+        "The IDE and execution platform are copyright CLEARSY. Owners are entitled to freely use/develop/market resulting applications.",
+      download_link:
+        "https://www.clearsy.com/en/our-tools/clearsy-safety-platform/",
+      email: "thierry.lecomte@clearsy.com",
+    },
+    {
+      type: "tool",
       logo: "../../assets/res/logos/LogoAirChain.png",
       asset_name: "AirChain",
       company_name: "QARTECH Innovations",

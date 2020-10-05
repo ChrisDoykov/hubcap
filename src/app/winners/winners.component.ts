@@ -93,6 +93,13 @@ const PARTNERS: SME[] = [
 
     website: "https://www.nams-3d.com/index.php/en/home_en/",
   },
+  {
+    id: 13,
+    name: "CLEARSY",
+    logo: "../../assets/res/logos/logo-clearsy-2020-small.png",
+
+    website: "https://www.clearsy.com/en/",
+  },
 ];
 
 @Component({

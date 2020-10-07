@@ -109,14 +109,7 @@
     }
 
     &--germany {
-      // background-image: url("../../images/f");
-      // background-image: url("../../images/coming-soon.png");
-      box-shadow: none;
-      &:hover,
-      &:focus {
-        box-shadow: none;
-        transform: translateY(0);
-      }
+      background-image: url("../../images/fortiss/Fortiss_Innenhof.jpg");
     }
 
     &--italy {
@@ -124,7 +117,6 @@
     }
 
     &--romania {
-      // background-image: url();
       background-image: url("../../images/lucian/inginerie.jpg");
     }
 

@@ -91,6 +91,7 @@
         [class.hidden-fade-in]="!rearranged"
         [class.u-fade-in]="rearranged"
         *ngFor="let tech of alphabet[letter]"
+        id="{{ tech.asset_name.toLowerCase().replace(whitespace, '-') }}"
       >
         <div class="tech__top">
           <div class="tech__image">

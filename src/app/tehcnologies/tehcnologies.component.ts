@@ -120,7 +120,7 @@ export class TehcnologiesComponent implements OnInit {
       description:
         'An integrated "tool chain" for comprehensive Model-Based Design (MBD) of Cyber-Physical Systems (CPSs). The tool chain supports the multidisciplinary, collaborative modelling of CPSs from requirements, through design, down to realisation in hardware and software. This enables traceability at all stages of the development. The IP from this project has been transferred to the INTO-CPS Association after the completion of the project.',
       showMore: false, // Always leave at false
-      supported_platforms: ["Windows", "Linux", "MacOS"],
+      supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Functional Mock-up Interface (FMI)"],
       related_tools: [
         {
@@ -221,7 +221,7 @@ export class TehcnologiesComponent implements OnInit {
       description:
         "SimulStore is an Industrial AppStore platform developed by SIMULARGE. In Simulstore, you can buy and/or develop Digital Twins for your business leveraging Simularge's experience both in the Industry and Academia.",
       showMore: false, // Always leave at false
-      supported_platforms: ["Windows", "Linux", "MacOS"],
+      supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Python", "Fortran"],
       license_info_name: "Proprietary",
       license_info_url: "https://simulstore.com/#/termsandconditions",
@@ -238,7 +238,7 @@ export class TehcnologiesComponent implements OnInit {
       description:
         'IoT wallet is the web/mobile app product which allows forming portfolio of different sensing devices for its customers, i.e. it\'s wallet. It allows users to remotely register, monitor and configure commercially available or custom low-power sensing devices integrating low-power state-of-the-art radios. Once configured, IoT wallet notifies its users about status of sensors via "push notifications". IoT wallet dashboard provides current/past information retrieved from the database which collects sensed data from various sensors, while the configuration of sensors such as how frequently sensors are sending its data or other communication properties are set upon the configuration. Specific advantage of IoT wallet is the possibility to integrate Machine Learning that can be used for different general based purposes such as future estimations or predictions. Typical scenario of IoT wallet usage is the smart environment. For example, it could be smart home that currently possess soil humidity sensor to sense if the garden needs to be irrigated and actuators to turn automatic irrigation; parking lots sensors for occupancy; or several LoRa water meters that measure specific points of water consumption. In the user dashboard, all of these devices are displayed with current status and given data analytics. The system is able to notify users if the garden has to be irrigated, turn on remote irrigation, or receive the notifications if the water consumption is not in accordance with the regular pattern.',
       showMore: false, // Always leave at false
-      supported_platforms: ["Windows", "Linux", "MacOS"],
+      supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Machine Learning", "Tensorflow"],
       domains: ["IoT", "Machine Learning", "Sensors", "Modelling", "CPS"],
       license_info_name: "Time-based: monthly/yearly based fees apply",
@@ -253,7 +253,7 @@ export class TehcnologiesComponent implements OnInit {
       description:
         "LIBrary for Process Flowsheeting -  a C++ library providing the building blocks to simulate continuous industrial processes at steady state with first-principle, concentrated-parameter models.",
       showMore: false, // Always leave at false
-      supported_platforms: ["Windows", "Linux", "MacOS"],
+      supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["C++", "OOP", "DAG", "Flowsheeting"],
       domains: [
         "Polymers",
@@ -279,7 +279,7 @@ export class TehcnologiesComponent implements OnInit {
       description:
         "WebModelica is a lightweight client - server tool for modelling and simulation of the dynamics of mechatronic systems.",
       showMore: false, // Always leave at false
-      supported_platforms: ["Windows", "Linux", "MacOS"],
+      supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Modelica"],
       domains: ["Mechatronic systems"],
       license_info_name: "SaaS, On-Premise",
@@ -319,7 +319,7 @@ export class TehcnologiesComponent implements OnInit {
       description:
         "With AirChain you can generate a permissioned blockchain network in the cloud to securely store all the measurements of your air-quality sensors. Just with one mouse click. Select the organizations that will manage data, privacy policies, among other parameters, and the system will automatically generate the API endpoints that you need to start storing/getting data in/from the blockchain. ",
       showMore: false, // Always leave at false
-      supported_platforms: ["Windows", "Linux", "MacOS"],
+      supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Bash", "Python", "YAML", "JSON", "Javascript"],
       related_tools: [
         {
@@ -368,7 +368,7 @@ export class TehcnologiesComponent implements OnInit {
       description:
         "AutoFOCUS3 is a model-based tool and research platform for safety-critical embedded systems. It builds on a generic Eclipse-based tooling framework and is open source (Apache 2.0 license). It supports the design, development and validation of safety-critical embedded systems in many development phases, including architecture design, implementation, hardware/software integration, and safety argumentation based on formal models from the following viewpoints: requirements, logical architecture and behavior, technical (hardware and software) architecture, deployment (software/hardware mapping, scheduling, safety argumentation. In HUBCAP, the use of AutoFOCUS3 focuses on a design-space exploration (DSE) service that allows to explore architecture alternatives for the system under design. In particular, this includes different mappings of software tasks to the platform architectures and the use of safety patterns (e.g., based on partition/compartment architectures). The DSE services uses a model of the system (logical architecture, hardware platform architecture, parameters such as, WCETs, memory sizes, etc.) and the design goals as input. Design goals are defined in terms of 1) constraints on the DSE problems, which define the space of valid solutions, and 2) optimization objectives, which define optimality properties of a solution (e.g., cost, estimated energy consumption, etc.). In case multiple objectives are defined, the solutions to a DSE problem are presented as a Pareto-Front. Thereby, contradicting design objectives can be evaluated. The DSE service relies on formal methods to perform the exploration. In the first step, it transforms the system model and the design constraints and objectives into an appropriate formal language. Then, one of the supported solver backend (e.g., Microsoft(R) Z3) is executed in order to determine the solution alternatives. In the last step, the output of the solver is transformed back into the AutoFOCUS3 modeling language.",
       showMore: false, // Always leave at false
-      supported_platforms: ["Windows", "Linux", "MacOS"],
+      supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Component-Based Design (based on FOCUS)"],
       related_tools: [
         {
@@ -420,14 +420,17 @@ export class TehcnologiesComponent implements OnInit {
 
   showingAll = true;
   rearranged = false;
+  scrolled = false;
+
+  whitespace: RegExp = /\s/g;
+
+  scrollIntoView(id) {
+    document.getElementById(id).scrollIntoView({ block: "center" });
+  }
 
   ngOnInit(): void {
     document.title = "Technologies | HUBCAP";
     document.getElementById("hero-title").textContent = "Technologies";
-
-    // for (let tech of this.technologies) {
-    //   this.alphabet[tech.asset_name.toLowerCase().charAt(0)].push(tech);
-    // }
 
     this.rearrangeTechnologies(this.technologies);
 
@@ -501,6 +504,16 @@ export class TehcnologiesComponent implements OnInit {
   }
 
   checkPosition() {
+    const url = document.location.href.toString().toLowerCase();
+
+    this.technologies.forEach((tech) => {
+      let name = tech.asset_name.toLowerCase().replace(this.whitespace, "-");
+      if (url.includes(name) && !this.scrolled) {
+        this.scrollIntoView(name);
+        this.scrolled = true;
+      }
+    });
+
     if (this.elements_fade_in.length <= 0) {
       this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     }
@@ -540,9 +553,5 @@ export class TehcnologiesComponent implements OnInit {
         element.classList.remove("hidden-slide-in-right");
       }
     }
-  }
-
-  scrollIntoView(id) {
-    document.getElementById(id).scrollIntoView();
   }
 }

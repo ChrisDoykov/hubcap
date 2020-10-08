@@ -359,6 +359,31 @@ export class TehcnologiesComponent implements OnInit {
       email: "d.cortolezzis@eu-nams.com",
     },
     {
+      type: "tool",
+      dihAsset: true,
+      logo: "../../assets/res/logos/af3_logo.jpeg",
+      asset_name: "AutoFOCUS3",
+      company_name: "fortiss",
+      url: "https://www.fortiss.org/",
+      description:
+        "AutoFOCUS3 is a model-based tool and research platform for safety-critical embedded systems. It builds on a generic Eclipse-based tooling framework and is open source (Apache 2.0 license). It supports the design, development and validation of safety-critical embedded systems in many development phases, including architecture design, implementation, hardware/software integration, and safety argumentation based on formal models from the following viewpoints: requirements, logical architecture and behavior, technical (hardware and software) architecture, deployment (software/hardware mapping, scheduling, safety argumentation. In HUBCAP, the use of AutoFOCUS3 focuses on a design-space exploration (DSE) service that allows to explore architecture alternatives for the system under design. In particular, this includes different mappings of software tasks to the platform architectures and the use of safety patterns (e.g., based on partition/compartment architectures). The DSE services uses a model of the system (logical architecture, hardware platform architecture, parameters such as, WCETs, memory sizes, etc.) and the design goals as input. Design goals are defined in terms of 1) constraints on the DSE problems, which define the space of valid solutions, and 2) optimization objectives, which define optimality properties of a solution (e.g., cost, estimated energy consumption, etc.). In case multiple objectives are defined, the solutions to a DSE problem are presented as a Pareto-Front. Thereby, contradicting design objectives can be evaluated. The DSE service relies on formal methods to perform the exploration. In the first step, it transforms the system model and the design constraints and objectives into an appropriate formal language. Then, one of the supported solver backend (e.g., Microsoft(R) Z3) is executed in order to determine the solution alternatives. In the last step, the output of the solver is transformed back into the AutoFOCUS3 modeling language.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows (x64)", "Linux (x64)", "MacOS (x86)"],
+      modelling_notations: ["Component-Based Design (based on FOCUS)"],
+      related_tools: [
+        {
+          name: "FMI interface",
+          url: "https://fmi-standard.org/",
+        },
+      ],
+      domains: ["Aviation", "Automotive", "Industrial automation"],
+      license_info_name: "Apache 2.0",
+      license_info_url: "https://www.apache.org/licenses/LICENSE-2.0",
+      download_link:
+        "https://www.fortiss.org/en/publications/software/autofocus-3",
+      email: "mbse@fortiss.org",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/smm_inv_logo.png",
       asset_name: "Water and air systems models",
@@ -371,6 +396,25 @@ export class TehcnologiesComponent implements OnInit {
       domain: ["Fluid flow"],
       license_info_name: "Specific for each project",
       email: "iostoica@gmail.com",
+    },
+    {
+      type: "model",
+      dihAsset: true,
+      logo: "../../assets/res/logos/fortissimo.png",
+      asset_name: "fortissimo",
+      company_name: "fortiss",
+      url: "https://www.fortiss.org/",
+      description:
+        "The fortissimo rover shows how model-based systems engineering can be employed to design, validate and transfer software and system architectures for autonomous vehicles to an operational cyber-physical system. The fortissimo platooning model was implemented in the AutoFOCUS3 open source systems engineering tool developed by fortiss. It represents an autonomous driving function that permits automobiles or trucks to drive behind one another at extremely close distances, thus reducing fuel consumption. The model provides the logical architecture and the behaviour specification of platooning functions such as joining or leaving a platoon and car-to-car communication, as well as ADAS functions like adaptive cruise control systems and lane/emergency braking assistants. The developed functions can be implemented via code generators in the physical fortissimo Rover, a 1:10 scale model vehicle equipped with sensor technology such as cameras, ultrasound and laser-based distance meters. The virtual fortissimo platform is intended of the early validation of the models in a functional simulation environment. By means of the AutoFOCUS3 FMI interface, the vehicle behavior is co-simulated with the vehicle dynamics and the environment (modeled using other open source tools such as OpenModelica, ROS and Gazebo) and represented in a 3D simulation. At fortiss, the fortissimos are used to examine current research issues. These include a model-based method for deriving so-called assurance cases for validating the functional safety of the vehicles in line with ISO-26262, degradation and reconfiguration strategies for safeguarding critical driving functions (e.g., against hardware faults), analytical and simulation-based processes for dimensioning and validating the vehicle hardware and software architecture (i.e, design-space exploration such as HW/SW deployments).",
+      showMore: false, // Always leave at false
+      modelling_lang_tool: ["AutoFOCUS3"],
+      domain: ["Automotive"],
+      license_info_name:
+        "© 2020 fortiss GmbH, released under a 2-Clause BSD License",
+      license_info_url: "https://opensource.org/licenses/BSD-2-Clause",
+      download_link:
+        "https://www.fortiss.org/en/research/living-lab/detail/fortissimo",
+      email: "mbse@fortiss.org",
     },
   ];
 

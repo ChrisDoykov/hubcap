@@ -168,11 +168,21 @@
                 }}{{ i === tech.domains.length - 1 ? "" : "," }}&nbsp;</span
               >
             </p>
-            <p class="tech__basic-info__line" *ngIf="tech.modelling_lang_tool">
+            <p
+              class="tech__basic-info__line"
+              *ngIf="
+                tech.modelling_lang_tool && tech.modelling_lang_tool.length > 0
+              "
+            >
               <span class="subtitle subtitle--bold subtitle--small"
                 >Modelling language/tool:
               </span>
-              <span>{{ tech.modelling_lang_tool }}</span>
+              <span *ngFor="let lang of tech.modelling_lang_tool; let i = index"
+                >{{ lang
+                }}{{
+                  i === tech.modelling_lang_tool.length - 1 ? "" : ","
+                }}&nbsp;</span
+              >
             </p>
             <p class="tech__basic-info__line" *ngIf="tech.domain">
               <span class="subtitle subtitle--bold subtitle--small"

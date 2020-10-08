@@ -81,7 +81,7 @@ export class TehcnologiesComponent implements OnInit {
       company_name: "Cyberarch Consulting",
       url: "https://cyberarch.eu",
       description:
-        'In Information Security there are a lot of tools for various operations and the end-user needs to select two or more tools based on his/her requirements. Having this in mind Cyberarch Consulting came up with an idea of creating a single product that can serve as an all-purpose tool.\n\n RCADE stands for Re-engineered Cyber Arch Defence Expert developed which is developed as an "All in one AI Security Solution". It integrates Vulnerability Assessment, Log Analysis, Malware Analysis, Security Monitoring, OSINT Gathering, Hybrid Pentest Request. etc as one product. Moreover based on the requirement lot more security-related modules will be added in future updates. Few modules even though they seem like a single module, they have two or more different toolset built within. for example, the Vulnerability Management module will have a Network/Infrastructure Scanner and Web Application Scanner builtin. Same way, Hybrid Pentest Request Contains Web App Pentest Request, Mobile App Pentest Request, Source Code Audit Request, etc. \n\nThis tool is available as a Virtual Machine to be used internally within the User\'s environment. Moreover, the tool is available in the cloud such as AWS, Azure, Alibaba, etc. The tool is built in such a way that even a novice user can easily use it efficiently without prior training/knowledge.',
+        'In the Cyber Security market there are a lot of tools for various operations and the end-user needs to select two or more tools based on their requirements. Having this in mind Cyberarch Consulting came up with an idea of creating a single product that can serve as an all-purpose tool. RCADE which is being developed as an "All in one Security Solution". It integrates Vulnerability Assessment, Log Analysis, Malware Analysis, Security Monitoring, OSINT Gathering, Hybrid Pentest Request. as one product. Moreover, the tool is available in the cloud such as AWS, Azure, Alibaba and deployable on premises. The tool is built in such a way that even a novice user can easily use it efficiently without prior training/knowledge.',
       showMore: false, // Always leave at false
       domains: [
         "Energy",
@@ -92,7 +92,14 @@ export class TehcnologiesComponent implements OnInit {
         "Health",
         "Continuous Integration Testing",
       ],
-      modelling_lang_tool: "Python",
+      modelling_lang_tool: [
+        "Python",
+        "Golang",
+        "YAML",
+        "Node.js",
+        "Django",
+        "( Under development MVP will be ready in March 2021)",
+      ],
       license_info_name: "Pay-as-you-go",
       email: "info@cyberarch.eu",
     },
@@ -106,7 +113,7 @@ export class TehcnologiesComponent implements OnInit {
         "PROSIM T+ is an industrial process simulator for digital manufacturing, which enables simulations of discrete and continuous industrial processes for PLC programming training with realistic signal interfaces.",
       showMore: false, // Always leave at false
       domains: ["Education and training"],
-      modelling_lang_tool: "C#",
+      modelling_lang_tool: ["C#"],
       license_info_name: "Pay-as-you-go",
       email: "office@astiautomation.ro",
     },
@@ -343,6 +350,10 @@ export class TehcnologiesComponent implements OnInit {
         {
           name: "Docker",
           url: "https://www.docker.com/",
+        },
+        {
+          name: "Kubernetes",
+          url: "https://kubernetes.io/",
         },
       ],
       domains: ["Air quality sensors", "Wireless sensors"],

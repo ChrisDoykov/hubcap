@@ -299,6 +299,77 @@ export class TehcnologiesComponent implements OnInit {
     },
     {
       type: "tool",
+      logo:
+        "https://simreka.com/wp-content/uploads/2019/04/simrekalogo-e1558361786117.png",
+      asset_name: "Simreka",
+      company_name: "Simreka",
+      url: "https://simreka.com/",
+      description:
+        "Simreka tool enables customers to simulate manufacturing products and processes and rapidly find alternatives to reduce costs, improve sustainability performance.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Linux", "2 secure deployment options"],
+      modelling_notations: ["LAMP stack", "C", "Python"],
+      domains: [
+        "Machine Learning",
+        "Manufacturing processes",
+        "Materials",
+        "Chemicals",
+        "Sustainability",
+        "Safety",
+        "Regulatory compliance",
+      ],
+      license_info_name:
+        "Annual license and Pay as you go license, Data service is billed separately",
+      email: "hello@simreka.com",
+    },
+    {
+      type: "tool",
+      logo: "../../assets/res/logos/beam_logo.png",
+      asset_name: "Smart sensor-based Business Intelligence",
+      company_name: "Beam Innovation",
+      url: "https://beaminnovation.ro",
+      description:
+        "We offer a revolutionary mobile communication channel between retailers and clients aimed primarily at the Real Estate and Retail Industry, aiming to solve some of their most stringent problems: Poor yield of assets in the operational life cycle; Low number of visitors; Low period of visit; Low conversion rate from visitors to shoppers; Low average receipt value; Low visitor engagement; Low penetration rate; Weak conversation with visitors/customers; High marketing costs; Low analytics accuracy. However, business intelligence models can be applied in many other application domains. For example in smart health (for contact tracing during a pandemic or other important localization-related scenarios). The platform uses signals from BLE beacons, geofences or Wi-Fi networks to notify potential customers via a mobile application about the marketing campaigns of merchants in the areas visited. The same platform stores specific data on the behavior of visitors / buyers relative to the marketing campaigns of merchants.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS"],
+      modelling_notations: [
+        "iOS",
+        "Android",
+        "Cloud computing",
+        "ASP.NET Core",
+        ".NET Core",
+        "SQL",
+        "Java",
+        "Kotlin",
+        "RxJava",
+        "RxKotlin",
+        "RxSwift",
+      ],
+      related_tools: [
+        {
+          name: "Microsoft Azure App Service",
+          url: "https://azure.microsoft.com/en-us/services/app-service/",
+        },
+        {
+          name: "Azure Storage Account",
+          url: "https://docs.microsoft.com/en-us/azure/storage/",
+        },
+        {
+          name: "Redis Cache",
+          url: "https://redis.io/",
+        },
+        {
+          name: "SendGrid",
+          url: "https://app.sendgrid.com/",
+        },
+      ],
+      domains: ["Retail", "PropTech", "Real Estate", "Tourism", "eHealth"],
+      license_info_name:
+        "The user is allowed to freely install the mobile applications that communicate with the platform. Access to the data analytics within the platform is permitted via API (to be developed)",
+      email: "office@beaminnovation.ro",
+    },
+    {
+      type: "tool",
       logo: "https://libpf.com/img/logo.png",
       asset_name: "LIBPF",
       company_name: "simevo",

@@ -115,6 +115,21 @@ const PARTNERS: SME[] = [
 
     website: "https://hopu.eu/",
   },
+  {
+    id: 16,
+    name: "Simreka",
+    logo:
+      "https://simreka.com/wp-content/uploads/2019/04/simrekalogo-e1558361786117.png",
+
+    website: "https://simreka.com/",
+  },
+  {
+    id: 17,
+    name: "Beam Innovation",
+    logo: "../../assets/res/logos/beam_logo.png",
+
+    website: "https://beaminnovation.ro",
+  },
 ];
 
 @Component({

@@ -53,7 +53,8 @@ const PARTNERS: SME[] = [
   {
     id: 7,
     name: "Waveform",
-    logo: "http://www.waveform.hr/wp-content/uploads/2020/01/wf_logo-1.png",
+    logo:
+      "https://www.waveform.hr/wp-content/uploads/2020/09/Logo_IOT-Wallet2.png",
 
     website: "https://www.waveform.hr",
   },

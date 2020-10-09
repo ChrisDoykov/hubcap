@@ -284,7 +284,7 @@ export class TehcnologiesComponent implements OnInit {
     {
       type: "tool",
       logo:
-        "http://www.waveform.hr/wp-content/uploads/2020/09/Logo_IOT-Wallet2.png",
+        "https://www.waveform.hr/wp-content/uploads/2020/09/Logo_IOT-Wallet2.png",
       asset_name: "IoT Wallet",
       company_name: "Waveform",
       url: "https://www.waveform.hr",

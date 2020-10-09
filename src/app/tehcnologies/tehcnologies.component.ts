@@ -247,6 +247,20 @@ export class TehcnologiesComponent implements OnInit {
     },
     {
       type: "tool",
+      logo: "../../assets/res/logos/agranimo_logo.png",
+      asset_name: "FDR soil moisture sensor",
+      company_name: "Agranimo",
+      url: "https://agranimo.com/",
+      description:
+        "Cost effective, wireless frequency domain reflectometry (FDR) soil moisture probe with multiple depth levels.accordions",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS"],
+      modelling_notations: ["Python", "C"],
+      license_info_name: "Rental license",
+      email: "contact@agranimo.com",
+    },
+    {
+      type: "tool",
       logo:
         "http://www.waveform.hr/wp-content/uploads/2020/09/Logo_IOT-Wallet2.png",
       asset_name: "IoT Wallet",

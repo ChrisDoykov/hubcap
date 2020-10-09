@@ -100,6 +100,13 @@ const PARTNERS: SME[] = [
 
     website: "https://www.clearsy.com/en/",
   },
+  {
+    id: 14,
+    name: "Agranimo",
+    logo: "../../assets/res/logos/agranimo_logo.png",
+
+    website: "https://agranimo.com/",
+  },
 ];
 
 @Component({

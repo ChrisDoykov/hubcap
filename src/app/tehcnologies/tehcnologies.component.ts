@@ -252,7 +252,7 @@ export class TehcnologiesComponent implements OnInit {
       company_name: "Agranimo",
       url: "https://agranimo.com/",
       description:
-        "Cost effective, wireless frequency domain reflectometry (FDR) soil moisture probe with multiple depth levels.accordions",
+        "Cost effective, wireless frequency domain reflectometry (FDR) soil moisture probe with multiple depth levels.",
       showMore: false, // Always leave at false
       supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Python", "C"],

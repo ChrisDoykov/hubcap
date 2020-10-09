@@ -131,6 +131,20 @@ const PARTNERS: SME[] = [
 
     website: "https://beaminnovation.ro",
   },
+  {
+    id: 18,
+    name: "asvin",
+    logo: "../../assets/res/logos/asvin.png",
+
+    website: "https://www.asvin.io",
+  },
+  {
+    id: 19,
+    name: "Lelier BV (Shipdetection)",
+    logo: "../../assets/res/logos/Lelier_logo.png",
+
+    website: "https://shipdetection.eu/",
+  },
 ];
 
 @Component({

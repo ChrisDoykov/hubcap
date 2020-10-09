@@ -512,6 +512,43 @@ export class TehcnologiesComponent implements OnInit {
       email: "mbse@fortiss.org",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/asvin.png",
+      asset_name: "asvin Secure OTA Update Distribution for IoT",
+      company_name: "asvin",
+      url: "https://www.asvin.io",
+      description:
+        "IoT vendors, operators and insurance in can organize and monitor the software lifecycles of IoT devices during operatin via asvin.io cloud solution. Track Software from certification, deploying, distribution towards operation on devices. Secure and resilient update distribution as a service for IoT Devices at the Edge (e.g. industrial Sensors, Nodes, Gateways). Providing intelligence thread landscape reports for IoT Device vendors and operators during device lifecycles: e.g. risk of unpatched and unsecure devices deployed.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS"],
+      modelling_notations: ["C++", "REST", "JSON", "Https"],
+      related_tools: [
+        {
+          name: "Etherium Blockchain (Private Blockchain Alastria Network B)",
+          url: "https://alastria.io/en/eres-desarrollador/",
+        },
+      ],
+      domains: ["Automotive", "Space", "Machinery", "Smart Cities"],
+      license_info_name: "Apache 2.0",
+      license_info_url: "https://www.apache.org/licenses/LICENSE-2.0",
+      email: "contact@asvin.io",
+    },
+    {
+      type: "model",
+      logo: "../../assets/res/logos/shipdetectionlogo3.JPG",
+      asset_name:
+        "Automatic object detection using very high resolution satellite imagery",
+      company_name: "Lelier BV (Shipdetection)",
+      url: "https://shipdetection.eu/",
+      description:
+        "By combining multiple sources such as medium and very high resolution Optical and Synthetic aperture radar (SAR) imagery that we analyse through machine learning and automatic object detection algorithms we speed-up a monotonous task that would otherwise take weeks to now only hours. For instance It is now possible to detect and cross-reference vessels with AIS signals, ship databases and to track these vessels 24/7 across nation borders and detect illegal fishing, which otherwise would not be possible due to the limited coverage, revisit times and vessel name changes.",
+      showMore: false, // Always leave at false
+      modelling_lang_tool: ["Python"],
+      domain: "Earth Observation",
+      license_info_name: "Nontransferable free license",
+      email: "info@shipdetection.eu",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/smm_inv_logo.png",
       asset_name: "Water and air systems models",

@@ -107,6 +107,14 @@ const PARTNERS: SME[] = [
 
     website: "https://agranimo.com/",
   },
+  {
+    id: 15,
+    name: "HOP Ubiquitous",
+    logo:
+      "https://www.premiosinnobankia.com/wp-content/uploads/2020/08/logo-hopu.jpg",
+
+    website: "https://hopu.eu/",
+  },
 ];
 
 @Component({

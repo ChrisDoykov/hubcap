@@ -261,6 +261,28 @@ export class TehcnologiesComponent implements OnInit {
     },
     {
       type: "tool",
+      logo: "../../assets/res/logos/smartspot.PNG",
+      asset_name: "SmartSpot",
+      company_name: "HOP Ubiquitous",
+      url: "https://hopu.eu/",
+      description:
+        "Smart Spot offers a reliable and robust solution to assure compliance with occupational therapy regulations and recommendations, at the same time that supporting environmental emissions monitoring, and preventive detection of anomalies.Data quality and data reliability are a critical benefit and differentiation aspect with respect to other solutions. Smart Spot offers certified data quality following key standards as IEEE P2510, validations by external institutions as Environmental Centre CETENMA, demonstrating an excellent correlation with respect to reference data sources, and a guarantee and certification of calibration for every individual sold system by an accredited calibration laboratory (ISO 17025) by ENAC accreditation body. Thereby, offering all the guarantees and trust available in the market. In addition, the Smart Spot environment monitors are maintained with and AI-empowered cloud platform called Homard (FIWARE-compatible) for the preventive maintenance, fatigue compensation, and a set of Function as a Service (FaaS) Artificial Intelligence algorithms for optimizing the data quality and calibration evolution with respect to seasons temperature/humidity conditions, geo-location (latitude/longitude) and context (industry, rural areas, or cities). Smart Spot is providing a modular and cost-effective solution adaptable for the specific needs of the end-users, supporting reliable and high data quality for environmental monitoring, gases, and toxic substances identification. This is extensible with other contextual parameters as noise, affluence of people and the relevant data sources for monitoring that supports the understanding of the status to enable a data-driven and evidence-based decision-making.Smart Spot benefits to help to measure environmental impact via monitoring the different critical parameters in real-time, enabling also historical analysis, identification of anomalies, and trends. The parameters to be monitored are adaptable to every industrial sector, but also for other businesses and even for outdoor areas in cities and rural zones.Beyond the environmental impact, Smart Spot also brings a relevant data source for supporting digital twins with relevant data sources, that allow to optimize/improve processes by providing reliable/accurate data about the evolution of the different parameters, efficiency/impact of the different changes to bring operational intelligence that enable the opportunity for sustainable improvements and economic benefits.Finally, Smart Spot is empowered with Open Source Cloud-based data visualization and data exploitation platform (https://opendata.hopu.eu/grafana/). Enabling the configuration of alerts, data analysis, dashboards creation, multi-parameters monitoring/correlation, and integration/communication with other systems via MQTT, OPC-UA/Modbus, Open APIs and a direct support of existing DIHs platforms as MIDIH and FIWARE.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["FreeRTOS"],
+      domains: ["Industry"],
+      modelling_notations: ["R", "TensorFlow", "FIWARE", "RNN"],
+      related_tools: [
+        {
+          name: "Homard",
+          url: "http://homard.hopu.eu/",
+        },
+      ],
+      license_info_name: "Open Source",
+      download_link: "https://hopu.eu/download/3058/",
+      email: "jara@hopu.eu",
+    },
+    {
+      type: "tool",
       logo:
         "http://www.waveform.hr/wp-content/uploads/2020/09/Logo_IOT-Wallet2.png",
       asset_name: "IoT Wallet",

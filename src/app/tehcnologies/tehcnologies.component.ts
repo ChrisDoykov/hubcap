@@ -179,11 +179,14 @@ export class TehcnologiesComponent implements OnInit {
       company_name: "Developair Technologies",
       url: "https://www.developair.tech/",
       description:
-        "Developair offers tools for verification of requirements and automatic test generation, enabling the optimization of the software development life cycle. This tools are provided in a SaaS (Software as a Service) format and oriented primarily towards companies developing intelligent systems in the transport, energy, aerospace, health or manufacturing sectors. There are 3 main functionalities available for the user: 1 - A smart editor that integrates user assistance functions and facilitates the definition of software architecture and software requirements. It is based on diagramming and restricted natural language (patterns). 2 - \nA requirements checker that identifies inconsistencies, redundancies, etc on a set of requirements. The early validation of software specification reduces the design issues and decreases the development costs, so this feature represents a significant improvement in development projects. Software robustness and quality is guaranteed through automated verification tasks. 3 -  A test generator for automatic test generation. The generator uses the specification of requirements and architecture as input, and generates black-box tests with requirements coverage. Additionally, these tests can be exported to some common testing/simulation frameworks with a single click.",
+        "Developair offers tools for verification of requirements and automatic test generation, enabling the optimization of the software development life cycle. These tools are provided in a SaaS (Software as a Service) format and oriented primarily towards companies developing intelligent systems in the transport, energy, aerospace, health or manufacturing sectors.",
       showMore: false, // Always leave at false
       supported_platforms: ["Cloud based"],
-      modelling_notations: ["Domain specific language", "ReqIf", "ATML"],
-      domains: ["Transport", "Energy", "Aerospace", "Health", "Manufactoring"],
+      modelling_notations: [
+        "Domain specific language",
+        "Restricted natural language requirements",
+      ],
+      domains: ["Transport", "Energy", "Aerospace", "Health", "Manufacturing"],
       license_info_name: "Subscription",
       email: "info@developair.es",
     },

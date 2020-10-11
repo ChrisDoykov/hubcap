@@ -192,6 +192,21 @@ export class TehcnologiesComponent implements OnInit {
     },
     {
       type: "tool",
+      logo: "../../assets/res/logos/greenaq-text.png",
+      asset_name: "GreenAQ",
+      company_name: "GreenRIS Developments",
+      url: "https://greenris.wordpress.com/",
+      description:
+        "The tool represent a platform for management of diffuse dust emissions from industrial activities.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS"],
+      modelling_notations: ["Grafana"],
+      domains: ["IoT", "PM monitoring", "Industrial activities"],
+      license_info_name: "Subscription as SaaS",
+      email: "greenris.office@gmail.com",
+    },
+    {
+      type: "tool",
       logo:
         "https://www.logic2day.com/getattachment/24f9150a-3a63-4b28-b7a8-1debf37d9cfd/Productlogo-Dezyne.png.aspx",
       asset_name: "Dezyne",

@@ -19,6 +19,7 @@ import { FaqComponent } from "./faq/faq.component";
 import { PressReleaseListComponent } from "./press-release-list/press-release-list.component";
 import { TehcnologiesComponent } from "./tehcnologies/tehcnologies.component";
 import { WinnersComponent } from "./winners/winners.component";
+import { ContentComponent } from "./content/content.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", component: HomeComponent },
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: "partners", component: PartnersComponent },
   { path: "press-releases/:press-release", component: PressReleasesComponent },
   { path: "press-releases", component: PressReleaseListComponent },
+  { path: "content/:category/:content-piece", component: ContentComponent },
   { path: "resources", component: ResourcesComponent },
   { path: "faq", component: FaqComponent },
   { path: "call-winners", component: WinnersComponent },

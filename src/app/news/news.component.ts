@@ -10,6 +10,18 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "SAE session at HiPEAC Computing Systems Week",
+      summary:
+        "Join us in the Smart Anything Everywhere session at this year's virtual HiPEAC Computing Systems Week on 15/10/20 from 14-16hr, where HUBCAP will be presented by the project coordinator Peter Gorm Larsen!",
+      date: "2020.10.13",
+      type: "VIRTUAL SESSION",
+      caption: "",
+      urlname: "Register for the session",
+      url: "https://www.hipeac.net/csw/2020/autumn-virtual/#/registration/",
+      modalTarget: "sae-session",
+      thumbnailAlt: "",
+    },
+    {
       title: "HUBCAP Open Call #1.2 PULL",
       summary:
         "Call #1.2 PULL will be open for applications from 1 October 2020 until 30 November 2020 at 17h00 (Brussels Time) CEST.",

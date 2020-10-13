@@ -24,7 +24,7 @@
         >
           {{ article.summary }}
         </p>
-        <figure class="figure">
+        <figure class="figure" *ngIf="article.thumbnail">
           <img
             class="modal-button"
             (click)="openModal(article)"
@@ -35,7 +35,11 @@
           />
           <figcaption class="figure__caption">{{ article.caption }}</figcaption>
         </figure>
-        <span *ngIf="article.url" class="news-item__link">
+        <span
+          *ngIf="article.url"
+          [class.u-margin-top-small]="!article.thumbnail"
+          class="news-item__link"
+        >
           <a
             href="{{ article.url }}"
             target="_blank"

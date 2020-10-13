@@ -12,8 +12,6 @@ export class PressReleasesComponent implements OnInit {
   pressRelease = "";
 
   ngOnInit(): void {
-    document.title = "Press Release | HUBCAP";
-    document.getElementById("hero-title").textContent = "Press Release";
     const url = window.location.href.toString();
     if (url.includes("call1-1")) {
       this.pressRelease = "1-1";
@@ -22,16 +20,5 @@ export class PressReleasesComponent implements OnInit {
     } else {
       this.router.navigate(["/not-found"]);
     }
-  }
-
-  openModal(item) {
-    const $target = document.getElementById(item);
-
-    $target.classList.toggle("is-active");
-  }
-  closeModal(item) {
-    const $target = document.getElementById(item);
-
-    $target.classList.remove("is-active");
   }
 }

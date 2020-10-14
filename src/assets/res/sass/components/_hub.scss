@@ -84,6 +84,7 @@
     background-repeat: no-repeat;
     background-position: center;
     transition: all 0.3s;
+    backface-visibility: hidden;
 
     /* Remove when all images are here */
     display: flex;
@@ -108,6 +109,10 @@
       background-image: url("../../images/au/csm_Edison_JR_0939_6bb3281da6.jpg");
     }
 
+    &--sweden {
+      background-image: url("../../images/kth/_MG_6328_retusch.jpg");
+    }
+
     &--germany {
       background-image: url("../../images/fortiss/Fortiss_Innenhof.jpg");
     }
@@ -130,10 +135,6 @@
         background-size: cover;
         min-height: 30rem;
       }
-    }
-
-    &--sweden {
-      //   background-image: url("../../images/kth/_MG_6328_retusch.jpg");
     }
 
     // &__slide {

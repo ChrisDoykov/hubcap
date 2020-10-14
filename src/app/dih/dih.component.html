@@ -144,8 +144,7 @@
     ></div>
   </div>
   <div class="hub row hidden-fade-in">
-    <div class="col-1-of-3 hub__gallery hub__gallery--germany">
-    </div>
+    <div class="col-1-of-3 hub__gallery hub__gallery--germany"></div>
     <div class="col-2-of-3 hub__content">
       <h2 class="hub__name u-center-text">Germany</h2>
       <div class="hub__text u-justify-text-tab-port">
@@ -177,6 +176,53 @@
         </p>
       </div>
     </div>
+  </div>
+  <div class="hub row hidden-fade-in">
+    <div
+      *ngIf="width < 900"
+      class="col-1-of-3 hub__gallery hub__gallery--sweden"
+    ></div>
+    <div class="col-2-of-3 hub__content">
+      <h2 class="hub__name u-center-text">Sweden</h2>
+      <div class="hub__text u-justify-text-tab-port">
+        <p class="paragraph paragraph--big">
+          In Sweden <span class="bold">HUBCAP</span> is represented by the KTH
+          Digital Innovation Hub on Industrial Digitalization, the DIHID.
+          Located at the
+          <a href="https://www.kth.se/mmk/" target="_blank"
+            >Mechatronics Division at KTH</a
+          >
+          in Stockholm, the DIHID acts as a meeting ground for Tech Scaleups,
+          Industry and Academic Faculties. We offer expertise, testbeds and
+          professional training within the domains of Robotics, Model Based
+          Design, Autonomous Systems and Machine Learning. DIHID also organizes
+          expert talks and conferences to share knowledge between
+          engineering/scientific disciplines and academia-industry. Furthermore,
+          DIHID is involved in the newly launched PECA initiative, which offers
+          a new approach on life-long learning for Swedish Industry.
+        </p>
+        <p class="paragraph paragraph--big">
+          Our clients work with industrial digitalization on both a strategic
+          and technical level. They are leaders and visionaries, practitioners
+          and strategists who develop and produce products, services and
+          knowledge. We have a close partnership, via our industry network
+          <a href="https://www.ices.kth.se/" target="_blank">ICES</a>, with more
+          than 30 companies and organizations.
+        </p>
+
+        <p class="paragraph paragraph--big">
+          Contact <span class="bold">HUBCAP</span> Sweden via the
+          <a
+            href="mailto:info@hubcap.eu?subject=Inquiry%20for%20HUBCAP%20Sweden"
+            >Service Centre</a
+          >.
+        </p>
+      </div>
+    </div>
+    <div
+      *ngIf="width > 900"
+      class="col-1-of-3 hub__gallery hub__gallery--sweden"
+    ></div>
   </div>
   <div class="hub row hidden-fade-in">
     <div

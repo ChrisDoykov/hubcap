@@ -192,7 +192,7 @@ export class TehcnologiesComponent implements OnInit {
     },
     {
       type: "tool",
-      logo: "../../assets/res/logos/greenaq-text.png",
+      logo: "../../assets/res/logos/GreenAQ_logo.JPG",
       asset_name: "GreenAQ",
       company_name: "GreenRIS Developments",
       url: "https://greenris.wordpress.com/",

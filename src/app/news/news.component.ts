@@ -10,6 +10,19 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "Q&A Webinar on 28 October",
+      summary:
+        "Call #1.2 PULL is now open to applications! Join us on our live Q&A Webinar on 28 October, 11h30am CET (Brussels Time) to learn how to apply to HUBCAP Call #1.2 PULL!",
+      date: "2020.10.16",
+      type: "VIRTUAL SESSION",
+      caption: "",
+      urlname: "Register for the webinar",
+      url: "www.f6s.com/call1.2pull1stqawebinar",
+      modalTarget: "1.2webinar",
+      thumbnail: "../../assets/res/images/calll1.2webinar.PNG",
+      thumbnailAlt: "HUBCAP Call #1.2 Q&A Webinar",
+    },
+    {
       title: "SAE session at HiPEAC Computing Systems Week",
       summary:
         "Join us in the Smart Anything Everywhere session at this year's virtual HiPEAC Computing Systems Week on 15/10/20 from 14-16hr, where HUBCAP will be presented by the project coordinator Peter Gorm Larsen!",

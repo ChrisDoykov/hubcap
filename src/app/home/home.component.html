@@ -47,106 +47,62 @@
 
   <section class="divider" id="first"></section>
 
-  <section
-    class="services"
-    (window:resize)="onResize()"
-    (window:scroll)="checkPosition()"
-  >
-    <h2 class="services__heading heading-secondary">Our Services</h2>
-    <div class="row">
-      <div class="col-1-of-3 service">
-        <div class="u-center-text">
-          <i class="service__icon icon-basic-spread-text-bookmark"></i>
-        </div>
+  <section class="info">
+    <!--JOIN here-->
 
-        <div class="service__content">
-          <h3 class="heading-tertiary service__content__title">Knowledge</h3>
-          <p class="paragraph paragraph--big">
-            From awareness-raising to training and skills development for
-            model-based CPS engineering. We will be offering information events,
-            seminars, and training courses on the HUBCAP technologies and tools.
-          </p>
-          <a routerLink="/services">Learn More</a>
-        </div>
+    <div class="paragraphs row">
+      <div class="col-1-of-3">
+        <h2 class="subtitle">How We Help</h2>
+        <p class="paragraph paragraph--big">
+          <span class="bold">HUBCAP</span> is a one-stop-shop to help your
+          European SME – whatever your sector and wherever you are situated – to
+          undertake digital innovation using new model-based design technology
+          for Cyber- Physical Systems.
+        </p>
+
+        <p class="paragraph paragraph--big">
+          To learn more about what we offer see our
+          <a
+            *ngIf="browser !== 'Firefox'"
+            [routerLink]="['/services']"
+            routerLinkActive="active"
+            >Services</a
+          >
+          <a *ngIf="browser === 'Firefox'" href="/services">Services</a> page.
+        </p>
       </div>
-      <div class="col-1-of-3 service">
-        <div class="u-center-text">
-          <i class="service__icon icon-basic-laptop"></i>
-        </div>
 
-        <div class="service__content">
-          <h3 class="heading-tertiary service__content__title">Technology</h3>
-          <p class="paragraph paragraph--big">
-            These enable hands-on experience on HUBCAP technologies, provided
-            through support for SMEs engaged in Open Call (OC) experiments and
-            by organising practical labs such as hackathons for the rapid
-            prototyping of use cases. We can help match your SME with the right
-            expertise and tools for model-based design, verification,
-            validation, and safety analysis.
-          </p>
-          <a routerLink="/services">Learn More</a>
-        </div>
+      <div class="col-1-of-3">
+        <h2 class="subtitle">What Are CPS</h2>
+        <p class="paragraph paragraph--big">
+          Cyber-Physical Systems are systems that link the physical world (e.g.,
+          through sensors or actuators) with the digital world of software
+          systems and communications technology. A CPS will often include
+          components from many different providers, so your business may already
+          be contributing towards CPSs. <br />
+          <a
+            *ngIf="browser !== 'Firefox'"
+            [routerLink]="['/faq']"
+            routerLinkActive="active"
+            >Learn More</a
+          >
+          <a *ngIf="browser === 'Firefox'" href="/faq">Learn More</a>
+        </p>
       </div>
-      <div class="col-1-of-3 service">
-        <div class="u-center-text">
-          <i class="service__icon icon-elaboration-mail-check"></i>
-        </div>
-
-        <div class="service__content">
-          <h3 class="heading-tertiary service__content__title">
-            Fast Prototyping and Validation
-          </h3>
-          <p class="paragraph paragraph--big">
-            Sandboxed services will be implemented in our HUBCAP collaboration
-            platform and will provide functionalities such as CPS
-            multi-modelling, co-simulation, monitoring and analytics,
-            composition and orchestration, enhanced with protection mechanisms
-            to ensure the security and privacy of the data exchanged within the
-            collaboration platform.
-          </p>
-          <a routerLink="/services">Learn More</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-1-of-2 service">
-        <div class="u-center-text">
-          <i class="service__icon icon-basic-share"></i>
-        </div>
-
-        <div class="service__content">
-          <h3 class="heading-tertiary service__content__title">
-            Ecosystem Building
-          </h3>
-          <p class="paragraph paragraph--big">
-            These services will help you reach out to stakeholders, businesses,
-            government and expertise in the regions round our Digital Hubs, to
-            help needs and demands with offers and opportunities.
-          </p>
-          <a routerLink="/services">Learn More</a>
-        </div>
-      </div>
-      <div class="col-1-of-2 service">
-        <div class="u-center-text">
-          <i class="service__icon icon-ecommerce-euro"></i>
-        </div>
-
-        <div class="service__content">
-          <h3 class="heading-tertiary service__content__title">
-            Access to Market and Funding
-          </h3>
-          <p class="paragraph paragraph--big">
-            Your SME get help to access funding opportunities for your
-            development projects. We will share information about different
-            funding opportunities involving companies, funding agencies and
-            investors, or potential research and innovation projects. Events are
-            organised to share information about possible public or private
-            funding opportunities, available from both within the DIH region and
-            nationally/internationally, e.g. in the HUBCAP DIH network.
-          </p>
-          <a routerLink="/services">Learn More</a>
-        </div>
+      <div class="col-1-of-3">
+        <h2 class="subtitle">Model-Based Design</h2>
+        <p class="paragraph paragraph--big">
+          Model-Based Design (MBD) is a method to address the design of complex
+          systems with models. It is quite standard in software engineering and
+          is becoming more and more relevant in system engineering as well.<br />
+          <a
+            *ngIf="browser !== 'Firefox'"
+            [routerLink]="['/faq']"
+            routerLinkActive="active"
+            >Learn More</a
+          >
+          <a *ngIf="browser === 'Firefox'" href="/faq">Learn More</a>
+        </p>
       </div>
     </div>
   </section>
@@ -194,44 +150,136 @@
 
   <section class="divider" id="third"></section>
 
-  <section class="info">
-    <!--JOIN here-->
+  <section
+    class="services"
+    (window:resize)="onResize()"
+    (window:scroll)="checkPosition()"
+  >
+    <h2 class="services__heading heading-secondary">Our Services</h2>
+    <div class="row">
+      <div class="col-1-of-3 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-basic-spread-text-bookmark"></i>
+        </div>
 
-    <div class="paragraphs row">
-      <div class="col-1-of-3">
-        <h2 class="subtitle">How We Help</h2>
-        <p class="paragraph paragraph--big">
-          <span class="bold">HUBCAP</span> is a one-stop-shop to help your
-          European SME – whatever your sector and wherever you are situated – to
-          undertake digital innovation using new model-based design technology
-          for Cyber- Physical Systems.
-        </p>
-
-        <p class="paragraph paragraph--big">
-          To learn more about what we offer see our
-          <a routerLink="services" routerLinkActive="active">Services</a> page.
-        </p>
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">Knowledge</h3>
+          <p class="paragraph paragraph--big">
+            From awareness-raising to training and skills development for
+            model-based CPS engineering. We will be offering information events,
+            seminars, and training courses on the HUBCAP technologies and tools.
+          </p>
+          <a
+            *ngIf="browser !== 'Firefox'"
+            [routerLink]="['/services']"
+            routerLinkActive="active"
+            >Learn More</a
+          >
+          <a *ngIf="browser === 'Firefox'" href="/services">Learn More</a>
+        </div>
       </div>
+      <div class="col-1-of-3 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-basic-laptop"></i>
+        </div>
 
-      <div class="col-1-of-3">
-        <h2 class="subtitle">What Are CPS</h2>
-        <p class="paragraph paragraph--big">
-          Cyber-Physical Systems are systems that link the physical world (e.g.,
-          through sensors or actuators) with the digital world of software
-          systems and communications technology. A CPS will often include
-          components from many different providers, so your business may already
-          be contributing towards CPSs. <br />
-          <a routerLink="/faq">Learn More</a>
-        </p>
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">Technology</h3>
+          <p class="paragraph paragraph--big">
+            These enable hands-on experience on HUBCAP technologies, provided
+            through support for SMEs engaged in Open Call (OC) experiments and
+            by organising practical labs such as hackathons for the rapid
+            prototyping of use cases. We can help match your SME with the right
+            expertise and tools for model-based design, verification,
+            validation, and safety analysis.
+          </p>
+          <a
+            *ngIf="browser !== 'Firefox'"
+            [routerLink]="['/services']"
+            routerLinkActive="active"
+            >Learn More</a
+          >
+          <a *ngIf="browser === 'Firefox'" href="/services">Learn More</a>
+        </div>
       </div>
-      <div class="col-1-of-3">
-        <h2 class="subtitle">Model-Based Design</h2>
-        <p class="paragraph paragraph--big">
-          <span class="bold">HUBCAP</span> helps you to adopt digital tools that
-          allow you to model, simulate, analyse and visualise products before
-          you build them.<br />
-          <a routerLink="/faq">Learn More</a>
-        </p>
+      <div class="col-1-of-3 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-elaboration-mail-check"></i>
+        </div>
+
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">
+            Fast Prototyping and Validation
+          </h3>
+          <p class="paragraph paragraph--big">
+            Sandboxed services will be implemented in our HUBCAP collaboration
+            platform and will provide functionalities such as CPS
+            multi-modelling, co-simulation, monitoring and analytics,
+            composition and orchestration, enhanced with protection mechanisms
+            to ensure the security and privacy of the data exchanged within the
+            collaboration platform.
+          </p>
+          <a
+            *ngIf="browser !== 'Firefox'"
+            [routerLink]="['/services']"
+            routerLinkActive="active"
+            >Learn More</a
+          >
+          <a *ngIf="browser === 'Firefox'" href="/services">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-2 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-basic-share"></i>
+        </div>
+
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">
+            Ecosystem Building
+          </h3>
+          <p class="paragraph paragraph--big">
+            These services will help you reach out to stakeholders, businesses,
+            government and expertise in the regions round our Digital Hubs, to
+            help needs and demands with offers and opportunities.
+          </p>
+          <a
+            *ngIf="browser !== 'Firefox'"
+            [routerLink]="['/services']"
+            routerLinkActive="active"
+            >Learn More</a
+          >
+          <a *ngIf="browser === 'Firefox'" href="/services">Learn More</a>
+        </div>
+      </div>
+      <div class="col-1-of-2 service">
+        <div class="u-center-text">
+          <i class="service__icon icon-ecommerce-euro"></i>
+        </div>
+
+        <div class="service__content">
+          <h3 class="heading-tertiary service__content__title">
+            Access to Market and Funding
+          </h3>
+          <p class="paragraph paragraph--big">
+            Your SME get help to access funding opportunities for your
+            development projects. We will share information about different
+            funding opportunities involving companies, funding agencies and
+            investors, or potential research and innovation projects. Events are
+            organised to share information about possible public or private
+            funding opportunities, available from both within the DIH region and
+            nationally/internationally, e.g. in the HUBCAP DIH network.
+          </p>
+          <a
+            *ngIf="browser !== 'Firefox'"
+            [routerLink]="['/services']"
+            routerLinkActive="active"
+            >Learn More</a
+          >
+          <a *ngIf="browser === 'Firefox'" href="/services">Learn More</a>
+        </div>
       </div>
     </div>
   </section>

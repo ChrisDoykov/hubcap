@@ -70,4 +70,17 @@
       }
     }
   }
+
+  &__list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    &__item {
+      font-size: 1.9rem;
+
+      @include respond(phone) {
+        font-size: 2.1rem;
+      }
+    }
+  }
 }

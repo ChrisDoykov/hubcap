@@ -2,6 +2,8 @@ import { Component, OnInit, HostListener } from "@angular/core";
 
 import { SwiperOptions } from "swiper";
 
+import { Router, NavigationEnd } from "@angular/router";
+
 import { DeviceDetectorService } from "ngx-device-detector";
 
 @Component({
@@ -13,7 +15,10 @@ import { DeviceDetectorService } from "ngx-device-detector";
 export class AppComponent implements OnInit {
   title = "hubcap";
 
-  constructor(private deviceService: DeviceDetectorService) {}
+  constructor(
+    private deviceService: DeviceDetectorService,
+    private router: Router
+  ) {}
 
   mobile = this.deviceService.isMobile();
   desktop = this.deviceService.isDesktop();

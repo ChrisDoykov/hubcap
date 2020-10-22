@@ -31,8 +31,21 @@ app-header {
   color: $color-black;
 
   &__logo {
+    position: relative;
     height: 12rem;
+    align-self: center;
     width: auto;
+    cursor: pointer;
+
+    &:link,
+    &:visited,
+    &:focus {
+      outline: none;
+    }
+
+    @include respond(big-tab-land) {
+      height: 13rem;
+    }
   }
 
   &__heading p {
@@ -49,14 +62,9 @@ app-header {
   }
 
   #vertical {
-    min-height: 35rem;
-
     @include respond(phone) {
       min-height: 30rem;
-      // max-height: 30rem;
       min-width: 30rem;
-      // max-width: 30rem;
-      // width: 30rem;
     }
   }
 

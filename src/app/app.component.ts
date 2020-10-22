@@ -26,6 +26,8 @@ export class AppComponent implements OnInit {
 
   browser = this.deviceService.browser;
 
+  width: number;
+
   browserList = ["Safari", "IE"];
 
   webp = true;
@@ -79,6 +81,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.webp = this.browserList.includes(this.browser) ? false : true;
+    this.width = window.innerWidth;
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
   }
 
   @HostListener("window:scroll", []) onWindowScroll() {

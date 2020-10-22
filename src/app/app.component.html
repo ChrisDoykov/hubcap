@@ -1,9 +1,10 @@
-<div class="wrapper">
+<div class="wrapper" (window:resize)="onResize()">
   <app-header></app-header>
   <section class="banner-line">
     <img
       class="banner-line__logo"
-      *ngIf="desktop || tablet"
+      *ngIf="width >= 600"
+      routerLink="/"
       src="../assets/res/images/logo_hubcap.webp"
       alt="Hubcap Logo"
       onerror="this.onerror=null;
@@ -19,8 +20,9 @@
 
     <img
       class="banner-line__logo"
-      *ngIf="mobile"
+      *ngIf="width < 600"
       id="vertical"
+      routerLink="/"
       src="../assets/res/images/logo_vertical.webp"
       alt="Hubcap Logo"
       onerror="this.onerror=null;

@@ -8,8 +8,15 @@ import { Component, OnInit } from "@angular/core";
 export class PlatformComponent implements OnInit {
   constructor() {}
 
+  width: number;
+
   ngOnInit(): void {
     document.title = "Platform | HUBCAP";
     document.getElementById("hero-title").textContent = "Platform";
+    this.onResize();
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
   }
 }

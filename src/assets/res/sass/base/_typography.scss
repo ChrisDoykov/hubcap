@@ -42,6 +42,33 @@
 .subtitle {
   font-size: 2.5rem;
 
+  /* ------------  */
+
+  &--colored {
+    display: inline-block;
+    border-top-right-radius: 2rem;
+    // border-bottom-left-radius: 2rem;
+    // border-bottom-right-radius: 2rem;
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 1rem 2rem;
+    align-self: flex-start;
+  }
+  /* ------------  */
+
+  &--bg-blue {
+    background-color: $color-blue;
+  }
+  &--bg-teal {
+    background-color: $color-teal;
+  }
+  &--bg-red {
+    background-color: $color-red;
+  }
+  &--bg-green {
+    background-color: $color-green;
+  }
+
   &--black {
     color: $color-black;
   }

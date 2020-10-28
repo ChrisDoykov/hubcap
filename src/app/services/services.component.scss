@@ -12,6 +12,17 @@
   @include respond(tab-port) {
     padding: 10rem 0;
   }
+
+  .row {
+    .col-1-of-2 {
+      div {
+        @include respond(tab-port) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }
 
 h1 {
@@ -20,6 +31,20 @@ h1 {
   @include respond(tab-port) {
     align-self: center;
     text-align: center;
+  }
+}
+
+h3.subtitle {
+  text-align: left !important;
+
+  @include respond(phone) {
+    text-align: center !important;
+    align-self: center;
+    border-top-right-radius: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    max-width: 80%;
+    margin-bottom: 2rem !important;
   }
 }
 

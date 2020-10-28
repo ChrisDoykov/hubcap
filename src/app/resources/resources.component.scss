@@ -12,12 +12,13 @@
   display: flex;
   justify-content: center;
   padding-top: 5rem;
+  padding: 5rem 3rem;
 
   @include respond(tab-port) {
     flex-direction: column;
   }
   @include respond(phone) {
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     padding-bottom: 0;
   }
 
@@ -35,18 +36,31 @@
     }
   }
 
+  &__lists {
+    display: flex;
+    flex-direction: row;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
   &__box {
     display: flex;
     flex-direction: column;
     box-shadow: 0 1rem 1.5rem rgba($color: $color-black, $alpha: 0.5);
     align-self: center;
-    padding: 3rem 4rem;
+    padding: 3rem 2.5rem;
     min-height: 30rem;
     border-radius: 3px;
     transition: all 0.3s;
 
     &:not(:last-child) {
       margin-right: 5rem;
+    }
+
+    &--pull {
+      width: 100%;
     }
 
     &:hover,
@@ -69,7 +83,28 @@
 
   &__list {
     font-size: 1.9rem;
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+
+      @include respond(phone) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+
     &__item {
+      &::before {
+        content: "\01F4BE";
+        font-size: 1.7rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    h4 {
+      font-weight: bold;
+      color: $color-black;
     }
 
     &__hr {

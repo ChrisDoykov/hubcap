@@ -15,6 +15,9 @@
   &__content {
     max-width: 90rem;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: justify;
   }
 }

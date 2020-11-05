@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, SecurityContext } from "@angular/core";
+import { DomSanitizer } from "@angular/platform-browser";
 
 @Component({
   selector: "app-news",
@@ -6,13 +7,24 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./news.component.scss"],
 })
 export class NewsComponent implements OnInit {
-  constructor() {}
+  constructor(private sanitizer: DomSanitizer) {}
 
   articles = [
     {
+      title: "Q&A Webinar Recording",
+      summary:
+        "Don't worry if you missed it! Rewatch our webinar to learn about our Call #1.2 PULL and how to apply, closing 30 November 2020 at 17h00 (Brussels Time) CEST.",
+      date: "2020.11.05",
+      type: "RECORDING",
+      caption: "",
+      urlname: "Watch recording",
+      url: "/content/open-calls/1.2-webinar",
+      videoURL: "https://www.youtube.com/embed/qsokDLHRORc",
+    },
+    {
       title: "Q&A Webinar on 28 October",
       summary:
-        "Call #1.2 PULL is now open to applications! Join us on our live Q&A Webinar on 28 October, 11h30am CET (Brussels Time) to learn how to apply to HUBCAP Call #1.2 PULL!",
+        "Call #1.2 PULL is now open to applications! Join us on our live Q&A Webinar on 28 October, 11h30am CEST (Brussels Time) to learn how to apply to HUBCAP Call #1.2 PULL!",
       date: "2020.10.16",
       type: "WEBINAR",
       caption: "",

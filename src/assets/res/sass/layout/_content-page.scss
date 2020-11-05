@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.content-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  padding-bottom: 10rem;
+
+  &__intro {
+    max-width: 90rem;
+    align-self: center;
+  }
+
+  &__video {
+    max-width: 90%;
+    width: 90rem;
+    height: 50rem;
+    align-self: center;
+    margin: 3rem auto;
+
+    @include respond(phone) {
+      height: 30rem;
+    }
+  }
+}

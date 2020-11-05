@@ -39,10 +39,12 @@ import { PressReleasesComponent } from "./press-releases/press-releases.componen
 import { FaqComponent } from "./faq/faq.component";
 import { PressReleaseListComponent } from "./press-release-list/press-release-list.component";
 import { TehcnologiesComponent } from "./tehcnologies/tehcnologies.component";
-import { WinnersComponent } from './winners/winners.component';
-import { PressReleaseArticle1Component } from './press-release-articles/press-release-article1/press-release-article1.component';
-import { PressReleaseArticle2Component } from './press-release-articles/press-release-article2/press-release-article2.component';
-import { ContentComponent } from './content/content.component';
+import { WinnersComponent } from "./winners/winners.component";
+import { PressReleaseArticle1Component } from "./press-release-articles/press-release-article1/press-release-article1.component";
+import { PressReleaseArticle2Component } from "./press-release-articles/press-release-article2/press-release-article2.component";
+import { ContentComponent } from "./content/content.component";
+import { SafeLinkPipe } from "./pipes/safe-link/safe-link.pipe";
+import { Webinar1_2Component } from "./content-items/webinar1_2/webinar1_2.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -76,6 +78,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     PressReleaseArticle1Component,
     PressReleaseArticle2Component,
     ContentComponent,
+    SafeLinkPipe,
+    Webinar1_2Component,
   ],
   imports: [
     BrowserModule,

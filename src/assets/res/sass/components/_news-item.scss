@@ -1,6 +1,8 @@
 .news-item {
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   max-width: 70rem;
   padding: 7rem 2rem;
   padding-top: 3rem;
@@ -69,6 +71,17 @@
 
   &__content {
     text-align: center;
+  }
+
+  &__video {
+    align-self: center;
+    min-width: 30rem;
+    max-width: 80rem;
+    width: 90%;
+    min-height: 15rem;
+    max-height: 40rem;
+    height: 30rem;
+    margin: 3rem auto;
   }
 
   &__link {

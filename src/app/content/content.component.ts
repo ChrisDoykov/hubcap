@@ -17,6 +17,8 @@ export class ContentComponent implements OnInit {
       this.content = "newsletter-10-20";
     } else if (url.includes("news-items/SAE")) {
       this.content = "news-item-sae";
+    } else if (url.includes("open-calls/1.2-webinar")) {
+      this.content = "1.2-webinar";
     } else {
       this.router.navigate(["/not-found"]);
     }

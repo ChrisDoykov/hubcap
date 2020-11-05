@@ -1,0 +1,23 @@
+<div class="content-page">
+  <div class="u-center-text u-margin-top-medium content-page__intro">
+    <h1 class="heading-primary heading-primary--underlined-blue">
+      CALL #1.2 PULL Q&A Webinar
+    </h1>
+    <p class="paragraph paragraph--big">
+      Rewatch our Q&A webinar, which took place on 28.10.2020, focusing on our
+      second PULL open call. You will learn some tips and tricks on how to
+      create a good application and hear the answers to some of the most
+      frequently asked questions. Application for the call closing 30 November
+      2020 at 17h00 (Brussels Time) CEST. Apply
+      <a [routerLink]="['/calls/pull']">now</a>!
+    </p>
+  </div>
+
+  <iframe
+    class="content-page__video"
+    [src]="videoURL | safeLink"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>

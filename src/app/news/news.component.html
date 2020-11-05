@@ -9,7 +9,7 @@
 
   <div class="columns is-multiline">
     <div
-      *ngFor="let article of articles"
+      *ngFor="let article of articles; let i = index"
       class="column is-full u-margin-bottom-big"
     >
       <div class="news-item hidden-fade-in">
@@ -35,6 +35,14 @@
           />
           <figcaption class="figure__caption">{{ article.caption }}</figcaption>
         </figure>
+        <iframe
+          *ngIf="article.videoURL"
+          class="news-item__video"
+          [src]="articles[i].videoURL | safeLink"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <span
           *ngIf="article.url"
           [class.u-margin-top-small]="!article.thumbnail"

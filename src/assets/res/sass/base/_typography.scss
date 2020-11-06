@@ -139,6 +139,21 @@
       }
     }
 
+    &-left {
+      &::before {
+        left: 0;
+        width: 70%;
+      }
+
+      &:hover,
+      &:focus {
+        &::before {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+
     &-blue {
       &::before {
         border-top-color: $color-blue;

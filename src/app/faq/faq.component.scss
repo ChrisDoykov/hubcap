@@ -41,8 +41,25 @@
       color: $color-white;
       border-radius: 3px;
       box-shadow: 0 0.5rem 1rem rgba($color: $color-black, $alpha: 0.3);
+
       &:not(:last-child) {
         margin-bottom: 2rem;
+      }
+
+      a {
+        &,
+        &:link,
+        &:visited {
+          color: $color-black;
+          font-weight: 700;
+          border-bottom: 3px solid $color-primary;
+          transition: all 0.3s;
+        }
+
+        &:hover,
+        &:focus {
+          color: $color-white;
+        }
       }
 
       &__header,
@@ -74,7 +91,7 @@
   &__list {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    list-style: none;
+    list-style: disc;
     &__item {
       font-size: 1.9rem;
 

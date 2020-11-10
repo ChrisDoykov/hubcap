@@ -33,6 +33,7 @@
               "./node_modules/bulma/css/bulma.min.css",
               "./node_modules/bulma-extensions/bulma-checkradio/dist/css/bulma-checkradio.min.css",
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "./node_modules/flag-icon-css/css/flag-icon.min.css",
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {

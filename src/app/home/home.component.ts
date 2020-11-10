@@ -9,6 +9,8 @@ import {
 import { DeviceDetectorService } from "ngx-device-detector";
 import { SwiperOptions } from "swiper";
 import { CountUp } from "countup.js";
+import { Subscription } from "rxjs";
+import { LocationService } from "../location.service";
 
 @Component({
   selector: "app-home",
@@ -17,14 +19,15 @@ import { CountUp } from "countup.js";
   providers: [DeviceDetectorService],
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  constructor(private deviceService: DeviceDetectorService) {}
+  constructor(
+    private deviceService: DeviceDetectorService,
+    private locationService: LocationService
+  ) {}
 
   counterSME = 250;
   experiments = 30;
   innovations = 20;
   millions = 3.2;
-
-  DIH = localStorage.getItem("DIH");
 
   mobile = this.deviceService.isMobile();
   desktop = this.deviceService.isDesktop();
@@ -104,6 +107,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     spaceBetween: 30,
   };
 
+  private dihSub: Subscription;
+  DIH: string;
+
   applyToCall(id) {
     switch (id) {
       case 0:
@@ -136,6 +142,12 @@ export class HomeComponent implements OnInit, OnDestroy {
       document.getElementById("hero-title").textContent = "Welcome to HUBCAP!";
     }
 
+    this.locationService.getLocation();
+    this.dihSub = this.locationService
+      .getLocationUpdatedListener()
+      .subscribe((DIH: { DIH: string }) => {
+        this.DIH = DIH.DIH;
+      });
     // document.getElementById("hero-title").parentElement.style.width = "70%";
 
     this.webp = this.browserList.includes(this.browser) ? false : true;

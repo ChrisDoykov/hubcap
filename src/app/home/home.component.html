@@ -43,7 +43,21 @@
       models to life. We provide access to funding opportunities, cutting-edge
       tech and business support services.
     </p>
-    <div class="jumbotron__columns" *ngIf="DIH">
+    <div
+      class="jumbotron__columns"
+      *ngIf="
+        DIH &&
+        [
+          'Austria',
+          'United Kingdom',
+          'Italy',
+          'Romania',
+          'Sweden',
+          'Germany',
+          'Denmark'
+        ].includes(DIH)
+      "
+    >
       <div class="jumbotron__column">
         <p class="paragraph paragraph--big">
           HUBCAP is an exclusive network of Digital Innovation Hubs with a goal
@@ -54,101 +68,56 @@
       </div>
       <div class="jumbotron__column">
         <p class="paragraph paragraph--big">
-          Your closest DIH is in {{ DIH === "United Kingdom" ? "the" : "" }}
-          <span class="bold">{{ DIH }}</span
+          Your closest DIH is in
+          {{ DIH === "United Kingdom" ? "the" : "" }}
+          <span
+            class="flag-icon"
+            [ngClass]="{
+              'flag-icon-gb': DIH === 'United Kingdom',
+              'flag-icon-it': DIH === 'Italy',
+              'flag-icon-se': DIH === 'Sweden',
+              'flag-icon-at': DIH === 'Austria',
+              'flag-icon-dk': DIH === 'Denmark',
+              'flag-icon-de': DIH === 'Germany',
+              'flag-icon-ro': DIH === 'Romania'
+            }"
+          ></span
+          ><span class="bold">{{ DIH }}</span
           >.<br />
           Read more
           <a
-            [routerLink]="['digital-innovation-hubs']"
-            fragment="{{ DIH === 'United Kingdom' ? 'UK' : DIH }}"
-            routerLinkActive="router-link-active"
+            href="/digital-innovation-hubs#{{
+              DIH === 'United Kingdom' ? 'UK' : DIH
+            }}"
             >here</a
           >
           or get in touch at:
         </p>
         <p class="paragraph paragraph--big" *ngIf="DIH === 'Austria'">
           <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i>Inffeldgasse
-            21a. 8010 Graz, Austria
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-phone u-is-black-color"></i>
-            <a href="tel:+43 316 873 9001">+43 316 873 9001</a>
-          </span>
-          <span class="hub__info-line">
             <i class="fas fa-at u-is-black-color"></i>
             <a href="mailto:info@v2c2.at">info@v2c2.at</a>
           </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://www.v2c2.at/" target="_blank">www.v2c2.at</a>
-          </span>
         </p>
         <p class="paragraph paragraph--big" *ngIf="DIH === 'Denmark'">
-           <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i>Department of
-            Engineering - Cyber-Physical Systems, Åbogade 34, building 5341,
-            8200 Aarhus N, Denmark
-          </span>
           <span class="hub__info-line">
             <i class="fas fa-at u-is-black-color"></i>
             <a href="mailto:hdm@eng.au.dk">hdm@eng.au.dk</a>
           </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://digit.au.dk/" target="_blank">digit.au.dk</a>
-          </span>
         </p>
         <p class="paragraph paragraph--big" *ngIf="DIH === 'Germany'">
-         <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i
-            >Lichtenbergstraße 6, 85748 Garching, Germany
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-phone u-is-black-color"></i>
-            <a href="tel:+49 89 3603522 29">+49 89 3603522 29</a>
-          </span>
           <span class="hub__info-line">
             <i class="fas fa-at u-is-black-color"></i>
             <a href="mailto:pfeifer@fortiss.org">pfeifer@fortiss.org</a>
           </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://www.appliedai.eu/" target="_blank">
-              www.appliedai.eu</a
-            >
-          </span>
         </p>
         <p class="paragraph paragraph--big" *ngIf="DIH === 'Sweden'">
-         <span class="hub__info-line">
-            <i class="fas fa-phone u-is-black-color"></i>
-            <a href="tel:+46 8 790 74 05">+46 8 790 74 05</a>
-          </span>
           <span class="hub__info-line">
             <i class="fas fa-at u-is-black-color"></i>
             <a href="mailto:fasplund@kth.se">fasplund@kth.se</a>
           </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://www.ices.kth.se/" target="_blank"
-              >www.ices.kth.se</a
-            >
-          </span>
         </p>
         <p class="paragraph paragraph--big" *ngIf="DIH === 'Italy'">
-          <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i>
-            <span class="bold">Politecnico di Milano</span> - Piazza Leonardo da
-            Vinci 32, 20133 Milan, Italy | <span class="bold">FBK</span> - Via
-            Sommarive, 18, 38123 Trento, Italy
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-phone u-is-black-color"></i>
-            <span class="bold">Politecnico di Milano</span> :
-            <a href="tel:+39 02 2399 2716">+39 02 2399 2716</a> |
-            <span class="bold">FBK</span> :
-            <a href="tel:+390461314359">+390461314359</a>
-          </span>
           <span class="hub__info-line">
             <i class="fas fa-at u-is-black-color"></i>
             <span class="bold">Politecnico di Milano</span> -
@@ -158,32 +127,12 @@
             | <span class="bold">FBK</span> -
             <a href="mailto:stefano.tonetta@fbk.eu">stefano.tonetta@fbk.eu</a>
           </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><span class="bold">Politecnico di Milano</span> -
-            <a href="https://www.polimi.it/en/" target="_blank">
-              www.polimi.it</a
-            >
-            | <span class="bold">FBK</span> -
-            <a href="https://www.fbk.eu/en/" target="_blank"> www.fbk.eu</a>
-          </span>
         </p>
         <p class="paragraph paragraph--big" *ngIf="DIH === 'Romania'">
-          <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i>Lucian Blaga
-            University of Sibiu, Faculty of Engineering, Emil Cioran 4, Sibiu
-            550025, Romania
-          </span>
           <span class="hub__info-line">
             <i class="fas fa-at u-is-black-color"></i>
             <a href="mailto:bogdan.pirvu@ulbsibiu.ro"
               >bogdan.pirvu@ulbsibiu.ro</a
-            >
-          </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://centers.ulbsibiu.ro/incon/dih/" target="_blank"
-              >centers.ulbsibiu.ro</a
             >
           </span>
         </p>
@@ -191,12 +140,6 @@
           <span class="hub__info-line">
             <i class="fas fa-at u-is-black-color"></i>
             <a href="mailto:info@hubcap.eu">info@hubcap.eu</a>
-          </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://www.ncl.ac.uk/computing/" target="_blank"
-              >www.ncl.ac.uk</a
-            >
           </span>
         </p>
       </div>

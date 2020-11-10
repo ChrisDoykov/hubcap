@@ -56,16 +56,10 @@ export class DihComponent implements OnInit {
     this.onResize();
     this.checkPosition();
     this.prepareModals();
-
-    this.hash = this.router.url.split("#")[1];
-
-    if (this.hash) {
-      this.scrollIntoView(this.hash);
-    }
   }
 
   scrollIntoView(id) {
-    document.getElementById(id).scrollIntoView({ block: "start" });
+    document.getElementById(id).scrollIntoView({ block: "center" });
   }
 
   onResize() {

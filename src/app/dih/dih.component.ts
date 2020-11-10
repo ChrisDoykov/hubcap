@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { SwiperOptions } from "swiper";
 
 @Component({
@@ -7,7 +8,7 @@ import { SwiperOptions } from "swiper";
   styleUrls: ["./dih.component.scss"],
 })
 export class DihComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   width: number;
   elements_fade_in: any;
@@ -45,6 +46,8 @@ export class DihComponent implements OnInit {
     ],
   ];
 
+  hash: string;
+
   ngOnInit() {
     document.title = "Digital Innovation Hubs | HUBCAP";
     document.getElementById("hero-title").textContent =
@@ -53,6 +56,16 @@ export class DihComponent implements OnInit {
     this.onResize();
     this.checkPosition();
     this.prepareModals();
+
+    this.hash = this.router.url.split("#")[1];
+
+    if (this.hash) {
+      this.scrollIntoView(this.hash);
+    }
+  }
+
+  scrollIntoView(id) {
+    document.getElementById(id).scrollIntoView({ block: "start" });
   }
 
   onResize() {

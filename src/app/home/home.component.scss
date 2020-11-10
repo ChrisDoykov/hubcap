@@ -26,8 +26,7 @@
   padding: 3.2rem;
   padding-top: 0;
   margin: 4.8rem auto;
-  max-width: 70rem;
-  font-style: italic;
+  max-width: 100rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,6 +124,39 @@
       @media screen and (max-width: 350px) {
         font-weight: 700;
       }
+    }
+  }
+
+  &__columns {
+    max-width: 100rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    width: 50%;
+
+    &:first-child {
+      margin-right: 3rem;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    &__single {
+      max-width: 70rem;
+      align-self: center;
     }
   }
 }

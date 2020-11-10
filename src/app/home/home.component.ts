@@ -24,6 +24,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   innovations = 20;
   millions = 3.2;
 
+  DIH = localStorage.getItem("DIH");
+
   mobile = this.deviceService.isMobile();
   desktop = this.deviceService.isDesktop();
   tablet = this.deviceService.isTablet();

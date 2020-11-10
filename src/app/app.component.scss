@@ -5,6 +5,10 @@ app-header {
   background-color: $color-primary;
 }
 
+.wrapper {
+  position: relative;
+}
+
 .sticky {
   position: fixed;
   top: 0;

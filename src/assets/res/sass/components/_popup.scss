@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.popup {
+  position: sticky;
+  @include center_with_transform;
+  width: 40rem;
+  min-height: 30rem;
+  padding: 2rem 3rem;
+  background-color: $color-primary;
+  z-index: 9999;
+  transition: all 2s;
+
+  &__content {
+    font-size: 1.7rem;
+    color: $color-black;
+  }
+
+  &--hidden {
+    transform: translate(-50%, -800rem);
+  }
+
+  &--shown {
+    top: 0;
+    transform: translate(-50%, 0rem);
+  }
+}

@@ -8,6 +8,41 @@ import { Component, OnInit } from "@angular/core";
 export class ProjectComponent implements OnInit {
   constructor() {}
 
+  deliverables = [
+    {
+      number: "D7.1",
+      name: "HUBCAP Visual Identity and Templates",
+      month: "M2 (Feb 2020)",
+      link: "../../assets/res/files/D7.1.pdf",
+    },
+    {
+      number: "D4.2",
+      name: "Open Call Documents KIT",
+      month: "M6 (June 2020)",
+      link: "../../assets/res/files/D 4.2 Open Call Documentation KIT.pdf",
+    },
+    {
+      number: "D5.1",
+      name: "HUBCAP Collaboration Platform Prototype",
+      month: "M6 (June 2020)",
+      link:
+        "../../assets/res/files/D5.1 HUBCAP Collaboration Platform Prototype_SUB.pdf",
+    },
+    {
+      number: "D6.1",
+      name: "The Initial HUBCAP Models",
+      month: "M6 (June 2020)",
+      link: "../../assets/res/files/HUBCAP_D6.1.pdf",
+    },
+    {
+      number: "D6.2",
+      name: "The Initial HUBCAP Model-Based Services",
+      month: "M9 (Sep 2020)",
+      link:
+        "../../assets/res/files/D6.2 - The Initial HUBCAP Model-Based Services.pdf",
+    },
+  ];
+
   ngOnInit(): void {
     document.title = "Project Details | HUBCAP";
     document.getElementById("hero-title").textContent = "Project Details";

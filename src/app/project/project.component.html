@@ -62,6 +62,8 @@
           <li class="list__item">Politecnico di Milano (POLIMI), Italy</li>
         </ul>
       </div>
+    </div>
+    <div class="col-1-of-2">
       <div class="u-justify-text-tab-port u-margin-bottom-medium">
         <h3 class="subtitle is-bold subtitle--colored">Open Calls</h3>
         <p class="paragraph paragraph--big u-margin-bottom-small">
@@ -75,8 +77,6 @@
           <li class="list__item">F6S Network Limited (F6S), Ireland</li>
         </ul>
       </div>
-    </div>
-    <div class="col-1-of-2">
       <div class="u-justify-text-tab-port u-margin-bottom-medium">
         <h3 class="subtitle is-bold subtitle--bg-green subtitle--colored">
           Seed SME
@@ -132,7 +132,7 @@
         </ul>
       </div>
       <div class="u-justify-text-tab-port u-margin-bottom-medium">
-        <h2 class="subtitle">Project Coordinator</h2>
+        <h2 class="heading-tertiary">Project Coordinator</h2>
         <p class="paragraph paragraph--big u-margin-bottom-small">
           Prof. Peter Gorm Larsen <br />
           Department of Engineering, Aarhus University <br />
@@ -144,7 +144,7 @@
           Email: <a href="mailto:pgl@eng.au.dk">pgl@eng.au.dk</a>
         </p>
       </div>
-      <div class="u-justify-text-tab-port u-margin-bottom-medium">
+      <!-- <div class="u-justify-text-tab-port u-margin-bottom-medium">
         <h2 class="subtitle">Public Deliverables</h2>
         <h2 class="subtitle subtitle--small subtitle--bold u-is-black-color">
           M2
@@ -195,9 +195,26 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
+  <h2 class="heading-tertiary u-center-text">Public Deliverables</h2>
+  <table class="deliverables">
+    <tr class="deliverable deliverable--header">
+      <th class="deliverable__column">No.</th>
+      <th class="deliverable__column">Name</th>
+      <th class="deliverable__column">Due month</th>
+    </tr>
+    <tr class="deliverable" *ngFor="let item of deliverables">
+      <td class="deliverable__column">{{ item.number }}</td>
+      <td class="deliverable__column">
+        <a href="{{ item.link }}" target="_blank">
+          {{ item.name }}
+        </a>
+      </td>
+      <td class="deliverable__column">{{ item.month }}</td>
+    </tr>
+  </table>
   <div class="modal" id="imageTwo">
     <div class="modal-background"></div>
     <div class="modal-content">

@@ -8,6 +8,9 @@
   padding-top: 5rem;
   max-width: 120rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include respond(tab-port) {
     padding: 10rem 0;
@@ -103,6 +106,49 @@
       @include respond(tab-port) {
         display: flex;
         flex-direction: column;
+      }
+    }
+  }
+
+  .deliverables {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-top: 2rem;
+    overflow: hidden;
+
+    .deliverable {
+      font-size: 1.9rem;
+
+      &:last-child {
+        .deliverable__column {
+          border-bottom: none;
+        }
+      }
+
+      &__column {
+        vertical-align: middle;
+        border-bottom: 2px solid $color-grey-dark;
+        padding: 0.3rem 2rem;
+
+        &:not(:nth-child(2)) {
+          text-align: center;
+        }
+
+        &:not(:last-child) {
+          border-right: 2px solid $color-grey-dark;
+        }
+      }
+
+      &--header {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        overflow: hidden;
+        background-color: $color-primary;
+
+        .deliverable__column {
+          color: $color-white;
+          font-weight: bold;
+        }
       }
     }
   }

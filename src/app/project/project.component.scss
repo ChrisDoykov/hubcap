@@ -111,8 +111,7 @@
   }
 
   .deliverables {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-radius: 3px;
     margin-top: 2rem;
     overflow: hidden;
 
@@ -149,6 +148,10 @@
           color: $color-white;
           font-weight: bold;
         }
+      }
+
+      &--footer {
+        background-color: $color-blue;
       }
     }
   }

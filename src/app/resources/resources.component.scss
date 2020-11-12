@@ -39,6 +39,7 @@
   &__lists {
     display: flex;
     flex-direction: row;
+    align-self: center;
 
     @include respond(phone) {
       flex-direction: column;
@@ -48,28 +49,30 @@
   &__box {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 1rem 1.5rem rgba($color: $color-black, $alpha: 0.5);
-    align-self: center;
-    padding: 3rem 2.5rem;
-    min-height: 30rem;
+    box-shadow: 0 1rem 1.5rem rgba($color: $color-black, $alpha: 0.3);
+    align-self: flex-start;
+    padding: 2.5rem 3rem;
+    // min-height: 30rem
     border-radius: 3px;
+    width: fit-content;
     transition: all 0.3s;
 
     &:not(:last-child) {
       margin-right: 5rem;
-    }
-
-    &--pull {
-      width: 100%;
+      // padding-right: 2.5rem;
+      // border-right: 2px solid $color-grey-dark;
     }
 
     &:hover,
     &:focus {
-      box-shadow: 0 1.5rem 2.5rem rgba($color: $color-black, $alpha: 0.5);
+      box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: 0.5);
       transform: translateY(-1rem);
     }
 
     @include respond(tab-port) {
+      align-self: center;
+      width: 100%;
+
       &:not(:last-child) {
         margin-bottom: 5rem;
         margin-right: 0;
@@ -84,6 +87,7 @@
   &__list {
     font-size: 1.9rem;
     list-style: none;
+    margin-left: 0;
 
     &:not(:last-child) {
       margin-right: 2rem;
@@ -95,10 +99,26 @@
     }
 
     &__item {
-      &::before {
-        content: "\01F4BE";
-        font-size: 1.7rem;
-        margin-right: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 2px solid $color-grey-dark;
+        margin-bottom: 1rem;
+      }
+      // &::before {
+      //   content: "\01F4BE";
+      //   font-size: 1.7rem;
+      //   margin-right: 0.5rem;
+      // }
+
+      &__action-row {
+        .btn-inline {
+          align-self: center;
+        }
       }
     }
 

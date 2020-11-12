@@ -152,6 +152,10 @@
 
       &--footer {
         background-color: $color-blue;
+
+        .deliverable__column {
+          border: none;
+        }
       }
     }
   }

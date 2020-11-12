@@ -11,8 +11,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 2rem;
   padding-top: 5rem;
-  padding: 5rem 3rem;
+  // padding: 5rem 3rem;
 
   @include respond(tab-port) {
     flex-direction: column;
@@ -51,7 +52,7 @@
     flex-direction: column;
     box-shadow: 0 1rem 1.5rem rgba($color: $color-black, $alpha: 0.3);
     align-self: flex-start;
-    padding: 2.5rem 3rem;
+    padding: 2.5rem;
     // min-height: 30rem
     border-radius: 3px;
     width: fit-content;
@@ -72,6 +73,7 @@
     @include respond(tab-port) {
       align-self: center;
       width: 100%;
+      max-width: 60rem;
 
       &:not(:last-child) {
         margin-bottom: 5rem;
@@ -81,6 +83,7 @@
 
     @include respond(phone) {
       padding: 3rem 2rem;
+      max-width: 40rem;
     }
   }
 

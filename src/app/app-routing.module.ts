@@ -20,6 +20,7 @@ import { PressReleaseListComponent } from "./press-release-list/press-release-li
 import { TehcnologiesComponent } from "./tehcnologies/tehcnologies.component";
 import { WinnersComponent } from "./winners/winners.component";
 import { ContentComponent } from "./content/content.component";
+import { NewsletterListComponent } from "./newsletter-list/newsletter-list.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", component: HomeComponent },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: "partners", component: PartnersComponent },
   { path: "press-releases/:press-release", component: PressReleasesComponent },
   { path: "press-releases", component: PressReleaseListComponent },
+  { path: "newsletters", component: NewsletterListComponent },
   { path: "content/:category/:content-piece", component: ContentComponent },
   { path: "resources", component: ResourcesComponent },
   { path: "faq", component: FaqComponent },

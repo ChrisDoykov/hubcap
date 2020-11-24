@@ -45,6 +45,7 @@ import { PressReleaseArticle2Component } from "./press-release-articles/press-re
 import { ContentComponent } from "./content/content.component";
 import { SafeLinkPipe } from "./pipes/safe-link/safe-link.pipe";
 import { Webinar1_2Component } from "./content-items/webinar1_2/webinar1_2.component";
+import { NewsletterListComponent } from './newsletter-list/newsletter-list.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -80,6 +81,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     ContentComponent,
     SafeLinkPipe,
     Webinar1_2Component,
+    NewsletterListComponent,
   ],
   imports: [
     BrowserModule,

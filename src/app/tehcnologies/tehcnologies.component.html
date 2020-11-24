@@ -83,6 +83,23 @@
     <li><a (click)="scrollIntoView('z')">z</a></li>
   </ul>
 
+  <div class="field">
+    <div class="control">
+      <input
+        name="searchTerm"
+        class="input is-primary"
+        type="text"
+        id="searchTerm"
+        placeholder="Search via name or domain"
+        (keyup)="handleSearch($event)"
+      />
+    </div>
+  </div>
+
+  <div *ngIf="noResults" class="u-center-text u-margin-top-medium">
+    <p class="paragraph paragraph--big">No assets match your search.</p>
+  </div>
+
   <div *ngFor="let letter of letters">
     <div class="wrapper" *ngIf="alphabet[letter].length > 0">
       <h2 class="heading-secondary" id="{{ letter }}">{{ letter }}</h2>

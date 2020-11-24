@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { filter } from "rxjs-compat/operator/filter";
 
 @Component({
   selector: "app-tehcnologies",
@@ -576,7 +577,7 @@ export class TehcnologiesComponent implements OnInit {
         "Our customized models serve to identify the optimum performance of the system and can be used in order to plan the optimal solution for projects.",
       showMore: false, // Always leave at false
       modelling_lang_tool: ["Custom for each model"],
-      domain: ["Fluid flow"],
+      domain: "Fluid flow",
       license_info_name: "Specific for each project",
       email: "iostoica@gmail.com",
     },
@@ -591,7 +592,7 @@ export class TehcnologiesComponent implements OnInit {
         "The fortissimo rover shows how model-based systems engineering can be employed to design, validate and transfer software and system architectures for autonomous vehicles to an operational cyber-physical system. The fortissimo platooning model was implemented in the AutoFOCUS3 open source systems engineering tool developed by fortiss. It represents an autonomous driving function that permits automobiles or trucks to drive behind one another at extremely close distances, thus reducing fuel consumption. The model provides the logical architecture and the behaviour specification of platooning functions such as joining or leaving a platoon and car-to-car communication, as well as ADAS functions like adaptive cruise control systems and lane/emergency braking assistants. The developed functions can be implemented via code generators in the physical fortissimo Rover, a 1:10 scale model vehicle equipped with sensor technology such as cameras, ultrasound and laser-based distance meters. The virtual fortissimo platform is intended of the early validation of the models in a functional simulation environment. By means of the AutoFOCUS3 FMI interface, the vehicle behavior is co-simulated with the vehicle dynamics and the environment (modeled using other open source tools such as OpenModelica, ROS and Gazebo) and represented in a 3D simulation. At fortiss, the fortissimos are used to examine current research issues. These include a model-based method for deriving so-called assurance cases for validating the functional safety of the vehicles in line with ISO-26262, degradation and reconfiguration strategies for safeguarding critical driving functions (e.g., against hardware faults), analytical and simulation-based processes for dimensioning and validating the vehicle hardware and software architecture (i.e, design-space exploration such as HW/SW deployments).",
       showMore: false, // Always leave at false
       modelling_lang_tool: ["AutoFOCUS3"],
-      domain: ["Automotive"],
+      domain: "Automotive",
       license_info_name:
         "© 2020 fortiss GmbH, released under a 2-Clause BSD License",
       license_info_url: "https://opensource.org/licenses/BSD-2-Clause",
@@ -604,6 +605,7 @@ export class TehcnologiesComponent implements OnInit {
   showingAll = true;
   rearranged = false;
   scrolled = false;
+  noResults = false;
 
   whitespace: RegExp = /\s/g;
 
@@ -670,6 +672,43 @@ export class TehcnologiesComponent implements OnInit {
 
         this.filterAndInsert(event);
       }
+    }
+  }
+
+  handleSearch(event) {
+    const searchTerm = event.target.value.toLowerCase();
+    // console.log(event.target.value);
+
+    let allAssets = [...this.technologies];
+    let filteredAssets = [];
+
+    allAssets.forEach((asset) => {
+      if (asset.asset_name.toLowerCase().includes(searchTerm)) {
+        filteredAssets.push(asset);
+      } else {
+        if (asset.domain && asset.domain.toLowerCase().includes(searchTerm)) {
+          filteredAssets.push(asset);
+        } else {
+          if (asset.domains) {
+            asset.domains.forEach((dom) => {
+              if (
+                dom.toLowerCase().includes(searchTerm) &&
+                !filteredAssets.includes(asset)
+              ) {
+                filteredAssets.push(asset);
+              }
+            });
+          }
+        }
+      }
+    });
+
+    this.rearrangeTechnologies(filteredAssets);
+
+    if (filteredAssets.length <= 0) {
+      this.noResults = true;
+    } else {
+      this.noResults = false;
     }
   }
 

@@ -38,6 +38,24 @@
     }
   }
 
+  .field {
+    margin: 0 auto;
+
+    .control {
+      display: flex;
+      justify-content: center;
+      padding: 0 2rem;
+
+      input {
+        font-size: 1.9rem;
+        min-width: 30rem;
+        margin: 3rem auto;
+        margin-bottom: 0;
+        align-self: center;
+      }
+    }
+  }
+
   .settings {
     margin-bottom: 3rem;
     font-size: 2rem;

@@ -64,12 +64,12 @@ export class HomeComponent implements OnInit, OnDestroy {
   slides = [
     {
       imageURL: "../../assets/res/images/HUBCAP_PULL.jpg",
-      heading: "CALL #1.2 PULL",
+      heading: "CALL #1.3 PULL",
       lines: [
         "Receive €1000 lump sum & support services",
         "Sell your assets in the HUBCAP platform",
       ],
-      buttonText: "APPLY NOW",
+      buttonText: "READ MORE",
     },
     {
       imageURL: "../../assets/res/images/HUBCAP_EXPERIMENT.jpg",

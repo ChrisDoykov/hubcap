@@ -40,6 +40,12 @@
       background-color: rgba($color: $color-primary, $alpha: 0.7);
       cursor: not-allowed;
     }
+
+    &--disabled {
+      background-color: rgba($color: $color-primary, $alpha: 0.5);
+      pointer-events: none;
+      cursor: not-allowed;
+    }
   }
 
   &--experiment {
@@ -55,6 +61,12 @@
       background-color: rgba($color: $color-teal, $alpha: 0.7);
       cursor: not-allowed;
     }
+
+    &--disabled {
+      background-color: rgba($color: $color-teal, $alpha: 0.5);
+      pointer-events: none;
+      cursor: not-allowed;
+    }
   }
 
   &--innovate {
@@ -67,6 +79,12 @@
     &[disabled],
     &:disabled {
       background-color: rgba($color: $color-blue-dark, $alpha: 0.7);
+      cursor: not-allowed;
+    }
+
+    &--disabled {
+      background-color: rgba($color: $color-blue-dark, $alpha: 0.5);
+      pointer-events: none;
       cursor: not-allowed;
     }
   }
@@ -99,6 +117,12 @@
     &[disabled],
     &:disabled {
       background-color: rgba($color: $color-blue, $alpha: 0.7);
+      cursor: not-allowed;
+    }
+
+    &--disabled {
+      background-color: rgba($color: $color-blue, $alpha: 0.5);
+      pointer-events: none;
       cursor: not-allowed;
     }
   }

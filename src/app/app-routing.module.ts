@@ -46,6 +46,10 @@ const routes: Routes = [
   { path: "HUBCAP_OC1-2PULL", component: ResourcesComponent },
   { path: "HUBCAP_OC1-1PULL/:file", component: ResourcesComponent },
   { path: "HUBCAP_OC1-2PULL/:file", component: ResourcesComponent },
+  { path: "HUBCAP_OC2-1EXPERIMENT", component: ResourcesComponent },
+  { path: "HUBCAP_OC2-2EXPERIMENT", component: ResourcesComponent },
+  { path: "HUBCAP_OC2-1EXPERIMENT/:file", component: ResourcesComponent },
+  { path: "HUBCAP_OC2-2EXPERIMENT/:file", component: ResourcesComponent },
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "/404" },
 ];

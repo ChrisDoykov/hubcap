@@ -10,6 +10,7 @@
 .downloads {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 0 2rem;
   padding-top: 5rem;
@@ -21,6 +22,21 @@
   @include respond(phone) {
     padding: 5rem 2rem;
     padding-bottom: 0;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-self: center;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__heading {
@@ -84,6 +100,15 @@
     @include respond(phone) {
       padding: 3rem 2rem;
       max-width: 40rem;
+    }
+
+    &--pull,
+    &--experiment {
+      width: 50%;
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
     }
   }
 

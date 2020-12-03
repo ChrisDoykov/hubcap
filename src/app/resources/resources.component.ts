@@ -104,5 +104,23 @@ export class ResourcesComponent implements OnInit {
     } else if (url.includes("HUBCAP_CALL1-2_PULL")) {
       document.getElementById("flyer1.2").click();
     }
+
+    // Call #2.1
+    else if (url.includes("DocumentationKit-2-1")) {
+      document.getElementById("Dkit2-1").click();
+    } else if (url.includes("press-release#2.1")) {
+      document.getElementById("pr#2.1").click();
+    } else if (url.includes("HUBCAP_CALL2-1_EXPERIMENT")) {
+      document.getElementById("flyer2.1").click();
+    }
+
+    // Call #2.2
+    else if (url.includes("DocumentationKit-2-2")) {
+      document.getElementById("Dkit2-2").click();
+    } else if (url.includes("press-release#2.2")) {
+      document.getElementById("pr#2.2").click();
+    } else if (url.includes("HUBCAP_CALL2-2_EXPERIMENT")) {
+      document.getElementById("flyer2.2").click();
+    }
   }
 }

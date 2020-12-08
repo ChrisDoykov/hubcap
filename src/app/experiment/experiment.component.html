@@ -10,7 +10,7 @@
     <h2 class="subtitle u-center-text subtitle--announcement">
       Applications opening soon | Closing 4 March 2021 17h CEST
     </h2>
-    <button class="button button--download" disabled (click)="openApplyPage()">
+    <button class="button button--download" (click)="openApplyPage()">
       APPLY NOW TO CALL #2.1
     </button>
     <div class="intro">
@@ -98,13 +98,14 @@
       </p>
       <div class="downloads">
         <a
-          class="button button--primary button--small button--primary--disabled"
-          href="/HUBCAP_OC1-2PULL/DocumentationKit-1-2.pdf"
+          class="button button--primary button--small"
+          href="../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_CALL_2-1_DOC_KIT.pdf"
+          download
           >Call #2.1 Documentation Kit</a
         >
         <a
-          class="button button--primary button--small button--primary--disabled"
-          href="../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_CALL1-2_PULL_web.pdf"
+          class="button button--primary button--small"
+          href="../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Flyer.pdf"
           download
           >Download our Call #2.1 flyer</a
         >
@@ -116,7 +117,7 @@
     Applications opening soon | Closing 4 March 2021 17h CEST
   </h2>
 
-  <button class="button button--download" disabled (click)="openApplyPage()">
+  <button class="button button--download" (click)="openApplyPage()">
     APPLY NOW TO CALL #2.1
   </button>
 </div>

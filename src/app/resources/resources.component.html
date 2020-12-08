@@ -149,20 +149,20 @@
                 <a
                   class="btn-inline btn-inline--view"
                   target="_blank"
-                  href="../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_CALL1-1_PULL.pdf"
+                  href="../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Flyer.pdf"
                   >View</a
                 >
 
                 <a
                   class="btn-inline btn-inline--download"
                   id="flyer2.1"
-                  href="../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_CALL1-1_PULL.pdf"
+                  href="../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Flyer.pdf"
                   download
                   >Download</a
                 >
               </div>
             </li>
-            <li class="downloads__list__item">
+            <!-- <li class="downloads__list__item">
               <span>Call #2.1 press release</span>
               <div class="downloads__list__item__aciton-row">
                 <a
@@ -180,28 +180,28 @@
                   >Download</a
                 >
               </div>
-            </li>
+            </li> -->
             <li class="downloads__list__item">
               <span>Call #2.1 Documentation Kit</span>
               <div class="downloads__list__item__aciton-row">
                 <a
                   class="btn-inline btn-inline--view"
                   target="_blank"
-                  href="../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP Call 1-1 PULL Documentation KIT.pdf"
+                  href="../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_CALL_2-1_DOC_KIT.pdf"
                   >View</a
                 >
 
                 <a
                   class="btn-inline btn-inline--download"
                   id="Dkit2-1"
-                  href="../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP Call 1-1 PULL Documentation KIT.pdf"
+                  href="../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_CALL_2-1_DOC_KIT.pdf"
                   download
                   >Download</a
                 >
               </div>
             </li>
           </ul>
-          <ul class="downloads__list">
+          <!-- <ul class="downloads__list">
             <h4 class="has-text-centered">#2.2</h4>
             <li class="downloads__list__item">
               <span>Call #2.2 flyer</span>
@@ -241,7 +241,6 @@
                 >
               </div>
             </li>
-            <!-- <hr class="downloads__list__hr" /> -->
             <li class="downloads__list__item">
               <span>Call #2.2 Documentation Kit</span>
               <div class="downloads__list__item__aciton-row">
@@ -261,7 +260,7 @@
                 >
               </div>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -409,7 +408,7 @@
       <div class="media-kit__items-box u-center-text columns is-multiline">
         <div
           class="media-kit__item column is-one-third is-full-touch"
-          *ngFor="let item of items.slice(0, 2)"
+          *ngFor="let item of items_OC"
         >
           <img
             class="modal-button"
@@ -434,7 +433,7 @@
       <div class="media-kit__items-box columns is-multiline">
         <div
           class="media-kit__item column is-one-third is-full-touch u-center-text"
-          *ngFor="let item of items.slice(2, 6)"
+          *ngFor="let item of items_1_1"
         >
           <img
             class="modal-button"
@@ -458,7 +457,7 @@
       <div class="media-kit__items-box columns is-multiline">
         <div
           class="media-kit__item column is-one-third is-full-touch u-center-text"
-          *ngFor="let item of items.slice(6, items.length)"
+          *ngFor="let item of items_1_2"
         >
           <img
             class="modal-button"
@@ -523,7 +522,7 @@
       </div>
     </div> -->
     <!-- <div class="media-kit__section">
-      <h3 class="media-kit__subheading u-center-text">Call #1.</h3>
+      <h3 class="media-kit__subheading u-center-text">Call #1.5</h3>
       <div class="media-kit__items-box columns is-multiline">
         <div
           class="media-kit__item column is-one-third is-full-touch u-center-text"
@@ -547,9 +546,26 @@
     </div> -->
     <div class="media-kit__section">
       <h3 class="media-kit__subheading u-center-text">Call #2.1</h3>
-      <span class="heading-tertiary u-is-black-color u-center-text"
-        >Coming soon!</span
-      >
+      <div class="media-kit__items-box columns is-multiline">
+        <div
+          class="media-kit__item column is-one-third is-full-touch u-center-text"
+          *ngFor="let item of items_2_1"
+        >
+          <img
+            class="modal-button"
+            (click)="openModal(item)"
+            attr.data-target="{{ item.modalTarget }}"
+            aria-haspopup="true"
+            src="{{ item.imageUrl }}"
+          />
+          <a
+            class="button button--small button--download"
+            href="{{ item.imageUrl }}"
+            download=""
+            >Download
+          </a>
+        </div>
+      </div>
     </div>
     <!-- <div class="media-kit__section">
       <h3 class="media-kit__subheading u-center-text">Call #2.2</h3>
@@ -566,7 +582,7 @@
   </div>
 </div>
 
-<div *ngFor="let item of items" class="modal" id="{{ item.modalTarget }}">
+<div *ngFor="let item of items_all" class="modal" id="{{ item.modalTarget }}">
   <div class="modal-background" (click)="closeModal(item)"></div>
   <div class="modal-content">
     <img src="{{ item.imageUrl }}" />

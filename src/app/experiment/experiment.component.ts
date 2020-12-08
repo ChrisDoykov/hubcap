@@ -11,7 +11,7 @@ export class ExperimentComponent implements OnInit {
   constructor(private deviceService: DeviceDetectorService) {}
 
   openApplyPage() {
-    // window.open("https://www.f6s.com/hubcapcall1pull/apply", "_blank");
+    window.open("https://www.f6s.com/hubcapcall2.1experiment/apply", "_blank");
   }
 
   mobile = this.deviceService.isMobile();

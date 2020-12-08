@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         "Experiment with up to € 75,000",
         "Free services & support from the HUBCAP ecosystem",
       ],
-      buttonText: "READ MORE",
+      buttonText: "APPLY NOW",
     },
     {
       imageURL: "../../assets/res/images/HUBCUP_INNOVATE.jpg",
@@ -105,6 +105,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       clickable: true,
     },
     spaceBetween: 30,
+    initialSlide: 1,
   };
 
   private dihSub: Subscription;

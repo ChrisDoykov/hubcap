@@ -230,9 +230,9 @@ export class ResourcesComponent implements OnInit {
     else if (url.includes("DocumentationKit-2-1")) {
       document.getElementById("Dkit2-1").click();
     }
-    //  else if (url.includes("press-release#2.1")) {
-    //   document.getElementById("pr#2.1").click();
-    // }
+     else if (url.includes("press-release#2.1")) {
+      document.getElementById("pr#2.1").click();
+    }
     else if (url.includes("flyer2-1")) {
       document.getElementById("flyer2.1").click();
     }

@@ -11,6 +11,7 @@ import { ServicesComponent } from "./services/services.component";
 import { PullComponent } from "./pull/pull.component";
 import { InnovateComponent } from "./innovate/innovate.component";
 import { ExperimentComponent } from "./experiment/experiment.component";
+import { ExpertsComponent } from "./experts/experts.component";
 import { PartnersComponent } from "./partners/partners.component";
 import { ResourcesComponent } from "./resources/resources.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: "calls/pull", component: PullComponent },
   { path: "calls/innovate", component: InnovateComponent },
   { path: "calls/experiment", component: ExperimentComponent },
+  { path: "calls/experts", component: ExpertsComponent },
   { path: "partners", component: PartnersComponent },
   { path: "press-releases/:press-release", component: PressReleasesComponent },
   { path: "press-releases", component: PressReleaseListComponent },

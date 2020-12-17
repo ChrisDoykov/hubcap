@@ -11,8 +11,7 @@ export class NewsletterListComponent implements OnInit {
     {
       month: "December 2020",
       description: `Find out what's new throughout the project, learn about new business opportunities, technological advances and more in our December 2020 newsletter!`,
-      url:
-        "../../assets/res/files/newsletters/Hubcap_Newsletter_Sample_Latest.pdf",
+      url: "../../assets/res/files/newsletters/Hubcap_Newsletter_Dec_2020.pdf",
       thumbnail: "../../assets/res/files/newsletters/thumbnails/N1_thumb.png",
       thumbnailAlt: "December 2020 Newsletter Front Page",
       modalTarget: "N1",

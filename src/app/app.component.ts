@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
   browser = this.deviceService.browser;
 
   width: number;
+  popupShown: boolean = false;
 
   browserList = ["Safari", "IE"];
 
@@ -84,6 +85,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.webp = this.browserList.includes(this.browser) ? false : true;
     this.width = window.innerWidth;
+
+    this.popupShown = true;
   }
 
   onResize() {
@@ -109,5 +112,9 @@ export class AppComponent implements OnInit {
   topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+  closePopup() {
+   this.popupShown = false; 
   }
 }

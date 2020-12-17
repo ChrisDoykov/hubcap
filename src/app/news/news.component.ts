@@ -11,6 +11,17 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "AgroIntelli CEO interview",
+      summary:
+        "Check out what the CEO of AgroIntelli, Ole Green, has to say about the use of MBD when it comes to CPS solutions.",
+      date: "2020.12.17",
+      type: "INTERVIEW",
+      caption: "",
+      urlname: "Watch interview",
+      url:
+        "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6745286426075676674/?_l=en_US",
+    },
+    {
       title: "Q&A Webinar Recording",
       summary:
         "Don't worry if you missed it! Rewatch our webinar to learn about our Call #1.2 PULL and how to apply, closing 30 November 2020 at 17h00 (Brussels Time) CEST.",

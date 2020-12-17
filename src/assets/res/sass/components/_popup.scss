@@ -1,27 +1,49 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 
-.popup {
+.popup-newsletter {
   position: sticky;
-  @include center_with_transform;
-  width: 40rem;
-  min-height: 30rem;
+  bottom: 2rem;
+  left: 2rem;
+  margin-bottom: 2rem;
+  width: 30rem;
+  min-height: 20rem;
   padding: 2rem 3rem;
   background-color: $color-primary;
   z-index: 9999;
+  border: 3px solid $color-black;
+  border-radius: 0.5rem;
+
   transition: all 2s;
 
   &__content {
     font-size: 1.7rem;
     color: $color-black;
+
+    &__heading {
+    }
+  }
+
+  &__close {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.7rem;
+    color: $color-white;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-red;
+    }
   }
 
   &--hidden {
-    transform: translate(-50%, -800rem);
+    transform: translate(-800rem, 0);
   }
 
   &--shown {
-    top: 0;
-    transform: translate(-50%, 0rem);
+    transform: translate(0, 0);
   }
 }

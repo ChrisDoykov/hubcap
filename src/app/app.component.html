@@ -105,6 +105,17 @@
   <div class="main">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
+  <!-- <div
+    class="popup-newsletter"
+    [ngClass]="{
+      'popup-newsletter--shown': popupShown,
+      'popup-newsletter--hidden': !popupShown
+    }"
+  >
+    <div class="popup-newsletter__close" (click)="closePopup()">
+      <i class="fas fa-times"></i>
+    </div>
+  </div> -->
   <app-footer></app-footer>
   <button id="backToTop" title="Go to top" (click)="topFunction()">
     <mat-icon>arrow_upward</mat-icon>

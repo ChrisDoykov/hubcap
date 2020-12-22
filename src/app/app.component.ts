@@ -156,7 +156,9 @@ export class AppComponent implements OnInit {
           document
             .getElementById("emailPopup")
             .setAttribute("disabled", "true");
-
+          (document.getElementById(
+            "emailPopup"
+          ) as HTMLInputElement).placeholder = "Thank you!";
           this.emailSent = true;
           document.getElementById("btn-send").classList.add("is-primary");
           document.getElementById("btn-send").classList.remove("is-blue");

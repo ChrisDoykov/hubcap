@@ -1,4 +1,11 @@
-import { Component, OnInit, HostListener } from "@angular/core";
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  HostListener,
+  ViewChild,
+  ElementRef,
+} from "@angular/core";
 
 import { SwiperOptions } from "swiper";
 
@@ -14,7 +21,9 @@ import { HttpClient } from "@angular/common/http";
   providers: [DeviceDetectorService],
 })
 export class AppComponent implements OnInit {
-  title = "hubcap";
+  email: string;
+  emailSent: boolean;
+  emailFailed: boolean;
 
   constructor(
     private deviceService: DeviceDetectorService,
@@ -29,7 +38,10 @@ export class AppComponent implements OnInit {
   browser = this.deviceService.browser;
 
   width: number;
-  popupShown: boolean = false;
+
+  @ViewChild("popup", { static: true }) popup: ElementRef;
+  popupShown: boolean = true;
+  popupDismiss: number = 0;
 
   browserList = ["Safari", "IE"];
 
@@ -85,8 +97,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.webp = this.browserList.includes(this.browser) ? false : true;
     this.width = window.innerWidth;
-
-    this.popupShown = true;
   }
 
   onResize() {
@@ -106,6 +116,19 @@ export class AppComponent implements OnInit {
     } else {
       document.getElementById("backToTop").style.display = "none";
     }
+
+    this.popupDismiss = localStorage.getItem("popup_dismissed")
+      ? Number.parseInt(localStorage.getItem("popup_dismissed"))
+      : 0;
+    if (this.popupDismiss !== 1) {
+      this.popup.nativeElement.classList.remove("popup-newsletter--hidden");
+      this.popup.nativeElement.classList.add("popup-newsletter--shown");
+    }
+
+    // REMOVE AFTER FINISHED POPUP
+    // this.popupDismiss = 0;
+    // this.popup.nativeElement.classList.remove("popup-newsletter--hidden");
+    // this.popup.nativeElement.classList.add("popup-newsletter--shown");
   }
 
   // When the user clicks on the button, scroll to the top of the document
@@ -115,6 +138,41 @@ export class AppComponent implements OnInit {
   }
 
   closePopup() {
-   this.popupShown = false; 
+    // this.popupShown = true;
+    this.popup.nativeElement.classList.remove("popup-newsletter--shown");
+    this.popup.nativeElement.classList.add("popup-newsletter--hidden");
+    localStorage.setItem("popup_dismissed", "1");
+  }
+
+  handleSub() {
+    const data = {
+      email: this.email,
+    };
+
+    this.http
+      .post<{ status: number; message: string }>("/subscribe", data)
+      .subscribe(
+        (response) => {
+          document
+            .getElementById("emailPopup")
+            .setAttribute("disabled", "true");
+
+          this.emailSent = true;
+          document.getElementById("btn-send").classList.add("is-primary");
+          document.getElementById("btn-send").classList.remove("is-blue");
+          document.getElementById("btn-send").setAttribute("disabled", "true");
+        },
+        (error) => {
+          this.emailFailed = true;
+          console.log(error.message);
+        }
+      );
+
+    this.email = "";
+    setTimeout(() => {
+      this.popup.nativeElement.classList.remove("popup-newsletter--shown");
+      this.popup.nativeElement.classList.add("popup-newsletter--hidden");
+      localStorage.setItem("popup_dismissed", "1");
+    }, 2000);
   }
 }

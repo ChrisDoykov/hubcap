@@ -11,6 +11,20 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "Call #2.1 EXPERIMENT Q&A Webinar on 13 January 2021",
+      summary:
+        "Call #2.1 EXPERIMENT is now open for applications! Want to know more about HUBCAP and how to apply to the EXPERIMENT open calls? Join us in our 1st Q&A webinar on 13 January, 11h am CET (Brussels Time)!",
+      date: "2020.12.22",
+      type: "WEBINAR",
+      caption: "",
+      urlname: "Register for the webinar",
+      url: "https://www.f6s.com/1stqawebinarforhubcapcall2.1experiment",
+      modalTarget: "2.1webinar1",
+      thumbnail:
+        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/Q&AWebinar_1.png",
+      thumbnailAlt: "Call #2.1 EXPERIMENT Q&A Webinar on 13 January 2021",
+    },
+    {
       title: "AgroIntelli CEO interview",
       summary:
         "Check out what the CEO of AgroIntelli, Ole Green, has to say about the use of MBD when it comes to CPS solutions.",

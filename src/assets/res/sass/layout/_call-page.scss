@@ -90,6 +90,27 @@
       font-size: 2rem;
       list-style: none;
 
+      &--experts {
+        &__item {
+          display: block;
+
+          &::before {
+            content: "\2794";
+            color: $color-green;
+            margin-right: 1rem;
+            display: inline-block;
+            transition: all 0.3s;
+          }
+
+          &:hover,
+          &:focus {
+            &::before {
+              transform: translateX(1rem);
+            }
+          }
+        }
+      }
+
       &__item {
         display: inline-block;
 

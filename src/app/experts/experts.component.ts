@@ -14,6 +14,9 @@ export class ExpertsComponent implements OnInit {
   }
 
   openApplyPage() {
-    window.open("https://www.f6s.com/hubcapcall1-2pull/apply", "_blank");
+    window.open(
+      "https://www.f6s.com/1callofexpertsexpressionofinterest/apply",
+      "_blank"
+    );
   }
 }

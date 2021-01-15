@@ -11,6 +11,17 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "HUBCAP Call For Experts",
+      summary:
+        "HUBCAP is looking for experts in the MBD tools and CPS domains with experience in evaluating EU funded projects. Evaluators will be reimbursed for their time and effort on the basis of the number of proposals evaluated!",
+      date: "2021.01.15",
+      type: "OPEN CALL",
+      caption: "",
+      urlname: "Apply now",
+      url: "https://www.f6s.com/1callofexpertsexpressionofinterest/apply",
+      modalTarget: "cfe",
+    },
+    {
       title: "Call #2.1 EXPERIMENT Q&A Webinar on 13 January 2021",
       summary:
         "Call #2.1 EXPERIMENT is now open for applications! Want to know more about HUBCAP and how to apply to the EXPERIMENT open calls? Join us in our 1st Q&A webinar on 13 January, 11h am CET (Brussels Time)!",

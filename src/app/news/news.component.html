@@ -46,6 +46,7 @@
         <span
           *ngIf="article.url"
           [class.u-margin-top-small]="!article.thumbnail"
+          [class.u-margin-bottom-small]="article.modalTarget === 'cfe'"
           class="news-item__link"
         >
           <a
@@ -56,6 +57,25 @@
             >{{ article.urlname }}</a
           >
         </span>
+
+
+
+        <!-- Exclusively for the CFE posting -->
+        <span
+          *ngIf="article.modalTarget === 'cfe'"
+          class="news-item__link u-margin-top-none"
+        >
+          <a
+            [routerLink]="['/calls/experts']" routerLinkActive="router-link-active"
+            class="btn-text btn-text--blue"
+            >More Info</a
+          >
+        </span>
+
+        <!--  Exclusively for the CFE posting  -->
+
+
+
         <div class="news-item__bottom">
           <svg
             viewBox="0 0 500 150"

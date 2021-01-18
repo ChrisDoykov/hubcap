@@ -145,6 +145,20 @@ const PARTNERS: SME[] = [
 
     website: "https://shipdetection.eu/",
   },
+  {
+    id: 20,
+    name: "GHOST - feel it",
+    logo: "../../assets/res/logos/logo_ghost.png",
+
+    website: "https://www.ghost-feel.it",
+  },
+  {
+    id: 21,
+    name: "Brightmerge",
+    logo: "../../assets/res/logos/logo_brightmerge.jpg",
+
+    website: "https://www.brightmerge.com",
+  },
 ];
 
 @Component({

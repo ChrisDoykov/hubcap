@@ -553,6 +553,36 @@ export class TehcnologiesComponent implements OnInit {
       email: "contact@asvin.io",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_ghost.png",
+      asset_name: "Ghost Suite (Studio & Creator)",
+      company_name: "GHOST - feel it.",
+      url: "https://www.ghost-feel.it",
+      description:
+        "Using meaningful vibration(tactile) feedback can be more intuitive and efficient than visual or acoustic feedback in many scenarios. The GHOST -feel it. Software allows for quick and easy implementation of meaningful vibration feedback for your application without the need of special know how and experience in the development team. The development is further accelerated by using a development kit that can be used in a Plug and Play manner with the Software tool and by a library of validated vibration patterns that can be used right away. It has never been easier to create intelligent vibration feedback! Don't only focus on the Input; focus on the users and how to provide the best possible communication to them.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS"],
+      modelling_notations: ["Javascript"],
+      domains: ["Automotive", "IoT", "Conusmer electronics", "Medical","Gaming","VR","Human-Machine-Interaction"],
+      license_info_name: "Purchasable(1 to 12 months)",
+      email: "hello@ghost-feel.it",
+    },
+    {
+      type: "model",
+      logo: "../../assets/res/logos/logo_brightmerge.jpg",
+      asset_name:
+        "EezyGrid",
+      company_name: "Brightmerge",
+      url: "https://www.brightmerge.com",
+      description:
+        "Eezygrid models and optimizes the configuration and economics of renewable energy microgrid systems while factoring reliability, sustainability and resiliency parameters. The Brightmerge platform dramatically reduces the time and cost required to design projects. Brightmerge achieves this by integrating data sets such as weather, geospatial, consumption profiles, generation, and system components into one unified economic model. Brightmerge’s innovation is its AI engine for economic optimization of renewable energy, advanced energy storage and electric vehicle charging adoption.",
+      showMore: false, // Always leave at false
+      modelling_lang_tool: ["xGraph"],
+      domain: "Energy Systems Modelling",
+      license_info_name: "TBD",
+      email: "daniel@brightmerge.com",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/shipdetectionlogo3.JPG",
       asset_name:

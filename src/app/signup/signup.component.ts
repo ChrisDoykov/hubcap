@@ -42,6 +42,7 @@ export class SignupComponent implements OnInit {
           document
             .getElementById("btn-send-form")
             .setAttribute("disabled", "true");
+          this.router.navigate(["/"]);
         },
         (error) => {
           this.emailFailed = true;

@@ -583,6 +583,21 @@ export class TehcnologiesComponent implements OnInit {
       email: "r.manolea@apiforge.it",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_embneusys.png",
+      asset_name: "Cube",
+      company_name: "Embneusys PC",
+      url: "http://embneusys.com",
+      description:
+        "Our tool provides health data for any kind of equipment, regarding its location and working conditions that could lead assistive maintenance checks and failure predictions.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS"],
+      modelling_notations: ["Tool identification;","Fall detection","Vibration profiling","Temperature Monitoring","Working time measurements"],
+      domains: [ "IoT","Construction","Mining","Mobile Equipment"],
+      license_info_name: "REST API",
+      email: "info@embneusys.com",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/logo_brightmerge.jpg",
       asset_name:

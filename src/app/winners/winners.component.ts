@@ -166,6 +166,13 @@ const PARTNERS: SME[] = [
 
     website: "https://apiforge.it",
   },
+  {
+    id: 23,
+    name: "Embneusys PC",
+    logo: "../../assets/res/logos/logo_embneusys.png",
+
+    website: "http://embneusys.com",
+  },
 ];
 
 @Component({

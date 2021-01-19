@@ -22,6 +22,7 @@ import { TehcnologiesComponent } from "./tehcnologies/tehcnologies.component";
 import { WinnersComponent } from "./winners/winners.component";
 import { ContentComponent } from "./content/content.component";
 import { NewsletterListComponent } from "./newsletter-list/newsletter-list.component";
+import { SignupComponent } from "./signup/signup.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", component: HomeComponent },
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: "press-releases/:press-release", component: PressReleasesComponent },
   { path: "press-releases", component: PressReleaseListComponent },
   { path: "newsletters", component: NewsletterListComponent },
+  { path: "signup", component: SignupComponent },
   { path: "content/:category/:content-piece", component: ContentComponent },
   { path: "resources", component: ResourcesComponent },
   { path: "faq", component: FaqComponent },

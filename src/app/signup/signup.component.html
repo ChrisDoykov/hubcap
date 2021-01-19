@@ -1,0 +1,40 @@
+<div class="signup-form" #signupForm>
+  <div class="u-center-text u-margin-bottom-small">
+    <h1 class="heading-primary signup-form__heading">
+      Subscribe to our newsletter!
+    </h1>
+    <p class="paragraph paragraph--big">
+      We will keep you up to date with all news, events, open call announcements
+      and important info regarding the HUBCAP ecosystem.
+    </p>
+  </div>
+  <form class="singup-form__form" (submit)="handleSub()" ngNativeValidate>
+    <div class="control has-icons-left">
+      <!-- <input
+          type="email"
+          placeholder="Email"
+          required
+          id="emailPopup"
+          name="email"
+          class="input is-flat"
+        /> -->
+      <input
+        type="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        placeholder="Email"
+        required
+        id="emailSignup"
+        [(ngModel)]="email"
+        name="email"
+        class="input is-flat"
+      />
+      <span class="icon is-small is-left">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </span>
+      <button id="btn-send-form" type="submit" class="button is-blue">
+        <span id="send" *ngIf="!emailSent">Subscribe</span>
+        <i id="check" *ngIf="emailSent" class="fas fa-check u-fade-in"></i>
+      </button>
+    </div>
+  </form>
+</div>

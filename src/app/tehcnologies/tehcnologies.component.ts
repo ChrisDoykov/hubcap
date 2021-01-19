@@ -563,7 +563,15 @@ export class TehcnologiesComponent implements OnInit {
       showMore: false, // Always leave at false
       supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Javascript"],
-      domains: ["Automotive", "IoT", "Conusmer electronics", "Medical","Gaming","VR","Human-Machine-Interaction"],
+      domains: [
+        "Automotive",
+        "IoT",
+        "Conusmer electronics",
+        "Medical",
+        "Gaming",
+        "VR",
+        "Human-Machine-Interaction",
+      ],
       license_info_name: "Purchasable(1 to 12 months)",
       email: "hello@ghost-feel.it",
     },
@@ -577,8 +585,8 @@ export class TehcnologiesComponent implements OnInit {
         "The monitoring and analysis platform collects, classifies and represents the data offered by the hardware solution used in the monitoring project, making the necessary extractions for further investigations and analytical overlays such as anomaly detection or predictive maintenance.",
       showMore: false, // Always leave at false
       supported_platforms: ["Web Based (Platform independent)"],
-      modelling_notations: ["Fleets","Measurement types","Measurement units"],
-      domains: [ "IoT"],
+      modelling_notations: ["Fleets", "Measurement types", "Measurement units"],
+      domains: ["IoT"],
       license_info_name: "SaaS",
       email: "r.manolea@apiforge.it",
     },
@@ -592,16 +600,53 @@ export class TehcnologiesComponent implements OnInit {
         "Our tool provides health data for any kind of equipment, regarding its location and working conditions that could lead assistive maintenance checks and failure predictions.",
       showMore: false, // Always leave at false
       supported_platforms: ["Windows", "Linux", "macOS"],
-      modelling_notations: ["Tool identification;","Fall detection","Vibration profiling","Temperature Monitoring","Working time measurements"],
-      domains: [ "IoT","Construction","Mining","Mobile Equipment"],
+      modelling_notations: [
+        "Tool identification;",
+        "Fall detection",
+        "Vibration profiling",
+        "Temperature Monitoring",
+        "Working time measurements",
+      ],
+      domains: ["IoT", "Construction", "Mining", "Mobile Equipment"],
       license_info_name: "REST API",
       email: "info@embneusys.com",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_drisq.png",
+      asset_name: "Kapture & Modelworks",
+      company_name: "D-RisQ",
+      url: "https://www.drisq.com",
+      description:
+        "Kapture: Engineers charged with writing software requirements for embedded systems are likely to benefit from the use of Kapture.  The right requirements assist developers to develop correct designs, coders to develop correct code, test engineers to develop valid test cases and hence achieve working software with fewer iterations. This cuts costs and hence also helps project managers as well as enabling regulators understand what the software is supposed to do. Modelworks: Design engineers using Simulink/Stateflow for embedded control systems are likely to benefit from the use of Modelworks. The exploration of design to ensure that it correctly represents the intent of the requirements can be automated.  It gives the designer the option to explore different designs, enabling the selection of the most maintainable, most easily understood design while also optimising efficiency for future coding.  It means that where there is uncertainty of the required behaviour, this can be explored, changes incorporated and checked.  As a result it will mean the achievement of working software with fewer iterations of the later more expensive stages of software development.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows"],
+      modelling_notations: ["English", "Simulink"],
+      related_tools: [
+        {
+          name: "Simulink",
+          url: "https://www.mathworks.com/products/simulink.html",
+        },
+        {
+          name: "Stateflow",
+          url: "https://www.mathworks.com/products/stateflow.html",
+        },
+      ],
+      domains: [
+        "Aerospace",
+        "Autonomous systems",
+        "Automotive",
+        "Railways",
+        "Nuclear",
+        "Space",
+      ],
+      license_info_name: "Seat based, per project, per year",
+      email: "njt@drisq.com",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/logo_brightmerge.jpg",
-      asset_name:
-        "EezyGrid",
+      asset_name: "EezyGrid",
       company_name: "Brightmerge",
       url: "https://www.brightmerge.com",
       description:

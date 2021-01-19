@@ -120,7 +120,7 @@ export class AppComponent implements OnInit {
     this.popupDismiss = localStorage.getItem("popup_dismissed")
       ? Number.parseInt(localStorage.getItem("popup_dismissed"))
       : 0;
-    if (this.popupDismiss !== 1) {
+    if (this.popupDismiss !== 1 && !window.location.href.includes("signup")) {
       this.popup.nativeElement.classList.remove("popup-newsletter--hidden");
       this.popup.nativeElement.classList.add("popup-newsletter--shown");
     }

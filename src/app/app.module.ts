@@ -48,6 +48,7 @@ import { Webinar1_2Component } from "./content-items/webinar1_2/webinar1_2.compo
 import { NewsletterListComponent } from "./newsletter-list/newsletter-list.component";
 import { PressReleaseArticle3Component } from "./press-release-articles/press-release-article3/press-release-article3.component";
 import { ExpertsComponent } from './experts/experts.component';
+import { SignupComponent } from './signup/signup.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -86,6 +87,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     NewsletterListComponent,
     PressReleaseArticle3Component,
     ExpertsComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,

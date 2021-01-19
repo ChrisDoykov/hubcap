@@ -1,0 +1,48 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+
+  &__heading {
+    color: $color-black;
+    line-height: 1.5;
+
+    @include respond(phone) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .control,
+  input {
+    font-size: 1.9rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .button {
+    // align-self: center;
+    width: 100%;
+    // max-width: 20rem;
+    font-size: 1.92rem;
+    margin: 0;
+    padding: 0 2rem;
+    font-weight: bold;
+
+    &.is-blue {
+      background-color: $color-blue;
+    }
+
+    &[disabled],
+    &:disabled {
+      opacity: 1 !important;
+    }
+  }
+}

@@ -159,6 +159,13 @@ const PARTNERS: SME[] = [
 
     website: "https://www.brightmerge.com",
   },
+  {
+    id: 22,
+    name: "API FORGE",
+    logo: "../../assets/res/logos/logo_api_forge.png",
+
+    website: "https://apiforge.it",
+  },
 ];
 
 @Component({

@@ -568,6 +568,21 @@ export class TehcnologiesComponent implements OnInit {
       email: "hello@ghost-feel.it",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_been.png",
+      asset_name: "Beeno",
+      company_name: "API FORGE",
+      url: "https://apiforge.it",
+      description:
+        "The monitoring and analysis platform collects, classifies and represents the data offered by the hardware solution used in the monitoring project, making the necessary extractions for further investigations and analytical overlays such as anomaly detection or predictive maintenance.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Web Based (Platform independent)"],
+      modelling_notations: ["Fleets","Measurement types","Measurement units"],
+      domains: [ "IoT"],
+      license_info_name: "SaaS",
+      email: "r.manolea@apiforge.it",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/logo_brightmerge.jpg",
       asset_name:

@@ -74,6 +74,11 @@
     display: none;
   }
 
+  &__imprint {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
   &__form {
     display: flex;
     flex-direction: column;
@@ -92,7 +97,7 @@
 
       .input {
         font-size: 1.92rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
 
       span.icon {

@@ -23,6 +23,7 @@ import { WinnersComponent } from "./winners/winners.component";
 import { ContentComponent } from "./content/content.component";
 import { NewsletterListComponent } from "./newsletter-list/newsletter-list.component";
 import { SignupComponent } from "./signup/signup.component";
+import { ExternalComponent } from "./external/external.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", component: HomeComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: "digital-innovation-hubs", component: DihComponent },
   { path: "platform", component: PlatformComponent },
   { path: "open-calls", component: CallsComponent },
+  { path: "external-application", component: ExternalComponent },
   { path: "project-details", component: ProjectComponent },
   { path: "services", component: ServicesComponent },
   { path: "calls/pull", component: PullComponent },

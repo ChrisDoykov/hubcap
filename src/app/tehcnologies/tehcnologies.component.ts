@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Meta, Title } from "@angular/platform-browser";
 import { filter } from "rxjs-compat/operator/filter";
 
 @Component({
@@ -7,7 +8,7 @@ import { filter } from "rxjs-compat/operator/filter";
   styleUrls: ["./tehcnologies.component.scss"],
 })
 export class TehcnologiesComponent implements OnInit {
-  constructor() {}
+  constructor(private meta: Meta, private title: Title) {}
 
   width: number;
   elements_fade_in: any;
@@ -608,7 +609,8 @@ export class TehcnologiesComponent implements OnInit {
         "Working time measurements",
       ],
       domains: ["IoT", "Construction", "Mining", "Mobile Equipment"],
-      license_info_name: "REST API",
+      license_info_name:
+        "Subscription for customers, REST API for system integrators",
       email: "info@embneusys.com",
     },
     {
@@ -719,7 +721,12 @@ export class TehcnologiesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.title = "Technologies | HUBCAP";
+    this.title.setTitle("Technologies | HUBCAP");
+    this.meta.updateTag({
+      property: "og:description",
+      content:
+        "HUBCAP's collaboration platform gives its users access to a wide variety of different MBD tools and assets. See a detailed list below.",
+    });
     document.getElementById("hero-title").textContent = "Technologies";
 
     this.rearrangeTechnologies(this.technologies);

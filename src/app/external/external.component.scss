@@ -1,0 +1,10 @@
+@import "../../assets/res/sass/abstracts/variables";
+@import "../../assets/res/sass/abstracts/mixins";
+
+.container {
+  .heading-primary {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+  }
+}

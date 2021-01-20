@@ -3,8 +3,18 @@
   (window:resize)="onResize()"
   (window:scroll)="checkPosition()"
 >
-  <div class="u-center-text u-margin-bottom-medium">
+  <div class="u-center-text u-margin-bottom-medium intro">
     <h1 class="heading-primary">Technological Assets List</h1>
+    <p class="paragraph paragraph--big">
+      Here is a complete list of all the available technologies on the HUBCAP
+      collaboration platform. To apply with an asset as a non-SME or other
+      external entity please visit our
+      <a
+        [routerLink]="['/external-application']"
+        routerLinkActive="router-link-active"
+        >external applications page</a
+      >.
+    </p>
   </div>
   <div class="u-center-text settings">
     <h3 class="heading-tertiary settings__title">Show me:</h3>

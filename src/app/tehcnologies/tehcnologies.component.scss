@@ -7,6 +7,12 @@
   flex-direction: column;
   justify-content: center;
 
+  .intro {
+    max-width: 80rem;
+    align-self: center;
+    padding: 0 2rem;
+  }
+
   .alphabet {
     width: 80%;
     align-self: center;

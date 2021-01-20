@@ -125,14 +125,6 @@
       ngNativeValidate
     >
       <div class="control has-icons-left">
-        <!-- <input
-          type="email"
-          placeholder="Email"
-          required
-          id="emailPopup"
-          name="email"
-          class="input is-flat"
-        /> -->
         <input
           type="email"
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -146,6 +138,10 @@
         <span class="icon is-small is-left">
           <i class="fa fa-envelope" aria-hidden="true"></i>
         </span>
+        <p class="popup-newsletter__imprint">
+          By submitting your email address you agree to receive emails about
+          HUBCAP and SAE. You can unsubscribe at any time.
+        </p>
         <button
           id="btn-send"
           type="submit"

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, OnDestroy } from "@angular/core";
 import { Meta, Title } from "@angular/platform-browser";
 import { filter } from "rxjs-compat/operator/filter";
 
@@ -7,7 +7,7 @@ import { filter } from "rxjs-compat/operator/filter";
   templateUrl: "./tehcnologies.component.html",
   styleUrls: ["./tehcnologies.component.scss"],
 })
-export class TehcnologiesComponent implements OnInit {
+export class TehcnologiesComponent implements OnInit, OnDestroy {
   constructor(private meta: Meta, private title: Title) {}
 
   width: number;
@@ -727,12 +727,30 @@ export class TehcnologiesComponent implements OnInit {
       content:
         "HUBCAP's collaboration platform gives its users access to a wide variety of different MBD tools and assets. See a detailed list below.",
     });
+    this.meta.addTag({
+      name: "description",
+      content:
+        "HUBCAP's collaboration platform gives its users access to a wide variety of different MBD tools and assets. See a detailed list below.",
+    });
     document.getElementById("hero-title").textContent = "Technologies";
 
     this.rearrangeTechnologies(this.technologies);
 
     this.onResize();
     this.checkPosition();
+  }
+
+  ngOnDestroy(): void {
+    this.meta.updateTag({
+      property: "og:description",
+      content:
+        "Join us in the Cyber-Physical Systems revolution! HUBCAP is your one-stop-shop for embracing digital innovation using model-based design technology for Cyber-Physical Systems.",
+    });
+    this.meta.updateTag({
+      name: "description",
+      content:
+        "Join us in the Cyber-Physical Systems revolution! HUBCAP is your one-stop-shop for embracing digital innovation using model-based design technology for Cyber-Physical Systems.",
+    });
   }
 
   rearrangeTechnologies(technologies) {

@@ -173,6 +173,20 @@ const PARTNERS: SME[] = [
 
     website: "http://embneusys.com",
   },
+  {
+    id: 24,
+    name: "D-RisQ",
+    logo: "../../assets/res/logos/logo_drisq.png",
+
+    website: "https://www.drisq.com",
+  },
+  {
+    id: 25,
+    name: "Ekkono Solutions",
+    logo: "../../assets/res/logos/logo_ekkono.jpg",
+
+    website: "https://ekkono.ai",
+  },
 ];
 
 @Component({

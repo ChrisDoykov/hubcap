@@ -646,6 +646,44 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       email: "njt@drisq.com",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_ekkono.jpg",
+      asset_name: "Ekkono Edge Software Library",
+      company_name: "Ekkono Solutions",
+      url: "https://ekkono.ai",
+      description:
+        "Our Software Library and accompanying SDK allwos developers to quickly and easily add machine learning capabilities to their devices. We provide easy-to-learn APIs that allow you to hook our native C++ software library into your development framework - whether that is in native-C, C# or Python.",
+      showMore: false, // Always leave at false
+      supported_platforms: [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Embedded Systems and OSs, such as Mbed, etc.",
+      ],
+      modelling_notations: [
+        "Neural Networks",
+        "Random Forest",
+        "Decision Tree",
+        "Linear Regression",
+        "Multi-Layered Perceptrons",
+        "Incremental Learning",
+      ],
+      domains: [
+        "IoT",
+        "Energy",
+        "Automotive",
+        "Industry",
+        "Machine Learning",
+        "Product Development",
+        "Medtech",
+        "Sustainability",
+        "Smart Products",
+      ],
+      license_info_name:
+        "License per unit/device that runs our software library",
+      email: "info@ekkono.ai",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/logo_brightmerge.jpg",
       asset_name: "EezyGrid",

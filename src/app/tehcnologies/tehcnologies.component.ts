@@ -684,6 +684,66 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       email: "info@ekkono.ai",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_nissatech.png",
+      asset_name: "D3Scan - Deep Data Diagnostics through Cognitive Scanning",
+      company_name: "Nissatech",
+      url: "https://www.nissatech.com/",
+      description:
+        "D3Scan is a novel approach for analysing the behaviour of a manufacturing physical asset (machine, tool) through the creation and analysis of its digital replica from past data  (so called Digital Twin), with the goal to find its weak (unstability) points and understand their root causes that can be used for the real-time monitoring and off-line exploration of the process, including quality control, OEE and tool-life improvement.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux"],
+      modelling_notations: ["Digital Twin model", "ML models"],
+      domains: ["Manufacturing", "Process industry", "Oil&Gas"],
+      related_tools: [
+        {
+          name: "D2Lab",
+          url: "https://d2lab.nissatech.com/what-is-the-d2lab/",
+        },
+        {
+          name: "D2Twin",
+          url: "https://d2lab.nissatech.com/d2twin/",
+        },
+      ],
+      license_info_name: "Proprietary",
+      email: "info@nissatech.com",
+    },
+    {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_rvmagnetics.png",
+      asset_name: "MicroWire sensing technology",
+      company_name: "RVmagnetics",
+      url: "https://www.rvmagnetics.com",
+      description:
+        "MicroWire sensors by RVmagnetics are miniaturized (diameter ca. 3–70 µm) magnetic contactless sensors of physical quantities (temperature, pressure, pull, mechanical stress, torsion, magnetic field, position, etc.). MicroWires are made of metallic alloy core (diameter ca. 1–50 µm) and glass coating (thickness 2–20 µm). Their size, high added value, robustness, simple production process and also their symmetry, glass-coating, possibility of contactless sensing leads to their utilization as a miniaturized sensor with a wide range of applications in different industries: IoT, Industry 4.0, Structural Health Monitoring, Automotive, Aerospace, Smart materials, Healthcare, Anticounterfeiting area, etc.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS"],
+      modelling_notations: [
+        "Generator",
+        "MicroWire",
+        "Sensing Head",
+        "Filter",
+        "Amplifier",
+        "CPU",
+        "Data transfer",
+        "Server",
+        "Real-time data ingestion",
+      ],
+      domains: [
+        "SHM",
+        "IoT",
+        "Automotive",
+        "MedTech",
+        "Composites",
+        "Robotics",
+        "Battery management",
+        "AntiCounterfeit",
+      ],
+      license_info_name:
+        "Exclusive license, sole license, non-exclusive license, JV",
+      email: "marhefka@rvmagnetics.com",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/logo_brightmerge.jpg",
       asset_name: "EezyGrid",

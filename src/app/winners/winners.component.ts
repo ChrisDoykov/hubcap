@@ -187,6 +187,20 @@ const PARTNERS: SME[] = [
 
     website: "https://ekkono.ai",
   },
+  {
+    id: 26,
+    name: "Nissatech",
+    logo: "../../assets/res/logos/logo_nissatech.png",
+
+    website: "https://www.nissatech.com",
+  },
+  {
+    id: 27,
+    name: "RVmagnetics",
+    logo: "../../assets/res/logos/logo_rvmagnetics.png",
+
+    website: "https://www.rvmagnetics.com",
+  },
 ];
 
 @Component({

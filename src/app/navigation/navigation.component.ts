@@ -89,12 +89,19 @@ export class NavigationComponent implements OnInit {
         if (this.mobile) {
           window.scrollTo(0, 600);
         } else {
+          // this.scrollIntoView("hero");
           window.scrollTo(0, 220);
         }
       } else {
         window.scrollTo(0, 220);
+        // window.scrollTo(0, 0);
+        // this.scrollIntoView("hero");
       }
     });
+  }
+
+  scrollIntoView(id) {
+    document.getElementById(id).scrollIntoView({ block: "center" });
   }
 
   onScroll() {

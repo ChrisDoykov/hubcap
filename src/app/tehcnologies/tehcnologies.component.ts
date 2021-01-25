@@ -744,6 +744,47 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       email: "marhefka@rvmagnetics.com",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_skill.png",
+      asset_name: "PropertyDoc",
+      company_name: "Skill Software",
+      url: "https://skillsoftware.de",
+      description:
+        "PropertyDoc is now available as a unique application suite from planning up to building and running of properties, always mobile on-site at the working areas, with technical service, alarm based energy management, including sensors up to guiding/routing in business areas, shopping malls, universities, etc.PropertyDoc bases on our BauDoc, which was honored with the Telekom Innovation Award; the alert based, mobile energy managing EnergyDoc was partly funded by the federate state of Hessen and EU (ERDF).• PropertyDoc uses the revolutionary SKILL BauDoc-techniques, which significantly simplifies the administration and management of construction sites and buildings by documenting all plans, changes, deficiencies, performances and accomplishments in the blueprints, based on schematic construction plans and photos, manages the information in structured databases and, through our app, provides all information directly on site.* PropertyDoc now increases productivity of property management, by integrating more functionality and business processes. It substitutes paper forms, excel sheets, tons of emails, and is always on-site.• Solutions for commission managers, with incorporated project and time management.• Employee and resource localization (indoor and outdoor combined), e.g. to connect important customers at busy fairs with their contact person as quickly as possible, or to locate the urgently needed ECG in a hospital.• Ticketing, helpdesk and claims with learning knowledge base.• Technical service with hotline and service assistance, statements, dispatching, mobile stock, service report with performance times, material and replacement parts incl. customers signature on the tablet and interfaces to SAP, NAV, etc.* integrated communication within building teams as well as to the investor site, sub-contractors etc* working BIM: PropertyDoc interacts with CAD to import digital planning maps and takes service orders and delivers job reports real-time from/to CAFM Software.* 3D videos (Navvis) linked with object-information* PropertyDoc is the leading edge of property management – mobile, flexible and available!",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS", "Android", "iOS"],
+      modelling_notations: [
+        "English",
+        "German",
+        "Other languages on demand in some days",
+      ],
+      related_tools: [
+        {
+          name: "BauDoc",
+          url: "https://skillsoftware.de/software/baudoc/",
+        },
+        {
+          name: "EnergyDoc",
+          url: "https://skillsoftware.de/software/energydoc/",
+        },
+        {
+          name: "TechDoc",
+          url: "https://skillsoftware.de/software/techdoc/",
+        },
+      ],
+      domains: [
+        "Property-management",
+        "Construction",
+        "Facility management",
+        "Energy management",
+        "IoT",
+        "Technical supply",
+        "Mobile documentation",
+      ],
+      license_info_name: "SaaS",
+      email: "reh@skillsoftware.de",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/logo_brightmerge.jpg",
       asset_name: "EezyGrid",

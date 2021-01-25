@@ -201,6 +201,13 @@ const PARTNERS: SME[] = [
 
     website: "https://www.rvmagnetics.com",
   },
+  {
+    id: 28,
+    name: "Skill Software",
+    logo: "../../assets/res/logos/logo_skill.png",
+
+    website: "https://skillsoftware.de",
+  },
 ];
 
 @Component({

@@ -4,6 +4,7 @@
 
 .hero {
   position: relative;
+  // height: calc(100vh - 120px - 20rem);
   height: 90vh;
   border-bottom: 6rem solid $color-primary;
   border-bottom-left-radius: 1rem;

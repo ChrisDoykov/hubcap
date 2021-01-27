@@ -208,6 +208,13 @@ const PARTNERS: SME[] = [
 
     website: "https://skillsoftware.de",
   },
+  {
+    id: 29,
+    name: "Conductiv.ai",
+    logo: "../../assets/res/logos/logo_conductiv.png",
+
+    website: "https://conductiv.ai",
+  },
 ];
 
 @Component({

@@ -785,6 +785,26 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       email: "reh@skillsoftware.de",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_conductiv.png",
+      asset_name: "Conductiv.ai Process Control",
+      company_name: "Conductiv.ai",
+      url: "https://conductiv.ai",
+      description:
+        "Conductiv.ai Process Control uses AutoML and Hybrid Modeling to create Self-Perfecting Digital Twins for hardware equipments, chemical processes and even entire production lines, enabling effortless cost & material optimization and reduction in product time-to-market.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS"],
+      modelling_notations: ["Python", "MATLAB"],
+      domains: [
+        "Semiconductors",
+        "3D Printing",
+        "Industrial Automation",
+        "Automotive",
+      ],
+      license_info_name: "Subscription",
+      email: "contact@conductiv.ai",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/logo_brightmerge.jpg",
       asset_name: "EezyGrid",

@@ -184,6 +184,27 @@
         <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
       </td>
     </tr>
+    <tr>
+      <td *ngFor="let partner of partners.slice(31, 35)" class="hidden-fade-in">
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
   </table>
 
   <table *ngIf="width > 2200">
@@ -327,6 +348,27 @@
     </tr>
     <tr>
       <td *ngFor="let partner of partners.slice(29, 34)" class="hidden-fade-in">
+        <a
+          *ngIf="partner.logo !== ''"
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+        >
+          <img class="logo" src="{{ partner.logo }}" />
+        </a>
+        <a
+          target="_blank"
+          href="{{ partner.website }}"
+          class="heading-tertiary"
+          *ngIf="partner.logo === ''"
+        >
+          {{ partner.name }}
+        </a>
+        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let partner of partners.slice(34, 39)" class="hidden-fade-in">
         <a
           *ngIf="partner.logo !== ''"
           target="_blank"

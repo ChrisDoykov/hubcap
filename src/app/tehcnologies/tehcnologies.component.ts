@@ -805,6 +805,31 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       email: "contact@conductiv.ai",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_evitado.png",
+      asset_name: "Evitado System Simulator",
+      company_name: "Evitado Technologies",
+      url: "https://evitado.io/",
+      description:
+        "This tool allows for a simulation of the Evitado system. The tool details the capabilities of using Evitado's portable LiDAR-based system in providing collision warning and location tracking of any large moving asset.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Linux"],
+      modelling_notations: ["C++", "CAD"],
+      related_tools: [
+        {
+          name: "Gazebo",
+          url: "http://gazebosim.org/",
+        },
+        {
+          name: "ROS",
+          url: "https://www.ros.org/",
+        },
+      ],
+      domains: ["IoT", "Logistics", "Automotive", "Robotics"],
+      license_info_name: "TBD",
+      email: "info@evitado.io",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/logo_brightmerge.jpg",
       asset_name: "EezyGrid",

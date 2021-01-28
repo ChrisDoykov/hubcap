@@ -215,6 +215,13 @@ const PARTNERS: SME[] = [
 
     website: "https://conductiv.ai",
   },
+  {
+    id: 30,
+    name: "Evitado Technologies",
+    logo: "../../assets/res/logos/logo_evitado.png",
+
+    website: "https://evitado.io/",
+  },
 ];
 
 @Component({

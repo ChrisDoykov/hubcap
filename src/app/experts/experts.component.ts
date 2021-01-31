@@ -6,11 +6,14 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./experts.component.scss"],
 })
 export class ExpertsComponent implements OnInit {
+  width: number;
   constructor() {}
 
   ngOnInit(): void {
     document.title = "Call For Experts | HUBCAP";
-    document.getElementById("hero-title").textContent = "Call For Experts";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Call For Experts";
+    }
   }
 
   openApplyPage() {
@@ -18,5 +21,13 @@ export class ExpertsComponent implements OnInit {
       "https://www.f6s.com/1callofexpertsexpressionofinterest/apply",
       "_blank"
     );
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Call For Experts";
+    }
   }
 }

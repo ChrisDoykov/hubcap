@@ -1,19 +1,25 @@
-<div class="container">
-  <img class="icon" src="../../assets/res/images/pull.png" />
-  <h1
-    class="heading-primary heading-primary--underlined heading-primary--underlined-orange has-text-centered"
-  >
-    Call #1 PULL
-  </h1>
-  <div class="container__intro">
+<div class="container" (window:resize)="onResize()">
+  <div class="container__top">
+    <img class="icon" src="../../assets/res/images/pull.png" />
+    <h1
+      class="heading-primary heading-primary--underlined heading-primary--underlined-orange has-text-centered"
+    >
+      Call #1 PULL
+    </h1>
     <h2 class="subtitle has-text-centered subtitle--announcement">
       Applications now closed | Opening on 1 April 2021
     </h2>
-    <button disabled class="button button--download" (click)="openApplyPage()">
+  </div>
+
+  <div class="container__intro">
+    <button
+      disabled
+      class="button button--download u-margin-bottom-medium"
+      (click)="openApplyPage()"
+    >
       APPLY NOW TO CALL #1.3
     </button>
 
-    <br />
     <div class="intro">
       <p class="paragraph paragraph--big">
         Is your SME/midcap providing digital technologies? Join the HUBCAP

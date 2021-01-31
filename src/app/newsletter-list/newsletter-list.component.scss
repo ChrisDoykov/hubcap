@@ -10,6 +10,11 @@
   flex-direction: column;
   justify-content: center;
 
+  @include respond(phone) {
+    padding: 2.5rem 2rem;
+    padding-bottom: 5rem;
+  }
+
   .newsletter-list {
     width: 100%;
     align-self: center;

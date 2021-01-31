@@ -126,7 +126,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    document.getElementById("hero-title").parentElement.style.width = "unset";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").parentElement.style.width = "unset";
+    }
   }
 
   @ViewChild("blue", { static: true }) blueText: ElementRef;
@@ -137,10 +139,15 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     document.title = "HUBCAP";
     if (this.desktop) {
-      document.getElementById("hero-title").textContent =
-        "Join us in the Cyber-Physical Systems revolution!";
+      if (document.getElementById("hero-title") !== null) {
+        document.getElementById("hero-title").textContent =
+          "Join us in the Cyber-Physical Systems revolution!";
+      }
     } else {
-      document.getElementById("hero-title").textContent = "Welcome to HUBCAP!";
+      if (document.getElementById("hero-title") !== null) {
+        document.getElementById("hero-title").textContent =
+          "Welcome to HUBCAP!";
+      }
     }
 
     this.locationService.getLocation();
@@ -198,6 +205,18 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   onResize() {
     this.width = window.innerWidth;
+
+    if (this.desktop) {
+      if (document.getElementById("hero-title") !== null) {
+        document.getElementById("hero-title").textContent =
+          "Join us in the Cyber-Physical Systems revolution!";
+      }
+    } else {
+      if (document.getElementById("hero-title") !== null) {
+        document.getElementById("hero-title").textContent =
+          "Welcome to HUBCAP!";
+      }
+    }
 
     this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     this.elements_slide_in_left = document.querySelectorAll(

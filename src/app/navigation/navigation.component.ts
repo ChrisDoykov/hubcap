@@ -39,7 +39,7 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {
     this.width = window.innerWidth;
     this.navbar = document.getElementsByTagName("app-navigation")[0];
-    this.nav = document.getElementsByClassName("navbar")[0];
+    this.nav = document.querySelectorAll(".navbar")[0];
     this.navDrop = document.getElementById("navbarDropdown");
     this.banner = document.getElementsByClassName("banner-line")[0];
     this.header = document.getElementsByTagName("app-header")[0];
@@ -87,14 +87,15 @@ export class NavigationComponent implements OnInit {
           });
         });
         if (this.mobile) {
-          window.scrollTo(0, 600);
+          window.scrollTo(0, 0);
         } else {
           // this.scrollIntoView("hero");
-          window.scrollTo(0, 220);
+          window.scrollTo(0, 0);
+          // window.scrollTo(0, 220);
         }
       } else {
-        window.scrollTo(0, 220);
-        // window.scrollTo(0, 0);
+        // window.scrollTo(0, 220);
+        window.scrollTo(0, 0);
         // this.scrollIntoView("hero");
       }
     });
@@ -125,6 +126,15 @@ export class NavigationComponent implements OnInit {
 
   onResize() {
     this.width = window.innerWidth;
+
+    if (this.width <= 600) {
+      this.navbar = document.getElementsByTagName("app-navigation")[0];
+      this.nav = document.querySelectorAll(".navbar")[0];
+      this.navDrop = document.getElementById("navbarDropdown");
+      this.banner = document.getElementsByClassName("banner-line")[0];
+      this.header = document.getElementsByTagName("app-header")[0];
+    }
+
     this.sticky = this.nav.parentNode.offsetTop;
 
     this.onScroll();
@@ -164,5 +174,9 @@ export class NavigationComponent implements OnInit {
       });
       this.mobileMenu = false;
     }
+  }
+
+  blur(event) {
+    console.log((event.path[0] as HTMLElement).blur());
   }
 }

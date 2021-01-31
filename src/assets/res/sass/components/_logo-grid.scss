@@ -17,6 +17,11 @@
     padding: 3rem 0;
   }
 
+  @include respond(phone) {
+    padding: 2.5rem 0;
+    margin-top: -10rem;
+  }
+
   // -------------------- Table ------------------------- //
 
   .logo {

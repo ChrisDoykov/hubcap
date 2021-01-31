@@ -155,7 +155,9 @@ export class NewsComponent implements OnInit {
 
   ngOnInit() {
     document.title = "Latest News | HUBCAP";
-    document.getElementById("hero-title").textContent = "Latest News";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Latest News";
+    }
     this.onResize();
     this.checkPosition();
   }
@@ -166,6 +168,10 @@ export class NewsComponent implements OnInit {
 
   onResize() {
     this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Latest News";
+    }
 
     this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     this.windowHeight = window.innerHeight;

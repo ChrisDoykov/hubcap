@@ -6,6 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./resources.component.scss"],
 })
 export class ResourcesComponent implements OnInit {
+  width: number;
   constructor() {}
 
   items_all = [
@@ -195,7 +196,9 @@ export class ResourcesComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Useful Resources | HUBCAP";
-    document.getElementById("hero-title").textContent = "Useful Resources";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Useful Resources";
+    }
 
     const url = window.location.href.toString();
 
@@ -229,11 +232,9 @@ export class ResourcesComponent implements OnInit {
     // Call #2.1
     else if (url.includes("DocumentationKit-2-1")) {
       document.getElementById("Dkit2-1").click();
-    }
-     else if (url.includes("press-release#2.1")) {
+    } else if (url.includes("press-release#2.1")) {
       document.getElementById("pr#2.1").click();
-    }
-    else if (url.includes("flyer2-1")) {
+    } else if (url.includes("flyer2-1")) {
       document.getElementById("flyer2.1").click();
     }
 
@@ -245,5 +246,13 @@ export class ResourcesComponent implements OnInit {
     // } else if (url.includes("HUBCAP_CALL2-2_EXPERIMENT")) {
     //   document.getElementById("flyer2.2").click();
     // }
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Useful Resources";
+    }
   }
 }

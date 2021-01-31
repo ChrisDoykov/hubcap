@@ -916,7 +916,9 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       content:
         "HUBCAP's collaboration platform gives its users access to a wide variety of different MBD tools and assets. See a detailed list below.",
     });
-    document.getElementById("hero-title").textContent = "Technologies";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Technologies";
+    }
 
     this.rearrangeTechnologies(this.technologies);
 
@@ -1028,6 +1030,10 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
 
   onResize() {
     this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Technologies";
+    }
 
     this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     this.elements_slide_in_left = document.querySelectorAll(

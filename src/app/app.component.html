@@ -11,29 +11,28 @@
           this.src='../assets/res/images/logo_hubcap.png'"
     />
 
-    <div class="banner-line__heading">
-      <p>
-        Digital Innovation HUBs and Collaborative Platform for Cyber-Physical
-        Systems
-      </p>
-    </div>
-
     <img
       class="banner-line__logo"
       *ngIf="width < 600"
       id="vertical"
       routerLink="/"
-      src="../assets/res/images/logo_vertical.webp"
+      src="../assets/res/images/logo_hubcap.png"
       alt="Hubcap Logo"
       onerror="this.onerror=null;
           this.src='../assets/res/images/logo_vertical.png'"
     />
+    <div class="banner-line__heading" *ngIf="width >= 600">
+      <p>
+        Digital Innovation HUBs and Collaborative Platform for Cyber-Physical
+        Systems
+      </p>
+    </div>
   </section>
   <app-navigation></app-navigation>
-  <section class="hero is-large" id="hero">
+  <section class="hero is-large" id="hero" *ngIf="width >= 600">
     <swiper
       [config]="config"
-      *ngIf="webp && (desktop || tablet)"
+      *ngIf="webp && width >= 600"
       class="hero__carousel"
     >
       <img
@@ -43,17 +42,17 @@
         class="hero__carousel__content"
       />
     </swiper>
-    <swiper [config]="config" *ngIf="webp && mobile" class="hero__carousel">
+    <!-- <swiper [config]="config" *ngIf="webp && mobile" class="hero__carousel">
       <img
         *ngFor="let image of imagesMobile"
         src="{{ image }}"
         alt=""
         class="hero__carousel__content"
       />
-    </swiper>
+    </swiper> -->
     <swiper
       [config]="config"
-      *ngIf="!webp && (desktop || tablet)"
+      *ngIf="!webp && width >= 600"
       class="hero__carousel"
     >
       <img
@@ -63,14 +62,14 @@
         class="hero__carousel__content"
       />
     </swiper>
-    <swiper [config]="config" *ngIf="!webp && mobile" class="hero__carousel">
+    <!-- <swiper [config]="config" *ngIf="!webp && mobile" class="hero__carousel">
       <img
         *ngFor="let image of fallbacksMobile"
         src="{{ image }}"
         alt=""
         class="hero__carousel__content"
       />
-    </swiper>
+    </swiper> -->
 
     <div class="hero__body">
       <div class="hero__body__container u-center-text">
@@ -80,6 +79,7 @@
       </div>
     </div>
   </section>
+  <!-- <app-navigation *ngIf="width < 600"></app-navigation> -->
   <!-- <section
     *ngIf="!webp"
     style="

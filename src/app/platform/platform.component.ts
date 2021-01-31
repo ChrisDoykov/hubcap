@@ -12,11 +12,16 @@ export class PlatformComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Platform | HUBCAP";
-    document.getElementById("hero-title").textContent = "Platform";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Platform";
+    }
     this.onResize();
   }
 
   onResize() {
     this.width = window.innerWidth;
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Platform";
+    }
   }
 }

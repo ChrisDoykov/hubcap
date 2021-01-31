@@ -143,7 +143,9 @@ export class PartnersComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Our Partners | HUBCAP";
-    document.getElementById("hero-title").textContent = "Our Partners";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Our Partners";
+    }
     this.onResize();
     this.checkPosition();
   }
@@ -151,12 +153,16 @@ export class PartnersComponent implements OnInit {
   onResize() {
     this.width = window.innerWidth;
 
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Our Partners";
+    }
+
     this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     this.windowHeight = window.innerHeight;
 
-    if (this.width > 1200) {
-      this.scrollIntoView("heading");
-    }
+    // if (this.width > 1200) {
+    //   this.scrollIntoView("heading");
+    // }
   }
 
   checkPosition() {

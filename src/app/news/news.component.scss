@@ -9,6 +9,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @include respond(phone) {
+    padding: 2.5rem 2rem;
+  }
+
   .columns {
     align-self: center;
     margin: 0 auto;

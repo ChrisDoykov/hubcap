@@ -8,6 +8,7 @@ import { DeviceDetectorService } from "ngx-device-detector";
   providers: [DeviceDetectorService],
 })
 export class ExperimentComponent implements OnInit {
+  width: number;
   constructor(private deviceService: DeviceDetectorService) {}
 
   openApplyPage() {
@@ -20,6 +21,16 @@ export class ExperimentComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Call #2 EXPERIMENT | HUBCAP";
-    document.getElementById("hero-title").textContent = "Call #2 EXPERIMENT";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Call #2 EXPERIMENT";
+    }
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Call #2 EXPERIMENT";
+    }
   }
 }

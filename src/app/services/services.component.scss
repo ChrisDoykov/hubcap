@@ -13,6 +13,10 @@
     padding: 10rem 0;
   }
 
+  @include respond(phone) {
+    padding: 2.5rem 0;
+  }
+
   .row {
     .col-1-of-2 {
       div {

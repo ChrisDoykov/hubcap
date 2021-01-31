@@ -1,4 +1,11 @@
-<section class="faq">
+<section class="faq" (window:resize)="onResize()">
+  <div class="u-center-text u-margin-bottom-small" *ngIf="width <= 1400">
+    <h1
+      class="heading-primary heading-primary--underlined heading-primary--underlined-center heading-primary--underlined-green"
+    >
+      FAQ
+    </h1>
+  </div>
   <div class="u-text-left">
     <h1
       class="heading-secondary heading-secondary--underlined heading-secondary--underlined-left heading-secondary--underlined-red"

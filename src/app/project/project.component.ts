@@ -6,6 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./project.component.scss"],
 })
 export class ProjectComponent implements OnInit {
+  width: number;
   constructor() {}
 
   deliverables = [
@@ -45,7 +46,9 @@ export class ProjectComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Project Details | HUBCAP";
-    document.getElementById("hero-title").textContent = "Project Details";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Project Details";
+    }
 
     const $modalButtons = Array.prototype.slice.call(
       document.querySelectorAll(".modal-button"),
@@ -85,6 +88,14 @@ export class ProjectComponent implements OnInit {
           });
         });
       });
+    }
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Project Details";
     }
   }
 }

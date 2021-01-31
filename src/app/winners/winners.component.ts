@@ -238,13 +238,19 @@ export class WinnersComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Call Winners | HUBCAP";
-    document.getElementById("hero-title").textContent = "Call Winners";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Call Winners";
+    }
     this.onResize();
     this.checkPosition();
   }
 
   onResize() {
     this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Call Winners";
+    }
 
     this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     this.windowHeight = window.innerHeight;

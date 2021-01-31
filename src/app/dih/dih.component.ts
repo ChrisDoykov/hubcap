@@ -50,8 +50,10 @@ export class DihComponent implements OnInit {
 
   ngOnInit() {
     document.title = "Digital Innovation Hubs | HUBCAP";
-    document.getElementById("hero-title").textContent =
-      "Digital Innovation Hubs";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent =
+        "Digital Innovation Hubs";
+    }
 
     this.onResize();
     this.checkPosition();
@@ -64,6 +66,11 @@ export class DihComponent implements OnInit {
 
   onResize() {
     this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent =
+        "Digital Innovation Hubs";
+    }
 
     this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     this.elements_slide_in_left = document.querySelectorAll(

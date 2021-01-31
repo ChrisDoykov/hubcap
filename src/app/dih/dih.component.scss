@@ -5,6 +5,10 @@
   padding: 10rem 0;
   padding-top: 5rem;
 
+  @include respond(phone) {
+    padding-top: 2.5rem;
+  }
+
   .opening {
     max-width: 120rem;
     margin: 0 auto;

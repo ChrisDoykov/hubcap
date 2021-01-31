@@ -6,11 +6,14 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./press-release-article3.component.scss"],
 })
 export class PressReleaseArticle3Component implements OnInit {
+  width: number;
   constructor() {}
   ngOnInit(): void {
     document.title = "Press Release Call #2.1 EXPERIMENT | HUBCAP";
-    document.getElementById("hero-title").textContent =
-      "Press Release Call #2.1 EXP";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent =
+        "Press Release Call #2.1 EXP";
+    }
   }
 
   openModal(item) {
@@ -22,5 +25,13 @@ export class PressReleaseArticle3Component implements OnInit {
     const $target = document.getElementById(item);
 
     $target.classList.remove("is-active");
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent =
+        "Press Release Call #2.1 EXP";
+    }
   }
 }

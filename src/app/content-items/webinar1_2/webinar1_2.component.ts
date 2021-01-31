@@ -6,13 +6,25 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./webinar1_2.component.scss"],
 })
 export class Webinar1_2Component implements OnInit {
+  width: number;
   constructor() {}
 
   videoURL = "https://www.youtube.com/embed/qsokDLHRORc";
 
   ngOnInit(): void {
     document.title = "CALL #1.2 PULL Q&A Webinar | HUBCAP";
-    document.getElementById("hero-title").textContent =
-      "CALL #1.2 PULL Q&A Webinar";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent =
+        "CALL #1.2 PULL Q&A Webinar";
+    }
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent =
+        "CALL #1.2 PULL Q&A Webinar";
+    }
   }
 }

@@ -10,12 +10,16 @@ export class NotFoundComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     document.title = "Not Found | HUBCAP";
-    document.getElementById("hero").style.transform = "translateX(-1000rem)";
-    document.getElementById("hero").style.position = "absolute";
+    if (document.getElementById("hero") !== null) {
+      document.getElementById("hero").style.transform = "translateX(-1000rem)";
+      document.getElementById("hero").style.position = "absolute";
+    }
   }
 
   ngOnDestroy(): void {
-    document.getElementById("hero").style.transform = "translateX(0)";
-    document.getElementById("hero").style.position = "relative";
+    if (document.getElementById("hero") !== null) {
+      document.getElementById("hero").style.transform = "translateX(0)";
+      document.getElementById("hero").style.position = "relative";
+    }
   }
 }

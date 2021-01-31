@@ -11,8 +11,51 @@
   margin-bottom: 10rem;
   padding: 2rem 0;
 
-  h2.subtitle.subtitle--announcement.u-center-text {
-    padding: 0 2rem;
+  @include respond(phone) {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    h2.subtitle.subtitle--announcement.u-center-text {
+      padding: 0 2rem;
+    }
+
+    .icon {
+      height: 30rem;
+      width: auto;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+
+      @include respond(phone) {
+        // height: 30rem;
+        height: 40vh;
+      }
+    }
+
+    @include respond(phone) {
+      // min-height: calc(100vh - 6rem - 25rem - 120px);
+      min-height: 55vh;
+      padding-top: 2rem;
+
+      @media screen and (min-height: 780px) {
+        min-height: 55vh;
+        // margin-bottom: -4rem;
+      }
+
+      @media screen and (min-height: 700px) {
+        min-height: 55vh;
+        // margin-bottom: -4rem;
+      }
+      @media screen and (min-height: 600px) {
+        min-height: 40vh;
+        // margin-bottom: -4rem;
+      }
+    }
   }
 
   &__intro {
@@ -68,13 +111,6 @@
 
 .italic {
   font-size: 1.2em;
-}
-
-.icon {
-  height: 30rem;
-  width: auto;
-  margin-bottom: 2rem;
-  margin: 0 auto;
 }
 
 .info {

@@ -34,7 +34,9 @@ export class PressReleaseListComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Press Releases | HUBCAP";
-    document.getElementById("hero-title").textContent = "Press Releases";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Press Releases";
+    }
     this.onResize();
     this.checkPosition();
   }
@@ -45,6 +47,10 @@ export class PressReleaseListComponent implements OnInit {
 
   onResize() {
     this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Press Releases";
+    }
 
     this.elements_slide_in_bottom = document.querySelectorAll(
       ".hidden-slide-in-bottom"

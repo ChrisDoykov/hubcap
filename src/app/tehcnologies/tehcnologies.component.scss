@@ -7,6 +7,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @include respond(phone) {
+    padding: 2.5rem 0;
+  }
+
   .intro {
     max-width: 80rem;
     align-self: center;

@@ -8,6 +8,10 @@
   padding: 10rem 3rem;
   padding-top: 5rem;
 
+  @include respond(phone) {
+    padding: 2.5rem 2rem;
+  }
+
   &__icon {
     font-size: 10rem;
     color: $color-blue;

@@ -8,6 +8,7 @@ import { Router } from "@angular/router";
   styleUrls: ["./signup.component.scss"],
 })
 export class SignupComponent implements OnInit {
+  width: number;
   constructor(private router: Router, private http: HttpClient) {}
 
   @ViewChild("signupForm", { static: true }) signupForm: ElementRef;
@@ -18,7 +19,17 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Newsletter Signup | HUBCAP";
-    document.getElementById("hero-title").textContent = "Newsletter Signup";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Newsletter Signup";
+    }
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent = "Newsletter Signup";
+    }
   }
 
   handleSub() {

@@ -40,35 +40,35 @@
             <a
               class="navbar-item"
               routerLink="open-calls"
-              routerLinkActive="active"
+              (click)="blur($event)"
             >
               Open Calls
             </a>
             <a
               class="navbar-item"
               routerLink="calls/experts"
-              routerLinkActive="active"
+              (click)="blur($event)"
             >
               Call For Experts
             </a>
             <a
               class="navbar-item"
               routerLink="calls/pull"
-              routerLinkActive="active"
+              (click)="blur($event)"
             >
               PULL Calls
             </a>
             <a
               class="navbar-item"
               routerLink="calls/experiment"
-              routerLinkActive="active"
+              (click)="blur($event)"
             >
               EXPERIMENT Calls
             </a>
             <a
               class="navbar-item"
               routerLink="calls/innovate"
-              routerLinkActive="active"
+              (click)="blur($event)"
             >
               INNOVATE Call
             </a>
@@ -88,16 +88,13 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">Platform</a>
           <div class="navbar-dropdown is-right">
-            <a
-              class="navbar-item"
-              routerLink="platform"
-              routerLinkActive="active"
+            <a class="navbar-item" routerLink="platform" (click)="blur($event)"
               >General Information</a
             >
             <a
               class="navbar-item"
               routerLink="technologies"
-              routerLinkActive="active"
+              (click)="blur($event)"
               >Available Assets</a
             >
           </div>
@@ -112,13 +109,13 @@
             <a
               class="navbar-item"
               routerLink="press-releases"
-              routerLinkActive="active"
+              (click)="blur($event)"
               >Press Releases</a
             >
             <a
               class="navbar-item"
               routerLink="newsletters"
-              routerLinkActive="active"
+              (click)="blur($event)"
               >Newsletters</a
             >
           </div>
@@ -130,20 +127,16 @@
             <a
               class="navbar-item"
               routerLink="project-details"
-              routerLinkActive="active"
+              (click)="blur($event)"
               >Project Details</a
             >
-            <a
-              class="navbar-item"
-              routerLink="partners"
-              routerLinkActive="active"
-            >
+            <a class="navbar-item" routerLink="partners" (click)="blur($event)">
               Project Partners
             </a>
             <a
               class="navbar-item"
               routerLink="call-winners"
-              routerLinkActive="active"
+              (click)="blur($event)"
             >
               Call Winners
             </a>
@@ -153,7 +146,7 @@
             <a
               class="navbar-item"
               routerLink="resources"
-              routerLinkActive="active"
+              (click)="blur($event)"
             >
               Resources
             </a>

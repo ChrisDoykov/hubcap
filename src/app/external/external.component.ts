@@ -7,6 +7,7 @@ import { Meta, Title } from "@angular/platform-browser";
   styleUrls: ["./external.component.scss"],
 })
 export class ExternalComponent implements OnInit {
+  width: number;
   constructor(public meta: Meta, public title: Title) {}
 
   openApplyPage() {
@@ -15,6 +16,18 @@ export class ExternalComponent implements OnInit {
 
   ngOnInit(): void {
     this.title.setTitle("External Applications | HUBCAP");
-    document.getElementById("hero-title").textContent = "External Applications";
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent =
+        "External Applications";
+    }
+  }
+
+  onResize() {
+    this.width = window.innerWidth;
+
+    if (document.getElementById("hero-title") !== null) {
+      document.getElementById("hero-title").textContent =
+        "External Applications";
+    }
   }
 }

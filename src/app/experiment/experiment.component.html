@@ -1,24 +1,30 @@
-<div class="container">
-  <img class="icon" src="../../assets/res/images/experiment.png" />
-  <h1
-    class="heading-primary heading-primary--underlined heading-primary--underlined-teal has-text-centered"
-  >
-    Call #2 EXPERIMENT
-  </h1>
-
-  <div class="container__intro">
+<div class="container" (window:resize)="onResize()">
+  <div class="container__top">
+    <img class="icon" src="../../assets/res/images/experiment.png" />
+    <h1
+      class="heading-primary heading-primary--underlined heading-primary--underlined-teal has-text-centered"
+    >
+      Call #2 EXPERIMENT
+    </h1>
     <h2 class="subtitle u-center-text subtitle--announcement">
       Applications now open | Closing 4 March 2021 17h CET
     </h2>
-    <button class="button button--download" (click)="openApplyPage()">
+  </div>
+
+  <div class="container__intro">
+    <button
+      class="button button--download u-margin-bottom-medium"
+      (click)="openApplyPage()"
+    >
       APPLY NOW TO CALL #2.1
     </button>
     <div class="intro">
       <p class="paragraph paragraph--big">
         The EXPERIMENT calls provide €30,000 to €75,000 to support a consortium
-        of two SMEs to experiment with the adoption of Model-Based Design for Cyber-Physical Systems using assets
-        and services from the platform, in particular from SMEs with less prior
-        digital experience. Funding supports projects of 4–6 months duration.
+        of two SMEs to experiment with the adoption of Model-Based Design for
+        Cyber-Physical Systems using assets and services from the platform, in
+        particular from SMEs with less prior digital experience. Funding
+        supports projects of 4–6 months duration.
       </p>
       <p class="paragraph paragraph--big">
         During 2020-2021, there will be two EXPERIMENT open calls, with opening

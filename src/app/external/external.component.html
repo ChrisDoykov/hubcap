@@ -1,13 +1,16 @@
-<div class="container">
-  <h1
-    class="heading-primary heading-primary--underlined heading-primary--underlined-teal has-text-centered"
-  >
-    Non-SME Asset Listing Application
-  </h1>
-  <div class="container__intro">
-    <h2 class="subtitle has-text-centered subtitle--announcement">
-      We are accepting applications on a rolling basis
-    </h2>
+<div class="container" (window:resize)="onResize()">
+  <div class="container__top">
+    <h1
+      class="heading-primary heading-primary--underlined heading-primary--underlined-teal has-text-centered"
+    >
+      Non-SME Asset Listing Application
+    </h1>
+    <div class="container__intro">
+      <h2 class="subtitle has-text-centered subtitle--announcement">
+        We are accepting applications on a rolling basis
+      </h2>
+    </div>
+
     <button disabled class="button button--download" (click)="openApplyPage()">
       APPLY TO LIST YOUR ASSET
     </button>

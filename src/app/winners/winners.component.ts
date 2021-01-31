@@ -7,7 +7,7 @@ export interface SME {
   website: string;
 }
 
-const PARTNERS: SME[] = [
+const WINNERS: SME[] = [
   {
     id: 1,
     name: "Cyberarch Consulting",
@@ -252,22 +252,19 @@ export class WinnersComponent implements OnInit {
       document.getElementById("hero-title").textContent = "Call Winners";
     }
 
-    this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
+    this.elements_fade_in = document.querySelectorAll(".hidden-fade-in-winner");
     this.windowHeight = window.innerHeight;
-
-    if (this.width > 1200) {
-      this.scrollIntoView("heading");
-    }
   }
 
   checkPosition() {
     if (this.elements_fade_in.length <= 0) {
-      this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
+      this.elements_fade_in = document.querySelectorAll(
+        ".hidden-fade-in-winner"
+      );
     }
     for (let i = 0; i < this.elements_fade_in.length; i++) {
       let element = this.elements_fade_in[i];
-      let positionFromTop = this.elements_fade_in[i].getBoundingClientRect()
-        .top;
+      let positionFromTop = element.getBoundingClientRect().top;
 
       if (positionFromTop - this.windowHeight <= 0) {
         element.classList.add("u-fade-in");
@@ -279,5 +276,5 @@ export class WinnersComponent implements OnInit {
   scrollIntoView(id) {
     document.getElementById(id).scrollIntoView();
   }
-  partners = PARTNERS;
+  winners = WINNERS;
 }

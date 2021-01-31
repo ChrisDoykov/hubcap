@@ -177,6 +177,6 @@ export class NavigationComponent implements OnInit {
   }
 
   blur(event) {
-    console.log((event.path[0] as HTMLElement).blur());
+    (event.path[0] as HTMLElement).blur();
   }
 }

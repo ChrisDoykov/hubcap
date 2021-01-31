@@ -153,26 +153,25 @@ export class PartnersComponent implements OnInit {
   onResize() {
     this.width = window.innerWidth;
 
+    this.elements_fade_in = document.querySelectorAll(
+      ".hidden-fade-in-partner"
+    );
+    this.windowHeight = window.innerHeight;
+
     if (document.getElementById("hero-title") !== null) {
       document.getElementById("hero-title").textContent = "Our Partners";
     }
-
-    this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
-    this.windowHeight = window.innerHeight;
-
-    // if (this.width > 1200) {
-    //   this.scrollIntoView("heading");
-    // }
   }
 
   checkPosition() {
     if (this.elements_fade_in.length <= 0) {
-      this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
+      this.elements_fade_in = document.querySelectorAll(
+        ".hidden-fade-in-partner"
+      );
     }
     for (let i = 0; i < this.elements_fade_in.length; i++) {
       let element = this.elements_fade_in[i];
-      let positionFromTop = this.elements_fade_in[i].getBoundingClientRect()
-        .top;
+      let positionFromTop = element.getBoundingClientRect().top;
 
       if (positionFromTop - this.windowHeight <= 0) {
         element.classList.add("u-fade-in");

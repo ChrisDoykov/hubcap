@@ -11,198 +11,220 @@
           Winners
         </h1>
       </td>
-      <td *ngFor="let partner of partners.slice(0, 3)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(0, 3)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
       <td
-        id="{{
-          partner.name === 'Developair Technologies' ? 'developair' : ''
-        }}"
-        *ngFor="let partner of partners.slice(3, 7)"
-        class="hidden-fade-in"
+        id="{{ winner.name === 'Developair Technologies' ? 'developair' : '' }}"
+        *ngFor="let winner of winners.slice(3, 7)"
+        class="hidden-fade-in hidden-fade-in-winner"
       >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(7, 11)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(7, 11)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(11, 15)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(11, 15)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(15, 19)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(15, 19)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(19, 23)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(19, 23)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(23, 27)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(23, 27)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(27, 31)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(27, 31)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(31, 35)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(31, 35)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
   </table>
@@ -216,176 +238,195 @@
         </h1>
       </td>
       <td
-        id="{{
-          partner.name === 'Developair Technologies' ? 'developair' : ''
-        }}"
-        *ngFor="let partner of partners.slice(0, 4)"
-        class="hidden-fade-in"
+        id="{{ winner.name === 'Developair Technologies' ? 'developair' : '' }}"
+        *ngFor="let winner of winners.slice(0, 4)"
+        class="hidden-fade-in hidden-fade-in-winner"
       >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(4, 9)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(4, 9)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(9, 14)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(9, 14)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(14, 19)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(14, 19)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(19, 24)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(19, 24)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(24, 29)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(24, 29)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(29, 34)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(29, 34)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(34, 39)" class="hidden-fade-in">
+      <td
+        *ngFor="let winner of winners.slice(34, 39)"
+        class="hidden-fade-in hidden-fade-in-winner"
+      >
         <a
-          *ngIf="partner.logo !== ''"
+          *ngIf="winner.logo !== ''"
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
         >
-          <img class="logo" src="{{ partner.logo }}" />
+          <img class="logo" src="{{ winner.logo }}" />
         </a>
         <a
           target="_blank"
-          href="{{ partner.website }}"
+          href="{{ winner.website }}"
           class="heading-tertiary"
-          *ngIf="partner.logo === ''"
+          *ngIf="winner.logo === ''"
         >
-          {{ partner.name }}
+          {{ winner.name }}
         </a>
-        <b *ngIf="partner.title !== ''">{{ partner.title }}</b>
+        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
   </table>

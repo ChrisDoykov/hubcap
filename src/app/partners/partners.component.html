@@ -11,7 +11,10 @@
           Partners
         </h1>
       </td>
-      <td *ngFor="let partner of partners.slice(0, 3)" class="hidden-fade-in">
+      <td
+        *ngFor="let partner of partners.slice(0, 3)"
+        class="hidden-fade-in hidden-fade-in-partner"
+      >
         <a
           *ngIf="partner.logo !== ''"
           target="_blank"
@@ -32,7 +35,10 @@
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(3, 7)" class="hidden-fade-in">
+      <td
+        *ngFor="let partner of partners.slice(3, 7)"
+        class="hidden-fade-in hidden-fade-in-partner"
+      >
         <a
           *ngIf="partner.logo !== ''"
           target="_blank"
@@ -56,7 +62,7 @@
       <td
         id="{{ partner.name === 'Politecnico di Milano' ? 'pdm' : '' }}"
         *ngFor="let partner of partners.slice(7, 11)"
-        class="hidden-fade-in"
+        class="hidden-fade-in hidden-fade-in-partner"
       >
         <a
           *ngIf="partner.logo !== ''"
@@ -78,7 +84,10 @@
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(11, 15)" class="hidden-fade-in">
+      <td
+        *ngFor="let partner of partners.slice(11, 15)"
+        class="hidden-fade-in hidden-fade-in-partner"
+      >
         <a
           *ngIf="partner.logo !== ''"
           target="_blank"
@@ -99,7 +108,10 @@
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(15, 20)" class="hidden-fade-in">
+      <td
+        *ngFor="let partner of partners.slice(15, 20)"
+        class="hidden-fade-in hidden-fade-in-partner"
+      >
         <a
           *ngIf="partner.logo !== ''"
           target="_blank"
@@ -129,7 +141,10 @@
           Partners
         </h1>
       </td>
-      <td *ngFor="let partner of partners.slice(0, 4)" class="hidden-fade-in">
+      <td
+        *ngFor="let partner of partners.slice(0, 4)"
+        class="hidden-fade-in hidden-fade-in-partner"
+      >
         <a
           *ngIf="partner.logo !== ''"
           target="_blank"
@@ -150,7 +165,10 @@
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(4, 9)" class="hidden-fade-in">
+      <td
+        *ngFor="let partner of partners.slice(4, 9)"
+        class="hidden-fade-in hidden-fade-in-partner"
+      >
         <a
           *ngIf="partner.logo !== ''"
           target="_blank"
@@ -174,7 +192,7 @@
       <td
         id="{{ partner.name === 'Politecnico di Milano' ? 'pdm' : '' }}"
         *ngFor="let partner of partners.slice(9, 14)"
-        class="hidden-fade-in"
+        class="hidden-fade-in hidden-fade-in-partner"
       >
         <a
           *ngIf="partner.logo !== ''"
@@ -196,7 +214,10 @@
       </td>
     </tr>
     <tr>
-      <td *ngFor="let partner of partners.slice(14, 20)" class="hidden-fade-in">
+      <td
+        *ngFor="let partner of partners.slice(14, 20)"
+        class="hidden-fade-in hidden-fade-in-partner"
+      >
         <a
           *ngIf="partner.logo !== ''"
           target="_blank"

@@ -16,6 +16,10 @@
     margin-top: 0;
   }
 
+  h2.subtitle.subtitle--announcement.u-center-text {
+    padding: 0 2rem;
+  }
+
   &__top {
     display: flex;
     flex-direction: column;
@@ -254,4 +258,13 @@ ol {
       }
     }
   }
+}
+
+.video {
+  //  max-height: 50rem;
+  width: 80%;
+  max-width: 100rem;
+  align-self: center;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
 }

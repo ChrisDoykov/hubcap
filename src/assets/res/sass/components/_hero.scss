@@ -4,15 +4,20 @@
 
 .hero {
   position: relative;
-  height: calc(100vh - 120px - 22rem);
+  height: calc(100vh - 120px - 35rem);
   // height: 90vh;
   border-bottom: 0rem solid $color-primary;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  margin-bottom: -1rem;
 
-  // @include respond(big-desktop) {
-  //   height: 50vh;
-  // }
+  @include respond(big-desktop) {
+    height: 40vh;
+  }
+
+  @media screen and (min-width: 1799px) {
+    height: 40vh;
+  }
 
   @include respond(big-tab-land) {
     height: 40vh;
@@ -49,7 +54,7 @@
   }
 
   &__body {
-    display: flex;
+    display: none;
     justify-content: center;
     max-height: 100%;
     width: 100%;
@@ -76,7 +81,7 @@
       // border-top-right-radius: 1rem;
 
       z-index: 10;
-      background-color: rgba($color: $color-primary, $alpha: 1);
+      background-color: rgba($color: $color-black, $alpha: 1);
 
       // @include respond(tab-port) {
       //   padding: 1.92rem 2rem;

@@ -10,7 +10,10 @@
   padding: 3rem 12rem;
   margin: 0 auto;
 
+  margin-top: -7.5rem;
+
   @include respond(tab-land) {
+    margin-top: 0rem;
     padding: 3rem 5rem;
   }
   @include respond(tab-port) {
@@ -96,7 +99,7 @@
       }
     }
 
-    &:not(#heading) {
+    &:not(#heading-partners, #heading-winners) {
       &:hover,
       &:focus {
         transform: scale(1.15);
@@ -104,7 +107,8 @@
       }
     }
 
-    &#heading {
+    &#heading-partners,
+    &#heading-winners {
       background-color: white;
     }
 

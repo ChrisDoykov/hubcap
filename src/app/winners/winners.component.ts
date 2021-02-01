@@ -243,6 +243,15 @@ export class WinnersComponent implements OnInit {
     }
     this.onResize();
     this.checkPosition();
+
+    let halfScreen = window.innerHeight / 2;
+
+    if (this.width >= 1000) {
+      window.scrollTo(0, halfScreen);
+    }
+    if (halfScreen * 2 - this.windowHeight == 0) {
+      window.scrollTo(0, halfScreen + 1);
+    }
   }
 
   onResize() {
@@ -274,7 +283,7 @@ export class WinnersComponent implements OnInit {
   }
 
   scrollIntoView(id) {
-    document.getElementById(id).scrollIntoView();
+    document.getElementById(id).scrollIntoView({ block: "center" });
   }
   winners = WINNERS;
 }

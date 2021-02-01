@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   font-size: 1.92rem;
-  margin-top: 4.8rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -21,6 +21,12 @@
 }
 
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .heading-secondary {
+    align-self: center;
+  }
 }
 
 .boxes {

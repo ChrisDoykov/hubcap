@@ -148,6 +148,11 @@ export class PartnersComponent implements OnInit {
     }
     this.onResize();
     this.checkPosition();
+
+    if (this.width >= 1000) {
+      let halfScreen = window.innerHeight / 2;
+      window.scrollTo(0, halfScreen);
+    }
   }
 
   onResize() {
@@ -181,7 +186,7 @@ export class PartnersComponent implements OnInit {
   }
 
   scrollIntoView(id) {
-    document.getElementById(id).scrollIntoView();
+    document.getElementById(id).scrollIntoView({ block: "center" });
   }
   partners = PARTNERS;
 }

@@ -222,6 +222,20 @@ const WINNERS: SME[] = [
 
     website: "https://evitado.io/",
   },
+  {
+    id: 31,
+    name: "SCUBIC",
+    logo: "../../assets/res/logos/logo_scubic.jpg",
+
+    website: "https://scubic.tech/en/",
+  },
+  {
+    id: 32,
+    name: "Tvarit",
+    logo: "../../assets/res/logos/logo_tvarit.svg",
+
+    website: "https://tvarit.com/de/",
+  },
 ];
 
 @Component({

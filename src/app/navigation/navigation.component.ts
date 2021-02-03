@@ -88,22 +88,32 @@ export class NavigationComponent implements OnInit {
           });
         });
         if (
-          document.location.href
+          (document.location.href
             .toString()
             .toLowerCase()
             .includes("technologies") &&
-          this.route.snapshot.fragment !== ""
+            this.route.snapshot.fragment !== "") ||
+          (document.location.href
+            .toString()
+            .toLowerCase()
+            .includes("digital-innovation-hubs") &&
+            this.route.snapshot.fragment !== "")
         ) {
         } else {
           window.scrollTo(0, 0);
         }
       } else {
         if (
-          document.location.href
+          (document.location.href
             .toString()
             .toLowerCase()
             .includes("technologies") &&
-          this.route.snapshot.fragment !== ""
+            this.route.snapshot.fragment !== "") ||
+          (document.location.href
+            .toString()
+            .toLowerCase()
+            .includes("digital-innovation-hubs") &&
+            this.route.snapshot.fragment !== "")
         ) {
         } else {
           window.scrollTo(0, 0);

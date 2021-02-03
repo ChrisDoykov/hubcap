@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy, AfterViewInit } from "@angular/core";
 import { Meta, Title } from "@angular/platform-browser";
 import { filter } from "rxjs-compat/operator/filter";
 
@@ -7,7 +7,7 @@ import { filter } from "rxjs-compat/operator/filter";
   templateUrl: "./tehcnologies.component.html",
   styleUrls: ["./tehcnologies.component.scss"],
 })
-export class TehcnologiesComponent implements OnInit, OnDestroy {
+export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
   constructor(private meta: Meta, private title: Title) {}
 
   width: number;
@@ -947,10 +947,6 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
 
   whitespace: RegExp = /\s/g;
 
-  scrollIntoView(id) {
-    document.getElementById(id).scrollIntoView({ block: "center" });
-  }
-
   ngOnInit(): void {
     this.title.setTitle("Technologies | HUBCAP");
     this.meta.updateTag({
@@ -963,14 +959,26 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       content:
         "HUBCAP's collaboration platform gives its users access to a wide variety of different MBD tools and assets. See a detailed list below.",
     });
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Technologies";
-    }
 
     this.rearrangeTechnologies(this.technologies);
 
     this.onResize();
     this.checkPosition();
+
+    // if (document.getElementById("hero-title") !== null) {
+    //   document.getElementById("hero-title").textContent = "Technologies";
+    // }
+  }
+
+  ngAfterViewInit(): void {
+    const url = document.location.href.toString().toLowerCase();
+
+    this.technologies.forEach((tech) => {
+      let name = tech.asset_name.toLowerCase().replace(this.whitespace, "-");
+      if (url.includes(name)) {
+        this.scrollIntoView(name);
+      }
+    });
   }
 
   ngOnDestroy(): void {
@@ -986,6 +994,10 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
     });
   }
 
+  scrollIntoView(id) {
+    document.getElementById(id).scrollIntoView({ block: "center" });
+  }
+
   rearrangeTechnologies(technologies) {
     this.letters.forEach((letter) => {
       this.alphabet[letter] = [];
@@ -993,7 +1005,6 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
     for (let tech of technologies) {
       this.alphabet[tech.asset_name.toLowerCase().charAt(0)].push(tech);
     }
-
     this.rearranged = true;
   }
 
@@ -1040,8 +1051,6 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
 
   handleSearch(event) {
     const searchTerm = event.target.value.toLowerCase();
-    // console.log(event.target.value);
-
     let allAssets = [...this.technologies];
     let filteredAssets = [];
 
@@ -1077,10 +1086,11 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
 
   onResize() {
     this.width = window.innerWidth;
+    this.windowHeight = window.innerHeight;
 
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Technologies";
-    }
+    // if (document.getElementById("hero-title") !== null) {
+    //   document.getElementById("hero-title").textContent = "Technologies";
+    // }
 
     this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     this.elements_slide_in_left = document.querySelectorAll(
@@ -1089,20 +1099,9 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
     this.elements_slide_in_right = document.querySelectorAll(
       ".hidden-slide-in-right"
     );
-    this.windowHeight = window.innerHeight;
   }
 
   checkPosition() {
-    const url = document.location.href.toString().toLowerCase();
-
-    this.technologies.forEach((tech) => {
-      let name = tech.asset_name.toLowerCase().replace(this.whitespace, "-");
-      if (url.includes(name) && !this.scrolled) {
-        this.scrollIntoView(name);
-        this.scrolled = true;
-      }
-    });
-
     if (this.elements_fade_in.length <= 0) {
       this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     }

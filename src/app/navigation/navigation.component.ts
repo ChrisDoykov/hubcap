@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { DeviceDetectorService } from "ngx-device-detector";
-import { Router, NavigationEnd } from "@angular/router";
+import { Router, NavigationEnd, ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: "app-navigation",
@@ -11,7 +11,8 @@ import { Router, NavigationEnd } from "@angular/router";
 export class NavigationComponent implements OnInit {
   constructor(
     private deviceService: DeviceDetectorService,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) {}
 
   mobile = this.deviceService.isMobile();
@@ -86,17 +87,27 @@ export class NavigationComponent implements OnInit {
             dropdown.classList.remove("is-active");
           });
         });
-        if (this.mobile) {
-          window.scrollTo(0, 0);
+        if (
+          document.location.href
+            .toString()
+            .toLowerCase()
+            .includes("technologies") &&
+          this.route.snapshot.fragment !== ""
+        ) {
         } else {
-          // this.scrollIntoView("hero");
           window.scrollTo(0, 0);
-          // window.scrollTo(0, 220);
         }
       } else {
-        // window.scrollTo(0, 220);
-        window.scrollTo(0, 0);
-        // this.scrollIntoView("hero");
+        if (
+          document.location.href
+            .toString()
+            .toLowerCase()
+            .includes("technologies") &&
+          this.route.snapshot.fragment !== ""
+        ) {
+        } else {
+          window.scrollTo(0, 0);
+        }
       }
     });
   }

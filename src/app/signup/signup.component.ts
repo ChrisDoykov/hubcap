@@ -22,6 +22,8 @@ export class SignupComponent implements OnInit {
     if (document.getElementById("hero-title") !== null) {
       document.getElementById("hero-title").textContent = "Newsletter Signup";
     }
+
+    window.scrollTo(0, window.innerHeight / 2);
   }
 
   onResize() {

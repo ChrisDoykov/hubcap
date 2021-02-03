@@ -830,6 +830,33 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       email: "info@evitado.io",
     },
     {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_tvarit.svg",
+      asset_name: "TiA",
+      company_name: "Tvarit",
+      url: "https://tvarit.com/de/",
+      description:
+        "Prescriptive and predictive analytics in a user-friendly software environment.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux", "macOS"],
+      modelling_notations: ["English"],
+      related_tools: [
+        {
+          name: "TOM",
+          url: "https://en.wikipedia.org/wiki/Target_operating_model",
+        },
+        {
+          name: "TIM",
+          url:
+            "https://docs.tangent.works/TIM-Tangent-Information-Modeller/Overview/",
+        },
+      ],
+      domains: ["Manufacturing Industry"],
+      license_info_name: "Copyright Tvarit GmbH",
+      license_info_url: "https://tvarit.com/de/achieve-more",
+      email: "info@tvarit.com",
+    },
+    {
       type: "model",
       logo: "../../assets/res/logos/logo_brightmerge.jpg",
       asset_name: "EezyGrid",
@@ -890,6 +917,26 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       download_link:
         "https://www.fortiss.org/en/research/living-lab/detail/fortissimo",
       email: "mbse@fortiss.org",
+    },
+    {
+      type: "model",
+      logo: "../../assets/res/logos/logo_scubic.jpg",
+      asset_name: "SCUBIC - SMART DIGITAL TWINS",
+      company_name: "SCUBIC",
+      url: "https://scubic.tech/en/",
+      description:
+        "Our model:#1 - Predicts water and energy consumption based on historical data from a water distribution network. #2 - Input network data (size o tanks and its location, pumps power and flow capability, valves, energy price). #3 - The out come is how and when you should operate the network in order to have the minimal costs to transport water.",
+      showMore: false, // Always leave at false
+      modelling_lang_tool: [
+        "EPANET",
+        "Python",
+        "SciKit Learn and Keras",
+        "Influx DB",
+        "Docker",
+      ],
+      domain: "Applicable to any",
+      license_info_name: "None (Public domain)",
+      email: "info@scubic.pt",
     },
   ];
 

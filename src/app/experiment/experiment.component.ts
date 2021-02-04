@@ -11,10 +11,6 @@ export class ExperimentComponent implements OnInit {
   width: number;
   constructor(private deviceService: DeviceDetectorService) {}
 
-  openApplyPage() {
-    window.open("https://www.f6s.com/hubcapcall2.1experiment/apply", "_blank");
-  }
-
   mobile = this.deviceService.isMobile();
   desktop = this.deviceService.isDesktop();
   tablet = this.deviceService.isTablet();
@@ -32,5 +28,9 @@ export class ExperimentComponent implements OnInit {
     if (document.getElementById("hero-title") !== null) {
       document.getElementById("hero-title").textContent = "Call #2 EXPERIMENT";
     }
+  }
+
+  openApplyPage() {
+    window.open("https://www.f6s.com/hubcapcall2.1experiment/apply", "_blank");
   }
 }

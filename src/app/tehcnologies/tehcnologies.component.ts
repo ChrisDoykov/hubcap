@@ -831,7 +831,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
     },
     {
       type: "tool",
-      logo: "../../assets/res/logos/logo_tvarit.svg",
+      logo: "../../assets/res/logos/logo_tvarit_2.png",
       asset_name: "TiA",
       company_name: "Tvarit",
       url: "https://tvarit.com/de/",
@@ -843,12 +843,11 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
       related_tools: [
         {
           name: "TOM",
-          url: "https://en.wikipedia.org/wiki/Target_operating_model",
+          url: "https://tvarit.com/de/achieve-more",
         },
         {
           name: "TIM",
-          url:
-            "https://docs.tangent.works/TIM-Tangent-Information-Modeller/Overview/",
+          url: "https://tvarit.com/de/achieve-more",
         },
       ],
       domains: ["Manufacturing Industry"],

@@ -3,12 +3,14 @@
   (window:resize)="onResize()"
   (window:scroll)="checkPosition()"
 >
-  <h1 class="heading-primary u-center-text u-margin-bottom-medium">
+  <h1
+    class="heading-primary heading-primary heading-primary heading-primary--underlined heading-primary--underlined-orange u-center-text u-margin-bottom-medium"
+  >
     Official Press Releases
   </h1>
   <div class="releases__list">
     <div
-      class="release-box row hidden-slide-in-bottom"
+      class="release-box row hidden-slide-in-bottom hidden-slide-in-bottom-press"
       *ngFor="let release of releases"
     >
       <h3 class="heading-tertiary release-box__heading u-margin-bottom-small">

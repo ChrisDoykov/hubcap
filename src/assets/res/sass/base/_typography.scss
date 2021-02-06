@@ -20,6 +20,7 @@
 
   &--underlined {
     margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
 
     &::before {
       content: "";
@@ -66,6 +67,51 @@
         &::before {
           width: 40%;
           left: 30%;
+        }
+      }
+    }
+
+    &-left {
+      &::before {
+        left: 0;
+        width: 40%;
+      }
+
+      &:hover,
+      &:focus {
+        &::before {
+          left: 0;
+          width: 75%;
+        }
+      }
+
+      &-small {
+        &::before {
+          left: 0;
+          width: 30%;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            left: 0;
+            width: 40%;
+          }
+        }
+      }
+
+      &-big {
+        &::before {
+          left: 0;
+          width: 75%;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            left: 0;
+            width: 100%;
+          }
         }
       }
     }
@@ -161,6 +207,11 @@
     &-blue {
       &::before {
         border-top-color: $color-blue;
+      }
+    }
+    &-darkblue {
+      &::before {
+        border-top-color: $color-blue-dark;
       }
     }
     &-red {

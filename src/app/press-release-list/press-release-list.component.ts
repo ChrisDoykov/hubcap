@@ -53,7 +53,7 @@ export class PressReleaseListComponent implements OnInit {
     }
 
     this.elements_slide_in_bottom = document.querySelectorAll(
-      ".hidden-slide-in-bottom"
+      ".hidden-slide-in-bottom-press"
     );
     this.windowHeight = window.innerHeight;
   }
@@ -61,7 +61,7 @@ export class PressReleaseListComponent implements OnInit {
   checkPosition() {
     if (this.elements_slide_in_bottom.length <= 0) {
       this.elements_slide_in_bottom = document.querySelectorAll(
-        ".hidden-slide-in-bottom"
+        ".hidden-slide-in-bottom-press"
       );
     }
     for (let i = 0; i < this.elements_slide_in_bottom.length; i++) {

@@ -14,9 +14,7 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Our Services | HUBCAP";
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Services";
-    }
+    this.onResize();
   }
 
   onResize() {

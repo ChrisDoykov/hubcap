@@ -11,6 +11,9 @@
   padding-top: 0;
   margin: 4.5rem auto;
   color: $color-black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include respond(phone) {
     margin-top: 2.5rem;
@@ -23,6 +26,14 @@
     flex-direction: column;
     justify-content: center;
     text-align: justify;
+  }
+
+  &__video {
+    width: 100%;
+    max-width: 100rem;
+    align-self: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
   }
 }
 

@@ -11,6 +11,20 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "HUBCAP Matchmaking Event",
+      summary:
+        "Thank you to everyone who took part in our Matchmaking event! We hope you enjoyed the presentations, discussions from our SMEs, and breakout sessions! We look forward to seeing you at our next event!",
+      date: "2021.02.05",
+      type: "WEBINAR",
+      caption: "",
+      urlname: "",
+      url: "",
+      modalTarget: "matchmaking2.1",
+      thumbnail: "../../assets/res/images/matchmaking2.1.JPG",
+      thumbnailAlt:
+        "Call #2.1 EXPERIMENT Matchmaking Event on 03 February 2021",
+    },
+    {
       title: "HUBCAP Call For Experts",
       summary:
         "HUBCAP is looking for experts in the MBD tools and CPS domains with experience in evaluating EU funded projects. Evaluators will be reimbursed for their time and effort on the basis of the number of proposals evaluated!",

@@ -46,9 +46,8 @@ export class ProjectComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Project Details | HUBCAP";
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Project Details";
-    }
+
+    this.onResize();
 
     const $modalButtons = Array.prototype.slice.call(
       document.querySelectorAll(".modal-button"),

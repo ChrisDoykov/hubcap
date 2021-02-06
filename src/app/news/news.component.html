@@ -3,7 +3,9 @@
   (window:resize)="onResize()"
   (window:scroll)="checkPosition()"
 >
-  <h1 class="heading-primary u-center-text u-margin-bottom-medium">
+  <h1
+    class="heading-primary heading-primary heading-primary heading-primary--underlined heading-primary--underlined-blue u-center-text u-margin-bottom-medium"
+  >
     Latest News
   </h1>
 
@@ -58,23 +60,20 @@
           >
         </span>
 
-
-
         <!-- Exclusively for the CFE posting -->
         <span
           *ngIf="article.modalTarget === 'cfe'"
           class="news-item__link u-margin-top-none"
         >
           <a
-            [routerLink]="['/calls/experts']" routerLinkActive="router-link-active"
+            [routerLink]="['/calls/experts']"
+            routerLinkActive="router-link-active"
             class="btn-text btn-text--blue"
             >More Info</a
           >
         </span>
 
         <!--  Exclusively for the CFE posting  -->
-
-
 
         <div class="news-item__bottom">
           <svg

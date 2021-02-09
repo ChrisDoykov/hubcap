@@ -2,19 +2,19 @@
   <section class="welcome">
     <div class="welcome__content">
       <h1
-        *ngIf="desktop"
+        *ngIf="width > 1300"
         class="u-slide-in-bottom heading-primary has-text-centered"
       >
         Welcome to HUBCAP!
       </h1>
       <h1
-        *ngIf="!desktop"
+        *ngIf="width <= 1300"
         class="u-slide-in-bottom heading-primary has-text-centered"
       >
         Join us in the Cyber-Physical Systems revolution!
       </h1>
       <p class="u-slide-in-left paragraph paragraph--big">
-        <span *ngIf="desktop"
+        <span *ngIf="width > 1300"
           >Join us in the Cyber-Physical Systems revolution!</span
         >
         HUBCAP has a € 3 Million equity-free fund for SMEs to experiment and

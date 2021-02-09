@@ -42,6 +42,24 @@ export class ProjectComponent implements OnInit {
       link:
         "../../assets/res/files/D6.2 - The Initial HUBCAP Model-Based Services.pdf",
     },
+    {
+      number: "D2.1",
+      name: "DIH Services",
+      month: "M12 (Dec 2020)",
+      link: "../../assets/res/files/D2.1_DIH-Services.pdf",
+    },
+    {
+      number: "D3.2",
+      name: "Survey on Initial HUBCAP Industry Experience",
+      month: "M12 (Dec 2020)",
+      link: "../../assets/res/files/D3_2.pdf",
+    },
+    {
+      number: "D5.2",
+      name: "HUBCAP Collaboration Platform v1",
+      month: "M12 (Dec 2020)",
+      link: "../../assets/res/files/D5.2_HUBCAP_Collaboration_Platform_V1.pdf",
+    },
   ];
 
   ngOnInit(): void {

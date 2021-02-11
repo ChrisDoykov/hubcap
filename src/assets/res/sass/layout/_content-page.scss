@@ -5,8 +5,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
   padding: 0 2rem;
   padding-bottom: 10rem;
+
+  &--padding-bottom-small {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  @include respond(phone) {
+    padding-bottom: 0;
+    min-height: 50vh;
+  }
 
   &__intro {
     max-width: 90rem;
@@ -16,12 +27,12 @@
   &__video {
     max-width: 90%;
     width: 90rem;
-    height: 50rem;
+    height: auto;
     align-self: center;
     margin: 3rem auto;
 
     @include respond(phone) {
-      height: 30rem;
+      max-width: 100%;
     }
   }
 }

@@ -281,6 +281,31 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
     },
     {
       type: "tool",
+      logo: "../../assets/res/logos/logo_mathbrowse.svg",
+      asset_name: "MathBrowse",
+      company_name: "CAE Tech",
+      url: "https://cae.tech",
+      description:
+        "MathBrowse provides a browser-based, collaborative, editable document containing equations, plots, and interactive inputs. It is designed specifically for sizing calculations at the concept stage of engineering projects. A library of pre-defined calculations is being developed for typical mechanical, electrical or hydraulic components, so engineers can build a complete document by simply including the component types needed.",
+      showMore: false, // Always leave at false
+      supported_platforms: [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Android",
+        "iOS",
+        "ChromeOS",
+      ],
+      modelling_notations: [
+        "Equation-based quasi-static modelling",
+        "Drag-and-drop for most, but power-users can create their own equations using MATLAB-like syntax",
+      ],
+      domains: ["Automotive", "Machine design"],
+      license_info_name: "SaaS",
+      email: "peter.harman@cae.tech",
+    },
+    {
+      type: "tool",
       logo: "../../assets/res/logos/developair_logo.jpg",
       asset_name: "Developair",
       company_name: "Developair Technologies",

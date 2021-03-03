@@ -236,6 +236,13 @@ const WINNERS: SME[] = [
 
     website: "https://tvarit.com/de/",
   },
+  {
+    id: 33,
+    name: "CAE Tech",
+    logo: "../../assets/res/logos/logo_cae.png",
+
+    website: "https://cae.tech",
+  },
 ];
 
 @Component({

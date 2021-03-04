@@ -100,7 +100,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
         "YAML",
         "Node.js",
         "Django",
-        "( Under development MVP will be ready in March 2021)",
+        "(Under development MVP will be ready in March 2021)",
       ],
       license_info_name: "Pay-as-you-go",
       email: "info@cyberarch.eu",

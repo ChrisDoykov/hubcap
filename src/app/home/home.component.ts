@@ -6,6 +6,7 @@ import {
   ViewChild,
   ElementRef,
 } from "@angular/core";
+import { Router } from "@angular/router";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { SwiperOptions } from "swiper";
 import { CountUp } from "countup.js";
@@ -21,7 +22,8 @@ import { LocationService } from "../location.service";
 export class HomeComponent implements OnInit, OnDestroy {
   constructor(
     private deviceService: DeviceDetectorService,
-    private locationService: LocationService
+    private locationService: LocationService,
+    private router: Router
   ) {}
 
   counterSME = 250;
@@ -73,18 +75,18 @@ export class HomeComponent implements OnInit, OnDestroy {
     },
     {
       imageURL: "../../assets/res/images/HUBCAP_EXPERIMENT.jpg",
-      heading: "CALL #2.1 EXPERIMENT",
+      heading: "CALL #2.2 EXPERIMENT",
       lines: [
         "European SME?",
         "Connect and collaborate with a MBD + CPS provider",
         "Experiment with up to € 75,000",
         "Free services & support from the HUBCAP ecosystem",
       ],
-      buttonText: "APPLY NOW",
+      buttonText: "READ MORE",
     },
     {
       imageURL: "../../assets/res/images/HUBCUP_INNOVATE.jpg",
-      heading: "CALL #3.1 INNOVATE",
+      heading: "CALL #3 INNOVATE",
       lines: [
         "Take part in an innovative application",
         "Experiment making use of new CPS technologies",
@@ -105,7 +107,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       clickable: true,
     },
     spaceBetween: 30,
-    initialSlide: 1,
+    initialSlide: 2,
   };
 
   private dihSub: Subscription;
@@ -114,13 +116,16 @@ export class HomeComponent implements OnInit, OnDestroy {
   applyToCall(id) {
     switch (id) {
       case 0:
-        window.location.href = "/calls/pull";
+        // window.location.href = "/calls/pull";
+        this.router.navigate(["/calls/pull"]);
         break;
       case 1:
-        window.location.href = "/calls/experiment";
+        // window.location.href = "/calls/experiment";
+        this.router.navigate(["/calls/experiment"]);
         break;
       case 2:
-        window.location.href = "/calls/innovate";
+        // window.location.href = "/calls/innovate";
+        this.router.navigate(["/calls/innovate"]);
         break;
     }
   }

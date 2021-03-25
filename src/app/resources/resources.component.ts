@@ -229,6 +229,15 @@ export class ResourcesComponent implements OnInit {
       document.getElementById("flyer1.2").click();
     }
 
+    // Call #1.2
+    else if (url.includes("DocumentationKit-1-3")) {
+      document.getElementById("Dkit1-3").click();
+    } else if (url.includes("press-release#1.3")) {
+      document.getElementById("pr#1.3").click();
+    } else if (url.includes("HUBCAP_CALL1-3_PULL")) {
+      document.getElementById("flyer1.3").click();
+    }
+
     // Call #2.1
     else if (url.includes("DocumentationKit-2-1")) {
       document.getElementById("Dkit2-1").click();

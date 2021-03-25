@@ -52,6 +52,7 @@ import { SignupComponent } from "./signup/signup.component";
 import { ExternalComponent } from "./external/external.component";
 import { VideoExpComponent } from "./content-items/video-exp/video-exp.component";
 import { VideoGeneralComponent } from "./content-items/video-general/video-general.component";
+import { PressReleaseArticle4Component } from "./press-release-articles/press-release-article4/press-release-article4.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -94,6 +95,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     ExternalComponent,
     VideoExpComponent,
     VideoGeneralComponent,
+    PressReleaseArticle4Component,
   ],
   imports: [
     BrowserModule,

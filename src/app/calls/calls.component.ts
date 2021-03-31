@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { DeviceDetectorService } from "ngx-device-detector";
 
 @Component({
@@ -9,7 +10,10 @@ import { DeviceDetectorService } from "ngx-device-detector";
 })
 export class CallsComponent implements OnInit {
   width: number;
-  constructor(private deviceService: DeviceDetectorService) {}
+  constructor(
+    private deviceService: DeviceDetectorService,
+    private router: Router
+  ) {}
 
   mobile = this.deviceService.isMobile();
   desktop = this.deviceService.isDesktop();
@@ -18,13 +22,13 @@ export class CallsComponent implements OnInit {
   applyToCall(id) {
     switch (id) {
       case 0:
-        window.location.href = "/calls/pull";
+        this.router.navigate(["/calls/pull"]);
         break;
       case 1:
-        window.location.href = "/calls/experiment";
+        this.router.navigate(["/calls/experiment"]);
         break;
       case 2:
-        window.location.href = "/calls/innovate";
+        this.router.navigate(["/calls/innovate"]);
         break;
     }
   }

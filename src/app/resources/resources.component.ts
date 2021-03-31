@@ -89,6 +89,57 @@ export class ResourcesComponent implements OnInit {
         "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Tools.jpg",
       modalTarget: "call-2.1-social-6",
     },
+
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_1.jpg",
+      modalTarget: "call-3-social-1",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_2.jpg",
+      modalTarget: "call-3-social-2",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_3.jpg",
+      modalTarget: "call-3-social-3",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_4.jpg",
+      modalTarget: "call-3-social-4",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_5.jpg",
+      modalTarget: "call-3-social-5",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_6.jpg",
+      modalTarget: "call-3-social-6",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_1.jpg",
+      modalTarget: "call-1.3-social-1",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_2.jpg",
+      modalTarget: "call-1.3-social-2",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_3.jpg",
+      modalTarget: "call-1.3-social-3",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_4.jpg",
+      modalTarget: "call-1.3-social-4",
+    },
   ];
 
   items_OC = [
@@ -147,6 +198,28 @@ export class ResourcesComponent implements OnInit {
       modalTarget: "call-1.2-social-4",
     },
   ];
+  items_1_3 = [
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_1.jpg",
+      modalTarget: "call-1.3-social-1",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_2.jpg",
+      modalTarget: "call-1.3-social-2",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_3.jpg",
+      modalTarget: "call-1.3-social-3",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_4.jpg",
+      modalTarget: "call-1.3-social-4",
+    },
+  ];
 
   items_2_1 = [
     {
@@ -178,6 +251,38 @@ export class ResourcesComponent implements OnInit {
       imageUrl:
         "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Tools.jpg",
       modalTarget: "call-2.1-social-6",
+    },
+  ];
+  items_3 = [
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_1.jpg",
+      modalTarget: "call-3-social-1",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_2.jpg",
+      modalTarget: "call-3-social-2",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_3.jpg",
+      modalTarget: "call-3-social-3",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_4.jpg",
+      modalTarget: "call-3-social-4",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_5.jpg",
+      modalTarget: "call-3-social-5",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_6.jpg",
+      modalTarget: "call-3-social-6",
     },
   ];
 
@@ -257,6 +362,17 @@ export class ResourcesComponent implements OnInit {
     // } else if (url.includes("HUBCAP_CALL2-2_EXPERIMENT")) {
     //   document.getElementById("flyer2.2").click();
     // }
+
+    // Call #3
+    else if (url.includes("DocumentationKit-3")) {
+      document.getElementById("Dkit3").click();
+    } else if (url.includes("press-release#3")) {
+      document.getElementById("pr#3").click();
+    } else if (url.includes("HUBCAP_CALL3_INNOVATE")) {
+      document.getElementById("flyer3").click();
+    } else if (url.includes("Annexes3")) {
+      document.getElementById("Annexes3").click();
+    }
   }
 
   onResize() {

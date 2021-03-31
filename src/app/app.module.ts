@@ -53,6 +53,7 @@ import { ExternalComponent } from "./external/external.component";
 import { VideoExpComponent } from "./content-items/video-exp/video-exp.component";
 import { VideoGeneralComponent } from "./content-items/video-general/video-general.component";
 import { PressReleaseArticle4Component } from "./press-release-articles/press-release-article4/press-release-article4.component";
+import { PressReleaseArticle5Component } from "./press-release-articles/press-release-article5/press-release-article5.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -96,6 +97,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     VideoExpComponent,
     VideoGeneralComponent,
     PressReleaseArticle4Component,
+    PressReleaseArticle5Component,
   ],
   imports: [
     BrowserModule,

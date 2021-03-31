@@ -12,7 +12,7 @@ export class InnovateComponent implements OnInit {
   constructor(private deviceService: DeviceDetectorService) {}
 
   openApplyPage() {
-    // window.open("https://www.f6s.com/hubcapcall1pull/apply", "_blank");
+    window.open("https://www.f6s.com/call-3-innovate/apply ", "_blank");
   }
 
   mobile = this.deviceService.isMobile();

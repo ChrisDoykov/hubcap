@@ -10,6 +10,20 @@ export class PressReleaseListComponent implements OnInit {
 
   releases = [
     {
+      name: "Call #3 Press Release",
+      description:
+        "Check out the official Call #3 INNOVATE press release to find out more about how it works and what each SME can gain from participating!",
+      url: "press-releases/call3",
+      urlname: "See press release",
+    },
+    {
+      name: "Call #1.3 Press Release",
+      description:
+        "Check out the official Call #1.3 PULL press release to find out more about how it works and what each consortium of SMEs can gain from participating!",
+      url: "press-releases/call1-3",
+      urlname: "See press release",
+    },
+    {
       name: "Call #2.1 Press Release",
       description:
         "Check out the official Call #2.1 EXPERIMENT press release to find out more about how it works and what each consortium of SMEs can gain from participating!",

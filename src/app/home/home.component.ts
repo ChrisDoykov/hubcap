@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         "Receive €1000 lump sum & support services",
         "Sell your assets in the HUBCAP platform",
       ],
-      buttonText: "READ MORE",
+      buttonText: "APPLY NOW",
     },
     {
       imageURL: "../../assets/res/images/HUBCAP_EXPERIMENT.jpg",
@@ -92,7 +92,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         "Experiment making use of new CPS technologies",
         "Direct support and up to € 200,000 equity-free funding",
       ],
-      buttonText: "READ MORE",
+      buttonText: "APPLY NOW",
     },
   ];
 

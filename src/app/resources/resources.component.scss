@@ -107,9 +107,8 @@
       max-width: 40rem;
     }
 
-    &--pull,
-    &--experiment {
-      width: 50%;
+    &--pull {
+      width: fit-content;
 
       @include respond(tab-port) {
         width: 100%;

@@ -21,6 +21,8 @@ export class PressReleasesComponent implements OnInit {
       this.pressRelease = "1-3";
     } else if (url.includes("call2-1")) {
       this.pressRelease = "2-1";
+    } else if (url.includes("call3")) {
+      this.pressRelease = "3";
     } else {
       this.router.navigate(["/not-found"]);
     }

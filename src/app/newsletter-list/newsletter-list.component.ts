@@ -9,6 +9,15 @@ export class NewsletterListComponent implements OnInit {
   constructor() {}
   newsletters = [
     {
+      month: "April 2021",
+      description: `Find out the latest updates in the HUBCAP project, learn about how you can benefit from our PULL and INNOVATE open calls and more in the April 2021 edition of our newsletter!`,
+      url:
+        "../../assets/res/files/newsletters/Hubcap_Newsletter_April_2021.pdf",
+      thumbnail: "../../assets/res/files/newsletters/thumbnails/N2_thumb.png",
+      thumbnailAlt: "April 2021 Newsletter Front Page",
+      modalTarget: "N2",
+    },
+    {
       month: "December 2020",
       description: `Find out what's new throughout the project, learn about new business opportunities, technological advances and more in our December 2020 newsletter!`,
       url: "../../assets/res/files/newsletters/Hubcap_Newsletter_Dec_2020.pdf",

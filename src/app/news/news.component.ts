@@ -11,6 +11,34 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "HUBCAP Open Call #3 INNOVATE",
+      summary:
+        "HUBCAP's most ambitious open call INNOVATE is now officially underway! Check out our press release to learn more about the call and the opportunities it provides! Call #3 INNOVATE will remain open until 30 June 2021 at 17h CET (Brussels Time).",
+      date: "2021.04.01",
+      type: "OPEN CALLS",
+      caption: "",
+      urlname: "See press release",
+      url: "/press-releases/call3",
+      modalTarget: "call3",
+      thumbnail:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_1.jpg",
+      thumbnailAlt: "HUBCAP Open Call #3 INNOVATE",
+    },
+    {
+      title: "HUBCAP Open Call #1.3 PULL",
+      summary:
+        "The third iteration of our PULL open call is now accepting applications! The call will remain open until 2 June 2021 at 17h CET (Brussels Time).",
+      date: "2021.04.01",
+      type: "OPEN CALLS",
+      caption: "",
+      urlname: "See press release",
+      url: "/press-releases/call1-3",
+      modalTarget: "call1.3",
+      thumbnail:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_1.jpg",
+      thumbnailAlt: "HUBCAP Open Call #1.3 PULL",
+    },
+    {
       title: "HUBCAP Matchmaking Event",
       summary:
         "Thank you to everyone who took part in our Matchmaking event! We hope you enjoyed the presentations, discussions from our SMEs, and breakout sessions! We look forward to seeing you at our next event!",
@@ -29,7 +57,7 @@ export class NewsComponent implements OnInit {
       summary:
         "HUBCAP is looking for experts in the MBD tools and CPS domains with experience in evaluating EU funded projects. Evaluators will be reimbursed for their time and effort on the basis of the number of proposals evaluated!",
       date: "2021.01.15",
-      type: "OPEN CALL",
+      type: "OPEN CALLS",
       caption: "",
       urlname: "Apply now",
       url: "https://www.f6s.com/1callofexpertsexpressionofinterest/apply",

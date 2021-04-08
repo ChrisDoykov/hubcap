@@ -966,7 +966,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
       company_name: "Tvarit",
       url: "https://tvarit.com/de/",
       description:
-        "Prescriptive and predictive analytics in a user-friendly software environment.",
+        "Tvarit Industrial Artificial Intelligence (TiA) is a ready to use, state of the art Smart Factory and Digital Twin software. It offers a user-friendly software environment for prescriptive and predictive analytics.",
       showMore: false, // Always leave at false
       supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["English"],

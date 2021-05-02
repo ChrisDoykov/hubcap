@@ -32,7 +32,7 @@ export class DihComponent implements OnInit {
       clickable: true,
     },
     updateOnWindowResize: true,
-    direction: "verticall",
+    direction: "vertical",
 
     spaceBetween: 30,
   };

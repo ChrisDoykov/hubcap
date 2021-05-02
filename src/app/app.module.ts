@@ -18,7 +18,6 @@ import { MatCardModule } from "@angular/material/card";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatButtonModule } from "@angular/material/button";
 import { MatTableModule } from "@angular/material/table";
-import { DeviceDetectorModule } from "ngx-device-detector";
 import { DihComponent } from "./dih/dih.component";
 import { PlatformComponent } from "./platform/platform.component";
 import { CallsComponent } from "./calls/calls.component";
@@ -106,7 +105,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     MatCardModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    DeviceDetectorModule,
     MatIconModule,
     SwiperModule,
     HttpClientModule,

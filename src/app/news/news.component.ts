@@ -11,6 +11,21 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "HUBCAP Open Call #3 INNOVATE Q&A Webinar",
+      summary:
+        "Join us in our 1st live Q&A Webinar for Call #3 INNOVATE on 12 May 2021 at 11 AM CEST and learn how to apply to the call! Get the opportunity to pose your questions and clarify your doubts with our team!",
+      date: "2021.05.12",
+      type: "WEBINAR",
+      caption: "",
+      urlname: "Register for the webinar",
+      url:
+        "https://www.eventbrite.com/e/hubcap-call-3-innovate-1st-qa-webinar-tickets-151634736579",
+      modalTarget: "call3firstqanda",
+      thumbnail:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/call3-first-webinar.jfif",
+      thumbnailAlt: "HUBCAP Open Call #3 INNOVATE First Q&A Webinar",
+    },
+    {
       title: "HUBCAP Open Call #3 INNOVATE",
       summary:
         "HUBCAP's most ambitious open call INNOVATE is now officially underway! Check out our press release to learn more about the call and the opportunities it provides! Call #3 INNOVATE will remain open until 30 June 2021 at 17h CET (Brussels Time).",

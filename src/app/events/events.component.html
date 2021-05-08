@@ -1,0 +1,133 @@
+<div
+  class="section-events"
+  (window:resize)="onResize()"
+  (window:scroll)="checkPosition()"
+>
+  <div class="u-center-text u-margin-bottom-small">
+    <h1
+      class="heading-primary heading-primary--underlined heading-primary--underlined-red"
+    >
+      Upcoming Events
+    </h1>
+    <p class="paragraph paragraph--big">
+      Keep in touch with our upcoming Q&A sessions, webinars, matchmaking events
+      and more using the calendar and list below! Click on each calendar tile to
+      find out more about what events are planned for the specific date and
+      register via the list item for each event.
+    </p>
+  </div>
+
+  <div class="calendar">
+    <div class="calendar__navigation">
+      <div
+        class="button button--primary"
+        mwlCalendarPreviousView
+        [view]="view"
+        [(viewDate)]="viewDate"
+        (viewDateChange)="closeOpenMonthViewDay()"
+      >
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div
+        class="button button--primary"
+        mwlCalendarToday
+        [(viewDate)]="viewDate"
+      >
+        Today
+      </div>
+      <div
+        class="button button--primary"
+        mwlCalendarNextView
+        [view]="view"
+        [(viewDate)]="viewDate"
+        (viewDateChange)="closeOpenMonthViewDay()"
+      >
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="calendar__month">
+      <h3 class="heading-secondary">
+        {{ viewDate | calendarDate: view + "ViewTitle":"en" }}
+      </h3>
+    </div>
+
+    <div class="calendar__body" [ngSwitch]="view">
+      <mwl-calendar-month-view
+        *ngSwitchCase="CalendarView.Month"
+        [viewDate]="viewDate"
+        [events]="events"
+        [refresh]="refresh"
+        [activeDayIsOpen]="activeDayIsOpen"
+        (dayClicked)="dayClicked($event.day)"
+        (eventTimesChanged)="eventTimesChanged($event)"
+        (eventClicked)="eventClicked($event)"
+      >
+      </mwl-calendar-month-view>
+    </div>
+  </div>
+
+  <div class="events-list">
+    <div
+      class="events-list__event__container"
+      [ngStyle]="{
+        'border-left-color': event.color.primary,
+        display: event.start.getTime() >= today.getTime() ? 'block' : 'none'
+      }"
+      *ngFor="let event of events"
+    >
+      <div
+        class="events-list__event"
+        id="{{ event.title.toLowerCase() }}"
+        *ngIf="event.start.getTime() >= today.getTime()"
+      >
+        <h3
+          class="heading-tertiary u-is-black-color events-list__event__heading"
+        >
+          {{ event.title }}
+        </h3>
+        <p
+          *ngIf="event.meta.description"
+          class="paragraph paragraph--big events-list__event__description"
+        >
+          {{ event.meta.description }}
+        </p>
+
+        <div class="events-list__event__info">
+          <p class="events-list__event__info__field">
+            <b>Date:</b> {{ event.start | amDateFormat: "LL" }}
+          </p>
+          <p *ngIf="event.meta.time" class="events-list__event__info__field">
+            <b>Time:</b> {{ event.meta.time }}
+          </p>
+          <p
+            *ngIf="event.meta.location"
+            class="events-list__event__info__field"
+          >
+            <b>Location:</b> {{ event.meta.location }}
+          </p>
+          <p *ngIf="event.meta.link" class="events-list__event__info__field">
+            <a
+              *ngIf="event.meta.link.trim() !== ''"
+              href="{{ event.meta.link }}"
+              class="events-list__event__info__link"
+              target="_blank"
+              >Register for the event</a
+            >
+          </p>
+
+          <p
+            *ngIf="event.meta.link.trim() === ''"
+            class="events-list__event__info__field"
+          >
+            <b>Registration:</b>Coming Soon
+          </p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="events.length <= 0" class="events-list__empty u-center-text">
+      <h3 class="heading-tertiary">
+        Looks like there are no events coming up.
+      </h3>
+    </div>
+  </div>
+</div>

@@ -22,12 +22,16 @@
 @import "./assets/res/sass/components/logo-grid";
 @import "./assets/res/sass/components/popup";
 @import "./assets/res/sass/components/signup-form";
+@import "./assets/res/sass/components/calendar";
+@import "./assets/res/sass/components/events-list";
 
 @import "./assets/res/sass/layout/grid";
 @import "./assets/res/sass/layout/call-page";
 @import "./assets/res/sass/layout/content-page";
 
 @import "./assets/res/sass/pages/home";
+
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
 
 .navbar-item {
   &.is-hoverable:hover {

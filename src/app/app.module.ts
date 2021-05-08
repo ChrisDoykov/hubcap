@@ -28,6 +28,10 @@ import { SwiperModule } from "ngx-swiper-wrapper";
 import { SWIPER_CONFIG } from "ngx-swiper-wrapper";
 import { SwiperConfigInterface } from "ngx-swiper-wrapper";
 
+import { CalendarModule, DateAdapter } from "angular-calendar";
+import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
+import { MomentModule } from "ngx-moment";
+
 import { PullComponent } from "./pull/pull.component";
 import { ExperimentComponent } from "./experiment/experiment.component";
 import { InnovateComponent } from "./innovate/innovate.component";
@@ -53,6 +57,7 @@ import { VideoExpComponent } from "./content-items/video-exp/video-exp.component
 import { VideoGeneralComponent } from "./content-items/video-general/video-general.component";
 import { PressReleaseArticle4Component } from "./press-release-articles/press-release-article4/press-release-article4.component";
 import { PressReleaseArticle5Component } from "./press-release-articles/press-release-article5/press-release-article5.component";
+import { EventsComponent } from "./events/events.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -97,6 +102,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     VideoGeneralComponent,
     PressReleaseArticle4Component,
     PressReleaseArticle5Component,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,
@@ -111,6 +117,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FormsModule,
     MatExpansionModule,
     MatTableModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
+    MomentModule,
   ],
   providers: [
     {

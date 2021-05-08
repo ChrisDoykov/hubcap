@@ -61,7 +61,7 @@ export class NewsletterListComponent implements OnInit {
     }
 
     this.elements_slide_in_bottom = document.querySelectorAll(
-      ".hidden-slide-in-bottom"
+      ".hidden-slide-in-bottom-newsletter"
     );
     this.windowHeight = window.innerHeight;
   }
@@ -69,7 +69,7 @@ export class NewsletterListComponent implements OnInit {
   checkPosition() {
     if (this.elements_slide_in_bottom.length <= 0) {
       this.elements_slide_in_bottom = document.querySelectorAll(
-        ".hidden-slide-in-bottom"
+        ".hidden-slide-in-bottom-newsletter"
       );
     }
     for (let i = 0; i < this.elements_slide_in_bottom.length; i++) {

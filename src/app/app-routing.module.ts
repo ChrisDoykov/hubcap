@@ -24,10 +24,12 @@ import { ContentComponent } from "./content/content.component";
 import { NewsletterListComponent } from "./newsletter-list/newsletter-list.component";
 import { SignupComponent } from "./signup/signup.component";
 import { ExternalComponent } from "./external/external.component";
+import { EventsComponent } from "./events/events.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", component: HomeComponent },
   { path: "news", component: NewsComponent },
+  { path: "events", component: EventsComponent },
   { path: "digital-innovation-hubs", component: DihComponent },
   { path: "platform", component: PlatformComponent },
   { path: "open-calls", component: CallsComponent },

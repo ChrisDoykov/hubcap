@@ -1,0 +1,55 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  //   align-self: center;
+
+  @include respond(tab-port) {
+  }
+
+  .cal-cell {
+    font-size: 1.7rem;
+  }
+
+  .cal-open-day-events {
+    font-size: 1.5rem;
+    background-color: $color-blue;
+  }
+
+  .cal-day-badge {
+    background-color: $color-green;
+  }
+
+  &__navigation {
+    display: flex;
+    align-self: center;
+
+    .button {
+      font-size: 2rem;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      @include respond(phone) {
+        &:not(:last-child) {
+          //   margin-right: 0;
+          //   margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  h3 {
+    margin: 0 0 10px;
+  }
+
+  pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+  }
+}

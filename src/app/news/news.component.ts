@@ -11,10 +11,23 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "HUBCAP Upcoming Events Page",
+      summary:
+        'Having doubts or questions and wondering when our next Q&A or Matchmaking session is? Check out our new "Upcoming Events" page under the "News" menu item or by visting www.hubcap.eu/events to keep up to date with the HUBCAP calendar!',
+      date: "2021.05.10",
+      type: "EVENTS",
+      caption: "",
+      urlname: "Visit Events Page",
+      url: "/events",
+      modalTarget: "eventsPageLaunch",
+      thumbnail: "",
+      thumbnailAlt: "",
+    },
+    {
       title: "HUBCAP Open Call #3 INNOVATE Q&A Webinar",
       summary:
         "Join us in our 1st live Q&A Webinar for Call #3 INNOVATE on 12 May 2021 at 11 AM CEST and learn how to apply to the call! Get the opportunity to pose your questions and clarify your doubts with our team!",
-      date: "2021.05.12",
+      date: "2021.05.01",
       type: "WEBINAR",
       caption: "",
       urlname: "Register for the webinar",
@@ -230,13 +243,13 @@ export class NewsComponent implements OnInit {
       document.getElementById("hero-title").textContent = "Latest News";
     }
 
-    this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
+    this.elements_fade_in = document.querySelectorAll(".hidden-fade-in-news");
     this.windowHeight = window.innerHeight;
   }
 
   checkPosition() {
     if (this.elements_fade_in.length <= 0) {
-      this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
+      this.elements_fade_in = document.querySelectorAll(".hidden-fade-in-news");
     }
     for (let i = 0; i < this.elements_fade_in.length; i++) {
       let element = this.elements_fade_in[i];

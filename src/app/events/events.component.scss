@@ -1,0 +1,22 @@
+@import "../../assets/res/sass/abstracts/variables";
+@import "../../assets/res/sass/abstracts/mixins";
+
+.section-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+  padding-top: 4.2rem;
+
+  @include respond(tab-land) {
+    max-width: 80%;
+    width: 80%;
+  }
+
+  @include respond(phone) {
+    max-width: 100%;
+    width: 100%;
+  }
+}

@@ -12,6 +12,12 @@
   padding: 10rem 2rem;
   padding-top: 4rem;
 
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   @include respond(phone) {
     padding-top: 2.5rem;
   }

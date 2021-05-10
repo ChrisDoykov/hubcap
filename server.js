@@ -9,7 +9,7 @@ const compression = require("compression");
 const app = express();
 
 // Default to SSL version
-app.use(sslRedirect());
+app.use(sslRedirect.default());
 
 // Compress requests for faster loading
 app.use(compression());

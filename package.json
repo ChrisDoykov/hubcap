@@ -40,6 +40,7 @@
     "flag-icon-css": "^3.5.0",
     "heroku-ssl-redirect": "0.1.1",
     "material": "^0.4.3",
+    "moment": "^2.29.1",
     "ngx-device-detector": "^2.0.8",
     "ngx-moment": "^5.0.0",
     "ngx-swiper-wrapper": "^10.0.0",

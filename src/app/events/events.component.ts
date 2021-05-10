@@ -92,7 +92,7 @@ export class EventsComponent implements OnInit {
       color: colors.innovate,
       meta: {
         description:
-          "Join us in our 1st live Matchmaking event for Call #3 INNOVATE on 19 May 2021! Get the opportunity to find a partner for the call and pose any questions or doubts you may have!",
+          "Join us in our 1st live Matchmaking event for Call #3 INNOVATE on 19 May 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
         location: "MS Teams",
         time: "TBC",
         link: "",
@@ -118,7 +118,7 @@ export class EventsComponent implements OnInit {
       color: colors.innovate,
       meta: {
         description:
-          "Join us in our 2nd live Matchmaking event for Call #3 INNOVATE on 9 June 2021! Get the opportunity to find a partner for the call and pose any questions or doubts you may have!",
+          "Join us in our 2nd live Matchmaking event for Call #3 INNOVATE on 9 June 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
         location: "MS Teams",
         time: "TBC",
         link: "",

@@ -6,10 +6,6 @@
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  //   align-self: center;
-
-  @include respond(tab-port) {
-  }
 
   .cal-cell {
     font-size: 1.7rem;
@@ -33,13 +29,6 @@
 
       &:not(:last-child) {
         margin-right: 2rem;
-      }
-
-      @include respond(phone) {
-        &:not(:last-child) {
-          //   margin-right: 0;
-          //   margin-bottom: 2rem;
-        }
       }
     }
   }

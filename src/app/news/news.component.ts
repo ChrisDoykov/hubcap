@@ -11,6 +11,20 @@ export class NewsComponent implements OnInit {
 
   articles = [
     {
+      title: "Call #3 INNOVATE 1st Matchmaking Event",
+      summary:
+        "Looking forward to our first matchmaking event next week for our INNOVATE call offering 200k€ to consortia of 2-3 SMEs to innovate with Model-Based Design! Come along to pitch your SME as a provider or potential user of MBD software and meet prospective partners!",
+      date: "2021.05.11",
+      type: "WEBINAR",
+      caption: "",
+      urlname: "Register for the webinar",
+      url: "https://www.linkedin.com/events/hubcapcall-3innovatefirstmatchm6797805211042799616/",
+      modalTarget: "1stMMINNO",
+      thumbnail:
+        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_INNOVATE_1st_MM_thumbnail.png",
+      thumbnailAlt: "Call #3 INNOVATE 1st Matchmaking Event",
+    },
+    {
       title: "HUBCAP Upcoming Events Page",
       summary:
         'Having doubts or questions and wondering when our next Q&A or Matchmaking session is? Check out our new "Upcoming Events" page under the "News" menu item or by visting www.hubcap.eu/events to keep up to date with the HUBCAP event schedule!',
@@ -31,8 +45,7 @@ export class NewsComponent implements OnInit {
       type: "WEBINAR",
       caption: "",
       urlname: "Register for the webinar",
-      url:
-        "https://www.eventbrite.com/e/hubcap-call-3-innovate-1st-qa-webinar-tickets-151634736579",
+      url: "https://www.eventbrite.com/e/hubcap-call-3-innovate-1st-qa-webinar-tickets-151634736579",
       modalTarget: "call3firstqanda",
       thumbnail:
         "../../assets/res/files/HUBCAP_OC3INNOVATE/call3-first-webinar.jfif",
@@ -113,8 +126,7 @@ export class NewsComponent implements OnInit {
       type: "INTERVIEW",
       caption: "",
       urlname: "Watch interview",
-      url:
-        "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6745286426075676674/?_l=en_US",
+      url: "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6745286426075676674/?_l=en_US",
     },
     {
       title: "Q&A Webinar Recording",
@@ -174,8 +186,7 @@ export class NewsComponent implements OnInit {
       type: "WEBINAR",
       caption: "",
       urlname: "Watch replay",
-      url:
-        "https://www.youtube.com/playlist?list=PLgMGIq5cGVBNkUARmDRsqKCcP-9HPw6wa",
+      url: "https://www.youtube.com/playlist?list=PLgMGIq5cGVBNkUARmDRsqKCcP-9HPw6wa",
       modalTarget: "joint-webinar",
       thumbnail: "../../assets/res/images/webinar_june_2020.PNG",
       thumbnailAlt: "Joint webinar",
@@ -202,8 +213,7 @@ export class NewsComponent implements OnInit {
       type: "MEETING",
       caption: "",
       urlname: "More details",
-      url:
-        "https://wiki.eng.au.dk/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3DIN%26title%3DKICK-OFF%2Bmeeting&permissionViolation=true",
+      url: "https://wiki.eng.au.dk/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3DIN%26title%3DKICK-OFF%2Bmeeting&permissionViolation=true",
       modalTarget: "kick-off-meeting",
       thumbnail: "../../assets/res/images/hubcap-team.jpg",
       thumbnailAlt: "The HUBCAP team. Photo by AU Foto, Lars Kruse.",
@@ -253,8 +263,8 @@ export class NewsComponent implements OnInit {
     }
     for (let i = 0; i < this.elements_fade_in.length; i++) {
       let element = this.elements_fade_in[i];
-      let positionFromTop = this.elements_fade_in[i].getBoundingClientRect()
-        .top;
+      let positionFromTop =
+        this.elements_fade_in[i].getBoundingClientRect().top;
 
       if (positionFromTop - this.windowHeight <= 0) {
         element.classList.add("u-fade-in");

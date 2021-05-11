@@ -79,10 +79,9 @@ export class EventsComponent implements OnInit {
       meta: {
         description:
           "Join us in our 1st live Q&A Webinar for Call #3 INNOVATE on 12 May 2021 at 11 AM CEST and learn how to apply to the call! Get the opportunity to pose your questions and clarify your doubts with our team!",
-        location: "MS Teams",
+        location: "Zoom",
         time: "11 AM CEST",
-        link:
-          "https://www.eventbrite.com/e/hubcap-call-3-innovate-1st-qa-webinar-tickets-151634736579",
+        link: "https://www.eventbrite.com/e/hubcap-call-3-innovate-1st-qa-webinar-tickets-151634736579",
       },
     },
     {
@@ -93,9 +92,9 @@ export class EventsComponent implements OnInit {
       meta: {
         description:
           "Join us in our 1st live Matchmaking event for Call #3 INNOVATE on 19 May 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
-        location: "MS Teams",
-        time: "TBC",
-        link: "",
+        location: "Zoom",
+        time: "10:00 AM - 2:00 PM CEST",
+        link: "https://www.linkedin.com/events/hubcapcall-3innovatefirstmatchm6797805211042799616/",
       },
     },
     {
@@ -156,8 +155,8 @@ export class EventsComponent implements OnInit {
     }
     for (let i = 0; i < this.elements_fade_in.length; i++) {
       let element = this.elements_fade_in[i];
-      let positionFromTop = this.elements_fade_in[i].getBoundingClientRect()
-        .top;
+      let positionFromTop =
+        this.elements_fade_in[i].getBoundingClientRect().top;
 
       if (positionFromTop - this.windowHeight <= 0) {
         element.classList.add("u-fade-in");

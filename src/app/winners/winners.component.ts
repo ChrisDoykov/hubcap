@@ -37,32 +37,28 @@ const WINNERS: SME[] = [
   {
     id: 5,
     name: "Asti Automation",
-    logo:
-      "https://www.astiautomation.ro/xnew/wp-content/uploads/2015/03/sigla_asti_automation.jpg",
+    logo: "https://www.astiautomation.ro/xnew/wp-content/uploads/2015/03/sigla_asti_automation.jpg",
 
     website: "https://www.astiautomation.ro",
   },
   {
     id: 6,
     name: "Simularge",
-    logo:
-      "https://www.simularge.com/wp-content/uploads/2018/04/Simularge_LOGO_3.jpg",
+    logo: "https://uploads-ssl.webflow.com/60913fe99e5e381a097c798d/60914502ce25d6b6c82f7929_thumbnail_Simularge_LOGO_transparent_V2.png",
 
     website: "https://www.simularge.com",
   },
   {
     id: 7,
     name: "Waveform",
-    logo:
-      "https://www.waveform.hr/wp-content/uploads/2020/09/Logo_IOT-Wallet2.png",
+    logo: "https://www.waveform.hr/wp-content/uploads/2020/09/Logo_IOT-Wallet2.png",
 
     website: "https://www.waveform.hr",
   },
   {
     id: 8,
     name: "Xcelgo",
-    logo:
-      "https://xcelgo.com/wp-content/uploads/2018/02/logo_payoff_rgb-e1519296550313.png",
+    logo: "https://xcelgo.com/wp-content/uploads/2018/02/logo_payoff_rgb-e1519296550313.png",
 
     website: "https://xcelgo.com/",
   },
@@ -111,16 +107,14 @@ const WINNERS: SME[] = [
   {
     id: 15,
     name: "HOP Ubiquitous",
-    logo:
-      "https://www.premiosinnobankia.com/wp-content/uploads/2020/08/logo-hopu.jpg",
+    logo: "https://hopu.eu/wp-content/uploads/2019/12/logo_hopu-large.png",
 
     website: "https://hopu.eu/",
   },
   {
     id: 16,
     name: "Simreka",
-    logo:
-      "https://simreka.com/wp-content/uploads/2019/04/simrekalogo-e1558361786117.png",
+    logo: "https://simreka.com/wp-content/uploads/2019/04/simrekalogo-e1558361786117.png",
 
     website: "https://simreka.com/",
   },

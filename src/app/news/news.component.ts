@@ -25,9 +25,9 @@ export class NewsComponent implements OnInit {
       thumbnailAlt: "Call #3 INNOVATE 1st Matchmaking Event",
     },
     {
-      title: "HUBCAP Upcoming Events Page",
+      title: "HUBCAP Events Page",
       summary:
-        'Having doubts or questions and wondering when our next Q&A or Matchmaking session is? Check out our new "Upcoming Events" page under the "News" menu item or by visting www.hubcap.eu/events to keep up to date with the HUBCAP event schedule!',
+        'Having doubts or questions and wondering when our next Q&A or Matchmaking session is? Check out our new "Events" page under the "News" menu item or by visting www.hubcap.eu/events to keep up to date with the HUBCAP event schedule!',
       date: "2021.05.10",
       type: "EVENTS",
       caption: "",

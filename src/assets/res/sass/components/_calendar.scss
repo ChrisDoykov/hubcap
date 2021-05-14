@@ -5,10 +5,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 100%;
+  width: 80%;
+  margin: 8rem auto;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
+  &__body {
+  }
 
   .cal-cell {
     font-size: 1.7rem;
+    min-height: 0.1rem;
+  }
+
+  .cal-cell-top {
+    min-height: 5.1rem;
   }
 
   .cal-open-day-events {

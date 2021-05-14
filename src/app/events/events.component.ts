@@ -72,19 +72,6 @@ export class EventsComponent implements OnInit {
 
   events: CalendarEvent[] = [
     {
-      start: new Date("12 May 2021 13:00"),
-      end: new Date("12 May 2021 23:59"),
-      title: `Call #3 INNOVATE Q&A Webinar`,
-      color: colors.innovate,
-      meta: {
-        description:
-          "Join us in our 1st live Q&A Webinar for Call #3 INNOVATE on 12 May 2021 at 11 AM CEST and learn how to apply to the call! Get the opportunity to pose your questions and clarify your doubts with our team!",
-        location: "Zoom",
-        time: "11 AM CEST",
-        link: "https://www.eventbrite.com/e/hubcap-call-3-innovate-1st-qa-webinar-tickets-151634736579",
-      },
-    },
-    {
       start: new Date("19 May 2021 13:00"),
       end: new Date("19 May 2021 23:59"),
       title: `Call #3 INNOVATE Matchmaking Event`,
@@ -95,6 +82,7 @@ export class EventsComponent implements OnInit {
         location: "Zoom",
         time: "10:00 AM - 2:00 PM CEST",
         link: "https://www.linkedin.com/events/hubcapcall-3innovatefirstmatchm6797805211042799616/",
+        recordingLink: "",
       },
     },
     {
@@ -108,6 +96,7 @@ export class EventsComponent implements OnInit {
         location: "MS Teams",
         time: "TBC",
         link: "",
+        recordingLink: "",
       },
     },
     {
@@ -121,19 +110,45 @@ export class EventsComponent implements OnInit {
         location: "MS Teams",
         time: "TBC",
         link: "",
+        recordingLink: "",
+      },
+    },
+    {
+      start: new Date("12 May 2021 13:00"),
+      end: new Date("12 May 2021 23:59"),
+      title: `Call #3 INNOVATE Q&A Webinar`,
+      color: colors.innovate,
+      meta: {
+        description:
+          "Join us in our 1st live Q&A Webinar for Call #3 INNOVATE on 12 May 2021 at 11 AM CEST and learn how to apply to the call! Get the opportunity to pose your questions and clarify your doubts with our team!",
+        location: "Zoom",
+        time: "11 AM CEST",
+        recordingLink: "https://www.youtube.com/watch?v=SnhGeWB9CYU",
       },
     },
   ];
 
+  futureEvents: CalendarEvent[] = [
+    ...this.events.filter(
+      (event) => event.start.getTime() >= this.today.getTime()
+    ),
+  ];
+
+  pastEvents: CalendarEvent[] = [
+    ...this.events.filter(
+      (event) => event.start.getTime() < this.today.getTime()
+    ),
+  ];
+
   activeDayIsOpen: boolean =
-    this.events.filter(
+    this.futureEvents.filter(
       (event) => event.start.getDate() === this.today.getDate()
     ).length > 0
       ? true
       : false;
 
   ngOnInit(): void {
-    document.title = "Upcoming Events | HUBCAP";
+    document.title = "Events | HUBCAP";
     this.onResize();
     this.checkPosition();
   }
@@ -142,7 +157,7 @@ export class EventsComponent implements OnInit {
     this.width = window.innerWidth;
 
     if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Upcoming Events";
+      document.getElementById("hero-title").textContent = "Events";
     }
 
     this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");

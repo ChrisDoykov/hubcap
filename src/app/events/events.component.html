@@ -189,10 +189,10 @@
             >
               <b>Location:</b> {{ event.meta.location }}
             </p>
-            <p
-              *ngIf="event.meta.recordingLink"
-              class="events-list__event__info__field"
-            >
+            <p class="events-list__event__info__field">
+              <span *ngIf="event.meta.recordingLink.trim() === ''">
+                <b>Recording:</b> Not available</span
+              >
               <a
                 *ngIf="event.meta.recordingLink.trim() !== ''"
                 href="{{ event.meta.recordingLink }}"

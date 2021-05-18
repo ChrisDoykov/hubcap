@@ -126,6 +126,59 @@ export class EventsComponent implements OnInit {
         recordingLink: "https://www.youtube.com/watch?v=SnhGeWB9CYU",
       },
     },
+    {
+      start: new Date("5 May 2021 13:00"),
+      end: new Date("5 May 2021 23:59"),
+      title: `Call #1.3 PULL Q&A Webinar`,
+      color: colors.pull,
+      meta: {
+        description:
+          "Join us in our live Q&A Webinar on 5 May, 11am CET (Brussels time) to learn more about the HUBCAP programme and how to apply to our #1.3 PULL open call!",
+        location: "Zoom",
+        time: "11 AM CEST",
+        recordingLink: "",
+      },
+    },
+    {
+      start: new Date("13 January 2021 13:00"),
+      end: new Date("13 January 2021 23:59"),
+      title: `Call #2.1 EXPERIMENT Q&A Webinar`,
+      color: colors.experiment,
+      meta: {
+        description:
+          "Doubts on how to apply to the HUBCAP #2.1 Open Call? Want to know more about the HUBCAP programme? Don't miss our Call #2.1 EXPERIMENT 1st Q&A Webinar, 13 January, 11h am CET! ",
+        location: "Zoom",
+        time: "11 AM CEST",
+        recordingLink: "https://www.youtube.com/watch?v=ADX-p_LGc4E",
+      },
+    },
+    {
+      start: new Date("3 February 2021 13:00"),
+      end: new Date("3 February 2021 23:59"),
+      title: `Call #2.1 EXPERIMENT Matchmaking Event`,
+      color: colors.experiment,
+      meta: {
+        description:
+          "Register for our Matchmaking event for Call #2.1 EXPERIMENT! Get an overview of HUBCAP and our currently open EXPERIMENT call! Speak with SMEs already on the platform in our matchmaking sessions!",
+        location: "Zoom",
+        time: "10 AM CEST",
+        recordingLink: "",
+      },
+    },
+
+    {
+      start: new Date("28 October 2020 13:00"),
+      end: new Date("28 October 2020 23:59"),
+      title: `Call #1.2 PULL Q&A Webinar`,
+      color: colors.pull,
+      meta: {
+        description:
+          "Join us in our live Q&A Webinar on 28 October, 11h30am CET (Brussels time) to learn more about the HUBCAP programme and how to apply!",
+        location: "Zoom",
+        time: "11:30 AM CEST",
+        recordingLink: "https://www.youtube.com/watch?v=TfFn9zrcjCs",
+      },
+    },
   ];
 
   futureEvents: CalendarEvent[] = [

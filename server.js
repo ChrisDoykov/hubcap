@@ -133,7 +133,7 @@ app.post("/twitter", async (req, res) => {
         title: "HUBCAP Twitter Post",
         summary: item.description,
         date: new Date(item.date),
-        displayDate: item.date.split("T")[0].replaceAll("-", "."),
+        displayDate: item.date.split("T")[0].replace(/-/g, "."),
         type: "TWEET ITEM",
         url: `https://twitter.com/hubcap_eu/status/${item.id}`,
         modalTarget: item.id,

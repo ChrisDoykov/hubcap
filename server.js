@@ -55,6 +55,7 @@ app.post("/twitter", async (req, res) => {
   let latestRes = null;
 
   if (!latestRes) {
+    console.log("Awaiting First tweets batch");
     latestRes = await axios.get(
       `${process.env.TWITTER_API_URL}&since_id=${
         currentLatestId ? currentLatestId : firstTweetId
@@ -65,6 +66,7 @@ app.post("/twitter", async (req, res) => {
         },
       }
     );
+    console.log("GOT First tweets batch");
     if (latestRes.data.data) {
       allTweets = [...allTweets, ...latestRes.data.data];
       if (latestRes.data.includes.media) {
@@ -75,6 +77,7 @@ app.post("/twitter", async (req, res) => {
   }
 
   while (latestRes && latestRes.data.data) {
+    console.log("Awaiting N tweets batch");
     latestRes = await axios.get(
       `${process.env.TWITTER_API_URL}&since_id=${
         currentLatestId ? currentLatestId : firstTweetId
@@ -85,6 +88,7 @@ app.post("/twitter", async (req, res) => {
         },
       }
     );
+    console.log("GOT N tweets batch");
     if (latestRes.data.data) {
       allTweets = [...allTweets, ...latestRes.data.data];
       if (latestRes.data.includes.media) {
@@ -128,7 +132,7 @@ app.post("/twitter", async (req, res) => {
         type: "TWEET ITEM",
         url: `https://twitter.com/hubcap_eu/status/${item.id}`,
         modalTarget: item.id,
-
+        buttonText: "See Twiiter Post",
         thumbnail: thumbnail ? thumbnail : "",
         thumbnailAlt: "Image from HUBCAP's Twitter",
       };

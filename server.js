@@ -102,14 +102,14 @@ app.post("/twitter", async (req, res) => {
 
   allTweets.forEach((tweet) => {
     console.log(tweet);
-    if (tweet && tweet.text && tweet.text.length > 10) {
-      newsItems.push({
-        id: tweet.id,
-        description: tweet.text.replaceAll("amp;", ""),
-        date: tweet.created_at,
-        media_key: tweet.attachments ? tweet.attachments.media_keys[0] : null, // Only 1st image
-      });
-    }
+    // if (tweet && tweet.text && tweet.text.length > 10) {
+    newsItems.push({
+      id: tweet.id,
+      description: tweet.text.replaceAll("amp;", ""),
+      date: tweet.created_at,
+      media_key: tweet.attachments ? tweet.attachments.media_keys[0] : null, // Only 1st image
+    });
+    // }
   });
 
   newsItems = newsItems.map((item) => {

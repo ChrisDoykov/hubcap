@@ -53,6 +53,9 @@ app.post("/twitter", async (req, res) => {
   let allTweets = [];
   let allMedia = [];
   let latestRes = null;
+  const headers = {
+    authorization: `Bearer ${process.env.TWITTER_API_BEARER_TOKEN}`,
+  };
 
   if (!latestRes) {
     console.log("Awaiting First tweets batch");
@@ -61,9 +64,7 @@ app.post("/twitter", async (req, res) => {
         currentLatestId ? currentLatestId : firstTweetId
       }`,
       {
-        headers: {
-          authorization: `Bearer ${process.env.TWITTER_API_BEARER_TOKEN}`,
-        },
+        headers,
       }
     );
     console.log("GOT First tweets batch");
@@ -83,9 +84,7 @@ app.post("/twitter", async (req, res) => {
         currentLatestId ? currentLatestId : firstTweetId
       }`,
       {
-        headers: {
-          authorization: `Bearer ${process.env.TWITTER_API_BEARER_TOKEN}`,
-        },
+        headers,
       }
     );
     console.log("GOT N tweets batch");
@@ -99,19 +98,23 @@ app.post("/twitter", async (req, res) => {
   }
 
   let newsItems = [];
-
-  allTweets.forEach((tweet) => {
-    console.log(tweet);
-    // if (tweet && tweet.text && tweet.text.length > 10) {
-    console.log(typeof tweet.text);
-    newsItems.push({
-      id: tweet.id,
-      description: tweet.text.replaceAll("amp;", ""),
-      date: tweet.created_at,
-      media_key: tweet.attachments ? tweet.attachments.media_keys[0] : null, // Only 1st image
+  try {
+    allTweets.forEach((tweet) => {
+      console.log(tweet);
+      // if (tweet && tweet.text && tweet.text.length > 10) {
+      console.log(typeof tweet.text);
+      newsItems.push({
+        id: tweet.id,
+        description: tweet.text.replaceAll("amp;", ""),
+        date: tweet.created_at,
+        media_key: tweet.attachments ? tweet.attachments.media_keys[0] : null, // Only 1st image
+      });
+      // }
     });
-    // }
-  });
+  } catch (e) {
+    console.log(e);
+    return res.status(500).send({ message: e.message });
+  }
 
   newsItems = newsItems.map((item) => {
     if (item.date) {

@@ -40,7 +40,6 @@
     "express": "^4.17.1",
     "file-saver": "^2.0.5",
     "flag-icon-css": "^3.5.0",
-    "googleapis": "^39.2.0",
     "heroku-ssl-redirect": "^0.1.1",
     "material": "^0.4.3",
     "moment": "^2.29.1",

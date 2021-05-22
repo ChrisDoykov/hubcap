@@ -105,7 +105,7 @@ app.post("/twitter", async (req, res) => {
       console.log(typeof tweet.text);
       newsItems.push({
         id: tweet.id,
-        description: tweet.text.replaceAll("amp;", ""),
+        description: tweet.text.replaceAll(/amp;/g, ""),
         date: tweet.created_at,
         media_key: tweet.attachments ? tweet.attachments.media_keys[0] : null, // Only 1st image
       });

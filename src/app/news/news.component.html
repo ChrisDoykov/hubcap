@@ -4,12 +4,23 @@
   (window:scroll)="checkPosition()"
 >
   <h1
-    class="heading-primary heading-primary heading-primary heading-primary--underlined heading-primary--underlined-blue u-center-text u-margin-bottom-medium"
+    class="
+      heading-primary
+      heading-primary
+      heading-primary
+      heading-primary--underlined
+      heading-primary--underlined-blue
+      u-center-text u-margin-bottom-medium
+    "
   >
     Latest News
   </h1>
 
-  <div class="columns is-multiline">
+  <div *ngIf="loading" class="wrapper--loading">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div>
+
+  <div *ngIf="!loading" class="columns is-multiline">
     <div
       *ngFor="let article of articles; let i = index"
       class="column is-full u-margin-bottom-big"
@@ -19,13 +30,19 @@
           <a href="{{ article.url }}" target="_blank"> {{ article.title }}</a>
         </h2>
         <h3 class="subtitle subtitle--small news-item__subheading">
-          {{ article.date }} | {{ article.type }}
+          {{ article.displayDate }} | {{ article.type }}
         </h3>
         <p
-          class="paragraph paragraph--big u-margin-bottom-none news-item__content"
-        >
-          {{ article.summary }}
-        </p>
+          class="
+            paragraph paragraph--big
+            u-margin-bottom-none
+            news-item__content
+          "
+          [ngClass]="{
+            'u-margin-bottom-medium': !article.buttonText && !article.thumbnail
+          }"
+          [innerHTML]="article.summary | linkify"
+        ></p>
         <figure class="figure" *ngIf="article.thumbnail">
           <img
             class="modal-button"
@@ -46,7 +63,7 @@
           allowfullscreen
         ></iframe>
         <span
-          *ngIf="article.url"
+          *ngIf="article.buttonText"
           [class.u-margin-top-small]="!article.thumbnail"
           [class.u-margin-bottom-small]="article.modalTarget === 'cfe'"
           class="news-item__link"
@@ -56,7 +73,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="btn-text btn-text--primary"
-            >{{ article.urlname }}</a
+            >{{ article.buttonText }}</a
           >
         </span>
 

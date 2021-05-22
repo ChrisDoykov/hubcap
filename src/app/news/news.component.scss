@@ -9,8 +9,22 @@
   flex-direction: column;
   justify-content: center;
 
+  &--loading {
+    position: relative;
+    padding: 15rem 0;
+  }
+
   @include respond(phone) {
     padding: 2.5rem 2rem;
+  }
+
+  mat-progress-spinner {
+    @include center_with_transform;
+  }
+
+  ::ng-deep .mat-progress-spinner circle,
+  ::ng-deep .mat-spinner circle {
+    stroke: $color-blue;
   }
 
   .columns {

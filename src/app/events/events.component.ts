@@ -72,16 +72,16 @@ export class EventsComponent implements OnInit {
 
   events: CalendarEvent[] = [
     {
-      start: new Date("19 May 2021 13:00"),
-      end: new Date("19 May 2021 23:59"),
-      title: `Call #3 INNOVATE Matchmaking Event`,
+      start: new Date("09 June 2021 13:00"),
+      end: new Date("09 June 2021 23:59"),
+      title: `Call #3 INNOVATE 2nd Matchmaking Event`,
       color: colors.innovate,
       meta: {
         description:
-          "Join us in our 1st live Matchmaking event for Call #3 INNOVATE on 19 May 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
-        location: "Zoom",
-        time: "10:00 AM - 2:00 PM CEST",
-        link: "https://www.linkedin.com/events/hubcapcall-3innovatefirstmatchm6797805211042799616/",
+          "Join us in our 2nd live Matchmaking event for Call #3 INNOVATE on 9 June 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
+        location: "MS Teams",
+        time: "TBC",
+        link: "",
         recordingLink: "",
       },
     },
@@ -100,16 +100,16 @@ export class EventsComponent implements OnInit {
       },
     },
     {
-      start: new Date("09 June 2021 13:00"),
-      end: new Date("09 June 2021 23:59"),
-      title: `Call #3 INNOVATE 2nd Matchmaking Event`,
+      start: new Date("19 May 2021 13:00"),
+      end: new Date("19 May 2021 23:59"),
+      title: `Call #3 INNOVATE Matchmaking Event`,
       color: colors.innovate,
       meta: {
         description:
-          "Join us in our 2nd live Matchmaking event for Call #3 INNOVATE on 9 June 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
-        location: "MS Teams",
-        time: "TBC",
-        link: "",
+          "Join us in our 1st live Matchmaking event for Call #3 INNOVATE on 19 May 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
+        location: "Zoom",
+        time: "10:00 AM - 2:00 PM CEST",
+        link: "https://www.linkedin.com/events/hubcapcall-3innovatefirstmatchm6797805211042799616/",
         recordingLink: "",
       },
     },
@@ -139,19 +139,7 @@ export class EventsComponent implements OnInit {
         recordingLink: "",
       },
     },
-    {
-      start: new Date("13 January 2021 13:00"),
-      end: new Date("13 January 2021 23:59"),
-      title: `Call #2.1 EXPERIMENT Q&A Webinar`,
-      color: colors.experiment,
-      meta: {
-        description:
-          "Doubts on how to apply to the HUBCAP #2.1 Open Call? Want to know more about the HUBCAP programme? Don't miss our Call #2.1 EXPERIMENT 1st Q&A Webinar, 13 January, 11h am CET! ",
-        location: "Zoom",
-        time: "11 AM CEST",
-        recordingLink: "https://www.youtube.com/watch?v=ADX-p_LGc4E",
-      },
-    },
+
     {
       start: new Date("3 February 2021 13:00"),
       end: new Date("3 February 2021 23:59"),
@@ -165,7 +153,19 @@ export class EventsComponent implements OnInit {
         recordingLink: "",
       },
     },
-
+    {
+      start: new Date("13 January 2021 13:00"),
+      end: new Date("13 January 2021 23:59"),
+      title: `Call #2.1 EXPERIMENT Q&A Webinar`,
+      color: colors.experiment,
+      meta: {
+        description:
+          "Doubts on how to apply to the HUBCAP #2.1 Open Call? Want to know more about the HUBCAP programme? Don't miss our Call #2.1 EXPERIMENT 1st Q&A Webinar, 13 January, 11h am CET! ",
+        location: "Zoom",
+        time: "11 AM CEST",
+        recordingLink: "https://www.youtube.com/watch?v=ADX-p_LGc4E",
+      },
+    },
     {
       start: new Date("28 October 2020 13:00"),
       end: new Date("28 October 2020 23:59"),

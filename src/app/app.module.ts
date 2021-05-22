@@ -13,6 +13,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { NavigationComponent } from "./navigation/navigation.component";
 
 import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatIconModule } from "@angular/material/icon";
 import { MatCardModule } from "@angular/material/card";
 import { MatExpansionModule } from "@angular/material/expansion";
@@ -58,6 +59,7 @@ import { VideoGeneralComponent } from "./content-items/video-general/video-gener
 import { PressReleaseArticle4Component } from "./press-release-articles/press-release-article4/press-release-article4.component";
 import { PressReleaseArticle5Component } from "./press-release-articles/press-release-article5/press-release-article5.component";
 import { EventsComponent } from "./events/events.component";
+import { LinkifyPipe } from "./linkify.pipe";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -103,6 +105,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     PressReleaseArticle4Component,
     PressReleaseArticle5Component,
     EventsComponent,
+    LinkifyPipe,
   ],
   imports: [
     BrowserModule,
@@ -117,6 +120,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FormsModule,
     MatExpansionModule,
     MatTableModule,
+    MatProgressSpinnerModule,
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory,

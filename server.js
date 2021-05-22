@@ -5,6 +5,7 @@ const sgMail = require("@sendgrid/mail");
 const bodyParser = require("body-parser");
 const sslRedirect = require("heroku-ssl-redirect");
 const compression = require("compression");
+const axios = require("axios");
 
 const app = express();
 
@@ -44,6 +45,99 @@ app.post("/subscribe", (req, res) => {
       console.log(err);
       return res.send({ status: 500, message: "Failure" });
     });
+});
+
+app.post("/twitter", async (req, res) => {
+  let firstTweetId = process.env.FIRST_TWEET_ID;
+  let currentLatestId = null;
+  let allTweets = [];
+  let allMedia = [];
+  let latestRes = null;
+
+  if (!latestRes) {
+    latestRes = await axios.get(
+      `${process.env.TWITTER_API_URL}&since_id=${
+        currentLatestId ? currentLatestId : firstTweetId
+      }`,
+      {
+        headers: {
+          authorization: `Bearer ${process.env.TWITTER_API_BEARER_TOKEN}`,
+        },
+      }
+    );
+    if (latestRes.data.data) {
+      allTweets = [...allTweets, ...latestRes.data.data];
+      if (latestRes.data.includes.media) {
+        allMedia = [...allMedia, ...latestRes.data.includes.media];
+      }
+      currentLatestId = latestRes.data.data[0].id;
+    }
+  }
+
+  while (latestRes && latestRes.data.data) {
+    latestRes = await axios.get(
+      `${process.env.TWITTER_API_URL}&since_id=${
+        currentLatestId ? currentLatestId : firstTweetId
+      }`,
+      {
+        headers: {
+          authorization: `Bearer ${process.env.TWITTER_API_BEARER_TOKEN}`,
+        },
+      }
+    );
+    if (latestRes.data.data) {
+      allTweets = [...allTweets, ...latestRes.data.data];
+      if (latestRes.data.includes.media) {
+        allMedia = [...allMedia, ...latestRes.data.includes.media];
+      }
+      currentLatestId = latestRes.data.data[0].id;
+    }
+  }
+
+  let newsItems = [];
+
+  allTweets.forEach((tweet) => {
+    if (tweet.text.length > 10) {
+      newsItems.push({
+        id: tweet.id,
+        description: tweet.text.replaceAll("amp;", ""),
+        date: tweet.created_at,
+        media_key: tweet.attachments ? tweet.attachments.media_keys[0] : null, // Only 1st image
+      });
+    }
+  });
+
+  newsItems = newsItems.map((item) => {
+    if (item.date) {
+      let thumbnail;
+
+      if (item.media_key) {
+        allMedia.forEach((mediaItem) => {
+          if (mediaItem.media_key === item.media_key) {
+            thumbnail = mediaItem.url;
+          }
+        });
+      }
+
+      return {
+        // ...item,
+        title: "HUBCAP Twitter Post",
+        summary: item.description,
+        date: new Date(item.date),
+        displayDate: item.date.split("T")[0].replaceAll("-", "."),
+        type: "TWEET ITEM",
+        url: `https://twitter.com/hubcap_eu/status/${item.id}`,
+        modalTarget: item.id,
+
+        thumbnail: thumbnail ? thumbnail : "",
+        thumbnailAlt: "Image from HUBCAP's Twitter",
+      };
+    }
+  });
+
+  res.send({
+    newsItems,
+  });
 });
 
 app.get("/*", function (req, res) {

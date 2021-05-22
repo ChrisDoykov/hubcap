@@ -101,6 +101,7 @@ app.post("/twitter", async (req, res) => {
   let newsItems = [];
 
   allTweets.forEach((tweet) => {
+    console.log(tweet);
     if (tweet && tweet.text && tweet.text.length > 10) {
       newsItems.push({
         id: tweet.id,

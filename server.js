@@ -101,7 +101,7 @@ app.post("/twitter", async (req, res) => {
   let newsItems = [];
 
   allTweets.forEach((tweet) => {
-    if (tweet.text.length > 10) {
+    if (tweet && tweet.text && tweet.text.length > 10) {
       newsItems.push({
         id: tweet.id,
         description: tweet.text.replaceAll("amp;", ""),

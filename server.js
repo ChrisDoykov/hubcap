@@ -58,7 +58,6 @@ app.post("/twitter", async (req, res) => {
   };
 
   if (!latestRes) {
-    console.log("Awaiting First tweets batch");
     latestRes = await axios.get(
       `${process.env.TWITTER_API_URL}&since_id=${
         currentLatestId ? currentLatestId : firstTweetId
@@ -67,7 +66,6 @@ app.post("/twitter", async (req, res) => {
         headers,
       }
     );
-    console.log("GOT First tweets batch");
     if (latestRes.data.data) {
       allTweets = [...allTweets, ...latestRes.data.data];
       if (latestRes.data.includes.media) {
@@ -78,7 +76,6 @@ app.post("/twitter", async (req, res) => {
   }
 
   while (latestRes && latestRes.data.data) {
-    console.log("Awaiting N tweets batch");
     latestRes = await axios.get(
       `${process.env.TWITTER_API_URL}&since_id=${
         currentLatestId ? currentLatestId : firstTweetId
@@ -87,7 +84,6 @@ app.post("/twitter", async (req, res) => {
         headers,
       }
     );
-    console.log("GOT N tweets batch");
     if (latestRes.data.data) {
       allTweets = [...allTweets, ...latestRes.data.data];
       if (latestRes.data.includes.media) {
@@ -100,16 +96,14 @@ app.post("/twitter", async (req, res) => {
   let newsItems = [];
   try {
     allTweets.forEach((tweet) => {
-      console.log(tweet);
-      // if (tweet && tweet.text && tweet.text.length > 10) {
-      console.log(typeof tweet.text);
-      newsItems.push({
-        id: tweet.id,
-        description: tweet.text.replace(/amp;/g, ""),
-        date: tweet.created_at,
-        media_key: tweet.attachments ? tweet.attachments.media_keys[0] : null, // Only 1st image
-      });
-      // }
+      if (tweet.text.length > 10) {
+        newsItems.push({
+          id: tweet.id,
+          description: tweet.text.replace(/amp;/g, ""),
+          date: tweet.created_at,
+          media_key: tweet.attachments ? tweet.attachments.media_keys[0] : null, // Only 1st image
+        });
+      }
     });
   } catch (e) {
     console.log(e);
@@ -129,7 +123,6 @@ app.post("/twitter", async (req, res) => {
       }
 
       return {
-        // ...item,
         title: "HUBCAP Twitter Post",
         summary: item.description,
         date: new Date(item.date),

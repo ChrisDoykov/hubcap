@@ -20,17 +20,17 @@ export class LinkifyPipe implements PipeTransform {
     let stylizedText: string = "";
     if (text && text.length > 0) {
       // Linkify outright links
-      stylizedText = text.replaceAll(linkRegex, (match) => {
+      stylizedText = text.replace(linkRegex, (match) => {
         return `<a href="${match}" target="_blank">${match}</a>`;
       });
       // Linkify #tags (e.g. #webinar)
-      stylizedText = stylizedText.replaceAll(hashtagRegex, (match) => {
-        let urlBit = match.replaceAll("#", "");
+      stylizedText = stylizedText.replace(hashtagRegex, (match) => {
+        let urlBit = match.replace("#", "");
         return `<a href="https://twitter.com/search?q=%23${urlBit}" target="_blank">${match}</a>`;
       });
       // Linkify @ tags (e.g. @hubcap_eu)
-      stylizedText = stylizedText.replaceAll(atRegex, (match) => {
-        let urlBit = match.replaceAll("@", "");
+      stylizedText = stylizedText.replace(atRegex, (match) => {
+        let urlBit = match.replace("@", "");
         return `<a href="https://twitter.com/${urlBit}" target="_blank">${match}</a>`;
       });
 

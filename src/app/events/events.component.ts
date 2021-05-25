@@ -93,9 +93,9 @@ export class EventsComponent implements OnInit {
       meta: {
         description:
           "Join us in our 2nd live Q&A Webinar for Call #3 INNOVATE on 26 May 2021 and learn how to apply to the call! Get the opportunity to pose your questions and clarify your doubts with our team!",
-        location: "MS Teams",
-        time: "TBC",
-        link: "",
+        location: "Zoom",
+        time: "11 AM CEST",
+        link: "https://www.eventbrite.com/e/hubcap-call-3-inno-2nd-qa-webinar-tickets-152073655397?aff=erelexpmlt",
         recordingLink: "",
       },
     },

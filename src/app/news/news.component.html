@@ -20,12 +20,12 @@
     <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
   </div>
 
-  <div *ngIf="!loading" class="columns is-multiline">
+  <div class="columns is-multiline hidden-fade-in hidden-fade-in-news">
     <div
       *ngFor="let article of articles; let i = index"
       class="column is-full u-margin-bottom-big"
     >
-      <div class="news-item hidden-fade-in hidden-fade-in-news">
+      <div class="news-item">
         <h2 class="subtitle news-item__heading">
           <a href="{{ article.url }}" target="_blank"> {{ article.title }}</a>
         </h2>
@@ -106,6 +106,29 @@
         </div>
       </div>
     </div>
+  </div>
+  <div *ngIf="loading && articles.length > 0" class="wrapper--loading">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div>
+  <div
+    *ngIf="!allTweetsLoaded && !loading"
+    class="u-center-text wrapper__load-more"
+  >
+    <a
+      href="javascript:void(0)"
+      (click)="loadMoreTweets()"
+      class="btn-text btn-text--blue"
+    >
+      Load More
+    </a>
+  </div>
+  <div
+    *ngIf="allTweetsLoaded"
+    class="u-center-text u-margin-top-medium u-margin-bottom-medium"
+  >
+    <p class="paragraph paragraph--big">
+      Looks like there are no other news beyond this point!
+    </p>
   </div>
 </div>
 <div

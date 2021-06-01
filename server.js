@@ -142,6 +142,85 @@ app.post("/twitter", async (req, res) => {
   });
 });
 
+app.post("/twitter/:untilId", async (req, res) => {
+  let allTweets = [];
+  let allMedia = [];
+  const headers = {
+    authorization: `Bearer ${process.env.TWITTER_API_BEARER_TOKEN}`,
+  };
+
+  let url;
+  if (req.params.untilId === "latest") {
+    url = process.env.TWITTER_API_URL;
+  } else {
+    url = `${process.env.TWITTER_API_URL}&until_id=${req.params.untilId}`;
+  }
+
+  const result = await axios.get(url, {
+    headers,
+  });
+
+  if (result.data.data) {
+    allTweets = [...result.data.data];
+    if (result.data.includes.media) {
+      allMedia = [...result.data.includes.media];
+    }
+  } else {
+    return res.send({
+      newsItems,
+    });
+  }
+
+  let newsItems = [];
+  try {
+    allTweets.forEach((tweet) => {
+      if (tweet.text.length > 10) {
+        newsItems.push({
+          id: tweet.id,
+          description: tweet.text.replace(/amp;/g, ""),
+          date: tweet.created_at,
+          media_key: tweet.attachments ? tweet.attachments.media_keys[0] : null, // Only 1st image
+        });
+      }
+    });
+  } catch (e) {
+    console.log(e);
+    return res.status(500).send({ message: e.message });
+  }
+
+  newsItems = newsItems.map((item) => {
+    if (item.date) {
+      let thumbnail;
+
+      if (item.media_key) {
+        allMedia.forEach((mediaItem) => {
+          if (mediaItem.media_key === item.media_key) {
+            thumbnail = mediaItem.url;
+          }
+        });
+      }
+
+      return {
+        id: item.id,
+        title: "HUBCAP Twitter Post",
+        summary: item.description,
+        date: new Date(item.date),
+        displayDate: item.date.split("T")[0].replace(/-/g, "."),
+        type: "TWEET ITEM",
+        url: `https://twitter.com/hubcap_eu/status/${item.id}`,
+        modalTarget: item.id,
+        buttonText: "See Twiiter Post",
+        thumbnail: thumbnail ? thumbnail : "",
+        thumbnailAlt: "Image from HUBCAP's Twitter",
+      };
+    }
+  });
+
+  res.send({
+    newsItems,
+  });
+});
+
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname + "/dist/hubcap/index.html"));
 });

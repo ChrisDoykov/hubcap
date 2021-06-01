@@ -10,7 +10,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 export class NewsComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer, private http: HttpClient) {}
 
-  articles = [
+  localArticles = [
     {
       title: "Call #3 INNOVATE 1st Matchmaking Event",
       summary:
@@ -237,7 +237,17 @@ export class NewsComponent implements OnInit {
     },
   ];
 
+  articles = [];
+
   loading = false;
+
+  scrolledToLast = false;
+
+  allTweetsLoaded = false;
+
+  untilId = "latest";
+
+  currentLastDate: Date;
 
   openModal(article) {
     const target = article.modalTarget;
@@ -252,27 +262,123 @@ export class NewsComponent implements OnInit {
     $target.classList.remove("is-active");
   }
 
+  loadMoreTweets() {
+    if (!this.allTweetsLoaded) {
+      this.loading = true;
+      this.http
+        .post<{ newsItems: any }>(`/twitter/${this.untilId}`, {})
+        .subscribe(
+          (response) => {
+            if (response.newsItems.length <= 0) {
+              this.loading = false;
+              return (this.allTweetsLoaded = true);
+            }
+            if (
+              response.newsItems[response.newsItems.length - 1].id ===
+              "1251148196299993093"
+            ) {
+              this.allTweetsLoaded = true;
+            }
+            this.loading = false;
+            response.newsItems = response.newsItems.map((item) => ({
+              ...item,
+              date: new Date(item.date),
+            }));
+            this.untilId = response.newsItems[response.newsItems.length - 1].id;
+            this.currentLastDate =
+              response.newsItems[response.newsItems.length - 1].date;
+            if (this.currentLastDate) {
+              let articlesToAdd = this.localArticles.filter(
+                (article) =>
+                  article.date.getTime() >= this.currentLastDate.getTime()
+              );
+              this.articles = [
+                ...this.articles,
+                ...articlesToAdd,
+                ...response.newsItems,
+              ];
+
+              this.localArticles = this.localArticles.filter(
+                (article) => !this.articles.includes(article)
+              );
+            } else {
+              this.articles = [...this.localArticles, ...response.newsItems];
+            }
+
+            this.articles = this.articles.sort(
+              (a: any, b: any) => b.date - a.date
+            );
+            this.scrolledToLast = false;
+          },
+          (error) => {
+            this.loading = false;
+            this.articles = [...this.localArticles];
+            console.log(error);
+          }
+        );
+      this.onResize();
+      this.checkPosition();
+    }
+  }
+
   ngOnInit() {
     document.title = "Latest News | HUBCAP";
     if (document.getElementById("hero-title") !== null) {
       document.getElementById("hero-title").textContent = "Latest News";
     }
     this.loading = true;
-    this.http.post<{ newsItems: any }>("/twitter", {}).subscribe(
-      (response) => {
-        this.loading = false;
-        response.newsItems = response.newsItems.map((item) => ({
-          ...item,
-          date: new Date(item.date),
-        }));
-        this.articles = [...this.articles, ...response.newsItems];
-        this.articles = this.articles.sort((a: any, b: any) => b.date - a.date);
-      },
-      (error) => {
-        this.loading = false;
-        console.log(error);
-      }
-    );
+    this.http
+      .post<{ newsItems: any }>(`/twitter/${this.untilId}`, {})
+      .subscribe(
+        (response) => {
+          if (response.newsItems.length <= 0) {
+            this.allTweetsLoaded = true;
+            this.loading = false;
+          } else {
+            if (
+              response.newsItems[response.newsItems.length - 1].id ===
+              "1251148196299993093"
+            ) {
+              this.allTweetsLoaded = true;
+            }
+            this.loading = false;
+            response.newsItems = response.newsItems.map((item) => ({
+              ...item,
+              date: new Date(item.date),
+            }));
+            this.untilId = response.newsItems[response.newsItems.length - 1].id;
+            this.currentLastDate =
+              response.newsItems[response.newsItems.length - 1].date;
+
+            if (this.currentLastDate) {
+              let articlesToAdd = this.localArticles.filter(
+                (article) =>
+                  article.date.getTime() >= this.currentLastDate.getTime()
+              );
+
+              this.articles = [
+                ...this.articles,
+                ...articlesToAdd,
+                ...response.newsItems,
+              ];
+
+              this.localArticles = this.localArticles.filter(
+                (article) => !this.articles.includes(article)
+              );
+            } else {
+              this.articles = [...this.localArticles, ...response.newsItems];
+            }
+            this.articles = this.articles.sort(
+              (a: any, b: any) => b.date - a.date
+            );
+          }
+        },
+        (error) => {
+          this.loading = false;
+          this.articles = [...this.localArticles];
+          console.log(error);
+        }
+      );
 
     this.onResize();
     this.checkPosition();

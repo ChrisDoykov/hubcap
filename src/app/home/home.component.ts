@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         "Receive €1000 lump sum & support services",
         "Sell your assets in the HUBCAP platform",
       ],
-      buttonText: "APPLY NOW",
+      buttonText: "READ MORE",
     },
     {
       imageURL: "../../assets/res/images/HUBCAP_EXPERIMENT.jpg",
@@ -234,10 +234,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   checkPosition() {
-    let positionFromTop = this.blueText.nativeElement.getBoundingClientRect()
-      .top;
-    let positionCounterFromTop = this.counters.nativeElement.getBoundingClientRect()
-      .top;
+    let positionFromTop =
+      this.blueText.nativeElement.getBoundingClientRect().top;
+    let positionCounterFromTop =
+      this.counters.nativeElement.getBoundingClientRect().top;
 
     if (positionFromTop - this.windowHeight <= 0 && !this.animationHasRan) {
       this.animationHasRan = true;

@@ -135,17 +135,13 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: "registerWhenStable:30000",
+      registrationStrategy: "registerImmediately",
     }),
   ],
   providers: [
     {
       provide: SWIPER_CONFIG,
       useValue: DEFAULT_SWIPER_CONFIG,
-    },
-    {
-      provide: SwRegistrationOptions,
-      useFactory: () => ({ registrationStrategy: "registerImmediately" }),
     },
   ],
   bootstrap: [AppComponent],

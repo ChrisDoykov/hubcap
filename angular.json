@@ -22,14 +22,17 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/manifest.webmanifest"
+            ],
             "styles": [
-              "src/assets/res/fonts/linea/basic/iconfont.css",
-              "src/assets/res/fonts/linea/basic-elab/styles.css",
-              "src/assets/res/fonts/linea/weather/styles.css",
-              "src/assets/res/fonts/linea/ecom/style.css",
-              "src/assets/res/fonts/linea/arrows/styles.css",
+              "src/fonts/linea/basic/iconfont.css",
+              "src/fonts/linea/basic-elab/styles.css",
+              "src/fonts/linea/weather/styles.css",
+              "src/fonts/linea/ecom/style.css",
+              "src/fonts/linea/arrows/styles.css",
               "./node_modules/bulma/css/bulma.min.css",
               "./node_modules/bulma-extensions/bulma-checkradio/dist/css/bulma-checkradio.min.css",
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
@@ -39,7 +42,9 @@
             "stylePreprocessorOptions": {
               "includePaths": ["src/styles"]
             },
-            "scripts": []
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -49,14 +54,20 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
+              "aot": true,
               "buildOptimizer": true,
               "budgets": [
                 {
@@ -97,7 +108,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/manifest.webmanifest"
+            ],
             "styles": ["src/styles.scss"],
             "scripts": []
           }

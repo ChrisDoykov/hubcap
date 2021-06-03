@@ -60,6 +60,11 @@ import { PressReleaseArticle4Component } from "./press-release-articles/press-re
 import { PressReleaseArticle5Component } from "./press-release-articles/press-release-article5/press-release-article5.component";
 import { EventsComponent } from "./events/events.component";
 import { LinkifyPipe } from "./linkify.pipe";
+import {
+  ServiceWorkerModule,
+  SwRegistrationOptions,
+} from "@angular/service-worker";
+import { environment } from "../environments/environment";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -126,11 +131,21 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       useFactory: adapterFactory,
     }),
     MomentModule,
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: "registerWhenStable:30000",
+    }),
   ],
   providers: [
     {
       provide: SWIPER_CONFIG,
       useValue: DEFAULT_SWIPER_CONFIG,
+    },
+    {
+      provide: SwRegistrationOptions,
+      useFactory: () => ({ registrationStrategy: "registerImmediately" }),
     },
   ],
   bootstrap: [AppComponent],

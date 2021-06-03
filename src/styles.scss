@@ -1,35 +1,35 @@
-@import "./assets/res/sass/abstracts/functions";
-@import "./assets/res/sass/abstracts/mixins";
-@import "./assets/res/sass/abstracts/variables";
+@import "./sass/abstracts/functions";
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
 
-@import "./assets/res/sass/base/base";
-@import "./assets/res/sass/base/utilities";
-@import "./assets/res/sass/base/animations";
-@import "./assets/res/sass/base/typography";
+@import "./sass/base/base";
+@import "./sass/base/utilities";
+@import "./sass/base/animations";
+@import "./sass/base/typography";
 
-@import "./assets/res/sass/components/feature-box";
-@import "./assets/res/sass/components/hero";
-@import "./assets/res/sass/components/button";
-@import "./assets/res/sass/components/bg-video";
-@import "./assets/res/sass/components/bg-image";
-@import "./assets/res/sass/components/hub";
-@import "./assets/res/sass/components/figure";
-@import "./assets/res/sass/components/press-release-box";
-@import "./assets/res/sass/components/newsletter-box";
-@import "./assets/res/sass/components/press-release";
-@import "./assets/res/sass/components/news-item";
-@import "./assets/res/sass/components/tech";
-@import "./assets/res/sass/components/logo-grid";
-@import "./assets/res/sass/components/popup";
-@import "./assets/res/sass/components/signup-form";
-@import "./assets/res/sass/components/calendar";
-@import "./assets/res/sass/components/events-list";
+@import "./sass/components/feature-box";
+@import "./sass/components/hero";
+@import "./sass/components/button";
+@import "./sass/components/bg-video";
+@import "./sass/components/bg-image";
+@import "./sass/components/hub";
+@import "./sass/components/figure";
+@import "./sass/components/press-release-box";
+@import "./sass/components/newsletter-box";
+@import "./sass/components/press-release";
+@import "./sass/components/news-item";
+@import "./sass/components/tech";
+@import "./sass/components/logo-grid";
+@import "./sass/components/popup";
+@import "./sass/components/signup-form";
+@import "./sass/components/calendar";
+@import "./sass/components/events-list";
 
-@import "./assets/res/sass/layout/grid";
-@import "./assets/res/sass/layout/call-page";
-@import "./assets/res/sass/layout/content-page";
+@import "./sass/layout/grid";
+@import "./sass/layout/call-page";
+@import "./sass/layout/content-page";
 
-@import "./assets/res/sass/pages/home";
+@import "./sass/pages/home";
 
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
 

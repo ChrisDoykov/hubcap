@@ -103,34 +103,34 @@
     }
 
     &--austria {
-      background-image: url("../../images/vv/20150303a_ViF-Gebaeude-Inffeldgasse_IMG_9449-glossy\ LOGO-2000.jpg");
+      background-image: url("../../assets/res/images/vv/20150303a_ViF-Gebaeude-Inffeldgasse_IMG_9449-glossy\ LOGO-2000.jpg");
     }
     &--denmark {
-      background-image: url("../../images/au/csm_Edison_JR_0939_6bb3281da6.jpg");
+      background-image: url("../../assets/res/images/au/csm_Edison_JR_0939_6bb3281da6.jpg");
     }
 
     &--sweden {
-      background-image: url("../../images/kth/_MG_6328_retusch.jpg");
+      background-image: url("../../assets/res/images/kth/_MG_6328_retusch.jpg");
     }
 
     &--germany {
-      background-image: url("../../images/fortiss/Fortiss_Innenhof.jpg");
+      background-image: url("../../assets/res/images/fortiss/Fortiss_Innenhof.jpg");
     }
 
     &--italy {
-      background-image: url("../../images/fbk/CF034992\ 1.jpg");
+      background-image: url("../../assets/res/images/fbk/CF034992\ 1.jpg");
     }
 
     &--romania {
-      background-image: url("../../images/lucian/inginerie.jpg");
+      background-image: url("../../assets/res/images/lucian/inginerie.jpg");
     }
 
     &--uk {
-      background-image: url("../../images/unew/67503.jpg");
+      background-image: url("../../assets/res/images/unew/67503.jpg");
       background-position: right;
 
       @include respond(tab-port) {
-        background-image: url("../../images/unew/usb.jpg");
+        background-image: url("../../assets/res/images/unew/usb.jpg");
         background-position: center;
         background-size: cover;
         min-height: 30rem;

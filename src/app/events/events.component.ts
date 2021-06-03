@@ -79,9 +79,9 @@ export class EventsComponent implements OnInit {
       meta: {
         description:
           "Join us in our 2nd live Matchmaking event for Call #3 INNOVATE on 9 June 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
-        location: "MS Teams",
-        time: "TBC",
-        link: "",
+        location: "Zoom",
+        time: "11:00 AM - 3:00 PM",
+        link: "https://www.linkedin.com/events/6800734582527279104/",
         recordingLink: "",
       },
     },

@@ -10,7 +10,7 @@
     "browser"
   ],
   "scope": "/",
-  "start_url": "/",
+  "start_url": "/?app=true",
   "name": "HUBCAP EU",
   "short_name": "HUBCAP",
   "icons": [

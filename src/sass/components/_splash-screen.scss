@@ -1,0 +1,118 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.splash-screen {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-primary;
+  z-index: 100000;
+  transition: transform 1s;
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    margin-left: -10rem;
+
+    &__logo {
+      max-width: 65rem;
+      @include center_with_transform;
+    }
+
+    &__title {
+      font-size: 7rem;
+      color: $color-white;
+      text-align: center;
+      align-self: center;
+
+      @include respond(tab-port) {
+        font-size: 5rem;
+        margin-top: -5rem;
+      }
+
+      span {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+
+          @include respond(tab-port) {
+            @media screen and (max-width: 367px) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__logo {
+    @include center_with_transform;
+    max-width: 70vw;
+  }
+
+  &__loading {
+    align-self: center;
+    margin-top: 10rem;
+    height: 10rem;
+    width: auto;
+  }
+
+  &--hidden {
+    transform: translateX(-100vw);
+
+    @include respond(tab-port) {
+      transform: translateY(-100vh);
+    }
+  }
+
+  .bottom-right-corner {
+    max-width: 40rem;
+    height: 30rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+
+    #blue {
+      overflow: hidden;
+      max-height: 30rem;
+      max-width: 40rem;
+      transform: translate(6rem, 18rem);
+    }
+    #green {
+      overflow: hidden;
+      max-height: 13rem;
+      max-width: 20rem;
+      transform: translate(0.1rem, 18rem);
+    }
+
+    @include respond(tab-land) {
+      #blue {
+        overflow: hidden;
+        max-height: 30rem;
+        max-width: 40rem;
+        transform: translate(5rem, 24rem);
+      }
+      #green {
+        overflow: hidden;
+        max-height: 30rem;
+        max-width: 30rem;
+        transform: translate(25rem, 7rem);
+      }
+    }
+    @include respond(phone) {
+      #blue {
+        transform: translate(1rem, 23rem);
+      }
+      #green {
+        transform: translate(22rem, 4rem);
+      }
+    }
+  }
+}

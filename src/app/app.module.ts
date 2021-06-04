@@ -65,6 +65,7 @@ import {
   SwRegistrationOptions,
 } from "@angular/service-worker";
 import { environment } from "../environments/environment";
+import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -111,6 +112,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     PressReleaseArticle5Component,
     EventsComponent,
     LinkifyPipe,
+    SplashScreenComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,29 @@
+<section
+  class="splash-screen"
+  (window:resize)="onResize()"
+  [ngClass]="{ 'splash-screen--hidden': hidden }"
+  *ngIf="(!shown && !startedAsApp) || (!shown && startedAsApp && width >= 900)"
+>
+  <app-header></app-header>
+  <img
+    *ngIf="width < 900"
+    class="splash-screen__logo u-slide-in-bottom-centered"
+    src="../../assets/res/images/logo_vertical.webp"
+    onerror="this.onerror=null;
+          this.src='../../assets/res/images/logo_vertical.png'"
+    alt="HUBCAP Logo"
+  />
+  <img
+    *ngIf="width >= 900"
+    class="splash-screen__top__logo u-slide-in-bottom-centered"
+    src="../../assets/res/images/logo_hubcap.webp"
+    onerror="this.onerror=null;
+          this.src='../../assets/res/images/logo_hubcap.png'"
+    alt="HUBCAPv Logo"
+  />
+
+  <div class="bottom-right-corner">
+    <img id="blue" src="../../assets/res/svg/triangle_blue.svg" alt="" />
+    <img id="green" src="../../assets/res/svg/triangle_green.svg" alt="" />
+  </div>
+</section>

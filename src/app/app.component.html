@@ -1,3 +1,4 @@
+<app-splash-screen></app-splash-screen>
 <div class="wrapper" (window:resize)="onResize()">
   <app-header></app-header>
   <section class="banner-line">
@@ -16,10 +17,10 @@
       *ngIf="width < 600"
       id="vertical"
       routerLink="/"
-      src="../assets/res/images/logo_hubcap.png"
+      src="../assets/res/images/logo_hubcap.webp"
       alt="Hubcap Logo"
       onerror="this.onerror=null;
-          this.src='../assets/res/images/logo_vertical.png'"
+          this.src='../assets/res/images/logo_hubcap.png'"
     />
     <div class="banner-line__heading" *ngIf="width >= 600">
       <p>

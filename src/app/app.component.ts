@@ -116,14 +116,19 @@ export class AppComponent implements OnInit {
     } else {
       document.getElementById("backToTop").style.display = "none";
     }
-
+    
     this.popupDismiss = localStorage.getItem("popup_dismissed")
       ? Number.parseInt(localStorage.getItem("popup_dismissed"))
       : 0;
-    if (this.popupDismiss !== 1 && !window.location.href.includes("signup")) {
-      this.popup.nativeElement.classList.remove("popup-newsletter--hidden");
-      this.popup.nativeElement.classList.add("popup-newsletter--shown");
-    }
+
+    setTimeout(() => {
+      if (this.popupDismiss !== 1 && !window.location.href.includes("signup")) {
+        this.popup.nativeElement.classList.remove("popup-newsletter--hidden");
+        this.popup.nativeElement.classList.add("popup-newsletter--shown");
+      }
+    }, 6000);
+
+    
 
     // REMOVE AFTER FINISHED POPUP
     // this.popupDismiss = 0;

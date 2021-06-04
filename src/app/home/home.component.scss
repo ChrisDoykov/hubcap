@@ -230,9 +230,11 @@
       font-size: 10rem;
       color: $color-teal;
       transition: all 0.2s;
+    }
 
-      &:hover,
-      &:focus {
+    &:hover,
+    &:focus {
+      .service__icon {
         color: $color-primary;
         transform: translateY(-1rem);
       }

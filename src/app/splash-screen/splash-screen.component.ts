@@ -25,7 +25,7 @@ export class SplashScreenComponent implements OnInit {
       setTimeout(() => {
         this.shown = true;
       }, 1000);
-    }, 2000);
+    }, 3000);
   }
 
   onResize() {

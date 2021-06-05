@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { DeviceDetectorService } from "ngx-device-detector";
 
 @Component({
   selector: "app-splash-screen",
@@ -6,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./splash-screen.component.scss"],
 })
 export class SplashScreenComponent implements OnInit {
-  constructor() {}
+  constructor(private deviceService: DeviceDetectorService) {}
 
   width: number;
   windowHeight: number;
@@ -15,7 +16,10 @@ export class SplashScreenComponent implements OnInit {
   startedAsApp: boolean = false;
 
   ngOnInit(): void {
-    if (window.location.href.toString().includes("app=true")) {
+    if (
+      window.location.href.toString().includes("app=true") &&
+      this.deviceService.isMobile()
+    ) {
       this.startedAsApp = true;
     }
 

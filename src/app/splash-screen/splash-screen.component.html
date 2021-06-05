@@ -2,7 +2,7 @@
   class="splash-screen"
   (window:resize)="onResize()"
   [ngClass]="{ 'splash-screen--hidden': hidden }"
-  *ngIf="(!shown && !startedAsApp) || (!shown && startedAsApp && width >= 900)"
+  *ngIf="!shown && !startedAsApp"
 >
   <app-header></app-header>
   <img

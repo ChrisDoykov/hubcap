@@ -7,11 +7,15 @@
   flex-direction: column;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: $color-primary;
   z-index: 100000;
   transition: transform 1s;
+
+  .top-left-triangles {
+    position: absolute;
+  }
 
   &__top {
     display: flex;
@@ -20,7 +24,10 @@
 
     &__logo {
       max-width: 65rem;
-      @include center_with_transform;
+      align-self: center;
+      margin: auto;
+      // margin-left: 50%;
+      // @include center_with_transform;
     }
 
     &__title {
@@ -51,7 +58,9 @@
   }
 
   &__logo {
-    @include center_with_transform;
+    // @include center_with_transform;
+    align-self: center;
+    margin: auto;
     max-width: 70vw;
   }
 

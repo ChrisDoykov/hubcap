@@ -150,20 +150,16 @@
       controls
     >
       <source
-        src="../../assets/res/videos/HUBCAP_MAIN_LONG_NOSUBS.webm"
-        type="video/webm"
-      />
-      <source
-        src="../../assets/res/videos/HUBCAP_MAIN_LONG_NOSUBS.mp4"
+        src="../../assets/res/videos/HUBCAP_MAIN_LONG_SUBS.mp4"
         type="video/mp4"
       />
-      <track
+      <!-- <track
         label="English"
         kind="subtitles"
         srclang="en"
         src="../../assets/res/videos/hubcap_long_main_subtitles.vtt"
         default
-      />
+      /> -->
       Your browser does not support embedded videos.
     </video>
   </section>
@@ -236,7 +232,13 @@
     <!-- <h2 class="title is-2">Open Calls</h2> -->
     <swiper [config]="config">
       <div class="slide h-100" *ngFor="let slide of slides; let i = index">
-        <img src="{{ slide.imageURL }}" class="slide__bg" alt="" />
+        <!-- <img src="{{ slide.imageURL }}" class="slide__bg" alt="" /> -->
+        <img
+          src="{{ slide.imageURL }}"
+          class="slide__bg"
+          default="{{ slide.backupImageURL }}"
+          alt="{{ slide.heading }}"
+        />
         <div class="slide__content">
           <div class="box">
             <h3 class="heading-tertiary">{{ slide.heading }}</h3>

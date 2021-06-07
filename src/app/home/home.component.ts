@@ -65,7 +65,8 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   slides = [
     {
-      imageURL: "../../assets/res/images/HUBCAP_PULL.jpg",
+      imageURL: "../../assets/res/images/HUBCAP_PULL.webp",
+      backupImageURL: "../../assets/res/images/HUBCAP_PULL.jpg",
       heading: "CALL #1.3 PULL",
       lines: [
         "Receive €1000 lump sum & support services",
@@ -74,7 +75,8 @@ export class HomeComponent implements OnInit, OnDestroy {
       buttonText: "READ MORE",
     },
     {
-      imageURL: "../../assets/res/images/HUBCAP_EXPERIMENT.jpg",
+      imageURL: "../../assets/res/images/HUBCAP_EXPERIMENT.webp",
+      backupImageURL: "../../assets/res/images/HUBCAP_EXPERIMENT.jpg",
       heading: "CALL #2.2 EXPERIMENT",
       lines: [
         "European SME?",
@@ -85,7 +87,8 @@ export class HomeComponent implements OnInit, OnDestroy {
       buttonText: "READ MORE",
     },
     {
-      imageURL: "../../assets/res/images/HUBCUP_INNOVATE.jpg",
+      imageURL: "../../assets/res/images/HUBCAP_INNOVATE.webp",
+      backupImageURL: "../../assets/res/images/HUBCAP_INNOVATE.jpg",
       heading: "CALL #3 INNOVATE",
       lines: [
         "Take part in an innovative application",

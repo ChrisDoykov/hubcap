@@ -9,16 +9,14 @@
     *ngIf="width < 900"
     class="splash-screen__logo u-slide-in-bottom"
     src="../../assets/res/images/logo_vertical.webp"
-    onerror="this.onerror=null;
-          this.src='../../assets/res/images/logo_vertical.png'"
+    default="../../assets/res/images/logo_vertical.png"
     alt="HUBCAP Logo"
   />
   <img
     *ngIf="width >= 900"
     class="splash-screen__top__logo u-slide-in-bottom"
     src="../../assets/res/images/logo_hubcap.webp"
-    onerror="this.onerror=null;
-          this.src='../../assets/res/images/logo_hubcap.png'"
+    default="../../assets/res/images/logo_hubcap.png"
     alt="HUBCAPv Logo"
   />
 

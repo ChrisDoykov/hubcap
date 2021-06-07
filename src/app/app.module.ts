@@ -66,6 +66,7 @@ import {
 } from "@angular/service-worker";
 import { environment } from "../environments/environment";
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
+import { ImagePreloadDirective } from './image-preload.directive';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -113,6 +114,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     EventsComponent,
     LinkifyPipe,
     SplashScreenComponent,
+    ImagePreloadDirective,
   ],
   imports: [
     BrowserModule,

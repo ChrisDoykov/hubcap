@@ -65,8 +65,8 @@ import {
   SwRegistrationOptions,
 } from "@angular/service-worker";
 import { environment } from "../environments/environment";
-import { SplashScreenComponent } from './splash-screen/splash-screen.component';
-import { ImagePreloadDirective } from './image-preload.directive';
+import { SplashScreenComponent } from "./splash-screen/splash-screen.component";
+import { ImagePreloadDirective } from "./image-preload.directive";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -135,11 +135,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       useFactory: adapterFactory,
     }),
     MomentModule,
-    ServiceWorkerModule.register("ngsw-worker.js", {
+    ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: "registerImmediately",
+      registrationStrategy: 'registerImmediately'
     }),
   ],
   providers: [

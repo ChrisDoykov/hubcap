@@ -1,6 +1,7 @@
 {
   "short_name": "HUBCAP",
   "name": "HUBCAP EU",
+  "scope": "/",
   "lang": "en",
   "description": "HUBCAP is your one-stop-shop for embracing digital innovation using model-based design technology for Cyber-Physical Systems.",
   "start_url": "/?app=true",
@@ -11,79 +12,97 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "./assets/android-icon-192x192-dunplab-manifest-50208.png",
+      "src": "./assets/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "./assets/icons/icon-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "./assets/icons/icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "./assets/icons/android-icon-192x192-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/apple-icon-180x180-dunplab-manifest-50208.png",
+      "src": "./assets/icons/apple-icon-180x180-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "180x180",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/apple-icon-152x152-dunplab-manifest-50208.png",
+      "src": "./assets/icons/apple-icon-152x152-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "152x152",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/apple-icon-144x144-dunplab-manifest-50208.png",
+      "src": "./assets/icons/apple-icon-144x144-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "144x144",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/apple-icon-120x120-dunplab-manifest-50208.png",
+      "src": "./assets/icons/apple-icon-120x120-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "120x120",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/apple-icon-114x114-dunplab-manifest-50208.png",
+      "src": "./assets/icons/apple-icon-114x114-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "114x114",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/favicon-96x96-dunplab-manifest-50208.png",
+      "src": "./assets/icons/favicon-96x96-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/apple-icon-76x76-dunplab-manifest-50208.png",
+      "src": "./assets/icons/apple-icon-76x76-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "76x76",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/apple-icon-72x72-dunplab-manifest-50208.png",
+      "src": "./assets/icons/apple-icon-72x72-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/apple-icon-60x60-dunplab-manifest-50208.png",
+      "src": "./assets/icons/apple-icon-60x60-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "60x60",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/apple-icon-57x57-dunplab-manifest-50208.png",
+      "src": "./assets/icons/apple-icon-57x57-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "57x57",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/favicon-32x32-dunplab-manifest-50208.png",
+      "src": "./assets/icons/favicon-32x32-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "32x32",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/favicon-16x16-dunplab-manifest-50208.png",
+      "src": "./assets/icons/favicon-16x16-dunplab-manifest-50208.png",
       "type": "image/png",
       "sizes": "16x16",
       "purpose": "maskable any"

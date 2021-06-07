@@ -18,7 +18,7 @@ export class ExpertsComponent implements OnInit {
 
   openApplyPage() {
     window.open(
-      "https://www.f6s.com/1callofexpertsexpressionofinterest/apply",
+      "https://www.f6s.com/innovate-call-for-expression-of-interest/apply",
       "_blank"
     );
   }

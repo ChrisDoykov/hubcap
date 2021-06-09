@@ -67,6 +67,9 @@ import {
 import { environment } from "../environments/environment";
 import { SplashScreenComponent } from "./splash-screen/splash-screen.component";
 import { ImagePreloadDirective } from "./image-preload.directive";
+import { PressReleaseArticle6Component } from "./press-release-articles/press-release-article6/press-release-article6.component";
+import { PressReleaseArticle7Component } from "./press-release-articles/press-release-article7/press-release-article7.component";
+import { PressReleaseArticle8Component } from "./press-release-articles/press-release-article8/press-release-article8.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -115,6 +118,9 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     LinkifyPipe,
     SplashScreenComponent,
     ImagePreloadDirective,
+    PressReleaseArticle6Component,
+    PressReleaseArticle7Component,
+    PressReleaseArticle8Component,
   ],
   imports: [
     BrowserModule,
@@ -135,11 +141,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       useFactory: adapterFactory,
     }),
     MomentModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
+    ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerImmediately'
+      registrationStrategy: "registerImmediately",
     }),
   ],
   providers: [

@@ -29,7 +29,7 @@ export class SplashScreenComponent implements OnInit {
       setTimeout(() => {
         this.shown = true;
       }, 1000);
-    }, 3000);
+    }, 2000);
   }
 
   onResize() {

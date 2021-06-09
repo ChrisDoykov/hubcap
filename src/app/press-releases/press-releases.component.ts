@@ -19,8 +19,14 @@ export class PressReleasesComponent implements OnInit {
       this.pressRelease = "1-2";
     } else if (url.includes("call1-3")) {
       this.pressRelease = "1-3";
+    } else if (url.includes("call1-4")) {
+      this.pressRelease = "1-4";
+    } else if (url.includes("call1-5")) {
+      this.pressRelease = "1-5";
     } else if (url.includes("call2-1")) {
       this.pressRelease = "2-1";
+    } else if (url.includes("call2-2")) {
+      this.pressRelease = "2-2";
     } else if (url.includes("call3")) {
       this.pressRelease = "3";
     } else {

@@ -220,8 +220,84 @@ export class ResourcesComponent implements OnInit {
       modalTarget: "call-1.3-social-4",
     },
   ];
+  items_1_4 = [
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_1.jpg",
+      modalTarget: "call-1.3-social-1",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_2.jpg",
+      modalTarget: "call-1.3-social-2",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_3.jpg",
+      modalTarget: "call-1.3-social-3",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_4.jpg",
+      modalTarget: "call-1.3-social-4",
+    },
+  ];
+  items_1_5 = [
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_1.jpg",
+      modalTarget: "call-1.3-social-1",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_2.jpg",
+      modalTarget: "call-1.3-social-2",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_3.jpg",
+      modalTarget: "call-1.3-social-3",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_4.jpg",
+      modalTarget: "call-1.3-social-4",
+    },
+  ];
 
   items_2_1 = [
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Funding.jpg",
+      modalTarget: "call-2.1-social-1",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Join.jpg",
+      modalTarget: "call-2.1-social-2",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Tools.jpg",
+      modalTarget: "call-2.1-social-3",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Funding.jpg",
+      modalTarget: "call-2.1-social-4",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Join.jpg",
+      modalTarget: "call-2.1-social-5",
+    },
+    {
+      imageUrl:
+        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Tools.jpg",
+      modalTarget: "call-2.1-social-6",
+    },
+  ];
+  items_2_2 = [
     {
       imageUrl:
         "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Funding.jpg",

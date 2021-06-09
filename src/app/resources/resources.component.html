@@ -794,7 +794,7 @@
       <div class="media-kit__items-box columns is-multiline">
         <div
           class="media-kit__item column is-one-third is-full-touch u-center-text"
-          *ngFor="let item of items.slice(6, items.length)"
+          *ngFor="let item of items_1_4"
         >
           <img
             class="modal-button"
@@ -817,7 +817,7 @@
       <div class="media-kit__items-box columns is-multiline">
         <div
           class="media-kit__item column is-one-third is-full-touch u-center-text"
-          *ngFor="let item of items.slice(6, items.length)"
+          *ngFor="let item of items_1_5"
         >
           <img
             class="modal-button"
@@ -865,9 +865,31 @@
     </div>
     <!-- <div class="media-kit__section">
       <h3 class="media-kit__subheading u-center-text">Call #2.2</h3>
-      <span class="heading-tertiary u-is-black-color u-center-text"
-        >Coming soon!</span
-      >
+      <div class="media-kit__items-box columns is-multiline">
+        <div
+          class="
+            media-kit__item
+            column
+            is-one-third is-full-touch
+            u-center-text
+          "
+          *ngFor="let item of items_2_2"
+        >
+          <img
+            class="modal-button"
+            (click)="openModal(item)"
+            attr.data-target="{{ item.modalTarget }}"
+            aria-haspopup="true"
+            src="{{ item.imageUrl }}"
+          />
+          <a
+            class="button button--small button--download"
+            href="{{ item.imageUrl }}"
+            download=""
+            >Download
+          </a>
+        </div>
+      </div>
     </div> -->
     <div class="media-kit__section">
       <h3 class="media-kit__subheading u-center-text">Call #3</h3>

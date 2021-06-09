@@ -345,6 +345,28 @@ export class ResourcesComponent implements OnInit {
       document.getElementById("flyer1.3").click();
     }
 
+    // Call #1.4
+    // else if (url.includes("DocumentationKit-1-4")) {
+    //   document.getElementById("Dkit1-4").click();
+    // } else if (url.includes("Annexes1-4")) {
+    //   document.getElementById("Annexes1-4").click();
+    // } else if (url.includes("press-release#1.4")) {
+    //   document.getElementById("pr#1.4").click();
+    // } else if (url.includes("HUBCAP_CALL1-4_PULL")) {
+    //   document.getElementById("flyer1.4").click();
+    // }
+
+    // Call #1.5
+    // else if (url.includes("DocumentationKit-1-5")) {
+    //   document.getElementById("Dkit1-5").click();
+    // } else if (url.includes("Annexes1-5")) {
+    //   document.getElementById("Annexes1-5").click();
+    // } else if (url.includes("press-release#1.5")) {
+    //   document.getElementById("pr#1.5").click();
+    // } else if (url.includes("HUBCAP_CALL1-5_PULL")) {
+    //   document.getElementById("flyer1.5").click();
+    // }
+
     // Call #2.1
     else if (url.includes("DocumentationKit-2-1")) {
       document.getElementById("Dkit2-1").click();

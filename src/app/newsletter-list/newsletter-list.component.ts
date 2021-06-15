@@ -8,14 +8,14 @@ import { Component, OnInit } from "@angular/core";
 export class NewsletterListComponent implements OnInit {
   constructor() {}
   newsletters = [
-    // {
-    //   month: "June 2021",
-    //   description: `Find out the latest updates in the HUBCAP project, learn about how you can benefit from our INNOVATE open call, find out more about our Call #2.1 EXPERIMENT winners and more in the June 2021 edition of our newsletter!`,
-    //   url: "../../assets/res/files/newsletters/Hubcap_Newsletter_June_2021.pdf",
-    //   thumbnail: "../../assets/res/files/newsletters/thumbnails/N3_thumb.png",
-    //   thumbnailAlt: "June 2021 Newsletter Front Page",
-    //   modalTarget: "N3",
-    // },
+    {
+      month: "June 2021",
+      description: `Find out the latest updates in the HUBCAP project, learn about how you can benefit from our INNOVATE open call, find out more about our Call #2.1 EXPERIMENT winners and more in the June 2021 edition of our newsletter!`,
+      url: "../../assets/res/files/newsletters/Hubcap_Newsletter_June_2021.pdf",
+      thumbnail: "../../assets/res/files/newsletters/thumbnails/N3_thumb.png",
+      thumbnailAlt: "June 2021 Newsletter Front Page",
+      modalTarget: "N3",
+    },
     {
       month: "April 2021",
       description: `Find out the latest updates in the HUBCAP project, learn about how you can benefit from our PULL and INNOVATE open calls and more in the April 2021 edition of our newsletter!`,

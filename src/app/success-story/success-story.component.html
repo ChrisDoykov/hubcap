@@ -1,0 +1,96 @@
+<div class="success-story">
+  <h1
+    class="
+      success-story__title
+      heading-primary
+      heading-primary--underlined
+      heading-primary--underlined-green
+    "
+  >
+    {{ story.title }}
+  </h1>
+
+  <div class="success-story__top-right">
+    <div class="success-story__info-box">
+      <p class="success-story__info-box__line">
+        <b class="u-is-bold">End User: </b>
+        <a
+          href="{{ story.info.endUserWebsite }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ story.info.endUser }}
+        </a>
+      </p>
+      <p class="success-story__info-box__line">
+        <b class="u-is-bold">Technology Provider: </b>
+        <a
+          href="{{ story.info.techProviderWebsite }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ story.info.techProvider }}
+        </a>
+      </p>
+      <p class="success-story__info-box__line">
+        <b class="u-is-bold">DIH: </b>{{ story.info.dih }}
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="success-story__sections"> -->
+  <div
+    class="success-story__section"
+    *ngFor="let section of story.sections.slice(0, 1)"
+  >
+    <h3 class="heading-tertiary success-story__section__heading">
+      {{ section.sectionHeading }}
+    </h3>
+    <p
+      class="paragraph paragraph--big u-margin-bottom-small"
+      *ngFor="let paragraph of section.paragraphs"
+    >
+      {{ paragraph }}
+    </p>
+  </div>
+  <div class="success-story__top-left">
+    <img
+      class="modal-button success-story__image"
+      alt="{{ story.title }}"
+      src="{{ story.image }}"
+      (click)="openModal(story)"
+      attr.data-target="{{ story.title }}"
+      aria-haspopup="true"
+    />
+  </div>
+  <div
+    class="success-story__section"
+    *ngFor="let section of story.sections.slice(1, story.sections.length)"
+  >
+    <h3 class="heading-tertiary success-story__section__heading">
+      {{ section.sectionHeading }}
+    </h3>
+    <p
+      class="paragraph paragraph--big u-margin-bottom-small"
+      *ngFor="let paragraph of section.paragraphs"
+    >
+      {{ paragraph }}
+    </p>
+  </div>
+
+  <!-- </div> -->
+</div>
+
+<div class="modal" id="{{ story.title }}">
+  <div class="modal-background" (click)="closeModal(story)"></div>
+  <div class="modal-content">
+    <figure class="figure">
+      <img src="{{ story.image }}" alt="{{ story.title }}" />
+    </figure>
+  </div>
+  <button
+    class="modal-close is-large"
+    (click)="closeModal(story)"
+    aria-label="close"
+  ></button>
+</div>

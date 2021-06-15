@@ -1,0 +1,110 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.success-story {
+  width: 100%;
+  height: 100%;
+  min-height: 70rem;
+  max-width: 120rem;
+  margin: auto;
+
+  padding: 4rem 2rem;
+  //   padding-bottom: 10rem;
+  //   padding-bottom: ;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+
+  &__top-left {
+    float: left;
+    shape-outside: border-box;
+    border-radius: 3rem;
+    max-width: fit-content;
+    // padding: 2rem;
+    padding-right: 4rem;
+    // padding-bottom: 0;
+    // padding-left: 0;
+
+    @include respond(tab-port) {
+      float: none;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto !important;
+      padding: 0 !important;
+    }
+  }
+  &__top-right {
+    float: right;
+    shape-outside: border-box;
+    border-radius: 3rem;
+    max-width: fit-content;
+    // padding: 2rem;
+    padding-left: 4rem;
+    // padding-bottom: 0;
+    // padding-right: 0;
+
+    @include respond(tab-port) {
+      float: none;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto !important;
+      padding: 0 !important;
+    }
+  }
+
+  &__image {
+    // max-width: 110rem;
+    // margin: 2rem auto !important;
+    margin: 0 !important ;
+    margin-bottom: 2rem !important;
+    border-radius: 3rem;
+    // margin-bottom: 5rem !important;
+    // align-self: center;
+  }
+
+  &__info-box {
+    margin-bottom: 3rem;
+    border: 0.5rem solid $color-green;
+    // background-color: $color-primary;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    color: $color-black;
+    width: fit-content;
+
+    &__line {
+      font-size: 1.9rem;
+    }
+  }
+
+  &__sections {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+  }
+
+  &__section {
+    text-align: justify;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+    &__heading {
+    }
+  }
+}

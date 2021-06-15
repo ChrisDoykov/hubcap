@@ -25,6 +25,8 @@ import { NewsletterListComponent } from "./newsletter-list/newsletter-list.compo
 import { SignupComponent } from "./signup/signup.component";
 import { ExternalComponent } from "./external/external.component";
 import { EventsComponent } from "./events/events.component";
+import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
+import { SuccessStoryComponent } from "./success-story/success-story.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", component: HomeComponent },
@@ -66,6 +68,8 @@ const routes: Routes = [
   { path: "HUBCAP_OC2-1EXPERIMENT/:file", component: ResourcesComponent },
   { path: "HUBCAP_OC2-2EXPERIMENT/:file", component: ResourcesComponent },
   { path: "HUBCAP_OC3INNOVATE/:file", component: ResourcesComponent },
+  { path: "success-stories", component: SuccessStoriesListComponent },
+  { path: "success-stories/:storyUrlName", component: SuccessStoryComponent },
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "/404" },
 ];

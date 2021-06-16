@@ -7,6 +7,7 @@
   min-height: 70rem;
   max-width: 120rem;
   margin: auto;
+  // margin-bottom: 7rem;
 
   padding: 4rem 2rem;
   //   padding-bottom: 10rem;
@@ -16,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 0;
   }
 
   &__title {
@@ -26,15 +28,12 @@
     margin-bottom: 5rem;
   }
 
-  &__top-left {
+  &__image-box {
     float: left;
     shape-outside: border-box;
-    border-radius: 3rem;
+    border-radius: 1rem;
     max-width: fit-content;
-    // padding: 2rem;
     padding-right: 4rem;
-    // padding-bottom: 0;
-    // padding-left: 0;
 
     @include respond(tab-port) {
       float: none;
@@ -49,12 +48,9 @@
   &__top-right {
     float: right;
     shape-outside: border-box;
-    border-radius: 3rem;
+    border-radius: 1rem;
     max-width: fit-content;
-    // padding: 2rem;
     padding-left: 4rem;
-    // padding-bottom: 0;
-    // padding-right: 0;
 
     @include respond(tab-port) {
       float: none;
@@ -68,13 +64,9 @@
   }
 
   &__image {
-    // max-width: 110rem;
-    // margin: 2rem auto !important;
     margin: 0 !important ;
     margin-bottom: 2rem !important;
-    border-radius: 3rem;
-    // margin-bottom: 5rem !important;
-    // align-self: center;
+    border-radius: 1rem;
   }
 
   &__info-box {

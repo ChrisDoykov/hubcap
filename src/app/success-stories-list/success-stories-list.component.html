@@ -38,7 +38,14 @@
           u-margin-bottom-small
         "
       >
-        {{ story.summary }}
+        {{ story.sections[0].paragraphs[0] | slice: 0:200
+        }}<span
+          *ngIf="
+            story.sections[0].paragraphs[0] &&
+            story.sections[0].paragraphs[0].length > 200
+          "
+          >...</span
+        >
       </p>
 
       <img
@@ -53,7 +60,7 @@
         href="/success-stories/{{ story.urlName }}"
         rel="noopener noreferrer"
         class="btn-text btn-text--green success-story-box__link"
-        >Read Story</a
+        >Read More</a
       >
       <div class="success-story-box__bottom">
         <svg

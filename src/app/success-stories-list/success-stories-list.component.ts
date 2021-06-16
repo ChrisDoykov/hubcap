@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { stories } from "./success-stories";
 
 @Component({
   selector: "app-success-stories-list",
@@ -8,15 +9,7 @@ import { Component, OnInit } from "@angular/core";
 export class SuccessStoriesListComponent implements OnInit {
   constructor() {}
 
-  stories = [
-    {
-      title: "Networked Traffic Management",
-      image: "../../assets/res/images/MicrosoftTeams-image.png",
-      urlName: "success-story-sample",
-      summary:
-        "Some sample success story summary - can be both long-ish and very short too, we could also include the image ",
-    },
-  ];
+  stories = stories;
 
   ngOnInit(): void {
     document.title = "Success Stories | HUBCAP";

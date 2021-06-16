@@ -1,4 +1,7 @@
-<div class="success-story">
+<div
+  class="success-story"
+  [ngStyle]="{ 'margin-bottom': story.sections.length <= 2 ? '7rem' : 0 }"
+>
   <h1
     class="
       success-story__title
@@ -53,7 +56,7 @@
       {{ paragraph }}
     </p>
   </div>
-  <div class="success-story__top-left">
+  <div class="success-story__image-box">
     <img
       class="modal-button success-story__image"
       alt="{{ story.title }}"

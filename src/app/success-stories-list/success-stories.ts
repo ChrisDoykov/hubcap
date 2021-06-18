@@ -29,11 +29,27 @@ export const stories = [
       },
     ],
     info: {
-      endUser: "End User Website",
-      endUserWebsite: "https://www.hubcap.eu",
-      techProvider: "Technology Provider Website",
-      techProviderWebsite: "https://www.hubcap.eu",
-      dih: "Digital Innovation Hub",
+      endUsers: [
+        {
+          name: "End User",
+          website: "https://www.hubcap.eu",
+        },
+        {
+          name: "End User",
+          website: "https://www.hubcap.eu",
+        },
+      ],
+      techProviders: [
+        {
+          name: "Technology Provider",
+          website: "https://www.hubcap.eu",
+        },
+        {
+          name: "Technology Provider",
+          website: "https://www.hubcap.eu",
+        },
+      ],
+      dih: { name: "Digital Innovation Hub", website: "https://www.hubcap.eu" },
     },
   },
 ];

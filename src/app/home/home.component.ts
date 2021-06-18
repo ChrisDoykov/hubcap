@@ -12,6 +12,7 @@ import { SwiperOptions } from "swiper";
 import { CountUp } from "countup.js";
 import { Subscription } from "rxjs";
 import { LocationService } from "../location.service";
+import { stories } from "../success-stories-list/success-stories";
 
 @Component({
   selector: "app-home",
@@ -98,6 +99,20 @@ export class HomeComponent implements OnInit, OnDestroy {
       buttonText: "APPLY NOW",
     },
   ];
+
+  stories = stories;
+
+  configStories: SwiperOptions = {
+    pagination: false,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  };
 
   config: SwiperOptions = {
     navigation: {

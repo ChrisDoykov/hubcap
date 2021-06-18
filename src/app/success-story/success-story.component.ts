@@ -24,11 +24,9 @@ export class SuccessStoryComponent implements OnInit {
     ],
     urlName: "",
     info: {
-      endUser: "",
-      endUserWebsite: "",
-      techProvider: "",
-      techProviderWebsite: "",
-      dih: "",
+      endUsers: [{ name: "", website: "" }],
+      techProviders: [{ name: "", website: "" }],
+      dih: { name: "", website: "" },
     },
   };
 

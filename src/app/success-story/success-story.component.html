@@ -16,27 +16,57 @@
   <div class="success-story__top-right">
     <div class="success-story__info-box">
       <p class="success-story__info-box__line">
-        <b class="u-is-bold">End User: </b>
-        <a
-          href="{{ story.info.endUserWebsite }}"
+        <b class="u-is-bold"
+          >End User<span *ngIf="story.info.endUsers.length > 1">s</span>:
+        </b>
+        <span *ngFor="let user of story.info.endUsers; let i = index">
+          <a
+            href="{{ user.website }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ user.name }}</a
+          >
+          <span
+            *ngIf="
+              story.info.endUsers.length > 1 &&
+              i !== story.info.endUsers.length - 1
+            "
+            >,
+          </span>
+        </span>
+      </p>
+      <p class="success-story__info-box__line">
+        <b class="u-is-bold"
+          >Technology Provider<span *ngIf="story.info.techProviders.length > 1"
+            >s</span
+          >:
+        </b>
+        <span *ngFor="let provider of story.info.techProviders; let i = index">
+          <a
+            href="{{ provider.website }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ provider.name }}</a
+          ><span
+            *ngIf="
+              story.info.techProviders.length > 1 &&
+              i !== story.info.techProviders.length - 1
+            "
+            >,<br />
+          </span>
+        </span>
+      </p>
+      <p class="success-story__info-box__line">
+        <b class="u-is-bold">DIH: </b
+        ><a
+          href="{{ story.info.dih.website }}"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {{ story.info.endUser }}
+          {{ story.info.dih.name }}
         </a>
-      </p>
-      <p class="success-story__info-box__line">
-        <b class="u-is-bold">Technology Provider: </b>
-        <a
-          href="{{ story.info.techProviderWebsite }}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ story.info.techProvider }}
-        </a>
-      </p>
-      <p class="success-story__info-box__line">
-        <b class="u-is-bold">DIH: </b>{{ story.info.dih }}
       </p>
     </div>
   </div>

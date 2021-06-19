@@ -23,6 +23,7 @@ export class FooterComponent implements OnInit {
   emailSent = false;
   emailFailed = false;
   width: number;
+  currentYear = new Date().getFullYear();
 
   ngOnInit(): void {
     this.onResize();
@@ -58,9 +59,9 @@ export class FooterComponent implements OnInit {
           document
             .getElementById("emailFooter")
             .setAttribute("disabled", "true");
-          (document.getElementById(
-            "emailFooter"
-          ) as HTMLInputElement).placeholder = "Thank you!";
+          (
+            document.getElementById("emailFooter") as HTMLInputElement
+          ).placeholder = "Thank you!";
           this.emailSent = true;
           document.getElementById("btn-send").classList.add("is-primary");
           document.getElementById("btn-send").classList.remove("is-blue");

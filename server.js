@@ -130,7 +130,7 @@ app.post("/twitter", async (req, res) => {
         type: "TWEET ITEM",
         url: `https://twitter.com/hubcap_eu/status/${item.id}`,
         modalTarget: item.id,
-        buttonText: "See Twiiter Post",
+        buttonText: "See Twitter Post",
         thumbnail: thumbnail ? thumbnail : "",
         thumbnailAlt: "Image from HUBCAP's Twitter",
       };

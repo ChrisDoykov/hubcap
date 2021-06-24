@@ -12,17 +12,30 @@ nav {
     &:not(.navbar-link) {
       padding: 0 2rem;
 
-      @media screen and (max-width: 1025px) {
-        padding: 1.5rem 0.5rem;
+      @media screen and (max-width: 1075px) {
+        font-size: 1.7rem;
+        padding: 0 1.3rem;
+      }
+
+      @media screen and (max-width: 1023px) {
+        padding: 1.5rem 2rem;
+        font-size: 2rem;
       }
     }
 
     &.navbar-link {
       padding-left: 2rem;
 
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1075px) {
+        font-size: 1.7rem;
+        padding-left: 1.3rem;
+      }
+
+      @media screen and (max-width: 1023px) {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        font-size: 2rem;
       }
     }
 

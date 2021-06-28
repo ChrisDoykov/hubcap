@@ -32,11 +32,9 @@ export class WinnersComponent implements OnInit {
     for (let i = 3; i < this.winners.length; i += size) {
       this.rowsOf4.push(this.winners.slice(i, i + size));
     }
-    console.log(this.rowsOf4);
     for (let i = 4; i < this.winners.length; i += sizeOf5) {
       this.rowsOf5.push(this.winners.slice(i, i + sizeOf5));
     }
-    console.log(this.rowsOf5);
 
     this.onResize();
     this.checkPosition();

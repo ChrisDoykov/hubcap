@@ -4,7 +4,7 @@
   class="logo-grid"
 >
   <table *ngIf="width <= 2200">
-    <tr class="individual">
+    <tr>
       <td id="heading-winners">
         <h1 class="title main-title">
           Call<br />
@@ -12,7 +12,7 @@
         </h1>
       </td>
       <td
-        *ngFor="let winner of winners.slice(0, 3)"
+        *ngFor="let winner of rowsOf4[0]"
         class="hidden-fade-in hidden-fade-in-winner"
       >
         <a
@@ -34,178 +34,10 @@
         <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
-    <tr>
+    <tr *ngFor="let row of rowsOf4.slice(1, rowsOf4.length)">
       <td
         id="{{ winner.name === 'Developair Technologies' ? 'developair' : '' }}"
-        *ngFor="let winner of winners.slice(3, 7)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(7, 11)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(11, 15)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(15, 19)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(19, 23)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(23, 27)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(27, 31)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(31, 35)"
+        *ngFor="let winner of row"
         class="hidden-fade-in hidden-fade-in-winner"
       >
         <a
@@ -230,7 +62,7 @@
   </table>
 
   <table *ngIf="width > 2200">
-    <tr class="individual">
+    <tr>
       <td id="heading-winners">
         <h1 class="title main-title">
           Project<br />
@@ -239,7 +71,7 @@
       </td>
       <td
         id="{{ winner.name === 'Developair Technologies' ? 'developair' : '' }}"
-        *ngFor="let winner of winners.slice(0, 4)"
+        *ngFor="let winner of rowsOf5[0]"
         class="hidden-fade-in hidden-fade-in-winner"
       >
         <a
@@ -261,153 +93,9 @@
         <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
       </td>
     </tr>
-    <tr>
+    <tr *ngFor="let row of rowsOf5.slice(1, rowsOf5.length)">
       <td
-        *ngFor="let winner of winners.slice(4, 9)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(9, 14)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(14, 19)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(19, 24)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(24, 29)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(29, 34)"
-        class="hidden-fade-in hidden-fade-in-winner"
-      >
-        <a
-          *ngIf="winner.logo !== ''"
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-        >
-          <img class="logo" src="{{ winner.logo }}" />
-        </a>
-        <a
-          target="_blank"
-          href="{{ winner.website }}"
-          class="heading-tertiary"
-          *ngIf="winner.logo === ''"
-        >
-          {{ winner.name }}
-        </a>
-        <b *ngIf="winner.title !== ''">{{ winner.title }}</b>
-      </td>
-    </tr>
-    <tr>
-      <td
-        *ngFor="let winner of winners.slice(34, 39)"
+        *ngFor="let winner of row"
         class="hidden-fade-in hidden-fade-in-winner"
       >
         <a

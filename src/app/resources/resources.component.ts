@@ -1,4 +1,14 @@
 import { Component, OnInit } from "@angular/core";
+import { items_all } from "./resources_all";
+import { items_3 } from "./resources_innovate";
+import { items_2_2, items_2_1 } from "./resources_experiment";
+import {
+  items_1_1,
+  items_1_2,
+  items_1_3,
+  items_1_4,
+  items_1_5,
+} from "./resources_pull";
 
 @Component({
   selector: "app-resources",
@@ -9,138 +19,9 @@ export class ResourcesComponent implements OnInit {
   width: number;
   constructor() {}
 
-  items_all = [
-    {
-      imageUrl: "../../assets/res/images/HUBCAP_OpenCalls_Social01.png",
-      modalTarget: "social-1",
-    },
-    {
-      imageUrl: "../../assets/res/images/HUBCAP_OpenCalls_Social02.png",
-      modalTarget: "social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_Call1-1Pull_Social01.png",
-      modalTarget: "call-1-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_Call1-1Pull_Social02.png",
-      modalTarget: "call-1-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_Call1-1Pull_Social03.png",
-      modalTarget: "call-1-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_Call1-1Pull_Social04.png",
-      modalTarget: "call-1-social-4",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_SOCIAL_12_02.png",
-      modalTarget: "call-1.2-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_SOCIAL_12_03.png",
-      modalTarget: "call-1.2-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_TWITER_12_01.png",
-      modalTarget: "call-1.2-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_TWITER_12_02.png",
-      modalTarget: "call-1.2-social-4",
-    },
+  // Media Kit Resources (flyers, socials, etc.)
 
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Funding.jpg",
-      modalTarget: "call-2.1-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Join.jpg",
-      modalTarget: "call-2.1-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Tools.jpg",
-      modalTarget: "call-2.1-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Funding.jpg",
-      modalTarget: "call-2.1-social-4",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Join.jpg",
-      modalTarget: "call-2.1-social-5",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Tools.jpg",
-      modalTarget: "call-2.1-social-6",
-    },
-
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_1.jpg",
-      modalTarget: "call-3-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_2.jpg",
-      modalTarget: "call-3-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_3.jpg",
-      modalTarget: "call-3-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_4.jpg",
-      modalTarget: "call-3-social-4",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_5.jpg",
-      modalTarget: "call-3-social-5",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_6.jpg",
-      modalTarget: "call-3-social-6",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_1.jpg",
-      modalTarget: "call-1.3-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_2.jpg",
-      modalTarget: "call-1.3-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_3.jpg",
-      modalTarget: "call-1.3-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_4.jpg",
-      modalTarget: "call-1.3-social-4",
-    },
-  ];
+  items_all = items_all;
 
   items_OC = [
     {
@@ -153,214 +34,14 @@ export class ResourcesComponent implements OnInit {
     },
   ];
 
-  items_1_1 = [
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_Call1-1Pull_Social01.png",
-      modalTarget: "call-1-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_Call1-1Pull_Social02.png",
-      modalTarget: "call-1-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_Call1-1Pull_Social03.png",
-      modalTarget: "call-1-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-1PULL/HUBCAP_Call1-1Pull_Social04.png",
-      modalTarget: "call-1-social-4",
-    },
-  ];
-
-  items_1_2 = [
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_SOCIAL_12_02.png",
-      modalTarget: "call-1.2-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_SOCIAL_12_03.png",
-      modalTarget: "call-1.2-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_TWITER_12_01.png",
-      modalTarget: "call-1.2-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-2PULL/HUBCAP_TWITER_12_02.png",
-      modalTarget: "call-1.2-social-4",
-    },
-  ];
-  items_1_3 = [
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_1.jpg",
-      modalTarget: "call-1.3-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_2.jpg",
-      modalTarget: "call-1.3-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_3.jpg",
-      modalTarget: "call-1.3-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_4.jpg",
-      modalTarget: "call-1.3-social-4",
-    },
-  ];
-  items_1_4 = [
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_1.jpg",
-      modalTarget: "call-1.3-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_2.jpg",
-      modalTarget: "call-1.3-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_3.jpg",
-      modalTarget: "call-1.3-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_4.jpg",
-      modalTarget: "call-1.3-social-4",
-    },
-  ];
-  items_1_5 = [
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_1.jpg",
-      modalTarget: "call-1.3-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_2.jpg",
-      modalTarget: "call-1.3-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_3.jpg",
-      modalTarget: "call-1.3-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC1-3PULL/HUBCAP_SOCIAL_1-3_PULL_4.jpg",
-      modalTarget: "call-1.3-social-4",
-    },
-  ];
-
-  items_2_1 = [
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Funding.jpg",
-      modalTarget: "call-2.1-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Join.jpg",
-      modalTarget: "call-2.1-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Tools.jpg",
-      modalTarget: "call-2.1-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Funding.jpg",
-      modalTarget: "call-2.1-social-4",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Join.jpg",
-      modalTarget: "call-2.1-social-5",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Tools.jpg",
-      modalTarget: "call-2.1-social-6",
-    },
-  ];
-  items_2_2 = [
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Funding.jpg",
-      modalTarget: "call-2.1-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Join.jpg",
-      modalTarget: "call-2.1-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Rectangle_Tools.jpg",
-      modalTarget: "call-2.1-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Funding.jpg",
-      modalTarget: "call-2.1-social-4",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Join.jpg",
-      modalTarget: "call-2.1-social-5",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC2-1EXPERIMENT/HUBCAP_2-1_EXPERIMENT_Square_Tools.jpg",
-      modalTarget: "call-2.1-social-6",
-    },
-  ];
-  items_3 = [
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_1.jpg",
-      modalTarget: "call-3-social-1",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_2.jpg",
-      modalTarget: "call-3-social-2",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_3.jpg",
-      modalTarget: "call-3-social-3",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_4.jpg",
-      modalTarget: "call-3-social-4",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_5.jpg",
-      modalTarget: "call-3-social-5",
-    },
-    {
-      imageUrl:
-        "../../assets/res/files/HUBCAP_OC3INNOVATE/HUBCAP_SOCIAL_3_INNOVATE_6.jpg",
-      modalTarget: "call-3-social-6",
-    },
-  ];
+  items_1_1 = items_1_1;
+  items_1_2 = items_1_2;
+  items_1_3 = items_1_3;
+  items_1_4 = items_1_4;
+  items_1_5 = items_1_5;
+  items_2_1 = items_2_1;
+  items_2_2 = items_2_2;
+  items_3 = items_3;
 
   openModal(item) {
     const target = item.modalTarget;
@@ -377,9 +58,13 @@ export class ResourcesComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Useful Resources | HUBCAP";
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Useful Resources";
-    }
+
+    /* For making links work
+     * If user has followed a URL which contains
+     * a resource for a call - analyze the URL
+     * and simulate a click on the "Download"
+     * button for that resource.
+     */
 
     const url = window.location.href.toString();
 
@@ -475,9 +160,5 @@ export class ResourcesComponent implements OnInit {
 
   onResize() {
     this.width = window.innerWidth;
-
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Useful Resources";
-    }
   }
 }

@@ -20,17 +20,6 @@ export class ResourcesComponent implements OnInit {
 
   // Media Kit Resources (flyers, socials, etc.)
 
-  items_all = [
-    ...items_1_1,
-    ...items_1_2,
-    ...items_1_3,
-    ...items_1_4,
-    ...items_1_5,
-    ...items_2_1,
-    ...items_2_2,
-    ...items_3,
-  ];
-
   items_OC = [
     {
       imageUrl: "../../assets/res/images/HUBCAP_OpenCalls_Social01.png",
@@ -40,6 +29,18 @@ export class ResourcesComponent implements OnInit {
       imageUrl: "../../assets/res/images/HUBCAP_OpenCalls_Social02.png",
       modalTarget: "social-2",
     },
+  ];
+
+  items_all = [
+    ...this.items_OC,
+    ...items_1_1,
+    ...items_1_2,
+    ...items_1_3,
+    ...items_1_4,
+    ...items_1_5,
+    ...items_2_1,
+    ...items_2_2,
+    ...items_3,
   ];
 
   items_1_1 = items_1_1;

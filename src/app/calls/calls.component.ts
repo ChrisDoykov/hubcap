@@ -35,16 +35,9 @@ export class CallsComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = "Open Calls | HUBCAP";
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Open Calls";
-    }
   }
 
   onResize() {
     this.width = window.innerWidth;
-
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Open Calls";
-    }
   }
 }

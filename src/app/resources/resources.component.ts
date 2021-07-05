@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { items_all } from "./resources_all";
 import { items_3 } from "./resources_innovate";
 import { items_2_2, items_2_1 } from "./resources_experiment";
 import {
@@ -21,7 +20,16 @@ export class ResourcesComponent implements OnInit {
 
   // Media Kit Resources (flyers, socials, etc.)
 
-  items_all = items_all;
+  items_all = [
+    ...items_1_1,
+    ...items_1_2,
+    ...items_1_3,
+    ...items_1_4,
+    ...items_1_5,
+    ...items_2_1,
+    ...items_2_2,
+    ...items_3,
+  ];
 
   items_OC = [
     {

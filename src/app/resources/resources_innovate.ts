@@ -39,4 +39,14 @@ export const items_3 = [
       "../../assets/res/files/HUBCAP_OC3INNOVATE/Call 3 extension final webinar square.png",
     modalTarget: "call-3-social-8",
   },
+  {
+    imageUrl:
+      "../../assets/res/files/HUBCAP_OC3INNOVATE/Call 3 new deadline.png",
+    modalTarget: "call-3-social-9",
+  },
+  {
+    imageUrl:
+      "../../assets/res/files/HUBCAP_OC3INNOVATE/Call 3 new deadline2.png",
+    modalTarget: "call-3-social-10",
+  },
 ];

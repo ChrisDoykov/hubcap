@@ -36,8 +36,6 @@ export class SuccessStoryComponent implements OnInit {
       if (url.includes(story.urlName)) {
         this.story = story;
         document.title = `${story.title} | Success Stories | HUBCAP`;
-        console.log(story.sections.slice(0, 1));
-        console.log(story.sections.slice(1, story.sections.length));
       } else {
         this.router.navigate(["/not-found"]);
       }

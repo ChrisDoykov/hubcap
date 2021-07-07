@@ -13,18 +13,9 @@ export class Webinar1_2Component implements OnInit {
 
   ngOnInit(): void {
     document.title = "CALL #1.2 PULL Q&A Webinar | HUBCAP";
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent =
-        "CALL #1.2 PULL Q&A Webinar";
-    }
   }
 
   onResize() {
     this.width = window.innerWidth;
-
-    if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent =
-        "CALL #1.2 PULL Q&A Webinar";
-    }
   }
 }

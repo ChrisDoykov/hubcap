@@ -60,18 +60,15 @@ import { PressReleaseArticle4Component } from "./press-release-articles/press-re
 import { PressReleaseArticle5Component } from "./press-release-articles/press-release-article5/press-release-article5.component";
 import { EventsComponent } from "./events/events.component";
 import { LinkifyPipe } from "./linkify.pipe";
-import {
-  ServiceWorkerModule,
-  SwRegistrationOptions,
-} from "@angular/service-worker";
+import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
 import { SplashScreenComponent } from "./splash-screen/splash-screen.component";
 import { ImagePreloadDirective } from "./image-preload.directive";
 import { PressReleaseArticle6Component } from "./press-release-articles/press-release-article6/press-release-article6.component";
 import { PressReleaseArticle7Component } from "./press-release-articles/press-release-article7/press-release-article7.component";
 import { PressReleaseArticle8Component } from "./press-release-articles/press-release-article8/press-release-article8.component";
-import { SuccessStoriesListComponent } from './success-stories-list/success-stories-list.component';
-import { SuccessStoryComponent } from './success-story/success-story.component';
+import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
+import { SuccessStoryComponent } from "./success-story/success-story.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",

@@ -33,7 +33,7 @@ export const events: CalendarEvent[] = [
       location: "Zoom",
       time: "11:00 AM - 12:30 PM",
       link: "https://www.linkedin.com/events/6815954534242775040/",
-      recordingLink: "",
+      recordingLink: "https://www.youtube.com/watch?v=fh8ii-_3Ku8",
     },
   },
   {

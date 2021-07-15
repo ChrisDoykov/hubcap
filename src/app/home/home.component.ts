@@ -96,7 +96,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         "Experiment making use of new CPS technologies",
         "Direct support and up to € 200,000 equity-free funding",
       ],
-      buttonText: "APPLY NOW",
+      buttonText: "READ MORE",
     },
   ];
 
@@ -125,7 +125,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       clickable: true,
     },
     spaceBetween: 30,
-    initialSlide: 2,
+    initialSlide: 0,
   };
 
   private dihSub: Subscription;

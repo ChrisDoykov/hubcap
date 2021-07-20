@@ -202,6 +202,86 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
   ];
 
   tools = [
+    // {
+    //   type: "tool",
+    //   logo: "../../assets/res/logos/logo_pharos.png",
+    //   asset_name: "Pharos Navigator® IoT, AI & Big Data technology platform",
+    //   company_name: "GOLEM",
+    //   url: "https://golem.at/",
+    //   description:
+    //     "Pharos Navigator® technology platform supports rapid Model-Based Design and development of complex cyber-physical system models of intelligent digital twins with high-level tools, and its linking to multiple heterogeneous digital data sources including IoT, automated systems and mobile devices over existing IP networks. The applications can run in cloud transforming multiple big data streams into the statuses of the applied CPS infrastructure objects and various custom indicators assisting users in AI-driven holistic CPS monitoring and control of the ongoing and predicted operational sustainability and performance.",
+    //   showMore: false, // Always leave at false
+    //   supported_platforms: ["Windows", "Linux", "macOS"],
+    //   modelling_notations: [
+    //     "Requirements modelling",
+    //     "Hierarchical and system modelling",
+    //     "Data modelling",
+    //     "Flow-oriented modelling",
+    //   ],
+    //   domains: [
+    //     "Digital Health",
+    //     "Manufacturing",
+    //     "Agriculture",
+    //     "Smart Cities",
+    //     "Circular Economy",
+    //     "Environment",
+    //   ],
+    //   license_info_name: "",
+    //   license_info_url: "",
+    //   download_link: "",
+    //   email: "info@golem.at",
+    // },
+    {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_opticity.png",
+      asset_name: "Opticity",
+      company_name: "Vodena",
+      url: "http://vodena.rs/",
+      description:
+        "Opticity is a comprehensive energy management tool that completely automates finding ofoptimal pattern in energy consumption and production in case of facilities with RES and energy storage capabilities. It enables end users to develop digital twins of solar installations, and streamline and optimize electric energy production and consumption. Based on the data acquired during the solar installation exploitation, Opticity automatically creates the most adequate predictive models of the internal energy production and loads, which will enable simulation of the data chain for any hypothetic operation plan. The results obtained from the simulations, along with all other micro-grid features and external factors, are subjected to an optimization process in order to find the energy management pattern that will result with the most economical usage of electricity under the given conditions.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Cloud based"],
+      modelling_notations: ["Deep Neural Networks", "Random Forest", "XGBoost"],
+      domains: [
+        "Renewable energy",
+        "Compounding",
+        "Automated machine learning",
+        "Genetic algorithm optimization",
+      ],
+      license_info_name: "Commercial License",
+      license_info_url: "",
+      download_link: "",
+      email: "office@vodena.rs",
+    },
+    // {
+    //   type: "tool",
+    //   logo: "../../assets/res/logos/logo_datenberg.png",
+    //   asset_name: "smartPLAZA",
+    //   company_name: "DatenBerg",
+    //   url: "https://datenberg.eu/",
+    //   description:
+    //     "With smartPLAZA we generate added-value out of manufacturing data. The tool consolidates different data sources, visualizes all available data and automatically deploys prediction pipeleines.",
+    //   showMore: false, // Always leave at false
+    //   supported_platforms: ["Windows", "Linux", "macOS"],
+    //   modelling_notations: [
+    //     "Binary classification",
+    //     "Regression modelling",
+    //     "Algorithms from white- towards blackbox approaches",
+    //   ],
+    //   domains: [
+    //     "Manufacturing",
+    //     "Compounding",
+    //     "Textiles",
+    //     "Agriculture",
+    //     "Automotive",
+    //     "Industry 4.0",
+    //   ],
+    //   license_info_name: "Commercial SaaS License",
+    //   license_info_url:
+    //     "https://www.ai4eu.eu/_flysystem/s3/licenses/EULA%20DatenBerg.pdf",
+    //   download_link: "",
+    //   email: "maximilian.backenstos@datenberg.eu",
+    // },
     {
       type: "tool",
       dihAsset: true,

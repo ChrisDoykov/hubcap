@@ -253,35 +253,35 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
       download_link: "",
       email: "office@vodena.rs",
     },
-    // {
-    //   type: "tool",
-    //   logo: "../../assets/res/logos/logo_datenberg.png",
-    //   asset_name: "smartPLAZA",
-    //   company_name: "DatenBerg",
-    //   url: "https://datenberg.eu/",
-    //   description:
-    //     "With smartPLAZA we generate added-value out of manufacturing data. The tool consolidates different data sources, visualizes all available data and automatically deploys prediction pipeleines.",
-    //   showMore: false, // Always leave at false
-    //   supported_platforms: ["Windows", "Linux", "macOS"],
-    //   modelling_notations: [
-    //     "Binary classification",
-    //     "Regression modelling",
-    //     "Algorithms from white- towards blackbox approaches",
-    //   ],
-    //   domains: [
-    //     "Manufacturing",
-    //     "Compounding",
-    //     "Textiles",
-    //     "Agriculture",
-    //     "Automotive",
-    //     "Industry 4.0",
-    //   ],
-    //   license_info_name: "Commercial SaaS License",
-    //   license_info_url:
-    //     "https://www.ai4eu.eu/_flysystem/s3/licenses/EULA%20DatenBerg.pdf",
-    //   download_link: "",
-    //   email: "maximilian.backenstos@datenberg.eu",
-    // },
+    {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_smartPLAZA.jpg",
+      asset_name: "smartPLAZA",
+      company_name: "DatenBerg",
+      url: "https://datenberg.eu/",
+      description:
+        "With smartPLAZA we generate added-value out of manufacturing data. The tool consolidates different data sources, visualizes all available data and automatically deploys prediction pipeleines.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Windows", "Linux"],
+      modelling_notations: [
+        "Binary classification",
+        "Regression modelling",
+        "Algorithms from white- towards blackbox approaches",
+      ],
+      domains: [
+        "Manufacturing",
+        "Compounding",
+        "Textiles",
+        "Agriculture",
+        "Automotive",
+        "Industry 4.0",
+      ],
+      license_info_name: "Commercial SaaS License",
+      license_info_url:
+        "https://www.ai4eu.eu/_flysystem/s3/licenses/EULA%20DatenBerg.pdf",
+      download_link: "",
+      email: "maximilian.backenstos@datenberg.eu",
+    },
     {
       type: "tool",
       dihAsset: true,

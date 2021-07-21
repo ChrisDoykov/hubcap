@@ -9,6 +9,8 @@
   }
 
   .mat-dialog-container {
+    overflow: hidden;
+
     @include respond(phone) {
       padding-bottom: 0 !important;
     }
@@ -17,6 +19,42 @@
   .mat-dialog-content.tech {
     margin: 0 !important;
     padding: 0 !important;
+
+    .tech__bottom {
+      @include respond(phone) {
+        padding-right: 0.5rem !important;
+      }
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 0.6rem rgb(255, 255, 255);
+      box-shadow: inset 0 0 0.6rem rgb(255, 255, 255);
+      background-color: $color-white;
+      border-radius: 1rem;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0.8rem;
+      background-color: $color-white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 0.6rem;
+      background-color: $color-white;
+      background-image: linear-gradient(
+        to bottom,
+        $color-primary 0%,
+        $color-primary 20%,
+        $color-teal 20%,
+        $color-teal 40%,
+        $color-blue 40%,
+        $color-blue 60%,
+        $color-green 60%,
+        $color-green 80%,
+        $color-red 80%,
+        $color-red 100%
+      );
+    }
 
     &:not(:last-child) {
       border-bottom: none !important;

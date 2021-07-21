@@ -106,7 +106,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Django",
         "(Under development MVP will be ready in March 2021)",
       ],
-      license_info_name: "Pay-as-you-go",
+      license_text: "Pay-as-you-go",
       email: "info@cyberarch.eu",
     },
     {
@@ -120,7 +120,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       showMore: false, // Always leave at false
       domains: ["Education and training"],
       modelling_lang_tool: ["C#"],
-      license_info_name: "Pay-as-you-go",
+      license_text: "Pay-as-you-go",
       email: "office@astiautomation.ro",
     },
     {
@@ -134,7 +134,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       showMore: false, // Always leave at false
       modelling_lang_tool: ["xGraph"],
       domain: "Energy Systems Modelling",
-      license_info_name: "TBD",
+      license_text: "TBD",
       email: "daniel@brightmerge.com",
     },
     {
@@ -149,7 +149,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       showMore: false, // Always leave at false
       modelling_lang_tool: ["Python"],
       domain: "Earth Observation",
-      license_info_name: "Nontransferable free license",
+      license_text: "Nontransferable free license",
       email: "info@shipdetection.eu",
     },
     {
@@ -163,7 +163,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       showMore: false, // Always leave at false
       modelling_lang_tool: ["Custom for each model"],
       domain: "Fluid flow",
-      license_info_name: "Specific for each project",
+      license_text: "Specific for each project",
       email: "iostoica@gmail.com",
     },
     {
@@ -178,9 +178,9 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       showMore: false, // Always leave at false
       modelling_lang_tool: ["AutoFOCUS3"],
       domain: "Automotive",
-      license_info_name:
+      license_text:
         "© 2020 fortiss GmbH, released under a 2-Clause BSD License",
-      license_info_url: "https://opensource.org/licenses/BSD-2-Clause",
+      license_url: "https://opensource.org/licenses/BSD-2-Clause",
       download_link:
         "https://www.fortiss.org/en/research/living-lab/detail/fortissimo",
       email: "mbse@fortiss.org",
@@ -202,41 +202,63 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Docker",
       ],
       domain: "Applicable to any",
-      license_info_name: "None (Public domain)",
+      license_text: "None (Public domain)",
       email: "info@scubic.pt",
     },
   ];
 
   tools = [
-    // {
-    //   type: "tool",
-    //   logo: "../../assets/res/logos/logo_pharos.png",
-    //   asset_name: "Pharos Navigator® IoT, AI & Big Data technology platform",
-    //   company_name: "GOLEM",
-    //   url: "https://golem.at/",
-    //   description:
-    //     "Pharos Navigator® technology platform supports rapid Model-Based Design and development of complex cyber-physical system models of intelligent digital twins with high-level tools, and its linking to multiple heterogeneous digital data sources including IoT, automated systems and mobile devices over existing IP networks. The applications can run in cloud transforming multiple big data streams into the statuses of the applied CPS infrastructure objects and various custom indicators assisting users in AI-driven holistic CPS monitoring and control of the ongoing and predicted operational sustainability and performance.",
-    //   showMore: false, // Always leave at false
-    //   supported_platforms: ["Windows", "Linux", "macOS"],
-    //   modelling_notations: [
-    //     "Requirements modelling",
-    //     "Hierarchical and system modelling",
-    //     "Data modelling",
-    //     "Flow-oriented modelling",
-    //   ],
-    //   domains: [
-    //     "Digital Health",
-    //     "Manufacturing",
-    //     "Agriculture",
-    //     "Smart Cities",
-    //     "Circular Economy",
-    //     "Environment",
-    //   ],
-    //   license_info_name: "",
-    //   license_info_url: "",
-    //   download_link: "",
-    //   email: "info@golem.at",
-    // },
+    {
+      type: "tool",
+      logo: "../../assets/res/logos/logo_pharos.png",
+      asset_name: "Pharos Navigator",
+      company_name: "GOLEM",
+      url: "https://golem.at/",
+      description:
+        "Pharos Navigator® technology platform supports rapid Model-Based Design and development of complex cyber-physical system models of intelligent digital twins with high-level tools, and its linking to multiple heterogeneous digital data sources including IoT, automated systems and mobile devices over existing IP networks. The applications can run in cloud transforming multiple big data streams into the statuses of the applied CPS infrastructure objects and various custom indicators assisting users in AI-driven holistic CPS monitoring and control of the ongoing and predicted operational sustainability and performance.",
+      showMore: false, // Always leave at false
+      supported_platforms: [
+        "Server – Ubuntu dockers; Client 1: Webclient (any browser); Client 2: Power Client with Model builder tools under Ubuntu desktop and MS Windows 10",
+      ],
+      modelling_notations: [
+        "Requirements modelling",
+        "Hierarchical and system modelling",
+        "Data modelling",
+        "Flow-oriented modelling",
+      ],
+      domains: [
+        "Digital Health",
+        "Manufacturing",
+        "Agriculture",
+        "Smart Cities",
+        "Circular Economy",
+        "Environment",
+      ],
+      license_text:
+        "Proprietary end-user license along with many Open Source licenses like MIT, APACHE, etc. for the system components",
+      license_url:
+        "https://enterprise.pharosnavigator.com/static/content/en/162/License-Agreement-for-Pharos-Navigator-Engine-Software--.html",
+      licenses: [
+        {
+          text: "Server software",
+          url: "https://enterprise.pharosnavigator.com/static/content/en/162/License-Agreement-for-Pharos-Navigator-Engine-Software--.html",
+        },
+        {
+          text: "Light client software",
+          url: "https://enterprise.pharosnavigator.com/static/content/en/500/EndUser-License-for-Light-Client-.html",
+        },
+        {
+          text: "Power client software",
+          url: "https://enterprise.pharosnavigator.com/static/content/en/499/EndUser-License-for-Power-Client.html",
+        },
+        {
+          text: "Pharos Navigator object models",
+          url: "https://enterprise.pharosnavigator.com/static/content/en/502/License-Agreement-for-Pharos-Navigator-Object-Models.html",
+        },
+      ],
+      download_link: "",
+      email: "info@golem.at",
+    },
     {
       type: "tool",
       logo: "../../assets/res/logos/logo_opticity.png",
@@ -254,8 +276,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Automated machine learning",
         "Genetic algorithm optimization",
       ],
-      license_info_name: "Commercial License",
-      license_info_url: "",
+      license_text: "Commercial License",
+      license_url: "",
       download_link: "",
       email: "office@vodena.rs",
     },
@@ -271,8 +293,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       supported_platforms: ["Ubuntu", "Linux v18.04"],
       modelling_notations: ["Contract-Based Design"],
       domains: ["IoT", "Smart Energy"],
-      license_info_name: "Free",
-      license_info_url: "",
+      license_text: "Free",
+      license_url: "",
       download_link: "",
       email: "george@beia.eu",
     },
@@ -299,8 +321,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Automotive",
         "Industry 4.0",
       ],
-      license_info_name: "Commercial SaaS License",
-      license_info_url:
+      license_text: "Commercial SaaS License",
+      license_url:
         "https://www.ai4eu.eu/_flysystem/s3/licenses/EULA%20DatenBerg.pdf",
       download_link: "",
       email: "maximilian.backenstos@datenberg.eu",
@@ -332,8 +354,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         },
       ],
       domains: ["Automotive", "Agriculture", "Smart Buildings", "Transport"],
-      license_info_name: "INTO-CPS Association Public License",
-      license_info_url:
+      license_text: "INTO-CPS Association Public License",
+      license_url:
         "https://github.com/INTO-CPS-Association/maestro/blob/development/LICENSE",
       download_link: "https://into-cps-association.github.io/download/",
       email: "into-cps@mail.com",
@@ -362,8 +384,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Smart energy",
         "Smart healthcare",
       ],
-      license_info_name: "Free to use",
-      license_info_url: "https://www.eclipse.org/legal/epl-2.0/",
+      license_text: "Free to use",
+      license_url: "https://www.eclipse.org/legal/epl-2.0/",
       download_link: "https://www.eclipse.org/chess/download.html",
       email: "tonettas@fbk.eu",
     },
@@ -386,8 +408,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Smart energy",
         "Smart healthcare",
       ],
-      license_info_name: "Dual",
-      license_info_url: "https://es-static.fbk.eu/tools/ocra/LICENSE.txt",
+      license_text: "Dual",
+      license_url: "https://es-static.fbk.eu/tools/ocra/LICENSE.txt",
       download_link: "https://ocra.fbk.eu/pmwiki.php?n=Main.Download",
       email: "tonettas@fbk.eu",
     },
@@ -410,8 +432,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Smart energy",
         "Smart healthcare",
       ],
-      license_info_name: "Dual",
-      license_info_url: "https://nuxmv.fbk.eu/pmwiki.php?n=Main.License",
+      license_text: "Dual",
+      license_url: "https://nuxmv.fbk.eu/pmwiki.php?n=Main.License",
       download_link: "https://nuxmv.fbk.eu/pmwiki.php?n=Download.Download",
       email: "tonettas@fbk.eu",
     },
@@ -438,8 +460,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Smart energy",
         "Smart healthcare",
       ],
-      license_info_name: "Dual",
-      license_info_url: "https://xsap.fbk.eu/pmwiki.php?n=Main.License",
+      license_text: "Dual",
+      license_url: "https://xsap.fbk.eu/pmwiki.php?n=Main.License",
       download_link: "https://xsap.fbk.eu/pmwiki.php?n=Download.Download",
       email: "bozzano@fbk.eu",
     },
@@ -459,9 +481,9 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       ],
       modelling_notations: ["C#", " FMU/FMI (under development)"],
       domains: ["Any discrete material handling system"],
-      license_info_name:
+      license_text:
         "Perpetual license, split into 4 sub-types (Test, Build, Commission, Develop)",
-      license_info_url: "https://xcelgo.com/experior/",
+      license_url: "https://xcelgo.com/experior/",
       email: "info@xcelgo.com",
     },
     {
@@ -486,7 +508,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Drag-and-drop for most, but power-users can create their own equations using MATLAB-like syntax",
       ],
       domains: ["Automotive", "Machine design"],
-      license_info_name: "SaaS",
+      license_text: "SaaS",
       email: "peter.harman@cae.tech",
     },
     {
@@ -504,7 +526,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Restricted natural language requirements",
       ],
       domains: ["Transport", "Energy", "Aerospace", "Health", "Manufacturing"],
-      license_info_name: "Subscription",
+      license_text: "Subscription",
       email: "info@developair.es",
     },
     {
@@ -519,7 +541,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Grafana"],
       domains: ["IoT", "PM monitoring", "Industrial activities"],
-      license_info_name: "Subscription as SaaS",
+      license_text: "Subscription as SaaS",
       email: "greenris.office@gmail.com",
     },
     {
@@ -548,7 +570,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Defense",
         "Aerospace",
       ],
-      license_info_name: "Commercial",
+      license_text: "Commercial",
       download_link: "https://verum.com/free-trial/",
       email: "info@verum.com",
     },
@@ -573,8 +595,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Predictive Maintenance",
         "Digital Twins",
       ],
-      license_info_name: "SaaS, PaaS, on-premise",
-      license_info_url: "https://simulstore.com/#/termsandconditions",
+      license_text: "SaaS, PaaS, on-premise",
+      license_url: "https://simulstore.com/#/termsandconditions",
       download_link: "https://www.simulstore.com",
       email: "info@simularge.com",
     },
@@ -589,7 +611,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       showMore: false, // Always leave at false
       supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Python", "C"],
-      license_info_name: "Rental license",
+      license_text: "Rental license",
       email: "contact@agranimo.com",
     },
     {
@@ -610,7 +632,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
           url: "http://homard.hopu.eu/",
         },
       ],
-      license_info_name: "Open Source",
+      license_text: "Open Source",
       download_link: "https://hopu.eu/download/3058/",
       email: "jara@hopu.eu",
     },
@@ -626,7 +648,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Machine Learning", "Tensorflow"],
       domains: ["IoT", "Machine Learning", "Sensors", "Modelling", "CPS"],
-      license_info_name: "Time-based: monthly/yearly based fees apply",
+      license_text: "Time-based: monthly/yearly based fees apply",
       email: "petar@waveform.hr",
     },
     {
@@ -649,7 +671,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Safety",
         "Regulatory compliance",
       ],
-      license_info_name:
+      license_text:
         "Annual license and Pay as you go license, Data service is billed separately",
       email: "hello@simreka.com",
     },
@@ -695,7 +717,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         },
       ],
       domains: ["Retail", "PropTech", "Real Estate", "Tourism", "eHealth"],
-      license_info_name:
+      license_text:
         "The user is allowed to freely install the mobile applications that communicate with the platform. Access to the data analytics within the platform is permitted via API (to be developed)",
       email: "office@beaminnovation.ro",
     },
@@ -720,9 +742,9 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Biofuels",
         "Power & Energy",
       ],
-      license_info_name:
+      license_text:
         "Various (per user / per-machine / per-site,  one-off / recurring)",
-      license_info_url: "https://simevo.com/process/pricing/",
+      license_url: "https://simevo.com/process/pricing/",
       email: "info@simevo.com",
     },
     {
@@ -737,7 +759,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       supported_platforms: ["Windows", "Linux", "macOS"],
       modelling_notations: ["Modelica"],
       domains: ["Mechatronic systems"],
-      license_info_name: "SaaS, On-Premise",
+      license_text: "SaaS, On-Premise",
       email: "info@schlegel-simulation.de",
     },
     {
@@ -759,7 +781,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Robotics",
         "Industry",
       ],
-      license_info_name:
+      license_text:
         "The IDE and execution platform are copyright CLEARSY. Owners are entitled to freely use/develop/market resulting applications.",
       download_link:
         "https://www.clearsy.com/en/our-tools/clearsy-safety-platform/",
@@ -795,7 +817,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         },
       ],
       domains: ["Air quality sensors", "Wireless sensors"],
-      license_info_name: "Permissive, Apache style",
+      license_text: "Permissive, Apache style",
       email: "info@qartech.io",
     },
     {
@@ -813,7 +835,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Advanced Manufacturing",
         "Conventional Manufacturing",
       ],
-      license_info_name: "Proprietary",
+      license_text: "Proprietary",
       email: "d.cortolezzis@eu-nams.com",
     },
     {
@@ -835,8 +857,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         },
       ],
       domains: ["Aviation", "Automotive", "Industrial automation"],
-      license_info_name: "Apache 2.0",
-      license_info_url: "https://www.apache.org/licenses/LICENSE-2.0",
+      license_text: "Apache 2.0",
+      license_url: "https://www.apache.org/licenses/LICENSE-2.0",
       download_link:
         "https://www.fortiss.org/en/publications/software/autofocus-3",
       email: "mbse@fortiss.org",
@@ -851,7 +873,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "IoT vendors, operators and insurance in can organize and monitor the software lifecycles of IoT devices during operatin via asvin.io cloud solution. Track Software from certification, deploying, distribution towards operation on devices. Secure and resilient update distribution as a service for IoT Devices at the Edge (e.g. industrial Sensors, Nodes, Gateways). Providing intelligence thread landscape reports for IoT Device vendors and operators during device lifecycles: e.g. risk of unpatched and unsecure devices deployed.",
       showMore: false, // Always leave at false
       supported_platforms: ["Windows", "Linux", "macOS"],
-      modelling_notations: ["C++", "REST", "JSON", "Https"],
+      modelling_notations: ["C++", "REST", "JSON", "HTTPS"],
       related_tools: [
         {
           name: "Etherium Blockchain (Private Blockchain Alastria Network B)",
@@ -859,8 +881,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         },
       ],
       domains: ["Automotive", "Space", "Machinery", "Smart Cities"],
-      license_info_name: "Apache 2.0",
-      license_info_url: "https://www.apache.org/licenses/LICENSE-2.0",
+      license_text: "Apache 2.0",
+      license_url: "https://www.apache.org/licenses/LICENSE-2.0",
       email: "contact@asvin.io",
     },
     {
@@ -883,7 +905,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "VR",
         "Human-Machine-Interaction",
       ],
-      license_info_name: "Purchasable(1 to 12 months)",
+      license_text: "Purchasable(1 to 12 months)",
       email: "hello@ghost-feel.it",
     },
     {
@@ -898,7 +920,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
       supported_platforms: ["Web Based (Platform independent)"],
       modelling_notations: ["Fleets", "Measurement types", "Measurement units"],
       domains: ["IoT"],
-      license_info_name: "SaaS",
+      license_text: "SaaS",
       email: "r.manolea@apiforge.it",
     },
     {
@@ -919,7 +941,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Working time measurements",
       ],
       domains: ["IoT", "Construction", "Mining", "Mobile Equipment"],
-      license_info_name:
+      license_text:
         "Subscription for customers, REST API for system integrators",
       email: "info@embneusys.com",
     },
@@ -952,7 +974,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Nuclear",
         "Space",
       ],
-      license_info_name: "Seat based, per project, per year",
+      license_text: "Seat based, per project, per year",
       email: "njt@drisq.com",
     },
     {
@@ -989,8 +1011,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Sustainability",
         "Smart Products",
       ],
-      license_info_name:
-        "License per unit/device that runs our software library",
+      license_text: "License per unit/device that runs our software library",
       email: "info@ekkono.ai",
     },
     {
@@ -1015,7 +1036,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
           url: "https://d2lab.nissatech.com/d2twin/",
         },
       ],
-      license_info_name: "Proprietary",
+      license_text: "Proprietary",
       email: "info@nissatech.com",
     },
     {
@@ -1049,7 +1070,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Battery management",
         "AntiCounterfeit",
       ],
-      license_info_name:
+      license_text:
         "Exclusive license, sole license, non-exclusive license, JV",
       email: "marhefka@rvmagnetics.com",
     },
@@ -1091,7 +1112,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Technical supply",
         "Mobile documentation",
       ],
-      license_info_name: "SaaS",
+      license_text: "SaaS",
       email: "reh@skillsoftware.de",
     },
     {
@@ -1111,7 +1132,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         "Industrial Automation",
         "Automotive",
       ],
-      license_info_name: "Subscription",
+      license_text: "Subscription",
       email: "contact@conductiv.ai",
     },
     {
@@ -1136,7 +1157,7 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         },
       ],
       domains: ["IoT", "Logistics", "Automotive", "Robotics"],
-      license_info_name: "TBD",
+      license_text: "TBD",
       email: "info@evitado.io",
     },
     {
@@ -1161,8 +1182,8 @@ export class TehcnologiesComponent implements OnInit, OnDestroy {
         },
       ],
       domains: ["Manufacturing Industry"],
-      license_info_name: "Copyright Tvarit GmbH",
-      license_info_url: "https://tvarit.com/de/achieve-more",
+      license_text: "Copyright Tvarit GmbH",
+      license_url: "https://tvarit.com/de/achieve-more",
       email: "info@tvarit.com",
     },
   ];

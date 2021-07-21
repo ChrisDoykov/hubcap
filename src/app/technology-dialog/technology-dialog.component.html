@@ -100,24 +100,36 @@
         <span class="subtitle subtitle--bold subtitle--small">Domain: </span>
         <span>{{ asset.domain }}</span>
       </p>
-      <p class="tech__basic-info__line">
+      <p class="tech__basic-info__line" *ngIf="!asset.licenses">
         <span class="subtitle subtitle--bold subtitle--small"
           >License type:
         </span>
         <a
-          href="{{ asset.license_info_url }}"
+          href="{{ asset.license_url }}"
           target="_blank"
           rel="noopener noreferrer"
-          *ngIf="asset.license_info_url"
-          >{{
-            asset.license_info_name
-              ? asset.license_info_name
-              : asset.license_info_url
-          }}</a
+          *ngIf="asset.license_url"
+          >{{ asset.license_text ? asset.license_text : asset.license_url }}</a
         >
-        <span *ngIf="!asset.license_info_url">{{
-          asset.license_info_name
-        }}</span>
+        <span *ngIf="!asset.license_url">{{ asset.license_text }}</span>
+      </p>
+      <p class="tech__basic-info__line" *ngIf="asset.licenses">
+        <span class="subtitle subtitle--bold subtitle--small">Licenses: </span>
+        <span *ngFor="let license of asset.licenses; let i = index">
+          <a
+            href="{{ license.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            *ngIf="license.url"
+            >{{ license.text
+            }}{{ i === asset.licenses.length - 1 ? "" : "," }}&nbsp;</a
+          >
+
+          <span *ngIf="!license.url">
+            {{ license.text
+            }}{{ i === asset.licenses.length - 1 ? "" : "," }}&nbsp;
+          </span>
+        </span>
       </p>
       <p class="tech__basic-info__line" *ngIf="asset.download_link">
         <span class="subtitle subtitle--bold subtitle--small">Download: </span>

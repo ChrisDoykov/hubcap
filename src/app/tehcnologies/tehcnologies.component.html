@@ -225,24 +225,40 @@
               </span>
               <span>{{ tech.domain }}</span>
             </p>
-            <p class="tech__basic-info__line">
+            <p class="tech__basic-info__line" *ngIf="!tech.licenses">
               <span class="subtitle subtitle--bold subtitle--small"
                 >License type:
               </span>
               <a
-                href="{{ tech.license_info_url }}"
+                href="{{ tech.license_url }}"
                 target="_blank"
                 rel="noopener noreferrer"
-                *ngIf="tech.license_info_url"
+                *ngIf="tech.license_url"
                 >{{
-                  tech.license_info_name
-                    ? tech.license_info_name
-                    : tech.license_info_url
+                  tech.license_text ? tech.license_text : tech.license_url
                 }}</a
               >
-              <span *ngIf="!tech.license_info_url">{{
-                tech.license_info_name
-              }}</span>
+              <span *ngIf="!tech.license_url">{{ tech.license_text }}</span>
+            </p>
+            <p class="tech__basic-info__line" *ngIf="tech.licenses">
+              <span class="subtitle subtitle--bold subtitle--small"
+                >Licenses:
+              </span>
+              <span *ngFor="let license of tech.licenses; let i = index">
+                <a
+                  href="{{ license.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  *ngIf="license.url"
+                  >{{ license.text
+                  }}{{ i === tech.licenses.length - 1 ? "" : "," }}&nbsp;</a
+                >
+
+                <span *ngIf="!license.url">
+                  {{ license.text
+                  }}{{ i === tech.licenses.length - 1 ? "" : "," }}&nbsp;
+                </span>
+              </span>
             </p>
             <p class="tech__basic-info__line" *ngIf="tech.download_link">
               <span class="subtitle subtitle--bold subtitle--small"

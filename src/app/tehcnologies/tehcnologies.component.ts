@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, AfterViewInit } from "@angular/core";
+import { Component, OnInit, OnDestroy } from "@angular/core";
 import { MatDialog } from "@angular/material/dialog";
 import { Meta, Title } from "@angular/platform-browser";
 import { TechnologyDialogComponent } from "../technology-dialog/technology-dialog.component";
@@ -8,7 +8,7 @@ import { TechnologyDialogComponent } from "../technology-dialog/technology-dialo
   templateUrl: "./tehcnologies.component.html",
   styleUrls: ["./tehcnologies.component.scss"],
 })
-export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
+export class TehcnologiesComponent implements OnInit, OnDestroy {
   constructor(
     private meta: Meta,
     private title: Title,

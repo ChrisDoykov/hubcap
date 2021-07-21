@@ -5,7 +5,12 @@
 >
   <div class="u-center-text u-margin-bottom-medium intro">
     <h1
-      class="heading-primary heading-primary heading-primary--underlined heading-primary--underlined-blue"
+      class="
+        heading-primary
+        heading-primary
+        heading-primary--underlined
+        heading-primary--underlined-blue
+      "
     >
       Technological Assets List
     </h1>
@@ -122,7 +127,6 @@
         [class.hidden-fade-in]="!rearranged"
         [class.u-fade-in]="rearranged"
         *ngFor="let tech of alphabet[letter]"
-        id="{{ tech.asset_name.toLowerCase().replace(whitespace, '-') }}"
       >
         <div class="tech__top">
           <div class="tech__image">

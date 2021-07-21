@@ -1,0 +1,57 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+
+.topOfDialog {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
+
+  .mat-dialog-title {
+    font-weight: bold;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    right: 8%;
+    margin-left: 3rem;
+    @media screen and (max-width: 770px) {
+      left: 50%;
+    }
+
+    @include respond(phone) {
+      position: relative;
+      right: unset;
+      left: unset;
+      margin-left: 0;
+    }
+  }
+
+  .bottomOfDialog {
+    margin: 1rem 0 !important;
+  }
+
+  .close {
+    position: absolute;
+    left: 2rem;
+    bottom: 2.5rem;
+    font-size: $font-size-default;
+
+    @include respond(tab-port) {
+      bottom: 50%;
+    }
+
+    @include respond(phone) {
+      position: relative;
+      left: unset;
+      bottom: unset;
+    }
+  }
+}

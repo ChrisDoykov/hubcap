@@ -1,0 +1,184 @@
+<div class="topOfDialog" (window:resize)="onResize()">
+  <h1 mat-dialog-title>{{ asset.asset_name }}</h1>
+
+  <div class="buttons" *ngIf="width > 600" mat-dialog-actions>
+    <button
+      mat-button
+      mat-dialog-close
+      class="close button is-danger is-outlined is-rounded"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div class="tech" mat-dialog-content>
+  <div class="tech__top">
+    <div class="tech__image">
+      <img
+        src="{{ asset.logo }}"
+        alt="{{ asset.asset_name }}"
+        class="tech__image__content"
+      />
+    </div>
+
+    <div class="tech__basic-info">
+      <h3 class="heading-tertiary tech__basic-info__heading">
+        {{ asset.asset_name }}
+        <span class="custom-tag" *ngIf="!asset.dihAsset">SME Asset</span>
+      </h3>
+
+      <p class="tech__basic-info__line">
+        <span class="subtitle subtitle--bold subtitle--small">Company: </span>
+        <a
+          href="{{ asset.url }}"
+          target="_blank"
+          class="tech__basic-info__link"
+          >{{ asset.company_name }}</a
+        >
+      </p>
+
+      <p class="tech__basic-info__line" *ngIf="asset.supported_platforms">
+        <span class="subtitle subtitle--bold subtitle--small"
+          >Supported platforms:
+        </span>
+        <span *ngFor="let platform of asset.supported_platforms; let i = index"
+          >{{ platform
+          }}{{
+            i === asset.supported_platforms.length - 1 ? "" : ","
+          }}&nbsp;</span
+        >
+      </p>
+      <p class="tech__basic-info__line" *ngIf="asset.modelling_notations">
+        <span class="subtitle subtitle--bold subtitle--small"
+          >Modelling notation(s):
+        </span>
+        <span *ngFor="let notation of asset.modelling_notations; let i = index"
+          >{{ notation
+          }}{{
+            i === asset.modelling_notations.length - 1 ? "" : ","
+          }}&nbsp;</span
+        >
+      </p>
+      <p class="tech__basic-info__line" *ngIf="asset.related_tools">
+        <span class="subtitle subtitle--bold subtitle--small"
+          >Related tools:
+        </span>
+        <span *ngFor="let tool of asset.related_tools; let i = index"
+          ><a href="{{ tool.url }}" target="_blank" rel="noopener noreferrer">{{
+            tool.name
+          }}</a
+          >{{ i === asset.related_tools.length - 1 ? "" : "," }}&nbsp;</span
+        >
+      </p>
+      <p class="tech__basic-info__line" *ngIf="asset.domains">
+        <span class="subtitle subtitle--bold subtitle--small"
+          >Applicable domains:
+        </span>
+        <span *ngFor="let domain of asset.domains; let i = index"
+          >{{ domain
+          }}{{ i === asset.domains.length - 1 ? "" : "," }}&nbsp;</span
+        >
+      </p>
+      <p
+        class="tech__basic-info__line"
+        *ngIf="
+          asset.modelling_lang_tool && asset.modelling_lang_tool.length > 0
+        "
+      >
+        <span class="subtitle subtitle--bold subtitle--small"
+          >Modelling language/tool:
+        </span>
+        <span *ngFor="let lang of asset.modelling_lang_tool; let i = index"
+          >{{ lang
+          }}{{
+            i === asset.modelling_lang_tool.length - 1 ? "" : ","
+          }}&nbsp;</span
+        >
+      </p>
+      <p class="tech__basic-info__line" *ngIf="asset.domain">
+        <span class="subtitle subtitle--bold subtitle--small">Domain: </span>
+        <span>{{ asset.domain }}</span>
+      </p>
+      <p class="tech__basic-info__line">
+        <span class="subtitle subtitle--bold subtitle--small"
+          >License type:
+        </span>
+        <a
+          href="{{ asset.license_info_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          *ngIf="asset.license_info_url"
+          >{{
+            asset.license_info_name
+              ? asset.license_info_name
+              : asset.license_info_url
+          }}</a
+        >
+        <span *ngIf="!asset.license_info_url">{{
+          asset.license_info_name
+        }}</span>
+      </p>
+      <p class="tech__basic-info__line" *ngIf="asset.download_link">
+        <span class="subtitle subtitle--bold subtitle--small">Download: </span>
+        <a
+          href="{{ asset.download_link }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ asset.download_link }}</a
+        >
+      </p>
+      <p class="tech__basic-info__line" *ngIf="asset.contact_url">
+        <span class="subtitle subtitle--bold subtitle--small">Contact: </span>
+        <a
+          href="{{ asset.contact_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ asset.contact_url }}</a
+        >
+      </p>
+      <p class="tech__basic-info__line" *ngIf="asset.email">
+        <span class="subtitle subtitle--bold subtitle--small">Contact: </span>
+        <a href="mailto:{{ asset.email }}" rel="noopener noreferrer">{{
+          asset.email
+        }}</a>
+      </p>
+    </div>
+  </div>
+  <div class="tech__bottom">
+    <p
+      class="paragraph paragraph--big tech__description"
+      *ngIf="asset.description"
+    >
+      {{
+        asset.showMore ? asset.description : (asset.description | slice: 0:300)
+      }}<span *ngIf="!asset.showMore && asset.description.length > 300"
+        >...</span
+      >&nbsp;
+      <a
+        href="javascript:;"
+        *ngIf="!asset.showMore && asset.description.length > 300"
+        (click)="asset.showMore = true"
+        >Show More</a
+      >
+      <a
+        href="javascript:;"
+        *ngIf="asset.showMore"
+        (click)="asset.showMore = false"
+        >Show Less</a
+      >
+    </p>
+  </div>
+</div>
+
+<div *ngIf="width <= 600" class="bottomOfDialog">
+  <div class="buttons" mat-dialog-actions>
+    <button
+      mat-button
+      mat-dialog-close
+      class="close button is-danger is-outlined is-rounded"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</div>

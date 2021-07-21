@@ -12,6 +12,7 @@ import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
 import { NavigationComponent } from "./navigation/navigation.component";
 
+import { MatDialogModule } from "@angular/material/dialog";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatIconModule } from "@angular/material/icon";
@@ -69,6 +70,7 @@ import { PressReleaseArticle7Component } from "./press-release-articles/press-re
 import { PressReleaseArticle8Component } from "./press-release-articles/press-release-article8/press-release-article8.component";
 import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
 import { SuccessStoryComponent } from "./success-story/success-story.component";
+import { TechnologyDialogComponent } from "./technology-dialog/technology-dialog.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -122,6 +124,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     PressReleaseArticle8Component,
     SuccessStoriesListComponent,
     SuccessStoryComponent,
+    TechnologyDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -136,6 +139,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FormsModule,
     MatExpansionModule,
     MatTableModule,
+    MatDialogModule,
     MatProgressSpinnerModule,
     CalendarModule.forRoot({
       provide: DateAdapter,
@@ -149,6 +153,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       registrationStrategy: "registerImmediately",
     }),
   ],
+  entryComponents: [TechnologyDialogComponent],
   providers: [
     {
       provide: SWIPER_CONFIG,

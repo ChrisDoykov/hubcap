@@ -1,5 +1,7 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from "@angular/core";
+import { MatDialog } from "@angular/material/dialog";
 import { Meta, Title } from "@angular/platform-browser";
+import { TechnologyDialogComponent } from "../technology-dialog/technology-dialog.component";
 
 @Component({
   selector: "app-tehcnologies",
@@ -7,7 +9,11 @@ import { Meta, Title } from "@angular/platform-browser";
   styleUrls: ["./tehcnologies.component.scss"],
 })
 export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
-  constructor(private meta: Meta, private title: Title) {}
+  constructor(
+    private meta: Meta,
+    private title: Title,
+    private dialog: MatDialog
+  ) {}
 
   width: number;
   elements_fade_in: any;
@@ -252,6 +258,23 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
       license_info_url: "",
       download_link: "",
       email: "office@vodena.rs",
+    },
+    {
+      type: "tool",
+      logo: "../../assets/res/logos/sigla_beia_300dpi.png",
+      asset_name: "BEIA SMART ENERGY TOOL",
+      company_name: "BEIA Consult International",
+      url: "https://www.beiaro.eu/",
+      description:
+        "Smart energy monitoring and simulation platform for real-time energy production and consumption monitoring, analysis of smart meter data, simulation of energy production potential and assessment of the economic viability of various investments in the field of energy.",
+      showMore: false, // Always leave at false
+      supported_platforms: ["Ubuntu", "Linux v18.04"],
+      modelling_notations: ["Contract-Based Design"],
+      domains: ["IoT", "Smart Energy"],
+      license_info_name: "Free",
+      license_info_url: "",
+      download_link: "",
+      email: "george@beia.eu",
     },
     {
       type: "tool",
@@ -1171,18 +1194,12 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
     this.onResize();
     this.checkPosition();
 
-    // if (document.getElementById("hero-title") !== null) {
-    //   document.getElementById("hero-title").textContent = "Technologies";
-    // }
-  }
-
-  ngAfterViewInit(): void {
     const url = document.location.href.toString().toLowerCase();
 
     this.technologies.forEach((tech) => {
       let name = tech.asset_name.toLowerCase().replace(this.whitespace, "-");
       if (url.includes(name)) {
-        this.scrollIntoView(name);
+        this.openDialog(tech);
       }
     });
   }
@@ -1197,6 +1214,13 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
       name: "description",
       content:
         "Join us in the Cyber-Physical Systems revolution! HUBCAP is your one-stop-shop for embracing digital innovation using model-based design technology for Cyber-Physical Systems.",
+    });
+  }
+
+  openDialog(asset) {
+    this.dialog.open(TechnologyDialogComponent, {
+      data: { asset },
+      panelClass: "technology-popup",
     });
   }
 
@@ -1296,10 +1320,6 @@ export class TehcnologiesComponent implements OnInit, OnDestroy, AfterViewInit {
   onResize() {
     this.width = window.innerWidth;
     this.windowHeight = window.innerHeight;
-
-    // if (document.getElementById("hero-title") !== null) {
-    //   document.getElementById("hero-title").textContent = "Technologies";
-    // }
 
     this.elements_fade_in = document.querySelectorAll(".hidden-fade-in");
     this.elements_slide_in_left = document.querySelectorAll(

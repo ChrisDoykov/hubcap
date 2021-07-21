@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.technology-popup {
+  height: fit-content !important;
+
+  @include respond(phone) {
+    max-width: 95vw !important;
+  }
+
+  .mat-dialog-container {
+    @include respond(phone) {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .mat-dialog-content.tech {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    &:not(:last-child) {
+      border-bottom: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}

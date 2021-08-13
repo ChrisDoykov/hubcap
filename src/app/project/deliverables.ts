@@ -38,6 +38,12 @@ export const deliverables =  [
       link: "../../assets/res/files/D2.1_DIH-Services.pdf",
     },
     {
+      number: "D2.2",
+      name: "Ecosystem Building",
+      month: "M18 (Jun 2021)",
+      link: "../../assets/res/files/D2.2_DIH_Ecosystem_Building.pdf",
+    },
+    {
       number: "D3.2",
       name: "Survey on Initial HUBCAP Industry Experience",
       month: "M12 (Dec 2020)",

@@ -31,13 +31,13 @@ export class PressReleaseListComponent implements OnInit {
 
     // In order to edit the Press Release text look into press-release-article6.html in the press-release-articles folder
 
-    // {
-    //   name: "Call #1.4 Press Release",
-    //   description:
-    //     "Check out the official Call #1.4 PULL press release to find out more about how it works and what each SME can gain from participating!",
-    //   url: "press-releases/call1-4",
-    //   urlname: "See press release",
-    // },
+    {
+       name: "Call #1.4 Press Release",
+       description:
+         "Check out the official Call #1.4 PULL press release to find out more about how it works and what each SME can gain from participating!",
+       url: "press-releases/call1-4",
+       urlname: "See press release",
+    },
     {
       name: "Call #3 Press Release",
       description:

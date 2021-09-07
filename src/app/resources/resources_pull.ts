@@ -63,21 +63,37 @@ export const items_1_3 = [
 ];
 export const items_1_4 = [
   {
-    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/",
+    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/HUBCAP_1-4_v1.jpg",
     modalTarget: "call-1.4-social-1",
   },
   {
-    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/",
+    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/HUBCAP_1-4_v2.jpg",
     modalTarget: "call-1.4-social-2",
   },
   {
-    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/",
+    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/HUBCAP_1-4_v3.jpg",
     modalTarget: "call-1.4-social-3",
   },
   {
-    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/",
+    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/HUBCAP_1-4_v4.jpg",
     modalTarget: "call-1.4-social-4",
   },
+  {
+    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/HUBCAP_Square_1-4_v1.jpg",
+    modalTarget: "call-1.4-social-1-square",
+  },
+  {
+    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/HUBCAP_Square_1-4_v2.jpg",
+    modalTarget: "call-1.4-social-2-square",
+  },
+  {
+    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/HUBCAP_Square_1-4_v3.jpg",
+    modalTarget: "call-1.4-social-3-square",
+  },
+  {
+    imageUrl: "../../assets/res/files/HUBCAP_OC1-4PULL/HUBCAP_Square_1-4_v4.jpg",
+    modalTarget: "call-1.4-social-4-square",
+  },  
 ];
 export const items_1_5 = [
   {

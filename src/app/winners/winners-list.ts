@@ -76,10 +76,10 @@ export const WINNERS: SME[] = [
   },
   {
     id: 11,
-    name: "QARTECH Innovations",
-    logo: "https://qartech.io/wp-content/uploads/qartech.png",
+    name: "Cubic Fort Consulatores",
+    logo: "../../assets/res/logos/airchain.png",
 
-    website: "https://qartech.io/",
+    website: "https://cubicfort.com/",
   },
   {
     id: 12,

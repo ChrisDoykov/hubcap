@@ -582,8 +582,8 @@ export const tools = [
     type: "tool",
     logo: "../../assets/res/logos/LogoAirChain.png",
     asset_name: "AirChain",
-    company_name: "QARTECH Innovations",
-    url: "https://www.qartech.io",
+    company_name: "Cubic Fort Consultores SL",
+    url: "https://cubicfort.com",
     description:
       "With AirChain you can generate a permissioned blockchain network in the cloud to securely store all the measurements of your IoT sensors. Just with one mouse click. Select the organizations that will manage data, privacy policies, among other parameters, and the system will automatically generate the API endpoints that you need to start storing/getting data in/from the blockchain.",
     showMore: false, // Always leave at false
@@ -607,9 +607,9 @@ export const tools = [
         url: "https://kubernetes.io/",
       },
     ],
-    domains: ["Air quality sensors", "Wireless sensors"],
+    domains: ["IoT"],
     license_text: "Permissive, Apache style",
-    email: "info@qartech.io",
+    email: "juanba.tomas@cubicfort.com",
   },
   {
     type: "tool",

@@ -31,6 +31,6 @@ export class ExperimentComponent implements OnInit {
   }
 
   openApplyPage() {
-    window.open("https://www.f6s.com/hubcapcall2.1experiment/apply", "_blank");
+    window.open("https://www.f6s.com/hubcap-call-2.2-experiment/apply ", "_blank");
   }
 }

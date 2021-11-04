@@ -147,13 +147,13 @@ export class ResourcesComponent implements OnInit {
     }
 
     // Call #2.2
-    // else if (url.includes("DocumentationKit-2-2")) {
-    //   document.getElementById("Dkit2-2").click();
-    // } else if (url.includes("press-release#2.2")) {
-    //   document.getElementById("pr#2.2").click();
-    // } else if (url.includes("HUBCAP_CALL2-2_EXPERIMENT")) {
-    //   document.getElementById("flyer2.2").click();
-    // }
+     else if (url.includes("DocumentationKit-2-2")) {
+       document.getElementById("Dkit2-2").click();
+     } else if (url.includes("press-release#2.2")) {
+       document.getElementById("pr#2.2").click();
+     } else if (url.includes("HUBCAP_CALL2-2_EXPERIMENT")) {
+       document.getElementById("flyer2.2").click();
+     }
 
     // Call #3
     else if (url.includes("DocumentationKit-3")) {

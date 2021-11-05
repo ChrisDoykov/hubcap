@@ -19,6 +19,7 @@
 
   <div class="container__intro">
     <button
+    disabled
       class="button button--download u-margin-bottom-medium"
       (click)="openApplyPage()"
     >
@@ -45,7 +46,7 @@
       <li class="dates__list__item dates__list__item--closed">April 2020</li>
       <li class="dates__list__item dates__list__item--closed">October 2020</li>
       <li class="dates__list__item dates__list__item--closed">April 2021</li>
-      <li class="dates__list__item">September 2021 (Open)</li>
+      <li class="dates__list__item dates__list__item--closed">September 2021</li>
       <li class="dates__list__item">February 2022</li>
     </ul>
   </div>
@@ -104,7 +105,7 @@
         </li>
       </ol>
     </div>
-    <div class="info-section">
+   <!-- <div class="info-section">
       <h2 class="subtitle subtitle--colored is-bold subtitle--bg-red">
         Where can I read all open call details?
       </h2>
@@ -128,7 +129,7 @@
           Call #1.4 Editable Annexes
         </a>
       </div>
-    </div>
+    </div>-->
     <div class="info-section">
       <p class="paragraph paragraph--big u-center-text u-margin-bottom-small">
         Have questions? Get in touch to find out more and an expert from one of
@@ -157,7 +158,7 @@
   </video>
 
   <div class="buttons u-center-text">
-    <button class="button button--download" (click)="openApplyPage()">
+    <button disabled nclass="button button--download" (click)="openApplyPage()">
       APPLY NOW TO CALL #1.4
     </button>
     <br />

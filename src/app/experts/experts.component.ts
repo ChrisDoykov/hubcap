@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ExpertsComponent implements OnInit {
   width: number;
+  
   constructor() {}
 
   ngOnInit(): void {

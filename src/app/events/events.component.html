@@ -5,11 +5,7 @@
 >
   <div class="u-center-text u-margin-bottom-small">
     <h1
-      class="
-        heading-primary
-        heading-primary--underlined
-        heading-primary--underlined-red
-      "
+      class="heading-primary heading-primary--underlined heading-primary--underlined-red"
     >
       <!-- Upcoming Events -->
       Events
@@ -41,11 +37,7 @@
           *ngIf="event.start.getTime() >= today.getTime()"
         >
           <h3
-            class="
-              heading-tertiary
-              u-is-black-color
-              events-list__event__heading
-            "
+            class="heading-tertiary u-is-black-color events-list__event__heading"
           >
             {{ event.title }}
           </h3>
@@ -58,7 +50,7 @@
 
           <div class="events-list__event__info">
             <p class="events-list__event__info__field">
-              <b>Date:</b> {{ event.start | amDateFormat: "LL" }}
+              <b>Date:</b> {{ event.start | date: "MMMM DD, YYYY" }}
             </p>
             <p *ngIf="event.meta.time" class="events-list__event__info__field">
               <b>Time:</b> {{ event.meta.time }}
@@ -161,11 +153,7 @@
       >
         <div class="events-list__event" id="{{ event.title.toLowerCase() }}">
           <h3
-            class="
-              heading-tertiary
-              u-is-black-color
-              events-list__event__heading
-            "
+            class="heading-tertiary u-is-black-color events-list__event__heading"
           >
             {{ event.title }}
           </h3>
@@ -178,7 +166,7 @@
 
           <div class="events-list__event__info">
             <p class="events-list__event__info__field">
-              <b>Date:</b> {{ event.start | amDateFormat: "LL" }}
+              <b>Date:</b> {{ event.start | date: "MMMM DD, YYYY" }}
             </p>
             <p *ngIf="event.meta.time" class="events-list__event__info__field">
               <b>Time:</b> {{ event.meta.time }}

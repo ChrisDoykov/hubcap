@@ -9,7 +9,7 @@ export const WINNERS: SME[] = [
   {
     id: 1,
     name: "Cyberarch Consulting",
-    logo: "https://cyberarch.eu/wp-content/uploads/2020/06/Logo_cyberarch.png",
+    logo: "https://cyberarch.eu/wp-content/uploads/logo.png",
     website: "https://cyberarch.eu",
   },
   {
@@ -35,9 +35,8 @@ export const WINNERS: SME[] = [
   {
     id: 5,
     name: "Asti Automation",
-    logo: "https://www.astiautomation.ro/xnew/wp-content/uploads/2015/03/sigla_asti_automation.jpg",
-
-    website: "https://www.astiautomation.ro",
+    logo: "https://www.astiautomation.com/img/logo_asti.png",
+    website: "https://www.astiautomation.com/",
   },
   {
     id: 6,
@@ -361,5 +360,33 @@ export const WINNERS: SME[] = [
     logo: "../../assets/res/logos/logo_energia.jpg",
 
     website: "http://www.energeiatech.com/?page=home",
+  },
+  {
+    id: 52,
+    name: "Binare",
+    logo: "https://i0.wp.com/blog.binare.io/wp-content/uploads/2021/06/cropped-cropped-cropped-cropped-binare_background.jpg?w=1274&ssl=1",
+
+    website: "https://binare.io/",
+  },
+  {
+    id: 53,
+    name: "Perpetual Labs",
+    logo: "../../assets/res/logos/perpetual_labs_logo.webp",
+
+    website: "https://www.perpetuallabs.io/",
+  },
+  {
+    id: 54,
+    name: "The Predictive Company",
+    logo: "https://secureservercdn.net/160.153.138.53/92u.c68.myftpupload.com/wp-content/uploads/2019/08/cropped-TPC-color.png",
+
+    website: "https://thepredictivecompany.com/",
+  },
+  {
+    id: 55,
+    name: "Hubert Modelisation",
+    logo: "https://media-exp1.licdn.com/dms/image/C4E0BAQEnF4vW2Wvczw/company-logo_200_200/0/1592426038181?e=1650499200&v=beta&t=BFDpuKOQ_FPvarij2fqo0btBgvNYFix9S2ymHssuRb8",
+
+    website: "https://www.linkedin.com/company/hubert-modelisation/",
   },
 ];

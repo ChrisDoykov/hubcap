@@ -29,6 +29,7 @@
 @import "./sass/components/success-story";
 @import "./sass/components/success-stories-slide";
 @import "./sass/components/technology-popup";
+@import "./sass/components/papers";
 
 @import "./sass/layout/grid";
 @import "./sass/layout/call-page";
@@ -37,7 +38,6 @@
 @import "./sass/pages/home";
 
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
-
 .navbar-item {
   &.is-hoverable:hover {
     .navbar-dropdown {
@@ -63,8 +63,6 @@ body {
   margin: 0px;
   padding: 0px;
   max-width: 100%;
-  // max-height: fit-content;
-  // overflow-y: hidden;
   scroll-behavior: smooth;
 }
 
@@ -99,6 +97,31 @@ ul {
 
 .bold {
   font-weight: bold;
+}
+
+swiper:not(.swiper-calls):not(.hero__carousel) {
+  .swiper-wrapper {
+    position: relative;
+    z-index: 0;
+  }
+
+  .swiper-button-next:after {
+    transform: translate(-0.5rem);
+  }
+
+  .swiper-button-prev:after {
+    transform: translate(0.5rem);
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    background-color: rgba($color: $color-primary, $alpha: 0.9);
+    color: $color-white;
+    font-size: 4.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    transition: all 0.3s;
+  }
 }
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");

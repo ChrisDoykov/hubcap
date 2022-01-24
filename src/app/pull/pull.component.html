@@ -1,12 +1,7 @@
 <div class="container" (window:resize)="onResize()">
   <div class="container__top">
     <h1
-      class="
-        heading-primary
-        heading-primary--underlined
-        heading-primary--underlined-orange
-        has-text-centered
-      "
+      class="heading-primary heading-primary--underlined heading-primary--underlined-orange has-text-centered"
     >
       Call #1 PULL
     </h1>
@@ -19,7 +14,7 @@
 
   <div class="container__intro">
     <button
-    disabled
+      disabled
       class="button button--download u-margin-bottom-medium"
       (click)="openApplyPage()"
     >
@@ -46,8 +41,10 @@
       <li class="dates__list__item dates__list__item--closed">April 2020</li>
       <li class="dates__list__item dates__list__item--closed">October 2020</li>
       <li class="dates__list__item dates__list__item--closed">April 2021</li>
-      <li class="dates__list__item dates__list__item--closed">September 2021</li>
-      <li class="dates__list__item">February 2022</li>
+      <li class="dates__list__item dates__list__item--closed">
+        September 2021
+      </li>
+      <!-- <li class="dates__list__item">February 2022</li> -->
     </ul>
   </div>
 
@@ -105,7 +102,7 @@
         </li>
       </ol>
     </div>
-   <!-- <div class="info-section">
+    <!-- <div class="info-section">
       <h2 class="subtitle subtitle--colored is-bold subtitle--bg-red">
         Where can I read all open call details?
       </h2>

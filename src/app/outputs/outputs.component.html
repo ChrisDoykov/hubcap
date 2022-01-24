@@ -1,0 +1,72 @@
+<div class="wrapper" (window:resize)="onResize()">
+  <h1
+    class="heading-primary heading-primary--underlined heading-primary--underlined-darkblue"
+  >
+    Project Outputs
+  </h1>
+  <section class="section-deliverables u-margin-top-medium">
+    <h2 class="heading-tertiary u-is-black-color u-center-text">
+      Public Deliverables
+    </h2>
+    <table class="deliverables">
+      <tr class="deliverable deliverable--header">
+        <th class="deliverable__column">No.</th>
+        <th class="deliverable__column">Name</th>
+        <th class="deliverable__column">Due month</th>
+      </tr>
+      <tr class="deliverable" *ngFor="let item of deliverables">
+        <td class="deliverable__column">{{ item.number }}</td>
+        <td class="deliverable__column">
+          <a href="{{ item.link }}" target="_blank">
+            {{ item.name }}
+          </a>
+        </td>
+        <td class="deliverable__column">{{ item.month }}</td>
+      </tr>
+      <tr class="deliverable deliverable--footer">
+        <td class="deliverable__column">&nbsp;</td>
+        <td class="deliverable__column">&nbsp;</td>
+        <td class="deliverable__column">&nbsp;</td>
+      </tr>
+    </table>
+  </section>
+  <section class="section-papers">
+    <h2
+      class="heading-tertiary u-is-black-color u-center-text u-margin-bottom-medium"
+    >
+      Papers
+    </h2>
+    <div class="paper" *ngFor="let paper of papers">
+      <p class="paper__title">
+        <a href="{{ paper.link }}" target="_blank" *ngIf="paper.link"
+          >{{ paper.title }}
+        </a>
+        <span *ngIf="!paper.link">{{ paper.title }} </span>
+      </p>
+      <p class="paper__authors"><b>Authors:</b>&nbsp;{{ paper.authors }}</p>
+      <p class="paper__year" *ngIf="paper.year">
+        <b>Year of publication:</b>&nbsp;{{ paper.yearOfPublication }}
+      </p>
+      <p class="paper__publisher" *ngIf="paper.publisher">
+        <b>Publisher:</b>&nbsp;{{ paper.publisher }}
+      </p>
+      <p class="paragraph paragraph--big paper__summary" *ngIf="paper.summary">
+        {{ paper.showMore ? paper.summary : (paper.summary | slice: 0:300)
+        }}<span *ngIf="!paper.showMore && paper.summary.length > 300">...</span
+        >&nbsp;
+        <a
+          href="javascript:;"
+          *ngIf="!paper.showMore && paper.summary.length > 300"
+          (click)="paper.showMore = true"
+          >Show More</a
+        >
+        <a
+          href="javascript:;"
+          *ngIf="paper.showMore"
+          (click)="paper.showMore = false"
+          >Show Less</a
+        >
+      </p>
+    </div>
+  </section>
+</div>

@@ -64,6 +64,15 @@ nav {
   width: 7rem;
 }
 
+.navbar-item {
+  &__icon {
+    color: $color-blue;
+    font-size: 2rem;
+    transform: translateY(0.2rem);
+    margin-left: 1rem;
+  }
+}
+
 .navbar-item:hover,
 .navbar-link.active:hover,
 a.navbar-link:hover {

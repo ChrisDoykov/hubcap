@@ -84,20 +84,23 @@
           >Services</a
         >
 
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Platform</a>
-          <div class="navbar-dropdown is-right">
-            <a class="navbar-item" routerLink="platform" (click)="blur($event)"
-              >General Information</a
-            >
-            <a
-              class="navbar-item"
-              routerLink="technologies"
-              (click)="blur($event)"
-              >Available Assets</a
-            >
-          </div>
-        </div>
+        <a
+          class="navbar-item"
+          href="https://hubcap-portal.eng.it/welcome/"
+          target="_blank"
+          routerLinkActive="active"
+          >Platform <mat-icon class="navbar-item__icon">launch</mat-icon></a
+        >
+
+        <!-- <a
+          class="navbar-item"
+          href=""
+          target="_blank"
+          routerLinkActive="active"
+        >
+          Success Stories
+          <mat-icon class="navbar-item__icon">launch</mat-icon>
+        </a> -->
 
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">News</a>
@@ -132,6 +135,9 @@
               (click)="blur($event)"
               >Project Details</a
             >
+            <a class="navbar-item" routerLink="outputs" (click)="blur($event)"
+              >Project Outputs</a
+            >
             <a class="navbar-item" routerLink="partners" (click)="blur($event)">
               Project Partners
             </a>
@@ -142,13 +148,6 @@
             >
               Call Winners
             </a>
-            <!-- <a
-              class="navbar-item"
-              routerLink="success-stories"
-              (click)="blur($event)"
-            >
-              Success Stories
-            </a> -->
             <a class="navbar-item" routerLink="faq" routerLinkActive="active">
               FAQ
             </a>

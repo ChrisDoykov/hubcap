@@ -68,9 +68,8 @@ import { ImagePreloadDirective } from "./image-preload.directive";
 import { PressReleaseArticle6Component } from "./press-release-articles/press-release-article6/press-release-article6.component";
 import { PressReleaseArticle7Component } from "./press-release-articles/press-release-article7/press-release-article7.component";
 import { PressReleaseArticle8Component } from "./press-release-articles/press-release-article8/press-release-article8.component";
-import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
-import { SuccessStoryComponent } from "./success-story/success-story.component";
 import { TechnologyDialogComponent } from "./technology-dialog/technology-dialog.component";
+import { OutputsComponent } from "./outputs/outputs.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -122,9 +121,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     PressReleaseArticle6Component,
     PressReleaseArticle7Component,
     PressReleaseArticle8Component,
-    SuccessStoriesListComponent,
-    SuccessStoryComponent,
     TechnologyDialogComponent,
+    OutputsComponent,
   ],
   imports: [
     BrowserModule,

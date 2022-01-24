@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   webp = true;
 
   animationHasRan: boolean = false;
-  width: number;
+  width: number = window.innerWidth;
   elements_fade_in: any;
   elements_slide_in_left: any;
   elements_slide_in_right: any;
@@ -63,6 +63,20 @@ export class HomeComponent implements OnInit, OnDestroy {
   };
 
   counted: boolean = false;
+
+  config: SwiperOptions = {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    spaceBetween: 30,
+    initialSlide: 1,
+  };
 
   slides = [
     {
@@ -104,28 +118,17 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   configStories: SwiperOptions = {
     pagination: false,
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction: false,
-    },
-  };
-
-  config: SwiperOptions = {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
+    slidesPerView: this.width > 710 ? 3 : 1,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: true,
     },
-    spaceBetween: 30,
-    initialSlide: 0,
   };
 
   private dihSub: Subscription;

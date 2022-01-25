@@ -389,4 +389,32 @@ export const WINNERS: SME[] = [
 
     website: "https://www.linkedin.com/company/hubert-modelisation/",
   },
+  {
+    id: 56,
+    name: "VESATEC GbR",
+    logo: "../../assets/res/logos/vesatec_logo.png",
+
+    website: "https://www.vesatec.de/",
+  },
+  {
+    id: 57,
+    name: "UptimAI",
+    logo: "../../assets/res/logos/uptimAI_logo.svg",
+
+    website: "https://uptim.ai/",
+  },
+  {
+    id: 58,
+    name: "SelectAM",
+    logo: "../../assets/res/logos/logo-selectam.png",
+
+    website: "https://selectam.io/",
+  },
+  {
+    id: 59,
+    name: "Electroingenium",
+    logo: "https://www.electroingenium.es/wp-content/uploads/2021/05/Logo-corto-2.png",
+
+    website: "https://www.electroingenium.es/en/",
+  },
 ];

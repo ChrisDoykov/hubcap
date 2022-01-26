@@ -51,7 +51,7 @@ const routes: Routes = [
   { path: "resources", component: ResourcesComponent },
   { path: "faq", component: FaqComponent },
   { path: "call-winners", component: WinnersComponent },
-  // { path: "technologies", component: TehcnologiesComponent },
+  { path: "technologies", component: TehcnologiesComponent },
   { path: "HUBCAP_OC1-1PULL", component: ResourcesComponent },
   { path: "HUBCAP_OC1-2PULL", component: ResourcesComponent },
   { path: "HUBCAP_OC1-3PULL", component: ResourcesComponent },

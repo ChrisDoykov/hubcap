@@ -150,18 +150,13 @@
       controls
     >
       <source
-        src="../../assets/res/videos/HUBCAP_MAIN_LONG_SUBS.mp4"
+        src="https://rr4---sn-aigl6nl7.c.drive.google.com/videoplayback?expire=1643082822&ei=BjzvYa74IJnShgbT6ZzgAQ&ip=31.205.210.30&cp=QVRJVUFfUVhQQ1hPOmV0Wk41cTZYNEhnWVRReHZRdmpfeldTY1JZalpjcDU5cFkxNWVkRWFNVG8&id=f48601c855a5fe7f&itag=22&source=webdrive&requiressl=yes&mh=Sg&mm=32&mn=sn-aigl6nl7&ms=su&mv=m&mvi=4&pl=20&ttl=transient&susc=dr&driveid=1tPOYP2UMSsl-Olp0Yp6uKKMipM6aVfjg&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=152.183&lmt=1643067724212600&mt=1643068108&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRQIgFWJfi3CMwz40xN0U339-vcozDGrIRK3kQbf6Q203e-MCIQCgtKCalAyv2XoWcWUy3n1QU8_ZOvZpvXdc3juf1COq6Q==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAINyKHn_82va-IU4AsNXrGZTYPgytPheqr1bV8GPU_Z0AiAfRRfS6tpP-CV7kAztK0oDtUObfaUuqYMf_2cPCiifXQ==&cpn=2hRY3TZsIKtXwlKb&c=WEB_EMBEDDED_PLAYER&cver=1.20220119.01.00"
         type="video/mp4"
       />
-      <!-- <track
-        label="English"
-        kind="subtitles"
-        srclang="en"
-        src="../../assets/res/videos/hubcap_long_main_subtitles.vtt"
-        default
-      /> -->
       Your browser does not support embedded videos.
     </video>
+
+    <!-- SUCCESS STORIES CAROUSEL -->
 
     <!-- <div class="u-center-text u-is-black-color u-margin-top-medium">
       <h2 class="heading-secondary">Success Stories</h2>
@@ -170,30 +165,38 @@
     <swiper [config]="configStories" class="swiper-stories">
       <div class="success-stories-slide" *ngFor="let story of stories">
         <div class="success-stories-slide__content">
-          <h4
-            class="success-stories-slide__content__title subtitle u-center-text"
-          >
-            {{ story.title }}
-          </h4>
-          <p class="paragraph u-text-left">
-            {{ story.sections[0].paragraphs[0] | slice: 0:150
-            }}<span
-              *ngIf="
-                story.sections[0].paragraphs[0] &&
-                story.sections[0].paragraphs[0].length > 150
-              "
-              >...</span
+          <img
+            src="{{ story.image }}"
+            alt="{{ story.title }}"
+            class="success-stories-slide__image"
+          />
+          <div class="success-stories-slide__body">
+            <h4
+              class="success-stories-slide__content__title subtitle u-center-text"
             >
-          </p>
-          <a
-            class="success-stories-slide__content__link"
-            href="/success-stories/{{ story.urlName }}"
-            routerLinkActive="active"
-            >Read More</a
-          >
+              {{ story.title }}
+            </h4>
+            <p class="paragraph u-text-left">
+              {{ story.summary | slice: 0:150
+              }}<span *ngIf="story.summary && story.summary.length > 150"
+                >...</span
+              >
+            </p>
+            <a
+              class="success-stories-slide__content__link"
+              href="{{ story.url }}"
+              target="_blank"
+              routerLinkActive="active"
+              >Read More</a
+            >
+          </div>
         </div>
       </div>
-    </swiper> -->
+    </swiper>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+
+    <!-- SUCCESS STORIES CAROUSEL -->
   </section>
 
   <section class="divider" id="first"></section>
@@ -262,7 +265,7 @@
 
   <section class="open-calls">
     <!-- <h2 class="title is-2">Open Calls</h2> -->
-    <swiper [config]="config">
+    <swiper class="swiper-calls" [config]="config">
       <div class="slide h-100" *ngFor="let slide of slides; let i = index">
         <!-- <img src="{{ slide.imageURL }}" class="slide__bg" alt="" /> -->
         <img

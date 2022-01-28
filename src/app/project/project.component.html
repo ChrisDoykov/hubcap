@@ -3,11 +3,7 @@
     <div class="col-1-of-2">
       <div class="u-justify-text-tab-port u-margin-bottom-medium">
         <h1
-          class="
-            heading-primary
-            heading-primary--underlined
-            heading-primary--underlined-darkblue
-          "
+          class="heading-primary heading-primary--underlined heading-primary--underlined-darkblue"
           [ngClass]="{
             'heading-primary--underlined-left heading-primary--underlined-left-big':
               width >= 900
@@ -213,28 +209,7 @@
       </div> -->
     </div>
   </div>
-  <h2 class="heading-tertiary u-center-text">Public Deliverables</h2>
-  <table class="deliverables">
-    <tr class="deliverable deliverable--header">
-      <th class="deliverable__column">No.</th>
-      <th class="deliverable__column">Name</th>
-      <th class="deliverable__column">Due month</th>
-    </tr>
-    <tr class="deliverable" *ngFor="let item of deliverables">
-      <td class="deliverable__column">{{ item.number }}</td>
-      <td class="deliverable__column">
-        <a href="{{ item.link }}" target="_blank">
-          {{ item.name }}
-        </a>
-      </td>
-      <td class="deliverable__column">{{ item.month }}</td>
-    </tr>
-    <tr class="deliverable deliverable--footer">
-      <td class="deliverable__column">&nbsp;</td>
-      <td class="deliverable__column">&nbsp;</td>
-      <td class="deliverable__column">&nbsp;</td>
-    </tr>
-  </table>
+
   <div class="modal" id="imageTwo">
     <div class="modal-background"></div>
     <div class="modal-content">

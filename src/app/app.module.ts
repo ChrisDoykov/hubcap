@@ -32,7 +32,6 @@ import { SwiperConfigInterface } from "ngx-swiper-wrapper";
 
 import { CalendarModule, DateAdapter } from "angular-calendar";
 import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
-import { MomentModule } from "ngx-moment";
 
 import { PullComponent } from "./pull/pull.component";
 import { ExperimentComponent } from "./experiment/experiment.component";
@@ -68,9 +67,9 @@ import { ImagePreloadDirective } from "./image-preload.directive";
 import { PressReleaseArticle6Component } from "./press-release-articles/press-release-article6/press-release-article6.component";
 import { PressReleaseArticle7Component } from "./press-release-articles/press-release-article7/press-release-article7.component";
 import { PressReleaseArticle8Component } from "./press-release-articles/press-release-article8/press-release-article8.component";
-import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
-import { SuccessStoryComponent } from "./success-story/success-story.component";
 import { TechnologyDialogComponent } from "./technology-dialog/technology-dialog.component";
+import { OutputsComponent } from "./outputs/outputs.component";
+import { DatePipe } from "./date.pipe";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -122,9 +121,9 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     PressReleaseArticle6Component,
     PressReleaseArticle7Component,
     PressReleaseArticle8Component,
-    SuccessStoriesListComponent,
-    SuccessStoryComponent,
     TechnologyDialogComponent,
+    OutputsComponent,
+    DatePipe,
   ],
   imports: [
     BrowserModule,
@@ -145,7 +144,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       provide: DateAdapter,
       useFactory: adapterFactory,
     }),
-    MomentModule,
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { deliverables } from "./deliverables";
 
 @Component({
   selector: "app-project",
@@ -9,8 +8,6 @@ import { deliverables } from "./deliverables";
 export class ProjectComponent implements OnInit {
   width: number;
   constructor() {}
-
-  deliverables = deliverables;
 
   ngOnInit(): void {
     document.title = "Project Details | HUBCAP";

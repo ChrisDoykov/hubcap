@@ -23,6 +23,34 @@ const colors: any = {
 
 export const events: CalendarEvent[] = [
   {
+    start: new Date("20 January 2022 11:00"),
+    end: new Date("20 January 2022 23:59"),
+    title: `Call #2.2 EXPERIMENT 2nd Q&A and Matchmaking Event`,
+    color: colors.experiment,
+    meta: {
+      description:
+        "Join us in our 2nd live Q&A and Matchmaking event for Call #2.2 EXPERIMENT on 3 December 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
+      location: "Zoom",
+      time: "11:00 AM - 13:00 PM",
+      link: "https://www.f6s.com/hubcap-call-2.2-experiment-2nd-qa-webinar-and-matchmaking",
+      recordingLink: "",
+    },
+  },
+  {
+    start: new Date("03 December 2021 13:00"),
+    end: new Date("03 December 2021 23:59"),
+    title: `Call #2.2 EXPERIMENT Q&A and Matchmaking Event`,
+    color: colors.experiment,
+    meta: {
+      description:
+        "Join us in our live Q&A and Matchmaking event for Call #2.2 EXPERIMENT on 3 December 2021! Get the opportunity to find a suitable partner for the call and pose any questions or doubts you may have!",
+      location: "Zoom",
+      time: "13:00 AM - 15:30 PM",
+      link: "https://www.f6s.com/hubcap-call-2.2-experiment-1st-qa-webinar-and-matchmaking",
+      recordingLink: "https://www.youtube.com/watch?v=pOeIBiDGbFQ",
+    },
+  },
+  {
     start: new Date("07 July 2021 9:00"),
     end: new Date("07 July 2021 23:59"),
     title: `Call #3 INNOVATE Final Webinar`,
@@ -36,6 +64,7 @@ export const events: CalendarEvent[] = [
       recordingLink: "https://www.youtube.com/watch?v=fh8ii-_3Ku8",
     },
   },
+
   {
     start: new Date("09 June 2021 13:00"),
     end: new Date("09 June 2021 23:59"),

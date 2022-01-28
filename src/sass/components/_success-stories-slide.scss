@@ -4,15 +4,25 @@
 .success-stories-slide {
   cursor: grab;
 
+  &__body {
+    padding: 1.5rem 2rem;
+  }
+
+  &__image {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
   &__content {
     // height: 20rem;
     // width: 20rem;
-    padding: 1.5rem 2rem;
     margin: 5rem 1rem;
     margin-bottom: 6rem;
     border-radius: 1rem;
     background-color: $color-grey-light-2;
     box-shadow: 0 0.5rem 1rem rgba($color: $color-black, $alpha: 0.3);
+    position: relative;
+    transition: all 0.3s;
 
     &__title {
       //   margin: 1rem 0;
@@ -26,6 +36,11 @@
       @include respond(phone) {
         font-size: 1.9rem;
       }
+    }
+
+    &:hover {
+      transform: translateY(-1rem);
+      z-index: 100;
     }
   }
 }

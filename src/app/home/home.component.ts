@@ -75,7 +75,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       clickable: true,
     },
     spaceBetween: 30,
-    initialSlide: 1,
+    initialSlide: 0,
   };
 
   slides = [
@@ -99,7 +99,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         "Experiment with up to € 75,000",
         "Free services & support from the HUBCAP ecosystem",
       ],
-      buttonText: "APPLY NOW",
+      buttonText: "READ MORE",
     },
     {
       imageURL: "../../assets/res/images/HUBCAP_INNOVATE.webp",

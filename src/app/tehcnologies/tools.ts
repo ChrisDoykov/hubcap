@@ -583,7 +583,7 @@ export const tools = [
     logo: "../../assets/res/logos/LogoAirChain.png",
     asset_name: "AirChain",
     company_name: "Cubic Fort Consultores SL",
-    url: "https://cubicfort.com",
+    url: "https://airtrace.io",
     description:
       "With AirChain you can generate a permissioned blockchain network in the cloud to securely store all the measurements of your IoT sensors. Just with one mouse click. Select the organizations that will manage data, privacy policies, among other parameters, and the system will automatically generate the API endpoints that you need to start storing/getting data in/from the blockchain.",
     showMore: false, // Always leave at false

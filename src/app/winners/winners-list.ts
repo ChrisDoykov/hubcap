@@ -78,7 +78,7 @@ export const WINNERS: SME[] = [
     name: "Cubic Fort Consultores SL",
     logo: "../../assets/res/logos/LogoAirChain.png",
 
-    website: "https://cubicfort.com/",
+    website: "https://airtrace.io",
   },
   {
     id: 12,

@@ -82,12 +82,12 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       imageURL: "../../assets/res/images/HUBCAP_PULL.webp",
       backupImageURL: "../../assets/res/images/HUBCAP_PULL.jpg",
-      heading: "CALL #1.4 PULL",
+      heading: "CALL #1.5 PULL",
       lines: [
         "Receive €1000 lump sum & support services",
         "Sell your assets in the HUBCAP platform",
       ],
-      buttonText: "READ MORE",
+      buttonText: "APPLY NOW",
     },
     {
       imageURL: "../../assets/res/images/HUBCAP_EXPERIMENT.webp",

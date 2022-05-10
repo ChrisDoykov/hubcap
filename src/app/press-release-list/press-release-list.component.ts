@@ -11,13 +11,13 @@ export class PressReleaseListComponent implements OnInit {
   releases = [
     // In order to edit the Press Release text look into press-release-article7.html in the press-release-articles folder
 
-    // {
-    //   name: "Call #1.5 Press Release",
-    //   description:
-    //     "Check out the official Call #1.5 PULL press release to find out more about how it works and what each SME can gain from participating!",
-    //   url: "press-releases/call1-5",
-    //   urlname: "See press release",
-    // },
+     {
+       name: "Call #1.5 Press Release",
+       description:
+         "Check out the official Call #1.5 PULL press release to find out more about how it works and what each SME can gain from participating!",
+      url: "press-releases/call1-5",
+       urlname: "See press release",
+     },
 
     // In order to edit the Press Release text look into press-release-article8.html in the press-release-articles folder
 

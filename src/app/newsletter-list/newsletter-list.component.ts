@@ -10,7 +10,7 @@ export class NewsletterListComponent implements OnInit {
   newsletters = [
     {
       month: "March 2022",
-      description: `Find out the latest updates in the HUBCAP project, learn about the outcomes of our first EXPERIMENT project and find out how to become a HUBCAP DIH in our March 2022 edition of our newsletter!`,
+      description: `Find out the latest updates in HUBCAP, learn about the outcomes of our first EXPERIMENT project and find out how to become a HUBCAP DIH in our March 2022 edition of our newsletter!`,
       url: "../../assets/res/files/newsletters/Hubcap_Newsletter_Mar_2022.pdf",
       thumbnail: "../../assets/res/files/newsletters/thumbnails/N5_thumb.png",
       thumbnailAlt: "March 2022 Newsletter Front Page",

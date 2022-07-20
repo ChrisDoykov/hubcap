@@ -87,7 +87,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         "Receive €1000 lump sum & support services",
         "Sell your assets in the HUBCAP platform",
       ],
-      buttonText: "APPLY NOW!",
+      buttonText: "READ MORE",
     },
     {
       imageURL: "../../assets/res/images/HUBCAP_EXPERIMENT.webp",

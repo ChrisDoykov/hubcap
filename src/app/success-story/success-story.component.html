@@ -1,0 +1,129 @@
+<div
+  class="success-story"
+  [ngStyle]="{ 'margin-bottom': story.sections.length <= 2 ? '7rem' : 0 }"
+>
+  <h1
+    class="
+      success-story__title
+      heading-primary
+      heading-primary--underlined
+      heading-primary--underlined-green
+    "
+  >
+    {{ story.title }}
+  </h1>
+
+  <div class="success-story__top-right">
+    <div class="success-story__info-box">
+      <p class="success-story__info-box__line">
+        <b class="u-is-bold"
+          >End User<span *ngIf="story.info.endUsers.length > 1">s</span>:
+        </b>
+        <span *ngFor="let user of story.info.endUsers; let i = index">
+          <a
+            href="{{ user.website }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ user.name }}</a
+          >
+          <span
+            *ngIf="
+              story.info.endUsers.length > 1 &&
+              i !== story.info.endUsers.length - 1
+            "
+            >,
+          </span>
+        </span>
+      </p>
+      <p class="success-story__info-box__line">
+        <b class="u-is-bold"
+          >Technology Provider<span *ngIf="story.info.techProviders.length > 1"
+            >s</span
+          >:
+        </b>
+        <span *ngFor="let provider of story.info.techProviders; let i = index">
+          <a
+            href="{{ provider.website }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ provider.name }}</a
+          ><span
+            *ngIf="
+              story.info.techProviders.length > 1 &&
+              i !== story.info.techProviders.length - 1
+            "
+            >,<br />
+          </span>
+        </span>
+      </p>
+      <p class="success-story__info-box__line">
+        <b class="u-is-bold">DIH: </b
+        ><a
+          href="{{ story.info.dih.website }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ story.info.dih.name }}
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="success-story__sections"> -->
+  <div
+    class="success-story__section"
+    *ngFor="let section of story.sections.slice(0, 1)"
+  >
+    <h3 class="heading-tertiary success-story__section__heading">
+      {{ section.sectionHeading }}
+    </h3>
+    <p
+      class="paragraph paragraph--big u-margin-bottom-small"
+      *ngFor="let paragraph of section.paragraphs"
+    >
+      {{ paragraph }}
+    </p>
+  </div>
+  <div class="success-story__image-box">
+    <img
+      class="modal-button success-story__image"
+      alt="{{ story.title }}"
+      src="{{ story.image }}"
+      (click)="openModal(story)"
+      attr.data-target="{{ story.title }}"
+      aria-haspopup="true"
+    />
+  </div>
+  <div
+    class="success-story__section"
+    *ngFor="let section of story.sections.slice(1, story.sections.length)"
+  >
+    <h3 class="heading-tertiary success-story__section__heading">
+      {{ section.sectionHeading }}
+    </h3>
+    <p
+      class="paragraph paragraph--big u-margin-bottom-small"
+      *ngFor="let paragraph of section.paragraphs"
+    >
+      {{ paragraph }}
+    </p>
+  </div>
+
+  <!-- </div> -->
+</div>
+
+<div class="modal" id="{{ story.title }}">
+  <div class="modal-background" (click)="closeModal(story)"></div>
+  <div class="modal-content">
+    <figure class="figure">
+      <img src="{{ story.image }}" alt="{{ story.title }}" />
+    </figure>
+  </div>
+  <button
+    class="modal-close is-large"
+    (click)="closeModal(story)"
+    aria-label="close"
+  ></button>
+</div>

@@ -70,6 +70,8 @@ import { PressReleaseArticle8Component } from "./press-release-articles/press-re
 import { TechnologyDialogComponent } from "./technology-dialog/technology-dialog.component";
 import { OutputsComponent } from "./outputs/outputs.component";
 import { DatePipe } from "./date.pipe";
+import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
+import { SuccessStoryComponent } from "./success-story/success-story.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -124,6 +126,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     TechnologyDialogComponent,
     OutputsComponent,
     DatePipe,
+    SuccessStoriesListComponent,
+    SuccessStoryComponent
   ],
   imports: [
     BrowserModule,

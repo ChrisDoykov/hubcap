@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { stories } from "../success-stories-list/success-stories";
+import { SafePipeModule } from 'safe-pipe';
 
 @Component({
   selector: "app-success-story",
@@ -15,7 +16,10 @@ export class SuccessStoryComponent implements OnInit {
   // Story skeleton (used before the story data comes in)
   story = {
     title: "",
+    subtitle: "",
     image: "",
+    quote: "",
+    quoteAttribution: "",
     sections: [
       {
         sectionHeading: "",
@@ -27,7 +31,11 @@ export class SuccessStoryComponent implements OnInit {
       endUsers: [{ name: "", website: "" }],
       techProviders: [{ name: "", website: "" }],
       dih: { name: "", website: "" },
+      domains: [""],
+      impact: [""],
     },
+    tryItNowUrl: "",
+    videoUrl: ""    
   };
 
   ngOnInit(): void {
@@ -53,5 +61,9 @@ export class SuccessStoryComponent implements OnInit {
     const $target = document.getElementById(target);
 
     $target.classList.remove("is-active");
+  }
+
+  tryItNow() {
+    window.open(this.story.tryItNowUrl, "_blank");
   }
 }

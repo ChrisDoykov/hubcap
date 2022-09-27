@@ -34,6 +34,7 @@
     border-radius: 1rem;
     max-width: fit-content;
     padding-right: 4rem;
+    margin-top: 2rem;
 
     @include respond(tab-port) {
       float: none;
@@ -45,12 +46,14 @@
       padding: 0 !important;
     }
   }
+
   &__top-right {
     float: right;
     shape-outside: border-box;
-    border-radius: 1rem;
-    max-width: fit-content;
+    border-radius: 0.3rem;
+    max-width: 50rem;
     padding-left: 4rem;
+    margin-top: 5rem;
 
     @include respond(tab-port) {
       float: none;
@@ -71,11 +74,11 @@
 
   &__info-box {
     margin-bottom: 3rem;
-    border: 0.5rem solid $color-green;
+    border-style: solid;
+    border-width: 0.3rem;
     // background-color: $color-primary;
     padding: 2rem 3rem;
     border-radius: 1rem;
-    color: $color-black;
     width: fit-content;
 
     &__line {
@@ -98,5 +101,65 @@
     }
     &__heading {
     }
+  }
+
+  &__pullquote {
+    font-size: 3rem !important;
+    position: relative;
+    display:block;
+    margin: 0em;
+    padding: 0.5em 2em 0.5em 3em;
+  }
+
+  /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+  &__pullquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+  }
+
+  &__pullquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+  }
+
+  &__pullquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+    clear: both;
+  }
+
+  &__pullquote cite:before {
+    content: "\2013";
+  }
+
+  &__quotecolor {
+    color: $color-green;
+  }
+
+  &__infobordercolor {
+    border-color: $color-teal;
+  }  
+
+  &__impactbordercolor {
+    border-color: $color-primary;
+  }
+  
+  &__video {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    //width: 100%;
   }
 }

@@ -52,6 +52,7 @@
     "prerender-node": "^3.2.5",
     "rxjs": "^6.5.3",
     "rxjs-compat": "^6.6.7",
+    "safe-pipe": "^2.0.2",
     "swiper": "^6.7.0",
     "tslib": "^2.2.0",
     "typewriter-effect": "^2.17.0",

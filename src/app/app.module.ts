@@ -4,6 +4,8 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
+import { SafePipeModule } from 'safe-pipe';
+
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
@@ -72,6 +74,7 @@ import { OutputsComponent } from "./outputs/outputs.component";
 import { DatePipe } from "./date.pipe";
 import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
 import { SuccessStoryComponent } from "./success-story/success-story.component";
+import { SafePipe } from './safe.pipe';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -127,7 +130,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     OutputsComponent,
     DatePipe,
     SuccessStoriesListComponent,
-    SuccessStoryComponent
+    SuccessStoryComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

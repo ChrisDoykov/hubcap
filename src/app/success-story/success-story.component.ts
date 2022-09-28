@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { stories } from "../success-stories-list/success-stories";
-import { SafePipeModule } from 'safe-pipe';
 
 @Component({
   selector: "app-success-story",

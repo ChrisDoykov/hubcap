@@ -79,11 +79,16 @@
         >;
       </span></span>
       </p>
+      <div *ngIf="story.tryItNowUrl">
       <hr/>
+      <p class="success-story__info-box__line">
+        <b class="u-is-bold">See it on the HUBCAP Platform: </b>
+      </p>
       <div style="display: flex; justify-content: center;">
       <button class="button button--download" (click)="tryItNow()">
-        TRY IT NOW
+        GO TO PLATFORM
       </button>
+      </div>
     </div>
     </div>
   </div>
@@ -162,7 +167,7 @@
     </p>
   </div>
 
-  <div class="success-story__video">
+  <div *ngIf="story.videoUrl" class="success-story__video">
   <iframe width="784" height="441" [src]="story.videoUrl | safe: 'resourceUrl'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <!-- </div> -->

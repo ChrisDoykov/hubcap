@@ -3,9 +3,9 @@
 
 export const stories = [
   {
-    title: "Improving Simulations for Medical Detector Design",
+    title: "Improving Simulations for Medical Detector Design with Machine Learning",
     subtitle: "Introducing machine learning techniques to reduce the computational cost of Monte Carlo-based simulations for medical imaging detector design",
-    image: "../../assets/res/images/699655.jpg",
+    image: "../../assets/res/images/iStock-1149878152.jpg",
     urlName: "simulation-for-medical-detectors",
     quote: "With this project we break through the most difficult aspect of time-optimized radiation detector design, simulating particle tracks and detector dimensions till we find an optimized solution, reducing the cost of new detector development 10-fold timewise",
     quoteAttribution: "Georgios Konstantinou, Multiwave Metacrystal",

@@ -201,6 +201,77 @@ export const stories = [
     },
     tryItNowUrl: "",
     videoUrl: "https://www.youtube.com/embed/_aXTQALshWM"
+  },
+  {
+    title: "Advanced Virtual Reality Locomotion Platform Enhanced with AI-based Motion Capture",
+    subtitle: "",
+    image: "../../assets/res/images/iStock-1321187527.jpg",
+    urlName: "locomotion-with-ai-based-motion-capture",
+    quote: "HUBCAP’s financial and mentoring support enabled the exploitation of our AI-based motion capture technology for introducing new functionalities in an already innovative product for VR locomotion",
+    quoteAttribution: "Anargyros Chatzitofis CEO, Codewheel",
+    // "The support provided by HUBCAP enabled vital research on improving the user’s gait on VR locomotion devices by integrating an AI-based MoCap System into the Virtualizer.” – Holger Hager, CEO, Cyberinth "
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "LocoMoCap is a project related to the common vision of Cyberith, a leading provider of professional locomotion devices for virtual reality, and Codewheel, an AI-based motion capture (MoCap) start-up. Its ultimate goal has been the exploitation of Codewheel's AI-based technology for improving Cyberith's Virtualizer products. To overcome the challenges in integrating the sensor-based MoCap subsystem with the Virtualizer's motion platform, we developed LocSim, a simulation tool for rapid-test integration that is now available through the HUBCAP platform.",
+          "To improve the physical walking experience on the Virtualizer and increase immersion in Virtual Reality (VR), the Virtualizer's motion platform has been enhanced with an additional information stream, the user's lower-body motion. The provided information enables the systematic analysis of different users' gaits and allows us to better understand the abilities and limitations of Cyberith's current system. Moreover, the data was exploited in a newly created prototype that uses the additionally provided information to improve the Virtualizer's active gait support and to improve the walking movement in VR. The newly gained know-how and the technology developed within the scope of the project, shall serve as a basis for future enhancements of Cyberith's current products and new product developments.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "The integration of the MoCap technology in the new Virtualizer prototype was initially split in three phases; first we collaboratively developed the LocSim tool that is able to simulate the combination of the two systems and provide a rapid-test environment with natural physics rules and realistic human (avatar) movement on the Virtualizer’s digital twin. Second, using feedback from extensive collaborative sessions between the two companies for the familiarization with each other’s technology, each partner improved the corresponding existing technology towards the integration of the two systems.",
+          "Finally, the integration phase followed, which involved the setup of two identical MoCap-enhanced Virtualizers - one per partner's premises. The integration phase lasted approximately 4 months, allowing for intense testing and iterative improvement for both sub-systems. The result of the integration has been evaluated in two parts; the first part focused on acquiring feedback from relevant users in terms of “interest for a new product”, while the second part focused on qualitative and quantitative feedback through user pilots for assessing the performance of the enhanced Virtualizer compared to the original model.", 
+          "Based on internal evaluation of the new system, it seems that the motion information stream can be used to dynamically support the gait of the user and to apply dynamic smoothing for improving user experience in VR."
+        ],
+      },      
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "The support provided by HUBCAP boosted the cooperation in between Codewheel and Cyberith and enabled vital research on improving the user's gait on VR locomotion devices. It enabled the integration of an AI-based MoCap System into the Virtualizer.",
+          "The prototype created proves the high potential of integrating such a MoCap system with VR Treadmills and shall serve as a basis for future product developments.",
+          "The development of the prototype though required a model-based design logic to enable the remote collaboration for integrating motion capture to the Virtualizer. This would be impossible without the developed LocSim tool, a simulator in the form of a Unity3D asset now hosted by the HUBCAP platform. We hope that the HUBCAP ecosystem will be able to leverage this simulator as we did for creating realistic human avatar movement scenarios on various environments." 
+        ],
+      },
+//      {
+//        sectionHeading: "Forward look",
+//        paragraphs: [
+//          ""
+//        ],
+//      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "Cyberith ",
+          website: "https://www.cyberith.com/",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Codewheel",
+          website: "https://www.codewheel.eu/",
+        },
+      ],
+      dih: { name: "HUBCAP Austria", website: "https://www.v2c2.at/" },
+      domains: [
+        "Virtual Reality Locomotion Systems", 
+        "Motion Capture", 
+        "Full-Body Tracking", 
+        "Artificial Intelligence", 
+        "Virtual Reality", 
+        "Cyber-physical Systems"
+      ],
+      impact: [
+        "Systematic analysis of different users gaits",
+        "Implemented concrete improvements into a new Virtualizer prototype",
+        "A simulation tool for for testing various marker setups prior to physical integration.",
+        "A lower-body specific motion capture AI-based system.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: "https://www.youtube.com/embed/4PWi7sQ1pWs"
   }, 
 ];
 

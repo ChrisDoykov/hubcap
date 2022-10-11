@@ -1,8 +1,68 @@
 // Global list of success stories
 // Used both by the list page as well as the story component itself
 
+/*
+{
+  title: "",
+  subtitle: "",
+  image: "../../assets/res/images/iStock-1149878152.jpg",
+  urlName: "",
+  quote: "",
+  quoteAttribution: "",
+  sections: [
+    {
+      sectionHeading: "Problem and solution",
+      paragraphs: [
+        "",
+      ],
+    },
+    {
+      sectionHeading: "What we did",
+      paragraphs: [
+        ""
+      ],
+    },      
+    {
+      sectionHeading: "HUBCAP support and platform opportunity",
+      paragraphs: [
+        "",
+        ],
+    },
+    {
+      sectionHeading: "Forward look",
+      paragraphs: [
+        ""
+      ],
+    },
+  ],
+  info: {
+    endUsers: [
+      {
+        name: "",
+        website: "",
+      }
+    ],
+    techProviders: [
+      {
+        name: "",
+        website: "",
+      },
+    ],
+    dih: { name: "", website: "" },
+    domains: [
+      ""
+    ],
+    impact: [
+      ""        
+    ],
+  },
+  tryItNowUrl: "",
+  videoUrl: ""
+},
+*/
+
 export const stories = [
-  {
+   {
     title: "Improving Simulations for Medical Detector Design with Machine Learning",
     subtitle: "Introducing machine learning techniques to reduce the computational cost of Monte Carlo-based simulations for medical imaging detector design",
     image: "../../assets/res/images/iStock-1149878152.jpg",
@@ -71,5 +131,76 @@ export const stories = [
     },
     tryItNowUrl: "https://hubcap-portal.eng.it/",
     videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
-  },
+  }, 
+   {
+    title: "Building Envoronmental Digital Twins to Maximise Farming Potential",
+    subtitle: "",
+    image: "../../assets/res/images/fiss.png",
+    urlName: "farming-intelligence-system-of-systems",
+    quote: "The HUBCAP funding allowed out team to further develop the FISS prototype and to successfully demonstrate it within an operational environment, to promote to product towards relevant potential clients and to enable the future commercialisation of the FISS line of products and services.",
+    quoteAttribution: "Pedro Branco, Xilbi Sistemas de Informacion SL",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "The Farming Intelligence System of Systems (FISS) took the interaction between farmers and their plantation fields to a new level. It delivered an Environmental Digital Twin and associated Artificial Intelligence (AI) based Decision Support System (DSS) which allows farmers to maximise the benefit of existing operational assets and know-how. This is achieved by connecting, exchanging and analysing the data, via the FISS Cyber-Physical (CPS) platform, from deployed technological existing sub-systems (e.g. Internet of Things(IoT) based sensors, meteorological data, Earth Observation (EO), Remotely Piloted Aircraft Systems (RPAS), photovoltaic powerplants, robotic, and non-robotic field machinery) and to recommend proper actions towards farmers via desktop and mobile interfaces, including via the usage of an Augmented Reality glasses display interface.",
+          "The FISS system was designed in agreement with the requirements of the farmer's community and particularly medium to large scale almonds and pistachio's producers. This target user's community main requirements are focused in the need a decision support system that will enable the optimisation of irrigation, fertilization and pesticide application procedures in order to optimise resources usage (e.g. water, fertilizers, energy) and in consequence reduce costs and environmental impact. ",
+          "FISS delivers the complete digitalisation of the farming operational environment. The system will enable a more streamlined crop management by means of optimisation of operational and management farming procedures. FISS' target customers are all farmers and farmer organisations"
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "The FISS experiment involved the creation of a Digital Twin simulation environment of an almond plantation field. This Digital Twin integrated data from field Internet of Things enviromental sensors, weather stations, irrigation actuators, satellite imager (Copernicus) and machinery position data. Machine Learning was used to deliver irrigation planning recommendations and to generated solar energy production forecasts.",
+          "At the beginning of this HUCAP project the system was at TRL 5: technology validated in relevant environment. During the project activities, and by means of using a Model-Based Design approach, the prototype was further developed, in close collaboration with potential users towards achieving TRL 7: system prototype demonstration in operational environment."
+        ],
+      },      
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "The HUBCAP funding allow us to implement a very challenging experiment, while demonstrating the system within an operational environment, paving the way towards commercialisation. By means of using the HUBCAP platform we were able to further develop FISS' machine learning algorithms within a shared environment, and to promote our tools and potentially accessing new potential markets.",
+          ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "We estimate the FISS' global Serviceable Available Market (SAM) to be of €300 million and the European SAM to reach €80 million in 2025. We expect to enter the commercial market in 2023. We expect Return on Investment will be achieved in 2025. Our growth forecast indicators are €1.1M turnover in 2025 with four new job positions, rising to €2.5M and six new job positions by 2027."
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "Fotovoltaica Macotera SL",
+          website: "https://www.fotovoltaicamacotera.com/",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Xilbi Sistemas de Informacion SL",
+          website: "https://www.xilbi.com/",
+        },
+        {
+          name: "Cyblix Unipessoal Lda.",
+          website: "https://www.cyblix.com/",          
+        }
+      ],
+      dih: { name: "HUBCAP Denmark", website: "https://digit.au.dk/" },
+      domains: [
+        "Smart Farming",
+        "Renewable Energy", 
+        "Machine Learning", 
+        "Internet of Things", 
+        "Satellite Imagery"
+      ],
+      impact: [
+        "Creation of a new line of products and services",
+        "Optimisation of farming operational procedures", 
+        "Forecast and Optimisation of solar energy production"      
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: "https://www.youtube.com/embed/_aXTQALshWM"
+  }, 
 ];
+

@@ -39,14 +39,17 @@ export class SuccessStoryComponent implements OnInit {
 
   ngOnInit(): void {
     const url = window.location.href.toString();
+    var found = false;
     this.stories.forEach((story) => {
       if (url.includes(story.urlName)) {
+        found = true;
         this.story = story;
         document.title = `${story.title} | Success Stories | HUBCAP`;
-      } else {
-        this.router.navigate(["/not-found"]);
-      }
+      } 
     });
+    if(!found) {
+      this.router.navigate(["/not-found"]);
+    }
   }
 
   openModal(story) {

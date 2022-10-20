@@ -9,7 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --configuration production"
+    "heroku-postbuild": "ng build --configuration production",
+    "engines": {
+        "node": "14.x"
+    }
   },
   "private": true,
   "dependencies": {

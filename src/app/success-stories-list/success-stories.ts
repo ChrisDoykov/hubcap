@@ -205,7 +205,7 @@ export const stories = [
   {
     title: "Advanced Virtual Reality Locomotion Platform Enhanced with AI-based Motion Capture",
     subtitle: "",
-    image: "../../assets/res/images/iStock-1321187527.jpg",
+    image: "../../assets/res/images/Screenshot_LocoMoCap.jpg",
     urlName: "locomotion-with-ai-based-motion-capture",
     quote: "HUBCAP’s financial and mentoring support enabled the exploitation of our AI-based motion capture technology for introducing new functionalities in an already innovative product for VR locomotion",
     quoteAttribution: "Anargyros Chatzitofis CEO, Codewheel",

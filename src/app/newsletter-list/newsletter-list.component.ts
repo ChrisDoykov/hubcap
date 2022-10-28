@@ -8,7 +8,15 @@ import { Component, OnInit } from "@angular/core";
 export class NewsletterListComponent implements OnInit {
   constructor() {}
   newsletters = [
-   
+
+    {
+      month: "October 2022",
+      description: `Find out the latest updates in HUBCAP, learn about the outcomes of our second EXPERIMENT call in our October 2022 edition of our newsletter!`,
+      url: "../../assets/res/files/newsletters/Hubcap_Newsletter_Oct_2022.pdf",
+      thumbnail: "../../assets/res/files/newsletters/thumbnails/N7_thumb.png",
+      thumbnailAlt: "October 2022 Newsletter Front Page",
+      modalTarget: "N7",
+    },
     {
       month: "June 2022",
       description: `Find out the latest updates in HUBCAP, learn about the outcomes of our first EXPERIMENT call and find out more on how to apply to Call #1.5 in our June 2022 edition of our newsletter!`,

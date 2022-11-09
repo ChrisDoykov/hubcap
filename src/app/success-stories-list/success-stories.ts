@@ -21,7 +21,7 @@
       paragraphs: [
         ""
       ],
-    },      
+    },
     {
       sectionHeading: "HUBCAP support and platform opportunity",
       paragraphs: [
@@ -53,7 +53,7 @@
       ""
     ],
     impact: [
-      ""        
+      ""
     ],
   },
   tryItNowUrl: "",
@@ -81,7 +81,7 @@ export const stories = [
         paragraphs: [
           "Combining multi-disciplinary expertise, from data and machine learning to computational and applied physics, within this project we developed Monte-Carlo (MC) simulators using variable physics and detector designs, towards the time-optimized scintillation-based radiation detector application. This simulation starts by generating of pseudo-random seeds that address a stochastic pipeline of particle creation and interactions. The computational complexity of the process depends on the geometric model of the simulated system, but most importantly on the used physics. For this type of detector, we require both nuclear physics and optical photons. In total, every experiment includes 10s of thousands of particles and close to a million particle interactions, intensifying with the addition of optics. We probed how different ML approaches, from supervised ML to more complex uncertainty quantification approaches fit in the different simulated problems, with the purpose to reduce the requirement for statistics when running MC, or even scrapping the need for MC use altogether. The pipeline was initially built using only nuclear physics and is being benchmarked for the addition of optics, to also show its versatility. We have demonstrated reduction to the computational load that is so significant, that for the first time we can use the MC-UQ pipeline embedded in tools such as optimization loops. The system can run on the cloud and users can design geometries, choose physics and run experiments directly online through the HUBCAP platform. In application, we designed a new material combination, replicating the behaviour of the golden-standard scintillator, at a third of the cost."
         ],
-      },      
+      },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
@@ -118,7 +118,7 @@ export const stories = [
       domains: [
         "Positron Emission Tomography",
         "Physics simulation",
-        "Detector design", 
+        "Detector design",
         "Machine learning",
         "Cloud-based SaaS",
       ],
@@ -126,12 +126,12 @@ export const stories = [
         "Development of a digital tool that improves productivity and precision for positron emission tomography detector design and development.",
         "Integration of Monte-Carlo with Uncertainty Quantification techniques to reduce the computational load, allowing integration with specialized tools such as optimization routines.",
         "Direct querying of performance-driven indicators that return physical characteristics and dimensions to be constructed.",
-        "A physics-agnostic pipeline with potential application in any type of physical design Monte-Carlo simulator."        
+        "A physics-agnostic pipeline with potential application in any type of physical design Monte-Carlo simulator."
       ],
     },
     tryItNowUrl: "https://hubcap-portal.eng.it/",
     videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
-  }, 
+  },
    {
     title: "Building Envoronmental Digital Twins to Maximise Farming Potential",
     subtitle: "",
@@ -154,7 +154,7 @@ export const stories = [
           "The FISS experiment involved the creation of a Digital Twin simulation environment of an almond plantation field. This Digital Twin integrated data from field Internet of Things enviromental sensors, weather stations, irrigation actuators, satellite imager (Copernicus) and machinery position data. Machine Learning was used to deliver irrigation planning recommendations and to generated solar energy production forecasts.",
           "At the beginning of this HUCAP project the system was at TRL 5: technology validated in relevant environment. During the project activities, and by means of using a Model-Based Design approach, the prototype was further developed, in close collaboration with potential users towards achieving TRL 7: system prototype demonstration in operational environment."
         ],
-      },      
+      },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
@@ -182,27 +182,27 @@ export const stories = [
         },
         {
           name: "Cyblix Unipessoal Lda.",
-          website: "https://www.cyblix.com/",          
+          website: "https://www.cyblix.com/",
         }
       ],
       dih: { name: "HUBCAP Denmark", website: "https://digit.au.dk/" },
       domains: [
         "Smart Farming",
-        "Renewable Energy", 
-        "Machine Learning", 
-        "Internet of Things", 
+        "Renewable Energy",
+        "Machine Learning",
+        "Internet of Things",
         "Satellite Imagery"
       ],
       impact: [
         "Creation of a new line of products and services",
-        "Optimisation of farming operational procedures", 
-        "Forecast and Optimisation of solar energy production"      
+        "Optimisation of farming operational procedures",
+        "Forecast and Optimisation of solar energy production"
       ],
     },
     tryItNowUrl: "",
     videoUrl: "https://www.youtube.com/embed/_aXTQALshWM"
   },
-  {
+   {
     title: "Advanced Virtual Reality Locomotion Platform Enhanced with AI-based Motion Capture",
     subtitle: "",
     image: "../../assets/res/images/Screenshot_LocoMoCap.jpg",
@@ -222,16 +222,16 @@ export const stories = [
         sectionHeading: "What we did",
         paragraphs: [
           "The integration of the MoCap technology in the new Virtualizer prototype was initially split in three phases; first we collaboratively developed the LocSim tool that is able to simulate the combination of the two systems and provide a rapid-test environment with natural physics rules and realistic human (avatar) movement on the Virtualizer’s digital twin. Second, using feedback from extensive collaborative sessions between the two companies for the familiarization with each other’s technology, each partner improved the corresponding existing technology towards the integration of the two systems.",
-          "Finally, the integration phase followed, which involved the setup of two identical MoCap-enhanced Virtualizers - one per partner's premises. The integration phase lasted approximately 4 months, allowing for intense testing and iterative improvement for both sub-systems. The result of the integration has been evaluated in two parts; the first part focused on acquiring feedback from relevant users in terms of “interest for a new product”, while the second part focused on qualitative and quantitative feedback through user pilots for assessing the performance of the enhanced Virtualizer compared to the original model.", 
+          "Finally, the integration phase followed, which involved the setup of two identical MoCap-enhanced Virtualizers - one per partner's premises. The integration phase lasted approximately 4 months, allowing for intense testing and iterative improvement for both sub-systems. The result of the integration has been evaluated in two parts; the first part focused on acquiring feedback from relevant users in terms of “interest for a new product”, while the second part focused on qualitative and quantitative feedback through user pilots for assessing the performance of the enhanced Virtualizer compared to the original model.",
           "Based on internal evaluation of the new system, it seems that the motion information stream can be used to dynamically support the gait of the user and to apply dynamic smoothing for improving user experience in VR."
         ],
-      },      
+      },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
           "The support provided by HUBCAP boosted the cooperation in between Codewheel and Cyberith and enabled vital research on improving the user's gait on VR locomotion devices. It enabled the integration of an AI-based MoCap System into the Virtualizer.",
           "The prototype created proves the high potential of integrating such a MoCap system with VR Treadmills and shall serve as a basis for future product developments.",
-          "The development of the prototype though required a model-based design logic to enable the remote collaboration for integrating motion capture to the Virtualizer. This would be impossible without the developed LocSim tool, a simulator in the form of a Unity3D asset now hosted by the HUBCAP platform. We hope that the HUBCAP ecosystem will be able to leverage this simulator as we did for creating realistic human avatar movement scenarios on various environments." 
+          "The development of the prototype though required a model-based design logic to enable the remote collaboration for integrating motion capture to the Virtualizer. This would be impossible without the developed LocSim tool, a simulator in the form of a Unity3D asset now hosted by the HUBCAP platform. We hope that the HUBCAP ecosystem will be able to leverage this simulator as we did for creating realistic human avatar movement scenarios on various environments."
         ],
       },
 //      {
@@ -256,11 +256,11 @@ export const stories = [
       ],
       dih: { name: "HUBCAP Austria", website: "https://www.v2c2.at/" },
       domains: [
-        "Virtual Reality Locomotion Systems", 
-        "Motion Capture", 
-        "Full-Body Tracking", 
-        "Artificial Intelligence", 
-        "Virtual Reality", 
+        "Virtual Reality Locomotion Systems",
+        "Motion Capture",
+        "Full-Body Tracking",
+        "Artificial Intelligence",
+        "Virtual Reality",
         "Cyber-physical Systems"
       ],
       impact: [
@@ -272,6 +272,139 @@ export const stories = [
     },
     tryItNowUrl: "",
     videoUrl: "https://www.youtube.com/embed/4PWi7sQ1pWs"
-  }, 
+  },
+   {
+    title: "CPS-based and data-driven modeling, monitoring and improvement of the eco-friendly quality",
+    subtitle: "Pave the way for a new generation of the quality monitoring services, which are focused not only on the processes performances (KPIs), but also on the eco-friendliness of the process, what we call eco-friendly process quality.",
+    image: "../../assets/res/images/CPS-based data-driven modeling.png",
+    urlName: "cps-based-and-data-driven-modeling",
+    quote: "Easy to deploy and affordable (software-hardware) solution for understanding the factors which impact the waste (energy, emission) based on a novel, AI-based analysis of past data.",
+    quoteAttribution: "",
+    // "The support provided by HUBCAP enabled vital research on improving the user’s gait on VR locomotion devices by integrating an AI-based MoCap System into the Virtualizer.” – Holger Hager, CEO, Cyberinth "
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "Ensuring process quality and efficiency is especially critical for manufacturing SMEs that cannot ignore the strategic implications of efficient process management and quality control for their competitive position. However, it appears that manufacturing SMEs have been very slow in implementing formal quality models and process monitoring tools, due to the need for expert modelling and analysis (expensive and time consuming).",
+          "Main goal is to develop (based on HUBCUP support) a CPS-based infrastructure for enabling a comprehensive monitoring, analysis and improvement of the eco-friendly quality of the manufacturing process, through focusing on three main factors of environmental footprint: Energy, Emission and Anomalies (Waste), measured using corresponding sensors and cameras. It means that the developed system monitors the eco-quality of these processes in the context of the given manufacturing process and use complex behaviour understanding to react in situations when some of the environmental aspects will be changing (outliers, instability).",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "The experiment is based on the assumption that non-invasive sensing of a machine/line can enable the collection of very valuable data for understanding the process behaviour in the context of waste reduction. Indeed, advanced in retrofitting/modernisation machines in the context of Industry 4.0 are opening new opportunities for exploiting the value of data (independently of the machine vendors).. EMDIP (end user) also installed such sensors, incl. on cutting machines, mainly for getting daily reports for the energy consumption. Moreover, plasma cutting process can introduces a lot of environmental issues.",
+          "Developed system enables a deeper analysis of the data. Challenge is that the data is big, complex, multidimensional and the relation between energy consumption and quality should be discovered from data. The solution is based on the HUBCUP asset D3Scan, Deep Data Diagnostics through Cognitive Scanning.",
+          "System consists of two main elements: 1) the collection of not only the production data, but also energy, emission and waste related data and 2) complex modelling of their (coo)relations in order to understand when some “small” variations in process data will indicate “big” problems in the environment-related quality aspects. The goal is to enable proactive detection of problems and avoiding that environment-related effect will escalate."
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "The support provided by HUBCAP boosted the cooperation in between Codewheel and Cyberith and enabled vital research on improving the user's gait on VR locomotion devices. It enabled the integration of an AI-based MoCap System into the Virtualizer.",
+          "The prototype created proves the high potential of integrating such a MoCap system with VR Treadmills and shall serve as a basis for future product developments.",
+          "The development of the prototype though required a model-based design logic to enable the remote collaboration for integrating motion capture to the Virtualizer. This would be impossible without the developed LocSim tool, a simulator in the form of a Unity3D asset now hosted by the HUBCAP platform. We hope that the HUBCAP ecosystem will be able to leverage this simulator as we did for creating realistic human avatar movement scenarios on various environments."
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "There are several advantages of using HUBCAP support and platform. The most important is that HUBCUP enabled this risky innovation activity. Indeed, HUBCAP supported the collaborative work between three parties with the complementary profiles (two more technical and one industry company), required for the development of this complex service. Second, HUBCAP platform offered an asset that provides complex analyses of the manufacturing data (D3Scan, Deep Data Diagnostics through Cognitive Scanning), which was crucial for the development of the entire solution. Third, mentoring process is organized in a very efficient way, monitoring the focus of the work and keeping it on the defined KPIs and ensuring the continuous progress.",
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "EMDIP",
+          website: "https://www.emdip.com",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Nissatech",
+          website: "https://www.nissatech.com",
+        },
+      ],
+      dih: { name: "", website: "" },
+      domains: [
+        "Process improvement",
+        "Quality Control",
+        "Energy consumption",
+        "Environment pollution"
+      ],
+      impact: [
+        "Quality monitoring which combines quality of the product and eco-friendliness of the process.",
+        "Early discovery of the situations which can negatively impact the environment.",
+        "Understanding the factors which influence energy consumption and environment pollution.",
+        "Discovering the potential for improving eco-friendliness of a process.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: ""
+  },
+   {
+    title: "SimTank",
+    subtitle: "Optimised Management of Fuel Tank Trucks",
+    image: "../../assets/res/images/SimTank.png",
+    urlName: "simtank",
+    quote: "Thanks to the HUBCAP INNOVATE funding tool, our company was able to build novel energy models for commercial hardware used by the oil industries and validate a set of optimisation services that can further be exploited commercially as a product.",
+    quoteAttribution: "Vassilis Papataxiarhis, Coordinator of the SimTank project",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "SimTank is inspired by the need of oil industries for energy-efficient monitoring of their fuel tank trucks. Current solutions are based on sensors deployed on fuel tank trucks that perform sub-optimally in terms of energy consumption. The ordering of monitoring task execution is static, the configuration of task parameters is performed only empirically, and whenever a sensor needs to change the new configuration is not trivial. As a result, the sensors deployed upon the trucks have limited lifetime due to suboptimal battery usage that, in turn, results to a need for frequent maintenance (e.g., change of battery). Maintenance stops are not time-aligned and require a lot of time (usually a truck needs to stay inactive for days). All those problems result in a huge loss of time and money for the industry. SimTank fills those gaps by building models and algorithmic solutions that accurately monitor the total energy spent by the on-board system and maximize the lifetime of the deployment used for monitoring purposes. ",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "SimTank built energy models for complex tank truck sensors and combinations of them in several truck compartments. In particular, three types of sensor nodes were modeled: (a) sensors put on the manhole covers (sensor_M), (b) sensors put on the air tube controlling the foot valve (sensor_F), and (c) sensors placed on the fuel discharge pipe (sensor_S). Building on top of those new digital models, the project developed an energy simulator to calculate the energy consumption of the deployment according to the configuration of sensors and the system in general. Finally, a set of optimisation services were developed to facilitate both (a) the configuration of parameters used for the execution of tasks, and (b) the ordering of task execution. In particular, a greedy algorithm was developed to produce near-optimal solutions (in polynomial time) while a linear programming algorithm was used to recommend exact configurations (in exponential time)."
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "HUBCAP support was essential for helping Intellia ICT and METRICON to reach the project objectives. First, the solutions that were built in SimTank were developed from scratch (digital models, simulator, optimisation services). This fact made a potential funding by own resources of companies not feasible in practice. HUBCAP provided the financial resources required to support the development of such a time-demanding solution as the one envisaged by SimTank. Also, the regular monitoring offered by the project Mentors (FBK and fortiss) proved to be effective and critical for the given complexity of the project. Finally, HUBCAP provided a cloud platform to host the software built by the project and a Marketplace for commercial exploitation. The former helped the project avoid additional costs for hosting the software while the latter helped the project get in touch with an already established ecosystem consisting of a wide range of stakeholders and potential customers.",
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "In SimTank, we plan to follow a fee for services pricing model. Currently, each real deployment is charged per truck. Assuming a starting burn rate of ten thousand euros per month and a gradual usage-based pricing policy we will reach a positive balance in the second year with an estimated gain of four hundred fifty thousand euros in the year after. We plan to have an estimated fleet of 5000 trucks for SimTank deployments within the next five years. Considering a charging rate of 10% in the total cost of each deployment we will reach a revenue of 3 million euros in five years from now. Our go to market strategy is built upon direct strategic partnerships with existing clients in the oil industry and by approaching key market players with targeted campaigns. It is worth mentioning that we have already reached an agreement with our first beta client in Greece. "
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "Intellia ICT",
+          website: "https://www.intellia.gr/",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Metricon",
+          website: "https://metricon.gr/ ",
+        },
+      ],
+      dih: { name: "", website: "" },
+      domains: [
+        "Energy consumption",
+        "Tank trucks monitoring",
+        "Combinatorial optimisation",
+        "Linear programming",
+        "Near-optimal solutions"
+      ],
+      impact: [
+        "Deliver optimal configuration of on-board deployments on existing tank truck fleets.",
+        "Increase the quality of services in its existing clients in the oil industry.",
+        "Attract new clients in the oil industry domain.",
+        "Scale-up by testing different configurations in other application domains (e.g., sealing of food delivery trucks)."
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: "https://www.youtube.com/watch?v=UVMoIABWQKs"
+  },
 ];
 

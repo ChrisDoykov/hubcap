@@ -279,8 +279,7 @@ export const stories = [
     image: "../../assets/res/images/CPS-based data-driven modeling.png",
     urlName: "cps-based-and-data-driven-modeling",
     quote: "Easy to deploy and affordable (software-hardware) solution for understanding the factors which impact the waste (energy, emission) based on a novel, AI-based analysis of past data.",
-    quoteAttribution: "",
-    // "The support provided by HUBCAP enabled vital research on improving the user’s gait on VR locomotion devices by integrating an AI-based MoCap System into the Virtualizer.” – Holger Hager, CEO, Cyberinth "
+    quoteAttribution: "Nenad Stojanovic, Nissatech",
     sections: [
       {
         sectionHeading: "Problem and solution",
@@ -315,17 +314,17 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "EMDIP",
-          website: "https://www.emdip.com",
+          name: "Nissatech",
+          website: "https://www.nissatech.com",
         }
       ],
       techProviders: [
         {
-          name: "Nissatech",
-          website: "https://www.nissatech.com",
+          name: "EMDIP",
+          website: "https://www.emdip.com",
         },
       ],
-      dih: { name: "", website: "" },
+      dih: { name: "HUBCAP Denmark", website: "https://digit.au.dk/" },
       domains: [
         "Process improvement",
         "Quality Control",
@@ -340,7 +339,7 @@ export const stories = [
       ],
     },
     tryItNowUrl: "",
-    videoUrl: ""
+    videoUrl: "https://www.youtube.com/watch?v=02mTbFTl9SQ"
   },
    {
     title: "SimTank",
@@ -388,7 +387,7 @@ export const stories = [
           website: "https://metricon.gr/ ",
         },
       ],
-      dih: { name: "", website: "" },
+      dih: { name: "HUBCAP Italy", website: "https://www.polimi.it" },
       domains: [
         "Energy consumption",
         "Tank trucks monitoring",

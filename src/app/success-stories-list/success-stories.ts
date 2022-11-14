@@ -41,7 +41,7 @@
         name: "",
         website: "",
       }
-    ],no
+    ]
     techProviders: [
       {
         name: "",
@@ -209,7 +209,7 @@ export const stories = [
     urlName: "locomotion-with-ai-based-motion-capture",
     quote: "HUBCAP’s financial and mentoring support enabled the exploitation of our AI-based motion capture technology for introducing new functionalities in an already innovative product for VR locomotion",
     quoteAttribution: "Anargyros Chatzitofis CEO, Codewheel",
-    // "The support provided by HUBCAP enabled vital research on improving the user’s gait on VR locomotion devices by integrating an AI-based MoCap System into the Virtualizer.” – Holger Hager, CEO, Cyberinth "
+
     sections: [
       {
         sectionHeading: "Problem and solution",
@@ -274,7 +274,7 @@ export const stories = [
     videoUrl: "https://www.youtube.com/embed/4PWi7sQ1pWs"
   },
    {
-    title: "CPS-based and data-driven modeling, monitoring and improvement of the eco-friendly quality",
+    title: "CPS-based and Data-driven Modeling, Monitoring and Improvement of the Eco-friendly Quality",
     subtitle: "Pave the way for a new generation of the quality monitoring services, which are focused not only on the processes performances (KPIs), but also on the eco-friendliness of the process, what we call eco-friendly process quality.",
     image: "../../assets/res/images/CPS-based data-driven modeling.png",
     urlName: "cps-based-and-data-driven-modeling",
@@ -299,17 +299,10 @@ export const stories = [
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
-          "The support provided by HUBCAP boosted the cooperation in between Codewheel and Cyberith and enabled vital research on improving the user's gait on VR locomotion devices. It enabled the integration of an AI-based MoCap System into the Virtualizer.",
-          "The prototype created proves the high potential of integrating such a MoCap system with VR Treadmills and shall serve as a basis for future product developments.",
-          "The development of the prototype though required a model-based design logic to enable the remote collaboration for integrating motion capture to the Virtualizer. This would be impossible without the developed LocSim tool, a simulator in the form of a Unity3D asset now hosted by the HUBCAP platform. We hope that the HUBCAP ecosystem will be able to leverage this simulator as we did for creating realistic human avatar movement scenarios on various environments."
-        ],
-      },
-      {
-        sectionHeading: "Forward look",
-        paragraphs: [
           "There are several advantages of using HUBCAP support and platform. The most important is that HUBCUP enabled this risky innovation activity. Indeed, HUBCAP supported the collaborative work between three parties with the complementary profiles (two more technical and one industry company), required for the development of this complex service. Second, HUBCAP platform offered an asset that provides complex analyses of the manufacturing data (D3Scan, Deep Data Diagnostics through Cognitive Scanning), which was crucial for the development of the entire solution. Third, mentoring process is organized in a very efficient way, monitoring the focus of the work and keeping it on the defined KPIs and ensuring the continuous progress.",
         ],
       },
+
     ],
     info: {
       endUsers: [
@@ -339,10 +332,10 @@ export const stories = [
       ],
     },
     tryItNowUrl: "",
-    videoUrl: "https://www.youtube.com/watch?v=02mTbFTl9SQ"
+    videoUrl: "https://www.youtube.com/embed/02mTbFTl9SQ"
   },
    {
-    title: "SimTank",
+    title: "Improving Fuel Efficiency with Optimised Energy Models",
     subtitle: "Optimised Management of Fuel Tank Trucks",
     image: "../../assets/res/images/SimTank.png",
     urlName: "simtank",
@@ -403,7 +396,647 @@ export const stories = [
       ],
     },
     tryItNowUrl: "",
-    videoUrl: "https://www.youtube.com/watch?v=UVMoIABWQKs"
+    videoUrl: ""
   },
+   {
+    title: "Model-based Design of the Public Transport Operation Run by Zero-emissions Buses",
+    subtitle: "",
+    image: "../../assets/res/images/Zero_Emission_Public_Transport.png",
+    urlName: "electrification-of-public-transport",
+    quote: "Hubcap Funding enabled us to justify our place in the public transport value chain, which is much more than shooting blindly.",
+    quoteAttribution: "Juraj Majera, Tirn Technology",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "Cooperation project of consortia has developed model-based software that precisely simulates e-bus operation thanks to the integration of real-world data. This approach allows shortening the planning phase and significantly reducing the costs upfront. E-bus simulator is a new MBD tool that has been integrated into the HUBCAP platform.\n" +
+          "Our scope has been divided into 2 sprints. Mainly our scope was built around these pillars.\n" +
+          "-Understand adopter’s operation, timetables and actual state of the bus fleet\n" +
+          "-Define initial requirements for the new electric bus \n" +
+          "-Understand current and future goals defined by the local municipality\n" +
+          "-Processing of GTFS data provided by the client.\n" +
+          "-Communication with the bus manufacturers and getting data sheets.\n" +
+          "-Parametrization of the selected electric bus models.\n" +
+          "-Visualisation of the bus operation based on provided data.\n" +
+          "-Data assigning of the route details based on the API calls\n" +
+          "-Running up to 180 scenarios of 4 bus lines.\n" +
+          "-Analyze the influence of all the parameters\n" +
+          "-Ingest economic parameters and prices(Capex/OPEX)\n" +
+          "-Present actionable steps for the electrification of the SKAND’s operation.\n",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "Within Sprint 1, we had visualised the bus schedule using GTFS format. Based on real world-data from third-party providers, which was assigned successfully to the operated routes. Next step was to build a mathematical model of an electric bus. In the second sprint, we simulated more than 180 simulation scenarios, built the heads up indication of an operation schedule adjusted for an electric bus and developed a total cost ownership report based on inputs.\n" +
+          "In conclusion, the transport agency had received a powerful decision tool as a result of simulation of its existing bus operation schedule operated by electric bus models. The aim was to validate their operability, precisely predict real energy consumption, optimise the battery capacity and plan the charging infrastructure with a focus to minimise the total cost of ownership and CO2 generation.\n"
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "Provided us the space to perform and validate the experiment.\n" +
+          "Funding from Hubcap enabled to Tirn Technology to make multiple iterations of the product versions with the adopter SKAND Skalica in order to improve the product and make it ready for the market\n" +
+          "The SKAND Skalica has received not only a powerful tool to ease the adoption of e-buses but also the knowledge and capabilities of model-based design.\n" +
+          "Definitely the outcomes of the experiment will provide us momentum to access new markets and reach out to new potential leads, hopefully clients. \n",
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "Provided us the space to perform and validate the experiment.\n" +
+          "Funding from Hubcap enabled to Tirn Technology to make multiple iterations of the product versions with the adopter SKAND Skalica in order to improve the product and make it ready for the market\n" +
+          "The SKAND Skalica has received not only a powerful tool to ease the adoption of e-buses but also the knowledge and capabilities of model-based design.\n" +
+          "Definitely the outcomes of the experiment will provide us momentum to access new markets and reach out to new potential leads, hopefully clients. \n"
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "Tirn Technology",
+          website: "https://tirntechnology.com/",
+        }
+      ],
+      techProviders: [
+        {
+          name: "SKAND",
+          website: "http://www.skand.sk/",
+        },
+      ],
+      dih: { name: "HUBCAP Austria", website: "https://www.v2c2.at/" },
+      domains: [
+        "Smart Transports/Mobility",
+        "Simulation services",
+      ],
+      impact: [
+        "Simulation tool of existing bus operation schedule with electric buses and prepare a MBD-driven plan for electrifying the operation.",
+        "Accelerate the transition to sustainable public transportation.",
+        "Elimination of the carbon footprint created usually during physical testing.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: "https://www.youtube.com/embed/wpCED05SWtw"
+  },
+   {
+    title: "Exploiting Cloud Computing and Artificial Intelligence Technology \n" +
+      "for Hydrogen Storage & Transportation Towards Net Zero by 2050",
+    subtitle: " Next-generation hydrogen \n" +
+      "planning using AI and cloud computing",
+    image: "../../assets/res/images/h2ai.png",
+    urlName: "ai-hydrogen-storage-towards-net-zero",
+    quote: "HUBCAP has funded the first project for improving design for hydrogen energy infrastructure using \n" +
+      "HPC and machine-learning-accelerated digital tools.",
+    quoteAttribution: "Kostas Lyras, MultiFluidX",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "The scope of this project was to develop a viable solution for simulating liquid hydrogen \n" +
+          "transportation for hydrogen based energy systems. The solution in this case was to combine \n" +
+          "traditional methods of performing simulations such as computational fluid dynamics (CFD) with \n" +
+          "machine learning (ML) and simulate hydrogen based scenarios faster and cheaper than the current \n" +
+          "solutions on the market. H2AI aims to be the first EU based project that combines CFD and ML in \n" +
+          "handling hydrogen and improve the competitiveness of the EU industries by providing a fast and \n" +
+          "accurate simulation tool.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "Energy security and decorbonisation are top priorities of the EU which supports numerous \n" +
+          "changes across the energy sector with the use of hydrogen being one of the biggest ones. This \n" +
+          "project explored the deployment of \n" +
+          "Computational Fluid Dynamics (CFD) with machine learning (ML) that could lead the next-generation designing of hydrogen-based energy systems.",
+
+          "Therefore, with the use of these two state-of-the-art technologies the H2AI project has \n" +
+          "developed a workflow for using computer simulations for performing \"virtual experiments\". \n" +
+          "The outcomes of these simulations can be used for instant predictions and ultimately arrive \n" +
+          "at the optimum product, which will be both safe and perform optimally.",
+
+          "Using the simulator MPflow, a large collection of these scenarios was generated using the vast \n" +
+          "capabilities of the Kaleidosim platform.",
+
+          "This is the very first software to combine CFD and ML for hydrogen predictions. The \n" +
+          "development and successful completion of the H2AI project will ensure that SMEs across the \n" +
+          "EU engaged in hydrogen storage and transportation have access to a digital solution that is \n" +
+          "easy to use at a cheaper cost than the nearest competitors.",
+
+          "Adoption of this software will enable a range of SMEs to model wide ranging hydrogen storage \n" +
+          "and transportation scenarios in the cloud and ensure enhanced safety and improved efficiency \n" +
+          "for these scenarios. Ultimately, this will provide an impetus to the adoption of a hydrogen as \n" +
+          "a sustainable source of energy thereby meeting the scope of the Paris Agreement's \n" +
+          "temperature goals."
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "HUBCAP has provided us with the support and funding for utilising and testing and new cyber physical \n" +
+          "system for hydrogen, the first of its kind. Thanks to the constant engagement and support of the DIH \n" +
+          "and the whole HUBCAP team, both companies in the H2AI project were able to advance the \n" +
+          "technology of computational fluid dynamics simulations. It is a unique computational tool for \n" +
+          "optimising hydrogen production and application in various industries. ",
+
+          "Through this combined effort, the H2AI experiment aims to be the first EU project with the specific \n" +
+          "goal of integrating AI with traditional physics-based Computer Aided Engineering in handling hydrogen \n" +
+          "and improve the competitiveness of the EU industries. Thus, being part of the HUBCAP ecosystem, will \n" +
+          "help both participants to further engage with this new technology, connecting with key-players in the \n" +
+          "EU market and being part of the pioneering long-term sustainable plan of HUBCAP. The latter is of \n" +
+          "extreme importance since it is expected to lead to synergies that will allow for more opportunities and \n" +
+          "additional funding from similar calls. The dissemination of the outcomes of the H2AI project though \n" +
+          "conference participation and future publications, generously supported by HUBCAP, is also a huge \n" +
+          "boost for both companies involved that will further increase the overall impact of the project."
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "Being part of HUBCAP has increased our companies’ visibility and marketing proving us with \n" +
+          "interesting opportunities for further development. \n" +
+          "Our participation in HUBCAP has helped us be part to interesting industrial EU consortia for hydrogen \n" +
+          "allowing us to form allies for allocating additional funding for improving the computation tools our \n" +
+          "companies develop. Although, the long timeline of this funding opportunities does not allow us to \n" +
+          "provide exact estimations of the sales or income, it is expected that these projects will lead us to \n" +
+          "increase by at least 50% our sales for next year. It is also anticipated that being part to new EU research\n" +
+          "and innovation projects will allow us to increase of market presence in the EU and increase our \n" +
+          "manpower by 50%."
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "MultiFluidX",
+          website: "https://multifluidx.com/",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Kaleidosim Technologies",
+          website: "https://kaleidosim.com/",
+        },
+      ],
+      dih: { name: "HUBCAP United Kingdom", website: "https://www.ncl.ac.uk/" },
+      domains: [
+        "Smart energy",
+        "Engineering",
+        "Hydrogen",
+        "Low/zero carbon communities",
+        "High-Performance Computing"
+      ],
+      impact: [
+        "Both companies have advanced their digital tools thanks to HUBCAP.",
+
+        "The provider has extended their cloud computing technology to allow dedicated simulation \n" +
+        "tools in MPflow® for hydrogen calculations.",
+
+        "The adopter has upgraded their digitalisation level though the unique MSCC (Massive \n" +
+        "Simultaneous Cloud Computing) of KaleidoSim OpenFoam ®.",
+
+        "The integration of machine-learning in MPflow® using the unique hydrogen data collected, \n" +
+        "have set the groundwork for more advances in the field of computer simulations in process \n" +
+        "engineering."
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: ""
+  },
+   {
+    title: "Enhancing a Gas Compressors Performance Utilizing the MODELTA Platform",
+    subtitle: "Accelerating the experiment process of a gas compressor’s prototype, called SARC, using MODELTA platform.",
+    image: "../../assets/res/images/SARCproject.png",
+    urlName: "sarc-project",
+    quote: "MBD can substantially facilitate the functionality optimization of physical assets. We observed through HUBCAP that the steps followed to build MBD really give a thorough understanding of the asset, preparing it for rapid development and prototyping. Furthermore, the critical parameters allocation and their control can improve performance and decrease cost.\n" +
+      "Our advice as DELTA MPIS is for SMEs to get to know Model-Based Design and IoT in order to enter the rapidly growing sector of Cyber Physical Systems and also make their product and services up to speed with industry 4.0, smart manufacturing and Digital Twinning\n",
+    quoteAttribution: "Dimitrios Dragatogiannis, DELTA-MPIS",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "The project aims at the development of a Model-Based Design enabled Cyber-Physical System for a novel compressor prototype, by DELTA-MPIS (Technology Provider). It includes sensing of critical parameters (temperature, pressure output, angular motion) for the operation and performance of SARC compressor (developed by theSARMproject) and utilization of those quantities for real-time monitoring and input for Model-Based Design. For the efficient project implementation a web-platform was developed, MODELTA, that provides IoT monitoring of sensor measurements and prediction of the performance of the physical asset. The prediction is achieved with a combination of MBD with Simulink and CFD and FEA multiphysics calculations, to accurately describe the operation of the compressor. With the aid of MODELTA, the prototyping process was enhanced (rapid prototyping) and an optimized prototype was manufactured. ",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "During the experiment, a set of activities was scheduled for the successful implementation of the project. This includes the following subtasks:\n",
+          "SPRINT 1:\n",
+          "— Design of experiment\n",
+          "— First steps of experimental campaign\n",
+          "— Computational Fluid Dynamics \n",
+          "— Finite Element Analysis for structural optimization of the compressor\n",
+          "— Development of web-based platform MODELTA\n",
+          "— Implementation of Model-Based Design to describe the operation of SARC.\n",
+          "SPRINT 2:\n",
+          "— Comparison of simulation with experimental results \n",
+          "— Calibration of experimental setup\n",
+          "— Prototype design improvements \n",
+          "— Integration of MODELTA in HUBCAP platform \n",
+          "— Cost evaluation for the sustainability of MODELTA adoption in other applications \n",
+          "— Dissemination activities \n",
+          "— Integration of MODELTA to relevant marketplaces\n",
+          "— Document preparation \n",
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "HUBCAP provided funding for the development of a tailor-made and easy-to-use CPS support web-platform and for the rapid prototyping through MBD of SARC. In this way, the Adopter SME came to the realisation of the benefits of the creation of a Cyber-Physical System, not only for the development of the physical asset, but also to support its actual operation. The consortium, in close cooperation with the DIH assigned to the project by HUBCAP (FDK), were able to structure the characteristics of their respective services and products according to the needs of a state-of-the-art digital Marketplace. The integration of MODELTA to HUBCAP platform gave insight on competition with other CPS solutions, in a spirit of fostering collaboration with other participants as well. Furthermore, the opportunity to add a try-it-now feature to the service was considered very important by DELTA-MPIS, in order to receive creative feedback for the MODELTA application.",
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "DELTA MPIS has developed MODELTA, a web platform that expands the services of the company. The platform supports IoT functionalities, a proven methodology for sensor connections with embedded devices and the upload of measurements to be available for the user at any time. The major benefit for DELTA MPIS is the display of an established tool for prediction and monitoring that can attract future clients for the company. This has been validated by the initiation of another two projects, one commercial and one for research purposes, both utilizing MODELTA functionalities. \n" +
+          "theSARMproject (Adopter SME) has received substantial input regarding possible improvements of SARC compressor. In fact, those improvements have led to an approximate 25% decrease of mass for the finalized prototype, leading to a corresponding cost decrease. The efficiency improvement and the manufacturing of an updated prototype led to a TRL5 edition of the device. This created a very strong asset for theSARMproject to go to the next funding opportunities and eventually to the market. The steps followed for the experimental campaign have proven critical for the development of other prototypes for the company, namely a rotary internal combustion engine (SARM), an expander (SARX) and a pump (SARP) based on the novelty of the rotary working principle.\n"
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "theSARMproject",
+          website: "https://www.thesarmproject.com",
+        }
+      ],
+      techProviders: [
+        {
+          name: "DELTA MPIS",
+          website: "https://www.delta-ms.gr",
+        },
+      ],
+      dih: { name: "HUBCAP Italy", website: "https://www.fbk.eu/en/" },
+      domains: [
+        "IoT",
+        "Real-time monitoring",
+        "MBD",
+        "Multiphysics",
+        "CAD",
+        "Simulink",
+      ],
+      impact: [
+        "MODELTA PaaS (Platform-as-a-Service) was integrated to DELTA-MPIS set of services. It can support CPS development for both real-time monitoring and prediction.",
+        "DELTA—MPIS has already created a pitch deck for MODELTA, with successful results; Even before the ending of the HUBCAP sprint 2, another two projects (one commercial and one research) have initiated, utilizing MODELTA web-platform.",
+        "theSARMproject has reached TRL5 for SARC prototype; the prototype was manufactured and demonstrated in terms of effective sensing with optimized sensor selections.",
+        "theSARMproject have an optimized version of SARC with better performance and reliability, and decreased costs for manufacturing and operation.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: ""
+  },
+   {
+    title: "SmarTexMod - a tool for design, development and prototyping of smart clothing items.",
+    subtitle: "Enhancement of the efficiency in the design, development and prototyping process for smart clothing items. ",
+    image: "../../assets/res/images/iStock-1149878152.jpg",
+    urlName: "smartexmod",
+    quote: "",
+    quoteAttribution: "",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "SMARTEXMOD is an efficiency tool providing pre-build assets for design, development and prototyping of smart clothing items.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "Within the project the team prioritized and assessed the items which are required to create smart clothing. The team created 10x parametrized assets and provided the distribution option through the website https://smartexmod.com/. The user has the option to choose between different assets, parameters and data files to download the parametrized models for either the integration into the clothing design software or for rapid prototyping. The model simulation has been done with the Clo3D design software as well as with slicer cura and ultimaker machine / makerbot rapid prototyping. "
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "With HubCap, both companies received the opportunity to implement the project with model-based assets by supporting the upcoming new field of smart clothing. The smart textile segment required multi-disciplinarian approach involving different expertise coming from garment, electronics, mechanics and IT field. With the HubCap platform the consortium was able to create a suitable tool for supporting the multidisciplinary design and development process in the result to increase efficiency. ",
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "HubCap enabled both companies to make the groundwork for the parametrized models. So far, the models are in the “alpha stage” and would be further developed in the next steps to reach higher maturity. Further marketing activities would be required to promote SMARTEXMOD further. "
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "Vulpes Electronics GmbH",
+          website: "https://www.vulpes-electronics.net ",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Intelectronics",
+          website: "",
+        },
+      ],
+      dih: { name: "HUBCAP Sweden", website: "https://www.kth.se/en" },
+      domains: [
+        "Smart Clothing",
+        "Prototyping",
+        "Smart Clothing Design",
+        "Smart Textiles",
+      ],
+      impact: [
+        "Reduction of the design time for the clothing designers.",
+        "Increase clarity of instructions and enhance the efficiency of design, development and pre-production workflows.",
+        "Visualization of hardware components.",
+        "Improve cross-function understanding of textile / garments, electronics and mechanical components to accelerate the design and development process.",
+        "Decrease the rapid prototyping time of hardware.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: "https://www.youtube.com/embed/L3VeIj6xq0A"
+  },
+   {
+    title: "Flood and Fire Risk Mitigation in Wetlands Using micRowire Sensing (FF-RIWER)",
+    subtitle: "The FF-RIWER experiment will enable the future DeltaEcoPro solution for increased preparedness \n" +
+      "against environmental threats in wetlands. Thus, the FF-RIWER solution is built on MicroWire sensing \n" +
+      "technology and addresses two of the most important threat mitigation needs in wetlands.",
+    image: "../../assets/res/images/iStock-1149878152.jpg",
+    urlName: "ff-riwer",
+    quote: "We envision the FF-RIWER platform will be the starting point of the larger DeltaEcoPro solution for \n" +
+      "monitoring and performing ecological actions in the Romanian Delta, opening up a host of \n" +
+      "opportunities for increasing our competitiveness on the local and European market.",
+    quoteAttribution: "– Eduard-Cristian \n" +
+      "Popovici, CEO of Always Connected Consultants SRL",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "Wetlands are fragile ecosystems, which are susceptible to harm from different environmental threats. \n" +
+          "Bush fires can destroy bird hides, trees, boardwalks and in general fragment the habitat and increase \n" +
+          "pollution. Also, floods in the wetland cannot provide the same habitats and functions, can result in \n" +
+          "the loss of wetland vegetation and hamper the transport of native human population within the area. \n" +
+          "As such, fire and flood are one of the two main threats to wetlands.",
+
+          "The FF-RIWER experiment targeted the integration of a CPS technology, namely MicroWire Sensing \n" +
+          "technology, available as a HUBCAP asset, and offered by RVM, into a new MBD-augmented modular \n" +
+          "CPS solution (DeltaEcoPro) for Flood and Fire risk mitigation in wetlands to be implemented by ACC.",
+
+          "The DeltaEcoPro solution which integrates RVM’s CPS technology and validated by the FF-RIWER set \n" +
+          "of experiments will support two novel fire and flood sensors based on MicroWire sensing technology, \n" +
+          "customized for wetlands and will process real-time data using business intelligence tools to provide \n" +
+          "valuable input (such as sudden increase in temperature and water level), which will then be used by a \n" +
+          "visual alerting module in order to offer monitoring components that are available for a wetland \n" +
+          "administering authority for better crisis assessment and early response to wetland threats.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "ACC developed and organised the software components of FF-RIWER are in a dockerized software \n" +
+          "stack, allowing a rapid automatic restoration of service in case of fault (in case of power failures). The \n" +
+          "stack consists of a gateway for sending messages from the MicroWire sensors, server-side client for \n" +
+          "reading measurements, tools for enabling a server, database and visualisation component. The \n" +
+          "software stack has been developed in a collaborative form, using the GitHub platform",
+
+          "Within RVM part of the work - design, construction, calibration and validation of the sensor was \n" +
+          "achieved. The sensor provides accurate measurement of water level and temperature in real-time. \n" +
+          "The sensor is based on an amorphous glass-coated magnetic MicroWires, using a data acquisition \n" +
+          "device designed and produced by RVM that contains a set of sensing and excitation coils, PCB with \n" +
+          "amplifiers and filters, and a Nucleo chip with operating software. Nucleo communicates by UART port \n" +
+          "with a wireless transmitter that sends data to the server.",
+
+          "Consortium members performed 2 types of experiments:\n",
+
+          "1. In the first experiment water level was increased from 0cm to 23cm and continuously \n" +
+          "decreased from 23cm down to 0cm.",
+
+          "2. Validation of the temperature sensor by heating the sensor by hand-dryer, and cooling it down \n" +
+          "to ambient temperature.",
+
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "The use of the HUBCAP platform allowed the preparation of ACC’s software to work with RVM’s \n" +
+          "hardware sensors and enable a smooth integration between the products of the two companies. The \n" +
+          "possibility of adding the FF-RIWER solution as a new tool in the HUBCAP catalogue brings further \n" +
+          "visibility and opportunities for ACC and its products and services. The funding received from HUBCAP \n" +
+          "allowed both companies to further develop both their own technology but also develop a new CPS \n" +
+          "solution benefitting from both companies’ know-how.",
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          ""
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "Always Connected Consultants SRL",
+          website: "https://acc.neuroaugmentare.ro/",
+        }
+      ],
+      techProviders: [
+        {
+          name: "RVmagnetics",
+          website: "https://acc.neuroaugmentare.ro/",
+        },
+      ],
+      dih: { name: "HUBCAP Romania", website: "https://www.ulbsibiu.ro/en/" },
+      domains: [
+        "Flooding",
+        "Fire",
+        "Magnetic MicroWire Sensor",
+        "Real-time Monitoring",
+      ],
+      impact: [
+        "The use of the MicroWire sensing technology allows for precise fire and flood sensing with \n" +
+        "little energy consumption and small, unobtrusive devices, making it ideal for delivering a \n" +
+        "monitoring software solution for the fragile wetland ecosystem.",
+
+        "The success of the FF-RIWER experiment is crucial for further developing the company \n" +
+        "and enabling the DeltaEcoPro solution for the Romanian Delta.",
+
+        "Development of a brand new type of environmentally-friendly sensor, that is not available \n" +
+        "on the market yet.",
+
+        "Thanks to this project RVM formed a partnership with a company that allows integration \n" +
+        "of the sensor to a broader robust multi-installation platform allowing flood and fire \n" +
+        "mitigation.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: "https://www.youtube.com/embed/suh6DYvWnR0"
+  },
+   {
+    title: "Crop Sales Optimization Application",
+    subtitle: "",
+    image: "../../assets/res/images/mems_cpe.png",
+    urlName: "mems-cpe",
+    quote: "We kindly advise EU-based SMEs, especially applicants to EU-funded projects, to model their \n" +
+      "business flows, their eventual experiments and their proposed projects using BPMN process \n" +
+      "modelling.",
+    quoteAttribution: "Silviu Busu, Evotech Services",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "In Romania, the commodities market is illiquid and there is limited transparency regarding \n" +
+          "transactions, causing farmers to often make incorrect estimations of market prices. The main scope \n" +
+          "of this project is to help mid-range farmers sell their crops at the correct prices compared to\n" +
+          "international market prices like the EU, USA, and South Africa. In addition, we foresee considerable \n" +
+          "profits for next year, as we gained many important partners by presenting this project. \n" +
+          "e.g. AGRA Insurance – the market leader in Agro Insurance in Romania\n" +
+          "Ardealul S.A. – market leader in Sunflower Seed processing and Sunflower Oil production.",
+
+          "The commercial MEMS CPE solution is a deployable application called ESPV/brcx.ro (Romanian \n" +
+          "Grains Commodities Exchange). Farmers will be able to use it for free, to estimate the best time to \n" +
+          "sell and buy crops using market analysis and weather predictions. We intend to give this to midrange farmers and large Agro-crops buyers like Sunflower Oil processing mills, for example, Ardealul\n" +
+          "S.A. Given the way we work, we already simulated a large trade of 1200 tons of oil, and we need to \n" +
+          "insure in the future the buy-side which is 3600 tons of sunflower. We created the solution by \n" +
+          "integrating the SandBox MatchingEngine with the Commodities Price Estimator (CPE) and made \n" +
+          "these two available in the Evotech Services - Mira Solutions Platform."
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "We began with Mira Solutions analysing the business workflow in insurance and how mid-range \n" +
+          "farmers need to be insured. Then, we defined an insurance workflow where we learned how to \n" +
+          "interact with the farmers. Crops cannot be sold without insurance, so insurance is a prerequisite to\n" +
+          "sell through our system. The experiment was conducted using insurance consultants on Mira \n" +
+          "Solutions’ side, and it analysed two types of workflows: Agro Insurance and Cargo insurance. ",
+
+          "On the Evotech side, we analysed the market price data models, and market commodities price \n" +
+          "variation models that are available on the market. ",
+
+          "In Romania, the market is illiquid and not transparent. The only transparent market that was a trend \n" +
+          "giver for sunflower was SAFEX, available using barchart.com interfaces. ",
+
+          "We then analysed wheat, corn, and rapeseed on Euronext MATIF, which resulted in more \n" +
+          "consolidated data models.",
+
+          "We initially worked with simulated data models provided by Enterprise Accuweather APIs, and later \n" +
+          "came up with the weather models for the future. In July and August, we connected to the IBM Cloud \n" +
+          "Infrastructure which is fed by real sensors (IBM Business – weather.com).",
+
+          "Evotech acquired a weather sensor array for a farm and then we started experimenting with the real \n" +
+          "world. Mira Solutions did the same in September.",
+
+          "We made an estimation forecasting model which is now available in the TradingView user interface. \n" +
+          "Evotech developed the SBME, which models the supply-and-demand process, and the CPE, which \n" +
+          "estimates the commodities prices. One of the main tasks of the project is to integrate both and give \n" +
+          "a consolidated API called MEMS CPE API, which is deployed in the HUBCAP Sandbox. The experiment \n" +
+          "succeeded and we now have the results and the price forecasts. We gather data from the 4 markets \n" +
+          "stated and we process 4 commodities price estimations (Sunflower, Corn, Wheat, and Rapeseed).",
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "The funding enabled the hiring of additional specialists, and we now have 50% more human resources available to develop the Camunda side, the Camunda Workflow and Decision Automation Platform, DevOps resources, server maintenance and UI design. Both companies hired third-party specialists, including an insurance modelling specialist, a web designer, a DevOps developer, a UI designer, and a UI prototyping specialist.",
+          "Regarding the platform opportunity, we are now able to export and try our models, the Matching Engine, and the CPE in a server environment inside and outside the Sandbox. This allows us to deploy our project correctly, similar to production level Apps.",
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          ""
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "Evotech Services",
+          website: "https://www.evotech.ro/#",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Mira Solutions",
+          website: "https://mirabroker.ro/",
+        },
+      ],
+      dih: { name: "HUBCAP Romania", website: "https://www.ulbsibiu.ro/en/" },
+      domains: [
+        "Commodities price estimation",
+        "Physical commodities supply-and-demand matching",
+        "Business model workflows",
+      ],
+      impact: [
+        "The SandBox Matching Engine can be reused in other domains, like the Smart Energy market.",
+        "Mastered the Camunda Workflow and Decision Automation Platform and integrated it into the current work of both businesses.",
+        "Mid-range farmers will be able to plan their future crops and check local market estimated prices at \n" +
+        "any time for free",
+        "Mid-range farmers will also be able to check the variation of supply and demand, and choose the \n" +
+        "best time to sell their crops.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: ""
+  },
+  {
+    title: "Digital Twin for Active Sprayer Boom Yaw Control",
+    subtitle: "",
+    image: "../../assets/res/images/ASBC.png",
+    urlName: "digital-twin-for-active-sprayer",
+    quote: "The HUBCAP Project has changed the trajectory of the SteadySpray control system significantly. The funding has enabled the development of a Digital Twin, that both can and will be used as a significant part of the controller design and maintenance protocol for the SteadySpray Kit for years to come",
+    quoteAttribution: "Thomas Schmidt, CEO of SteadySpray ApS",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "Sprayer booms are susceptible to oscillations when distributing fertilizer and pesticides in fields. The oscillations give an uneven distribution varying between too high concentration and too low treatment across the field. The high concentration zones have an environmental impact as chemicals are washed out to the ground water, and in low concentration zones the crop yield is reduced and weed is left untreated. In addition, the boom structure also needs to strengthen due to the high fatigue loads stemming from the oscillations. The varying operating conditions of sprayers makes passive dampers suboptimal. An active damping system can be designed to provide high performance under all operating conditions, but this requires extensive testing to ensure stability and performance. Even small unhandled variations can result in reduced performance and damage to equipment. SteadySpray seeks to develop a Digital Twin, that can be used to develop active controllers for boom stabilization, where performance during various critical scenarios can be analyzed, and controllers can be optimized, without needing to put the physical sprayer system into critical scenarios without having a thoroughly tested control system employed.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "During the project a digital twin of the Danfoil Concorde II field sprayer was developed, giving a suitable digital representation of the sprayer boom. Verification was carried out by comparing dynamic results from a test on the physical setup with results from an identical test conducted in the model. Using the digital twin, active control was designed to stabilize the sprayer boom when exposed to vibrations and unexpected movements in the yaw direction. This reduces stresses applied to the boom while increasing the effectiveness of the field spraying, which reduces the required amount of chemicals used to obtain a satisfactory crop yield on the fields."
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "The funding granted through the HUBCAP project has accelerated the development of the combined active control structure, which has given promising outlook to finalize the project within the coming year. Hence, a complete steady spray control system should be available starting summer 2023. Furthermore, the development of the sprayer control system has been positively influenced by the assistance provided to us by the HUBCAP network, particularly through communication with the contact person provided to us, who showed technical knowledge and has provided assistance multiple times throughout the process.",
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "The funding granted through the HUBCAP project has accelerated the development of the combined active control structure. Given that the primary market advantage of the SteadySpray kit, is that we are first movers on development of a Digital Twin for controller design, the advancement of the digital twin seen within the HUBCAP problem is a large advantage to market position of SteadySpray."
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "Schmidt Innovation ApS",
+          website: "https://www.sinno.dk",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Danfoil",
+          website: "https://www.danfoil.dk",
+        },
+      ],
+      dih: { name: "HUBCAP Denmark", website: "https://international.au.dk/" },
+      domains: [
+        "Agriculture",
+        "Digital Twin",
+        "Model-based controller design",
+        "Cyber-Physical system",
+      ],
+      impact: [
+        "Improved quality of digital controller testing.",
+        "Significant reduction of testing costs.",
+        "Boom stabilization reducing stresses on the boom.",
+        "Spray effectiveness and environmental impact.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: "https://www.youtube.com/embed/mEWPamjgVX0"
+  },
+
 ];
 

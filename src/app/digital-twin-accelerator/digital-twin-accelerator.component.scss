@@ -1,0 +1,257 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 2rem;
+  padding-top: 4.2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: inline;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 2.5rem 0;
+  }
+
+  .heading-primary {
+    text-align: left;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  .heading-tertiary {
+    text-align: left;
+    display: block !important;
+
+    @include respond(tab-port) {
+      text-align: center !important;
+      margin: 2rem auto !important;
+    }
+  }
+
+  .list {
+    list-style-type: none;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 3rem;
+
+    @include respond(tab-port) {
+      align-self: center;
+      display: inline !important;
+      text-align: center;
+    }
+
+    &--no-dec {
+      @include respond(tab-port) {
+        margin-left: 0;
+        align-self: flex-start;
+        display: inline-block !important;
+        text-align: left;
+      }
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      &:hover,
+      &:focus {
+        &::before {
+          transform: translateY(-1rem);
+        }
+      }
+
+      &::before {
+        content: "\01F4CD";
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 1rem;
+        width: 1em;
+        margin-left: -1em;
+        transition: all 0.3s;
+      }
+
+      &--no-dec {
+        &::before {
+          content: "";
+        }
+      }
+    }
+  }
+
+  h3.subtitle {
+    text-align: left !important;
+
+    @include respond(phone) {
+      text-align: center !important;
+      align-self: center;
+      border-top-right-radius: 0;
+      border-top-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      max-width: 80%;
+      margin-bottom: 2rem !important;
+    }
+  }
+
+  .col-1-of-2 {
+    div {
+      @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.open-calls {
+  h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  swiper {
+    ::ng-deep .swiper-pagination-bullet {
+      background-color: $color-blue;
+    }
+
+    .slide {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+      height: 100vh;
+
+      @include respond(big-desktop) {
+        height: 60vh;
+      }
+
+      @include respond(tab-land) {
+        height: 50vh;
+      }
+      @include respond(tab-port) {
+        height: 50vh;
+      }
+
+      @include respond(phone) {
+        height: 80vh;
+      }
+
+      @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+        height: 100vh;
+      }
+
+      &__bg {
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+      }
+
+      &__content {
+        width: 100%;
+        display: flex;
+        z-index: 10;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        color: $color-white;
+        @include center_with_transform;
+        margin: 0 auto;
+
+        .box {
+          color: $color-white;
+          background-color: transparent;
+          font-size: 2.72rem;
+          text-align: justify;
+          align-self: center;
+          display: flex;
+          flex-direction: column;
+
+          @include respond(phone) {
+            padding-top: 2rem;
+            margin-bottom: 0;
+            padding: 2rem 4rem;
+          }
+
+          @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+            font-size-adjust: 2rem;
+          }
+
+          p {
+            margin: 0;
+            align-self: center;
+            text-align: center;
+            font-size: 2.72rem;
+
+            &:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+
+            @media screen and (max-width: 400px) {
+              font-size: 2.2rem;
+            }
+
+            @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+              font-size: 2rem;
+            }
+          }
+        }
+
+        h3 {
+          align-self: center;
+          text-align: center;
+          color: $color-white;
+
+          @media screen and (max-width: 400px) {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+          }
+
+          @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+            font-size: 2.5rem;
+          }
+
+          &.small {
+            font-size: 2.7rem;
+            @include respond(phone) {
+              padding: 0 2rem;
+              font-size: 2.3rem;
+            }
+
+            @media screen and (max-width: 400px) {
+              font-size: 1.9rem;
+            }
+
+            @media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (orientation: landscape) {
+              font-size: 1.6rem;
+            }
+          }
+        }
+
+        button {
+          align-self: center;
+          outline: none;
+
+          @include respond(phone) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

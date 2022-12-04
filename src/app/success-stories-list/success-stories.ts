@@ -1558,142 +1558,6 @@ export const stories = [
  videoUrl: "https://www.youtube.com/embed/ICB6OieUZWc"
 },
    {
-title: "Gamma Interaction Machine Learning for Imaging",
-subtitle: "Introducing machine learning techniques to reduce the computational cost of Monte Carlo-based" +
-  "simulations for medical imaging detector design.",
-image: "../../assets/res/images/gimli.jpg",
-urlName: "gimli",
-quote: "With this project we break through the most difficult aspect of time-optimized radiation detector" +
-  "design, simulating particle tracks and detector dimensions till we find an optimized solution, reducing" +
-  "the cost of new detector development 10-fold timewise",
-quoteAttribution: "Georgios Konstantinou, Multiwave Metacrystal",
-sections: [
-  {
-    sectionHeading: "Problem and solution",
-    paragraphs: [
-      "Positron Emission Tomography (PET) is a crucial technique widely used for cancer diagnosis and \n" +
-      "treatment; at the heart of PET devices are radiation detectors that use scintillating crystals. The \n" +
-      "fundamental physics is well-understood, and large-scale simulations based around Monte-Carlo \n" +
-      "methods are employed for design by Multiwave Technologies SAS; these correspond to running \n" +
-      "pseudo-random seeds and perform experiments using physics modelling. Depending on the physics \n" +
-      "environment chosen, they can be expensive in terms of simulation time, memory cost and only \n" +
-      "capture some of the physics directly.",
-
-      "Positron Emission Tomography (PET) is a crucial technique widely used for cancer diagnosis and \n" +
-      "treatment; at the heart of PET devices are radiation detectors that use scintillating crystals. The \n" +
-      "fundamental physics is well-understood, and large-scale simulations based around Monte-Carlo \n" +
-      "methods are employed for design by Multiwave Technologies SAS; these correspond to running \n" +
-      "pseudo-random seeds and perform experiments using physics modelling. Depending on the physics \n" +
-      "environment chosen, they can be expensive in terms of simulation time, memory cost and only \n" +
-      "capture some of the physics directly.",
-    ],
-  },
-  {
-    sectionHeading: "What we did",
-    paragraphs: [
-      "Positron Emission Tomography (PET) is a crucial technique widely used for cancer diagnosis and \n" +
-      "treatment; at the heart of PET devices are radiation detectors that use scintillating crystals. The \n" +
-      "fundamental physics is well-understood, and large-scale simulations based around Monte-Carlo \n" +
-      "methods are employed for design by Multiwave Technologies SAS; these correspond to running \n" +
-      "pseudo-random seeds and perform experiments using physics modelling. Depending on the physics \n" +
-      "environment chosen, they can be expensive in terms of simulation time, memory cost and only \n" +
-      "capture some of the physics directly.",
-
-      "The \n" +
-      "pipeline was initially built using only nuclear physics and is being benchmarked for the addition of \n" +
-      "optics, to also show its versatility. We have demonstrated reduction to the computational load that is \n" +
-      "so significant, that for the first time we can use the MC-UQ pipeline embedded in tools such as \n" +
-      "optimization loops. The system can run on the cloud and users can design geometries, choose physics \n" +
-      "and run experiments directly online through the HUBCAP platform. In application, we designed a new \n" +
-      "material combination, replicating the behaviour of the golden-standard scintillator, at a third of the \n" +
-      "cost.",
-    ],
-  },
-  {
-    sectionHeading: "HUBCAP support and platform opportunity",
-    paragraphs: [
-      "This consortium came to be in order to apply for this particular project, offering an important incentive \n" +
-      "to bring together specialists of significantly variable fields, in the cyber and physical domains. The \n" +
-      "requirements of submission of the program helped us develop and define the potential and \n" +
-      "capabilities of this consortium, while allowing us to further integrate new concepts such as" +
-      " Cyber-physical systems and model based design",
-      "Apart from the obvious use of HUBCAP funding, which \n" +
-      "allowed this consortium to exist, we were able to profit from the continuous guidance and interaction \n" +
-      "with business and academic specialists, that supported and interacted with the consortium, helping \n" +
-      "with issues ranging from simulation specifications to such as resource and material allocation and time \n" +
-      "budgeting. Finally, the implementation of an accessible web based demonstrator through the sandbox \n" +
-      "environment of HUBCAP allowed easy user testing and interactions within the consortium.",
-      ],
-  },
-  {
-    sectionHeading: "Forward look",
-    paragraphs: [
-      "Multiwave Metacrystal has now developed an optimized design based on the simulated dimensions \n" +
-      "to build detectors that replicate the state of the art specifications for a fraction of the cost. As such, \n" +
-      "within this year the development process was accelerated two-fold, bringing the company closer to \n" +
-      "its MVP design based on inexpensive scintillators to be commercialised in 2023. With the flexibility \n" +
-      "added through this collaboration, Metacrystal has approached two of the key OEMs of the field with \n" +
-      "negotiations towards landing their first high-end customer ongoing.",
-
-      "Multiwave Technologies has now the know-how to expand its simulation capabilities through the \n" +
-      "application of machine learning designed within the project. While this was performed for Monte-Carlo" +
-      " simulation, it can be directly applied to the significantly more complex and computationally \n" +
-      "heavy electromagnetic simulations and through optimization routines develop photonic designs at \n" +
-      "1/10th of the computational cost, allowing CPS design of photonics for visible and ultraviolet \n" +
-      "wavelengths.",
-
-      "Quaisr has now applied their reusable Data Centric Engineering workflows (optimisation and UQ) to a \n" +
-      "completely new domain adding significant value to its partner SME and demonstrating scalability of \n" +
-      "its modular components. Quaisr has also developed a web app which is deployed through the Hubcap \n" +
-      "platform. This has opened up market opportunities and Quaisr has been in talks with photonics \n" +
-      "multinationals to explore potential use cases. A multinational client in this domain will expand Quaisr's \n" +
-      "remit to three verticals from its current engagements with two verticals (energy and fast moving \n" +
-      "consumer goods).\n",
-    ],
-  },
-],
-info: {
-  endUsers: [
-    {
-      name: "Multiwave Metacrystal",
-      website: "https://metacrystal.ch/",
-    }
-  ],
-  techProviders: [
-    {
-      name: "Multiwave Technologies",
-      website: "https://multiwave.ch/",
-    },
-    {
-      name: "Quaisr",
-      website: "https://www.quaisr.io/",
-    }
-  ],
-  dih: { name: "HUBCAP Germany", website: "https://www.fortiss.org/en/" },
-  domains: [
-    "Positron Emission Tomography",
-    "Physics Simulation",
-    "Detector design",
-    "Machine Learning",
-    "Cloud-based SaaS",
-  ],
-  impact: [
-    "Development of a digital tool that improves productivity and precision for positron emission " +
-    "tomography detector design and development",
-
-    "Integration of Monte-Carlo with Uncertainty Quantification techniques to reduce the " +
-    "computational load, allowing integration with specialized tools such as optimization routines. ",
-
-    "Direct querying of performance-driven indicators that return physical characteristics and " +
-    "dimensions to be constructed",
-
-    "A physics-agnostic pipeline with potential application in any type of physical design Monte-Carlo simulator",
-  ],
-},
-tryItNowUrl: "",
-videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
-},
-   {
   title: "Threat Management Platform for Citizens' Safety at Venues",
   subtitle: "",
   image: "../../assets/res/images/bie-t4s.png",
@@ -2014,6 +1878,99 @@ videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
     tryItNowUrl: "",
     videoUrl: ""
   },
+   {
+    title: "GreenWood - Digital Twin For Environmentally-friendly Wood Processing",
+    subtitle: "",
+    image: "../../assets/res/images/iStock-1149878152.jpg",
+    urlName: "greenwood",
+    quote: "HUBCAP enabled a risk-free innovation in a very important (energy reduction and environmental protection)" +
+      " and business promising area.",
+    quoteAttribution: "Data-drivenInnovation",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "The vision of this proposal is to pave the way for a new generation of the wood processing monitoring" +
+          " services, which are focused not only on the processes performances (KPIs), but also on the" +
+          " eco-friendliness of the process, what we call eco-friendly process quality.",
+
+          "From the technology point of view, GreenWood will model the (near) real-time behaviour of the production" +
+          " in the eco-friendly context. It means that GreenWood will be able to a) monitor all parameters related" +
+          " to eco-friendliness b) create models of the valid/proper behaviour and c) react on any unusuality in" +
+          " the real-time data (before the situation escalates). The green digital twin system then allows to" +
+          " monitor the dynamics of production system and predict its behaviour.",
+
+          "From the manufacturing (technology adoption) point of view, main objective is to achieve eco-friendly " +
+          "production through RETROFITT existing woodworking machines using data-driven innovations powered by" +
+          " Industry 4.0 approach. This is also a part of the orientation of SME adopter (Planeta) toward circular" +
+          " economy: existing process environment will be extended with different sensors to collect quality data" +
+          " and create behavioral models (aka Digital Twin) which will enable a better understanding of how" +
+          " eco-friendly production can be realized.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "The most important advantage is that HUBCUP supported an innovation that exposes some risks for SMEs." +
+          " HUBCAP enabled an environment where this innovation can be boosted in a risk-free manner. Also," +
+          " the collaborative work between relevant companies was supported. HUBCAP platform offered an asset" +
+          " that provides complex analyses of the manufacturing data (D3Scan, Deep Data Diagnostics through" +
+          " Cognitive Scanning). It was very important for the modelling process. Additionally, mentoring " +
+          "process is organized in a very efficient way, monitoring the focus of the work and keeping it on" +
+          " the defined KPIs and ensuring the continuous progress. "
+        ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "CPS technology provider, Helin (coordinator) is a provider of the CPS integration services " +
+          "(Polaris Platform), will establish new services in the domain of developing affordable eco-quality" +
+          " monitoring infrastructure." +
+          "Manufacturing user (MBD CPS user), Planeta can improve own competitiveness with eco-quality" +
+          " in the global market, esp. after the pandemic crisis which provided a lot of challenges for SMEs.",
+
+          "There are two main business advantages:\n" +
+          "Developed system is a new service which can be applied in various domains. Therefore, it opens new" +
+          " (promising) markets for the technology provider" +
+          "In addition, existing Platform (Polaris) for edge computing will be extended with advanced" +
+          " energy-environment data analytics.",
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "PLANETA Technologies",
+          website: "https://planetanamestaj.com/?page_id=4920",
+        }
+      ],
+      techProviders: [
+        {
+          name: "HelinData",
+          website: "https://www.helindata.com/",
+        },
+        {
+          name: "Nissatech",
+          website: "https://www.nissatech.com/",
+        },
+      ],
+      dih: { name: "HUBCAP Italy", website: "https://www.polimi.it/" },
+      domains: [
+        "Eco-friendly Production",
+        "Furniture Industry",
+        "Edge Processing",
+      ],
+      impact: [
+        "New quality monitoring approach for eco-friendliness wood making process.",
+        "New methods for understanding the impact of the energy consumption on the environment.",
+        "Finding the opportunities for the improvement of the eco-friendliness of the wood making process.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: ""
+  },
 
 ];
+
+
 

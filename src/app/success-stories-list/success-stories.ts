@@ -67,7 +67,9 @@ export const stories = [
     subtitle: "Introducing machine learning techniques to reduce the computational cost of Monte Carlo-based simulations for medical imaging detector design",
     image: "../../assets/res/images/iStock-1149878152.jpg",
     urlName: "simulation-for-medical-detectors",
-    quote: "With this project we break through the most difficult aspect of time-optimized radiation detector design, simulating particle tracks and detector dimensions till we find an optimized solution, reducing the cost of new detector development 10-fold timewise.",
+    quote: "With this project we break through the most difficult aspect of time-optimized radiation detector design," +
+           " simulating particle tracks and detector dimensions till we find an optimized solution," +
+           " reducing the cost of new detector development 10-fold timewise.",
     quoteAttribution: "Georgios Konstantinou, Multiwave Metacrystal",
     sections: [
       {
@@ -451,14 +453,14 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "Nissatech",
-          website: "https://www.nissatech.com",
-        }
+          name: "EMDIP",
+          website: "https://www.emdip.com",
+        },
       ],
       techProviders: [
         {
-          name: "EMDIP",
-          website: "https://www.emdip.com",
+          name: "Nissatech",
+          website: "https://www.nissatech.com",
         },
       ],
       dih: { name: "HUBCAP Denmark", website: "https://digit.au.dk/" },
@@ -552,14 +554,14 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "Intellia ICT",
-          website: "https://www.intellia.gr/",
-        }
+          name: "Metricon",
+          website: "https://metricon.gr/ ",
+        },
       ],
       techProviders: [
         {
-          name: "Metricon",
-          website: "https://metricon.gr/ ",
+          name: "Intellia ICT",
+          website: "https://www.intellia.gr/",
         },
       ],
       dih: { name: "HUBCAP Italy", website: "https://www.polimi.it" },
@@ -1205,14 +1207,14 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "Evotech Services",
-          website: "https://www.evotech.ro/#",
-        }
+          name: "Mira Solutions",
+          website: "https://mirabroker.ro/",
+        },
       ],
       techProviders: [
         {
-          name: "Mira Solutions",
-          website: "https://mirabroker.ro/",
+          name: "Evotech Services",
+          website: "https://www.evotech.ro/#",
         },
       ],
       dih: { name: "HUBCAP Romania", website: "https://www.ulbsibiu.ro/en/" },
@@ -1294,14 +1296,14 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "Schmidt Innovation ApS",
-          website: "https://www.sinno.dk",
-        }
+          name: "Danfoil",
+          website: "https://www.danfoil.dk",
+        },
       ],
       techProviders: [
         {
-          name: "Danfoil",
-          website: "https://www.danfoil.dk",
+          name: "Schmidt Innovation ApS",
+          website: "https://www.sinno.dk",
         },
       ],
       dih: { name: "HUBCAP Denmark", website: "https://international.au.dk/" },
@@ -1323,7 +1325,7 @@ export const stories = [
   },
 
    {
- title: "Additive Manufacturing Quality Monitoring System - AM QTOOLS",
+ title: "Additive Manufacturing for Quality and Monitoring System (AM QTOOLS)",
  subtitle: "",
  image: "../../assets/res/images/AMtools.png",
  urlName: "amqtools",
@@ -1336,91 +1338,89 @@ export const stories = [
    {
      sectionHeading: "Problem and solution",
      paragraphs: [
-       "Metal Additive Manufacturing (AM) is a complex operation, which requires the fine-tuning of hundreds of" +
-       " processes parameters to obtain repeatability and a good quality design at dimensional, geometric, structural" +
-       " levels. Among major technology challenges, many recent reports mention the need to achieve smart metal" +
-       " AM process control so to ensure quality, consistency, and reproducibility across AM machines. Additionally," +
-       " while a huge amount of data can be collected in metal AM processes, as most industrial AM systems are" +
-       " equipped with sensors providing log signals, images and videos, there are not consolidated solutions" +
-       " in the industrial practise capable to analyse this data in real-time for quality control.",
+       "Metal Additive Manufacturing (AM) is a complex operation that requires fine-tuning of hundreds of" +
+       " parameters of processes to achieve repeatability and a good quality design at dimensional, geometric, and structural" +
+       " levels. Among the major technological challenges, many recent reports mention the need to achieve smart metal" +
+       " AM process control to ensure quality, consistency, and reproducibility across AM machines. In addition," +
+       " most industrial AM systems are equipped with sensors providing log signals, images, and videos" +
+       " that constitute a huge amount of data collected in metal AM processes, but there is no consolidated solution" +
+       " in industrial practice capable of analyzing this data in real-time for quality control.",
 
        "To help manufacturing companies address these challenges, AM QTOOLS developed an innovative quality-oriented" +
-       " decision support framework, composed by (i) a Model Base Design (MBD) tool providing Design for Additive" +
-       " Manufacturing (DfAM) features, and (ii) a Cyber-Physical System (CPS) created by integrating an Additive" +
-       " Manufacturing (AM) asset with a real-time smart monitoring software application. Such framework caters to" +
-       " process engineers and quality managers needs in order to improve a set of quality and economic KPIs.",
+       " decision support framework, composed of: (i) a model-based design (MBD) tool providing Design for Additive" +
+       " Manufacturing (DfAM) features, and (ii) a cyber-physical system (CPS) created by integrating an Additive" +
+       " Manufacturing (AM) asset with a real-time smart monitoring software application. The framework caters to" +
+       " the needs of process engineers and quality managers in order to improve a set of quality and economic KPIs.",
 
        "AM QTOOLS results include validated quality-oriented predictive models that support the a-priori selection" +
-       " of optimal process parameters combinations and the in-process monitoring of the quality outcomes." +
-       " The models, integrated in the CPS, allow to improve critical manufacturing KPIs, such as lead time" +
-       " (e.g. by reducing the need for downstream quality inspections and reducing production times) and cost " +
-       "of quality (e.g. by reducing inspection requirements).",
+       " of optimal process parameter combinations and in-process monitoring of the quality outcomes." +
+       " The models, integrated into the CPS, enable the improvement of critical manufacturing KPIs, such as lead time" +
+       " (e.g. by reducing the need for downstream quality inspections and reducing production times) and cost" +
+       " of quality (e.g. by reducing inspection requirements).",
      ],
    },
    {
      sectionHeading: "What we did",
      paragraphs: [
-       "The develop and operate phase of the AM QTOOLS project has been carried out in two overlapping steps." +
-       " The first step created the quality-oriented framework. The quality oriented MBD approach abstracts the" +
-       " technical requirements and thus, it creates the project file containing all the necessary instructions" +
-       " for the Cyber Physical System, so to print the designed parts. The link between the MBD approach and the" +
-       " Cyber Physical System is provided by a catalogue of the features for aluminium parts that can be printed" +
-       " with a Laser Powder bed Fusion (LBPF) process, and of common defects, that captures available design " +
-       "know-how regarding the limits of such technology. Crucially, such information is enhanced by the knowledge" +
-       " generated by the CPS. The CPS augments the monitoring capabilities of advanced AM systems, and integrates " +
-       "quality-oriented predictive models to enable a smart process monitoring. Such models have been created by " +
-       "defining and executing targeted process DOEs, persisting machine and process data and collecting the " +
-       "corresponding quality information obtained by CT-Scan, Optical Tomography (OT) and Metallography Cut-Up.",
+       "The development and operational phases of the AM QTOOLS project were carried out in two overlapping steps." +
+       " The first step created the quality-oriented framework. The quality-oriented MBD approach abstracts the" +
+       " technical requirements and creates the project file containing all the necessary instructions" +
+       " for the cyber-physical system to print the designed parts. The link between the MBD approach and the" +
+       " cyber-physical system is provided by a catalogue of the features for aluminium parts that can be printed" +
+       " with a Laser Powder Bed Fusion (LPBF) process, and of common defects, which captures available design" +
+       " know-how regarding the limits of such technology. Crucially, such information is enhanced by the knowledge" +
+       " generated by the CPS. The CPS augments the monitoring capabilities of advanced AM systems, and integrates" +
+       " quality-oriented predictive models to enable smart process monitoring. Such models have been created by" +
+       " defining and executing targeted process DOEs, persisting machine and process data, and collecting the" +
+       " corresponding quality information obtained by CT-Scan, Optical Tomography (OT), and Metallography Cut-Up.",
 
-       "The second step validated the AM QTOOLS framework in operation. To support the MBD phase, the " +
-       "CPS supplied the information useful to improve the project file and print the part by maximizing the part" +
-       " quality based on the design specifications. Decision support is enabled by the predictive models integrated " +
-       "in Smart ProdACTIVE, tracking the process outputs and, through advanced data analytics, providing " +
-       "information of the expected quality outcomes of a specific setup. Accordingly, AM production has been" +
+       "The second step validated the AM QTOOLS framework in operation. To support the MBD phase, the" +
+       " CPS supplied the information useful to improve the project file and print the part by maximizing the part" +
+       " quality based on the design specifications. Decision support is enabled by the predictive models integrated" +
+       " in Smart ProdACTIVE, tracking the process outputs and, through advanced data analytics, providing" +
+       " information of the expected quality outcomes of a specific setup. Accordingly, AM production has been" +
        " carried out and Smart ProdACTIVE has been applied to monitor and validate the improved part design.",
      ],
    },
    {
      sectionHeading: "HUBCAP support and platform opportunity",
      paragraphs: [
-       "HUBCAP support provided invaluable, especially for:",
+       "HUBCAP provided invaluable support, especially for:",
 
-       "•\tGuidance in order to improve AM QTOOLS project management and meet the tight project" +
-       " constraints and schedule",
+       "• Guidance in order to improve AM QTOOLS project management and meet the tight project constraints and schedule.",
 
-       "•\tCo-funding that has been very important in order to finance costly activities, " +
-       "such as metal AM production and inspection processes for various samples and parts.",
+       "• Co-funding that has been very important in order to finance costly activities," +
+       " such as metal AM production and inspection processes for various samples and parts.",
 
-       "•\tA platform that allows to publish and disseminate working project results" +
-       " towards an ample stakeholder basis"
+       "• A platform that allows publishing and dissemination of working project results to a wide variety of stakeholders."
        ],
    },
    {
      sectionHeading: "Forward look",
      paragraphs: [
-       "While it is early to precisely estimate the business impacts of the AM QTOOLS project, the HUBCAP funding" +
-       " provided a unique opportunity to clearly address an industrial challenge and produce practical, working" +
-       " results. AM QTOOLS allowed to open communication paths with business stakeholders (i.e. AM manufacturers," +
-       " Inspection laboratories, AM machines producers): the potential direct impact may be estimated at around" +
-       " 100K€ of additional turnaround for 2023 as development and integration services of smart monitoring solutions."
+       "Whilst it is early to estimate precisely the business impact of the AM QTOOLS project, HUBCAP funding" +
+       " provided us with a unique opportunity to focus on an industrial challenge and to produce practical, working" +
+       " results. AM QTOOLS opened communications with business stakeholders (i.e. AM manufacturers," +
+       " inspection laboratories, and AM machines producers): the potential direct impact may be estimated at around" +
+       " €100K of additional turnaround for 2023, as development and integration services of smart monitoring solutions."
      ],
    },
  ],
  info: {
    endUsers: [
      {
-       name: "EnginSoft",
-       website: "https://www.enginsoft.com",
-     }
-   ],
-   techProviders: [
-     {
        name: "Kilometro Rosso",
        website: "https://www.kilometrorosso.com",
      },
      {
-       name: "PRES-X",
-       website: "https://www.pres-x.com",
+      name: "PRES-X",
+      website: "https://www.pres-x.com",
+    },
+   ],
+   techProviders: [
+     {
+       name: "EnginSoft",
+       website: "https://www.enginsoft.com",
      },
    ],
    dih: { name: "HUBCAP Italy", website: "https://www.polimi.it/" },
@@ -1430,98 +1430,96 @@ export const stories = [
      "Metal additive manufacturing"
    ],
    impact: [
-     "In-process quality monitoring for metal Additive Manufacturing",
-     "A methodology to increase process knowledge and support manufacturing decisions",
-     "KPIs improvements (e.g. lead time, COQ)"
+     "In-process quality monitoring for metal Additive Manufacturing.",
+     "A method to increase process knowledge and support manufacturing decisions.",
+     "Improvements in KPIs (e.g. lead time and COQ)."
    ],
  },
  tryItNowUrl: "",
  videoUrl: "https://www.youtube.com/embed/u4eVtTE6vjc"
 },
    {
- title: "Autonomous Robotic UAV platform for the ‘as-built’ modeling of buildin assets",
- subtitle: "Autonomous Robotic UAV platform for the ‘as-built’ modelling of building assets",
+ title: "Autonomous Robotic UAV Platform for the ‘as-built’ Modeling of Building Assets",
+ subtitle: "Autonomous Robotic UAV Platform for the ‘as-built’ Modelling of Building Assets",
  image: "../../assets/res/images/CPS4asBuild.png",
  urlName: "cps4as",
- quote: "The HUBCAP funding enabled the use of Model-Based Design techniques to assist VERTLINER to \n" +
-   "evaluate the current performance of its aerial system in the given conditions, to help understand the \n" +
-   "critical parameters that affect the system within its environment and mission profiles, while allowing\n" +
-   "the design of a dedicated UAV optimized for the specific tasks prior to committing to a ‘next gen’\n" +
-   "physical prototype. ",
- quoteAttribution: "Michail Striligkas, VERTLINER",
+ quote: "The HUBCAP funding enabled the use of Model-Based Design techniques to assist VERTLINER to" +
+   " evaluate the current performance of its aerial system in the given conditions, to help understand the" +
+   " critical parameters that affect the system within its environment and mission profiles, while allowing" +
+   " the design of a dedicated UAV optimized for the specific tasks prior to committing to a ‘next gen’" +
+   " physical prototype.",
+ quoteAttribution: "Michael Striligkas, CEO VERTLINER",
  sections: [
    {
      sectionHeading: "Problem and solution",
      paragraphs: [
-       "The future of UAVsin commercial applications is no longer a far-off futuristic idea. Drones have quickly" +
-       " become majorly invested in tools for tech and retail giants like Amazon, Facebook, Wal-Mart, and Google," +
-       " not to mention the various industries like Real Estate, Police and Fire Departments, Farming, Cinema," +
-       " Construction, and Photography that stand to benefit greatly from commercial drone use.",
+       "The future of UAVs in commercial applications is no longer a far-off futuristic idea. Drones have quickly" +
+       " become widely used by tech and retail giants like Amazon, Facebook, Wal-Mart, and Google," +
+       " not to mention by various industries like real estate, police and fire departments, farming, cinema," +
+       " construction, and photography that stand to benefit greatly from commercial drone use.",
 
-       "However, the engineering and development phases are still very lengthy, using available tools and with" +
-       " processes inherited mainly from the aerospace industry. Also, the design of these systems is usually" +
-       " following a very conservative approach to ensure that the developed product can be used in various" +
-       " missions and reach a wider range of applications, hence customers. That fact holds apart the engineering" +
-       " of commercial drones from the actual missions and the specific needs of each different business model." +
-       " As such, most businesses entering or thinking of entering into innovative business concepts with the use" +
-       " of drones, reside in the solution of retrofitting a commercially available system, knowing and accepting" +
-       " however that it is not optimal for their plans.",
+       "However, drone engineering and development are still very lengthy phases, which use existing tools and use" +
+       " processes inherited mainly from the aerospace industry. Also, the design of these systems usually" +
+       " follows a very conservative approach to ensure that the developed product can be used in various" +
+       " missions and reach a wide range of applications, and hence customers. Thus, the engineering" +
+       " of commercial drones is separated from their actual missions and the specific needs of individual businesses." +
+       " Most businesses adopting, or thinking of adopting, innovative business practices that use drones" +
+       " retrofit a commercially available system, knowing and accepting that existing drones are not optimal" +
+       " for their business plans.",
 
-       "Project CPS4AsBuild, comes as an answer to this observation, by delivering a Drone/UAV designer toolset" +
-       " based on the MBD philosophy and advanced algorithms. The developed toolset, gives any business or" +
-       " individual the power to design a custom UAV optimal and dedicated design starting from the business" +
-       " case and strategy."
+       "The response of the CPS4AsBuild project to this situation is to deliver a Drone/UAV designer toolset" +
+       " based on the MBD philosophy and advanced algorithms. The developed toolset gives any business or" +
+       " individual the power to design a custom UAV that is optimal for its purpose and has a tailored design" +
+       " that starts from the business case and strategy."
      ],
    },
    {
      sectionHeading: "What we did",
      paragraphs: [
-       "The growing trend of urbanization is pushing the construction industry to develop high-rise buildings, \n" +
-       "increasing the precision requirements, hard to guarantee as the size and height of the building \n" +
-       "increase, especially for auxiliary building assets. The measurement activity of new buildings, for \n" +
-       "instance, is considered a thorough, lengthy, and risky process, since contractors are required to \n" +
-       "physically visit each floor, inspect the structural dimensions, orientation and ensure the system’s \n" +
-       "compliance with the building’s specifications. CPS4asBuilD is a novel inspection system, consisting of \n" +
-       "a robotic UAV connected to a Cloud Platform (CP) that digitizes hard-to-reach building assets by \n" +
-       "traversing confined spaces that collects, analyses, and delivers structural data fast, safely, and \n" +
-       "accurately. VERTLINER developed a prototype (TRL5), currently operated and tested in several \n" +
-       "autonomous missions within construction sites, equipped with depth and visual-inertial odometry \n" +
-       "cameras and LIDARs, as well as obstacle avoidance capability along the vertical direction not available \n" +
-       "in most commercial UAVs.",
+       "The growing trend of urbanization is pushing the construction industry to develop high-rise buildings," +
+       " thereby increasing their precision requirements, which are hard to guarantee as the size and height" +
+       " of buildings increase, especially for auxiliary building assets. For example, the measurement activity of new buildings" +
+       " is considered a thorough, lengthy, and risky process, since contractors are required to" +
+       " visit each floor physically, inspect the structural dimensions and orientation, and ensure the building's" +
+       " compliance with its specifications. CPS4AsBuild is a novel inspection system, consisting of" +
+       " a robotic UAV connected to a cloud platform, which digitizes hard-to-reach building assets by" +
+       " traversing confined spaces, and collects, analyses, and delivers structural data quickly, safely, and accurately." +
+       " VERTLINER has developed a prototype (TRL5) that is currently operated and tested in several" +
+       " autonomous missions within construction sites, and is equipped with depth and visual-inertial odometry" +
+       " cameras and LIDARs, as well as obstacle avoidance capability along the vertical direction not available" +
+       " in most commercial UAVs.",
 
-       "However, the prototype has been built with various off-the-shelf components and following basic \n" +
-       "concepts and guidelines. The test missions reveal numerous functional limitations of the current \n" +
-       "quadcopter version, that need to be considered and optimized in the next steps of the product \n" +
-       "development, and, allow for a dedicated design for the specific missions and operation in indoor \n" +
-       "confined spaces.\n",
+       "The prototype was built with various off-the-shelf components and following basic concepts and guidelines." +
+       " The test missions revealed numerous functional limitations of the current quadcopter version" +
+       " that need to be considered and optimized in the next steps of the product development" +
+       " to allow dedicated designs for specific missions and operation in indoor confined spaces.",
 
-       "The developed toolset was used to assist VERTLINER to evaluate the current performance of the \n" +
-       "system in the given conditions, help understand the critical parameters that affect the system within \n" +
-       "its environment and mission profiles, and allow to the design of a dedicated UAV optimized for the \n" +
-       "specific tasks prior to committing to a ‘next gen’ physical prototype"
+       "The developed toolset was used to assist VERTLINER to evaluate the current performance of the" +
+       " system in the given conditions, help understand the critical parameters that affect the system within" +
+       " its environment and mission profiles, and allow the design of a dedicated UAV optimized for the" +
+       " specific tasks prior to committing to a ‘next gen’ physical prototype."
      ],
    },
    {
      sectionHeading: "HUBCAP support and platform opportunity",
      paragraphs: [
-       "HUBCAP provided the opportunity to both companies to engage with new digital technologies, \n" +
-       "experiment with MBD tools and succeed on the main goals of the project as are summarized below:\n",
+       "HUBCAP provided the opportunity to both companies to engage with new digital technologies," +
+       " experiment with MBD tools, and succeed on the main goals of the project, summarized below:",
 
-       "1. Create a model-based digital replica of the system, to allow for optimized flight control and a \n" +
-       "decrease in vehicle size by 25%, leading to an advanced dedicated design.",
-       "2. Mechanically restructure the current UAV with a goal to decrease its total weight by 30%, and \n" +
-       "increase battery life to 25 minutes.",
-       "3. Optimize the dynamics, stability, and controls to achieve accuracy below 15mm.\n",
-       "4. Time to conduct a full indoor measurement and deliver the results within 60 seconds upon \n" +
-       "completion.\n"
+       "1. Create a model-based digital replica of the system, to allow for optimized flight control and a" +
+       " decrease in vehicle size by 25%, leading to an advanced dedicated design.",
+       "2. Mechanically restructure the current UAV with a goal to decrease its total weight by 30% and" +
+       " increase battery life to 25 minutes.",
+       "3. Optimize the dynamics, stability, and controls to achieve accuracy below 15mm.",
+       "4. Time to conduct a full indoor measurement and deliver the results within 60 seconds upon completion.",
        ],
-   },
+   }, /*
    {
      sectionHeading: "Forward look",
      paragraphs: [
        ""
      ],
-   },
+   }, */
  ],
  info: {
    endUsers: [
@@ -1539,159 +1537,24 @@ export const stories = [
    dih: { name: "HUBCAP Denmark", website: "https://international.au.dk/" },
    domains: [
      "Cyber-Physical System",
-     "Inspection, Buildings",
+     "Inspection",
+     "Buildings",
      "Digital Twin",
      "Unmanned Aerial Systems"
    ],
    impact: [
      "Decrease the duration of generating the ‘as-built model’ of a newly developed building asset," +
-     "reducing the need for multiple transfers to the project site.",
+     " reducing the need for multiple transfers to the project site.",
 
-     "Decrease the duration of generating the ‘as-built model’ of a newly developed building asset," +
-     "reducing the need for multiple transfers to the project site.",
+     "Diminishing the risks of procurement of equipment not compliant with the building’s actual specifications," +
+     " allowing the accurate planning of installation directly on the generated models.",
 
-     " Create a full digital twin, that will optimize its performance from design to end-of-life, based " +
-     "on the business strategy, the unique mission profiles and the customer needs."
+     "Create a full digital twin that will optimize its performance from design to end-of-life," +
+     " based on the business strategy, the unique mission profiles, and customer needs."
    ],
  },
  tryItNowUrl: "",
  videoUrl: "https://www.youtube.com/embed/ICB6OieUZWc"
-},
-   {
-title: "Gamma Interaction Machine Learning for Imaging",
-subtitle: "Introducing machine learning techniques to reduce the computational cost of Monte Carlo-based" +
-  "simulations for medical imaging detector design.",
-image: "../../assets/res/images/gimli.jpg",
-urlName: "gimli",
-quote: "With this project we break through the most difficult aspect of time-optimized radiation detector" +
-  "design, simulating particle tracks and detector dimensions till we find an optimized solution, reducing" +
-  "the cost of new detector development 10-fold timewise",
-quoteAttribution: "Georgios Konstantinou, Multiwave Metacrystal",
-sections: [
-  {
-    sectionHeading: "Problem and solution",
-    paragraphs: [
-      "Positron Emission Tomography (PET) is a crucial technique widely used for cancer diagnosis and \n" +
-      "treatment; at the heart of PET devices are radiation detectors that use scintillating crystals. The \n" +
-      "fundamental physics is well-understood, and large-scale simulations based around Monte-Carlo \n" +
-      "methods are employed for design by Multiwave Technologies SAS; these correspond to running \n" +
-      "pseudo-random seeds and perform experiments using physics modelling. Depending on the physics \n" +
-      "environment chosen, they can be expensive in terms of simulation time, memory cost and only \n" +
-      "capture some of the physics directly.",
-
-      "Positron Emission Tomography (PET) is a crucial technique widely used for cancer diagnosis and \n" +
-      "treatment; at the heart of PET devices are radiation detectors that use scintillating crystals. The \n" +
-      "fundamental physics is well-understood, and large-scale simulations based around Monte-Carlo \n" +
-      "methods are employed for design by Multiwave Technologies SAS; these correspond to running \n" +
-      "pseudo-random seeds and perform experiments using physics modelling. Depending on the physics \n" +
-      "environment chosen, they can be expensive in terms of simulation time, memory cost and only \n" +
-      "capture some of the physics directly.",
-    ],
-  },
-  {
-    sectionHeading: "What we did",
-    paragraphs: [
-      "Positron Emission Tomography (PET) is a crucial technique widely used for cancer diagnosis and \n" +
-      "treatment; at the heart of PET devices are radiation detectors that use scintillating crystals. The \n" +
-      "fundamental physics is well-understood, and large-scale simulations based around Monte-Carlo \n" +
-      "methods are employed for design by Multiwave Technologies SAS; these correspond to running \n" +
-      "pseudo-random seeds and perform experiments using physics modelling. Depending on the physics \n" +
-      "environment chosen, they can be expensive in terms of simulation time, memory cost and only \n" +
-      "capture some of the physics directly.",
-
-      "The \n" +
-      "pipeline was initially built using only nuclear physics and is being benchmarked for the addition of \n" +
-      "optics, to also show its versatility. We have demonstrated reduction to the computational load that is \n" +
-      "so significant, that for the first time we can use the MC-UQ pipeline embedded in tools such as \n" +
-      "optimization loops. The system can run on the cloud and users can design geometries, choose physics \n" +
-      "and run experiments directly online through the HUBCAP platform. In application, we designed a new \n" +
-      "material combination, replicating the behaviour of the golden-standard scintillator, at a third of the \n" +
-      "cost.",
-    ],
-  },
-  {
-    sectionHeading: "HUBCAP support and platform opportunity",
-    paragraphs: [
-      "This consortium came to be in order to apply for this particular project, offering an important incentive \n" +
-      "to bring together specialists of significantly variable fields, in the cyber and physical domains. The \n" +
-      "requirements of submission of the program helped us develop and define the potential and \n" +
-      "capabilities of this consortium, while allowing us to further integrate new concepts such as" +
-      " Cyber-physical systems and model based design",
-      "Apart from the obvious use of HUBCAP funding, which \n" +
-      "allowed this consortium to exist, we were able to profit from the continuous guidance and interaction \n" +
-      "with business and academic specialists, that supported and interacted with the consortium, helping \n" +
-      "with issues ranging from simulation specifications to such as resource and material allocation and time \n" +
-      "budgeting. Finally, the implementation of an accessible web based demonstrator through the sandbox \n" +
-      "environment of HUBCAP allowed easy user testing and interactions within the consortium.",
-      ],
-  },
-  {
-    sectionHeading: "Forward look",
-    paragraphs: [
-      "Multiwave Metacrystal has now developed an optimized design based on the simulated dimensions \n" +
-      "to build detectors that replicate the state of the art specifications for a fraction of the cost. As such, \n" +
-      "within this year the development process was accelerated two-fold, bringing the company closer to \n" +
-      "its MVP design based on inexpensive scintillators to be commercialised in 2023. With the flexibility \n" +
-      "added through this collaboration, Metacrystal has approached two of the key OEMs of the field with \n" +
-      "negotiations towards landing their first high-end customer ongoing.",
-
-      "Multiwave Technologies has now the know-how to expand its simulation capabilities through the \n" +
-      "application of machine learning designed within the project. While this was performed for Monte-Carlo" +
-      " simulation, it can be directly applied to the significantly more complex and computationally \n" +
-      "heavy electromagnetic simulations and through optimization routines develop photonic designs at \n" +
-      "1/10th of the computational cost, allowing CPS design of photonics for visible and ultraviolet \n" +
-      "wavelengths.",
-
-      "Quaisr has now applied their reusable Data Centric Engineering workflows (optimisation and UQ) to a \n" +
-      "completely new domain adding significant value to its partner SME and demonstrating scalability of \n" +
-      "its modular components. Quaisr has also developed a web app which is deployed through the Hubcap \n" +
-      "platform. This has opened up market opportunities and Quaisr has been in talks with photonics \n" +
-      "multinationals to explore potential use cases. A multinational client in this domain will expand Quaisr's \n" +
-      "remit to three verticals from its current engagements with two verticals (energy and fast moving \n" +
-      "consumer goods).\n",
-    ],
-  },
-],
-info: {
-  endUsers: [
-    {
-      name: "Multiwave Metacrystal",
-      website: "https://metacrystal.ch/",
-    }
-  ],
-  techProviders: [
-    {
-      name: "Multiwave Technologies",
-      website: "https://multiwave.ch/",
-    },
-    {
-      name: "Quaisr",
-      website: "https://www.quaisr.io/",
-    }
-  ],
-  dih: { name: "HUBCAP Germany", website: "https://www.fortiss.org/en/" },
-  domains: [
-    "Positron Emission Tomography",
-    "Physics Simulation",
-    "Detector design",
-    "Machine Learning",
-    "Cloud-based SaaS",
-  ],
-  impact: [
-    "Development of a digital tool that improves productivity and precision for positron emission " +
-    "tomography detector design and development",
-
-    "Integration of Monte-Carlo with Uncertainty Quantification techniques to reduce the " +
-    "computational load, allowing integration with specialized tools such as optimization routines. ",
-
-    "Direct querying of performance-driven indicators that return physical characteristics and " +
-    "dimensions to be constructed",
-
-    "A physics-agnostic pipeline with potential application in any type of physical design Monte-Carlo simulator",
-  ],
-},
-tryItNowUrl: "",
-videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
 },
    {
   title: "Threat Management Platform for Citizens' Safety at Venues",
@@ -1705,47 +1568,47 @@ videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
     {
       sectionHeading: "Problem and solution",
       paragraphs: [
-        "The goal of the project was to employ Model-Based Design to enhance the T4S platform developed \n" +
-        "by Thridium, with business intelligence introduced by HUBCAP partner, BEAM.\n",
+        "The goal of the project was to employ model-based design to enhance the T4S platform, developed" +
+        " by Thridium, with business intelligence introduced by the HUBCAP partner BEAM.",
 
-        "The new integrated BIE-T4S (Business Intelligence Enhanced T4S) platform will support different IoT \n" +
-        "sensors (WiFi access points, CCTV cameras etc.) and process real-time data using business \n" +
-        "intelligence tools to provide valuable input (indoor positioning, crowd distribution, dynamic \n" +
-        "evacuation routing, real-time visualizations), which will then be used by the revamped BIE-T4S \n" +
-        "platform (mature at TRL-7) in order to offer security-oriented components (common operational \n" +
-        "picture, events management, task allocation, security crew mobile app) which will be available to \n" +
-        "the venue’s security officers for better crisis assessment and emergency response.",
+        "The new integrated BIE-T4S (Business Intelligence Enhanced T4S) platform will support different IoT" +
+        " sensors (e.g. WiFi access points and CCTV cameras) and process real-time data using business" +
+        " intelligence tools to provide valuable input: indoor positioning, crowd distribution, dynamic" +
+        " evacuation routing, and real-time visualizations. This input will then be used by the revamped BIE-T4S" +
+        " platform (mature at TRL7) to offer security-oriented components (common operational picture," +
+        " events management, task allocation, and security crew mobile app) that will be available to" +
+        " the venue security officers for better crisis assessment and emergency response.",
 
-        "The goal is to provide the integrated BIE-T4S platform as a venue-agnostic threat management \n" +
-        "platform delivering increased preparedness against different types of threats (terrorism, natural " +
-        "disasters, pandemics etc.) and support the complete lifecycle evacuation management in any \n" +
-        "crowded place.",
+        "The goal is to provide the integrated BIE-T4S platform as a venue-agnostic threat management" +
+        " platform that enables increased preparedness against different types of threat (e.g. terrorism," +
+        " natural disasters, and pandemics) and supports the complete lifecycle evacuation management in any" +
+        " crowded place.",
       ],
     },
     {
       sectionHeading: "What we did",
       paragraphs: [
-        "-We have validated the system in real operational conditions. We have found that the system \n" +
-        "complied with over 90% of the threats",
-        "-During the experiments we analysed the alarms received and conclude that all incidents \n" +
-        "were successfully detected."
+        "We validated the system under real operational conditions and found that the system" +
+        " complied with over 90% of the threats.",
+
+        "During the experiment, we analysed the alarms received and concluded that all incidents were successfully detected."
       ],
     },
     {
       sectionHeading: "HUBCAP support and platform opportunity",
       paragraphs: [
-        "The use of the HUBCAP platform allowed the preparation of BEAM’s software to work with Telesto's \n" +
-        "T4S system and enable a further development and integration between the products of the two \n" +
-        "companies. The funding received from HUBCAP allowed both companies to further develop both \n" +
-        "their own technology and develop a new solution benefitting from both companies’ know-how.\n",
+        "Use of the HUBCAP platform allowed the preparation of BEAM’s software to work with Thridium's" +
+        " T4S system, and enabled further development and integration of the products of the two companies." +
+        " The HUBCAP funding allowed both companies to develop further" +
+        " their respective technologies and to develop a new solution that benefited from their combined know-how.",
         ],
-    },
+    }, /*
     {
       sectionHeading: "Forward look",
       paragraphs: [
         ""
       ],
-    },
+    }, */
   ],
   info: {
     endUsers: [
@@ -1766,99 +1629,91 @@ videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
       "Threat management",
     ],
     impact: [
-      "Undertake real-time events identification and security incidents handling using a single" +
-      "integrated platform.",
-      "BIE-T4S platform acts as the bonding agent between the legacy systems and the operational" +
-      "functionalities required by the operators of such complex venues from a security standpoint."
+      "Identification of events in real-time and handling of security incidents can be done using a single integrated platform.",
+      "The BIE-T4S platform acts as a bonding agent between legacy systems and the operational" +
+      " functionalities required by operators of complex venues from a security standpoint."
     ],
   },
   tryItNowUrl: "",
-  videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
+  videoUrl: "https://www.youtube.com/embed/vhl8gjxpKcc"
 },
    {
-  title: "Monitoring environmental conditions in industrial operations",
+  title: "Monitoring Environmental Conditions in Industrial Operations",
   subtitle: "",
-  image: "../../assets/res/images/iStock-1149878152.jpg",
+  image: "../../assets/res/images/MENIoR-in-vivo.png",
   urlName: "menior",
-  quote: "",
-  quoteAttribution: "",
+  quote: "HUBCAP gave the consortium companies the opportunity to combine their expertise in environmental intelligence," +
+         " IoT sensing, and occupational health to develop a solution that raises the awareness of industrial employees" +
+         " about the impact of environmental conditions in their work environment and helps them protect their wellbeing.",
+  quoteAttribution: "MENIoR Team",
   sections: [
     {
       sectionHeading: "Problem and solution",
       paragraphs: [
-        "Monitoring the environmental conditions, such as air quality, temperature, etc., in factories can " +
-        "help employers and employees to better plan their activities and promptly take measures to " +
-        "avoid environmental accidents and health issues.",
+        "Monitoring environmental conditions in factories, such as air quality and temperature," +
+        " can help employers and employees to plan their activities better and promptly take measures to" +
+        " avoid environmental accidents and health issues.",
 
-        "MENIoR aims to enable industrial operators understand and improve the environmental conditions" +
-        " inside their units. Rising the awareness of their employees about the impact of environmental" +
-        " conditions by leveraging the potential of Internet of Things (IoT) with the application of" +
-        " augmented reality (ΑR) and Digital Twin (DT) techniques.",
-
-        "Environmental information is collected via a low-cost monitoring network developed and configured by " +
-        "the consortium in industrial operations. Afterwards the measurements are analysed on the cloud. A web " +
-        "based Digital Twin of the factory is developed to enable the factory admins visualise the collected data " +
-        "and assess scenarios for environmental improvement inside the factory, while employees are provided with a " +
-        "visualisation tool through a mobile application using an AR interface.",
+        "The purpose of the MENIoR project was to enable industrial operators understand and improve the environmental conditions" +
+        " inside their units, and also to raise awareness of employees about the impact of environmental conditions," +
+        " by leveraging the potential of the Internet of Things (IoT) with the application of augmented reality and digital twin techniques.",
       ],
     },
     {
       sectionHeading: "What we did",
       paragraphs: [
-        "In the framework of the project, a low-cost environmental monitoring network was developed and" +
+        "A low-cost environmental monitoring network was developed and" +
         " installed inside two Spanish factories: Fagesta S.L. and Lisanplast S.L. The network collected" +
-        " real-time air quality measurements, as well as data of other environmental parameters such as" +
-        " temperature, humidity and concentrations of CO2. This information was then analysed on the cloud" +
-        " and visualised on a web Digital Twin platform that was provided to factory admins to assess scenarios" +
+        " air quality measurements in real-time, as well as data on other environmental parameters, such as" +
+        " temperature, humidity, and concentrations of CO2. This information was then analysed on the cloud" +
+        " and visualised on a web-based digital twin platform that was provided to factory administrators to assess scenarios" +
         " for environmental improvement inside the factories. In addition, factory employees were given access" +
         " to visualisations of the data via an augmented reality mobile application.",
 
-        "During MENIoR’s pilot implementation phase, the factories had the opportunity to test the " +
-        "MENIoR solution and provide their feedback to the consortium companies. Based on this feedback, " +
-        "the project consortium was able to evaluate and improve the solution even further in order to better " +
-        "address the market’s needs.",
+        "During the pilot implementation phase of the project, the factories had the opportunity to test our" +
+        " system and provided us with feedback. This enabled us to evaluate and improve the system" +
+        " in order to address market needs better.",
       ],
     },
     {
       sectionHeading: "HUBCAP support and platform opportunity",
       paragraphs: [
-        "HUBCAP enabled the consortium companies to accelerate their introduction to the market of industrial" +
-        " installations. In the context of MENIoR, HUBCAP’s funding was used to develop and set up a low-cost" +
-        " environmental monitoring network, deliver a web Digital Twin platform and an Augmented Reality mobile" +
-        " application, and finally evaluate and validate the MENIoR solution in order to provide to the market an" +
+        "HUBCAP enabled the consortium companies to accelerate their introduction to the market of industrial installations." +
+        " HUBCAP funding was used to develop and set up a low-cost environmental monitoring network," +
+        " deliver a web-based digital twin platform, and an augmented reality mobile application," +
+        " and to evaluate and validate the MENIoR solution in order to provide to the market an" +
         " integrated environmental monitoring solution that raises the awareness of factory employees on environmental" +
         " conditions and results in more environmentally concerned behaviours.",
 
-        "MENIoR did not use directly the HUBCAP platform nor the sandbox. However, for air quality monitoring inside" +
-        " the pilot factories, the HOPU-manufactured IoT device Smart Spot, which is an asset listed" +
-        " in the HUBCAP platform, was used.",
+        "MENIoR did not use the HUBCAP platform nor the sandbox directly. However, for monitoring air quality inside" +
+        " the pilot factories, the HOPU-manufactured IoT device Smart Spot was used, which is an asset on the HUBCAP platform.",
         ],
     },
     {
       sectionHeading: "Forward look",
       paragraphs: [
-        "As the project has just ended, it is still not easy to estimate how much HUBCAP has impacted the 3" +
+        "As the project has ended very recently, it is not easy to estimate how much HUBCAP has impacted the three" +
         " consortium companies. However, as the project resulted in an innovative integrated solution with key" +
-        " benefits for industrial operations, with the proper exploitation by the consortium it is expected for" +
-        " HUBCAP to significantly contribute to the portfolio of the companies."
+        " benefits for industrial operations, with proper exploitation by the consortium," +
+        " it is expected that HUBCAP has contributed significantly to the portfolios of the companies."
       ],
     },
   ],
   info: {
     endUsers: [
       {
-        name: "DRAXIS Environmental",
-        website: "https://draxis.gr/",
-      }
+        name: "The Predictive Company",
+        website: "https://thepredictivecompany.com/",
+      },
     ],
     techProviders: [
       {
-        name: "HOP Ubiquitous",
-        website: "https://hopu.eu/",
+        name: "DRAXIS Environmental",
+        website: "https://draxis.gr/",
       },
       {
-        name: "The Predictive Company",
-        website: "https://thepredictivecompany.com/",
+        name: "HOP Ubiquitous",
+        website: "https://hopu.eu/",
       },
     ],
     dih: { name: "HUBCAP United Kingdom", website: "https://www.ncl.ac.uk/" },
@@ -1867,117 +1722,219 @@ videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
       "Internet of Things",
       "Digital Twins",
       "Augmented Reality",
+      "Air Quality Monitoring",
       "Environmental Monitoring"
     ],
     impact: [
-      "The solution of the project contributed to the increase of employees’ awareness on environmental " +
-      "conditions and resulted in more environmentally aware behaviours, as well as provided a tool for " +
-      "industries to promote the wellbeing of their employees and increase their productivity;",
+      "The project developed an innovative technological solution that addresses a clear market need:" +
+      " the improvement of environmental conditions in industrial workplaces.",
 
-      "MENIoR developed a new solution that addresses a clear market need, e.g. the need to improve environmental" +
-      " conditions in industrial workplaces;",
+      "The MENIoR system provides health and safety managers in industry" +
+      " with a tool to promote the well-being of employees and thereby increase their productivity.",
 
-      "The solution of the project contributed to the increase of employees’ awareness on environmental " +
-      "conditions and resulted in more environmentally aware behaviours, as well as provided a tool for " +
-      "industries to promote the wellbeing of their employees and increase their productivity.",
+      "The system contributes to an increase of employee awareness of environmental conditions" +
+      " that should result in more environmentally aware behaviours.",
 
-      "The MENIoR solution accelerated the introduction of the 3 consortium companies in a new market," +
-      " named “industrial installations”.",
-
-
+      "The MENIoR solution accelerated the introduction of the three consortium companies to a new market," +
+      " namely, “industrial installations”.",
     ],
   },
   tryItNowUrl: "",
   videoUrl: "https://www.youtube.com/embed/jwOaEyEK1ho"
+},
+ {
+  title: "Data-Driven Digital Twin supporting Efficient and Environmental-Friendly Wood Processing (GreenWood)",
+  subtitle: "",
+  image: "../../assets/res/images/GreenWood.png",
+  urlName: "GreenWood",
+  quote: "HUBCAP enabled a risk-free innovation in a very important (energy reduction and environmental protection)" +
+         " and business promising area.",
+  quoteAttribution: "The GreenWood Team",
+  sections: [
+    {
+      sectionHeading: "Problem and solution",
+      paragraphs: [
+        "The vision of this project was to pave the way for a new generation of wood processing monitoring services" +
+        " that are focused not only on process performance (KPIs) but also on the eco-friendliness of the process," +
+        " what we term eco-friendly process quality.",
+
+        "From the technology point of view, GreenWood modelled the (near) real-time behaviour of the production" +
+        " in the eco-friendly context. This means that GreenWood:",
+
+        " a) Monitored all parameters related to eco-friendliness.",
+
+        " b) Created models of the valid/proper behaviour.",
+
+        " c) Reacted on any unusual real-time data before the situation escalated.",
+
+        " The green digital twin system enabled monitoring of the dynamics of the production system and prediction of its behaviour.",
+
+        "From the manufacturing (technology adoption) point of view, the main objective was to achieve eco-friendly production" +
+        " through retrofitting of existing wood working machines using data-driven innovations powered by the Industry 4.0 approach." +
+        " This is also a part of the orientation of the SME adopter Planeta toward a circular economy," +
+        " where the existing process environment is extended with different sensors to collect quality data" +
+        " and behavioral models are created (digital twin) to enable a better understanding" +
+        " of how eco-friendly production can be realized.",
+      ],
+    },
+    {
+      sectionHeading: "What we did",
+      paragraphs: [
+        "The project activities are illustrated in the diagram."
+      ],
+    },
+    {
+      sectionHeading: "HUBCAP support and platform opportunity",
+      paragraphs: [
+        "Most importantly, HUBCUP supported an innovation that otherwise would have exposed the SMEs to some risks." +
+        " HUBCAP enabled an environment where this innovation was boosted in a risk-free manner." +
+        " Also, the collaborative work between relevant companies was supported. The HUBCAP platform offered an asset" +
+        " that provides complex analyses of manufacturing data (D3Scan, Deep Data Diagnostics through Cognitive Scanning)," +
+        " which was very important for the modelling process. Additionally, the mentoring process was organized" +
+        " in a very efficient way: monitoring the focus of the work, keeping it on the defined KPIs," +
+        " and ensuring continuous progress.",
+        ],
+    },
+    {
+      sectionHeading: "Forward look",
+      paragraphs: [
+        "Helin, the provider of the CPS integration services (Polaris platform)," +
+        " will establish new services in the domain of affordable eco-quality monitoring infrastructure.",
+
+        "Planeta, the furniture manufacturer, can improve competitiveness with eco-quality in the global market." +
+        " This is important following the pandemic crisis, which caused many challenges for SMEs.",
+
+        "There are two main business advantages:",
+
+        "The developed system is a new service that can be applied in various domains (outside the furniture industry)." +
+        " Therefore, the system opens new (promising) markets for the technology providers.",
+
+        "The existing Polaris platform for edge computing will be extended with advanced energy-environment data analytics.",
+      ],
+    },
+  ],
+  info: {
+    endUsers: [
+      {
+        name: "Planeta",
+        website: "https://planetanamestaj.com/",
+      },
+    ],
+    techProviders: [
+      {
+        name: "Helin",
+        website: "https://www.helindata.com/",
+      },
+      {
+        name: "Nissatech",
+        website: "https://www.nissatech.com",
+      },
+    ],
+    dih: { name: "HUBCAP Italy", website: "https://www.polimi.it" },
+    domains: [
+      "Eco-friendly production",
+      "Furniture industry",
+      "Edge processing"
+    ],
+    impact: [
+      "New approach to monitoring quality for eco-friendly wood working processes.",
+      "New methods for understanding the impact of energy consumption on the environment.",
+      "Finding opportunities for improvement of the eco-friendliness of wood working processes."
+    ],
+  },
+  tryItNowUrl: "",
+  videoUrl: "https://www.youtube.com/embed/8yUy0eiSdEo"
 },
    {
     title: "Blockchain in IoT sensors",
     subtitle: "",
     image: "../../assets/res/images/blockchain.png",
     urlName: "blockchain-in-iot-sensors",
-    quote: "This public funding program has helped both companies to research and develop the necessary \n" +
-      "infrastructure to certify measurements that come from any IoT device. The final development and \n" +
-      "implementation is currently under the last testing phase and we are working to have the final version \n" +
-      "of AirTrace in middle September, sending the measurements directly from the Bye Radon devices to \n" +
-      "the platform and introducing these measurements into the selected blockchain. Without this funding \n" +
-      "program, this important R&D project could not have been possible.",
+    quote: "This public funding program has helped both companies to research and develop the necessary" +
+          " infrastructure to certify measurements that come from any IoT device. The final development and" +
+          " implementation is currently under the last testing phase and we are working to have the final version" +
+          " of AirTrace in middle September, sending the measurements directly from the Bye Radon devices to" +
+          " the platform and introducing these measurements into the selected blockchain. Without this funding" +
+          " program, this important R&D project could not have been possible.",
     quoteAttribution: "Francesco di Martino, Future Sense",
     sections: [
       {
         sectionHeading: "Problem and solution",
         paragraphs: [
-          "To create and develop an infrastructure and network that can integrate blockchain technology into \n" +
-          "any IoT measurement device is the aim of this project.",
-          "AirTrace allows the generation of a permissioned blockchain network in the cloud to securely store all \n" +
-          "the data and measurements provided by any IoT sensors. Data is stored via two different options: \n" +
-          "RestFUL API and MQTT, which are the two most widespread interfaces available for IoT in the world, \n" +
-          "allowing AirTrace clients to resort to these mature technologies for communicating IoT data to the \n" +
-          "blockchain. This makes it the perfect tool from the HUBCAP ecosystem to test and implement this new \n" +
-          "technology in the Bye Radon IoT devices.\n",
-          "Future Sense has designed a PCBA that can turn any sensor into an IoT measurement device. They \n" +
-          "already count with two air quality sensors called Bye Radon. The first one, focuses on the \n" +
-          "measurements of radon (including temperature and humidity sensors); the second device has a wider \n" +
-          "air quality scope, also including measurements of PM, TVOCs, eCO2 and atmospheric pressure. For \n" +
-          "those who are not familiar with radon, it’s the second leading cause of lung cancer according to the \n" +
-          "WHO and results in 84.000 deaths each year worldwide.",
-          "Once both companies have developed the blockchain infrastructure, the idea is to use this technology \n" +
-          "to expand to other sectors (chemicals, water analysis, etc.) and sensors (CO2, VOCs, PMs, etc.), thus \n" +
-          "stimulating and expanding the adoption of more Cyber Physical Systems (CPS).\n",
+          "The aim of this project was to create and develop an infrastructure and network" +
+          " that can integrate blockchain technology into any IoT measurement device.",
+
+          "AirTrace allows the generation of a permissioned blockchain network in the cloud to store securely all" +
+          " the data and measurements provided by any IoT sensor. The data is stored via two different options:" +
+          " RestFUL API and MQTT, which are the two most widespread interfaces available for IoT in the world," +
+          " allowing AirTrace clients to resort to these mature technologies for communicating IoT data to the blockchain." +
+          " This makes AirTrace the perfect tool from the HUBCAP ecosystem to test and implement this new" +
+          " technology for Bye Radon IoT devices.",
+
+          "Future Sense has designed a printed circuit board assembly that can turn any sensor into an IoT measurement device." +
+          " They already work with two air quality sensors called Bye Radon. The first focuses on the" +
+          " measurements of radon (including temperature and humidity sensors). The second device has a wider" +
+          " air quality scope, also including measurements of particulate matter (PM)," +
+          " total volatile organic compounds (TVOCs), equivalent carbon dioxide (eCO2), and atmospheric pressure." +
+          " Radon is a radioactive gas, it is the second leading cause of lung cancer according to the" +
+          " WHO, and results in 84,000 deaths each year worldwide.",
+
+          "Once both companies had developed the blockchain infrastructure, the idea was to use this technology" +
+          " to expand to other sectors (e.g. chemicals and water analysis) and sensors (e.g. CO2, VOCs, and PMs), thus" +
+          " stimulating and expanding the adoption of more cyber-physical systems (CPS).",
         ],
       },
       {
         sectionHeading: "What we did",
         paragraphs: [
-          "During these last months we have been running several tests and analysis of the main platform \n" +
-          "requirements for the most suitable implementation of the Bye Radon IoT devices with AirTrace \n" +
-          "platform. As a result, we developed several proofs of concepts to validate the entire process, detailed \n" +
-          "in the document, with the outcome of an IoT device sending the data directly to two IoT platforms: \n" +
-          "Cumulocity (for visualization purposes) and AirTrace (for the introduction of the measured data into \n" +
-          "the blockchain). With the work done so far, the Bye Radon devices ensure the source, integrity and \n" +
-          "authenticity of the data that the devices send to the cloud, thus avoiding alteration and repudiation.",
+          "During these last months we have been running several tests and analysis of the main platform" +
+          " requirements for the most suitable implementation of the Bye Radon IoT devices with the AirTrace platform." +
+          " As a result, we developed several proofs of concept to validate the entire process," +
+          " with the outcome of an IoT device sending its data directly to two IoT platforms:" +
+          " Cumulocity (for visualization purposes) and AirTrace (for the introduction of the measured data into" +
+          " the blockchain). With the work done so far, the Bye Radon devices ensure the source, integrity, and" +
+          " authenticity of the data that the devices send to the cloud, thus avoiding alteration and repudiation.",
 
-          "We have also worked on the deployment of the first pilot project with around 30 devices measuring \n" +
-          "temperature, humidity and radon in Cieza (a municipality), University of Cantabria (radon \n" +
-          "professionals) and a winery located in La Rioja. We will now focus on the deployment of the second \n" +
-          "pilot project that will involve around 10 devices that also measure other air pollutants with the early \n" +
-          "adopters, so that we can measure in some locations where we have experienced connectivity \n" +
-          "problems. As this second version is manufactured with an external antenna, we think that this can \n" +
-          "solve the problems we have encountered. All this will be detailed in the final demo video."
+          "We have also worked on the deployment of the first pilot project with around 30 devices measuring" +
+          " temperature, humidity, and radon in Cieza (a municipality in Spain), University of Cantabria (radon" +
+          " professionals), and a winery located in La Rioja. We will now focus on the deployment of the second" +
+          " pilot project that will involve around 10 devices that also measure other air pollutants with the early" +
+          " adopters, so that we can measure in some locations where we have experienced connectivity problems." +
+          " As this second version is manufactured with an external antenna," +
+          " we think this can solve the problems we have encountered.",
         ],
       },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
-          "The funding supplied by HUBCAP has served both companies. From AirTrace's perspective, working \n" +
-          "with a real IoT manufacturer has helped to analyse the requirements that had to be implemented in \n" +
-          "the platform to ease the process of implementation for other possible clients (implementing correctly \n" +
-          "MQTT protocol).\n",
+          "The funding supplied by HUBCAP has served both companies. From the AirTrace perspective, working" +
+          " with a real IoT manufacturer has helped to analyse the requirements that had to be implemented in" +
+          " the platform to ease the process of implementation for other possible clients" +
+          " (e.g. correct implementation of the MQTT protocol).",
 
-          "For Bye Radon, to research and implement blockchain technology in their devices was fundamental \n" +
-          "before applying to the program, as radon is a societal and health worldwide problem where certified \n" +
-          "measurements with the latest technologies drive a real opportunity and change for those who have \n" +
-          "experienced lung cancer due to this dangerous gas. To engage with this new technology and start a \n" +
-          "new relationship with a blockchain provider has served to open new resources for the company in \n" +
-          "terms of new customers, new recurrent income stream and cooperation opportunities.\n",
+          "For Bye Radon, to research and implement blockchain technology in their devices was of fundamental importance" +
+          " before applying to the programme, as radon is a societal and health problem worldwide where certified" +
+          " measurements with the latest technologies drive a real opportunity and change for those who have" +
+          " experienced lung cancer due to this dangerous gas. To engage with this new technology and start a" +
+          " new relationship with a blockchain provider has served to open new resources for the company in" +
+          " terms of new customers, new recurrent income stream, and cooperation opportunities.",
 
-          "Both companies are now working to lower the cost of this certification and analysing the number of \n" +
-          "transactions that need to be done for each group of devices: 1 per client, 1 per device, each 10 \n" +
-          "minutes, twice a day, every 24 hours, etc. In the final report we will include our conclusions regarding \n" +
-          "this topic. ",
+          "Both companies are now working to lower the cost of certification and analysing the number of" +
+          " transactions that need to be done for each group of devices: 1 per client, 1 per device, each 10 minutes," +
+          " twice a day, every 24 hours, and so on.",
           ],
       },
       {
         sectionHeading: "Forward look",
         paragraphs: [
-          "It is too soon to calculate the impact that HUBCAP program has brought to both companies in terms \n" +
-          "of sales, income or market opportunities, as both companies are still working to robust the solution \n" +
-          "and release the final implementation of the AirTrace in IoT devices. ",
-
-          "In September, after we have finalized this implementation and deployed the second pilot project to \n" +
-          "validate the entire blockchain process, we will work on the definition of the commercial strategy for \n" +
-          "future collaborations. This will be included in the final deliverable, where we will also include a section \n" +
-          "regarding the impact and market opportunities that HUBCAP has brought for both entities, that \n" +
-          "without a doubt has been very positive.\n",
+          "It is too soon to calculate the impact that the HUBCAP programme has brought to both companies in terms" +
+          " of sales, income, or market opportunities, as both companies are still working to make robust the solution" +
+          " and release the final implementation of AirTrace in IoT devices." +
+          " However, the impact and market opportunities that HUBCAP has brought for both companies has been," +
+          " without a doubt, very positive." +
+          " In September, after we have finalized the implementation and deployed the second pilot project to" +
+          " validate the entire blockchain process, we will work on the definition of the commercial strategy" +
+          " for future collaborations.",
         ],
       },
     ],
@@ -2003,12 +1960,13 @@ videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
         "Certified measurements",
       ],
       impact: [
-        "30 new radon monitored environments + 10 new indoor air quality monitored environments.",
-        "With the introduction of blockchain technology, the Bye Radon devices will ensure the source, \n" +
-        "integrity and authenticity of the data that the devices send to the cloud, thus avoiding \n" +
-        "alteration and repudiation.",
-        "Created easy infrastructure to implement blockchain technology in other IoT sensors with " +
-        "the 'AirTrace' application",
+        "30 new radon monitored environments and 10 new indoor air quality monitored environments.",
+
+        "With the introduction of blockchain technology, the Bye Radon devices will ensure the source," +
+        " integrity, and authenticity of the data that the devices send to the cloud, thus avoiding" +
+        " alteration and repudiation.",
+
+        "Created easy infrastructure to implement blockchain technology in other IoT sensors with the AirTrace application.",
       ],
     },
     tryItNowUrl: "",

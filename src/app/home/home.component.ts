@@ -118,10 +118,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   configStories: SwiperOptions = {
     pagination: false,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
     slidesPerView: this.width > 710 ? 3 : 1,
     loop: true,
     autoplay: {

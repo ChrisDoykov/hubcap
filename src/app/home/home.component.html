@@ -158,7 +158,7 @@
 
     <!-- SUCCESS STORIES CAROUSEL -->
 
-    <!-- <div class="u-center-text u-is-black-color u-margin-top-medium">
+    <div class="u-center-text u-is-black-color u-margin-top-medium">
       <h2 class="heading-secondary">Success Stories</h2>
     </div>
 
@@ -176,12 +176,6 @@
             >
               {{ story.title }}
             </h4>
-            <p class="paragraph u-text-left">
-              {{ story.summary | slice: 0:150
-              }}<span *ngIf="story.summary && story.summary.length > 150"
-                >...</span
-              >
-            </p>
             <a
               class="success-stories-slide__content__link"
               href="{{ story.url }}"
@@ -192,9 +186,8 @@
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </swiper>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div> -->
 
     <!-- SUCCESS STORIES CAROUSEL -->
   </section>

@@ -1112,7 +1112,7 @@ export const stories = [
       ],
     },
     tryItNowUrl: "",
-    videoUrl: "https://www.youtube.com/embed/suh6DYvWnR0"
+    videoUrl: "https://www.youtube.com/embed/gMKy90laEh0"
   },
    {
     title: "Crop Sales Optimization Application",

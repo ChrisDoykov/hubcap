@@ -73,6 +73,7 @@ import { DatePipe } from "./date.pipe";
 import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
 import { SuccessStoryComponent } from "./success-story/success-story.component";
 import { SafePipe } from './safe.pipe';
+import { GitworksComponent} from "./gitworks/gitworks.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",

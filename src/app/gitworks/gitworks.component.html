@@ -1,0 +1,451 @@
+<div class="container" >
+<!--  Authors Header and main message in container top-->
+  <div class="container__top">
+    <h1 class="heading-primary heading-primary--underlined heading-primary--underlined-teal has-text-centered">
+      From HUBCAP to GitWorks
+    </h1>
+    <h2 class="subtitle u-center-text subtitle--announcement">
+      HUBCAP and Perpetual Labs share a vision for the future of Model-Based Design for Cyber-Physical
+      Systems in which web-based platforms enable individuals and organisations large and small to share and
+      combine assets such as models and tools in joint activities and enterprises in a managed and access-controlled
+      way. Here we share a draft plan to bring the HUBCAP and GitWorks platforms together to realise this goal in
+      2023.
+    </h2>
+  </div>
+  <div class="info">
+    <div class="info-section">
+      <h2
+        class="subtitle subtitle--bg-teal subtitle--colored">
+        The Vision
+      </h2>
+      <h3 class="paragraph--big">
+        A typical Model-Based Design (MBD) contains three types of MBD Asset:
+      </h3>
+      <br>
+      <ol type="1">
+        <li>
+          Models, which are mathematical or formal abstractions of system elements (components or subsystems).
+        </li>
+        <li>
+          Tools, which are software packages that enable the development, analysis, and simulation of models.
+        </li>
+        <li>
+          Infrastructure, which refers to all the software environments, networking, shared drives, libraries and
+          dependencies needed to run the tools.
+        </li>
+      </ol>
+      <br>
+      <p class="paragraph--big">
+        MBD experts also offer support services, including the development of assets or the combination of assets to perform
+        specialised analysis tasks such as model checking, safety analysis, synthesis of hardware and software deployments,
+        fault detection and recovery, and much more. Let us call these MBD Services.
+      </p>
+      <br>
+      <p class="paragraph--big">
+        Our overall idea is to create a web-based platform that enables diverse individuals and organisations to collaborate
+        on the development and (access-controlled) sharing of MBD Assets. It is well established in the literature that such a
+        platform would be highly beneficial in industries including Aerospace, Automotive, Marine, Robotics, Built
+        Environment and many more.
+      </p>
+      <br>
+      <p class="paragraph--big">
+        Let us consider a use case. An Original Equipment Manufacturer (OEM) may invite their suppliers to join the
+        model-based development of a Cyber-Physical System (CPS) by creating and sharing CPS-level architecture and
+        requirements models, as well as a requirement verification analysis tools. Through the platform, the suppliers will
+        make available the models and data necessary to verify the CPS-level properties specified by the OEM’s
+        requirements. These diverse models can be integrated at the CPS-level and the infrastructure to perform the analysis
+        can be provisioned on demand (infrastructure as code and infrastructure as a service). The idea is that all the partners
+        are able to replicate the analysis independently and verify the CPS-level properties.
+      </p>
+      <br>
+      <p class="paragraph--big">
+        In order to protect suppliers’ intellectual property, the platform enables white-box, grey-box and black-box models
+        so that it is possible to control access to the underlying IP whilst still enabling all stakeholders to independently
+        verify the system-level properties they are interested in.
+      </p>
+      <br>
+      <p class="paragraph--big">
+        The assets and analysis capabilities are made available as services and the necessary computing infrastructure and
+        software environments are provisioned on demand by the platform.
+      </p>
+    </div>
+    <div class="info-section">
+      <h2 class="subtitle is-bold subtitle--bg-blue subtitle--colored has-text-centered">
+        The HUBCAP platform
+      </h2>
+      <p class="paragraph--big">
+        The HUBCAP platform aims to fulfil such a vision by making MBD more accessible to a range of businesses,
+        particularly SMEs, as well as research and innovation organisations involved in the development of CPSs.
+      </p>
+      <p class="paragraph paragraph--big">
+        To support this vision, the HUBCAP platform provides the following functionalities:
+      </p>
+      <ul>
+        <li>
+          <strong>Social Platform:</strong> This enables organisations to create profiles and promote their offers, this being MDB
+          related assets and services. It supports social activity such as direct user messaging, matchmaking, and
+          expert search.
+        </li>
+        <br>
+        <li>
+          <strong>MBD catalogue:</strong> This is an artefact repository where the different organisations can publish their MBD
+          assets for reuse from other users (based on access control). It supports search and discovery of new assets.
+        </li>
+        <br>
+        <li>
+          <strong>Marketplace:</strong> This enables asset developers and service providers to monetise their work through different
+          business models such as subscription or pay-per-use (not currently functional).
+        </li>
+        <br>
+        <li>
+          <strong>Sandbox Functionality:</strong> These are environments in which users can test and experiment with a solution in a
+          secure and trusted environment without the need for local installation. The user can select a combination of
+          models and tools, and preconfigured infrastructure, pack them in an isolated sandbox and start working with
+          them via a web browser. Models and services are presented to the user in the catalogue, where the users will
+          choose the tool, the kind of analysis they want to try, and models associated with it. If needed, the users will
+          be able to get support from tool experts via the platform’s collaboration services. This functionality allows
+          users to bypass the problem of replicability of custom modelling and simulation environments as well as the
+          cost of acquiring tools licences if a suitable subscription or pay-per-use business model is available.
+        </li>
+        <br>
+        <li>
+          <strong>Supporting Functions:</strong>
+          <br>
+          <ul>
+            <li><strong>Identity Management</strong> This subsystem centralises user authentication, defining roles and granting
+              access while using the other applications.
+            </li>
+            <li>
+              <strong>Security middleware</strong> ensures data privacy of models and analysis results produced.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="info-section">
+      <h2 class="subtitle is-bold subtitle--bg-red subtitle--colored has-text-centered">
+        GitWorks
+      </h2>
+        <br>
+        <div class="row row__container">
+          <div class="col-1-of-2">
+            <img
+              src="../../assets/res/images/gitworks.png"
+              class="image-single"
+              alt=NULL
+            />
+          </div>
+          <div class="col-1-of-2">
+            <br>
+              <p class="paragraph--big">
+                GitWorks is an open platform for democratisation Model-Based Design of CPSs. It is currently under development
+                by Perpetual Labs Ltd in collaboration with the INTO-CPS Association, the Open Source Modelica Consortium
+                (OSMC) and the OpenCAESAR project <a href="https://paperpile.com/b/nZs5x2/ydnH">1</a>,
+                <a href="https://paperpile.com/b/nZs5x2/vezr">2</a>.
+              </p>
+                <br>
+                  <br>
+                    <p class="paragraph--big">
+                    GitWorks follows in HUBCAP’s footsteps to fulfil the Vision described above. As such, it shares many objectives
+                    and functionalities with the current version of HUBCAP but also substantially expands on these with more advanced
+                    collaboration and development features as well a more flexible “Infrastructure on Demand” functionality.
+                    </p>
+          </div>
+        </div>
+      <p class="paragraph--big">
+        In particular, GitWorks takes inspiration from popular tools and concepts from the world of DevOps (exemplified by
+        platforms such as GitHub and GitLab) and adapts them to Model-Base Design. We call this approach Digital
+        Engineering, Manufacturing and Operations or DEMOps for short.
+      </p>
+      <br>
+      <p class="paragraph--big">
+        The GitWorks platform provides the following functionalities:
+      </p>
+    </div>
+    <div class="info-section">
+      <h2 class="subtitle is-bold subtitle--colored has-text-centered">
+        GitWorks Commons
+      </h2>
+      <p class="paragraph--big">
+        The GitWorks Commons enables the seamless reuse and monetisation of MBD assets across organisational
+        boundaries. It is primarily a Package Repository where users and organisations can publish their MBD Assets for
+        reuse by other organisations, either open-source or commercially. It fulfils the same role as the MBD Catalogue and
+        the Marketplace in HUBCAP. However, the Commons provides some advanced functionalities that dramatically
+        improve the user experience such as:
+      </p>
+      <br>
+      <ul>
+        <li>
+          <strong class="paragraph--bold">Dynamic Releases</strong>, this refers to the possibility of dynamically specifying which release of a certain Assets
+          the user wants to use when creating a new project.
+        </li>
+        <br>
+        <li>
+          <strong class="paragraph--bold">Semantic discovery and integration.</strong> This function leverages semantic technologies to query the metadata
+          extracted from the packages. This enables advanced search functionalities such as searching for a Modelica
+          Component or an FMU that fits a particular port and behavioural signature.
+        </li>
+        <br>
+        <li>
+          <strong class="paragraph--bold">Multiple publication and deployment possibilities</strong>. Vendors can choose whether to allow users to
+          download sources and/or binaries (white box), or only provide cloud-based access (Grey and Black box).
+          For example, a Modelica model can be published as: (1) source code (i.e. a model library), (2) compiled
+          FMU (Model-Exchange or Co-Simulation), and/or (3) as a REST service that can be used in a federated
+          co-simulation.
+        </li>
+        <br>
+        <li>
+          <strong class="paragraph--bold">Monetization strategies.</strong> GitWorks will support different monetization strategies similar to those proposed
+          for the Digital Manufacturing Commons (DMC) (Beckmann et al. 2016), including (1) payment for each
+          download or execution, (2) payment based on computational usage, and (3) freemium software as a service.
+        </li>
+      </ul>
+      <br>
+      <p class="paragraph--big">
+        To support federated collaboration for enhanced data security and intellectual property protection, we are also
+        actively working on the integration of co-simulation engines, specifically the Maestro2 engine from the INTO-CPS
+        project <a href="https://paperpile.com/b/nZs5x2/tdxm">3</a>,<a href="https://paperpile.com/b/nZs5x2/9O75">4</a>.
+      </p>
+    </div>
+    <div class="info-section">
+      <h2 class="subtitle is-bold subtitle--bg-teal subtitle--colored has-text-centered">
+        GitWorks Projects
+      </h2>
+      <p class="paragraph--big">
+        This environment provides advanced functionalities to support collaborative development of MBD assets not
+        currently supported in the HubCAP platform:
+      </p>
+      <br>
+      <ul>
+        <li>
+          <strong>Distributed Version Control (DVC) and Change Management (CM) functionalities</strong>
+          for the collaborative development of MBD Assets. It introduces the notion of a Git-like history of changes made across
+          inter-related model fragments. The benefits are as follows:
+          <br>
+          <ul>
+            <li>
+              <strong>Enables traceability of information provenance and design decisions.</strong>
+              This refers to the ability to trace from an authority to its design decisions and constraints,
+              and from the latter to their rationales. Without this capability, a system description becomes
+              a disorganised collection of information artefacts.
+            </li>
+            <li>
+              <strong>Enables durability.</strong> This refers to the ability to version control the information
+              that describes or analyses a system in such a way that versions become immutable. Without this, it
+              is impossible to perform audits and repeat analyses.
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <strong>Continuous Integration/ Continuous Delivery functionalities (CI/CD)</strong>
+          This refers to the capability of easily automating tedious and error prone activities that need to be
+          repeated regularly during the development process by creating a predefined sequence of tasks(called pipelines)
+          that are triggered by specific events. In the context of CPS development, the tasks being automated are the
+          types of analysis described above. The benefits are as follows:
+          <ul>
+            <li>
+              <strong>Enables efficiency.</strong>
+              The automation saves development time, reduces error and improves reusability.
+            </li>
+            <li>
+              <strong>Enables repeatability.</strong> This refers to the ability to encapsulate the analysis of the system
+              description, including its dependencies, such that it becomes repeatable. This is important to
+              maintain confidence in the analysis over time and use it to assert desirable properties.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="info-section">
+      <h2 class="subtitle is-bold subtitle--bg-blue subtitle--colored has-text-centered">
+        GitWorks Workbenches
+      </h2>
+      <p class="paragraph--big">
+        This subsystem provides the users with specialised development environments for different types of modelling and
+        analysis paradigms. The environments are provisioned on demand and accessible through the browser. This is
+        achieve through two main mechanisms:
+      </p>
+      <br>
+      <ul>
+        <li>
+          Heavy-weight workspaces via Virtual Desktop Infrastructure over noVNC.
+          <br>
+          <ul>
+            <li>
+              This environment will provide feature parity to the “Sandbox Functionality” in HUBCAP.
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          Light-weight workspaces via VSCode for Web, these are native web applications that provide a much richer
+          and collaborative user experience.
+          <ul>
+            <li>
+              integrated Git version control
+            </li>
+            <li>
+              real-time collaboration
+            </li>
+            <li>
+              first example of workbench available in GitWorks will be a Web-based Modelica editor
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="info-section">
+      <h2 class="subtitle is-bold subtitle--bg-red subtitle--colored has-text-centered">
+        GitWorks Community
+      </h2>
+      <p class="paragraph--big">
+        This environment will provide feature parity to the “Social Platform” in HUBCAP. Essentially, the Community
+        environment enables users and organisations on the platform to connect with one another in a kind of social network
+        for Digital Engineering. Each user is provided with a profile page that contains a public bio with an activity stream
+        and links to associated published artefacts, project workspaces, and organisations.
+      </p>
+    </div>
+    <div class="info-section">
+      <h2 class="subtitle is-bold subtitle--colored has-text-centered">
+        GitWorks supporting functions
+      </h2>
+      <p class="paragraph--big">
+        This includes a set of standard user support features such as secure authentication, role-based access control, Data
+        security and privacy.
+      </p>
+    </div>
+    <div class="info-section">
+      <h2 class="subtitle is-bold subtitle--bg-teal subtitle--colored has-text-centered">
+        Transition plan
+      </h2>
+      <p class="paragraph--big">
+        In concurrence with the conclusion of the HUBCAP project, the current public deployment of the HUBCAP
+        platform hosted by Eng.it is scheduled to be retired at the end of 2022. In early 2022, a team was formed to
+        investigate the possibility of extending the life of the HUBCAP platform beyond the end of the project by seeking
+        collaborations with other open-source projects or private organisations.
+      </p>
+      <br>
+      <p class="paragraph--big">
+        Perpetual Labs was chosen as our partner for the future exploitation of the HUBCAP results because of the strong
+        alignment between the objectives of GitWorks and HUBCAP and the prospects of joining forces.
+      </p>
+      <p class="paragraph--big">
+        Our provisional transition plan for the HUBCAP platform is as follows:
+      </p>
+      <br>
+      <ul>
+        <li>
+          <strong>Phase 1: HUBCAP-GitWorks Integration (Jan - Dec 2023)</strong>
+          <br>
+          <ul>
+            <li>
+              Public deployment of HUBCAP Platform hosted by Perpetual Labs (AWS or GCP). All HUBCAP
+              Platform capabilities still available to users for 1 yea
+            </li>
+            <li>
+              User management is migrated to GitWorks and common log-in
+            </li>
+            <li>
+              Development of Perpetual Labs Commons (the marketplace) and Workbenches (the virtualisation
+              environment)
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <strong> Phase 2: Transition (Jan 2024 onwards)</strong>
+          <ul>
+            <li>
+              GitWorks Commons and Workbenches are operational
+            </li>
+            <li>
+              Integrated virtualization environment to replace the sandbox capability of the HUBCAP platform
+              (preserving current functionality and improving efficiency and user experience)
+            </li>
+            <li>
+              Users and digital assets are migrated to GitWorks
+            </li>
+            <li>
+              Public instance of HUBCAP platform hosted by Perpetual Labs is retired
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <p class="paragraph--big">
+        Nothing should change for current HUBCAP users until the end of 2023. They should be able to login with the same
+        credentials (but might need to explicitly agree to new T&Cs) and use the HUBCAP platform as it is today. The two
+        platforms (GitWorks and HUBCAP) will operate independently during 2023 and users will not be required to use
+        GitWorks in order to access HUBCAP. They will be invited to try the beta version of the GitWorks platform if they
+        wish.
+      </p>
+      <br>
+      <p class="paragraph--big">
+        At the end of 2023, the public instance of the HUBCAP platform hosted by Perpetual Labs will be phased out. Users
+        who choose to do so will be able to migrate their projects to the GitWorks platform, which by then should support all
+        the core functionalities.
+      </p>
+    </div>
+    <div class="info-section">
+      <h2
+        class="subtitle is-bold subtitle--bg-blue subtitle--colored">
+        Authors
+      </h2>
+      <strong>
+        <ul class="list">
+          <li class="list__item"> Gianmaria Bullegas, Perpetual Labs,
+            <a href="mailto: gian@perpetuallabs.io">gian@perpetuallabs.io</a>
+          </li>
+          <li class="list__item"> Mohamad Omar Nachawati, Perpetual Labs,
+            <a href="mailto: omar@perpetuallabs.io">omar@perpetuallabs.io</a>
+          </li>
+          <li class="list__item"> Steve Jenkin, Perpetual Labs,
+            <a href="mailto: joe@perpetuallabs.io">joe@perpetuallabs.io</a>
+          </li>
+          <li class="list__item"> Andrey Vasilyev, Perpetual Labs,
+            <a href="mailto: andrey@perpetuallabs.io">andrey@perpetuallabs.io</a>
+          </li>
+          <li class="list__item"> John Fitzgerald, Newcastle University,
+            <a href="mailto: john.fitzgerald@newcastle.ac.uk">john.fitzgerald@newcastle.ac.uk</a>
+          </li>
+          <li class="list__item"> Peter Gorm Larsen, Aarhus University,
+            <a href="mailto: pgl@ece.au.dk">pgl@ece.au.dk</a>
+          </li>
+        </ul>
+      </strong>
+    </div>
+    <div class="info-section">
+      <h2 class="subtitle is-bold subtitle--bg-red subtitle--colored has-text-centered">
+        Bibliography
+      </h2>
+      <ol type="1">
+        <li>
+            <a href="https://paperpile.com/b/nZs5x2/ydnH">
+              Mohamad Omar Nachawati, Gianmaria Bullegas, Andrey Vasilyev, Joe Gregory, Adrian Pop, Maged Elaasar,
+              Adeel Asghar. Towards an Open Platform for Democratized Model-Based Design and Engineering of Cyber-Physical
+              Systems. in Proceedings of the American Modelica Conference 2022 102–114 (2022).
+            </a>
+        </li>
+        <li>
+          <a href="https://paperpile.com/b/nZs5x2/vezr">
+            Vasilyev, A., Bullegas, G., Nachawati, O., Elaasar, M. & Jenkins, S. Developing an Open Platform for
+            Democratised MBSE.
+          </a>
+        </li>
+        <li>
+          <a href="https://paperpile.com/b/nZs5x2/tdxm">
+            Larsen, P. G. et al. Integrated tool chain for model-based design of Cyber-Physical Systems: The INTO-CPS
+            project. in 2016 2nd International Workshop on Modelling, Analysis, and Control of Complex CPS (CPS Data) 1–6 (2016).
+          </a>
+        </li>
+        <li>
+          <a href="https://paperpile.com/b/nZs5x2/9O75">
+            Thule, C., Lausdahl, K., Gomes, C., Meisl, G. & Larsen, P. G. Maestro: The INTO-CPS co-simulation framework.
+            Simulation Modelling Practice and Theory 92, 45–61 (2019).
+          </a>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>

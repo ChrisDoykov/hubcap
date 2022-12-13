@@ -1561,9 +1561,11 @@ export const stories = [
   subtitle: "",
   image: "../../assets/res/images/bie-t4s.png",
   urlName: "bie-t4s",
-  quote: "Together with the T4S software solution BEAM is now also well positioned to provide its" +
-    " sensor-based BI analytics to a larger market.",
-  quoteAttribution: "– Alexandru Vulpe, CEO of Beam Innovation",
+  quote: "The main benefits BEAM gained from participating in the INNOVATE call was to advance our own technology" +
+         " by offering dynamic evacuation route calculation and complex event processing" +
+         " for detection of incidents and venue evacuation, broadening the company portfolio" +
+         " and also having completed the validation of our technology in real scenarios.",
+  quoteAttribution: "- Romica Manolache, Chief Marketing Officer of Beam Innovation",
   sections: [
     {
       sectionHeading: "Problem and solution",

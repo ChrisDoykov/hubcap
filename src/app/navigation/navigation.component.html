@@ -75,24 +75,35 @@
             </a>
           </div>
         </div>
-
         <a
           class="navbar-item"
           routerLink="digital-innovation-hubs"
           routerLinkActive="active"
-          >Digital Innovation Hubs</a
+        >Digital Innovation Hubs</a
         >
         <a class="navbar-item" routerLink="services" routerLinkActive="active"
           >Services</a
         >
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Platform</a>
+          <div class="navbar-dropdown">
+            <a
+              class="navbar-item"
+              routerLink="sustainability"
+              (click)="blur($event)"
+            >
+              Sustainability
+            </a>
+            <a
+              class="navbar-item"
+              href="https://hubcap-portal.eng.it/welcome/"
+              target="_blank"
+              routerLinkActive="active"
+            >Platform <mat-icon class="navbar-item__icon">launch</mat-icon></a
+            >
+          </div>
+        </div>
 
-        <a
-          class="navbar-item"
-          href="https://hubcap-portal.eng.it/welcome/"
-          target="_blank"
-          routerLinkActive="active"
-          >Platform <mat-icon class="navbar-item__icon">launch</mat-icon></a
-        >
 
         <!-- <a
           class="navbar-item"

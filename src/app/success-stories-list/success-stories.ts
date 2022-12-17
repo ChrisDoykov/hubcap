@@ -1641,7 +1641,7 @@ export const stories = [
    {
   title: "Monitoring environmental conditions in industrial operations",
   subtitle: "",
-  image: "../../assets/res/images/iStock-1149878152.jpg",
+  image: "../../assets/res/images/MENIoR.png",
   urlName: "menior",
   quote: "",
   quoteAttribution: "",
@@ -2016,8 +2016,7 @@ export const stories = [
     {
       sectionHeading: "Additional Information",
       paragraphs: [
-        "During the project the model WOFOST (WOrld FOod STudies) the Wageningen University was used." +
-        "https://www.wur.nl/en/Research-Results/Research-Institutes/Environmental-Research/Facilities-Tools/Software-models-and-databases/WOFOST.html"
+        "During the project the model WOFOST (WOrld FOod STudies) of Wageningen University was used.",
       ],
       //add hyperlink to linker so there isnt a long url
     },
@@ -2034,6 +2033,10 @@ export const stories = [
         name: "Hedwigshof",
         website: "www.hedwigshof.de",
       },
+      {
+        name: "WOFOST Model",
+        website: "https://www.wur.nl/en/Research-Results/Research-Institutes/Environmental-Research/Facilities-Tools/Software-models-and-databases/WOFOST.html",
+      },
     ],
     dih: { name: "HUBCAP United Kingdom", website: "https://www.ncl.ac.uk/" },
     domains: [
@@ -2042,15 +2045,15 @@ export const stories = [
       "Wheat yield forecasting",
     ],
     impact: [
-      "Agricultural models explored",
-      "Logbook needs identified"
+      "Agricultural models explored.",
+      "Logbook needs identified."
     ],
   },
   tryItNowUrl: "",
   videoUrl: ""
 },
    {
-  title: "Safety first development of micro-mobility sharing platform",
+  title: "Safety First Development of Micro-mobility Sharing Platform",
   subtitle: "The project consists in developing a real use case (SAFE2GO)  to take advantage of the synergies" +
     " between two companies: on the one hand, the safety capabilities and optimization of a MBD platform, and on" +
     " the other hand a real product with safety requirements.",
@@ -2148,7 +2151,7 @@ export const stories = [
   videoUrl: "https://www.youtube.com/embed/GKL63cmcVSc"
 },
    {
-    title: "Opticity - Energy management platform based on AutoML and GA",
+    title: "Opticity - Energy Management Platform Based on AutoML and GA",
     subtitle: "Opticity - a comprehensive energy management tool that completely automates finding an " +
       "optimal pattern in energy consumption and production in facilities with RES and energy " +
       "storage capabilities",
@@ -2158,7 +2161,7 @@ export const stories = [
       " Cyber Physical Systems. These newly acquired skills will enable Vodéna to expand its products and business" +
       " models in the energy sector, as well as to expand it to other related areas, and contribute to the" +
       " accelerated digitalization of SMEs in the region and Europe as a whole.",
-    quoteAttribution: "",
+    quoteAttribution: "Vodena",
     sections: [
       {
         sectionHeading: "Problem and solution",
@@ -2179,9 +2182,9 @@ export const stories = [
         paragraphs: [
           "The goal of this experiment was to implement Opticity in the HUPCAP platform. To achieve this goal," +
           " following objectives were achieved:",
-          "•Development and implementation of Opticity, which includes the integration of existing sub-components" +
+          "1. Development and implementation of Opticity, which includes the integration of existing sub-components" +
           " (Blackfox, OSICE) into a single unit and the creation of a user interface. ",
-          "•Development of a solar power plant digital twin using Opticity tools on the HUBCAP platform. " +
+          "2. Development of a solar power plant digital twin using Opticity tools on the HUBCAP platform. " +
           "The digital twin includes all the data relevant to the functioning of the system. As a prerequisite " +
           "for the optimization of the operation plans, Opticity generate machine learning models of the internal" +
           " energy production and loads, based on data acquired during the energy system exploitation. These models" +
@@ -2192,7 +2195,7 @@ export const stories = [
           " energy data chain and evaluation of number of hypothetic operation plans under given conditions. The" +
           " optimal operation plan is obtained on a daily basis through simulation-based optimization performed on" +
           " our portable cloud service OSICE - Optimization as a Service in the Cloud Environment.",
-          "•\tEmploying the digital twin to optimize the production and consumption of electricity by the" +
+          "3. Employing the digital twin to optimize the production and consumption of electricity by the" +
           " end user, through usage of Opticity."
         ],
       },
@@ -2216,14 +2219,14 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "Vodena doo",
-          website: "https://vodena.rs/",
+          name: "Noleko doo",
+          website: "https://noleko.rs/",
         }
       ],
       techProviders: [
         {
-          name: "Noleko doo",
-          website: "https://noleko.rs/",
+          name: "Vodena doo",
+          website: "https://vodena.rs/",
         },
       ],
       dih: { name: "HUBCAP Denmark", website: "https://international.au.dk/" },
@@ -2313,14 +2316,14 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "Evitado Technologies",
-          website: "https://evitado.io",
+          name: "Mototok International",
+          website: "https://www.mototok.com",
         }
       ],
       techProviders: [
         {
-          name: "Mototok International",
-          website: "https://www.mototok.com\n",
+          name: "Evitado Technologies",
+          website: "https://evitado.io",
         },
       ],
       dih: { name: "HUBCAP Austria", website: "https://www.v2c2.at/" },
@@ -2347,7 +2350,7 @@ export const stories = [
     videoUrl: "https://www.youtube.com/embed/TQ1yjhzuNLw"
   },
    {
-    title: "MedaPlus - Digitizing the auscultation process with respiratory AI",
+    title: "MedaPlus - Digitizing the Auscultation Process With Respiratory AI",
     subtitle: "",
     image: "../../assets/res/images/iStock-1149878152.jpg",
     urlName: "meda-plus",
@@ -2391,12 +2394,13 @@ export const stories = [
           "We employed HUBCAP’s AutoFOCUS3 tool to address these issues."
         ],
       },
-      {
-        sectionHeading: "HUBCAP support and platform opportunity",
-        paragraphs: [
-          "",
-        ],
-      },
+      // {
+      //   // can't find anything to put here from deliverable
+      //   sectionHeading: "HUBCAP support and platform opportunity",
+      //   paragraphs: [
+      //     "",
+      //   ],
+      // },
       {
         sectionHeading: "Forward look",
         paragraphs: [
@@ -2419,22 +2423,33 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "",
-          website: "",
+          name: "Slezák IoT Systems",
+          website: "https://slezak-consulting.com/",
         }
       ],
       techProviders: [
         {
-          name: "",
-          website: "",
+          name: "AvailabilityPlus",
+          website: "http://www.availabilityplus.com/",
         },
       ],
       dih: { name: "HUBCAP Germany", website: "https://www.fortiss.org/" },
       domains: [
-        ""
+        // Added domains that I thought are relevant, since deliverable did not have them listed
+        "Healthcare",
+        "Software Development",
+        "Analog to Digital Signal Conversion",
       ],
       impact: [
-        ""
+        // Taken from section 3.2.4 of deliverable
+        "Increase in the frequency of auscultation, progressively increasing to continuous monitoring, " +
+        "leading to an increase in the quality of the auscultation analysis.",
+        "Increase in the number of patients that can be screened, leading to more patients that can be " +
+        "treated early, early intervention is essential to mitigate potential health risks.",
+        "Efficiency gains for physicians who can outsource the auscultation process and analyses the data " +
+        "at a chosen time at a remote place.",
+        "Reduced risk for doctors, hospitals and insurances because auscultation results are automatically " +
+        "documented, and second opinions reduce the chance of mis-interpretation and thus legal cases.",
       ],
     },
     tryItNowUrl: "",
@@ -2445,35 +2460,35 @@ export const stories = [
     subtitle: "Computational Fluid Dynamics (CFD) used to optimize the design and efficiency of innovative" +
       " sensor-based Ultraviolet-C Air disinfection system (I-ON AIR) for HVAC systems by simulating dynamic real " +
       "duct airflow behavior.",
-    image: "../../assets/res/images/iStock-1149878152.jpg",
+    image: "../../assets/res/images/simulair.png",
     urlName: "simulair",
-    quote: "HUBCAP has helped Alteria Automation (adopter) with two key facts: \n" +
-      "We have improved our I-ON AIR range of UVC that disinfects the air by neutralizing virus, bacteria \n" +
-      "and pathogens on HVAC systems. We have improved the efficiency 24% following the simulations \n" +
-      "further gaining in viral inactivation ratio just by replacing the reflector material.\n" +
-      "We have validated the disinfection effectiveness of the system for in-duct dynamic conditions to be \n" +
-      "over what was expected or better, from the certifications provided by the NBC INTA laboratory in \n" +
+    quote: "HUBCAP has helped Alteria Automation (adopter) with two key facts: " +
+      "We have improved our I-ON AIR range of UVC that disinfects the air by neutralizing virus, bacteria " +
+      "and pathogens on HVAC systems. We have improved the efficiency 24% following the simulations " +
+      "further gaining in viral inactivation ratio just by replacing the reflector material." +
+      "We have validated the disinfection effectiveness of the system for in-duct dynamic conditions to be " +
+      "over what was expected or better, from the certifications provided by the NBC INTA laboratory in " +
       "static conditions.",
     quoteAttribution: "Jose R. Vigil, CTO Alteria Automation",
     sections: [
       {
         sectionHeading: "Problem and solution",
         paragraphs: [
-          "In 2020 ALTERIA AUTOMATION designed from scratch the first version of an innovative highly \n" +
-          "effective Ultraviolet-C disinfection system for HVAC (air conditioner and ventilation)\n" +
-          "The system, called I-ON AIR, is based upon a highly efficient long-life UVC emitter lamp and a smart \n" +
-          "disinfection process based on the data provided by different sensors: UVC radiometer, CO2 levels, \n" +
-          "Particulate Matter and others (CPS platform) that is sent to a cloud server providing full traceability \n" +
-          "of the disinfection process. \n" +
-          "I-ON AIR has been already been certified in static conditions from a level 3 NBQ laboratory belonging \n" +
+          "In 2020 ALTERIA AUTOMATION designed from scratch the first version of an innovative highly " +
+          "effective Ultraviolet-C disinfection system for HVAC (air conditioner and ventilation)" +
+          "The system, called I-ON AIR, is based upon a highly efficient long-life UVC emitter lamp and a smart " +
+          "disinfection process based on the data provided by different sensors: UVC radiometer, CO2 levels, " +
+          "Particulate Matter and others (CPS platform) that is sent to a cloud server providing full traceability " +
+          "of the disinfection process. " +
+          "I-ON AIR has been already been certified in static conditions from a level 3 NBQ laboratory belonging " +
           "to INTA (Ministry of Defense, Spain), and SGS issued test and certifications.",
-          "The problem is however that the virus inactivation tests have been performed in static conditions (a \n" +
-          "petri dish exposed to the UVC light for period of time). The real viral inactivation tests in dynamic \n" +
+          "The problem is however that the virus inactivation tests have been performed in static conditions (a " +
+          "petri dish exposed to the UVC light for period of time). The real viral inactivation tests in dynamic " +
           "conditions are unreachable for a private SME due to the cost and access needed to a level" +
           " 4-5 bio-safety facility",
-          "Our Goal is to create a design model of the virus inactivation in dynamic conditions, extrapolating \n" +
-          "static results to a real airflow dynamic environment (taking into account air loss, turbulence, \n" +
-          "reflectivity, air speed, etc) of the HVAC ducts, minimizing power consumption and maximizing \n" +
+          "Our Goal is to create a design model of the virus inactivation in dynamic conditions, extrapolating " +
+          "static results to a real airflow dynamic environment (taking into account air loss, turbulence, " +
+          "reflectivity, air speed, etc) of the HVAC ducts, minimizing power consumption and maximizing " +
           "radiation exposure levels by improving reflector gain at the UVC wavelength.",
         ],
       },
@@ -2650,14 +2665,14 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "D-RisQ",
-          website: "https://www.drisq.com/",
+          name: "ScubaTx",
+          website: "https://www.scubatx.com/",
         }
       ],
       techProviders: [
         {
-          name: "ScubaTx",
-          website: "https://www.scubatx.com/",
+          name: "D-RisQ",
+          website: "https://www.drisq.com/",
         },
       ],
       dih: { name: "HUBCAP Germany", website: "https://www.fortiss.org/" },
@@ -2665,7 +2680,6 @@ export const stories = [
         "Formal Methods",
         "Medical Devices",
         "Safety Critical Software",
-        "Requirements",
       ],
       impact: [
         "A far better understanding of not only software requirements, but as a result, system and " +
@@ -2831,9 +2845,6 @@ export const stories = [
     tryItNowUrl: "",
     videoUrl: ""
   },
-
-
-
 
 ];
 

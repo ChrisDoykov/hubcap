@@ -72,6 +72,7 @@ import { OutputsComponent } from "./outputs/outputs.component";
 import { DatePipe } from "./date.pipe";
 import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
 import { SuccessStoryComponent } from "./success-story/success-story.component";
+import { DigitalTwinComponent} from "./digital-twin/digital-twin.component";
 import { SafePipe } from './safe.pipe';
 import { GitworksComponent} from "./gitworks/gitworks.component";
 
@@ -130,6 +131,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     DatePipe,
     SuccessStoriesListComponent,
     SuccessStoryComponent,
+    GitworksComponent,
+    DigitalTwinComponent,
     SafePipe
   ],
   imports: [

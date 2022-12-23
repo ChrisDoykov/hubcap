@@ -29,6 +29,7 @@ import { OutputsComponent } from "./outputs/outputs.component";
 import { SuccessStoriesListComponent } from "./success-stories-list/success-stories-list.component";
 import { SuccessStoryComponent } from "./success-story/success-story.component";
 import { GitworksComponent} from "./gitworks/gitworks.component";
+import {DigitalTwinComponent} from "./digital-twin/digital-twin.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", component: HomeComponent },
@@ -74,6 +75,7 @@ const routes: Routes = [
   { path: "success-stories", component: SuccessStoriesListComponent },
   { path: "success-stories/:storyUrlName", component: SuccessStoryComponent },
   { path: "sustainability", component: GitworksComponent},
+  { path: "digital-twin", component: DigitalTwinComponent},
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "/404" },
 ];

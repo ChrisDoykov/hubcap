@@ -36,7 +36,7 @@
         <a class="navbar-item" routerLink="success-stories" (click)="blur($event)">Success Stories</a>
 
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Open Calls</a>
+          <a class="navbar-link">Funding Calls</a>
           <div class="navbar-dropdown">
             <a
               class="navbar-item"
@@ -85,15 +85,25 @@
         <a class="navbar-item" routerLink="services" routerLinkActive="active"
           >Services</a
         >
-
-        <a
-          class="navbar-item"
-          href="https://hubcap-portal.eng.it/welcome/"
-          target="_blank"
-          routerLinkActive="active"
-          >Platform <mat-icon class="navbar-item__icon">launch</mat-icon></a
-        >
-
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Platform</a>
+            <div class="navbar-dropdown">
+              <a
+                class="navbar-item"
+                routerLink="sustainability"
+                (click)="blur($event)"
+                >
+                Transition to GitWorks
+              </a>
+              <a
+                class="navbar-item"
+                href="https://hubcap-portal.eng.it/welcome/"
+                target="_blank"
+                routerLinkActive="active"
+                >Platform <mat-icon class="navbar-item__icon">launch</mat-icon></a
+              >
+            </div>
+        </div>
         <!-- <a
           class="navbar-item"
           href=""

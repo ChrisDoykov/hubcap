@@ -21,7 +21,7 @@ export const WINNERS: SME[] = [
   {
     id: 3,
     name: "Verum Software Tools",
-    logo: "https://verum.com/wp-content/uploads/2020/07/logo.png",
+    logo: "../../assets/res/logos/Verum_Logo.png",
 
     website: "https://verum.com/",
   },
@@ -385,8 +385,7 @@ export const WINNERS: SME[] = [
   {
     id: 55,
     name: "Hubert Modelisation",
-    logo: "https://media-exp1.licdn.com/dms/image/C4E0BAQEnF4vW2Wvczw/company-logo_200_200/0/1592426038181?e=1650499200&v=beta&t=BFDpuKOQ_FPvarij2fqo0btBgvNYFix9S2ymHssuRb8",
-
+    logo: "../../assets/res/logos/Hubert_Modelisation.jfif",
     website: "https://www.linkedin.com/company/hubert-modelisation/",
   },
   {

@@ -184,7 +184,7 @@ export const stories = [
         "A physics-agnostic pipeline with potential application in any type of physical design Monte-Carlo simulator."
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9gc-4n16-0163-262631670163",
     videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
   },
    {
@@ -281,7 +281,7 @@ export const stories = [
         "Forecast and optimisation of solar energy production."
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9np-4r16-0176-710271670176",
     videoUrl: "https://www.youtube.com/embed/_aXTQALshWM"
   },
    {
@@ -384,7 +384,7 @@ export const stories = [
         "A lower-body specific motion capture AI-based system.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9gv-4r16-0164-916711670164",
     videoUrl: "https://www.youtube.com/embed/4PWi7sQ1pWs"
   },
    {
@@ -475,7 +475,7 @@ export const stories = [
         "Discovering the potential for improving eco-friendliness of a process.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9ho-4016-0165-277121670165",
     videoUrl: "https://www.youtube.com/embed/02mTbFTl9SQ"
   },
    {
@@ -577,7 +577,7 @@ export const stories = [
         "Scale-up by testing different configurations in other application domains (e.g. sealing of food delivery trucks)."
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b3t9-4g16-9822-194521669822",
     videoUrl: "https://www.youtube.com/embed/HqVvfhZUm5w"
   },
    {
@@ -673,7 +673,7 @@ export const stories = [
         "Elimination of the carbon footprint created, usually during physical testing.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9jy-4c16-0169-769881670169",
     videoUrl: "https://www.youtube.com/embed/wpCED05SWtw"
   },
    {
@@ -918,7 +918,7 @@ export const stories = [
         " and decreased costs for manufacturing and operation.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9l5-4n16-0171-868791670171",
     videoUrl: ""
   },
    {
@@ -995,7 +995,7 @@ export const stories = [
         "Decreased time of rapid prototyping hardware.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b3ui-4g16-9824-799481669824",
     videoUrl: "https://www.youtube.com/embed/L3VeIj6xq0A"
   },
    {
@@ -1109,7 +1109,7 @@ export const stories = [
         " mitigation.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9ly-4r16-0173-190631670173",
     videoUrl: "https://www.youtube.com/embed/suh6DYvWnR0"
   },
    {
@@ -1434,7 +1434,7 @@ export const stories = [
      "KPIs improvements (e.g. lead time, COQ)"
    ],
  },
- tryItNowUrl: "",
+ tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqgz-4q16-1192-094421671192",
  videoUrl: "https://www.youtube.com/embed/u4eVtTE6vjc"
 },
    {
@@ -1553,7 +1553,7 @@ export const stories = [
      "on the business strategy, the unique mission profiles and the customer needs."
    ],
  },
- tryItNowUrl: "",
+ tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqmn-4y16-1202-062861671202",
  videoUrl: "https://www.youtube.com/embed/ICB6OieUZWc"
 },
    {
@@ -1635,7 +1635,7 @@ export const stories = [
       "functionalities required by the operators of such complex venues from a security standpoint."
     ],
   },
-  tryItNowUrl: "",
+  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqjj-4316-1196-847791671196",
   videoUrl: "https://www.youtube.com/embed/a0bjaY-NTnc"
 },
    {
@@ -1750,7 +1750,7 @@ export const stories = [
 
     ],
   },
-  tryItNowUrl: "",
+  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqkd-4v16-1198-756671671198",
   videoUrl: "https://www.youtube.com/embed/jwOaEyEK1ho"
 },
    {
@@ -1874,7 +1874,7 @@ export const stories = [
         "the 'AirTrace' application",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqmn-4y16-1202-062861671202",
     videoUrl: ""
   },
    {
@@ -1965,7 +1965,7 @@ export const stories = [
         "Finding the opportunities for the improvement of the eco-friendliness of the wood making process.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bql8-4216-1199-551301671199",
     videoUrl: ""
   },
    {

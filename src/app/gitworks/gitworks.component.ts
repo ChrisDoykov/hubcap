@@ -11,9 +11,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 export class GitworksComponent implements OnInit {
   constructor(private router: Router) {}
   ngOnInit(): void {
-    document.title = "Sustainability | HUBCAP";
+    document.title = "Future of HUBCAP | HUBCAP";
     if (document.getElementById("hero-title") !== null) {
-      document.getElementById("hero-title").textContent = "Sustainability";
+      document.getElementById("hero-title").textContent = "Future of HUBCAP";
     }
   }
 }

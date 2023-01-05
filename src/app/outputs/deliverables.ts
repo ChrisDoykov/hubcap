@@ -1,4 +1,10 @@
 export const deliverables =  [
+    // {
+    //   number: "",
+    //   name: "",
+    //   month: "",
+    //   link: "",
+    // },
     {
       number: "D7.1",
       name: "HUBCAP Visual Identity and Templates",
@@ -54,5 +60,65 @@ export const deliverables =  [
       name: "HUBCAP Collaboration Platform v1",
       month: "M12 (Dec 2020)",
       link: "../../assets/res/files/D5.2_HUBCAP_Collaboration_Platform_V1.pdf",
+    },
+    {
+      number: "D6.3",
+      name: "The Second version of HUBCAP contents",
+      month: "M16 (Apr 2021)",
+      link: "../../assets/res/files/D6.3.pdf",
+    },
+    {
+      number: "D5.3",
+      name: "Collaboration Platform v2",
+      month: "M18 (Jun 2021)",
+      link: "../../assets/res/files/D.5.pdf",
+    },
+    {
+      number: "D7.2",
+      name: "Communication, Dissemination and Exploitation 1",
+      month: "M18 (Jun 2021)",
+      link: "../../assets/res/files/D7.2.pdf",
+    },
+    {
+      number: "D5.5",
+      name: "HUBCAP Collaboration Platform v4",
+      month: "M18 (Jun 2022)",
+      link: "../../assets/res/files/D5.5.pdf",
+    },
+    {
+      number: "D6.4",
+      name: "Third Version of HUBCAP Contents",
+      month: "M21 (Sep 2021)",
+      link: "../../assets/res/files/D6.4.pdf",
+    },
+    {
+      number: "D2.3",
+      name: "DIH Collaboration",
+      month: "M24 (Dec 2021)",
+      link: "../../assets/res/files/D2.3.pdf",
+    },
+    {
+      number: "D5.4",
+      name: "HUBCAP Collaboration Platform v3",
+      month: "M24 (Dec 2021)",
+      link: "../../assets/res/files/D5.4.pdf",
+    },
+    {
+      number: "D6.5",
+      name: "Fourth Version of HUBCAP Contents",
+      month: "M27 (Mar 2022)",
+      link: "../../assets/res/files/D6.5.pdf",
+    },
+    {
+      number: "D6.6",
+      name: "Fifth Version of HUBCAP Contents",
+      month: "M33 (Sep 2022)",
+      link: "../../assets/res/files/D6.6.pdf",
+    },
+    {
+      number: "D7.3",
+      name: "Communication, Dissemination and Exploitation 2",
+      month: "M36 (Dec 2022)",
+      link: "../../assets/res/files/D7.3.pdf",
     },
   ];

@@ -75,6 +75,7 @@ import { SuccessStoryComponent } from "./success-story/success-story.component";
 import { DigitalTwinComponent} from "./digital-twin/digital-twin.component";
 import { SafePipe } from './safe.pipe';
 import { GitworksComponent} from "./gitworks/gitworks.component";
+import KeenSlider from "keen-slider";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -133,34 +134,34 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     SuccessStoryComponent,
     GitworksComponent,
     DigitalTwinComponent,
-    SafePipe
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatButtonModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    SwiperModule,
-    HttpClientModule,
-    FormsModule,
-    MatExpansionModule,
-    MatTableModule,
-    MatDialogModule,
-    MatProgressSpinnerModule,
-    CalendarModule.forRoot({
-      provide: DateAdapter,
-      useFactory: adapterFactory,
-    }),
-    ServiceWorkerModule.register("ngsw-worker.js", {
-      enabled: environment.production,
-      // Register the ServiceWorker as soon as the app is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: "registerImmediately",
-    }),
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatButtonModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        SwiperModule,
+        HttpClientModule,
+        FormsModule,
+        MatExpansionModule,
+        MatTableModule,
+        MatDialogModule,
+        MatProgressSpinnerModule,
+        CalendarModule.forRoot({
+            provide: DateAdapter,
+            useFactory: adapterFactory,
+        }),
+        ServiceWorkerModule.register("ngsw-worker.js", {
+            enabled: environment.production,
+            // Register the ServiceWorker as soon as the app is stable
+            // or after 30 seconds (whichever comes first).
+            registrationStrategy: "registerImmediately",
+        }),
+        SwiperModule,
+    ],
   entryComponents: [TechnologyDialogComponent],
   providers: [
     {

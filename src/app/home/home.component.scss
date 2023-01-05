@@ -525,3 +525,30 @@
   margin-bottom: 0;
   border-radius: 1rem;
 }
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #000000;
+  cursor: pointer;
+
+  &--left {
+    left: 5px;
+  }
+
+  &--right {
+    left: auto;
+    right: 5px;
+  }
+
+  &--disabled {
+    fill: #808080;
+  }
+}

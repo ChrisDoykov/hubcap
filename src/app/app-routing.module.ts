@@ -74,7 +74,7 @@ const routes: Routes = [
   { path: "HUBCAP_OC3INNOVATE/:file", component: ResourcesComponent },
   { path: "success-stories", component: SuccessStoriesListComponent },
   { path: "success-stories/:storyUrlName", component: SuccessStoryComponent },
-  { path: "sustainability", component: GitworksComponent},
+  { path: "gitworks", component: GitworksComponent},
   { path: "digital-twin", component: DigitalTwinComponent},
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "/404" },

@@ -1,4 +1,320 @@
 export const papers = [
+  // {
+  //   title:
+  //     "",
+  //   authors: "",
+  //   yearOfPublication: "",
+  //   link: "",
+  //   publisher: "",
+  //   showMore: false, // Always leave as false
+  //   summary:
+  //     "",
+  // },
+  {
+    title:
+      "A Cloud-Based Collaboration Platform for Model-Based Design of Cyber-Physical Systems",
+    authors: "Peter Gorm Larsen, Hugo Daniel Macedo, John Fitzgerald, Holger Pfeifer, Martin Benedikt, " +
+      "Stefano Tonetta, Angelo Marguglio, Sergio Gusmeroli, George Suciu Jr",
+    yearOfPublication: "2020",
+    link: "https://arxiv.org/abs/2005.02449",
+    publisher: "arxiv.org",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Modelling the HUBCAP sandbox architecture in VDM - A study in security",
+    authors: "Tomas Kulik\n" +
+      ", Hugo Daniel Macedo\n" +
+      ", Prasad Talasila\n" +
+      ", and Peter Gorm Larsen\n",
+    yearOfPublication: "2020",
+    link: "https://arxiv.org/pdf/2101.07261.pdf#page=20",
+    publisher: "arxiv.org",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Bridging the stakeholder communities that produce cyber-physical systems",
+    authors: "Marc Duranton, Koen De Bosschere,\n" +
+      "Bart Coppens, Christian Gamrat,\n" +
+      "Thomas Hoberg, Harm Munk,\n" +
+      "Catherine Roderick,\n" +
+      "Tullio Vardanega,\n" +
+      "Olivier Zendra",
+    yearOfPublication: "2020",
+    link: "https://www.hipeac.net/vision/2021/",
+    publisher: "hipeac.net",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Towards an Open \n" +
+      "Platform for \n" +
+      "Democratized \n" +
+      "Model-Based \n" +
+      "Design and \n" +
+      "Engineering of \n" +
+      "Cyber-Physical \n" +
+      "Systems ",
+    authors: "Mohamad Omar \n" +
+      "Nachawati, \n" +
+      "Gianmaria \n" +
+      "Bullegas, Andrey \n" +
+      "Vasilyev, Joe \n" +
+      "Gregory, Adrian \n" +
+      "Pop, Maged \n" +
+      "Elaasar, Adeel \n" +
+      "Asghar",
+    yearOfPublication: "2022",
+    link: "https://2022.american.conference.modelica.org/documents/NA_Modelica_2022_Proceedings.pdf",
+    publisher: "Modelica \n" +
+      "Association / \n" +
+      "Linköping \n" +
+      "University \n" +
+      "Electronic Press",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Building the Value \n" +
+      "Proposition of a \n" +
+      "Digital Innovation \n" +
+      "Hub Network to \n" +
+      "Support Ecosystem \n" +
+      "Sustainability",
+    authors: "Claudio \n" +
+      "Sassanelli,\n" +
+      "Sergio Terzi",
+    yearOfPublication: "2022",
+    link: "https://www.mdpi.com/2071-1050/14/18/11159",
+    publisher: "MDPI",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      " Low-Cost & Rea-time Motion \n" +
+      "Capture System",
+    authors: "Anargyros \n" +
+      "Chatzitofis, \n" +
+      "Georgios \n" +
+      "Albanis, Nikolaos \n" +
+      "Zioulis, Spyridon \n" +
+      "Thermos",
+    yearOfPublication: "2022",
+    link: "https://openaccess.thecvf.com/content/CVPR2022/papers/Chatzitofis_A_Low-Cost__Real-Time_Motion_Capture_System_CVPR_2022_paper.pdf",
+    publisher: "Computer Vision Foundation",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Which skills? A \n" +
+      "critical perspective \n" +
+      "on the skills \n" +
+      "facilitating the \n" +
+      "transfer of third-cycle students to \n" +
+      "knowledge-intensive SMEs",
+    authors: "Fredrik Asplund, \n" +
+      "Mats \n" +
+      "Magnusson, \n" +
+      "Martin Törngren, \n" +
+      "Tobias Vahlne, \n" +
+      "Martin Karlsson",
+    yearOfPublication: "2022",
+    link: "http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-316521",
+    publisher: "IEEE",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "PROSIM in the\n" +
+      "Cloud: Remote\n" +
+      "Automation Training\n" +
+      "Platform with\n" +
+      "Virtualized\n" +
+      "Infrastructure",
+    authors: "Sabin Rosioru, \n" +
+      "Viorel Mihai, \n" +
+      "Mihai Neghina,\n" +
+      "Daniel \n" +
+      "Craciunean,\n" +
+      "Grigore \n" +
+      "Stamatescu \n",
+    yearOfPublication: "2022",
+    link: "https://www.mdpi.com/2076-3417/12/6/3038",
+    publisher: "MDPI",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Extending the \n" +
+      "Formal Security \n" +
+      "Analysis of the \n" +
+      "HUBCAP sandbox",
+    authors: "Tomas Kulik, \n" +
+      "Prasad Talasila, \n" +
+      "Pietro Greco, \n" +
+      "Giuseppe \n" +
+      "Veneziano, \n" +
+      "Angelo \n" +
+      "Marguglio, \n" +
+      "Lorenzo Franco \n" +
+      "Sutton, Peter \n" +
+      "Gorm Larsen, \n" +
+      "Hugo Daniel \n" +
+      "Macedo",
+    yearOfPublication: "2021",
+    link: "https://arxiv.org/abs/2110.09371",
+    publisher: "arXiv",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Deploying the \n" +
+      "Smart Energy Tool \n" +
+      "for Investment \n" +
+      "Simulation inside \n" +
+      "the HUBCAP \n" +
+      "Sandbox",
+    authors: "Andreea Badicu, \n" +
+      "George \n" +
+      "Iordache, \n" +
+      "George Suciu, \n" +
+      "Hugo Daniel \n" +
+      "Macedo, Claudio \n" +
+      "Sassanelli, \n" +
+      "Sergio Terzi, \n" +
+      "Peter Gorm \n" +
+      "Larsen",
+    yearOfPublication: "2021",
+    link: "https://re.public.polimi.it/bitstream/11311/1206015/1/Badicu%20et%20al.%2C%202021.pdf",
+    publisher: "",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Problematizing the \n" +
+      "Service Portfolio of \n" +
+      "Digital Innovation \n" +
+      "Hubs",
+    authors: "Fredrik Asplund, \n" +
+      "Hugo Daniel \n" +
+      "Macedo, Claudio \n" +
+      "Sassanelli",
+    yearOfPublication: "2021",
+    link: "https://www.researchgate.net/profile/Fredrik-Asplund/publication/356215502_Problematizing_the_Service_Portfolio_of_Digital_Innovation_Hubslinks/619d14a107be5f31b7aeb8d2/Problematizing-the-Service-Portfolio-of-Digital-Innovation-Hubs.pdf",
+    publisher: "Springer",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Manufacturing \n" +
+      "Process \n" +
+      "Simulation in a \n" +
+      "Hybrid Cloud \n" +
+      "Setup",
+    authors: "Gerhard Benedikt \n" +
+      "Weiß, Dario \n" +
+      "Pietraroia, \n" +
+      "Claudio \n" +
+      "Sassanelli, Hugo \n" +
+      "Daniel Macedo",
+    yearOfPublication: "2021",
+    link: " https://www.semanticscholar.org/paper/Manufact\n" +
+      "uring-Process-Simulation-in-a-Hybrid-Cloud-Wei%C3%9F-Pietraroia/f647c29cb0b70719daaf1404cee82395\n" +
+      "9aa54eba",
+    publisher: "SCITEPRESS",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Uncertainty\n" +
+      "Quantification and\n" +
+      "Runtime\n" +
+      "Monitoring Using\n" +
+      "Environment-Aware\n" +
+      "Digital Twins",
+    authors: "Jim Woodcock, \n" +
+      "Claudio Gomes, \n" +
+      "Hugo Daniel \n" +
+      "Macedo, Peter \n" +
+      "Gorm Larsen",
+    yearOfPublication: "2021",
+    link: "https://pure.au.dk/portal/files/224043556/isola20",
+    publisher: "Springer",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "Towards a Digital\n" +
+      "Twin – Modelling\n" +
+      "an Agricultural \n" +
+      "Vehicle",
+    authors: "Frederik F.\n" +
+      "Foldager, \n" +
+      "Casper Thule,\n" +
+      "Ole Balling, \n" +
+      "Peter Gorm \n" +
+      "Larsen",
+    yearOfPublication: "2021",
+    link: "https://pure.au.dk/portal/files/224041223/Submissi",
+    publisher: "Springer",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
+  {
+    title:
+      "HUBCAP: A Novel " +
+      "Collaborative " +
+      "Approach to Model-Based Design of " +
+      "Cyber-Physical" +
+      "Systems",
+    authors: "Peter Gorm \n" +
+      "Larsen, Hugo \n" +
+      "Daniel Macedo, \n" +
+      "John Fitzgerald, \n" +
+      "Holger Pfeifer, \n" +
+      "Martin Benedikt, \n" +
+      "Stefano Tonetta, \n" +
+      "Angelo Marguglio, \n" +
+      "Giuseppe \n" +
+      "Veneziano, \n" +
+      "Lorenzo Sutton, \n" +
+      "Sergio Gusmeroli, \n" +
+      "George Suciu",
+    yearOfPublication: "2021",
+    link: "https://drive.google.com/file/d/11J-AmoXth-z2TEY1sIpvvSFEUK-bbbq5/view",
+    publisher: "Springer",
+    showMore: false, // Always leave as false
+    summary:
+      "",
+  },
   {
     title:
       "A Cloud-Based Collaboration Platform for Model-Based Design of Cyber-Physical Systems",

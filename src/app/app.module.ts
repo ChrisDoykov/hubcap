@@ -134,6 +134,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     SuccessStoryComponent,
     GitworksComponent,
     DigitalTwinComponent,
+    SafePipe
   ],
     imports: [
         BrowserModule,

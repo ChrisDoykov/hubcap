@@ -1,0 +1,194 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+
+.container {
+  width: 100%;
+  height: 50%;
+  font-size: 1.92rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.divider {
+  height: 6rem;
+  margin-bottom: 0rem;
+
+  @include respond(phone) {
+    margin-bottom: 2.5rem;
+  }
+
+  &#first {
+    background-color: $color-teal;
+  }
+
+  &#second {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    background-color: $color-green;
+  }
+
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+
+  @include respond(phone) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .paragraphs {
+    text-align: center;
+    align-self: stretch;
+    margin-bottom: 8rem;
+    color: $color-black;
+    padding: 0;
+
+    .col-1-of-3 {
+      // background-color: rgba($color: $color-grey-light-2, $alpha: 0.9);
+      // box-shadow: 0 0.5rem 1.5rem rgba($color: $color-black, $alpha: 0.5);
+      border-radius: 3px;
+      min-height: 36rem;
+      padding: 3rem 0rem;
+      transition: all 0.3s;
+
+      .paragraph--big {
+        @include respond(phone) {
+          font-size: 2.1rem;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        // box-shadow: 0 1.5rem 2.5rem rgba($color: $color-black, $alpha: 0.5);
+        // transform: translateY(-1rem);
+      }
+    }
+    .col-2-of-3 {
+      position: center;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 0.7rem solid $color-primary;
+      transition: all 0.3s;
+
+      &:hover,
+      &:focus {
+        // box-shadow: 0 1.5rem 2.5rem rgba($color: $color-black, $alpha: 0.5);
+        transform: translateY(-1rem) scale(1.1);
+      }
+    }
+  }
+}
+
+.faq {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 10rem 3rem;
+  padding-top: 4.2rem;
+
+  @include respond(phone) {
+    padding: 2.5rem 2rem;
+  }
+
+  &__icon {
+    font-size: 10rem;
+    color: $color-blue;
+    display: inline-block;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+      transform: translateY(-1rem);
+    }
+  }
+
+  &__hr {
+    max-width: 20rem;
+    height: 1rem;
+    display: block;
+    margin: 3rem auto;
+
+    &:nth-of-type(odd) {
+      background-color: $color-teal;
+    }
+    &:nth-of-type(even) {
+      background-color: $color-blue;
+    }
+  }
+
+  &__content {
+    &__question {
+      background-color: lighten($color: $color-blue, $amount: 10);
+      color: $color-white;
+      border-radius: 3px;
+      box-shadow: 0 0.5rem 1rem rgba($color: $color-black, $alpha: 0.3);
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      a {
+        &,
+        &:link,
+        &:visited {
+          color: $color-black;
+          font-weight: 700;
+          border-bottom: 3px solid $color-primary;
+          transition: all 0.3s;
+        }
+
+        &:hover,
+        &:focus {
+          color: $color-white;
+        }
+      }
+
+      &__header,
+      .mat-expanded:focus,
+      .mat-expanded:hover {
+        background-color: $color-primary;
+      }
+
+      &__title {
+        font-size: 2.6rem;
+        display: inline-block;
+        margin: 1rem;
+      }
+
+      &__body {
+        color: $color-black;
+        background-color: lighten($color: $color-blue, $amount: 10);
+        padding: 2rem 1rem;
+
+        .paragraph {
+          &:not(:last-child) {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style: disc;
+    &__item {
+      font-size: 1.9rem;
+
+      @include respond(phone) {
+        font-size: 2.1rem;
+      }
+    }
+  }
+}

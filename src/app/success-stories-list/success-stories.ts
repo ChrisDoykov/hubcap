@@ -1880,7 +1880,7 @@ export const stories = [
    {
     title: "GreenWood - Digital Twin For Environmentally-friendly Wood Processing",
     subtitle: "",
-    image: "../../assets/res/images/iStock-1149878152.jpg",
+    image: "../../assets/res/images/GreenWood.png",
     urlName: "greenwood",
     quote: "HUBCAP enabled a risk-free innovation in a very important (energy reduction and environmental protection)" +
       " and business promising area.",
@@ -1969,20 +1969,20 @@ export const stories = [
     videoUrl: ""
   },
    {
-  title: "Wheat Yield Prediction ",
+  title: "Wheat Yield Prediction (WHY-PRED)",
   subtitle: "We investigated how to support the farmer with a decision support system to fertilize the right amount" +
     " at the right moment while minimizing environmental impact.",
-  image: "../../assets/res/images/iStock-1149878152.jpg",
+  image: "../../assets/res/images/WHY-PRED2.png",
   urlName: "why-pred",
-  quote: "The HUBCAP project enabled us to do the groundwork for developing a decision support " +
-    "system for small and medium sized farming companies. Thanks to the funding we have been " +
-    "enabled to look into this really interesting topic.",
-  quoteAttribution: "David Lumpp, Agricultural engineer at DatenBerg",
+  quote: "The HUBCAP project enabled us to do the groundwork for developing a decision support" +
+    " system for small and medium sized farming companies. Thanks to the funding we have been" +
+    " enabled to look into this really interesting topic.",
+  quoteAttribution: "David Lumpp, Agricultural Engineer DatenBerg",
   sections: [
     {
       sectionHeading: "Problem and solution",
       paragraphs: [
-        "\"Should I fertilise today or not?\" - the answer to this question on smaller farms is often based on the" +
+        "\"Should I fertilise today or not?\" The answer to this question on smaller farms is often based on the" +
         " subjective experience of the farmer. On the one hand, a wrong decision has monetary effects - unnecessarily" +
         " used fertiliser generates costs and requires working time. However, fertiliser that is not used also has" +
         " negative effects, such as a lower crop yield. With falling food prices, too low a profitability can pose" +
@@ -1997,18 +1997,18 @@ export const stories = [
     {
       sectionHeading: "What we did",
       paragraphs: [
-        "During the project, available process models for wheat cultivation were evaluated and adapted to a " +
-        "specific application for the Hedwigshof farm. The models were calibrated to Karlsruhe and enriched " +
-        "with historical data. The aim was to show the farmer the impact on crop yield of the decision \"Should" +
-        " I fertilise today?” This enables a cost-optimal fertilisation that simultaneously minimises the" +
+        "During the project, available process models for wheat cultivation were evaluated and adapted to a" +
+        " specific application for the Hedwigshof farm. The models were calibrated to Karlsruhe and enriched" +
+        " with historical data. The aim was to show the farmer the impact on crop yield of the decision" +
+        " \"Should I fertilise today?\" This enables a cost-optimal fertilisation that simultaneously minimises the" +
         " environmental impact."
       ],
     },
     {
       sectionHeading: "HUBCAP support and platform opportunity",
       paragraphs: [
-        "With the help of the funding, the SME could be accompanied on its way to becoming a digital farm. " +
-        "In addition, available academic models were examined for possible applications in the day-to-day operations" +
+        "With the help of the funding, the SME could be accompanied on its way to becoming a digital farm." +
+        " In addition, available academic models were examined for possible applications in the day-to-day operations" +
         " of a small farm and their limits were evaluated. With the experience gained, a decision support" +
         " system can be developed that makes Agriculture 4.0 also accessible for SMEs.",
         ],
@@ -2024,18 +2024,14 @@ export const stories = [
   info: {
     endUsers: [
       {
-        name: "DatenBerg GmbH",
-        website: "https://www.datenberg.eu",
+        name: "Hedwigshof",
+        website: "https://www.hedwigshof.de",
       }
     ],
     techProviders: [
       {
-        name: "Hedwigshof",
-        website: "www.hedwigshof.de",
-      },
-      {
-        name: "WOFOST Model",
-        website: "https://www.wur.nl/en/Research-Results/Research-Institutes/Environmental-Research/Facilities-Tools/Software-models-and-databases/WOFOST.html",
+        name: "DatenBerg GmbH",
+        website: "https://www.datenberg.eu",
       },
     ],
     dih: { name: "HUBCAP United Kingdom", website: "https://www.ncl.ac.uk/" },
@@ -2049,14 +2045,14 @@ export const stories = [
       "Logbook needs identified."
     ],
   },
-  tryItNowUrl: "",
+  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=SdlpkH4B4ofP5ecug555",
   videoUrl: ""
 },
    {
-  title: "Safety First Development of Micro-mobility Sharing Platform",
-  subtitle: "The project consists in developing a real use case (SAFE2GO)  to take advantage of the synergies" +
-    " between two companies: on the one hand, the safety capabilities and optimization of a MBD platform, and on" +
-    " the other hand a real product with safety requirements.",
+  title: "Safety First Development of Micro-mobility Sharing Platform (SAFE2GO)",
+  subtitle: "The project consists of developing a real use case (SAFE2GO) to take advantage of the synergies" +
+    " between two companies: on the one hand, the safety capabilities and optimization of an MBD platform, and on" +
+    " the other hand, a real product with safety requirements.",
   image: "../../assets/res/images/safe2go.png",
   urlName: "sage2go",
   quote: "Hubcap has provided the framework to, from the most general to the most concrete contribution: know part" +
@@ -2070,39 +2066,39 @@ export const stories = [
     {
       sectionHeading: "Problem and solution",
       paragraphs: [
-        "The goal of the proposed SAFE2GO experiment is to incorporate novel MBD tools into the hardware and" +
-        " software development practices of an e-scooter sharing platform BOOST to ensure safety requirements" +
-        " to be strictly met at any time and in any conditions of e-scooter use. At the same time, Developair " +
-        "(a HUBCAP SME asset) offers MDB tools for verification of requirements and automatic test generation, " +
-        "enabling the optimization of the software development life cycle.",
+        "The goal of the proposed SAFE2GO experiment was to incorporate novel MBD tools into the hardware and" +
+        " software development practices of an e-scooter sharing platform (BOOST) to ensure safety requirements" +
+        " are always strictly met under all conditions of e-scooter use. At the same time, Developair" +
+        " (a HUBCAP SME asset) offers MDB tools for verification of requirements and automatic test generation," +
+        " enabling optimization of the software development life cycle.",
       ],
     },
     {
       sectionHeading: "What we did",
       paragraphs: [
-        "First, the architecture and safety requirements of the BOOST use case (of KMB company) have been specified" +
-        " using Model-Based Design tools provided by Developair. New features have been implemented: that make the" +
-        " tool more powerful and versatile. Specifically support for state machines and enum data types has been" +
+        "First, the architecture and safety requirements of the BOOST use case (of KMB) were specified" +
+        " using Model-Based Design tools provided by Developair. New features were implemented that make the" +
+        " tool more powerful and versatile. Specifically, support for state machines and enum data types were" +
         " introduced.",
         "Then, those requirements were verified to detect errors and inconsistencies between them. Moving from" +
-        " informal requirements to fully formalized ones allows to automatically detect problems early during the" +
+        " informal requirements to fully formalized ones allows automatic detection of problems early on during the" +
         " requirement specification phase, avoiding those errors propagating to the implementation.",
-        "After that, black-box functional tests were generated automatically from those requirements to test that " +
-        "the code was doing what the requirements specified. The generated tests are compatible with a popular " +
-        "testing framework (i.e., Unity). It allows for using standard tools, e.g., for measuring the code coverage " +
-        "of those tests. Given that now the tests can be generated from the specification and are ready even before " +
-        "the implementation, testing starts before in the process (following TDD).",
-        "Finally, a connector to the platform where the tests are going to be executed, in this case the Unity " +
-        "framework, was developed."
+        "After that, black-box functional tests were generated automatically from those requirements to test" +
+        " the code was doing what the requirements specified. The generated tests are compatible with a popular" +
+        " testing framework (i.e. Unity), which allows use of standard tools (e.g. to measure the code coverage" +
+        " of those tests). Given that now the tests can be generated from the specification and are ready even before" +
+        " the implementation, testing can start earlier in the development process (following TDD).",
+        "Finally, a connector was developed to the platform where the tests were to be executed," +
+        " in this case the Unity framework."
       ],
     },
     {
       sectionHeading: "HUBCAP support and platform opportunity",
       paragraphs: [
-        "The participation in the Hubcap platform has several benefits: to meet other participants of the ecosystem," +
-        " and specially to work together in a project with one of them in a new use case.",
-        "On the one hand, it has helped Developair to improve the tool in several ways. In the case of KMB, it" +
-        " has improved the quality of their product and the productivity of their process."
+        "Participation in the HUBCAP platform had several benefits: to meet other participants of the ecosystem," +
+        " and especially to work together on a project with one of them on a new use case.",
+        "Participation also helped Developair to improve their tool in several ways, and for KMB, it" +
+        " improved the quality of their product and the productivity of their development process."
         ],
     },
     // {
@@ -2134,75 +2130,76 @@ export const stories = [
       "Testing",
     ],
     impact: [
-      "Working together with KMB has helped Developair to be aware of the importance of some functionality" +
+      "Working with KMB helped Developair become aware of the importance of some functionality" +
       " and prioritize its implementation. The utility for the user of abstractions (models) used by engineers" +
       " as state machines is now very clear.",
-      "Improve Developair platform supporting new features and evaluating its generality with its application" +
-      " in new domain.",
+      "Improved Developair platform supporting new features and evaluating its generality with its application in a new domain.",
       "For KMB, it has been seen that although the companies developing CPSs are small, it is convenient in" +
-      " many senses to have a testing methodology and  framework, and MBD tools to help and automatize" +
-      " all the process.",
-      "It has been checked that if the introduced tools in their workflows are intuitive and easy to use," +
-      " the introduced small overhead worths, taking into account that the time and cost saved are bigger," +
+      " many ways to have a testing methodology and framework, and MBD tools help to automatate the process.",
+      "It has been checked that if the introduced tools in their workflows are intuitive and easy to use" +
+      " then the introduced small overhead is worthwhile, because the time and cost savings are bigger" +
       " and the code quality is better.",
     ],
   },
-  tryItNowUrl: "",
+  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-6xdm-4f16-0726-877071660726",
   videoUrl: "https://www.youtube.com/embed/GKL63cmcVSc"
 },
    {
     title: "Opticity - Energy Management Platform Based on AutoML and GA",
-    subtitle: "Opticity - a comprehensive energy management tool that completely automates finding an " +
-      "optimal pattern in energy consumption and production in facilities with RES and energy " +
-      "storage capabilities",
+    subtitle: "Opticity - a comprehensive energy management tool that completely automates finding an" +
+      " optimal pattern in energy consumption and production in facilities with RES and energy" +
+      " storage capabilities",
     image: "../../assets/res/images/opticity.png",
     urlName: "opticity",
     quote: "Participation in this experiment boosted Vodéna’s R&D capacities related to Model Based Design of" +
       " Cyber Physical Systems. These newly acquired skills will enable Vodéna to expand its products and business" +
       " models in the energy sector, as well as to expand it to other related areas, and contribute to the" +
       " accelerated digitalization of SMEs in the region and Europe as a whole.",
-    quoteAttribution: "Vodena",
+    quoteAttribution: "Boban Stojanović, Founder and CTO Vodéna",
     sections: [
       {
         sectionHeading: "Problem and solution",
         paragraphs: [
           "The introduction of renewable energy sources (RES) in the grid has posed several challenges to energy" +
           " producers and consumers. Effects such as intermittency, \"duck curve\", the growing complexity of" +
-          " stimuli regulations and the calculation of energy consumption, require that these challenges be" +
+          " stimuli regulations, and the calculation of energy consumption, require that these challenges be" +
           " approached in an intelligent way.",
-          "Vodéna integrated into HUBCAP platform a new asset tool, Opticity, a comprehensive energy management" +
-          " tool that completely automate finding an optimal pattern in energy consumption and production in" +
-          " case of facilities with RES and energy storage capabilities. Employing this tool Noleko developed " +
-          "digital twins of solar installations, and streamlined and optimized electric energy production-consumption" +
+          "Vodéna integrated into the HUBCAP platform a new tool asset, Opticity, a comprehensive energy management" +
+          " tool that completely automates finding an optimal pattern in energy consumption and production in" +
+          " facilities with RES and energy storage capabilities. Employing this tool, Noleko developed" +
+          " digital twins of solar installations, and streamlined and optimized the electric energy production-consumption" +
           " process.",
         ],
       },
       {
         sectionHeading: "What we did",
         paragraphs: [
-          "The goal of this experiment was to implement Opticity in the HUPCAP platform. To achieve this goal," +
-          " following objectives were achieved:",
+          "The goal of this experiment was to implement Opticity on the HUPCAP platform. To achieve this goal," +
+          " the following objectives were achieved:",
+
           "1. Development and implementation of Opticity, which includes the integration of existing sub-components" +
-          " (Blackfox, OSICE) into a single unit and the creation of a user interface. ",
-          "2. Development of a solar power plant digital twin using Opticity tools on the HUBCAP platform. " +
-          "The digital twin includes all the data relevant to the functioning of the system. As a prerequisite " +
-          "for the optimization of the operation plans, Opticity generate machine learning models of the internal" +
+          " (Blackfox, OSICE) into a single unit and the creation of a user interface.",
+
+          "2. Development of a solar power plant digital twin using Opticity tools on the HUBCAP platform." +
+          " The digital twin includes all the data relevant to the functioning of the system. As a prerequisite" +
+          " for the optimization of the operation plans, Opticity generates machine learning models of the internal" +
           " energy production and loads, based on data acquired during the energy system exploitation. These models" +
           " can be further improved by using publicly available data on weather, working and non-working days," +
-          " specifics related to RES incentives, etc. To create and maintain these models, Opticity employ Blackfox," +
-          " Vodéna’s Cloud service for automated generation of optimized machine learning models, based on Deep " +
-          "Neural Networks, Random Forest and XGBoost. Generated predictive models are used for simulation of the" +
-          " energy data chain and evaluation of number of hypothetic operation plans under given conditions. The" +
-          " optimal operation plan is obtained on a daily basis through simulation-based optimization performed on" +
+          " specifics related to RES incentives, etc. To create and maintain these models, Opticity employs Blackfox," +
+          " Vodéna’s cloud service for automated generation of optimized machine learning models, based on deep" +
+          " neural networks, random forest, and XGBoost. Generated predictive models are used for simulation of the" +
+          " energy data chain and evaluation of a number of hypothetical operation plans under given conditions." +
+          " The optimal operation plan is obtained on a daily basis through simulation-based optimization performed on" +
           " our portable cloud service OSICE - Optimization as a Service in the Cloud Environment.",
+
           "3. Employing the digital twin to optimize the production and consumption of electricity by the" +
-          " end user, through usage of Opticity."
+          " end user, using Opticity."
         ],
       },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
-          "Vodéna strives to exchange knowledge and experience within HUBCAP ecosystem, and to reach a wide circle" +
+          "Vodéna strives to exchange knowledge and experience within the HUBCAP ecosystem, and to reach a wide circle" +
           " of users who gravitate around the HUBCAP ecosystem through the expansion of the HUBCAP offer with its" +
           " asset. This asset is related to the use of renewable energy sources, and our desire is to be adopted by" +
           " as many European SMEs as possible to solve their problems, which will at the same time significantly" +
@@ -2219,13 +2216,13 @@ export const stories = [
     info: {
       endUsers: [
         {
-          name: "Noleko doo",
+          name: "Noleko",
           website: "https://noleko.rs/",
         }
       ],
       techProviders: [
         {
-          name: "Vodena doo",
+          name: "Vodena",
           website: "https://vodena.rs/",
         },
       ],
@@ -2237,73 +2234,74 @@ export const stories = [
         "Optimization",
       ],
       impact: [
-        "The key impact of this experiment is to lower the barrier for European SMEs to use CPS in energy" +
-        " optimization. Using digital twin of solar power plant, Noleko has demonstrated that using optimal" +
+        "The key impact of this experiment is to lower the barrier for European SMEs to use CPSs in energy optimization." +
+        " Using a digital twin of a solar power plant, Noleko demonstrated that using optimal" +
         " patterns in electricity generation and consumption can improve profitability up to 15%.",
-        "Opticity provide end users with a powerful optimization utility that does not require any knowledge" +
-        " in the areas of predictive analytics, machine learning or optimization procedures, and do not require" +
+        "Opticity provides end users with a powerful optimization utility that does not require any knowledge" +
+        " in the areas of predictive analytics, machine learning, or optimization procedures, and does not require" +
         " investment in computational infrastructure.",
-        "Participation in this experiment enable Noleko to improve its business by embracing the principles of " +
-        "Industry 4.0, and thus become more competitive in the regional and European markets.",
+        "Participation in this experiment enabled Noleko to improve its business by embracing the principles of" +
+        " Industry 4.0, and thus become more competitive in the regional and European markets.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-779p-4j16-1324-070471661324",
     videoUrl: ""
   },
    {
-    title: "Aircraft Collision Detection and Steering Angle Tracking",
+    title: "Aircraft Collision Detection and Steering Angle Tracking (ACDSAT)",
     subtitle: "",
     image: "../../assets/res/images/acdsat.png",
     urlName: "acdsat",
-    quote: "The HUBCAP project and subsequent funding gave us the opportunity to validate our simulation tool " +
-      "that allows the evaluation of various LiDAR sensors in different situations. It opened the door for " +
-      "further cooperation with our consortium partner to explore our technology in their tugs. Ultimately " +
-      "we believe that this project will open the door to future economic development for both companies.",
-    quoteAttribution: "Evitado",
+    quote: "The HUBCAP project and subsequent funding gave us the opportunity to validate our simulation tool" +
+      " that allows the evaluation of various LiDAR sensors in different situations. It opened the door for" +
+      " further cooperation with our consortium partner to explore our technology in their tugs. Ultimately" +
+      " we believe that this project will open the door to future economic development for both companies.",
+    quoteAttribution: "Andrew Moakes, Co-Founder and CFO Evitado Technologies",
     sections: [
       {
         sectionHeading: "Problem and solution",
         paragraphs: [
-          "Accidents occurring during the ground handling of aircraft cause over $10 billion in damage per year. " +
-          "Collisions with tooling, vehicles, and other aircraft contribute to massive repair costs, downtime, and " +
-          "flight scheduling delays. The handling of aircraft is performed with a towing vehicle (tug) that " +
-          "maneuvers the aircraft into hangars and at airport gate terminals. ",
-          "The goal of this experiment between Evitado Technologies GmbH and Mototok International GmbH " +
-          "was to apply technologies from the self-driving car industry and recent advancements in LiDAR " +
-          "perception to the tug machine handling of aircraft. The experiment investigated solutions to prevent " +
-          "damages caused by collisions and oversteering of the aircraft. "
+          "Accidents occurring during ground handling of aircraft cause over $10 billion of damage every year." +
+          " Collisions with tooling, vehicles, and other aircraft contribute to massive repair costs, downtime, and" +
+          " flight scheduling delays. The handling of aircraft is performed with a towing vehicle (tug) that" +
+          " manoeuvres the aircraft into hangars and at airport gate terminals.",
+
+          "The goal of this experiment between Evitado Technologies and Mototok International" +
+          " was to apply technologies from the self-driving car industry and recent advances in LiDAR" +
+          " perception to the tug machine handling of aircraft. The experiment investigated solutions to prevent" +
+          " damage caused by collisions and oversteering of the aircraft."
         ],
       },
       {
         sectionHeading: "What we did",
         paragraphs: [
           "The experiment started with a simulation of various LiDAR types covering different scenarios" +
-          "experienced when towing aircraft to determine the best sensor for the solution. The amount of " +
-          "coverage of a chosen aircraft and its surroundings was analyzed. This exploration of coverage was " +
-          "important to determine what the collision detection aspect of the Evitado system is able to see " +
-          "when a LiDAR is integrated into the Mototok tug. This analysis was conducted using Gazebo and a " +
-          "version of the simulator was uploaded to the HUBCAP sandbox. ",
+          " experienced when towing aircraft, to determine the best sensor for the solution. The amount of" +
+          " coverage of a chosen aircraft and its surroundings was analyzed. The exploration of coverage was" +
+          " important in order to determine the collision detection of the Evitado system" +
+          " when a LiDAR is integrated into the Mototok tug. The analysis was conducted using Gazebo, and a" +
+          " version of the simulator was uploaded to the HUBCAP sandbox.",
 
-          "A LiDAR was chosen to integrate and test with a Mototok tug. The LiDAR was integrated into " +
-          "Evitado’s proprietary tracking algorithm. The Evitado system was closer integrated with the tug’s " +
-          "CAN-Bus system in order to communicate system status, driving speed and detected steering angle " +
-          "of the tug relative to the aircraft. Testing was conducted by moving the Mototok tug with a test " +
-          "trailer in order to calculate the error between calculated and true steering angle as well as tracking " +
-          "delay.",
+          "A LiDAR was chosen to integrate and test with a Mototok tug. The LiDAR was integrated into" +
+          " Evitado’s proprietary tracking algorithm. The Evitado system was closely integrated with the tug’s" +
+          " CAN bus system in order to communicate system status, driving speed, and detected steering angle" +
+          " of the tug relative to the aircraft. Testing was conducted by moving the Mototok tug with a test" +
+          " trailer in order to calculate the error between calculated and true steering angle as well as tracking" +
+          " delay.",
 
-          "The experiment resulted in over 100 GB of collected real world movement data. The steering angle " +
-          "tracking testing detected mean error of steering angle tracking of less than 2° with a delay of less " +
-          "than 0.5 seconds in more than 75% of the movements conducted, with a max mean error less than " +
-          "3.5° and 0.605 seconds of delay.",
+          "The experiment resulted in over 100 GB of collected real world movement data." +
+          " The testing detected mean error of steering angle tracking of less than 2° with a delay of less" +
+          " than 0.5 seconds in more than 75% of the movements conducted, with a max mean error of less than" +
+          " 3.5° and 0.605 seconds of delay.",
         ],
       },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
-          "Hubcap funding allowed Evitado and Mototok to work together to explore a new technology for " +
-          "Mototok’s towing vehicles. It allowed the two companies to determine the best LiDAR sensor for use " +
-          "in their tugs and allowed an exploration of steering angle tracking error when the Evitado system is " +
-          "integrated with the Mototok tugs.",
+          "HUBCAP funding enabled Evitado and Mototok to work together to explore a new technology for" +
+          " Mototok’s towing vehicles. The two companies were able to determine the best LiDAR sensor for use" +
+          " in the tugs and to explore the steering angle tracking error when the Evitado system was" +
+          " integrated with the Mototok tugs.",
         ],
       },
       // {
@@ -2334,207 +2332,237 @@ export const stories = [
         "Collision avoidance",
       ],
       impact: [
-        "Validated Evitado simulation tool with partner to evaluate LiDAR sensors in various " +
-        "environments. Further developed and tested simulation tool for HUBCAP sandbox.",
-        "Worked with a new partner to integrate our technology with their product. Ultimately this " +
-        "new technology will help innovate the way aircraft are safely towed on the ground.",
-        "Validated a proprietary state of the art software for identifying and tracking aircraft and " +
-        "other objects using LiDAR technology.",
-        "HUBCAP budget was spent primarily (90%) on personnel hours to analyse, develop and test " +
-        "this integrated system. Of the remaining 10% approximately half was spent on travel and " +
-        "accommodation for the system integration and testing, and the remaining was spent on " +
-        "hardware acquisition costs.",
+        "Validated Evitado simulation tool with partner to evaluate LiDAR sensors in various" +
+        " environments. Further developed and tested simulation tool for HUBCAP sandbox.",
+        "Worked with a new partner to integrate our technology with their product. Ultimately, this" +
+        " new technology will help innovate the way aircraft are towed safely on the ground.",
+        "Validated a proprietary state of the art software for identifying and tracking aircraft and" +
+        " other objects using LiDAR technology.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=uzHpiIAB3U8OXW1I-zvD",
     videoUrl: "https://www.youtube.com/embed/TQ1yjhzuNLw"
   },
    {
-    title: "MedaPlus - Digitizing the Auscultation Process With Respiratory AI",
-    subtitle: "",
-    image: "../../assets/res/images/iStock-1149878152.jpg",
+    title: "Digitizing the Auscultation Process With Respiratory AI (MedaPlus)",
+    subtitle: "Design and development of a low-cost electronic stethoscope, enabling contactless auscultation," +
+              " digital transfer and storage of sound samples as well as AI driven analysis of the sound samples.",
+    image: "../../assets/res/images/MedaPlus3.png",
     urlName: "meda-plus",
-    quote: "",
-    quoteAttribution: "",
+    quote: "HUBCAP created the opportunity for our two SMEs to build an end-to-end telehealth solution" +
+           " that addresses the needs of hospitals, polyclinics, doctors and non-physician staff.",
+    quoteAttribution: "MedaPlus Team",
     sections: [
       {
         sectionHeading: "Problem and solution",
         paragraphs: [
-          "Respiratory conditions are a leading cause of death worldwide and generate a significant burden for \n" +
-          "public health systems. An estimated 15%-25% of the population globally suffers from at least one \n" +
-          "form of respiratory issue. Early diagnosis and routine monitoring of patients with respiratory \n" +
-          "conditions are important for timely interventions. ",
+          "Respiratory conditions are a leading cause of death worldwide and generate a significant burden for" +
+          " public health systems. An estimated 15% - 25% of the global population suffers from at least one" +
+          " form of respiratory issue. Early diagnosis and routine monitoring of patients with respiratory" +
+          " conditions are important for timely intervention.",
 
-          "However, diagnosing respiratory conditions requires well trained and experienced medical staff. \n" +
-          "Given time, availability and economic constrains, professional staff is not available at all times and in \n" +
-          "all geographies. To support Doctors, Nurses and remote patients, MedaPlus does provide artificial \n" +
-          "intelligence (AI)-assisted software to analyze auscultation results. MedaPlus allows health care \n" +
-          "professionals to analyze, share and compare auscultation results for a second opinion or for \n" +
-          "treatment follow-up. Additionally, MedaPlus analyzes auscultation data for anomalies comparing \n" +
-          "against one of the largest databases of reference pattern, individually and manually classified.",
+          "However, diagnosing respiratory conditions requires well-trained and experienced medical staff." +
+          " Given time, availability, and economic constraints, professional staff is not available at all times and in" +
+          " all geographies. To support doctors, nurses and remote patients, MedaPlus provides artificial" +
+          " intelligence (AI)-assisted software to analyze auscultation results. MedaPlus allows health care" +
+          " professionals to analyze, share, and compare auscultation results for a second opinion or for" +
+          " treatment follow-up. Additionally, MedaPlus analyzes auscultation data for anomalies comparing" +
+          " against one of the largest databases of reference patterns, individually and manually classified.",
 
-          "However, one of the largest obstacles for a widespread adoption in practice, is that today \n" +
-          "stethoscopes are mostly analogue. A specialist listens to the sounds while the patient is present at \n" +
-          "arms-length distance. The primary challenge is getting the lung sounds into the MedaPlus system for \n" +
-          "analysis. Doctors and nurses currently are limited to experimental and home-grown settings to \n" +
-          "digitize lung sounds and then upload them manually into the MedaPlus system.",
+          "One of the main obstacles for widespread adoption is that most stethoscopes in use today are analogue." +
+          " A specialist listens to the sounds while the patient is present within arms-length." +
+          " The primary challenge is getting the lung sounds into the MedaPlus system for analysis." +
+          " Doctors and nurses currently are limited to experimental and home-grown settings" +
+          " to digitize lung sounds and then upload them manually into the MedaPlus system.",
         ],
       },
       {
         sectionHeading: "What we did",
         paragraphs: [
-          "We have built a stethoscope digitizer that turns any analogue stethoscope into a digital device which \n" +
-          "transmits the sound signals automatically and in real time to the MedaPlus system. The resulting \n" +
-          "prototype digitizes the sound samples taken by a legacy analogue stethoscope and send them to the \n" +
-          "MedaPlus system for analysis.",
+          "We built a prototype of the ear-contactless digital stethoscope." +
+          " Our device enables real-time capture of auscultation sounds with headphones instead of an earpiece," +
+          " which transmits the sound signals automatically and in real-time to the MedaPlus system." +
+          " The resulting prototype digitizes the sound samples taken by a legacy analogue stethoscope and sends them" +
+          " to the MedaPlus system for automated AI-driven analysis.",
 
-          "The stethoscope digitizer is a safety-critical embedded system. Sending patient data via \n" +
-          "communication lines like WLan and GSM requires particular measures to ensure availability, high \n" +
-          "signal quality, low latency, low energy consumption, data integrity and on top low costs. Modelbased system engineering is one method to ensure these requirements early in the design process. \n" +
-          "We employed HUBCAP’s AutoFOCUS3 tool to address these issues."
+          "The digital stethoscope is a safety-critical embedded system." +
+          " Sending patient data via communication lines like Wi-Fi and GSM over the Internet to a cloud-based system" +
+          " requires particular measures to ensure availability," +
+          " high signal quality, low latency, low energy consumption, data integrity, and low cost on top." +
+          " Model-based system engineering is one way of ensuring these requirements are met early in the design process." +
+          " We employed the AutoFOCUS3 tool to address these issues, which is available on the HUBCAP platform.",
+
+          "The experiment was split into two iterations, with each iteration performing the following sub-tasks:",
+          " (a) Building an IoT device that connects to a legacy stethoscope and records sounds; the IoT device cleans and amplifies the data.",
+          " (b) The IoT device sends the recorded data on a secure line over long-haul channels to the MedaPlus analytics platform via WiFi and/or GSM.",
+          " c) The MedaPlus app provides a security layer and secure APIs to provide secure endpoints to the IoT device.",
+          " d) MedaPlus provides data analytics based on explainable AI" +
+          " (sound files displayed via user interface, signal analysis, display of anomalous signals via user interface).",
+          " e) Multiple IoT architectures were modelled and compared to identify the optimal hardware architecture" +
+          " before running lengthy and resource intensive hardware development processes." +
+          " Data transport as well as storage is GDPR compliant.",
         ],
       },
-      // {
+      {
       //   // can't find anything to put here from deliverable
-      //   sectionHeading: "HUBCAP support and platform opportunity",
-      //   paragraphs: [
-      //     "",
-      //   ],
-      // },
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "Device development is highly resource intensive and cost sensitive." +
+          " Having the wrong architecture, components, and specifications can slow development," +
+          " increase development costs, and thus increase time to market significantly." +
+          " Model-based engineering is one way to evaluate architectures and key KPIs upfront before investing in hardware development.",
+
+          "The focus of this HUBCAP experiment was on optimizing the individual parameters for both hardware and software," +
+          " as well as modelling additional IoT architectures with the AutoFOCUS3 tool" +
+          " with particular focus on cost and latency (which directly relates to sound quality).",
+
+          "Both SMEs were inexperienced in using model-based-development tools and have improved their capabilities in this domain." +
+          " The HUBCAP platform offered a place to learn about model-based design (MBD) technology for cyber-physical systems (CPSs)" +
+          " and to acquire hands-on experience with modelling software and existing models in the HUBCAP Sandbox Middleware." +
+          " Additionally, we expect a speed-up in the certification process by using the modelling results and derived parameters.",
+        ],
+      },
+      /*
       {
         sectionHeading: "Forward look",
         paragraphs: [
-          "The experiment is fully compliant with the objectives of the first iteration, which are: (a) building an " +
-          "IoT device that connects to a legacy stethoscope and records sounds; the IoT device cleans and " +
-          "amplifies the data; (b) the IoT device sends the recorded data on a secured line over long-haul " +
-          "channels to the MedaPlus analytics platform via WiFi and GSM; c) the MedaPlus app provides a " +
-          "security layer and secured APIs to provide endpoints to the IoT device; d) MedaPlus provides data " +
-          "analytics based on explainable AI (sound files displayed via user interface, signal analysis, display of " +
-          "anomalous signals via user interface), e) multiple IoT architectures have been modelled and " +
-          "compared to identify the optimal hardware architecture. Both SME’s were relatively inexperienced " +
-          "in using model-based-development tools and have improved their capabilities in this domain. ",
-
-          "In the second iteration, the focus will be on optimizing the individual parameters for both the " +
-          "hardware and the software as well as modelling additional IoT architectures with the AutoFOCUS3" +
-          "tool with a particular focus on latency, costs and sound quality.",
+          "",
         ],
       },
+      */
     ],
     info: {
       endUsers: [
         {
-          name: "Slezák IoT Systems",
-          website: "https://slezak-consulting.com/",
+          name: "AvailabilityPlus",
+          website: "http://www.availabilityplus.com/",
         }
       ],
       techProviders: [
         {
-          name: "AvailabilityPlus",
-          website: "http://www.availabilityplus.com/",
+          name: "Slezák IoT Systems",
+          website: "https://slezak-consulting.com/",
         },
       ],
       dih: { name: "HUBCAP Germany", website: "https://www.fortiss.org/" },
       domains: [
-        // Added domains that I thought are relevant, since deliverable did not have them listed
-        "Healthcare",
-        "Software Development",
-        "Analog to Digital Signal Conversion",
+        "Digital stethoscope",
+        "Ear-contactless auscultation",
+        "Artificial intelligence (AI)",
+        "Raspberry Pi",
+        "Digital health",
+        "Telehealth",
       ],
       impact: [
-        // Taken from section 3.2.4 of deliverable
-        "Increase in the frequency of auscultation, progressively increasing to continuous monitoring, " +
-        "leading to an increase in the quality of the auscultation analysis.",
-        "Increase in the number of patients that can be screened, leading to more patients that can be " +
-        "treated early, early intervention is essential to mitigate potential health risks.",
-        "Efficiency gains for physicians who can outsource the auscultation process and analyses the data " +
-        "at a chosen time at a remote place.",
-        "Reduced risk for doctors, hospitals and insurances because auscultation results are automatically " +
-        "documented, and second opinions reduce the chance of mis-interpretation and thus legal cases.",
+        "The outcome of the project will enable AvailabilityPlus to offer its services globally" +
+        " and to address use cases not sufficiently addressed today, such as remote patient auscultation (telehealth).",
+
+        "Co-development with AvailabilityPlus will enable Slezák IoT Systems to switch" +
+        " from a customized, project-based business model (which is difficult to scale) to a scalable business model," +
+        " by focusing on designing and manufacturing the digital device.",
+
+        "Doctors, nurses, health care providers, and patients will benefit in several ways," +
+        " including increase in the frequency of auscultation, progressively increasing to continuous monitoring," +
+        " leading to an increase in the quality of the auscultation analysis.",
+
+        "Also, increase in the number of patients that can be screened, leading to more patients that can be treated early;" +
+        " early intervention is essential to mitigate potential health risks.",
+
+        "Also, efficiency gains for physicians who can outsource the auscultation process to non-medical staff" +
+        " and analyze the data at a chosen time at a remote place.",
+
+        "Also, reduced risk for doctors, hospitals, and insurance companies," +
+        " because auscultation results are automatically documented" +
+        " and second opinions reduce the chance of misinterpretation (and thus of legal cases).",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-779j-4z16-1324-256511661324",
     videoUrl: ""
   },
    {
     title: "SIMULAIR-COV19",
     subtitle: "Computational Fluid Dynamics (CFD) used to optimize the design and efficiency of innovative" +
-      " sensor-based Ultraviolet-C Air disinfection system (I-ON AIR) for HVAC systems by simulating dynamic real " +
-      "duct airflow behavior.",
+      " sensor-based Ultraviolet-C Air disinfection system (I-ON AIR) for HVAC systems by simulating dynamic real" +
+      " duct airflow behavior.",
     image: "../../assets/res/images/simulair.png",
     urlName: "simulair",
-    quote: "HUBCAP has helped Alteria Automation (adopter) with two key facts: " +
-      "We have improved our I-ON AIR range of UVC that disinfects the air by neutralizing virus, bacteria " +
-      "and pathogens on HVAC systems. We have improved the efficiency 24% following the simulations " +
-      "further gaining in viral inactivation ratio just by replacing the reflector material." +
-      "We have validated the disinfection effectiveness of the system for in-duct dynamic conditions to be " +
-      "over what was expected or better, from the certifications provided by the NBC INTA laboratory in " +
-      "static conditions.",
+    quote: "HUBCAP has helped Alteria Automation (adopter) with two key facts:" +
+      " We have improved our I-ON AIR range of UVC that disinfects the air by neutralizing virus, bacteria" +
+      " and pathogens on HVAC systems. We have improved the efficiency 24% following the simulations" +
+      " further gaining in viral inactivation ratio just by replacing the reflector material." +
+      " We have validated the disinfection effectiveness of the system for in-duct dynamic conditions to be" +
+      " over what was expected or better, from the certifications provided by the NBC INTA laboratory in" +
+      " static conditions.",
     quoteAttribution: "Jose R. Vigil, CTO Alteria Automation",
     sections: [
       {
         sectionHeading: "Problem and solution",
         paragraphs: [
-          "In 2020 ALTERIA AUTOMATION designed from scratch the first version of an innovative highly " +
-          "effective Ultraviolet-C disinfection system for HVAC (air conditioner and ventilation)" +
-          "The system, called I-ON AIR, is based upon a highly efficient long-life UVC emitter lamp and a smart " +
-          "disinfection process based on the data provided by different sensors: UVC radiometer, CO2 levels, " +
-          "Particulate Matter and others (CPS platform) that is sent to a cloud server providing full traceability " +
-          "of the disinfection process. " +
-          "I-ON AIR has been already been certified in static conditions from a level 3 NBQ laboratory belonging " +
-          "to INTA (Ministry of Defense, Spain), and SGS issued test and certifications.",
-          "The problem is however that the virus inactivation tests have been performed in static conditions (a " +
-          "petri dish exposed to the UVC light for period of time). The real viral inactivation tests in dynamic " +
-          "conditions are unreachable for a private SME due to the cost and access needed to a level" +
-          " 4-5 bio-safety facility",
-          "Our Goal is to create a design model of the virus inactivation in dynamic conditions, extrapolating " +
-          "static results to a real airflow dynamic environment (taking into account air loss, turbulence, " +
-          "reflectivity, air speed, etc) of the HVAC ducts, minimizing power consumption and maximizing " +
-          "radiation exposure levels by improving reflector gain at the UVC wavelength.",
+          "In 2020, ALTERIA AUTOMATION designed from scratch the first version of an innovative and highly" +
+          " effective Ultraviolet-C disinfection system for HVAC (air conditioner and ventilation)." +
+          " The system (I-ON AIR) is based on a highly efficient long-life UVC emitter lamp and a smart" +
+          " disinfection process based on the data provided by different sensors: UVC radiometer, CO2 levels," +
+          " Particulate Matter, and others (CPS platform) that is sent to a cloud server providing full traceability" +
+          " of the disinfection process." +
+          " I-ON AIR has already been certified in static conditions from a level 3 NBQ laboratory belonging" +
+          " to INTA (Ministry of Defense, Spain), and SGS issued test and certifications.",
+
+          "The problem is that the virus inactivation tests have been performed in static conditions" +
+          " (a Petri dish exposed to the UVC light for period of time). The real viral inactivation tests in dynamic" +
+          " conditions are unreachable for a private SME due to the cost and access needed to a level 4 - 5 bio-safety facility.",
+
+          "Our goal was to create a design model of the virus inactivation in dynamic conditions, extrapolating" +
+          " static results to a real airflow dynamic environment (taking into account air loss, turbulence," +
+          " reflectivity, air speed, etc) of the HVAC ducts, minimizing power consumption," +
+          " and maximizing radiation exposure levels by improving reflector gain at the UVC wavelength.",
         ],
       },
       {
         sectionHeading: "What we did",
         paragraphs: [
-          "1. Simulated the air loss load / air turbulence created by the installation of UVC ION-AIR equipment " +
-          "on in-duct installations, using CFD (Computational Fluid Dynamics) MBD tools.",
+          "1. Simulated the air loss load / air turbulence created by the installation of UVC ION-AIR equipment" +
+          " on in-duct installations using CFD (computational fluid dynamics) MBD tools.",
+
           "KPI: Air loss load & air turbulence design verified and tested valid.",
 
-          "2. Measured irradiation pattern on real HVAC duct system and simulate (MBD) the irradiation with " +
-          "different internal reflectivity scenarios (fiber foil clad, metal, clean and dirty ducts) on a duct length " +
-          "of 3m (1.5m before and after the disinfection equipment in-duct location).",
-          "KPI: 24 % gain to the in-duct irradiation levels by replacing reflector material.",
+          "2. Measured irradiation pattern on real HVAC duct system and simulated (MBD) the irradiation with" +
+          " different internal reflectivity scenarios (fiber foil clad, metal, clean and dirty ducts) on a duct length" +
+          " of 3m (1.5m before and after the disinfection equipment in-duct location).",
+
+          "KPI: 24% gain to the in-duct irradiation levels by replacing reflector material.",
 
           "3. Evaluated the viral inactivation rate in real dynamic conditions with MBD simulation." +
-          "From the static viral inactivation data provided by INTA, MBD tools will be used to extrapolate to a " +
-          "dynamic environment such as the real airflow and the aerosols behavior on a HVAC duct under UVC " +
-          "treatment for disinfection.",
-          "KPI: Dynamic condition CFD model checked that irradiation levels predicted were equal or better " +
-          "than in static conditions",
+          " From the static viral inactivation data provided by INTA, MBD tools were used to extrapolate to a" +
+          " dynamic environment such as the real airflow and the aerosols behavior on a HVAC duct under UVC" +
+          " treatment for disinfection.",
 
-          "4. Evaluated and simulated the influence of different in-duct air speeds in the HVAC system and its " +
-          "relationship with viral inactivation rate, using MBD tools." +
-          "Average HVAC systems are rated at 3 m/seg air speed but it can be as high as 10m/seg on many " +
-          "environments. The inactivation rate is highly dependent on exposure time of viral load to UVC " +
-          "irradiation.",
-          "KPI: Simulations done include viral inactivation rates evaluated in dynamic conditions and cross-section" +
+          "KPI: Dynamic condition CFD model checked that irradiation levels predicted were equal or better" +
+          " than in static conditions.",
+
+          "4. Evaluated and simulated the influence of different in-duct air speeds in the HVAC system and its" +
+          " relationship with viral inactivation rate using MBD tools." +
+          " Average HVAC systems are rated at 3 m/sec air speed but can be as high as 10m/sec in many environments." +
+          " The inactivation rate is highly dependent on exposure time of viral load to UVC irradiation.",
+
+          "KPI: Simulations done included viral inactivation rates evaluated in dynamic conditions and cross-section" +
           " imaging of viral inactivation ratios."
         ],
       },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
-          "HUBCAP funding allowed to perform the experiments and simulations that lead to the verification of " +
-          "the effectiveness of the ION HVAC Ultraviolet-C disinfection system in dynamic simulated conditions " +
-          "and the validation of the current design (loss load, turbulence) while improving the efficiency just by " +
-          "replacing the reflector material.",
+          "HUBCAP funding allowed us to perform the experiments and simulations that led to verification of" +
+          " the effectiveness of the ION HVAC Ultraviolet-C disinfection system in dynamic simulated conditions" +
+          " and validation of the current design (loss load, turbulence) whilst improving the efficiency just by" +
+          " replacing the reflector material.",
         ],
       },
       {
         sectionHeading: "Additional Information",
         paragraphs: [
-          "Professional CFD software was used on the simulations provided herein by consultant (Ingeenious, " +
-          "Alberto Acin) The specification was drafted by Alteria Automation. Tests carried out at Alteria " +
-          "Automation facilities in Madrid, Spain."
+          "Professional CFD software was used in the simulations by consultant (Alberto Acín, Ingeenious)." +
+          " The specification was drafted by Alteria Automation." +
+          " Tests were carried out at Alteria Automation facilities in Madrid, Spain."
         ],
       },
     ],
@@ -2547,7 +2575,7 @@ export const stories = [
       ],
       techProviders: [
         {
-          name: "Ingeeniuos",
+          name: "Ingeenious",
           website: "https://ingeenious.com/en/",
         },
       ],
@@ -2560,17 +2588,15 @@ export const stories = [
         "Smart sensors",
       ],
       impact: [
-        "Simulation or radiation patterns were validated with in-duct measures using a calibrated \n" +
-        "UVC radiometer.",
-
         "CFD provides real airflow HVAC duct simulation, where system design is optimized.",
 
         "Radiating unit redesigned over the project with new reflector provides 24% gain.",
 
-        "In-duct viral inactivation simulated and validated with CFD over the HUBCAP project, \n" +
-        "following the inactivation rate figures provided by NBC (Nuclear, Bacteriological and \n" +
-        "Chemical) of the INTA (Ministry of Defence, Spain) in the effectiveness report issued in Jan \n" +
-        "2021.",
+        "Simulation or radiation patterns were validated with in-duct measures using a calibrated UVC radiometer.",
+
+        "In-duct viral inactivation simulated and validated with CFD over the HUBCAP project," +
+        " following the inactivation rate figures provided by NBC (Nuclear, Bacteriological and" +
+        " Chemical) of the INTA (Ministry of Defence, Spain) in the effectiveness report issued in Jan 2021.",
       ],
     },
     tryItNowUrl: "",
@@ -2581,84 +2607,82 @@ export const stories = [
     subtitle: "",
     image: "../../assets/res/images/scuba-dive.png",
     urlName: "scuba-dive",
-    quote: "For D-RisQ, this experiment has enabled us to engage early in the development of a safety critical " +
-      "medical device development gaining us insight into how Kapture and our other tools will be used, " +
-      "while also simultaneously identifying improvements in tools for our client base." +
-      "For ScubaTx, this experiment has helped to clarify our software requirements while also improving " +
-      "system and clinical requirements before we have committed to the full software development and " +
-      "hence this will save us both time and money in that development and in the engagement with the " +
-      "regulator.",
-    quoteAttribution: "D-RisQ & ScubaTx",
+    quote: "For D-RisQ, this experiment has enabled us to engage early in the development of a safety critical" +
+      " medical device development gaining us insight into how Kapture and our other tools will be used," +
+      " while also simultaneously identifying improvements in tools for our client base." +
+      " For ScubaTx, this experiment has helped to clarify our software requirements while also improving" +
+      " system and clinical requirements before we have committed to the full software development and" +
+      " hence this will save us both time and money in that development and in the engagement with the regulator.",
+    quoteAttribution: "The DIVE Team",
     sections: [
       {
         sectionHeading: "Problem and solution",
         paragraphs: [
-          "The experiment’s aim was to use the D-RisQ Kapture® tool to express Software High Level " +
-          "Requirements (HLRs) for a medical device used in the preservation of organs for transplant. The " +
-          "software for the organ preservation device must be high integrity to meet regulations and will be " +
-          "subject to independent scrutiny. As part of this process, ScubaTx became familiar with the way in " +
-          "which software requirements needed to be expressed in order to use them as the basis for future " +
-          "verification and for presentation to the medical device regulator. D-RisQ provided the tool and " +
-          "relevant documentation and where necessary, some consulting support. D-RisQ has experience of " +
-          "DO-178C, the software standard for aerospace. It is intended that the Formal Methods Supplement " +
-          "DO-333 will be used as the basis for certification. The ScubaTx team largely did the requirements " +
-          "work themselves with D-RisQ providing problem solving and tool enhancements to cope with the " +
-          "needs identified by ScubaTx. This process showed a number of improvements that were made as " +
-          "the experiment progressed and some that could be made in future. It was further identified that " +
-          "user documentation could be improved, which has already taken place. As a result, ScubaTx now " +
-          "have a better set of requirements at all levels as clarifications at the clinical level have taken place. " +
-          "For D-RisQ, investment is already underway to improve the user experience and the link to " +
-          "Modelworks which is expected to be available Q1 2022.",
+          "The aim of the experiment was to use the D-RisQ Kapture® tool to express software high level" +
+          " requirements (HLRs) for a medical device used in the preservation of organs for transplant." +
+          " The software for the organ preservation device must be high integrity to meet regulations and will be" +
+          " subject to independent scrutiny. As part of this process, ScubaTx became familiar with the way in" +
+          " which software requirements needed to be expressed in order to use them as the basis for future" +
+          " verification and for presentation to the medical device regulator. D-RisQ provided the tool and" +
+          " relevant documentation and, where necessary, some consulting support. D-RisQ has experience of" +
+          " DO-178C, the software standard for aerospace. It is intended that the Formal Methods Supplement" +
+          " DO-333 will be used as the basis for certification. The ScubaTx team largely did the requirements" +
+          " work themselves with D-RisQ providing problem solving and tool enhancements to cope with the" +
+          " needs identified by ScubaTx. This process showed a number of improvements that were made as" +
+          " the experiment progressed and some that could be made in future. It was further identified that" +
+          " user documentation could be improved, which has already taken place. As a result, ScubaTx now" +
+          " have a better set of requirements at all levels as clarifications at the clinical level have taken place." +
+          " For D-RisQ, investment is already underway to improve the user experience and the link to" +
+          " Modelworks, which is expected to be available Q1 2022.",
         ],
       },
       {
         sectionHeading: "What we did",
         paragraphs: [
-          "The output of the first sprint was a set of manually updated system requirements for the ScubaTx " +
-          "medical device and a set of software requirements developed from the system requirements using " +
-          "the D-RisQ Kapture tool. ScubaTx were able to easily use Kapture with many positive comments on " +
-          "usability and on the way in which the tool caused more thought on what the requirement should be, " +
-          "how it should be expressed and how it \"helps especially when constructing large, complex " +
-          "expressions, as it enforces correct structure and reference consistency\".",
-          "The aim of the second sprint was to explore how a software design could be developed and verified " +
-          "using D-RisQ ModelWorks®. This highlighted various sources of potential errors in requirements" +
-          "when considering then for automatic verification. These were either incomplete information in the " +
-          "requirements needed by the tools, which required more information to be added or required some " +
-          "enhancements to D-RisQ’s tools. Indeed, while most of the sample design undertaken passed " +
-          "checks, we all learned how to better inform a user how to express requirements in a more verifiable " +
-          "manner and D-RisQ have therefore made plans to further enhance tools. This work has already " +
-          "commenced and is combined with user documentation upgrade. Beyond the scope of the " +
-          "programme, D-RisQ demonstrated that it was possible automatically produced C code from the " +
-          "design. This capability will be used in the future for automatic formal verification by using another " +
-          "D-RisQ tool expected to be completed end Q1 2022."
+          "The output of the first sprint was a set of manually updated system requirements for the ScubaTx" +
+          " medical device and a set of software requirements developed from the system requirements using" +
+          " the D-RisQ Kapture tool. ScubaTx were able to use Kapture easily with many positive comments on" +
+          " usability and on the way in which the tool caused more thought on what the requirement should be," +
+          " how it should be expressed, and how it \"helps especially when constructing large, complex expressions," +
+          " as it enforces correct structure and reference consistency\".",
+
+          "The aim of the second sprint was to explore how a software design could be developed and verified" +
+          " using D-RisQ ModelWorks®. This highlighted various sources of potential error in requirements" +
+          " when considering them for automatic verification. These were either incomplete information in the" +
+          " requirements needed by the tools, which required more information to be added, or required some" +
+          " enhancements to D-RisQ tools. Indeed, while most of the sample design undertaken passed checks," +
+          " we all learned how to inform a user better on how to express requirements in a more verifiable manner." +
+          " Therefore, D-RisQ have made plans to enhance their tools further. This work has already" +
+          " commenced and is combined with user documentation upgrade. Beyond the scope of the" +
+          " programme, D-RisQ demonstrated that it was possible to produce C code automatically from the design." +
+          " This capability will be used in future for automatic formal verification by using another" +
+          " D-RisQ tool expected to be completed end Q1 2022."
         ],
       },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
-          "The funding provided through HUBCAP enabled the early engagement of ScubaTx with the D-RisQ " +
-          "tools. The early chance to understand how to express requirements in a clear, verifiable format will " +
-          "enable ScubaTx to be avoid issues later in development of the device and to take it through " +
-          "regulatory approval in due course, where hopefully the MBD work can be taken into account. As a " +
-          "case study for D-RisQ, this has been invaluable. We intend to improve the tools and to provide a " +
-          "presentation at the forthcoming 2022 Embedded World Conference in Nuremberg. This aligns with " +
-          "our strategy for the rapid assured development of control systems, safety critical or otherwise."
+          "The funding provided through HUBCAP enabled the early engagement of ScubaTx with D-RisQ tools." +
+          " The early chance to understand how to express requirements in a clear, verifiable format will" +
+          " enable ScubaTx to avoid issues later in development of the device and to take it through" +
+          " regulatory approval in due course, where hopefully the MBD work can be taken into account." +
+          " As a case study for D-RisQ, this has been invaluable. We intend to improve the tools and to provide a" +
+          " presentation at the forthcoming 2022 Embedded World Conference in Nuremberg. This aligns with" +
+          " our strategy for the rapid assured development of control systems, safety-critical or otherwise."
         ],
       },
       {
         sectionHeading: "Forward look",
         paragraphs: [
-          "The support to the future safety case for the ScubaTx device from the software development has " +
-          "been outlined and is discussed within the report. While there are medical standards for software, " +
-          "they are different to those required for aerospace and do not mention formal methods. Despite " +
-          "stringent clinical trial controls over clinical outcomes, medical software is somewhat overlooked (or " +
-          "under estimated) in its complexity. In order to achieve approval in a cost-effective manner, there is " +
-          "a desire to use formal methods-based modelling tools and the associated formal verification. The " +
-          "intention, with the regulator involved as far as practicable, is to show a better way of gaining " +
-          "confidence in medical device software. As such it was decided to use RTCA DO-333, the Formal " +
-          "Methods Supplement to DO-178C which is the de-facto software standard for aerospace. It remains " +
-          "a challenge to convince medical regulators that such approach is well beyond the required processes " +
-          "within IEC62304, the medical software regulations standard."
+          "Medical standards for software are different to those required for aerospace and do not mention formal methods." +
+          " Despite stringent clinical trial controls over clinical outcomes, medical software is somewhat overlooked" +
+          " (or under-estimated) in its complexity. In order to achieve approval in a cost-effective manner," +
+          " there is a desire to use formal methods-based modelling tools and the associated formal verification." +
+          " The intention, with the regulator involved as far as practicable, is to show a better way of gaining" +
+          " confidence in medical device software. As such, it was decided to use RTCA DO-333," +
+          " the Formal Methods Supplement to DO-178C, which is the de-facto software standard for aerospace." +
+          " It remains a challenge to convince medical regulators that such approach is well beyond the required processes" +
+          " within IEC62304, the medical software regulations standard."
         ],
       },
     ],
@@ -2679,72 +2703,78 @@ export const stories = [
       domains: [
         "Formal Methods",
         "Medical Devices",
-        "Safety Critical Software",
+        "Safety-Critical Software",
       ],
       impact: [
-        "A far better understanding of not only software requirements, but as a result, system and " +
-        "clinical requirements.",
-        "By achieving the above, it will reduce the eventual cost of both the software development " +
-        "and the regulatory process because all classes requirements expression have improved.",
+        "A far better understanding of not only software requirements, but as a result, system and" +
+        " clinical requirements.",
+
+        "By achieving the above, it will reduce the eventual cost of both the software development" +
+        " and the regulatory processes, because all classes of requirements expression have improved.",
+
         "An insight into how D-RisQ Kapture®tool would be used by clients.",
+
         "Identification of improvements to the Kapture tool and associated documentation.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-77a4-4516-1325-722411661325",
     videoUrl: ""
   },
    {
     title: "ITwinBuild Experiment",
-    subtitle: "Adoption and transfer of MBD CPS technologies for implementation of novel digital health " +
-      "products and services to empower healthcare providers in Eastern Europe with remote " +
-      "telemonitoring and assisting patients with health self-management.",
-    image: "../../assets/res/images/iStock-1149878152.jpg",
+    subtitle: "Adoption and transfer of MBD CPS technologies for implementation of novel digital health" +
+              " products and services to empower health care providers in Eastern Europe with remote" +
+              " telemonitoring and assisting patients with health self-management.",
+    image: "../../assets/res/images/ITwinBuild3.png",
     urlName: "it-win-build",
-    quote: "",
-    quoteAttribution: "",
+    quote: "The HUBCAP experiment and the support facilitated SMEs' time and efforts in implementation of the experiment" +
+           " to focus the resources for further solution acceleration toward the customers and market.",
+    quoteAttribution: "The ITwinBuild Team",
     sections: [
       {
         sectionHeading: "Problem and solution",
         paragraphs: [
-          " The experiment introduces novel cost-effective digital health solution for monitoring and " +
-          "prediction of personal heath of individuals living at homes alone or in isolation. It uses multiple " +
-          "wearable & home sensors and MBD CPS to run AI-driven calculations of holistic status of big system " +
-          "\nSmart Person @ Smart Home\"",
+          "The experiment introduced a novel and cost-effective digital health solution for monitoring and" +
+          " predicting the personal heath of individuals living at homes alone or in isolation. It used multiple" +
+          " wearable and home sensors and MBD CPS to run AI-driven calculations of holistic status of big system" +
+          " \"Smart Person @ Smart Home\".",
         ],
       },
       {
         sectionHeading: "What we did",
         paragraphs: [
-          "The partners implemented big MBD CPS system " +
-          "“SmartPerson@SmartHome” as hierarchy of smart objects having own data sources and KPIs to run " +
-          "AI-driven calculation of system status in real & future time."
+          "The partners implemented big MBD CPS" +
+          " \"Smart Person @ Smart Home\" as a hierarchy of smart objects having own data sources and KPIs to run" +
+          " AI-driven calculation of system status in real-time with predictions.",
         ],
       },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
-          "The funding let us combine expertise, novel CPS/IoT/AI " +
-          "technology PharosN to develop practical health monitoring solution within 5 months.",
+          "HUBCAP funding enabled us to combine expertise and novel CPS/IoT/AI technology PharosN" +
+          " to develop a practical health monitoring solution within five months.",
         ],
       },
-      // {
-      //   sectionHeading: "Forward look",
-      //   paragraphs: [
-      //     ""
-      //   ],
-      // },
+      /*
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "",
+        ],
+      },
+      */
     ],
     info: {
       endUsers: [
         {
-          name: "GOLEM Integrated Microelectronics Solutions",
-          website: "https://golem.at/",
+          name: "IMC - Industrial Management Consulting Slovakia",
+          website: "https://www.bymetrix.net/",
         }
       ],
       techProviders: [
         {
-          name: "Industrial Management Consulting Slovakia",
-          website: "https://bymetrix.net/",
+          name: "GOLEM Integrated Microelectronics Solutions",
+          website: "https://www.golem.at/",
         },
       ],
       dih: { name: "HUBCAP Austria", website: "https://www.v2c2.at/" },
@@ -2752,97 +2782,111 @@ export const stories = [
         "AI-driven Technology",
         "Personal Health Self-management",
         "Wearables",
-        "Home Environment Sensors"
+        "Home Environment Sensors",
       ],
       impact: [
-        "Economic impact: Minimizing unnecessary physical visits to medical centers, waiting time, \n" +
-        "lockdowns and isolation impacts, decrease the cost of services for patients and demand for \n" +
-        "caregiver resources, transportation, relevant environmental impacts. IMC will explore long \n" +
-        "term opportunities and addresses health/social-care demand that is especially hindered in \n" +
-        "Eastern Europe by economic factors.",
-        "Social impacts: Massive improvement of self-care management at homes, connectivity with \n" +
-        "caregivers, social care organisations, new jobs for support, installations, maintenance.",
-        "Enabling Intelligent Digital Twins to assist people in longevity and quality of life."
+        "Economic impact: minimizing unnecessary physical visits to medical centers, waiting time," +
+        " lockdowns and isolation impacts, decreasing the cost of services for patients and demand for" +
+        " caregiver resources, transportation, relevant environmental impacts. IMC will explore long" +
+        " term opportunities and addresses health/social-care demand that is especially hindered in" +
+        " Eastern Europe by economic factors.",
+
+        "Social impact: massive improvement of self-care management at homes, connectivity with caregivers," +
+        " social care organisations, new jobs for support, installations, and maintenance.",
+
+        "Enabling intelligent Digital Twins to assist people in longevity and quality of life.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=Iy1oqXoB9KyegeyczwVm",
     videoUrl: "https://www.youtube.com/embed/OZ83AAxBjS4"
   },
    {
-    title: "Remote Solution for Industrial Automation Training",
-    subtitle: "",
-    image: "../../assets/res/images/iStock-1149878152.jpg",
+    title: "Remote Solution for Industrial Automation Training (PRO-CPS)",
+    subtitle: "PROSIM Cyber-Physical Platform for Application Development and Training in the Process Industries",
+    image: "../../assets/res/images/PRO-CPS.png",
     urlName: "pro-cps",
     quote: "Energeia Technologies were very happy to be involved in this HUBCAP program, and as a development" +
       " partner with ASTI Automation, for the development of PRO-CPS experiment. The process of development" +
       " helped our engineers to learn the PROSIM solution. This will further enable us to employ PROSIM to" +
       " develop industry solutions and further train current and future automation engineers.",
-    quoteAttribution: "Gerry Smith, Director of Energeia Technologies",
+    quoteAttribution: "Gerry Smith, Director Energeia Technologies",
     sections: [
       {
         sectionHeading: "Problem and solution",
         paragraphs: [
           "Enabling remote automation technology training for higher education and continuing professional" +
-          " education requires suitable hardware–software platforms that leverage recent advances in cyberphysical" +
-          " systems and industrial internet of things. An acceleratend trend towards e-learning and virtual learning" +
-          " solutions, including for hands-on, resource-intensive fields such as industrial automation technology" +
-          " is observed. This situation, overlapping an already-existing underlying trend for digitalization of" +
-          " Industry 4.0 education, has led to hybrid or fully virtual training courses where the student can" +
-          " initially gain expertise on the automation of a process simulation followed by hands-on sessions" +
-          " in the laboratory.",
-          "The PRO-CPS experiment aimed to jointly develop the PROSIM platform, as state-of-the-art modelling" +
-          " and simulation environment for industrial automation application development and training. This involved" +
-          " the development of a dedicated add-on pack of simulations for the process industries: pumping station," +
-          " heat exchanger, measurement unit, smart metering, boiler control and tank level control, based on" +
-          " realistic end-user requirements, and a fully virtualised process simulation and training solution," +
-          " running on the HUBCAP platform (Figure 1). The system integrates PLC-side development" +
-          " (B&R Automation Studio), industrial communication (OPC-UA) and front-end development for rich and" +
-          " immersive process visualisations (C#).",
+          " education requires suitable hardware–software platforms that leverage recent advances in cyber-physical" +
+          " systems and industrial Internet of Things. An accelerated trend towards e-learning and virtual learning" +
+          " solutions is observed, including for hands-on, resource-intensive fields such as industrial automation technology." +
+          " This situation, overlapping an already-existing underlying trend for digitalization of Industry 4.0 education," +
+          " has led to hybrid or fully virtual training courses where the student can" +
+          " initially gain expertise on the automation of a process simulation followed by hands-on sessions in the laboratory.",
         ],
       },
-      // {
-      //   sectionHeading: "What we did",
-      //   paragraphs: [
-      //     ""
-      //   ],
-      // },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "The PRO-CPS experiment aimed to develop the PROSIM platform jointly, as a state-of-the-art modelling" +
+          " and simulation environment for industrial automation application development and training. This involved" +
+          " the development of a dedicated add-on pack of simulations for the process industries: pumping station," +
+          " heat exchanger, measurement unit, smart metering, boiler control, and tank level control, based on" +
+          " realistic end-user requirements, and a fully virtualised process simulation and training solution," +
+          " running on the HUBCAP platform. The system integrates PLC-side development (B&R Automation Studio)," +
+          " industrial communication (OPC-UA), and front-end development for rich and immersive process visualisations (C#).",
+        ],
+      },
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
-          "The DIH at „Lucian Blaga” University of Sibiu supported the implementation of the PRO-CPS experiment" +
+          "The DIH at \"Lucian Blaga\" University of Sibiu supported the implementation of the PRO-CPS experiment" +
           " throughout its six month duration. Periodic reporting meetings were organised and the DIH team provided" +
           " valuable knowledge and guidance to the SME partners.",
         ],
       },
-      // {
-      //   sectionHeading: "Forward look",
-      //   paragraphs: [
-      //     ""
-      //   ],
-      // },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "Validation of the system with end users in professional training courses is foreseen which will lead to continuous improvement." +
+          " This can be best achieved in hybrid mode, where the trainees gather experience working on the virtual system under professional guidance," +
+          " followed by hands-on laboratory sessions on the real equipment." +
+          " The simulation can also be operated in parallel to the real equipment" +
+          " for grasping modelling limitations and ideal behavior compared to potential faulty operation that is encountered in practice." +
+          " Moreover, extending the number, type, and complexity of the existing simulation towards fully functional digital-twin models" +
+          " with discretized continuous system dynamics will be carried out.",
+        ],
+      },
     ],
     info: {
       endUsers: [
         {
-          name: "Asti Automation",
-          website: "https://www.astiautomation.com/",
+          name: "Energeia Technologies",
+          website: "http://www.energeiatech.com/",
         }
       ],
       techProviders: [
         {
-          name: "Energeia Technologies",
-          website: "http://www.energeiatech.com/",
+          name: "Asti Automation",
+          website: "https://www.astiautomation.com/",
         },
       ],
       dih: { name: "HUBCAP Romania", website: "https://www.ulbsibiu.ro/en/" },
       domains: [
-        ""
+        "Industrial Automation",
       ],
       impact: [
-        ""
+        "Development of the PROSIM product in a competitive education and training market." +
+        " The newly updated system is provided both as a stand-alone product" +
+        " and through a collection of on-demand training services for industrial companies, automation technicians, and engineers.",
+
+        "Ongoing collaboration and knowledge transfer between Asti Automation and Energeia Technology.",
+
+        "A more detailed perspective of the experiment results and outlook on future developments," +
+        " enabled by the HUBCAP funding, was published in the open access journal paper:" +
+        " Rosioru, S., Mihai, V., Neghina, M., Craciunean, D. and Stamatescu, G., 2022." +
+        " PROSIM in the Cloud: Remote Automation Training Platform with Virtualized Infrastructure. Applied Sciences, 12(6), p.3038.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-779w-4416-1324-354961661324",
     videoUrl: ""
   },
 

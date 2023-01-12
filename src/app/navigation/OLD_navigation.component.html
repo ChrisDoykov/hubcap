@@ -1,0 +1,199 @@
+<div
+  class="wrapper-nav"
+  (window:resize)="onResize()"
+  (window:scroll)="onScroll()"
+>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item logo" href="/">
+        <img
+          *ngIf="logoIsVisible"
+          src="../../assets/res/images/logo_hubcap.webp"
+          alt="Hubcap Logo"
+          class="navbar-item__logo"
+          default="../../assets/res/images/logo_hubcap.png"
+        />
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarDropdown"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <!-- Add is-active to show on mobile -->
+    <div id="navbarDropdown" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" routerLink="/" routerLinkActive="active">Home</a>
+
+        <a class="navbar-item" routerLink="success-stories" (click)="blur($event)">Success Stories</a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Funding Calls</a>
+          <div class="navbar-dropdown">
+            <a
+              class="navbar-item"
+              routerLink="open-calls"
+              (click)="blur($event)"
+            >
+              General Information
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="calls/experts"
+              (click)="blur($event)"
+            >
+              Call For Experts
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="calls/pull"
+              (click)="blur($event)"
+            >
+              PULL Calls
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="calls/experiment"
+              (click)="blur($event)"
+            >
+              EXPERIMENT Calls
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="calls/innovate"
+              (click)="blur($event)"
+            >
+              INNOVATE Call
+            </a>
+          </div>
+        </div>
+        <a
+          class="navbar-item"
+          routerLink="digital-innovation-hubs"
+          routerLinkActive="active"
+        >Digital Innovation Hubs</a
+        >
+        <a class="navbar-item" routerLink="services" routerLinkActive="active"
+          >Services</a
+        >
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Platform</a>
+<<<<<<< HEAD
+          <div class="navbar-dropdown">
+            <a
+              class="navbar-item"
+              routerLink="sustainability"
+              (click)="blur($event)"
+            >
+              Future Plans
+            </a>
+            <a
+              class="navbar-item"
+              href="https://hubcap-portal.eng.it/welcome/"
+              target="_blank"
+              routerLinkActive="active"
+            >Platform <mat-icon class="navbar-item__icon">launch</mat-icon></a
+            >
+          </div>
+        </div>
+
+
+=======
+            <div class="navbar-dropdown">
+              <a
+                class="navbar-item"
+                routerLink="gitworks"
+                (click)="blur($event)"
+                >
+                Transition to GitWorks
+              </a>
+              <a
+                class="navbar-item"
+                href="https://hubcap-portal.eng.it/welcome/"
+                target="_blank"
+                routerLinkActive="active"
+                >Platform <mat-icon class="navbar-item__icon">launch</mat-icon></a
+              >
+            </div>
+        </div>
+>>>>>>> 4edbc70b48930448c9b81aec69922c2430eef199
+        <!-- <a
+          class="navbar-item"
+          href=""
+          target="_blank"
+          routerLinkActive="active"
+        >
+          Success Stories
+          <mat-icon class="navbar-item__icon">launch</mat-icon>
+        </a> -->
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">News</a>
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item" routerLink="news" routerLinkActive="active"
+              >Latest News</a
+            >
+            <a class="navbar-item" routerLink="events" routerLinkActive="active"
+              >Events</a
+            >
+            <a
+              class="navbar-item"
+              routerLink="press-releases"
+              (click)="blur($event)"
+              >Press Releases</a
+            >
+            <a
+              class="navbar-item"
+              routerLink="newsletters"
+              (click)="blur($event)"
+              >Newsletters</a
+            >
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">About</a>
+          <div class="navbar-dropdown is-right">
+            <a
+              class="navbar-item"
+              routerLink="project-details"
+              (click)="blur($event)"
+              >Project Details</a
+            >
+            <a class="navbar-item" routerLink="outputs" (click)="blur($event)"
+              >Project Outputs</a
+            >
+            <a class="navbar-item" routerLink="partners" (click)="blur($event)">
+              Project Partners
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="call-winners"
+              (click)="blur($event)"
+            >
+              Call Winners
+            </a>
+            <a class="navbar-item" routerLink="faq" routerLinkActive="active">
+              FAQ
+            </a>
+            <a
+              class="navbar-item"
+              routerLink="resources"
+              (click)="blur($event)"
+            >
+              Resources
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

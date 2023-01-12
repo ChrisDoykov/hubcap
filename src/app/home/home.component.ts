@@ -13,11 +13,15 @@ import { CountUp } from "countup.js";
 import { Subscription } from "rxjs";
 import { LocationService } from "../location.service";
 import { stories } from "../success-stories-list/success-stories";
+import KeenSlider, { KeenSliderInstance, TrackDetails } from "keen-slider";
 
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.scss"],
+  styleUrls: [
+    "./home.component.scss",
+    "../../../node_modules/keen-slider/keen-slider.min.css",
+  ],
   providers: [DeviceDetectorService],
 })
 export class HomeComponent implements OnInit, OnDestroy {
@@ -26,6 +30,11 @@ export class HomeComponent implements OnInit, OnDestroy {
     private locationService: LocationService,
     private router: Router
   ) {}
+  @ViewChild("sliderRef") sliderRef: ElementRef<HTMLElement>;
+
+  currentSlide: number = 0;
+  dotHelper: Array<number> = [];
+  slider: KeenSliderInstance = null;
 
   counterSME = 250;
   experiments = 30;
@@ -116,17 +125,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   stories = stories;
 
-  configStories: SwiperOptions = {
-    pagination: false,
-    slidesPerView: this.width > 710 ? 3 : 1,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction: true,
-    },
-  };
-
   private dihSub: Subscription;
   DIH: string;
 
@@ -151,12 +149,16 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (document.getElementById("hero-title") !== null) {
       document.getElementById("hero-title").parentElement.style.width = "unset";
     }
+    if (this.slider) {
+      this.slider.destroy();
+    }
   }
 
   @ViewChild("blue", { static: true }) blueText: ElementRef;
   @ViewChild("green", { static: true }) greenText: ElementRef;
   @ViewChild("red", { static: true }) redText: ElementRef;
   @ViewChild("counters", { static: true }) counters: ElementRef;
+
 
   ngOnInit() {
     document.title = "HUBCAP";
@@ -221,6 +223,25 @@ export class HomeComponent implements OnInit, OnDestroy {
         });
       });
     }
+    setTimeout(() => {
+      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+        initial: this.currentSlide,
+        slideChanged: (s) => {
+          this.currentSlide = s.track.details.rel;
+        },
+        breakpoints: {
+          "(min-width: 400px)": {
+            slides: { perView: 2, spacing: 5 },
+          },
+          "(min-width: 1000px)": {
+            slides: { perView: 3, spacing: 10 },
+          },
+        },
+      });
+      this.dotHelper = [
+        ...Array(this.slider.track.details.slides.length).keys(),
+      ];
+    });
     this.onResize();
     this.checkPosition();
   }

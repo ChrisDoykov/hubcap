@@ -162,33 +162,63 @@
       <h2 class="heading-secondary">Success Stories</h2>
     </div>
 
-    <swiper [config]="configStories" class="swiper-stories">
-      <div class="success-stories-slide" *ngFor="let story of stories">
-        <div class="success-stories-slide__content">
-          <img
-            src="{{ story.image }}"
-            alt="{{ story.title }}"
-            class="success-stories-slide__image"
-          />
-          <div class="success-stories-slide__body">
-            <h4
-              class="success-stories-slide__content__title subtitle u-center-text"
-            >
-              {{ story.title }}
-            </h4>
-            <a
-              class="success-stories-slide__content__link"
-              href="{{ story.url }}"
-              target="_blank"
-              routerLinkActive="active"
-              >Read More</a
-            >
+    <div class="swiper-stories">
+      <div class="navigation-wrapper">
+        <div class="keen-slider keen-slider--horizontal" #sliderRef>
+          <div class="keen-slider__slide" *ngFor="let story of stories; let i = index">
+            <div class="success-stories-slide">
+            <div class="success-stories-slide__content">
+              <img
+                src="{{story.image}}"
+                alt="{{story.title}}"
+                class="success-stories-slide__image"
+              />
+              <div class="success-stories-slide__body">
+                <h4
+                  class="success-stories-slide__content__title subtitle u-center-text"
+                >
+                  {{ story.title }}
+                </h4>
+                <a
+                  class="success-stories-slide__content__link"
+                  href="{{ story.url }}"
+                  target="_blank"
+                  routerLinkActive="active"
+                >Read More
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+        </div>
+        <svg
+          [ngClass]="
+        'arrow arrow--left ' + (currentSlide === 0 ? 'arrow--disabled' : '')
+      "
+          (click)="slider.prev()"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+          />
+        </svg>
+        <svg
+          *ngIf="slider"
+          [ngClass]="
+        'arrow arrow--right ' +
+        (slider.track.details.slides.length - 3 === currentSlide
+          ? 'arrow--disabled'
+          : '')
+      "
+          (click)="slider.next()"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+        </svg>
       </div>
-      <div class="swiper-pagination"></div>
-    </swiper>
-
+    </div>
     <!-- SUCCESS STORIES CAROUSEL -->
   </section>
 

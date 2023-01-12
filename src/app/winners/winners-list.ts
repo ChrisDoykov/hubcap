@@ -21,7 +21,7 @@ export const WINNERS: SME[] = [
   {
     id: 3,
     name: "Verum Software Tools",
-    logo: "https://verum.com/wp-content/uploads/2020/07/logo.png",
+    logo: "../../assets/res/logos/Verum_Logo.png",
 
     website: "https://verum.com/",
   },
@@ -250,13 +250,6 @@ export const WINNERS: SME[] = [
     website: "https://golem.at/",
   },
   {
-    id: 36,
-    name: "Mototok",
-    logo: "../../assets/res/logos/logo_mototok.png",
-
-    website: "https://www.mototok.com/",
-  },
-  {
     id: 37,
     name: "KMB Lab",
     logo: "../../assets/res/logos/logo_kmb.png",
@@ -297,20 +290,6 @@ export const WINNERS: SME[] = [
     logo: "../../assets/res/logos/logo_alberto.png",
 
     website: "https://ingeenious.com/en/",
-  },
-  {
-    id: 43,
-    name: "Noleko",
-    logo: "../../assets/res/logos/logo_noleko.png",
-
-    website: "http://www.noleko.rs/",
-  },
-  {
-    id: 44,
-    name: "Vodena",
-    logo: "../../assets/res/logos/logo_vodena.svg",
-
-    website: "http://vodena.rs/",
   },
   {
     id: 45,
@@ -385,8 +364,7 @@ export const WINNERS: SME[] = [
   {
     id: 55,
     name: "Hubert Modelisation",
-    logo: "https://media-exp1.licdn.com/dms/image/C4E0BAQEnF4vW2Wvczw/company-logo_200_200/0/1592426038181?e=1650499200&v=beta&t=BFDpuKOQ_FPvarij2fqo0btBgvNYFix9S2ymHssuRb8",
-
+    logo: "../../assets/res/logos/Hubert_Modelisation.jfif",
     website: "https://www.linkedin.com/company/hubert-modelisation/",
   },
   {
@@ -417,4 +395,264 @@ export const WINNERS: SME[] = [
 
     website: "https://www.electroingenium.es/en/",
   },
+  {
+    id: 60 ,
+    name: "Multiwave Metacrystal",
+    logo: "../../assets/res/logos/multiwave.jpg",
+
+    website: "https://metacrystal.ch/",
+  },
+  {
+    id: 61 ,
+    name: "Multiwave Technologies",
+    logo: "../../assets/res/logos/multiwave.jpg",
+
+    website: "https://multiwave.ch/",
+  },
+  {
+    id: 62 ,
+    name: "Quaisr",
+    logo: "../../assets/res/logos/quaisr.jpg",
+
+    website: "https://www.quaisr.io/",
+  },
+  {
+    id: 64 ,
+    name: "Xilbi Sistemas de Informacion SL",
+    logo: "../../assets/res/logos/xilbi.png",
+
+    website: "https://www.xilbi.com/",
+  },
+  {
+    id: 65 ,
+    name: "Fotovoltaica Macotera SL",
+    logo: "../../assets/res/logos/fotovoltaica.png",
+
+    website: "https://www.fotovoltaicamacotera.com/",
+  },
+  {
+    id: 66,
+    name: "Cyblix Unipessoal Lda.",
+    logo: "../../assets/res/logos/cyblix.png",
+
+    website: "https://www.cyblix.com/",
+  },
+  {
+    id: 67 ,
+    name: "Cyberith",
+    logo: "../../assets/res/logos/cyberith.png",
+
+    website: "https://www.cyberith.com/",
+  },
+  {
+    id: 68 ,
+    name: "Codewheel",
+    logo: "../../assets/res/logos/codewheel.png",
+
+    website: "https://www.codewheel.eu/",
+  },
+  {
+    id: 69 ,
+    name: "EMDIP",
+    logo: "../../assets/res/logos/emdip.png",
+
+    website: "https://www.emdip.com",
+  },
+  {
+    id: 70 ,
+    name: "Intellia ICT",
+    logo: "../../assets/res/logos/intellia.png",
+
+    website: "https://www.intellia.gr/",
+  },
+  {
+    id: 71 ,
+    name: "Metricon",
+    logo: "../../assets/res/logos/metricon.jpg",
+
+    website: "https://metricon.gr/",
+  },
+  {
+    id: 72 ,
+    name: "SKAND",
+    logo: "../../assets/res/logos/Skand.png",
+
+    website: "http://www.skand.sk/",
+  },
+  {
+    id: 73 ,
+    name: "Tirn Technology",
+    logo: "../../assets/res/logos/tirn_technology.webp",
+
+    website: "https://tirntechnology.com/",
+  },
+  {
+    id: 74 ,
+    name: "MultiFluidX",
+    logo: "../../assets/res/logos/multifluidx.png",
+
+    website: "https://multifluidx.com/",
+  },
+  {
+    id: 75 ,
+    name: "Kaleidosim Technologies",
+    logo: "../../assets/res/logos/kaleidosim.png",
+
+    website: "https://kaleidosim.com/",
+  },
+  {
+    id: 76,
+    name: "theSARMproject",
+    logo: "../../assets/res/logos/theSARMproject.webp",
+
+    website: "https://www.thesarmproject.com",
+  },
+  {
+    id: 77,
+    name: "DELTA MPIS",
+    logo: "../../assets/res/logos/DELTA.png",
+
+    website: "https://www.delta-ms.gr",
+  },
+  {
+    id: 78,
+    name: "Vulpes Electronics",
+    logo: "../../assets/res/logos/vulpes_electronics.webp",
+
+    website: "https://www.vulpes-electronics.net",
+  },
+  {
+    id: 79,
+    name: "Intelectronics",
+    logo: "../../assets/res/logos/dynaback.svg",
+
+    website: "https://www.dynaback-tshirt.com/",
+  },
+  {
+    id: 80,
+    name: "Always Connected Consultants SRL",
+    logo: "../../assets/res/logos/always_connected_consultants.jpg",
+
+    website: "https://acc.neuroaugmentare.ro/",
+  },
+  {
+    id: 81,
+    name: "Evotech Services",
+    logo: "../../assets/res/logos/evotech.gif",
+
+    website: "https://www.evotech.ro/#",
+  },
+  {
+    id: 82,
+    name: "Mira Solutions",
+    logo: "../../assets/res/logos/mira_solutions.png",
+
+    website: "https://mirabroker.ro/",
+  },
+  {
+    id: 83,
+    name: "EnginSoft",
+    logo: "../../assets/res/logos/enginsoft.png",
+
+    website: "https://www.enginsoft.com",
+  },
+  {
+    id: 84,
+    name: "Kilometro Rosso",
+    logo: "../../assets/res/logos/kilometro_ross.png",
+
+    website: "https://www.kilometrorosso.com",
+  },
+  {
+    id: 85,
+    name: "PRES-X",
+    logo: "../../assets/res/logos/presx.webp",
+
+    website: "https://www.pres-x.com",
+  },
+  {
+    id: 86,
+    name: "Vertliner",
+    logo: "../../assets/res/logos/vertliner.png",
+
+    website: "https://vertliner.com/",
+  },
+  {
+    id: 87,
+    name: "Give",
+    logo: "../../assets/res/logos/give.png",
+
+    website: "https://www.give-engineering.com/",
+  },
+  {
+    id: 88,
+    name: "Thridium",
+    logo: "../../assets/res/logos/thridium.png",
+
+    website: "http://thridium.com/",
+  },
+  {
+    id: 89,
+    name: "DRAXIS Environmental",
+    logo: "../../assets/res/logos/draxis.png",
+
+    website: "https://draxis.gr/",
+  },
+  {
+    id: 90,
+    name: "Future Sense",
+    logo: "../../assets/res/logos/future_sense.png",
+
+    website: "https://byeradon.com/",
+  },
+  {
+    id: 91,
+    name: "PLANETA Technologies",
+    logo: "../../assets/res/logos/PLANETA.png",
+
+    website: "https://planetanamestaj.com/?page_id=4920",
+  },
+  {
+    id: 92,
+    name: "HelinData",
+    logo: "../../assets/res/logos/helin.png",
+
+    website: "https://www.helindata.com/",
+  },
+  {
+    id: 93,
+    name: "WOFOST Model",
+    logo: "../../assets/res/logos/wageningen.png",
+
+    website: "https://www.wur.nl/en/Research-Results/Research-Institutes/Environmental-Research/Facilities-Tools/Software-models-and-databases/WOFOST.html",
+  },
+  {
+    id: 94,
+    name: "Noleko doo",
+    logo: "../../assets/res/logos/noleko.png",
+
+    website: "https://noleko.rs/",
+  },
+  {
+    id: 95,
+    name: "Vodena doo",
+    logo: "../../assets/res/logos/vodena.svg",
+
+    website: "https://vodena.rs/",
+  },
+  {
+    id: 96,
+    name: "Mototok International",
+    logo: "../../assets/res/logos/mototok.webp",
+
+    website: "https://www.mototok.com",
+  },
+  // {
+  //   id: ,
+  //   name: "",
+  //   logo: "",
+  //
+  //   website: "",
+  // },
+
 ];

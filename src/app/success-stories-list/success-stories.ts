@@ -1235,7 +1235,7 @@ export const stories = [
     videoUrl: ""
   },
    {
-    title: "Digital Twin for Active Sprayer Boom Yaw Control",
+    title: "Digital Twin for Active Sprayer Boom Yaw Control (ASBC)",
     subtitle: "",
     image: "../../assets/res/images/ASBC.png",
     urlName: "digital-twin-for-active-sprayer",

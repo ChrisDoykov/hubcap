@@ -2894,6 +2894,87 @@ export const stories = [
     tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-779w-4416-1324-354961661324",
     videoUrl: ""
   },
+   {
+    title: "Digital Twin for Active Sprayer Boom Roll Control (ARC)",
+    subtitle: "",
+    image: "../../assets/res/images/ARC.png",
+    urlName: "digital-twin-for-active-sprayer-roll-control",
+    quote: "Funding from HUBCAP enabled the consortium partners to hire additional personnel" +
+           " to develop an active controller for sprayer boom roll control." +
+           " The developed controller was tested and evaluated in a digital twin setting" +
+           " in order to minimise development costs and physical testing.",
+    quoteAttribution: "The ARC Team",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "The aim of the project was to develop and test a controller for active sprayer boom stabilization and control." +
+          " In order to achieve this, we explored opportunities to reduce physical testing" +
+          " and decided to utilise model-based engineering approaches. In collaboration with Danfoil," +
+          " we modelled a sprayer boom and developed an active roll axis controller specifically for the sprayer boom." +
+          " Whilst this model contains dynamics of movement in both heave and roll directions for multiple joints," +
+          " the primary focus of the project was evaluation of the controller tracking in the roll direction.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "The first step of the project was to create a model that depicted the roll and heave axis dynamics of the system." +
+          " For validation of this model," +
+          " multiple test datasets based on both manual step inputs with different actuation times were used," +
+          " to make sure that the model was accurate for various actuation scenarios. In the second step," +
+          " we developed a controller to keep the boom within the maximum allowed deviation when spraying." +
+          " This would mean the sprayer would maintain the boom within a stable position with minimal variation." +
+          " The controller performance was evaluated through the digital twin" +
+          " utilizing data from actual driving tests that cover the normal operation range of the boom during field spraying.",
+
+          "Using initial results from the evaluation," +
+          " we were able to fine-tune the controller and adjust the underlying model to achieve the desired performance.",
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "Funding from HUBCAP enabled the consortium partners to hire additional personnel" +
+          " to develop an active controller for sprayer boom roll control.",
+          ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "The progress made developing and testing an active controller for roll control using a digital twin with HUBCAP support," +
+          " motivated us to pursue a second project (ASBC) with HUBCAP that focused on active yaw control.",
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "Danfoil",
+          website: "https://www.danfoil.dk/",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Schmidt Innovation",
+          website: "https://sinno.dk/",
+        },
+      ],
+      dih: { name: "HUBCAP Denmark", website: "https://international.au.dk/" },
+      domains: [
+        "Agriculture",
+        "Digital Twin",
+        "Model-based controller design",
+        "Cyber-Physical system",
+      ],
+      impact: [
+        "Improved quality of digital controller testing.",
+        "Significant reduction of testing costs.",
+      ],
+    },
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-7793-4o16-1323-875321661323",
+    videoUrl: "https://www.youtube.com/embed/mEWPamjgVX0"
+  },
 
 ];
 

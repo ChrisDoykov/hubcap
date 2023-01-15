@@ -2899,7 +2899,7 @@ export const stories = [
     subtitle: "",
     image: "../../assets/res/images/ARC.png",
     urlName: "digital-twin-for-active-sprayer-roll-control",
-    quote: "Funding from HUBCAP enabled the consortium partners to hire additional personnel" +
+    quote: "Funding from the HUBCAP project enabled the consortium partners to hire additional personnel" +
            " to develop an active controller for sprayer boom roll control." +
            " The developed controller was tested and evaluated in a digital twin setting" +
            " in order to minimise development costs and physical testing.",
@@ -2935,7 +2935,7 @@ export const stories = [
       {
         sectionHeading: "HUBCAP support and platform opportunity",
         paragraphs: [
-          "Funding from HUBCAP enabled the consortium partners to hire additional personnel" +
+          "Funding from HUBCAP enabled us to hire additional personnel" +
           " to develop an active controller for sprayer boom roll control.",
           ],
       },
@@ -2943,7 +2943,7 @@ export const stories = [
         sectionHeading: "Forward look",
         paragraphs: [
           "The progress made developing and testing an active controller for roll control using a digital twin with HUBCAP support," +
-          " motivated us to pursue a second project (ASBC) with HUBCAP that focused on active yaw control.",
+          " motivated the consortium partners to pursue a second project (ASBC) with HUBCAP that focused on active yaw control.",
         ],
       },
     ],

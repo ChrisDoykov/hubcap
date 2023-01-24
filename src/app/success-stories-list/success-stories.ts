@@ -2975,6 +2975,94 @@ export const stories = [
     tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-7793-4o16-1323-875321661323",
     videoUrl: "https://www.youtube.com/embed/mEWPamjgVX0"
   },
+   {
+    title: "Development of AI-Enabled Active Feedback System for Atomic 3D Printing (3DAI)",
+    subtitle: "",
+    image: "../../assets/res/images/3DAI.png",
+    urlName: "3dai",
+    quote: "HUBCAP supported our experiments in using AI and ML in an active feedback system" +
+           " to improve atomic 3D printing for use in a production environment." +
+           " With the validation from our experiments," +
+           " Conductiv.ai will market its solution to other precision manufacturers and equipment vendors." +
+           " ATLANT will launch its hardware with dedicated AI process control," +
+           " and enter the market in a much stronger position.",
+    quoteAttribution: "Calvin Ng, Co-founder and CEO Conductiv.ai",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "Additive manufacturing is an inexact process plagued by anomalies and printing irregularities." +
+          " This issue motivated the project." +
+          " The main objective of the 3DAI experiment was to predict and optimize, continuously and autonomously," +
+          " properties like thickness, uniformity, time, and cost." +
+          " One method of achieving this is through the introduction and use of" +
+          " artificial intelligence (AI) and machine learning (ML) in the production pipeline." +
+          " We used the Conductiv.ai Recipe Optimizer, which incorporates Hybrid AI," +
+          " with federated learning to control the printing cycle of ATLANT's atomic 3D printing system" +
+          " and to adjust actively the printing process based on analysis of produced parts.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "ATLANT 3D Nanosystems performed 35 experiments using an atomic layer deposition (ALD)-enabled 3D printer," +
+          " producing a series of straight lines of varying thickness using TiO2 as material," +
+          " collecting the corresponding process data (e.g. gas flows, temperatures, pressure, and number of cycles)," +
+          " and measuring the resulting deposition thickness on a wafer. The experiments were successful.",
+
+          "Conductiv.ai developed a machine learning model and an end-to-end Minimal Viable Product (MVP)" +
+          " to handle the data ingestion, feature engineering, and automated modelling of the ALD process." +
+          " The model successfully characterized the process with less than 5% error." +
+          " The MVP was shown to visualize effectively the resulting print" +
+          " and allowed for instantaneous optimization of operational parameters of the printing system.",
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "In addition to funding and DIH support," +
+          " HUBCAP provided a diverse ecosystem to demonstrate and validate our tools across many different sectors.",
+          ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "Performing experiments where the material and printing pattern can be variables (rather than constants)" +
+          " and expanding the model capabilities to handle these variables in our predictions." +
+          " Also, further exploration of federated learning.",
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "ATLANT 3D Nanosystems",
+          website: "https://www.atlant3d.com/",
+        },
+      ],
+      techProviders: [
+        {
+          name: "Conductiv.ai",
+          website: "https://conductiv.ai/",
+        },
+      ],
+      dih: { name: "HUBCAP Sweden", website: "https://www.kth.se/en" },
+      domains: [
+        "Industrial Automation",
+      ],
+      impact: [
+        "Commercially feasible production quality atomic 3D printing.",
+
+        "Conductiv.ai AutoML Engine significantly reduces the need for specialized data engineers and data scientists.",
+
+        "Time needed to produce the ML models significantly reduced in comparison to manually produced models.",
+
+        "Conductiv.ai Recipe Optimizer significantly reduces the cost of optimizing parameter configurations.",
+      ],
+    },
+    tryItNowUrl: "",
+    videoUrl: "https://www.youtube.com/embed/RLKx0FJywi4"
+  },
 
 ];
 

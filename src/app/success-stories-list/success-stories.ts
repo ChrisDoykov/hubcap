@@ -3063,6 +3063,99 @@ export const stories = [
     tryItNowUrl: "",
     videoUrl: "https://www.youtube.com/embed/RLKx0FJywi4"
   },
+   {
+    title: "Cloud-Based Simulation of Evaporation Plants (EVAPOSIM)",
+    subtitle: "",
+    image: "../../assets/res/images/EVAPOSIM2.png",
+    urlName: "evaposim",
+    quote: "HUBCAP helped the consortium partners to come together and collaborate" +
+           " in the development and validation of web-based facilities for the modelling and simulation" +
+           " of steady state continuous processes in evaporation plants." +
+           " This includes the simple-to-use EVAPOSIM web app front end." +
+           " Thus, HUBCAP made the EVAPOSIM experiment possible.",
+    quoteAttribution: "Paolo Greppi, Founder and Technical Director Simevo",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "The design and operation of evaporation plants is complex but can be simplified, which motivated this project." +
+          " The objective of the EVAPOSIM experiment was to enable cloud-based simulation of evaporation plants," +
+          " facilitated by a simple-to-use, customized web application." +
+          " The simulation approach was based on first-principles, describing the behaviour of physical processes" +
+          " using fundamental laws of mass and energy conservation," +
+          " heat and mass transfer equations, and stoichiometric equations," +
+          " and using empirical engineering correlations from textbooks and open literature." +
+          " The processes were assumed to be in steady state" +
+          " and the physical quantities involved were assumed to be homogeneous.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "We started with an existing model of a triple-effect evaporator," +
+          " produced using the LIBPF™ process modelling and simulation system." +
+          " The fluids in the evaporation process were broken down into their constituents" +
+          " and expressed as a mixture of basic components defined using built-in LIBPF™ basic types." +
+          " We modelled the variables of an evaporation process to be monitored and/or controlled, including:" +
+          " temperatures (in the heat exchangers and evaporators)," +
+          " flow rates (to determine the inlet and outlet volumes)," +
+          " density of concentrate," +
+          " electrical conductivity of the distillate (to determine its purity)," +
+          " and pressures (in the evaporators, i.e. effects)." +
+          " Data on these variables was collected from over 40 instruments throughout the process" +
+          " and visualized using a directed graph," +
+          " where the nodes represent unit operations and the arcs are material streams." +
+          " Trends in the data for all variables were also visualized graphically." +
+          " The model was validated using real world data recorded in the evaporation plant" +
+          " during its startup and commissioning phase." +
+          " The model can be accessed, its set points can be changed," +
+          " and it can be run in 9 different modes of operation using the EVAPOSIM web app," +
+          " which was developed by the project.",
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "HUBCAP funded and supported the EVAPOSIM experiment." +
+          " ELYSIM is a previously developed web app, similar to EVAPOSIM," +
+          " designed to simulate alkaline electrolysis systems for hydrogen production," +
+          " and is demonstrated on the HUBCAP platform.",
+          ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "We hope to extend this research to support the training of operators" +
+          " and also the self-comparison and self-awareness of cyber-physical systems at run time.",
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "NBT Bulgaria",
+          website: "https://www.nbt.bg/en/",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Simevo",
+          website: "https://simevo.com/",
+        },
+      ],
+      dih: { name: "HUBCAP Italy", website: "https://www.polimi.it/" },
+      domains: [
+        "Environmental industry",
+      ],
+      impact: [
+        "Simplifying the HCI of evaporation plant control systems for operators.",
+
+        "Facilitating the design of, and the preparation of proposals for, new evaporation plants.",
+      ],
+    },
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=YC0f43sB9KyegeycBQW0",
+    videoUrl: ""
+  },
 
 ];
 

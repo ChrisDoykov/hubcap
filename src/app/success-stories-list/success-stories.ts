@@ -1231,7 +1231,7 @@ export const stories = [
         " best time to sell their crops.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9mh-4r16-0173-952311670173",
     videoUrl: ""
   },
    {
@@ -1320,7 +1320,7 @@ export const stories = [
         "Spray effectiveness and environmental impact.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9nc-4s16-0175-627361670175",
     videoUrl: "https://www.youtube.com/embed/mEWPamjgVX0"
   },
    {
@@ -1441,7 +1441,7 @@ export const stories = [
  title: "Autonomous Robotic UAV Platform for the ‘as-built’ Modeling of Building Assets",
  subtitle: "Autonomous Robotic UAV Platform for the ‘as-built’ Modelling of Building Assets",
  image: "../../assets/res/images/CPS4asBuild.png",
- urlName: "cps4as",
+ urlName: "cps4asbuild",
  quote: "The HUBCAP funding enabled the use of Model-Based Design techniques to assist VERTLINER to" +
    " evaluate the current performance of its aerial system in the given conditions, to help understand the" +
    " critical parameters that affect the system within its environment and mission profiles, while allowing" +
@@ -1552,7 +1552,7 @@ export const stories = [
      " based on the business strategy, the unique mission profiles, and customer needs.",
    ],
  },
- tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqmn-4y16-1202-062861671202",
+ tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqio-4916-1195-479531671195",
  videoUrl: "https://www.youtube.com/embed/ICB6OieUZWc"
 },
    {
@@ -2059,7 +2059,7 @@ export const stories = [
     " between two companies: on the one hand, the safety capabilities and optimization of an MBD platform, and on" +
     " the other hand, a real product with safety requirements.",
   image: "../../assets/res/images/safe2go.png",
-  urlName: "sage2go",
+  urlName: "safe2go",
   quote: "Hubcap has provided the framework to, from the most general to the most concrete contribution: know part" +
     " of the european MBD and CPS community, their products and challenges; allow to look for a complementary" +
     " partner and meet in depth its company and product, and last but not least, work in a real use case to help" +
@@ -2490,7 +2490,7 @@ export const stories = [
       " sensor-based Ultraviolet-C Air disinfection system (I-ON AIR) for HVAC systems by simulating dynamic real" +
       " duct airflow behavior.",
     image: "../../assets/res/images/simulair.png",
-    urlName: "simulair",
+    urlName: "simulair-cov19",
     quote: "HUBCAP has helped Alteria Automation (adopter) with two key facts:" +
       " We have improved our I-ON AIR range of UVC that disinfects the air by neutralizing virus, bacteria" +
       " and pathogens on HVAC systems. We have improved the efficiency 24% following the simulations" +
@@ -2604,7 +2604,7 @@ export const stories = [
         " Chemical) of the INTA (Ministry of Defence, Spain) in the effectiveness report issued in Jan 2021.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-d8v2-4v16-4481-483791674481",
     videoUrl: "https://www.youtube.com/embed/kENdKosPnns"
   },
    {
@@ -2802,7 +2802,7 @@ export const stories = [
         "Enabling intelligent Digital Twins to assist people in longevity and quality of life.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=Iy1oqXoB9KyegeyczwVm",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-779c-4116-1323-819251661323",
     videoUrl: "https://www.youtube.com/embed/OZ83AAxBjS4"
   },
    {

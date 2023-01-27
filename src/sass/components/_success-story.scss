@@ -29,13 +29,14 @@
   }
 
   &__image-box {
-    float: left;
+    float: none;
     shape-outside: border-box;
     border-radius: 1rem;
     max-width: fit-content;
     padding-right: 4rem;
-    margin-top: 2rem;
-
+    //margin-top: 2rem;
+    margin: auto;
+    display: block;
     @include respond(tab-port) {
       float: none;
       align-self: center;
@@ -106,7 +107,7 @@
   &__pullquote {
     font-size: 3rem !important;
     position: relative;
-    display:block;
+    display:inline-block;
     margin: 0em;
     padding: 0.5em 2em 0.5em 3em;
   }
@@ -150,12 +151,12 @@
 
   &__infobordercolor {
     border-color: $color-teal;
-  }  
+  }
 
   &__impactbordercolor {
     border-color: $color-primary;
   }
-  
+
   &__video {
     align-self: center;
     display: flex;

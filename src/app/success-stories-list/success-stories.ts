@@ -1320,7 +1320,7 @@ export const stories = [
         "Spray effectiveness and environmental impact.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9nc-4s16-0175-627361670175",
     videoUrl: "https://www.youtube.com/embed/mEWPamjgVX0"
   },
    {

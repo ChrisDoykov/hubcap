@@ -1437,7 +1437,7 @@ export const stories = [
  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqgz-4q16-1192-094421671192",
  videoUrl: "https://www.youtube.com/embed/u4eVtTE6vjc"
 },
-   {
+ {
  title: "Autonomous Robotic UAV Platform for the ‘as-built’ Modeling of Building Assets",
  subtitle: "Autonomous Robotic UAV Platform for the ‘as-built’ Modelling of Building Assets",
  image: "../../assets/res/images/CPS4asBuild.png",
@@ -1552,10 +1552,10 @@ export const stories = [
      " based on the business strategy, the unique mission profiles, and customer needs.",
    ],
  },
- tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqmn-4y16-1202-062861671202",
+ tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqio-4916-1195-479531671195",
  videoUrl: "https://www.youtube.com/embed/ICB6OieUZWc"
 },
-   {
+ {
   title: "Threat Management Platform for Citizens' Safety at Venues",
   subtitle: "",
   image: "../../assets/res/images/bie-t4s.png",
@@ -1638,7 +1638,7 @@ export const stories = [
   tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqjj-4316-1196-847791671196",
   videoUrl: "https://www.youtube.com/embed/vhl8gjxpKcc"
 },
-   {
+ {
   title: "Monitoring Environmental Conditions in Industrial Operations",
   subtitle: "",
   image: "../../assets/res/images/MENIoR-in-vivo.png",
@@ -1740,7 +1740,7 @@ export const stories = [
       " namely, “industrial installations”.",
     ],
   },
-  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqkd-4v16-1198-756671671198",
+  tryItNowUrl: "",
   videoUrl: "https://www.youtube.com/embed/jwOaEyEK1ho"
  },
   {

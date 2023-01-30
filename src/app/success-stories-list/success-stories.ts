@@ -798,7 +798,7 @@ export const stories = [
         " engineering.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9o1-4r16-0176-323391670176",
     videoUrl: ""
   },
    {

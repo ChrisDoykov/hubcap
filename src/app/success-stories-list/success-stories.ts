@@ -2604,7 +2604,7 @@ export const stories = [
         " Chemical) of the INTA (Ministry of Defence, Spain) in the effectiveness report issued in Jan 2021.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-d8v2-4v16-4481-483791674481",
     videoUrl: "https://www.youtube.com/embed/kENdKosPnns"
   },
    {
@@ -2802,7 +2802,7 @@ export const stories = [
         "Enabling intelligent Digital Twins to assist people in longevity and quality of life.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=Iy1oqXoB9KyegeyczwVm",
+    tryItNowUrl: "",
     videoUrl: "https://www.youtube.com/embed/OZ83AAxBjS4"
   },
    {
@@ -2891,7 +2891,7 @@ export const stories = [
         " PROSIM in the Cloud: Remote Automation Training Platform with Virtualized Infrastructure. Applied Sciences, 12(6), p.3038.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-779w-4416-1324-354961661324",
+    tryItNowUrl: "",
     videoUrl: ""
   },
    {
@@ -3060,7 +3060,7 @@ export const stories = [
         "Conductiv.ai Recipe Optimizer significantly reduces the cost of optimizing parameter configurations.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-dhg6-4916-5000-404291675000",
     videoUrl: "https://www.youtube.com/embed/RLKx0FJywi4"
   },
    {

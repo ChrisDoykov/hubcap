@@ -798,7 +798,7 @@ export const stories = [
         " engineering.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9o1-4r16-0176-323391670176",
+    tryItNowUrl: "",
     videoUrl: ""
   },
    {
@@ -997,7 +997,7 @@ export const stories = [
         "Decreased time of rapid prototyping hardware.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b3ui-4g16-9824-799481669824",
+    tryItNowUrl: "",
     videoUrl: "https://www.youtube.com/embed/L3VeIj6xq0A"
   },
    {

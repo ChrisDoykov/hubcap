@@ -3068,11 +3068,12 @@ export const stories = [
     subtitle: "",
     image: "../../assets/res/images/EVAPOSIM2.png",
     urlName: "evaposim",
-    quote: "HUBCAP helped the consortium partners to come together and collaborate" +
-           " in the development and validation of web-based facilities for the modelling and simulation" +
-           " of steady state continuous processes in evaporation plants." +
-           " This includes the simple-to-use EVAPOSIM web app front end." +
-           " Thus, HUBCAP made the EVAPOSIM experiment possible.",
+    quote: "HUBCAP helped the consortium partners to overcome the business-as-usual mindset." +
+           " We, as providers of technologies for the modelling and simulation of industrial continuous processes," +
+           " could allocate some resources to develop a new, cloud-based user interface, easier to deploy and to use:" +
+           " the EVAPOSIM web-app. NBT BULGARIA EOOD as supplier of industrial waste water treatment plants," +
+           " had the opportunity to adapt their internal workflows during the planning and realization phases" +
+           " of their evaporation plants, to exploit more accurate design data from the EVAPOSIM web-app.",
     quoteAttribution: "Paolo Greppi, Founder and Technical Director Simevo",
     sections: [
       {

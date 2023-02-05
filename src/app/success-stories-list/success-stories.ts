@@ -798,7 +798,7 @@ export const stories = [
         " engineering.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9o1-4r16-0176-323391670176",
     videoUrl: ""
   },
    {
@@ -997,7 +997,7 @@ export const stories = [
         "Decreased time of rapid prototyping hardware.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b3ui-4g16-9824-799481669824",
     videoUrl: "https://www.youtube.com/embed/L3VeIj6xq0A"
   },
    {
@@ -1231,7 +1231,7 @@ export const stories = [
         " best time to sell their crops.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9mh-4r16-0173-952311670173",
     videoUrl: ""
   },
    {
@@ -1740,7 +1740,7 @@ export const stories = [
       " namely, “industrial installations”.",
     ],
   },
-  tryItNowUrl: "",
+  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqkd-4v16-1198-756671671198",
   videoUrl: "https://www.youtube.com/embed/jwOaEyEK1ho"
  },
   {
@@ -2059,7 +2059,7 @@ export const stories = [
     " between two companies: on the one hand, the safety capabilities and optimization of an MBD platform, and on" +
     " the other hand, a real product with safety requirements.",
   image: "../../assets/res/images/safe2go.png",
-  urlName: "sage2go",
+  urlName: "safe2go",
   quote: "Hubcap has provided the framework to, from the most general to the most concrete contribution: know part" +
     " of the european MBD and CPS community, their products and challenges; allow to look for a complementary" +
     " partner and meet in depth its company and product, and last but not least, work in a real use case to help" +
@@ -2802,7 +2802,7 @@ export const stories = [
         "Enabling intelligent Digital Twins to assist people in longevity and quality of life.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-779c-4116-1323-819251661323",
     videoUrl: "https://www.youtube.com/embed/OZ83AAxBjS4"
   },
    {
@@ -2891,7 +2891,7 @@ export const stories = [
         " PROSIM in the Cloud: Remote Automation Training Platform with Virtualized Infrastructure. Applied Sciences, 12(6), p.3038.",
       ],
     },
-    tryItNowUrl: "",
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-dfxy-4q16-4909-514821674909",
     videoUrl: ""
   },
    {
@@ -2973,7 +2973,7 @@ export const stories = [
       ],
     },
     tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-7793-4o16-1323-875321661323",
-    videoUrl: "https://www.youtube.com/embed/mEWPamjgVX0"
+    videoUrl: ""
   },
    {
     title: "Development of AI-Enabled Active Feedback System for Atomic 3D Printing (3DAI)",
@@ -3154,8 +3154,8 @@ export const stories = [
         "Facilitating the design of, and the preparation of proposals for, new evaporation plants.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=YC0f43sB9KyegeycBQW0",
-    videoUrl: ""
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-dhgt-4116-5001-857171675001",
+    videoUrl: "https://www.youtube.com/embed/O8zZgmSq_3Q"
   },
 
 ];

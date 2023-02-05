@@ -109,10 +109,12 @@
     </p>
   </div>
 
+
   <blockquote class="success-story__pullquote success-story__quotecolor">
     <p>{{ story.quote }}</p>
     <footer><cite>{{ story.quoteAttribution }}</cite></footer>
   </blockquote>
+
 
   <div class="success-story__top-right">
     <div class="success-story__info-box success-story__impactbordercolor">
@@ -120,9 +122,9 @@
       ><b class="u-is-bold">Impact: </b
       ></p>
       <ul class="success-story__info-box__line">
-        <span *ngFor="let impact of story.info.impact; let i = index"><li>{{ impact}}</li
+        <span *ngFor="let impact of story.info.impact; let i = index"><li>{{impact}}</li
         ></span
-      ></ul>    
+      ></ul>
     </div>
   </div>
 
@@ -139,7 +141,7 @@
     >
       {{ paragraph }}
     </p>
-  </div>  
+  </div>
 
   <div class="success-story__image-box">
     <img

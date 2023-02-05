@@ -997,7 +997,7 @@ export const stories = [
         "Decreased time of rapid prototyping hardware.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b3ui-4g16-9824-799481669824",
+    tryItNowUrl: "",
     videoUrl: "https://www.youtube.com/embed/L3VeIj6xq0A"
   },
    {
@@ -1231,7 +1231,7 @@ export const stories = [
         " best time to sell their crops.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-b9mh-4r16-0173-952311670173",
+    tryItNowUrl: "",
     videoUrl: ""
   },
    {
@@ -1437,11 +1437,11 @@ export const stories = [
  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqgz-4q16-1192-094421671192",
  videoUrl: "https://www.youtube.com/embed/u4eVtTE6vjc"
 },
-   {
+ {
  title: "Autonomous Robotic UAV Platform for the ‘as-built’ Modeling of Building Assets",
  subtitle: "Autonomous Robotic UAV Platform for the ‘as-built’ Modelling of Building Assets",
  image: "../../assets/res/images/CPS4asBuild.png",
- urlName: "cps4asbuild",
+ urlName: "cps4as",
  quote: "The HUBCAP funding enabled the use of Model-Based Design techniques to assist VERTLINER to" +
    " evaluate the current performance of its aerial system in the given conditions, to help understand the" +
    " critical parameters that affect the system within its environment and mission profiles, while allowing" +
@@ -1555,7 +1555,7 @@ export const stories = [
  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqio-4916-1195-479531671195",
  videoUrl: "https://www.youtube.com/embed/ICB6OieUZWc"
 },
-   {
+ {
   title: "Threat Management Platform for Citizens' Safety at Venues",
   subtitle: "",
   image: "../../assets/res/images/bie-t4s.png",
@@ -1638,7 +1638,7 @@ export const stories = [
   tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqjj-4316-1196-847791671196",
   videoUrl: "https://www.youtube.com/embed/vhl8gjxpKcc"
 },
-   {
+ {
   title: "Monitoring Environmental Conditions in Industrial Operations",
   subtitle: "",
   image: "../../assets/res/images/MENIoR-in-vivo.png",
@@ -1740,7 +1740,7 @@ export const stories = [
       " namely, “industrial installations”.",
     ],
   },
-  tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-bqkd-4v16-1198-756671671198",
+  tryItNowUrl: "",
   videoUrl: "https://www.youtube.com/embed/jwOaEyEK1ho"
  },
   {
@@ -2059,7 +2059,7 @@ export const stories = [
     " between two companies: on the one hand, the safety capabilities and optimization of an MBD platform, and on" +
     " the other hand, a real product with safety requirements.",
   image: "../../assets/res/images/safe2go.png",
-  urlName: "safe2go",
+  urlName: "sage2go",
   quote: "Hubcap has provided the framework to, from the most general to the most concrete contribution: know part" +
     " of the european MBD and CPS community, their products and challenges; allow to look for a complementary" +
     " partner and meet in depth its company and product, and last but not least, work in a real use case to help" +
@@ -2490,7 +2490,7 @@ export const stories = [
       " sensor-based Ultraviolet-C Air disinfection system (I-ON AIR) for HVAC systems by simulating dynamic real" +
       " duct airflow behavior.",
     image: "../../assets/res/images/simulair.png",
-    urlName: "simulair-cov19",
+    urlName: "simulair",
     quote: "HUBCAP has helped Alteria Automation (adopter) with two key facts:" +
       " We have improved our I-ON AIR range of UVC that disinfects the air by neutralizing virus, bacteria" +
       " and pathogens on HVAC systems. We have improved the efficiency 24% following the simulations" +
@@ -2802,7 +2802,7 @@ export const stories = [
         "Enabling intelligent Digital Twins to assist people in longevity and quality of life.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-779c-4116-1323-819251661323",
+    tryItNowUrl: "",
     videoUrl: "https://www.youtube.com/embed/OZ83AAxBjS4"
   },
    {
@@ -2891,7 +2891,7 @@ export const stories = [
         " PROSIM in the Cloud: Remote Automation Training Platform with Virtualized Infrastructure. Applied Sciences, 12(6), p.3038.",
       ],
     },
-    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-779w-4416-1324-354961661324",
+    tryItNowUrl: "",
     videoUrl: ""
   },
    {
@@ -2974,6 +2974,188 @@ export const stories = [
     },
     tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-7793-4o16-1323-875321661323",
     videoUrl: "https://www.youtube.com/embed/mEWPamjgVX0"
+  },
+   {
+    title: "Development of AI-Enabled Active Feedback System for Atomic 3D Printing (3DAI)",
+    subtitle: "",
+    image: "../../assets/res/images/3DAI.png",
+    urlName: "3dai",
+    quote: "HUBCAP supported our experiments in using AI and ML in an active feedback system" +
+           " to improve atomic 3D printing for use in a production environment." +
+           " With the validation from our experiments," +
+           " Conductiv.ai will market its solution to other precision manufacturers and equipment vendors." +
+           " ATLANT will launch its hardware with dedicated AI process control," +
+           " and enter the market in a much stronger position.",
+    quoteAttribution: "Calvin Ng, Co-founder and CEO Conductiv.ai",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "Additive manufacturing is an inexact process plagued by anomalies and printing irregularities." +
+          " This issue motivated the project." +
+          " The main objective of the 3DAI experiment was to predict and optimize, continuously and autonomously," +
+          " properties like thickness, uniformity, time, and cost." +
+          " One method of achieving this is through the introduction and use of" +
+          " artificial intelligence (AI) and machine learning (ML) in the production pipeline." +
+          " We used the Conductiv.ai Recipe Optimizer, which incorporates Hybrid AI," +
+          " with federated learning to control the printing cycle of ATLANT's atomic 3D printing system" +
+          " and to adjust actively the printing process based on analysis of produced parts.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "ATLANT 3D Nanosystems performed 35 experiments using an atomic layer deposition (ALD)-enabled 3D printer," +
+          " producing a series of straight lines of varying thickness using TiO2 as material," +
+          " collecting the corresponding process data (e.g. gas flows, temperatures, pressure, and number of cycles)," +
+          " and measuring the resulting deposition thickness on a wafer. The experiments were successful.",
+
+          "Conductiv.ai developed a machine learning model and an end-to-end Minimal Viable Product (MVP)" +
+          " to handle the data ingestion, feature engineering, and automated modelling of the ALD process." +
+          " The model successfully characterized the process with less than 5% error." +
+          " The MVP was shown to visualize effectively the resulting print" +
+          " and allowed for instantaneous optimization of operational parameters of the printing system.",
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "In addition to funding and DIH support," +
+          " HUBCAP provided a diverse ecosystem to demonstrate and validate our tools across many different sectors.",
+          ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "Performing experiments where the material and printing pattern can be variables (rather than constants)" +
+          " and expanding the model capabilities to handle these variables in our predictions." +
+          " Also, further exploration of federated learning.",
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "ATLANT 3D Nanosystems",
+          website: "https://www.atlant3d.com/",
+        },
+      ],
+      techProviders: [
+        {
+          name: "Conductiv.ai",
+          website: "https://conductiv.ai/",
+        },
+      ],
+      dih: { name: "HUBCAP Sweden", website: "https://www.kth.se/en" },
+      domains: [
+        "Industrial Automation",
+      ],
+      impact: [
+        "Commercially feasible production quality atomic 3D printing.",
+
+        "Conductiv.ai AutoML Engine significantly reduces the need for specialized data engineers and data scientists.",
+
+        "Time needed to produce the ML models significantly reduced in comparison to manually produced models.",
+
+        "Conductiv.ai Recipe Optimizer significantly reduces the cost of optimizing parameter configurations.",
+      ],
+    },
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=HC582649-dhg6-4916-5000-404291675000",
+    videoUrl: "https://www.youtube.com/embed/RLKx0FJywi4"
+  },
+   {
+    title: "Cloud-Based Simulation of Evaporation Plants (EVAPOSIM)",
+    subtitle: "",
+    image: "../../assets/res/images/EVAPOSIM2.png",
+    urlName: "evaposim",
+    quote: "HUBCAP helped the consortium partners to overcome the business-as-usual mindset." +
+           " We, as providers of technologies for the modelling and simulation of industrial continuous processes," +
+           " could allocate some resources to develop a new, cloud-based user interface, easier to deploy and to use:" +
+           " the EVAPOSIM web-app. NBT BULGARIA EOOD as supplier of industrial waste water treatment plants," +
+           " had the opportunity to adapt their internal workflows during the planning and realization phases" +
+           " of their evaporation plants, to exploit more accurate design data from the EVAPOSIM web-app.",
+    quoteAttribution: "Paolo Greppi, Founder and Technical Director Simevo",
+    sections: [
+      {
+        sectionHeading: "Problem and solution",
+        paragraphs: [
+          "The design and operation of evaporation plants is complex but can be simplified, which motivated this project." +
+          " The objective of the EVAPOSIM experiment was to enable cloud-based simulation of evaporation plants," +
+          " facilitated by a simple-to-use, customized web application." +
+          " The simulation approach was based on first-principles, describing the behaviour of physical processes" +
+          " using fundamental laws of mass and energy conservation," +
+          " heat and mass transfer equations, and stoichiometric equations," +
+          " and using empirical engineering correlations from textbooks and open literature." +
+          " The processes were assumed to be in steady state" +
+          " and the physical quantities involved were assumed to be homogeneous.",
+        ],
+      },
+      {
+        sectionHeading: "What we did",
+        paragraphs: [
+          "We started with an existing model of a triple-effect evaporator," +
+          " produced using the LIBPF™ process modelling and simulation system." +
+          " The fluids in the evaporation process were broken down into their constituents" +
+          " and expressed as a mixture of basic components defined using built-in LIBPF™ basic types." +
+          " We modelled the variables of an evaporation process to be monitored and/or controlled, including:" +
+          " temperatures (in the heat exchangers and evaporators)," +
+          " flow rates (to determine the inlet and outlet volumes)," +
+          " density of concentrate," +
+          " electrical conductivity of the distillate (to determine its purity)," +
+          " and pressures (in the evaporators, i.e. effects)." +
+          " Data on these variables was collected from over 40 instruments throughout the process" +
+          " and visualized using a directed graph," +
+          " where the nodes represent unit operations and the arcs are material streams." +
+          " Trends in the data for all variables were also visualized graphically." +
+          " The model was validated using real world data recorded in the evaporation plant" +
+          " during its startup and commissioning phase." +
+          " The model can be accessed, its set points can be changed," +
+          " and it can be run in 9 different modes of operation using the EVAPOSIM web app," +
+          " which was developed by the project.",
+        ],
+      },
+      {
+        sectionHeading: "HUBCAP support and platform opportunity",
+        paragraphs: [
+          "HUBCAP funded and supported the EVAPOSIM experiment." +
+          " ELYSIM is a previously developed web app, similar to EVAPOSIM," +
+          " designed to simulate alkaline electrolysis systems for hydrogen production," +
+          " and is demonstrated on the HUBCAP platform.",
+          ],
+      },
+      {
+        sectionHeading: "Forward look",
+        paragraphs: [
+          "We hope to extend this research to support the training of operators" +
+          " and also the self-comparison and self-awareness of cyber-physical systems at run time.",
+        ],
+      },
+    ],
+    info: {
+      endUsers: [
+        {
+          name: "NBT Bulgaria",
+          website: "https://www.nbt.bg/en/",
+        }
+      ],
+      techProviders: [
+        {
+          name: "Simevo",
+          website: "https://simevo.com/",
+        },
+      ],
+      dih: { name: "HUBCAP Italy", website: "https://www.polimi.it/" },
+      domains: [
+        "Environmental industry",
+      ],
+      impact: [
+        "Simplifying the HCI of evaporation plant control systems for operators.",
+
+        "Facilitating the design of, and the preparation of proposals for, new evaporation plants.",
+      ],
+    },
+    tryItNowUrl: "https://hubcap-portal.eng.it/group/guest/catalogue-detail?d_eid=YC0f43sB9KyegeycBQW0",
+    videoUrl: ""
   },
 
 ];

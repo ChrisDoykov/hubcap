@@ -317,7 +317,6 @@ export class NewsComponent implements OnInit {
           }
         );
       this.onResize();
-      this.checkPosition();
     }
   }
 
@@ -381,11 +380,9 @@ export class NewsComponent implements OnInit {
       );
 
     this.onResize();
-    this.checkPosition();
   }
 
   width: number;
-  elements_fade_in: any;
   windowHeight: any;
 
   onResize() {
@@ -395,23 +392,9 @@ export class NewsComponent implements OnInit {
       document.getElementById("hero-title").textContent = "Latest News";
     }
 
-    this.elements_fade_in = document.querySelectorAll(".hidden-fade-in-news");
+
     this.windowHeight = window.innerHeight;
   }
 
-  checkPosition() {
-    if (this.elements_fade_in.length <= 0) {
-      this.elements_fade_in = document.querySelectorAll(".hidden-fade-in-news");
-    }
-    for (let i = 0; i < this.elements_fade_in.length; i++) {
-      let element = this.elements_fade_in[i];
-      let positionFromTop =
-        this.elements_fade_in[i].getBoundingClientRect().top;
 
-      if (positionFromTop - this.windowHeight <= 0) {
-        element.classList.add("u-fade-in");
-        element.classList.remove("hidden-fade-in");
-      }
-    }
-  }
 }

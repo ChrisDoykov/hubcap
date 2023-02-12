@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { WINNERS, SME } from "./winners-list";
 
 export interface Partner {
   id: number;
@@ -128,6 +129,13 @@ const PARTNERS: Partner[] = [
     title: "",
     website: "http://www.ttsnetwork.com/en/",
   },
+  {
+    id: 18,
+    name: "European Commission",
+    logo: "../../assets/res/logos/European_Commission.png",
+    title: "",
+    website: "https://commission.europa.eu/index_en",
+  },
 ];
 
 @Component({
@@ -141,18 +149,56 @@ export class PartnersComponent implements OnInit {
   elements_fade_in: any;
   windowHeight: any;
 
+  winners: SME[] = WINNERS;
+  rowsOf4: [SME[]] = [[]];
+  rowsOf5: [SME[]] = [[]];
+  rowsOf6: [SME[]] = [[]];
+  rowsOf7: [SME[]] = [[]];
+
   ngOnInit(): void {
     document.title = "Our Partners | HUBCAP";
     if (document.getElementById("hero-title") !== null) {
       document.getElementById("hero-title").textContent = "Our Partners";
     }
+
+    let size = 4;
+    let sizeOf5 = 5;
+    let sizeOf6 = 6;
+    let sizeOf7 = 7;
+    this.rowsOf4.splice(0, 1);
+    this.rowsOf5.splice(0, 1);
+    this.rowsOf6.splice(0, 1);
+    this.rowsOf4.push(this.winners.slice(0, 3));
+    this.rowsOf5.push(this.winners.slice(0, 4));
+    this.rowsOf6.push(this.winners.slice(0, 5));
+    this.rowsOf7.push(this.winners.slice(0, 6));
+    for (let i = 3; i < this.winners.length; i += size) {
+      this.rowsOf4.push(this.winners.slice(i, i + size));
+    }
+    for (let i = 4; i < this.winners.length; i += sizeOf5) {
+      this.rowsOf5.push(this.winners.slice(i, i + sizeOf5));
+    }
+    for (let i = 5; i < this.winners.length; i += sizeOf6) {
+      this.rowsOf6.push(this.winners.slice(i, i + sizeOf6));
+    }
+    for (let i = 6; i < this.winners.length; i += sizeOf7) {
+      this.rowsOf7.push(this.winners.slice(i, i + sizeOf7));
+    }
+
     this.onResize();
     this.checkPosition();
 
+    let halfScreen = window.innerHeight / 2;
+
     if (this.width >= 1000) {
-      let halfScreen = window.innerHeight / 2;
       window.scrollTo(0, halfScreen);
     }
+    if (halfScreen * 2 - this.windowHeight == 0) {
+      window.scrollTo(0, halfScreen + 1);
+    }
+
+
+
   }
 
   onResize() {
@@ -189,4 +235,5 @@ export class PartnersComponent implements OnInit {
     document.getElementById(id).scrollIntoView({ block: "center" });
   }
   partners = PARTNERS;
+
 }

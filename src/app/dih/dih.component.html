@@ -3,7 +3,7 @@
   (window:resize)="onResize()"
   (window:scroll)="checkPosition()"
 >
-  <div class="opening u-justify-text">
+  <div class="opening u-justify-text space">
     <h1
       class="
         heading-primary
@@ -14,429 +14,912 @@
     >
       Digital Innovation Hubs
     </h1>
-
+    <br>
     <p class="paragraph paragraph--big">
-      Our network of Digital Innovation Hubs (DIHs) gives SMEs an easy entry
+      Our network of
+      <a target="_blank" href="https://dih4industry.eu/welcome/">Digital Innovation Hubs (DIHs)</a>
+      gives SMEs an easy entry
       route to Model-Based Design (MBD) for Cyber-Physical Systems (CPSs). The
       network offers a comprehensive set of digital innovation services,
       including supporting businesses to experiment, find investments and
       business opportunities, and access skills and training.
     </p>
+    <br>
+    <br>
+    <br>
   </div>
-  <figure class="figure">
-    <img
-      class="modal-button figure__image"
-      data-target="imageTwo"
-      aria-haspopup="true"
-      src="../../assets/res/images/dih.webp"
-      default="../../assets/res/images/dih.png"
-      alt="Map of HUBCAP Digital Innovation Hubs"
-    />
-    <figcaption class="figure__caption">
-      Our network of Digital Innovation Hubs.
-    </figcaption>
-  </figure>
 
-  <div class="hub row hidden-fade-in" id="Austria">
-    <div class="col-1-of-3 hub__gallery hub__gallery--austria">
-      <!-- <swiper [config]="config">
-        <div class="hub__gallery__slide" *ngFor="let image of hubs_images[0]">
-          <div class="swiper-zoom-container">
-            <img class="hub__gallery__slide__image" src="{{ image }}" alt="" />
+
+<!--  <figure class="figure">-->
+<!--    <img-->
+<!--      class="modal-button figure__image"-->
+<!--      data-target="imageTwo"-->
+<!--      aria-haspopup="true"-->
+<!--      src="../../assets/res/images/dih.webp"-->
+<!--      default="../../assets/res/images/dih.png"-->
+<!--      alt="Map of HUBCAP Digital Innovation Hubs"-->
+<!--    />-->
+<!--    <figcaption class="figure__caption">-->
+<!--      Our network of Digital Innovation Hubs.-->
+<!--    </figcaption>-->
+<!--  </figure>-->
+<!--  <div>-->
+<!--    <div class="hub row hidden-fade-in">-->
+<!--      <div class="col-1-of-2 hub__content">-->
+<!--        <h2 class="hub__name u-center-text">Austria</h2>-->
+<!--        <div class="hub__text u-justify-text-tab-port">-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="bold">HUBCAP</span> Austria is hosted by the-->
+<!--            <a target="_blank" href="https://www.v2c2.at/"-->
+<!--            >Virtual Vehicle Research Center</a-->
+<!--            >-->
+<!--            GmbH which is Europe’s largest R&D center for virtual vehicle-->
+<!--            technology with 300 employees. Research priority is the linking of-->
+<!--            numerical simulations and hardware testing, which leads to a powerful-->
+<!--            HW-SW whole system design and automation of testing and validation-->
+<!--            procedures. Following this focus on industry-related research VIRTUAL-->
+<!--            VEHICLE is the innovation catalyst for future vehicle technologies.-->
+<!--          </p>-->
+<!--          <div class="hub__gallery hub__gallery&#45;&#45;austria center">-->
+<!--            &lt;!&ndash; <swiper [config]="config">-->
+<!--              <div class="hub__gallery__slide" *ngFor="let image of hubs_images[0]">-->
+<!--                <div class="swiper-zoom-container">-->
+<!--                  <img class="hub__gallery__slide__image" src="{{ image }}" alt="" />-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="swiper-button-prev"></div>-->
+<!--              <div class="swiper-button-next"></div>-->
+<!--            </swiper> &ndash;&gt;-->
+<!--          </div>-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            The international partner network of VIRTUAL VEHICLE consists of-->
+<!--            around 100 national and international industrial partners (OEMs, Tier-->
+<!--            1 and Tier 2 suppliers as well as software providers) as well as over-->
+<!--            40 national and international scientific institutions.-->
+<!--          </p>-->
+<!--          &lt;!&ndash; <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            Contact <span class="bold">HUBCAP</span> Austria via the-->
+<!--            <a-->
+<!--              href="mailto:info@hubcap.eu?subject=Inquiry%20for%20HUBCAP%20Austria"-->
+<!--              >Service Centre</a-->
+<!--            >.-->
+<!--          </p> &ndash;&gt;-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-map-marker-alt u-is-black-color"></i>Inffeldgasse-->
+<!--              21a. 8010 Graz, Austria-->
+<!--            </span>-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-phone u-is-black-color"></i>-->
+<!--              <a href="tel:+43 316 873 9001">+43 316 873 9001</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-at u-is-black-color"></i>-->
+<!--              <a href="mailto:info@v2c2.at">info@v2c2.at</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line"-->
+<!--            ><i class="fas fa-globe-europe u-is-black-color"></i-->
+<!--            ><a href="https://www.v2c2.at/" target="_blank">www.v2c2.at</a>-->
+<!--            </span>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-1-of-2 hub__content">-->
+<!--        <h2 class="hub__name u-center-text">Denmark</h2>-->
+<!--        <div class="hub__text u-justify-text-tab-port">-->
+<!--          <p class="paragraph paragraph&#45;&#45;big u-margin-bottom-small">-->
+<!--            <span class="bold">HUBCAP</span> Denmark specialises in software-->
+<!--            engineering for complex Cyber-Physical Systems, including system-->
+<!--            modelling methodologies and tools (Model-Based Design, Vienna-->
+<!--            Development Method), predictive and software analysis (formal methods,-->
+<!--            theorem proving, and machine learning), and co-simulation. These core-->
+<!--            areas of expertise are seamlessly integrated within Digital Twin-->
+<!--            platforms. Aarhus University’s Digital Innovation Hub provides-->
+<!--            expertise to its collaborators in the areas covered by its two main-->
+<!--            centres:-->
+<!--          </p>-->
+<!--          <div-->
+<!--            *ngIf="width > 900"-->
+<!--            class="hub__gallery hub__gallery&#45;&#45;denmark center"-->
+<!--          ></div>-->
+<!--          <ul class="hub__list">-->
+<!--            <li class="hub__list__item">-->
+<!--              The Centre for Digitalisation, Big Data and Data Analytics (-->
+<!--              <a target="_blank" href="https://digit.au.dk/">“DIGIT”</a>)-->
+<!--            </li>-->
+<!--            <li class="hub__list__item">The AU Centre for Digital Twins.</li>-->
+<!--          </ul>-->
+
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-map-marker-alt u-is-black-color"></i>Department of-->
+<!--              Engineering - Cyber-Physical Systems, Åbogade 34, building 5341,-->
+<!--              8200 Aarhus N, Denmark-->
+<!--            </span>-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-at u-is-black-color"></i>-->
+<!--              <a href="mailto:hdm@eng.au.dk">hdm@eng.au.dk</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line"-->
+<!--            ><i class="fas fa-globe-europe u-is-black-color"></i-->
+<!--            ><a href="https://digit.au.dk/" target="_blank">digit.au.dk</a>-->
+<!--            </span>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="hub row hidden-fade-in">-->
+<!--      <div class="col-1-of-2 hub__content">-->
+<!--        <h2 class="hub__name u-center-text">Germany</h2>-->
+<!--        <div class="hub__text u-justify-text-tab-port">-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="bold">HUBCAP</span> Germany is hosted by-->
+<!--            <a target="_blank" href="https://www.fortiss.org/en/">fortiss</a> in-->
+<!--            Munich. fortiss provides expertise in a range of fields including-->
+<!--            model-based software and systems engineering, model-based synthesis,-->
+<!--            design space exploration, analysis and design of dependable systems,-->
+<!--            and software engineering of smart CPS in various domains such as-->
+<!--            automotive, smart energy, or industrial automation. A particular-->
+<!--            emphasis will be laid on the intersection of software engineering and-->
+<!--            the increasingly important field of Artificial Intelligence. To this-->
+<!--            end, HUBCAP Germany builds on the-->
+<!--            <a-->
+<!--              target="_blank"-->
+<!--              href="https://www.fortiss.org/en/about-fortiss/ai-center/munich-innovation-hub-for-applied-ai"-->
+<!--            >Munich Innovation Hub for Applied AI</a-->
+<!--            >, which integrates AI research with innovation support activities for-->
+<!--            entrepreneurs, startups, and SMEs, to foster and accelerate the-->
+<!--            adoption of AI solutions by industry.-->
+<!--          </p>-->
+<!--          <div class="center hub__gallery hub__gallery&#45;&#45;germany"></div>-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-map-marker-alt u-is-black-color"></i-->
+<!--              >Lichtenbergstraße 6, 85748 Garching, Germany-->
+<!--            </span>-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-phone u-is-black-color"></i>-->
+<!--              <a href="tel:+49 89 3603522 29">+49 89 3603522 29</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-at u-is-black-color"></i>-->
+<!--              <a href="mailto:pfeifer@fortiss.org">pfeifer@fortiss.org</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line"-->
+<!--            ><i class="fas fa-globe-europe u-is-black-color"></i-->
+<!--            ><a href="https://www.appliedai.eu/" target="_blank">-->
+<!--                www.appliedai.eu</a-->
+<!--            >-->
+<!--            </span>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-1-of-2 hub__content">-->
+<!--        <h2 class="hub__name u-center-text">Sweden</h2>-->
+<!--        <div class="hub__text u-justify-text-tab-port">-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            In Sweden <span class="bold">HUBCAP</span> is represented by the KTH-->
+<!--            Digital Innovation Hub on Industrial Digitalization, the DIHID.-->
+<!--            Located at the-->
+<!--            <a href="https://www.kth.se/mmk/" target="_blank"-->
+<!--            >Mechatronics Division at KTH</a-->
+<!--            >-->
+<!--            in Stockholm, the DIHID acts as a meeting ground for Tech Scaleups,-->
+<!--            Industry and Academic Faculties. We offer expertise, testbeds and-->
+<!--            professional training within the domains of Robotics, Model Based-->
+<!--            Design, Autonomous Systems and Machine Learning. DIHID also organizes-->
+<!--            expert talks and conferences to share knowledge between-->
+<!--            engineering/scientific disciplines and academia-industry. Furthermore,-->
+<!--            DIHID is involved in the newly launched PECA initiative, which offers-->
+<!--            a new approach on life-long learning for Swedish Industry.-->
+<!--          </p>-->
+<!--          <div-->
+<!--            class="center hub__gallery hub__gallery&#45;&#45;sweden"-->
+<!--          ></div>-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            Our clients work with industrial digitalization on both a strategic-->
+<!--            and technical level. They are leaders and visionaries, practitioners-->
+<!--            and strategists who develop and produce products, services and-->
+<!--            knowledge. We have a close partnership, via our industry network-->
+<!--            <a href="https://www.ices.kth.se/" target="_blank">ICES</a>, with more-->
+<!--            than 30 companies and organizations.-->
+<!--          </p>-->
+
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-phone u-is-black-color"></i>-->
+<!--              <a href="tel:+46 8 790 74 05">+46 8 790 74 05</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-at u-is-black-color"></i>-->
+<!--              <a href="mailto:fasplund@kth.se">fasplund@kth.se</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line"-->
+<!--            ><i class="fas fa-globe-europe u-is-black-color"></i-->
+<!--            ><a href="https://www.ices.kth.se/" target="_blank"-->
+<!--            >www.ices.kth.se</a-->
+<!--            >-->
+<!--            </span>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="hub row hidden-fade-in">-->
+<!--      <div class="col-1-of-2 hub__content">-->
+<!--        <h2 class="hub__name u-center-text">Italy</h2>-->
+<!--        <div class="hub__text u-justify-text-tab-port">-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="bold">HUBCAP</span> Italy led by Politecnico di Milano,-->
+<!--            is located in Milan, while a satellite centre hosted by Fondazione-->
+<!--            Bruno Kessler is located in Trento. The Milan site focuses on-->
+<!--            manufacturing industry, hosting an Industry 4.0 Lab experimental-->
+<!--            facility, a CPS-based training and experimental facility. The centre-->
+<!--            plays a leading role in the Milan Competence Center (MADE in Italy) of-->
+<!--            the Industry 4.0 Italian National Plan, carrying out experiments in-->
+<!--            Industry 4.0 including CPS manufacturing. The Trento satellite focuses-->
+<!--            on high quality research with impact to market and society, including-->
+<!--            expertise and tools for MBD, verification, validation, and safety-->
+<!--            analysis. Besides the physical spaces, both sites offer services such-->
+<!--            as training courses, support for participating in research projects,-->
+<!--            sharing of utilities costs and IT services.-->
+<!--          </p>-->
+<!--          &lt;!&ndash; <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            Contact <span class="bold">HUBCAP</span> Italy via the-->
+<!--            <a href="mailto:info@hubcap.eu?subject=Inquiry%20for%20HUBCAP%20Italy"-->
+<!--              >Service Centre</a-->
+<!--            >.-->
+<!--          </p> &ndash;&gt;-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-map-marker-alt u-is-black-color"></i>-->
+<!--              <span class="bold">Politecnico di Milano</span> - Piazza Leonardo da-->
+<!--              Vinci 32, 20133 Milan, Italy | <span class="bold">FBK</span> - Via-->
+<!--              Sommarive, 18, 38123 Trento, Italy-->
+<!--            </span>-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-phone u-is-black-color"></i>-->
+<!--              <span class="bold">Politecnico di Milano</span> :-->
+<!--              <a href="tel:+39 02 2399 2716">+39 02 2399 2716</a> |-->
+<!--              <span class="bold">FBK</span> :-->
+<!--              <a href="tel:+390461314359">+390461314359</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-at u-is-black-color"></i>-->
+<!--              <span class="bold">Politecnico di Milano</span> - -->
+<!--              <a href="mailto:claudio.sassanelli@polimi.it" target="_blank"-->
+<!--              >claudio.sassanelli@polimi.it</a-->
+<!--              >-->
+<!--              | <span class="bold">FBK</span> - -->
+<!--              <a href="mailto:stefano.tonetta@fbk.eu">stefano.tonetta@fbk.eu</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line"-->
+<!--            ><i class="fas fa-globe-europe u-is-black-color"></i-->
+<!--            ><span class="bold">Politecnico di Milano</span> - -->
+<!--              <a href="https://www.polimi.it/en/" target="_blank">-->
+<!--                www.polimi.it</a-->
+<!--              >-->
+<!--              | <span class="bold">FBK</span> - -->
+<!--              <a href="https://www.fbk.eu/en/" target="_blank"> www.fbk.eu</a>-->
+<!--            </span>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-1-of-2 hub__content">-->
+<!--        <h2 class="hub__name u-center-text">Romania</h2>-->
+<!--        <div class="hub__text u-justify-text-tab-port">-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="bold">HUBCAP</span> Romania is hosted by Lucian Blaga-->
+<!--            University of Sibiu and will be led by the Connected Intelligence-->
+<!--            Research Center (INCON) complemented by Hasso Plattner Institute for-->
+<!--            Knowledge Transfer (HPI). INCON focuses on theoretical and-->
+<!--            application-driven research for modelling, simulation and deployment-->
+<!--            of cyber physical social systems. It provides a CPS-based experimental-->
+<!--            facility comprising of: a standard Festo MPS500 Didactic System, a-->
+<!--            custom OTG-Usb stick assembly demonstrator (Small Scale I4.0-->
+<!--            Production system), a custom production system for assembling smart-->
+<!--            products (Large Scale I4.0 Production System) and finally a training-->
+<!--            station with Augmented and Virtual Reality for manual operations to-->
+<!--            assemble smart products considering the operator’s state (I4.0-->
+<!--            Training station). HPI is a ULBS foundation established in 2018-->
+<!--            focusing on linking regional companies and clusters (e.g. Smart City-->
+<!--            Sibiu, Cluj IT, PrelMet Transilvania, etc.) to support RDI and-->
+<!--            training in the field of digitisation. It provides RDI and training-->
+<!--            services to all interested organisations based on the INCON-->
+<!--            infrastructure.-->
+<!--          </p>-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-map-marker-alt u-is-black-color"></i>Lucian Blaga-->
+<!--              University of Sibiu, Faculty of Engineering, Emil Cioran 4, Sibiu-->
+<!--              550025, Romania-->
+<!--            </span>-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-at u-is-black-color"></i>-->
+<!--              <a href="mailto:bogdan.pirvu@ulbsibiu.ro"-->
+<!--              >bogdan.pirvu@ulbsibiu.ro</a-->
+<!--              >-->
+<!--            </span>-->
+<!--            <span class="hub__info-line"-->
+<!--            ><i class="fas fa-globe-europe u-is-black-color"></i-->
+<!--            ><a href="https://centers.ulbsibiu.ro/incon/dih/" target="_blank"-->
+<!--            >centers.ulbsibiu.ro</a-->
+<!--            >-->
+<!--            </span>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="hub row hidden-fade-in">-->
+<!--      <div class="col-1-of-2 hub__content">-->
+<!--        <h2 class="hub__name u-center-text">United Kindgom</h2>-->
+<!--        <div class="hub__text u-justify-text-tab-port">-->
+<!--          <p class="paragraph paragraph&#45;&#45;big u-margin-bottom-small">-->
+<!--            <span class="bold">HUBCAP</span> UK, hosted at Newcastle University,-->
+<!--            offers expertise in MBD for embedded systems and Systems of Systems,-->
+<!--            and a shared programme of research, engagement, innovation and-->
+<!--            technology transfer on digitally enabled urban systems. This cluster-->
+<!--            contains labs on CPS, the-->
+<!--            <a target="_blank" href="https://www.ncl.ac.uk/nicd/"-->
+<!--            >National Innovation Centre for Data</a-->
+<!--            >, and national centres for research and innovation in green-->
+<!--            infrastructure and energy systems integration, an-->
+<!--            <a target="_blank" href="https://urbanobservatory.ac.uk/"-->
+<!--            >Urban Observatory</a-->
+<!--            >, and a “Decision Theatre” exploring human decision-making through-->
+<!--            interaction with large and complex data.-->
+<!--            <span class="bold">HUBCAP</span> UK aims to lower barriers to-->
+<!--            innovation in CPS and CPS-enabled products and services. Its two main-->
+<!--            focuses are:-->
+<!--          </p>-->
+<!--          <ul class="hub__list">-->
+<!--            <li class="hub__list__item">-->
+<!--              Development of application domains in digitally enabled sustainable-->
+<!--              urban systems.-->
+<!--            </li>-->
+<!--            <li class="hub__list__item">-->
+<!--              Support for model-based CPS design by collaborative modelling and-->
+<!--              co-simulation, and transfer of well-founded techniques in the-->
+<!--              engineering of dependable systems into CPS engineering.-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--          <p class="paragraph paragraph&#45;&#45;big">-->
+<!--            <span class="hub__info-line">-->
+<!--              <i class="fas fa-at u-is-black-color"></i>-->
+<!--              <a href="mailto:info@hubcap.eu">info@hubcap.eu</a>-->
+<!--            </span>-->
+<!--            <span class="hub__info-line"-->
+<!--            ><i class="fas fa-globe-europe u-is-black-color"></i-->
+<!--            ><a href="https://www.ncl.ac.uk/computing/" target="_blank"-->
+<!--            >www.ncl.ac.uk</a-->
+<!--            >-->
+<!--            </span>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+  <div>
+    <div class="hub row hidden-fade-in" id="Austria">
+      <div class="col-1-of-3 hub__gallery hub__gallery--austria">
+        <!-- <swiper [config]="config">
+          <div class="hub__gallery__slide" *ngFor="let image of hubs_images[0]">
+            <div class="swiper-zoom-container">
+              <img class="hub__gallery__slide__image" src="{{ image }}" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </swiper> -->
+      </div>
+      <div class="col-2-of-3 hub__content">
+        <h2 class="hub__name u-center-text">Austria</h2>
+        <div class="hub__text u-justify-text-tab-port">
+          <p class="paragraph paragraph--big">
+            <span class="bold">HUBCAP</span> Austria was hosted by the
+            <a target="_blank" href="https://www.v2c2.at/"
+              >Virtual Vehicle Research Center</a
+            >
+            GmbH which is Europe’s largest R&D center for virtual vehicle
+            technology with 300 employees. Their research priority is the linking of
+            numerical simulations and hardware testing, which leads to a powerful
+            HW-SW whole system design and automation of testing and validation
+            procedures. Following this focus on industry-related research VIRTUAL
+            VEHICLE is the innovation catalyst for future vehicle technologies.
+          </p>
+          <p class="paragraph paragraph--big">
+            The international partner network of VIRTUAL VEHICLE consists of
+            around 100 national and international industrial partners (OEMs, Tier
+            1 and Tier 2 suppliers as well as software providers) as well as over
+            40 national and international scientific institutions.
+          </p>
+          <!-- <p class="paragraph paragraph--big">
+            Contact <span class="bold">HUBCAP</span> Austria via the
+            <a
+              href="mailto:info@hubcap.eu?subject=Inquiry%20for%20HUBCAP%20Austria"
+              >Service Centre</a
+            >.
+          </p> -->
+          <p class="paragraph paragraph--big">
+            <span class="hub__info-line">
+              <i class="fas fa-map-marker-alt u-is-black-color"></i>Inffeldgasse
+              21a. 8010 Graz, Austria
+            </span>
+            <span class="hub__info-line">
+              <i class="fas fa-phone u-is-black-color"></i>
+              <a href="tel:+43 316 873 9001">+43 316 873 9001</a>
+            </span>
+            <span class="hub__info-line">
+              <i class="fas fa-at u-is-black-color"></i>
+              <a href="mailto:info@v2c2.at">info@v2c2.at</a>
+            </span>
+            <span class="hub__info-line"
+              ><i class="fas fa-globe-europe u-is-black-color"></i
+              ><a href="https://www.v2c2.at/" target="_blank">www.v2c2.at</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hub row hidden-fade-in" id="Denmark">
+      <div
+        *ngIf="width < 900"
+        class="col-1-of-3 hub__gallery hub__gallery--denmark"
+      ></div>
+      <div class="col-2-of-3 hub__content">
+        <h2 class="hub__name u-center-text">Denmark</h2>
+        <div class="hub__text u-justify-text-tab-port">
+          <p class="paragraph paragraph--big u-margin-bottom-small">
+            <span class="bold">HUBCAP</span> Denmark specialises in software
+            engineering for complex Cyber-Physical Systems, including system
+            modelling methodologies and tools (Model-Based Design, Vienna
+            Development Method), predictive and software analysis (formal methods,
+            theorem proving, and machine learning), and co-simulation. These core
+            areas of expertise are seamlessly integrated within Digital Twin
+            platforms. Aarhus University’s Digital Innovation Hub provided
+            expertise to its collaborators in the areas covered by its two main
+            centres:
+          </p>
+          <ul class="hub__list">
+            <li class="hub__list__item">
+              The Centre for Digitalisation, Big Data and Data Analytics (
+              <a target="_blank" href="https://digit.au.dk/">“DIGIT”</a>)
+            </li>
+            <li class="hub__list__item">The AU Centre for Digital Twins.</li>
+          </ul>
+
+          <p class="paragraph paragraph--big">
+            <span class="hub__info-line">
+              <i class="fas fa-map-marker-alt u-is-black-color"></i>Department of
+              Engineering - Cyber-Physical Systems, Åbogade 34, building 5341,
+              8200 Aarhus N, Denmark
+            </span>
+            <span class="hub__info-line">
+              <i class="fas fa-at u-is-black-color"></i>
+              <a href="mailto:hdm@eng.au.dk">hdm@eng.au.dk</a>
+            </span>
+            <span class="hub__info-line"
+              ><i class="fas fa-globe-europe u-is-black-color"></i
+              ><a href="https://digit.au.dk/" target="_blank">digit.au.dk</a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div
+        *ngIf="width > 900"
+        class="col-1-of-3 hub__gallery hub__gallery--denmark"
+      ></div>
+    </div>
+    <div class="hub row hidden-fade-in" id="Germany">
+      <div class="col-1-of-3 hub__gallery hub__gallery--germany"></div>
+      <div class="col-2-of-3 hub__content">
+        <h2 class="hub__name u-center-text">Germany</h2>
+        <div class="hub__text u-justify-text-tab-port">
+          <p class="paragraph paragraph--big">
+            <span class="bold">HUBCAP</span> Germany was hosted by
+            <a target="_blank" href="https://www.fortiss.org/en/">fortiss</a> in
+            Munich. Fortiss provided expertise in a range of fields including
+            model-based software and systems engineering, model-based synthesis,
+            design space exploration, analysis and design of dependable systems,
+            and software engineering of smart CPS in various domains such as
+            automotive, smart energy, or industrial automation. A particular
+            emphasis was laid on the intersection of software engineering and
+            the increasingly important field of Artificial Intelligence. To this
+            end, HUBCAP Germany built on the
+            <a
+              target="_blank"
+              href="https://www.fortiss.org/en/about-fortiss/ai-center/munich-innovation-hub-for-applied-ai"
+              >Munich Innovation Hub for Applied AI</a
+            >, which integrates AI research with innovation support activities for
+            entrepreneurs, startups, and SMEs, to foster and accelerate the
+            adoption of AI solutions by industry.
+          </p>
+          <p class="paragraph paragraph--big">
+            <span class="hub__info-line">
+              <i class="fas fa-map-marker-alt u-is-black-color"></i
+              >Lichtenbergstraße 6, 85748 Garching, Germany
+            </span>
+            <span class="hub__info-line">
+              <i class="fas fa-phone u-is-black-color"></i>
+              <a href="tel:+49 89 3603522 29">+49 89 3603522 29</a>
+            </span>
+            <span class="hub__info-line">
+              <i class="fas fa-at u-is-black-color"></i>
+              <a href="mailto:pfeifer@fortiss.org">pfeifer@fortiss.org</a>
+            </span>
+            <span class="hub__info-line"
+              ><i class="fas fa-globe-europe u-is-black-color"></i
+              ><a href="https://www.appliedai.eu/" target="_blank">
+                www.appliedai.eu</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hub row hidden-fade-in" id="Sweden">
+      <div
+        *ngIf="width < 900"
+        class="col-1-of-3 hub__gallery hub__gallery--sweden"
+      ></div>
+      <div class="col-2-of-3 hub__content">
+        <h2 class="hub__name u-center-text">Sweden</h2>
+        <div class="hub__text u-justify-text-tab-port">
+          <p class="paragraph paragraph--big">
+            In Sweden <span class="bold">HUBCAP</span> was represented by the KTH
+            Digital Innovation Hub on Industrial Digitalization, the DIHID.
+            Located at the
+            <a href="https://www.kth.se/mmk/" target="_blank"
+              >Mechatronics Division at KTH</a
+            >
+            in Stockholm, the DIHID acted as a meeting ground for Tech Scaleups,
+            Industry and Academic Faculties. They offered expertise, testbeds and
+            professional training within the domains of Robotics, Model Based
+            Design, Autonomous Systems and Machine Learning. DIHID also organized
+            expert talks and conferences to share knowledge between
+            engineering/scientific disciplines and academia-industry. Furthermore,
+            DIHID was involved in the PECA initiative, which offered
+            a new approach on life-long learning for Swedish Industry.
+          </p>
+          <p class="paragraph paragraph--big">
+            Their clients work with industrial digitalization on both a strategic
+            and technical level. They are leaders and visionaries, practitioners
+            and strategists who develop and produce products, services and
+            knowledge. We had a close partnership, via our industry network
+            <a href="https://www.ices.kth.se/" target="_blank">ICES</a>, with more
+            than 30 companies and organizations.
+          </p>
+
+          <p class="paragraph paragraph--big">
+            <span class="hub__info-line">
+              <i class="fas fa-phone u-is-black-color"></i>
+              <a href="tel:+46 8 790 74 05">+46 8 790 74 05</a>
+            </span>
+            <span class="hub__info-line">
+              <i class="fas fa-at u-is-black-color"></i>
+              <a href="mailto:fasplund@kth.se">fasplund@kth.se</a>
+            </span>
+            <span class="hub__info-line"
+              ><i class="fas fa-globe-europe u-is-black-color"></i
+              ><a href="https://www.ices.kth.se/" target="_blank"
+                >www.ices.kth.se</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+      <div
+        *ngIf="width > 900"
+        class="col-1-of-3 hub__gallery hub__gallery--sweden"
+      ></div>
+    </div>
+    <div class="hub row hidden-fade-in" id="Italy">
+      <div
+        *ngIf="width < 900"
+        class="col-1-of-3 hub__gallery hub__gallery--italy"
+      ></div>
+      <div class="col-2-of-3 hub__content">
+        <h2 class="hub__name u-center-text">Italy</h2>
+        <div class="hub__text u-justify-text-tab-port">
+          <p class="paragraph paragraph--big">
+            <span class="bold">HUBCAP</span> Italy was led by Politecnico di Milano,
+            located in Milan, while a satellite centre was hosted by Fondazione
+            Bruno Kessler, located in Trento. The Milan site focused on the
+            manufacturing industry, hosting an Industry 4.0 Lab experimental
+            facility, a CPS-based training and experimental facility. The centre
+            plays a leading role in the Milan Competence Center (MADE in Italy) of
+            the Industry 4.0 Italian National Plan, carrying out experiments in
+            Industry 4.0 including CPS manufacturing. The Trento satellite focuses
+            on high quality research with impact to market and society, including
+            expertise and tools for MBD, verification, validation, and safety
+            analysis. Besides the physical spaces, both sites offered services such
+            as training courses, support for participating in research projects,
+            sharing of utilities costs and IT services.
+          </p>
+          <!-- <p class="paragraph paragraph--big">
+            Contact <span class="bold">HUBCAP</span> Italy via the
+            <a href="mailto:info@hubcap.eu?subject=Inquiry%20for%20HUBCAP%20Italy"
+              >Service Centre</a
+            >.
+          </p> -->
+          <p class="paragraph paragraph--big">
+            <span class="hub__info-line">
+              <i class="fas fa-map-marker-alt u-is-black-color"></i>
+              <span class="bold">Politecnico di Milano</span> - Piazza Leonardo da
+              Vinci 32, 20133 Milan, Italy | <span class="bold">FBK</span> - Via
+              Sommarive, 18, 38123 Trento, Italy
+            </span>
+            <span class="hub__info-line">
+              <i class="fas fa-phone u-is-black-color"></i>
+              <span class="bold">Politecnico di Milano</span> :
+              <a href="tel:+39 02 2399 2716">+39 02 2399 2716</a> |
+              <span class="bold">FBK</span> :
+              <a href="tel:+390461314359">+390461314359</a>
+            </span>
+            <span class="hub__info-line">
+              <i class="fas fa-at u-is-black-color"></i>
+              <span class="bold">Politecnico di Milano</span> -
+              <a href="mailto:claudio.sassanelli@polimi.it" target="_blank"
+                >claudio.sassanelli@polimi.it</a
+              >
+              | <span class="bold">FBK</span> -
+              <a href="mailto:stefano.tonetta@fbk.eu">stefano.tonetta@fbk.eu</a>
+            </span>
+            <span class="hub__info-line"
+              ><i class="fas fa-globe-europe u-is-black-color"></i
+              ><span class="bold">Politecnico di Milano</span> -
+              <a href="https://www.polimi.it/en/" target="_blank">
+                www.polimi.it</a
+              >
+              | <span class="bold">FBK</span> -
+              <a href="https://www.fbk.eu/en/" target="_blank"> www.fbk.eu</a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div
+        *ngIf="width > 900"
+        class="col-1-of-3 hub__gallery hub__gallery--italy"
+      ></div>
+    </div>
+    <div class="hub row hidden-fade-in" id="Romania">
+      <div class="col-1-of-3 hub__gallery hub__gallery--romania"></div>
+      <div class="col-2-of-3 hub__content">
+        <h2 class="hub__name u-center-text">Romania</h2>
+        <div class="hub__text u-justify-text-tab-port">
+          <p class="paragraph paragraph--big">
+            <span class="bold">HUBCAP</span> Romania was hosted by Lucian Blaga
+            University of Sibiu and was led by the Connected Intelligence
+            Research Center (INCON) complemented by Hasso Plattner Institute for
+            Knowledge Transfer (HPI). INCON focuses on theoretical and
+            application-driven research for modelling, simulation and deployment
+            of cyber physical social systems. It provides a CPS-based experimental
+            facility comprising of: a standard Festo MPS500 Didactic System, a
+            custom OTG-Usb stick assembly demonstrator (Small Scale I4.0
+            Production system), a custom production system for assembling smart
+            products (Large Scale I4.0 Production System) and finally a training
+            station with Augmented and Virtual Reality for manual operations to
+            assemble smart products considering the operator’s state (I4.0
+            Training station). HPI is a ULBS foundation established in 2018
+            focusing on linking regional companies and clusters (e.g. Smart City
+            Sibiu, Cluj IT, PrelMet Transilvania, etc.) to support RDI and
+            training in the field of digitisation. It provides RDI and training
+            services to all interested organisations based on the INCON
+            infrastructure.
+          </p>
+          <p class="paragraph paragraph--big">
+            <span class="hub__info-line">
+              <i class="fas fa-map-marker-alt u-is-black-color"></i>Lucian Blaga
+              University of Sibiu, Faculty of Engineering, Emil Cioran 4, Sibiu
+              550025, Romania
+            </span>
+            <span class="hub__info-line">
+              <i class="fas fa-at u-is-black-color"></i>
+              <a href="mailto:bogdan.pirvu@ulbsibiu.ro"
+                >bogdan.pirvu@ulbsibiu.ro</a
+              >
+            </span>
+            <span class="hub__info-line"
+              ><i class="fas fa-globe-europe u-is-black-color"></i
+              ><a href="https://centers.ulbsibiu.ro/incon/dih/" target="_blank"
+                >centers.ulbsibiu.ro</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hub row hidden-fade-in" id="UK">
+      <div
+        *ngIf="width < 900"
+        class="col-1-of-3 hub__gallery hub__gallery--uk"
+      ></div>
+      <div class="col-2-of-3 hub__content">
+        <h2 class="hub__name u-center-text">United Kindgom</h2>
+        <div class="hub__text u-justify-text-tab-port">
+          <p class="paragraph paragraph--big u-margin-bottom-small">
+            <span class="bold">HUBCAP</span> UK, was hosted at Newcastle University,
+            offered expertise in MBD for embedded systems and Systems of Systems,
+            and a shared programme of research, engagement, innovation and
+            technology transfer on digitally enabled urban systems. This cluster
+            contains labs on CPS, the
+            <a target="_blank" href="https://www.ncl.ac.uk/nicd/"
+              >National Innovation Centre for Data</a
+            >, and national centres for research and innovation in green
+            infrastructure and energy systems integration, an
+            <a target="_blank" href="https://urbanobservatory.ac.uk/"
+              >Urban Observatory</a
+            >, and a “Decision Theatre” exploring human decision-making through
+            interaction with large and complex data.
+            <span class="bold">HUBCAP</span> UK aimed to lower barriers to
+            innovation in CPS and CPS-enabled products and services. Its two main
+            focuses were:
+          </p>
+          <ul class="hub__list">
+            <li class="hub__list__item">
+              Development of application domains in digitally enabled sustainable
+              urban systems.
+            </li>
+            <li class="hub__list__item">
+              Support for model-based CPS design by collaborative modelling and
+              co-simulation, and transfer of well-founded techniques in the
+              engineering of dependable systems into CPS engineering.
+            </li>
+          </ul>
+          <p class="paragraph paragraph--big">
+            <span class="hub__info-line">
+              <i class="fas fa-at u-is-black-color"></i>
+              <a href="mailto:info@hubcap.eu">info@hubcap.eu</a>
+            </span>
+            <span class="hub__info-line"
+              ><i class="fas fa-globe-europe u-is-black-color"></i
+              ><a href="https://www.ncl.ac.uk/computing/" target="_blank"
+                >www.ncl.ac.uk</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+      <div
+        *ngIf="width > 900"
+        class="col-1-of-3 hub__gallery hub__gallery--uk"
+      ></div>
+    </div>
+  </div>
+    <div class="wrapper">
+      <div class="row">
+        <div class="u-center-text u-margin-bottom-medium">
+          <h1
+            class="heading-primary heading-primary--underlined heading-primary--underlined-darkblue"
+          >
+            Services
+          </h1>
+          <p class="paragraph paragraph--big u-margin-bottom-small">
+            <span class="bold">HUBCAP</span> partners offer a variety of services
+            described below. Please contact the Service Centre who will direct
+            your query:
+          </p>
+          <p class="paragraph paragraph--big">
+            Service Centre: <a href="mailto:info@hubcap.eu">info@hubcap.eu</a>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="u-justify-text-tab-port u-margin-bottom-medium">
+              <h3
+                class="subtitle is-bold subtitle--bg-blue subtitle--colored u-margin-bottom-small"
+              >
+                Fast Prototyping and Validation
+              </h3>
+              <p class="paragraph paragraph--big">
+                Our
+                <a href="https://hubcap-portal.eng.it/welcome/" target="_blank">platform</a> allows CPS solutions to be prototyped
+                and validated using cloud technologies in a “sandboxed” environment,
+                which requires no installation for the user, and where models selected
+                from catalogues can be combined with legacy models from the end-user.
+                Sandboxed services will be implemented in our
+                <span class="bold">HUBCAP</span> collaboration platform and will
+                provide functionalities such as CPS multi-modelling, co-simulation,
+                monitoring and analytics, composition and orchestration, enhanced with
+                protection mechanisms to ensure the security and privacy of the data
+                exchanged within the collaboration platform.
+              </p>
+            </div>
+            <div class="u-justify-text-tab-port u-margin-bottom-medium">
+              <h3
+                class="subtitle is-bold subtitle--bg-red subtitle--colored u-margin-bottom-small"
+              >
+                Access to Market and Funding
+              </h3>
+              <p class="paragraph paragraph--big">
+                Your SME get help to access funding opportunities for your development
+                projects. We will share information about different funding
+                opportunities involving companies, funding agencies and investors, or
+                potential research and innovation projects. Events are organised to
+                share information about possible public or private funding
+                opportunities, available from both within the DIH region and
+                nationally/internationally, e.g. in the
+                <span class="bold">HUBCAP</span> DIH network.
+              </p>
+            </div>
+            <div class="u-justify-text-tab-port u-margin-bottom-medium">
+              <h3 class="subtitle is-bold subtitle--colored u-margin-bottom-small">
+                Knowledge Services
+              </h3>
+              <p class="paragraph paragraph--big">
+                From awareness-raising to training and skills development for
+                model-based CPS engineering. We will be offering information events,
+                seminars, and training courses on the
+                <span class="bold">HUBCAP</span> technologies and tools.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <div class="u-justify-text-tab-port u-margin-bottom-medium">
+              <h3
+                class="subtitle is-bold subtitle subtitle--colored u-margin-bottom-small"
+              >
+                Digital Twin Accelerators
+              </h3>
+              <p class="paragraph paragraph--big">
+                The Digital Twin Accelerator is a <span class="bold">new service</span> that helps you access the expertise of four international
+                Digital Innovation Hubs and their networks of hundreds of specialists to demystify Digital Twin
+                technology. We can help you learn the basics of Digital Twins through short briefings for business
+                leaders; explore the opportunities for your business to develop the knowledge and skills you need
+                to understand the opportunities and barriers to exploiting Digital Twin technology in your sector.
+                <!--              <span class="bold">HUBCAP</span> -->
+              </p>
+            </div>
+            <div class="u-justify-text-tab-port u-margin-bottom-medium">
+              <h3
+                class="subtitle is-bold subtitle--bg-teal subtitle--colored u-margin-bottom-small"
+              >
+                Technology Services
+              </h3>
+              <p class="paragraph paragraph--big">
+                These enable hands-on experience on
+                <span class="bold">HUBCAP</span> technologies, provided through
+                support for SMEs engaged in Open Call (OC) experiments and by
+                organising practical labs such as hackathons for the rapid prototyping
+                of use cases. We can help match your SME with the right expertise and
+                tools for model-based design, verification, validation, and safety
+                analysis.
+              </p>
+            </div>
+            <div class="u-justify-text-tab-port u-margin-bottom-medium">
+              <h3
+                class="subtitle is-bold subtitle--bg-green subtitle--colored u-margin-bottom-small"
+              >
+                Ecosystem Building
+              </h3>
+              <p class="paragraph paragraph--big">
+                These services will help you reach out to stakeholders, businesses,
+                government and expertise in the regions round our Digital Hubs, to
+                help needs and demands with offers and opportunities. We will do this
+                through community events for stakeholders from industry, research, or
+                finance, and ideation events, e.g. based on design thinking, to inform
+                and implement the services provided by
+                <span class="bold">HUBCAP</span>, and encouraging follow-up
+                collaboration of the participants.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </swiper> -->
-    </div>
-    <div class="col-2-of-3 hub__content">
-      <h2 class="hub__name u-center-text">Austria</h2>
-      <div class="hub__text u-justify-text-tab-port">
-        <p class="paragraph paragraph--big">
-          <span class="bold">HUBCAP</span> Austria is hosted by the
-          <a target="_blank" href="https://www.v2c2.at/"
-            >Virtual Vehicle Research Center</a
-          >
-          GmbH which is Europe’s largest R&D center for virtual vehicle
-          technology with 300 employees. Research priority is the linking of
-          numerical simulations and hardware testing, which leads to a powerful
-          HW-SW whole system design and automation of testing and validation
-          procedures. Following this focus on industry-related research VIRTUAL
-          VEHICLE is the innovation catalyst for future vehicle technologies.
-        </p>
-        <p class="paragraph paragraph--big">
-          The international partner network of VIRTUAL VEHICLE consists of
-          around 100 national and international industrial partners (OEMs, Tier
-          1 and Tier 2 suppliers as well as software providers) as well as over
-          40 national and international scientific institutions.
-        </p>
-        <!-- <p class="paragraph paragraph--big">
-          Contact <span class="bold">HUBCAP</span> Austria via the
-          <a
-            href="mailto:info@hubcap.eu?subject=Inquiry%20for%20HUBCAP%20Austria"
-            >Service Centre</a
-          >.
-        </p> -->
-        <p class="paragraph paragraph--big">
-          <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i>Inffeldgasse
-            21a. 8010 Graz, Austria
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-phone u-is-black-color"></i>
-            <a href="tel:+43 316 873 9001">+43 316 873 9001</a>
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-at u-is-black-color"></i>
-            <a href="mailto:info@v2c2.at">info@v2c2.at</a>
-          </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://www.v2c2.at/" target="_blank">www.v2c2.at</a>
-          </span>
-        </p>
       </div>
     </div>
-  </div>
-  <div class="hub row hidden-fade-in" id="Denmark">
-    <div
-      *ngIf="width < 900"
-      class="col-1-of-3 hub__gallery hub__gallery--denmark"
-    ></div>
-    <div class="col-2-of-3 hub__content">
-      <h2 class="hub__name u-center-text">Denmark</h2>
-      <div class="hub__text u-justify-text-tab-port">
-        <p class="paragraph paragraph--big u-margin-bottom-small">
-          <span class="bold">HUBCAP</span> Denmark specialises in software
-          engineering for complex Cyber-Physical Systems, including system
-          modelling methodologies and tools (Model-Based Design, Vienna
-          Development Method), predictive and software analysis (formal methods,
-          theorem proving, and machine learning), and co-simulation. These core
-          areas of expertise are seamlessly integrated within Digital Twin
-          platforms. Aarhus University’s Digital Innovation Hub provides
-          expertise to its collaborators in the areas covered by its two main
-          centres:
-        </p>
-        <ul class="hub__list">
-          <li class="hub__list__item">
-            The Centre for Digitalisation, Big Data and Data Analytics (
-            <a target="_blank" href="https://digit.au.dk/">“DIGIT”</a>)
-          </li>
-          <li class="hub__list__item">The AU Centre for Digital Twins.</li>
-        </ul>
-
-        <p class="paragraph paragraph--big">
-          <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i>Department of
-            Engineering - Cyber-Physical Systems, Åbogade 34, building 5341,
-            8200 Aarhus N, Denmark
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-at u-is-black-color"></i>
-            <a href="mailto:hdm@eng.au.dk">hdm@eng.au.dk</a>
-          </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://digit.au.dk/" target="_blank">digit.au.dk</a>
-          </span>
-        </p>
-      </div>
+    <div class="modal" id="imageTwo">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <figure class="figure">
+        <img
+          class="figure__image"
+          src="../../assets/res/images/dih.png"
+          alt="Map of HUBCAP Digital Innovation Hubs"
+        />
+        <figcaption class="figure__caption">
+          Our network of Digital Innovation Hubs
+        </figcaption>
+      </figure>
     </div>
-    <div
-      *ngIf="width > 900"
-      class="col-1-of-3 hub__gallery hub__gallery--denmark"
-    ></div>
+    <button class="modal-close is-large" aria-label="close"></button>
   </div>
-  <div class="hub row hidden-fade-in" id="Germany">
-    <div class="col-1-of-3 hub__gallery hub__gallery--germany"></div>
-    <div class="col-2-of-3 hub__content">
-      <h2 class="hub__name u-center-text">Germany</h2>
-      <div class="hub__text u-justify-text-tab-port">
-        <p class="paragraph paragraph--big">
-          <span class="bold">HUBCAP</span> Germany is hosted by
-          <a target="_blank" href="https://www.fortiss.org/en/">fortiss</a> in
-          Munich. fortiss provides expertise in a range of fields including
-          model-based software and systems engineering, model-based synthesis,
-          design space exploration, analysis and design of dependable systems,
-          and software engineering of smart CPS in various domains such as
-          automotive, smart energy, or industrial automation. A particular
-          emphasis will be laid on the intersection of software engineering and
-          the increasingly important field of Artificial Intelligence. To this
-          end, HUBCAP Germany builds on the
-          <a
-            target="_blank"
-            href="https://www.fortiss.org/en/about-fortiss/ai-center/munich-innovation-hub-for-applied-ai"
-            >Munich Innovation Hub for Applied AI</a
-          >, which integrates AI research with innovation support activities for
-          entrepreneurs, startups, and SMEs, to foster and accelerate the
-          adoption of AI solutions by industry.
-        </p>
-        <p class="paragraph paragraph--big">
-          <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i
-            >Lichtenbergstraße 6, 85748 Garching, Germany
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-phone u-is-black-color"></i>
-            <a href="tel:+49 89 3603522 29">+49 89 3603522 29</a>
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-at u-is-black-color"></i>
-            <a href="mailto:pfeifer@fortiss.org">pfeifer@fortiss.org</a>
-          </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://www.appliedai.eu/" target="_blank">
-              www.appliedai.eu</a
-            >
-          </span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="hub row hidden-fade-in" id="Sweden">
-    <div
-      *ngIf="width < 900"
-      class="col-1-of-3 hub__gallery hub__gallery--sweden"
-    ></div>
-    <div class="col-2-of-3 hub__content">
-      <h2 class="hub__name u-center-text">Sweden</h2>
-      <div class="hub__text u-justify-text-tab-port">
-        <p class="paragraph paragraph--big">
-          In Sweden <span class="bold">HUBCAP</span> is represented by the KTH
-          Digital Innovation Hub on Industrial Digitalization, the DIHID.
-          Located at the
-          <a href="https://www.kth.se/mmk/" target="_blank"
-            >Mechatronics Division at KTH</a
-          >
-          in Stockholm, the DIHID acts as a meeting ground for Tech Scaleups,
-          Industry and Academic Faculties. We offer expertise, testbeds and
-          professional training within the domains of Robotics, Model Based
-          Design, Autonomous Systems and Machine Learning. DIHID also organizes
-          expert talks and conferences to share knowledge between
-          engineering/scientific disciplines and academia-industry. Furthermore,
-          DIHID is involved in the newly launched PECA initiative, which offers
-          a new approach on life-long learning for Swedish Industry.
-        </p>
-        <p class="paragraph paragraph--big">
-          Our clients work with industrial digitalization on both a strategic
-          and technical level. They are leaders and visionaries, practitioners
-          and strategists who develop and produce products, services and
-          knowledge. We have a close partnership, via our industry network
-          <a href="https://www.ices.kth.se/" target="_blank">ICES</a>, with more
-          than 30 companies and organizations.
-        </p>
-
-        <p class="paragraph paragraph--big">
-          <span class="hub__info-line">
-            <i class="fas fa-phone u-is-black-color"></i>
-            <a href="tel:+46 8 790 74 05">+46 8 790 74 05</a>
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-at u-is-black-color"></i>
-            <a href="mailto:fasplund@kth.se">fasplund@kth.se</a>
-          </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://www.ices.kth.se/" target="_blank"
-              >www.ices.kth.se</a
-            >
-          </span>
-        </p>
-      </div>
-    </div>
-    <div
-      *ngIf="width > 900"
-      class="col-1-of-3 hub__gallery hub__gallery--sweden"
-    ></div>
-  </div>
-  <div class="hub row hidden-fade-in" id="Italy">
-    <div
-      *ngIf="width < 900"
-      class="col-1-of-3 hub__gallery hub__gallery--italy"
-    ></div>
-    <div class="col-2-of-3 hub__content">
-      <h2 class="hub__name u-center-text">Italy</h2>
-      <div class="hub__text u-justify-text-tab-port">
-        <p class="paragraph paragraph--big">
-          <span class="bold">HUBCAP</span> Italy led by Politecnico di Milano,
-          is located in Milan, while a satellite centre hosted by Fondazione
-          Bruno Kessler is located in Trento. The Milan site focuses on
-          manufacturing industry, hosting an Industry 4.0 Lab experimental
-          facility, a CPS-based training and experimental facility. The centre
-          plays a leading role in the Milan Competence Center (MADE in Italy) of
-          the Industry 4.0 Italian National Plan, carrying out experiments in
-          Industry 4.0 including CPS manufacturing. The Trento satellite focuses
-          on high quality research with impact to market and society, including
-          expertise and tools for MBD, verification, validation, and safety
-          analysis. Besides the physical spaces, both sites offer services such
-          as training courses, support for participating in research projects,
-          sharing of utilities costs and IT services.
-        </p>
-        <!-- <p class="paragraph paragraph--big">
-          Contact <span class="bold">HUBCAP</span> Italy via the
-          <a href="mailto:info@hubcap.eu?subject=Inquiry%20for%20HUBCAP%20Italy"
-            >Service Centre</a
-          >.
-        </p> -->
-        <p class="paragraph paragraph--big">
-          <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i>
-            <span class="bold">Politecnico di Milano</span> - Piazza Leonardo da
-            Vinci 32, 20133 Milan, Italy | <span class="bold">FBK</span> - Via
-            Sommarive, 18, 38123 Trento, Italy
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-phone u-is-black-color"></i>
-            <span class="bold">Politecnico di Milano</span> :
-            <a href="tel:+39 02 2399 2716">+39 02 2399 2716</a> |
-            <span class="bold">FBK</span> :
-            <a href="tel:+390461314359">+390461314359</a>
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-at u-is-black-color"></i>
-            <span class="bold">Politecnico di Milano</span> -
-            <a href="mailto:claudio.sassanelli@polimi.it" target="_blank"
-              >claudio.sassanelli@polimi.it</a
-            >
-            | <span class="bold">FBK</span> -
-            <a href="mailto:stefano.tonetta@fbk.eu">stefano.tonetta@fbk.eu</a>
-          </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><span class="bold">Politecnico di Milano</span> -
-            <a href="https://www.polimi.it/en/" target="_blank">
-              www.polimi.it</a
-            >
-            | <span class="bold">FBK</span> -
-            <a href="https://www.fbk.eu/en/" target="_blank"> www.fbk.eu</a>
-          </span>
-        </p>
-      </div>
-    </div>
-    <div
-      *ngIf="width > 900"
-      class="col-1-of-3 hub__gallery hub__gallery--italy"
-    ></div>
-  </div>
-  <div class="hub row hidden-fade-in" id="Romania">
-    <div class="col-1-of-3 hub__gallery hub__gallery--romania"></div>
-    <div class="col-2-of-3 hub__content">
-      <h2 class="hub__name u-center-text">Romania</h2>
-      <div class="hub__text u-justify-text-tab-port">
-        <p class="paragraph paragraph--big">
-          <span class="bold">HUBCAP</span> Romania is hosted by Lucian Blaga
-          University of Sibiu and will be led by the Connected Intelligence
-          Research Center (INCON) complemented by Hasso Plattner Institute for
-          Knowledge Transfer (HPI). INCON focuses on theoretical and
-          application-driven research for modelling, simulation and deployment
-          of cyber physical social systems. It provides a CPS-based experimental
-          facility comprising of: a standard Festo MPS500 Didactic System, a
-          custom OTG-Usb stick assembly demonstrator (Small Scale I4.0
-          Production system), a custom production system for assembling smart
-          products (Large Scale I4.0 Production System) and finally a training
-          station with Augmented and Virtual Reality for manual operations to
-          assemble smart products considering the operator’s state (I4.0
-          Training station). HPI is a ULBS foundation established in 2018
-          focusing on linking regional companies and clusters (e.g. Smart City
-          Sibiu, Cluj IT, PrelMet Transilvania, etc.) to support RDI and
-          training in the field of digitisation. It provides RDI and training
-          services to all interested organisations based on the INCON
-          infrastructure.
-        </p>
-        <p class="paragraph paragraph--big">
-          <span class="hub__info-line">
-            <i class="fas fa-map-marker-alt u-is-black-color"></i>Lucian Blaga
-            University of Sibiu, Faculty of Engineering, Emil Cioran 4, Sibiu
-            550025, Romania
-          </span>
-          <span class="hub__info-line">
-            <i class="fas fa-at u-is-black-color"></i>
-            <a href="mailto:bogdan.pirvu@ulbsibiu.ro"
-              >bogdan.pirvu@ulbsibiu.ro</a
-            >
-          </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://centers.ulbsibiu.ro/incon/dih/" target="_blank"
-              >centers.ulbsibiu.ro</a
-            >
-          </span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="hub row hidden-fade-in" id="UK">
-    <div
-      *ngIf="width < 900"
-      class="col-1-of-3 hub__gallery hub__gallery--uk"
-    ></div>
-    <div class="col-2-of-3 hub__content">
-      <h2 class="hub__name u-center-text">United Kindgom</h2>
-      <div class="hub__text u-justify-text-tab-port">
-        <p class="paragraph paragraph--big u-margin-bottom-small">
-          <span class="bold">HUBCAP</span> UK, hosted at Newcastle University,
-          offers expertise in MBD for embedded systems and Systems of Systems,
-          and a shared programme of research, engagement, innovation and
-          technology transfer on digitally enabled urban systems. This cluster
-          contains labs on CPS, the
-          <a target="_blank" href="https://www.ncl.ac.uk/nicd/"
-            >National Innovation Centre for Data</a
-          >, and national centres for research and innovation in green
-          infrastructure and energy systems integration, an
-          <a target="_blank" href="https://urbanobservatory.ac.uk/"
-            >Urban Observatory</a
-          >, and a “Decision Theatre” exploring human decision-making through
-          interaction with large and complex data.
-          <span class="bold">HUBCAP</span> UK aims to lower barriers to
-          innovation in CPS and CPS-enabled products and services. Its two main
-          focuses are:
-        </p>
-        <ul class="hub__list">
-          <li class="hub__list__item">
-            Development of application domains in digitally enabled sustainable
-            urban systems.
-          </li>
-          <li class="hub__list__item">
-            Support for model-based CPS design by collaborative modelling and
-            co-simulation, and transfer of well-founded techniques in the
-            engineering of dependable systems into CPS engineering.
-          </li>
-        </ul>
-        <p class="paragraph paragraph--big">
-          <span class="hub__info-line">
-            <i class="fas fa-at u-is-black-color"></i>
-            <a href="mailto:info@hubcap.eu">info@hubcap.eu</a>
-          </span>
-          <span class="hub__info-line"
-            ><i class="fas fa-globe-europe u-is-black-color"></i
-            ><a href="https://www.ncl.ac.uk/computing/" target="_blank"
-              >www.ncl.ac.uk</a
-            >
-          </span>
-        </p>
-      </div>
-    </div>
-    <div
-      *ngIf="width > 900"
-      class="col-1-of-3 hub__gallery hub__gallery--uk"
-    ></div>
-  </div>
-</div>
-
-<div class="modal" id="imageTwo">
-  <div class="modal-background"></div>
-  <div class="modal-content">
-    <figure class="figure">
-      <img
-        class="figure__image"
-        src="../../assets/res/images/dih.png"
-        alt="Map of HUBCAP Digital Innovation Hubs"
-      />
-      <figcaption class="figure__caption">
-        Our network of Digital Innovation Hubs
-      </figcaption>
-    </figure>
-  </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>

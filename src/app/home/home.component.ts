@@ -36,9 +36,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   dotHelper: Array<number> = [];
   slider: KeenSliderInstance = null;
 
-  counterSME = 250;
-  experiments = 30;
-  innovations = 20;
+  counterSME = 100;
+  experiments = 20;
+  innovations = 10;
   millions = 3.2;
 
   mobile = this.deviceService.isMobile();

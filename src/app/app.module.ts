@@ -33,17 +33,11 @@ import { SwiperConfigInterface } from "ngx-swiper-wrapper";
 import { CalendarModule, DateAdapter } from "angular-calendar";
 import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
 
-import { PullComponent } from "./pull/pull.component";
-import { ExperimentComponent } from "./experiment/experiment.component";
-import { InnovateComponent } from "./innovate/innovate.component";
 import { PartnersComponent } from "./partners/partners.component";
-import { ResourcesComponent } from "./resources/resources.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { PressReleasesComponent } from "./press-releases/press-releases.component";
-import { FaqComponent } from "./faq/faq.component";
 import { PressReleaseListComponent } from "./press-release-list/press-release-list.component";
 import { TehcnologiesComponent } from "./tehcnologies/tehcnologies.component";
-import { WinnersComponent } from "./winners/winners.component";
 import { PressReleaseArticle1Component } from "./press-release-articles/press-release-article1/press-release-article1.component";
 import { PressReleaseArticle2Component } from "./press-release-articles/press-release-article2/press-release-article2.component";
 import { ContentComponent } from "./content/content.component";
@@ -51,7 +45,6 @@ import { SafeLinkPipe } from "./pipes/safe-link/safe-link.pipe";
 import { Webinar1_2Component } from "./content-items/webinar1_2/webinar1_2.component";
 import { NewsletterListComponent } from "./newsletter-list/newsletter-list.component";
 import { PressReleaseArticle3Component } from "./press-release-articles/press-release-article3/press-release-article3.component";
-import { ExpertsComponent } from "./experts/experts.component";
 import { SignupComponent } from "./signup/signup.component";
 import { ExternalComponent } from "./external/external.component";
 import { VideoExpComponent } from "./content-items/video-exp/video-exp.component";
@@ -95,17 +88,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     CallsComponent,
     ProjectComponent,
     ServicesComponent,
-    PullComponent,
-    ExperimentComponent,
-    InnovateComponent,
     PartnersComponent,
-    ResourcesComponent,
     NotFoundComponent,
     PressReleasesComponent,
-    FaqComponent,
     PressReleaseListComponent,
     TehcnologiesComponent,
-    WinnersComponent,
     PressReleaseArticle1Component,
     PressReleaseArticle2Component,
     ContentComponent,
@@ -113,7 +100,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     Webinar1_2Component,
     NewsletterListComponent,
     PressReleaseArticle3Component,
-    ExpertsComponent,
     SignupComponent,
     ExternalComponent,
     VideoExpComponent,

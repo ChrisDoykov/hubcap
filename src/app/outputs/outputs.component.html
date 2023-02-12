@@ -30,6 +30,106 @@
       </tr>
     </table>
   </section>
+  <section>
+    <div
+      class="wrapper"
+      (window:resize)="onResize()"
+
+    >
+      <h1
+        class="heading-primary heading-primary heading-primary heading-primary--underlined heading-primary--underlined-teal u-center-text u-margin-bottom-medium"
+      >
+        Official Newsletters
+      </h1>
+      <div class="newsletter__list">
+        <div
+          class="newsletter-box row"
+          *ngFor="let newsletter of newsletters"
+        >
+          <h3
+            *ngIf="width <= 600"
+            class="heading-tertiary newsletter-box__heading u-margin-bottom-small"
+          >
+            {{ newsletter.month }}
+          </h3>
+          <div class="newsletter-box__left">
+            <img
+              (click)="openModal(newsletter)"
+              attr.data-target="{{ newsletter.modalTarget }}"
+              aria-haspopup="true"
+              class="newsletter-box__thumbnail"
+              src="{{ newsletter.thumbnail }}"
+              alt="{{ newsletter.thumbnailAlt }}"
+            />
+          </div>
+          <div class="newsletter-box__right">
+            <h3
+              *ngIf="width > 600"
+              class="heading-tertiary newsletter-box__heading u-margin-bottom-small"
+            >
+              {{ newsletter.month }}
+            </h3>
+            <div class="newsletter-box__right__content">
+              <p class="paragraph paragraph--big newsletter-box__text">
+                {{ newsletter.description }}
+              </p>
+            </div>
+            <div class="newsletter-box__right__action-row">
+              <a
+                target="_blank"
+                href="{{ newsletter.url }}"
+                class="btn-text btn-text--blue newsletter-box__link"
+              >View</a
+              >
+              <a
+                target="_blank"
+                download
+                href="{{ newsletter.url }}"
+                class="btn-text btn-text--primary newsletter-box__link"
+              >Download</a
+              >
+            </div>
+          </div>
+
+          <div class="newsletter-box__bottom">
+            <svg
+              viewBox="0 0 500 150"
+              preserveAspectRatio="none"
+              style="height: 100%; width: 100%"
+            >
+              <path
+                d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #07a498"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      *ngFor="let newsletter of newsletters"
+      class="modal"
+      id="{{ newsletter.modalTarget }}"
+    >
+      <div class="modal-background" (click)="closeModal(newsletter)"></div>
+      <div class="modal-content">
+        <figure class="figure">
+          <img
+            src="{{ newsletter.thumbnail }}"
+            alt="{{ newsletter.thumbnailAlt }}"
+          />
+          <figcaption class="figure__caption">
+            {{ newsletter.thumbnailAlt }}
+          </figcaption>
+        </figure>
+      </div>
+      <button
+        class="modal-close is-large"
+        (click)="closeModal(newsletter)"
+        aria-label="close"
+      ></button>
+    </div>
+  </section>
   <section class="section-papers">
     <h2
       class="heading-tertiary u-is-black-color u-center-text u-margin-bottom-medium"

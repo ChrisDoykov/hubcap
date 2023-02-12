@@ -35,55 +35,15 @@
 
         <a class="navbar-item" routerLink="success-stories" (click)="blur($event)">Success Stories</a>
 
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Funding Calls</a>
-          <div class="navbar-dropdown">
-            <a
-              class="navbar-item"
-              routerLink="open-calls"
-              (click)="blur($event)"
-            >
-              General Information
-            </a>
-            <a
-              class="navbar-item"
-              routerLink="calls/experts"
-              (click)="blur($event)"
-            >
-              Call For Experts
-            </a>
-            <a
-              class="navbar-item"
-              routerLink="calls/pull"
-              (click)="blur($event)"
-            >
-              PULL Calls
-            </a>
-            <a
-              class="navbar-item"
-              routerLink="calls/experiment"
-              (click)="blur($event)"
-            >
-              EXPERIMENT Calls
-            </a>
-            <a
-              class="navbar-item"
-              routerLink="calls/innovate"
-              (click)="blur($event)"
-            >
-              INNOVATE Call
-            </a>
-          </div>
-        </div>
         <a
           class="navbar-item"
           routerLink="digital-innovation-hubs"
           routerLinkActive="active"
         >Digital Innovation Hubs</a
         >
-        <a class="navbar-item" routerLink="services" routerLinkActive="active"
-          >Services</a
-        >
+<!--        <a class="navbar-item" routerLink="services" routerLinkActive="active"-->
+<!--          >Services</a-->
+<!--        >-->
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">Platform</a>
             <div class="navbar-dropdown">
@@ -113,29 +73,9 @@
           <mat-icon class="navbar-item__icon">launch</mat-icon>
         </a> -->
 
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">News</a>
-          <div class="navbar-dropdown is-right">
-            <a class="navbar-item" routerLink="news" routerLinkActive="active"
-              >Latest News</a
-            >
-            <a class="navbar-item" routerLink="events" routerLinkActive="active"
-              >Events</a
-            >
-            <a
-              class="navbar-item"
-              routerLink="press-releases"
-              (click)="blur($event)"
-              >Press Releases</a
-            >
-            <a
-              class="navbar-item"
-              routerLink="newsletters"
-              (click)="blur($event)"
-              >Newsletters</a
-            >
-          </div>
-        </div>
+
+        <a class="navbar-item" routerLink="news" routerLinkActive="active"
+        >Latest News</a>
 
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">About</a>
@@ -144,30 +84,20 @@
               class="navbar-item"
               routerLink="project-details"
               (click)="blur($event)"
-              >Project Details</a
+              >About Us</a
             >
             <a class="navbar-item" routerLink="outputs" (click)="blur($event)"
               >Project Outputs</a
             >
             <a class="navbar-item" routerLink="partners" (click)="blur($event)">
-              Project Partners
+              HUBCAP Ecosystem
             </a>
             <a
               class="navbar-item"
-              routerLink="call-winners"
+              routerLink="open-calls"
               (click)="blur($event)"
             >
-              Call Winners
-            </a>
-            <a class="navbar-item" routerLink="faq" routerLinkActive="active">
-              FAQ
-            </a>
-            <a
-              class="navbar-item"
-              routerLink="resources"
-              (click)="blur($event)"
-            >
-              Resources
+              HUBCAP Programme
             </a>
           </div>
         </div>

@@ -168,6 +168,7 @@ export class PartnersComponent implements OnInit {
     this.rowsOf4.splice(0, 1);
     this.rowsOf5.splice(0, 1);
     this.rowsOf6.splice(0, 1);
+    this.rowsOf7.splice(0, 1);
     this.rowsOf4.push(this.winners.slice(0, 3));
     this.rowsOf5.push(this.winners.slice(0, 4));
     this.rowsOf6.push(this.winners.slice(0, 5));

@@ -37,8 +37,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   slider: KeenSliderInstance = null;
 
   counterSME = 100;
-  experiments = 20;
-  innovations = 10;
+  projects = 30;
   millions = 3.2;
 
   mobile = this.deviceService.isMobile();
@@ -301,10 +300,8 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.smeOptions
       );
       smeCount.start();
-      let expCount = new CountUp("expCounter", this.experiments, this.options);
+      let expCount = new CountUp("expCounter", this.projects, this.options);
       expCount.start();
-      let innCount = new CountUp("innCounter", this.innovations, this.options);
-      innCount.start();
       let millCount = new CountUp(
         "millCounter",
         this.millions,

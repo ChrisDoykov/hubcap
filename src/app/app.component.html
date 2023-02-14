@@ -28,7 +28,7 @@
     </div>
   </section>
   <app-navigation></app-navigation>
-  <section class="hero is-large" id="hero" *ngIf="width >= 600">
+  <section class="hero is-large" id="hero" *ngIf="width >= 600 && router.url != '/ecosystem'">
     <swiper
       [config]="config"
       *ngIf="webp && width >= 600"

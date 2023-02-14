@@ -2740,7 +2740,7 @@ export const stories = [
         sectionHeading: "Problem and solution",
         paragraphs: [
           "The experiment introduced a novel and cost-effective digital health solution for monitoring and" +
-          " predicting the personal heath of individuals living at homes alone or in isolation. It used multiple" +
+          " predicting the personal health of individuals living at homes alone or in isolation. It used multiple" +
           " wearable and home sensors and MBD CPS to run AI-driven calculations of holistic status of big system" +
           " \"Smart Person @ Smart Home\".",
         ],
